@@ -54,13 +54,13 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Checkbox ob die Instanz aktiv sein soll oder nicht.
   
   * __Buttons__  
-    * Instanz kopieren
+    * Instanz kopieren  
 	Kopiert die aktuelle ausgewählte Instanz.
-	* Instanz löschen
+	* Instanz löschen  
 	Löscht die aktuell ausgewählte Instanz.
-	* Logik starten/Event auslösen
+	* Logik starten/Event auslösen  
 	Lösst den Event aus/startet die Logik.
-	* Logik tarten mit Parametern
+	* Logik tarten mit Parametern  
 
 Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
 
