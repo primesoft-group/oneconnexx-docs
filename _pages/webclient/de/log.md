@@ -6,7 +6,7 @@ subtitle: "//OneOffixxConnectBatch/Entries/OneOffixxConnect/Function"
 ---
 
 	__ToDo__
-[//]: # (	
+	
 	Über das __"Function"__-Element können Daten und Steuerinformationen den definierten Dokumentfunktionen übergeben werden.
 	  
 	Das Function-Element hat bei jeder Dokumentfunktion den gleichen Aufbau, jedoch sind die "Arguments" und "Settings" jeweils verschieden. 
@@ -32,4 +32,3 @@ subtitle: "//OneOffixxConnectBatch/Entries/OneOffixxConnect/Function"
 	| 6f6430fe-6c11-41de-9f29-c29fef4de861 | [CustomXmlPartsInjector]({{ site.baseurl }}/connect/de/functions/customxml/) | Fachapplikationsspezifische CustomXML Parts übernehmen |
 	| 70E94788-CE84-4460-9698-5663878A295B | [CustomInterfaceConnector]({{ site.baseurl }}/connect/de/functions/custominterface/) | Daten aus einer Fachapplikation übergeben |
 	| c364b495-7176-4ce2-9f7c-e71f302b8096 | [MetaData]({{ site.baseurl}}/connect/de/functions/metadata/) | Daten im Dokument in den Dokumenteigenschaften setzen |
-)
