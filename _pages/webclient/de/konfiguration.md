@@ -74,3 +74,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   * __Gruppierung nach AddIntyp__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
+  
+## 4. Instanzparameter
+
+## 5. Abonnenten/Abonnierte Ereignisse

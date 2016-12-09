@@ -26,10 +26,12 @@ body {
 	margin-top: 5px;
 	vertical-align: bottom;
 }
+
 .navbar-brand > img{
 	display: inline;
 	height: 21px;
 }
+
 .color-accent{
 	background-color: #52AE32;
 }
