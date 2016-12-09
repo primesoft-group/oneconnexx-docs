@@ -65,3 +65,9 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 	Der Button "Logik starten mit Parametern" ist nur bei Logik Addins vorhanden. Mit diesem Button kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von diesem auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
 	<br /><br />
 	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
+## 3. Instanz Übersicht.
+  Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
+  * __Gruppierung nach Gruppe__
+  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Grupieren nach Gruppen")
+  * __Gruppierung nach AddIntyp__
+  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
