@@ -4,10 +4,6 @@ title: Konfiguration
 permalink: "webclient/de/konfiguration/"
 ---
 
-__in Progress__
-
-## Grundaufbau eines Addin {% include anchor.html name="Overview" %}
-
 Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin Instanzen und deren Details 
 
 
@@ -19,14 +15,19 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 	
   * __Im Service Speichern__  
-  Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchrnoisiert. 
+  Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
   
   * __Cache Löschen__  
   Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (Ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   
   * __Instanz Hinzufügen__  
-  Über diese Schaltfläche kann eine neue Instanz konfiguriert werden.
+  Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist.
   
+  ![X] ({{ site.baseurl}} /assets/content-images/webclient/de/addnewinstance.png "Add new Instance")
+  
+  * __Neue Guppe erstellen__
+  Über diese Schaltfläche kann eine neue Gruppe erstellt werden
+
 ## 2. Instanz Details
 
   * __Name__  
