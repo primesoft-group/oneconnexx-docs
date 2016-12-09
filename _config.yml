@@ -1,0 +1,21 @@
+# This is the default format.
+# For more see: http://jekyllrb.com/docs/permalinks/
+permalink: /:categories/:title/
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "LICENSE.txt", "_stage"]
+highlighter: 'rouge' 
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+include: ['_pages']
+
+baseurl: http://docs.oneoffixx.com
+github_repo_url: https://github.com/OneOffixx/docs/
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag

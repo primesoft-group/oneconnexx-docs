@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/winstrap.min.css?0.5.10" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax-highlighter.css" />
+  
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css" />
+  <script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+        <script src="{{ site.baseurl }}/assets/js/vendor/html5shiv.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <title>OneOffixx Docs // {{ page.title }}</title>
+  {% seo %}
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+
+    <div class="navbar-global theme-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="http://www.oneoffixx.com" class="navbar-brand">
+            <img src="{{ site.baseurl }}/assets/content-images/logo.png" alt="OneOffixx" height="23" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="navbar-local color-accent theme-dark">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#oo-docs-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="glyph glyph-hamburger"></i>
+                    </button>
+
+          <a href="{{ site.baseurl }}" class="navbar-brand">
+            <i class="fa fa-book" aria-hidden="true"></i> Docs
+          </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="oo-docs-navigation">
+          <ul class="nav navbar-nav">
+		    <li>
+                <a class="color-type-secondary" href="{{ site.baseurl }}/concepts/de/overview">Overview</a>
+             </li>
+            <li class="dropdown">
+              <a href="{{ site.baseurl }}/connect/de/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Connect<i class="glyph glyph-chevron-down-2"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="{{ site.baseurl }}/connect/de/usage/">Aufruf</a></li>
+                <li class="divider"></li>
+				<li><a href="{{ site.baseurl }}/connect/de/xml-schema/">XML Schema</a></li>
+				<li><a href="{{ site.baseurl }}/connect/de/connect-arguments/">Arguments</a></li>
+				<li><a href="{{ site.baseurl }}/connect/de/connect-functions/">Functions</a></li>
+                <li><a href="{{ site.baseurl }}/connect/de/connect-commands/">Commands</a></li>
+                <li class="divider"></li>
+                <li><a href="{{ site.baseurl }}/connect/de/usecases/">Anwendungsfälle</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="{{ site.baseurl }}/install/de/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Install<i class="glyph glyph-chevron-down-2"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="{{ site.baseurl }}/install/de/overview">Übersicht</a></li>
+                <li><a href="{{ site.baseurl }}/install/de/server">Server Installation</a></li>
+				<li><a href="{{ site.baseurl }}/install/de/client">Client Installation</a></li>
+              </ul>
+            </li>
+            <li>
+                <a class="color-type-secondary" href="http://en.oneoffixx.com/contact/">Contact</a>
+             </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  {{content}}
+
+  <footer class="footer">
+    <div class="container">
+      <a style="font-size: 18pt" title="Improve on GitHub" href="{{ site.github_repo_url }}edit/gh-pages/{{ page.path }}"><i class="fa fa-github-square"></i></a>
+
+      <p class="pull-right">Sevitec Informatik AG&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;Bahnhofstrasse 4&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;8360
+        Eschlikon&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;Switzerland
+      </p>
+
+    </div>
+  </footer>
+  <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>
