@@ -67,7 +67,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
 ## 3. Instanz Übersicht.
   Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
-  * __Gruppierung nach Gruppe__
+  * __Gruppierung nach Gruppe__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Grupieren nach Gruppen")
-  * __Gruppierung nach AddIntyp__
+  * __Gruppierung nach AddIntyp__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
