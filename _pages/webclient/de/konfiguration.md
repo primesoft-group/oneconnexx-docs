@@ -29,6 +29,8 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")
   
+  Standardmässig enthält der Name der Instanz das Präfix <Instanztyp>_. Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der AddIntyp direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den Abonnenten/Abonnierten Ereignissen (2,4 und 5).
+  
   * __Neue Guppe erstellen__
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden
 
