@@ -24,6 +24,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;<br />  
   <br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br />
+  <br />
   Per Mausklick oder mit shift und Enter kann der gewünschte Addintyp ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
   <br /><br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")
