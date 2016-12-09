@@ -14,3 +14,11 @@ body {
   height: 60px;
   background-color: rgba(0,0,0,.05);
 }
+
+.navbar-brand .one {
+    color: #1C1C1B;
+}
+
+.navbar-brand .connexx {
+    color: #52AE32;
+}
