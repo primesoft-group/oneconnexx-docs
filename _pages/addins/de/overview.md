@@ -4,6 +4,6 @@ title: Addin Overview
 permalink: "addins/de/overview/"
 ---
 
-## Addin {% include anchor.html name="Addin" %}
+## Overview {% include anchor.html name="Overview" %}
 
 __toDo__

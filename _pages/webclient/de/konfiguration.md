@@ -6,9 +6,9 @@ permalink: "webclient/de/konfiguration/"
 
 __in Progress__
 
-## Übersicht {% include anchor.html name="Addin" %}
+## Grundaufbau eines Addin {% include anchor.html name="Overview" %}
 
-
+Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin Instanzen und deren Details 
 
 
 
