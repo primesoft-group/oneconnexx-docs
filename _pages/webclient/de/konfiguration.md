@@ -18,26 +18,26 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * __Einstellungen neu laden__  
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 	
-  * __Im Service Speichern__
+  * __Im Service Speichern__  
   Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung diese dann zu speichern muss man diese Schaltfläche anwählen.  
   
-  * __Cache Löschen__
+  * __Cache Löschen__  
   Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (Ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   
-  * __Instanz Hinzufügen__
+  * __Instanz Hinzufügen__  
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden.
   
 ## 2. Instanz Details
 
-  * __Name__
+  * __Name__  
   
-  * __Addin__
+  * __Addin__  
+   
+  * __Dateipfad__  
   
-  * __Dateipfad__
+  * __Aktiv__  
   
-  * __Aktiv__
-  
-  * __Buttons__    
+  * __Buttons__  
 
 
 Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
