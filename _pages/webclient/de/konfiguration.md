@@ -21,7 +21,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (Ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   
   * __Instanz Hinzufügen__  
-  Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;<br />  
+  Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
   <br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br />
   <br />
@@ -36,17 +36,19 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden
 
 ## 2. Instanz Details
-
+  Die Detailansicht der instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
+  </br>
+  ![X]{{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin"
   * __Name__  
-  
+  Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
   * __Addin__  
-   
+  Der Typ des AddIns.
   * __Dateipfad__  
-  
+  Der Pfad, in welchem Verzeichnis des Hosts die Addindaten liegen.
   * __Aktiv__  
-  
+  Checkbox ob die Instnaz aktiv sein soll oder nicht.
   * __Buttons__  
-
+  
 
 Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
 
