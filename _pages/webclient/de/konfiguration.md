@@ -63,4 +63,5 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 	Lösst den Event aus/startet die Logik.
 	* __Logik starten mit Parametern__  
 	Der Button "Logik starten mit Parametern" ist nur bei Logik Addins vorhanden. Mit diesem Button kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von diesem auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
-
+	<br /><br />
+	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
