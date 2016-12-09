@@ -13,8 +13,8 @@ kramdown:
   
 include: ['_pages']
 
-baseurl: http://docs.oneoffixx.com
-github_repo_url: https://github.com/OneOffixx/docs/
+baseurl: http://docs.oneconnexx.com
+github_repo_url: https://github.com/Sevitec/oneconnexx-docs/
 
 gems:
   - jekyll-sitemap
