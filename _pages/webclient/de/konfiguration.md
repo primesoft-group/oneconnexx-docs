@@ -38,7 +38,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 ## 2. Instanz Details
   Die Detailansicht der instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
   <br />
-  ![X] ({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin")
+  ![X]({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin")
   
   * __Name__  
   Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
