@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Connect Functions
-permalink: "connect/de/connect-functions/"
+title: Log
+permalink: "webclient/de/log/"
 subtitle: "//OneOffixxConnectBatch/Entries/OneOffixxConnect/Function"
 ---
 

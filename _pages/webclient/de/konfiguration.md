@@ -1,7 +1,7 @@
 ---
 layout: page
-title: XML Schema
-permalink: "connect/de/xml-schema/"
+title: Konfiguration
+permalink: "webclient/de/konfiguration/"
 ---
 
 ## Überblick {% include anchor.html name="overview" %}

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Connect Commands
-permalink: "connect/de/connect-commands/"
+title: Überwachung
+permalink: "webclient/de/ueberwachung/"
 ---
 
 ## Connect Commands 

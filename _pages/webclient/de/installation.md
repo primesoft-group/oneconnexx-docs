@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Aufruf
-permalink: "connect/de/usage/"
+title: Installation
+permalink: "webclient/de/installation/"
 ---
 
 OneOffixx Connect kann sowohl von der Client-Applikation als auch über auf dem Server verarbeitet werden. 

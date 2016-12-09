@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Connect Arguments
-permalink: "connect/de/connect-arguments/"
+title: Lizenz
+permalink: "webclient/de/lizenz/"
 subtitle: "//OneOffixxConnectBatch/Entries/OneOffixxConnect/Arguments"
 ---
 
