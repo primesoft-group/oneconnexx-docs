@@ -13,10 +13,9 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
 
-## 1. Instanz Verwalten
+## 1. OneConnexx Verwalten
 
-  * __Einstellungen neu laden__
-  
+  * __Einstellungen neu laden__  
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 	
   * __Im Service Speichern__
