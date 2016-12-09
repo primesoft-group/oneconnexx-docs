@@ -22,13 +22,13 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   * __Instanz Hinzufügen__  
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
-  
+  * 
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")
   *
   Per Mausklick oder mit shift und Enter kann der gewünschte Addintyp ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
-  *
+  * 
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")
-  *
+  * 
   Standardmässig enthält der Name der Instanz das Präfix Instanztyp_. Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der AddIntyp direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
