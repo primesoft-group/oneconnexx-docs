@@ -7,7 +7,7 @@ permalink: "webclient/de/konfiguration/"
 __in Progress__
 
 	
-	## Überblick {% include anchor.html name="overview" %}
+	
 	
 	Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
 
