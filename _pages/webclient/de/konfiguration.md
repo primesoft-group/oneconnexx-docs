@@ -11,10 +11,32 @@ __in Progress__
 Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin Instanzen und deren Details 
 
 
-
-
-
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
+
+1. Instanz Verwalten
+  *Einstellungen neu laden
+  
+  
+  *Im Service Speichern
+  
+  *Cache Löschen
+  
+  *Instanz Hinzufügen
+  
+2. Instanz Details
+  *Name
+  
+  *Addin
+  
+  *Dateipfad
+  
+  *Aktiv
+  
+  *Buttons
+    1. Instanz Kopieren
+	2. Instanz Löschen
+	3. Ereignis Auslösen
+
 
 Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
 
