@@ -4,6 +4,10 @@ title: Überwachung
 permalink: "webclient/de/ueberwachung/"
 ---
 
+##toDo
+
+[//]: # (	
+
 ## Connect Commands 
 
 Mithilfe der Commands innerhalb eines Connect-Entries kann das Dokument weiterverarbeitet werden. Die Commands werden ausgeführt nachdem das Dokument erzeugt wurde bzw. nachdem das Dokument geladen wurde.
@@ -29,7 +33,7 @@ Oder im __OneOffixxConnect__ verwendet werden:
 ```xml
     <OneOffixxConnect>
 		<Arguments>
-			...
+			...
 		</Arguments>
 		<Commands>
 			<Command Name="..." />
@@ -166,3 +170,4 @@ Das Format der Datei ist dasselbe wie in den [Global Settings]({{ site.baseurl }
 ```xml
 	<Command Name="CreateConnectorResult" />
 ```
+)

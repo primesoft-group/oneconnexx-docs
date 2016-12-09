@@ -4,173 +4,176 @@ title: Lizenz
 permalink: "webclient/de/lizenz/"
 ---
 
-Über die Connect Argumente kann die Sprache, das Template bzw. das zu veränderte Dokument genau beschrieben werden.
+## ToDo
 
-## LanguageLcid - Sprache definieren {% include anchor.html name="languagelcid" %}
+	[//]: # (
+	Über die Connect Argumente kann die Sprache, das Template bzw. das zu veränderte Dokument genau beschrieben werden.
 
-Über __LanguageLcid__ wird die Dokumentsprache für die Verarbeitung gesetzt. Es muss eine genaue LCID angegeben werden - eine Auflistung von allen möglichen LCIDs finden sie [__hier__](https://msdn.microsoft.com/de-ch/goglobal/bb964664.aspx).
+	## LanguageLcid - Sprache definieren {% include anchor.html name="languagelcid" %}
 
-Die Sprache hat z.B. Auswirkungen auf die gewählten Textbausteine oder die Funktionsweise von Dokumentfunktionen.
+	Über __LanguageLcid__ wird die Dokumentsprache für die Verarbeitung gesetzt. Es muss eine genaue LCID angegeben werden - eine Auflistung von allen möglichen LCIDs finden sie [__hier__](https://msdn.microsoft.com/de-ch/goglobal/bb964664.aspx).
 
-{% include alert.html type="info" text="Bei der Angabe einer TemplateId muss sichergestellt werden, dass dieses Template auch für diese Sprache freigegeben ist. Über TemplateTags gibts es einen indirekten Mechanismus, welcher das richtige Template für die angegebene Sprache sucht." %}
+	Die Sprache hat z.B. Auswirkungen auf die gewählten Textbausteine oder die Funktionsweise von Dokumentfunktionen.
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				...
-    				<LanguageLcid>2055</LanguageLcid>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-```
+	{% include alert.html type="info" text="Bei der Angabe einer TemplateId muss sichergestellt werden, dass dieses Template auch für diese Sprache freigegeben ist. Über TemplateTags gibts es einen indirekten Mechanismus, welcher das richtige Template für die angegebene Sprache sucht." %}
 
-## TemplateId - Vorlage definieren {% include anchor.html name="templateid" %}
-	
-Über die __TemplateId__ wird eine Vorlage für die Dokumenterstellung gewählt. Als Angabe hierfür muss die genaue GUID der Vorlage übergeben werden.
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						...
+						<LanguageLcid>2055</LanguageLcid>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	```
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				...
-    				<TemplateId>6bb49520-1ebd-4f68-bb5f-02f46a9e1ec8</TemplateId>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	## TemplateId - Vorlage definieren {% include anchor.html name="templateid" %}
+		
+	Über die __TemplateId__ wird eine Vorlage für die Dokumenterstellung gewählt. Als Angabe hierfür muss die genaue GUID der Vorlage übergeben werden.
 
-## TemplateTags - Vorlage definieren {% include anchor.html name="templatetags" %}
-	
-Anstelle der ID der zu öffnenden Vorlage können über __TemplateFilter__ Filterkriterien angegeben werden. In dem TemplateFilter können Tags angegeben werden:
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						...
+						<TemplateId>6bb49520-1ebd-4f68-bb5f-02f46a9e1ec8</TemplateId>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				<TemplateFilter>
-    					<Tag>Tag1</Tag>
-    					<Tag>Tag2;Tag3;Tag4</Tag>
-    				</TemplateFilter>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	## TemplateTags - Vorlage definieren {% include anchor.html name="templatetags" %}
+		
+	Anstelle der ID der zu öffnenden Vorlage können über __TemplateFilter__ Filterkriterien angegeben werden. In dem TemplateFilter können Tags angegeben werden:
 
-AND-Verknüpfungen werden innerhalb eines Tag-Elements durch Semikolons getrennt definiert, OR-Verknüpfungen durch mehrere Tag-Elemente. 
-Das obige Beispiel zeigt alle Vorlagen, welche mit Tag1 oder Tag2, Tag3 und Tag4 markiert sind. 
-Gibt es mehrere Vorlagen, welche den Filterkriterien entsprechen, öffnet sich ein Auswahldialog, auf dem der Benutzer die gewünschte Vorlage auswählen kann:
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						<TemplateFilter>
+							<Tag>Tag1</Tag>
+							<Tag>Tag2;Tag3;Tag4</Tag>
+						</TemplateFilter>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
 
-![x]({{ site.baseurl }}/assets/content-images/connect/de/templatepicker.png "TemplatePicker")
+	AND-Verknüpfungen werden innerhalb eines Tag-Elements durch Semikolons getrennt definiert, OR-Verknüpfungen durch mehrere Tag-Elemente. 
+	Das obige Beispiel zeigt alle Vorlagen, welche mit Tag1 oder Tag2, Tag3 und Tag4 markiert sind. 
+	Gibt es mehrere Vorlagen, welche den Filterkriterien entsprechen, öffnet sich ein Auswahldialog, auf dem der Benutzer die gewünschte Vorlage auswählen kann:
 
-<span class="label label-info">NEU ab 2.3.40160</span>
+	![x]({{ site.baseurl }}/assets/content-images/connect/de/templatepicker.png "TemplatePicker")
 
-Ab __Version 2.3.40160__ können die TemplateTags auch serverseitig genutzt werden. Falls es mehrere Vorlagen gibt, welche dem Filterkriterium entsprechen, wird stets der erste Eintrag genommen. Die Reihenfolge ist hierbei nicht garantiert!
+	<span class="label label-info">NEU ab 2.3.40160</span>
 
-## DocumentLocation - Bestehendes Dokument {% include anchor.html name="documentlocation" %}
+	Ab __Version 2.3.40160__ können die TemplateTags auch serverseitig genutzt werden. Falls es mehrere Vorlagen gibt, welche dem Filterkriterium entsprechen, wird stets der erste Eintrag genommen. Die Reihenfolge ist hierbei nicht garantiert!
 
-Über die __DocumentLocation__ können [bestehende Dokumente aktualisiert]({{ site.baseurl }}/connect/de/usecases/update-existing-documents/) werden oder [zwei bestehende Dokumente verbunden]({{ site.baseurl }}/connect/de/usecases/merge-documents/) werden. 
+	## DocumentLocation - Bestehendes Dokument {% include anchor.html name="documentlocation" %}
 
-{% include alert.html type="info" text="Für den vollen Funktionsumfang müssen die Dokumente von OneOffixx generiert wurden sein." %}
+	Über die __DocumentLocation__ können [bestehende Dokumente aktualisiert]({{ site.baseurl }}/connect/de/usecases/update-existing-documents/) werden oder [zwei bestehende Dokumente verbunden]({{ site.baseurl }}/connect/de/usecases/merge-documents/) werden. 
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				<DocumentLocation>c:\Temp\Doc1.docx</DocumentLocation>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	{% include alert.html type="info" text="Für den vollen Funktionsumfang müssen die Dokumente von OneOffixx generiert wurden sein." %}
 
-## ProfileId - Profilwahl {% include anchor.html name="profileid" %}
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						<DocumentLocation>c:\Temp\Doc1.docx</DocumentLocation>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
 
-Es kann einen explizites Profil über das __ProfileId__-Element angegeben werden. Hierfür wird entweder die __GUID des Profiles__ oder der __Profil Name__ benötigt. Ohne Angabe eines expliziten Profiles wird das aktuelle Profile vom OneOffixx Client genommen bzw. auf Serverseite das erste Profil des jeweiligen Users. 
+	## ProfileId - Profilwahl {% include anchor.html name="profileid" %}
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				<ProfileId>25558547-a6fb-4fad-908b-63118dcee5c9</ProfileId>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	Es kann einen explizites Profil über das __ProfileId__-Element angegeben werden. Hierfür wird entweder die __GUID des Profiles__ oder der __Profil Name__ benötigt. Ohne Angabe eines expliziten Profiles wird das aktuelle Profile vom OneOffixx Client genommen bzw. auf Serverseite das erste Profil des jeweiligen Users. 
 
-Oder über den Namen:
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						<ProfileId>25558547-a6fb-4fad-908b-63118dcee5c9</ProfileId>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				<ProfileId>Profil Name</ProfileId>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	Oder über den Namen:
 
-## Profile - OrganizationId - Profilwahl {% include anchor.html name="profile" %}
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						<ProfileId>Profil Name</ProfileId>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
 
-<span class="label label-info">NEU ab 2.3.40160</span>
+	## Profile - OrganizationId - Profilwahl {% include anchor.html name="profile" %}
 
-Diese Option erlaubt es, eine beliebig (freigegebene) Organisation in der  [__ProfileData-Dokumentfunktion__]({{ site.baseurl }}/connect/de/functions/profiledata/) zu nutzen.
-Wird die angegebene Organisation gefunden, werden diese Organisationsdaten im Profil für den Aufruf genutzt. 
+	<span class="label label-info">NEU ab 2.3.40160</span>
 
-Die Organisation kann hierbei über die interne ID gesucht werden:
+	Diese Option erlaubt es, eine beliebig (freigegebene) Organisation in der  [__ProfileData-Dokumentfunktion__]({{ site.baseurl }}/connect/de/functions/profiledata/) zu nutzen.
+	Wird die angegebene Organisation gefunden, werden diese Organisationsdaten im Profil für den Aufruf genutzt. 
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				<Profile>
-					<OrganizationId>25558547-a6fb-4fad-908b-63118dcee5c9</OrganizationId>
-				</Profile>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	Die Organisation kann hierbei über die interne ID gesucht werden:
 
-Oder über eine Abfrage: 
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						<Profile>
+						<OrganizationId>25558547-a6fb-4fad-908b-63118dcee5c9</OrganizationId>
+					</Profile>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
 
-Abfragesyntax:
+	Oder über eine Abfrage: 
 
-    { *Feldname* = *Wert* }
+	Abfragesyntax:
 
-Im Feldnamen können alle konfigurierten Felder für Organisationseinheiten genutzt werden. Werden mehrere Organisationen gefunden wird die erste genommen, wobei keine Reihenfolge garantiert ist.
+		{ *Feldname* = *Wert* }
 
-```xml
-    <OneOffixxConnectBatch>
-    	<Entries>
-    		<OneOffixxConnect>
-    			<Arguments>
-    				<Profile>
-					<OrganizationId>{Org.Name = IT}</OrganizationId>
-				</Profile>
-    			</Arguments>
-    			...
-    		</OneOffixxConnect>
-    	</Entries>
-    </OneOffixxConnectBatch>
-``` 
+	Im Feldnamen können alle konfigurierten Felder für Organisationseinheiten genutzt werden. Werden mehrere Organisationen gefunden wird die erste genommen, wobei keine Reihenfolge garantiert ist.
 
+	```xml
+		<OneOffixxConnectBatch>
+			<Entries>
+				<OneOffixxConnect>
+					<Arguments>
+						<Profile>
+						<OrganizationId>{Org.Name = IT}</OrganizationId>
+					</Profile>
+					</Arguments>
+					...
+				</OneOffixxConnect>
+			</Entries>
+		</OneOffixxConnectBatch>
+	``` 
+)

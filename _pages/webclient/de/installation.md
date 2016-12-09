@@ -4,73 +4,77 @@ title: Installation
 permalink: "webclient/de/installation/"
 ---
 
-OneOffixx Connect kann sowohl von der Client-Applikation als auch über auf dem Server verarbeitet werden. 
+## TodoS
 
-Das Format ist hierbei gleich, wobei einige Operation nur auf auf dem Client selbst ausführbar sind, z.B. das Starten von Microsoft Word nach Erstellung eines Dokuments. 
+[//]: # (
+	OneOffixx Connect kann sowohl von der Client-Applikation als auch über auf dem Server verarbeitet werden. 
 
-{% include alert.html type="info" text="Zum Testen der Schnittstelle steht Ihnen auch der <b><a href='https://github.com/Sevitec/oneoffixx-connectclient/releases/latest'>OneOffixx Connect Client (Windows)</a></b> zur Verfügung." %}
+	Das Format ist hierbei gleich, wobei einige Operation nur auf auf dem Client selbst ausführbar sind, z.B. das Starten von Microsoft Word nach Erstellung eines Dokuments. 
 
-### Connect Verarbeitung auf dem Client {% include anchor.html name="client" %}
+	{% include alert.html type="info" text="Zum Testen der Schnittstelle steht Ihnen auch der <b><a href='https://github.com/Sevitec/oneoffixx-connectclient/releases/latest'>OneOffixx Connect Client (Windows)</a></b> zur Verfügung." %}
 
-Die Fachapplikation ruft OneOffixx über einer der folgenden Methoden auf:
+	### Connect Verarbeitung auf dem Client {% include anchor.html name="client" %}
 
-* Via Prozess: "c:\\program…\OneOffixx.exe /connector "XYZDatei.xml"
-* Via Protokollhandler: oneoffixx:connector="XYZDatei.xml"
-* Via Shell: File Association *.ooconnect, *oocx, *oock
+	Die Fachapplikation ruft OneOffixx über einer der folgenden Methoden auf:
 
-__ACHTUNG__: OneOffixx löscht nach der Verarbeitung automatisch das Connect File. Wird das zusätzliche Argument __/keepConnector_ übergeben kann dieses Verhalten unterdrückt werden. Wird via Shell aufgerufen, dann muss in diesem Fall die Endung oock verwendet werden.
+	* Via Prozess: "c:\\program…\OneOffixx.exe /connector "XYZDatei.xml"
+	* Via Protokollhandler: oneoffixx:connector="XYZDatei.xml"
+	* Via Shell: File Association *.ooconnect, *oocx, *oock
 
-### Connect Verarbeitung auf dem Server {% include anchor.html name="server" %}
+	__ACHTUNG__: OneOffixx löscht nach der Verarbeitung automatisch das Connect File. Wird das zusätzliche Argument __/keepConnector_ übergeben kann dieses Verhalten unterdrückt werden. Wird via Shell aufgerufen, dann muss in diesem Fall die Endung oock verwendet werden.
 
-Im Falle der serverseitigen Verarbeitung wird ein extra API Benutzer benötigt, welcher in der Server Konfiguration hinterlegt werden muss.
-Zur Kommunikation zwischen Aufrufer und der serverseitigen REST-Schnittstelle wird das HTTP Protokoll verwenden. Die Authentifizierung des Clients erfolgt durch HTTP Basic Authentifizierung, daher wird empfohlen die Kommunikation zwischen Client und Server durch SSL abzusichern.
-Um OneOffixx Connect auf dem Server zu verarbeiten muss vorher ein „client“ auf der OneOffixx Server Seite konfiguriert werden. Über diese „client“-Konfiguration wird auch der Name und das Passwort für die Authentifizierung festgelegt.
-Das Connect-XML muss als HTTP POST samt dem „Authorization“-Header gesendet werden. Bei einer erfolgreichen Verarbeitung wird das erzeugte Dokument zurück gegeben.
-Beispiel: 
+	### Connect Verarbeitung auf dem Server {% include anchor.html name="server" %}
 
-    HTTP POST "https://{server}/api/V1/connect"
+	Im Falle der serverseitigen Verarbeitung wird ein extra API Benutzer benötigt, welcher in der Server Konfiguration hinterlegt werden muss.
+	Zur Kommunikation zwischen Aufrufer und der serverseitigen REST-Schnittstelle wird das HTTP Protokoll verwenden. Die Authentifizierung des Clients erfolgt durch HTTP Basic Authentifizierung, daher wird empfohlen die Kommunikation zwischen Client und Server durch SSL abzusichern.
+	Um OneOffixx Connect auf dem Server zu verarbeiten muss vorher ein „client“ auf der OneOffixx Server Seite konfiguriert werden. Über diese „client“-Konfiguration wird auch der Name und das Passwort für die Authentifizierung festgelegt.
+	Das Connect-XML muss als HTTP POST samt dem „Authorization“-Header gesendet werden. Bei einer erfolgreichen Verarbeitung wird das erzeugte Dokument zurück gegeben.
+	Beispiel: 
 
-    Headers: 
-    Authorization Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+		HTTP POST "https://{server}/api/V1/connect"
 
-Im Body das OneOffixxConnect XML hinterlegen.
+		Headers: 
+		Authorization Basic dXNlcm5hbWU6cGFzc3dvcmQ=
 
-* Der Basic Authentication-Header ist im Beispiel "username:password" als Base64 encodiert.
+	Im Body das OneOffixxConnect XML hinterlegen.
 
-Optionale Parameter:
+	* Der Basic Authentication-Header ist im Beispiel "username:password" als Base64 encodiert.
 
-TenantId & DatasourceId - siehe OneOffixx.config 
+	Optionale Parameter:
 
-    HTTP POST "https://{server}/api/V1/connect?tenantId={{GUID}}&datasourceId={{GUID}}"
+	TenantId & DatasourceId - siehe OneOffixx.config 
 
-Beispiel:
+		HTTP POST "https://{server}/api/V1/connect?tenantId={{GUID}}&datasourceId={{GUID}}"
 
-    HTTP POST "https://{server}/api/V1/connect?tenantId=f4edff9a-18ab-4a24-9532-8497113e094c&datasourceId=331ece2a-cfba-47f6-8434-8c2d13c50678
+	Beispiel:
 
-## Ergebnis
+		HTTP POST "https://{server}/api/V1/connect?tenantId=f4edff9a-18ab-4a24-9532-8497113e094c&datasourceId=331ece2a-cfba-47f6-8434-8c2d13c50678
 
-Das Ergebnis eines OneOffixx Connect Aufrufs wird auch als XML-File an der gleichen Stelle wie das Input-XML abgelegt. Der Filename hat die folgende Form:
+	## Ergebnis
 
-result\_*NameInputfile*\_*Zeitstempel*.xml
+	Das Ergebnis eines OneOffixx Connect Aufrufs wird auch als XML-File an der gleichen Stelle wie das Input-XML abgelegt. Der Filename hat die folgende Form:
 
-Standardmässig wird das File nur bei einem Fehler erstellt. 
+	result\_*NameInputfile*\_*Zeitstempel*.xml
 
-Mit dem Argument /CreateConnectorResult, wird das File immer erzeugt, mit dem Argument /CreateConnectorResultOnError false wird die Funktionalität ganz deaktiviert.
+	Standardmässig wird das File nur bei einem Fehler erstellt. 
 
-Alternativ können die Parameter im Dokument geändert werden.
+	Mit dem Argument /CreateConnectorResult, wird das File immer erzeugt, mit dem Argument /CreateConnectorResultOnError false wird die Funktionalität ganz deaktiviert.
 
-Das Fehlerfile hat das folgende Format:
+	Alternativ können die Parameter im Dokument geändert werden.
 
-    <?xml version="1.0" encoding="utf-16"?>
-    <OneOffixxConnectResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <Result><!-- Success oder Error --></Result>
-      <Message><!-- Exception bei einem Fehler --></Message>
-      <Details>
-        <InputFile><!-- Pfad zum Input-File --></InputFile>
-        <Input><!-- Input-File --></Input>
-        <Connect><!-- Connect-File --></Connect>
-        <InterfaceType><!-- Interface-Typ für Tranformation (z. Bsp. Klib) --></InterfaceType>
-        <InterfaceVersion><!-- Interface-Version --></InterfaceVersion>
-        <InterfaceConfiguration><!-- Interface-Konfiguration (Transformation) --></InterfaceConfiguration>
-      </Details>
-    </OneOffixxConnectResult>
+	Das Fehlerfile hat das folgende Format:
+
+		<?xml version="1.0" encoding="utf-16"?>
+		<OneOffixxConnectResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		  <Result><!-- Success oder Error --></Result>
+		  <Message><!-- Exception bei einem Fehler --></Message>
+		  <Details>
+			<InputFile><!-- Pfad zum Input-File --></InputFile>
+			<Input><!-- Input-File --></Input>
+			<Connect><!-- Connect-File --></Connect>
+			<InterfaceType><!-- Interface-Typ für Tranformation (z. Bsp. Klib) --></InterfaceType>
+			<InterfaceVersion><!-- Interface-Version --></InterfaceVersion>
+			<InterfaceConfiguration><!-- Interface-Konfiguration (Transformation) --></InterfaceConfiguration>
+		  </Details>
+		</OneOffixxConnectResult>
+)
