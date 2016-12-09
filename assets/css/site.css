@@ -17,8 +17,13 @@ body {
 
 .navbar-brand .one {
     color: #1C1C1B;
+	margin-top: 5px;
 }
 
 .navbar-brand .connexx {
     color: #52AE32;
+	margin-top: 5px;
+}
+.navbar-brand > img{
+	display: inline;
 }
