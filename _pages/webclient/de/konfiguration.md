@@ -22,10 +22,10 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   * __Instanz Hinzufügen__  
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
-  <br />
+  <br /><br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br />
   <br />
-  Per Mausklick oder mit shift und Enter kann der gewünschte Addintyp ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
+  Per Mausklick oder mit Shift und Enter kann der gewünschte Addintyp ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
   <br /><br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")
   <br /><br />
@@ -34,13 +34,14 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   * __Neue Guppe erstellen__  
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden
-
+  
 ## 2. Instanz Details
   Die Detailansicht der Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
   <br /><br />
   ![X]({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin")
   <br /><br />
   Neu hinzugekommen ist der Button "Logik Starten mit Parametern".
+  
   * __Name__  
   Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
   
@@ -57,9 +58,9 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
     * __Instanz kopieren__  
 	Kopiert die aktuelle ausgewählte Instanz.
 	* __Instanz löschen__  
-	Löscht die aktuell ausgewählte Instanz.
+	Löscht die aktuell ausgewählte Instanz. __Log Einträge und Transaktionen werden nicht gelöscht.__
 	* __Logik starten/Event auslösen__  
 	Lösst den Event aus/startet die Logik.
-	* __Logik tarten mit Parametern__  
-
+	* __Logik starten mit Parametern__  
+	Der Button "Logik starten mit Parametern" ist nur bei Logik Addins vorhanden. Mit diesem Button kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von diesem auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
 
