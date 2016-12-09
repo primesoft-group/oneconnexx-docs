@@ -23,7 +23,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * __Instanz Hinzufügen__  
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist.
   
-![X] ({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")
+![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")
   
   * __Neue Guppe erstellen__
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden
