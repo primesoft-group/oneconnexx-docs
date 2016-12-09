@@ -35,5 +35,5 @@ body {
 }
 
 .dropdown-menu > li{
-	background-color: #52AE32;
+	background-color: #52AE32 !important;	
 }
