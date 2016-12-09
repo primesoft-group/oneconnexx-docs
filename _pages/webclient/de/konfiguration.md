@@ -13,34 +13,35 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
 
-__1. Instanz Verwalten__
+## 1. Instanz Verwalten
 
-  * Einstellungen neu laden
+  __* Einstellungen neu laden__
   
     Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 	
-  * Im Service Speichern
+  __* Im Service Speichern__
 	
 	Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung diese dann zu speichern muss man diese Schaltfläche anwählen.
   
-  * Cache Löschen
+  __* Cache Löschen__
   
 	Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (Ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   
-  * Instanz Hinzufügen
+  __* Instanz Hinzufügen__
   
 	Über diese Schaltfläche kann eine neue Instanz konfiguriert werden.
   
-__2. Instanz Details__
-  * Name
+##2. Instanz Details
+
+  __* Name__
   
-  * Addin
+  __* Addin__
   
-  * Dateipfad
+  __* Dateipfad__
   
-  * Aktiv
+  __* Aktiv__
   
-  * Buttons    
+  __* Buttons__    
 
 
 Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
