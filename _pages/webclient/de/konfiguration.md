@@ -14,6 +14,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
 
 __1. Instanz Verwalten__
+
   * Einstellungen neu laden
   
     Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
