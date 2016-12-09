@@ -35,7 +35,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * __Neue Guppe erstellen__  
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden
   
-## 2. Instanz Details
+### 2. Instanz Details
   Die Detailansicht der Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
   <br /><br />
   ![X]({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin")
@@ -66,15 +66,16 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 	<br /><br />
 	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
 	
-## 3. Instanzen Übersicht.
+### 3. Instanzen Übersicht.
   Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
   
   * __Gruppierung nach Gruppe__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Grupieren nach Gruppen")
-  
+  <br /><br />
+  Sind die inszanzen nicht nach Gruppen Gruppiert, so kann auch keine neue Gruppe erstellt werden.
   * __Gruppierung nach AddIntyp__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
   
-## 4. Instanzparameter
+### 4. Instanzparameter
 
-## 5. Abonnenten/Abonnierte Ereignisse
+### 5. Abonnenten/Abonnierte Ereignisse
