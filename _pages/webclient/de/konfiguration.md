@@ -19,7 +19,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 	
   * __Im Service Speichern__  
-  Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung diese dann zu speichern muss man diese Schaltfläche anwählen.  
+  Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchrnoisiert. 
   
   * __Cache Löschen__  
   Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (Ungespeicherte Einstellungen und Konfigurationen) gelöscht.
