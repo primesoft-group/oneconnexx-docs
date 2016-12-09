@@ -9,10 +9,6 @@ permalink: "webclient/de/konfiguration/"
 	
 	## Überblick {% include anchor.html name="overview" %}
 	
-	
-
-
-	
 	Ein __"OneOffixxConnectBatch"__ umfasst eins oder mehrere __"OneOffixxConnect"__ "Entries". 
 
 	Das __"OneOffixxConnectBatch"__ Element kann __"Settings"__ und __"Commands"__ enthalten, welche sich global auf alle "Entries" auswirken bzw. gesonderte Funktionalitäten (wie z.B. das Zusammenfassen von Dokumenten) ermöglichen.
