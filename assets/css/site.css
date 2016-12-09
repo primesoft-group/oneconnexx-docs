@@ -33,3 +33,7 @@ body {
 .color-accent{
 	background-color: #52AE32;
 }
+
+.dropdown-menu > li{
+	background-color: #52AE32;
+}
