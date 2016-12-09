@@ -2,7 +2,6 @@
 layout: page
 title: Lizenz
 permalink: "webclient/de/lizenz/"
-subtitle: "//OneOffixxConnectBatch/Entries/OneOffixxConnect/Arguments"
 ---
 
 Über die Connect Argumente kann die Sprache, das Template bzw. das zu veränderte Dokument genau beschrieben werden.
