@@ -28,4 +28,8 @@ body {
 }
 .navbar-brand > img{
 	display: inline;
+	height: 21px;
+}
+.color-accent{
+	background-color: #52AE32;
 }
