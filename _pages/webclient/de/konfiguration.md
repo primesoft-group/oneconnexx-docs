@@ -37,7 +37,7 @@ Wobei die hinterste Nummer der Major-Version entspricht. Die Minor Version steht
 
 ## OneOffixx Connect Batch {% include anchor.html name="oneoffixx-connect-batch" %}
 
-![x]({{ site.baseurl }}/assets/content-images/webclient/de/instanzkonfig_mainscreen.png "Schema")
+![x]({{ site.baseurl }}/assets/content-images/webclient/de/instanzkonfig-mainscreen.png "Schema")
 
 Enthält eine Batch Liste mit OneOffixx Connect Strukturen. Ein OneOffixx Connect entspricht einem OneOffixx Dokument.
 
