@@ -24,12 +24,12 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 
 __Aufbau einer Transaktion__
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")  
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/transaction.png "Aufbau Transaktion")  
 
 ### 1. Schnitstelle  
   Die Schnittstelle stellt die übergeordnete logische Gruppierung dar. Auf gleicher Ebene wird Angezeigt, wie viele Fehlerhafte Transaktionen vorhanden sind
 
-  ### 2. Endpunkt
+### 2. Endpunkt
   Der Endpunkt ist ein Optionaler Parameter welcher in der AddIn-Konfiguration definiert werden kann. Er dient ebenfalls zur logischen Strukturierung der AddIns/Transaktionen und hat keinen Einfluss auf Funktionalitäten in der Software.
   
 ### 3. Zeitstempel
@@ -41,6 +41,8 @@ __Aufbau einer Transaktion__
 ### 5. Nachricht
   Die Nachricht gibt weiter Details über die Geschrieben Transaktion. Bei erfolgreicher Ausführung was ausgeführt wurde, bei nicht erfolgreicher Ausführung, was fehlgeschlagen ist.
   
+  
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")  
 ## __Schnitstellenkonfiguration__
 
 ## __Regeln__
