@@ -88,6 +88,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * Ein LogikAddIn kann mit einem oder mehreren anderen LogikAddIn verbunden werden
   * Ein LogikAddIn kann mit einem oder mehreren EventAddIn verbunden werden 
   * Ein EventAddIn kann __nicht__ mit einem anderen EventAddIn verbunden werden
+  
   Die Ansicht "Abonnierte Ereignisse" erscheint aufgrund des dritten Grundsatzes nur bei LogikAddins.
 
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png)
