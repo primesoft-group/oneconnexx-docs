@@ -95,5 +95,5 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png)
   
-  Mit einem Klick auf das grüne Plus kann ein neues Abonniertes Ereignis hinzugefügt werden. 
+  Mit einem Klick auf das grüne Plus kann ein neues abonniertes Ereignis hinzugefügt werden. 
   Abonniert eine Instanz eine andere Instanz/Ereignis, dann wird sobald das abonnierte Ereignis ausgelöst wurde, die abonnierende Instanz ausgelöst.
