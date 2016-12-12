@@ -52,7 +52,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Der Pfad, in welchem Verzeichnis des Hosts die Addindaten liegen.
   
   * __Aktiv__  
-  Checkbox ob die Instanz aktiv sein soll oder nicht.
+  Checkbox ob die Instanz aktiv sein soll oder nicht. Ist sie nicht aktiv wird bei einem Aufruf des Addins nichts gemacht. Nur wenn es manuell ausgeführt wird, wird das Addin auch ausgeführt wenn es nicht aktiv ist.
   
   * __Buttons__  
     * __Instanz kopieren__  
@@ -69,13 +69,24 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 ### 3. Instanzen Übersicht.
   Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
   
-  * __Gruppierung nach Gruppe__  
+  * __Ordnung nach Gruppe__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Grupieren nach Gruppen")
   <br /><br />
-  Sind die inszanzen nicht nach Gruppen Gruppiert, so kann auch keine neue Gruppe erstellt werden.
-  * __Gruppierung nach AddIntyp__  
+  Sind die Instanzen nicht nach Gruppen geordnet, so kann auch keine neue Gruppe erstellt werden.
+  * __Ordnung nach AddIntyp__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
   
 ### 4. Instanzparameter
+  Bei den Instanzparametern gibt es zwei verschieden: die optionalen und die zwingenden.
+  Im obigen Beispiel ist z.B. der Parameter "interval" zwingend. Zu erkennen ist dies an der roten Umrandung. Ohne diese Parameter kann die Instanz nicht ausgeführt werden.
+  Die Optionalen sind nicht zwingend für das Ausführen der Instanz.
 
-### 5. Abonnenten/Abonnierte Ereignisse
+  ### 5. Addins miteinander verbinden
+  
+  AddIns können miteinander verbunden werden. Dazu gibt es folgende Grundsätze:
+  
+  * Ein LogikAddIn kann mit einem oder mehreren anderen LogikAddIn verbunden werden
+  * Ein LogikAddIn kann mit einem oder mehreren EventAddIn verbunden werden 
+  * Ein EventAddIn kann nicht mit einem anderen EventAddIn verbunden werden
+
+  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png)
