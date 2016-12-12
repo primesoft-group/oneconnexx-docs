@@ -3,7 +3,7 @@ layout: page
 title: Log
 permalink: "webclient/de/log/"
 ---
-## Echtzeit
+## __Echtzeit__
 
 Die Ansicht «Echtzeitlog» bietet eine Übersicht über die Logeinträge welche Aktuell geschrieben werden. Der Aktualisierungszyklus liegt bei einer Sekunde. Neue Einträge werden unten an der Liste angefügt und der Bildlauf automatisch aktualisiert, d.h. das Fenster scrollt automatisch nach unten um die aktuellsten Logeinträge anzuzeigen
 
@@ -30,7 +30,7 @@ Durch deaktivieren dieser Option wird der automatische Bildlauf gestoppt. Die Lo
 Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht wird, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
 Das Löschen wirkt sich nicht auf die Einträge in der Logdatei aus.
 
-## Auswertung
+## __Auswertung__
 
 In der Ansicht «Auswertung» können die gesamten im Logverzeichnis liegenden Logeinträge gefiltert werden. Im Unterschied zum Echtzeitlog werden die neu geschriebenen Logs nicht automatisch geladen. Die Schaltfläche «Log Aktualisieren» erlaubt aber jederzeit eine Aktualisierung der Liste. Der Filtervorgang wird automatisch ausgeführt, sobald sich ein Wert in den Filterboxen ändert. (Verzögerung ca. 1.5 Sekunden)
 
