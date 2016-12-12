@@ -54,7 +54,7 @@ Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschrä
 
 ### 4. Addin/Instanz
 
-Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt.
+Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzn aus/eingeklappt werden.
 
 ### 5. Steuerschaltflächen  
   * __Filter Ausblenden__  
