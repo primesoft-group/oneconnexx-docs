@@ -52,12 +52,14 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
   Mit dem Plus können alle Schnittstellen ausgeklappt werden.
   mit dem Minus können alle Schnittstellen eingeklappt werden.
   
-### 3. Nur Fehler Anzeigen
+### 3. Nur Fehler anzeigen
   Zeigt nur die Fehlerhaften Transaktionen an. Schnittstellen welche keine Fehlerhafte Transaktionen enthalten werden automatisch ausgeblendet
   
-### 4. Transaktion Löschen
-  Mit dieser Schaltfläche kann eine Transaktion gelöscht werden. Es öffnet sich ein Dialog mit der Aufforderung zur Bestätigung des Löschens. Ein Klick auf die Schaltfläche «Löschen» führt den Befehl zum Löschen aus. Ein Klick auf die Schaltfläche Abbrechen führt wieder zurück auf die Übersicht Seite
+### 4. Transaktion löschen
+  Mit dieser Schaltfläche kann eine Transaktion gelöscht werden. Es öffnet sich ein Dialog mit der Aufforderung zur Bestätigung des Löschens. Ein Klick auf die Schaltfläche «Löschen» führt den Befehl zum Löschen aus. Ein Klick auf die Schaltfläche Abbrechen führt wieder zurück auf die Übersichtseite
   
 ## __Schnitstellenkonfiguration__
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/interfaceconfiguration.png "Schnittstellenkonfiguration")
 
 ## __Regeln__
