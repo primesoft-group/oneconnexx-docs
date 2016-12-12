@@ -93,7 +93,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   Die Ansicht "Abonnierte Ereignisse" erscheint aufgrund des dritten Grundsatzes nur bei LogikAddins.
 
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png)
+  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png "Ereignisse Abonnieren")
   
   Mit einem Klick auf das grüne Plus kann ein neues abonniertes Ereignis hinzugefügt werden. 
   Abonniert eine Instanz eine andere Instanz/Ereignis, dann wird sobald das abonnierte Ereignis ausgelöst wurde, die abonnierende Instanz ausgelöst.
