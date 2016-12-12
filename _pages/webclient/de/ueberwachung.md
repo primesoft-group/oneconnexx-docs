@@ -22,7 +22,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 
 ### Aufbau einer Transaktion
 
-  1. __Schnitstelle  
+  __1. Schnitstelle__  
   
   2. __Endpunkt__
   
