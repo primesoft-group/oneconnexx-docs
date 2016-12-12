@@ -81,7 +81,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Im obigen Beispiel ist z.B. der Parameter "interval" zwingend. Zu erkennen ist dies an der roten Umrandung. Ohne diese Parameter kann die Instanz nicht ausgeführt werden.
   Die Optionalen sind nicht zwingend für das Ausführen der Instanz.
 
-  ### 5. Addins miteinander verbinden
+### 5. Addins miteinander verbinden
   
   AddIns können miteinander verbunden werden. Dazu gibt es folgende Grundsätze:
   
