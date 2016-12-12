@@ -40,10 +40,10 @@ In der Ansicht «Auswertung» können die gesamten im Logverzeichnis liegenden L
 
   Mit dem Datumsfilter wird die Zeitspanne der Logeinträge eingeschränkt. 
   
-### 2. Textsuche
+### 2. Textfilter
 
-Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten. Das kann ein normales Wort sein oder ein sogenannter Regulärer Ausdruck.
-Folgende Links enthalten weiterführende Informationen diesbezüglich:  
+Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten. 
+Durch das Aktivieren der erweiterten Suche können Reguläre Ausdrücke verwendet werden. Folgende Links enthalten weiterführende Informationen diesbezüglich:  
 
 * <https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck>  
 * <http://regexr.com/>  
@@ -54,7 +54,7 @@ Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschrä
 
 ### 4. Addin/Instanz
 
-Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzn aus/eingeklappt werden.
+Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden.
 
 ### 5. Steuerschaltflächen  
   * __Filter Ausblenden__  
