@@ -58,9 +58,24 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 ### 4. Transaktion löschen
   Mit dieser Schaltfläche kann eine Transaktion gelöscht werden. Es öffnet sich ein Dialog mit der Aufforderung zur Bestätigung des Löschens. Ein Klick auf die Schaltfläche «Löschen» führt den Befehl zum Löschen aus. Ein Klick auf die Schaltfläche Abbrechen führt wieder zurück auf die Übersichtseite
   
-## __Schnitstellenkonfiguration__
+## __Schnittstellenkonfiguration__
 In der Ansicht «Schnittstellen» können die Schnittstellen konfiguriert werden. Eine Schnittstelle dient dazu, die konfigurierten AddIn Instanzen zu Ordnen und Gruppieren.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/interfaceconfiguration.png "Schnittstellenkonfiguration")
+
+In der Linken Ansicht befinden sich die Schnittstellen und die zugeordneten AddIns, in der rechten die konfigurierten AddIns welche keiner Schnittstelle zugeordnet sind
+
+### 1. Textsuche
+Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
+Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
+
+### 2. Steuerschaltflächen
+Mit den Konfigurationsschaltflächen können die Schnittstellen verwaltet und konfiguriert werden
+Mit dem Symbol links kann eine Schnittstelle gelöscht werden. Eine Schnittstelle kann nur gelöscht werden, wenn keine Transaktionen oder Regeln dazu vorhanden sind. Die Untergeordneten AddIns werden automatisch wieder in die rechte Ansicht verschoben.
+Mit dem Symbol in der Mitte kann der Name einer Schnittstelle bearbeitet werden.
+Mit dem Symbol rechts kann eine neue Schnittstelle hinzugefügt werden.
+Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die linke gezogen und so den Schnittstellen zugeordnet und beliebig verschoben werden.
+Einer Schnittstelle können beliebig viele AddIns hinzugefügt werden
+
 
 ## __Regeln__
