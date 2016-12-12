@@ -27,7 +27,17 @@ Durch deaktivieren dieser Option wird der automatische Bildlauf gestoppt. Die Lo
 
 ### 3. Anzeige Löschen
 
-Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht werden, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
+Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht wird, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
 Das Löschen wirkt sich nicht auf die Einträge in der LogDatei aus.
 
 ## Auswertung
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterlog.png "Log Auswertung")
+
+### 1. Datumsfilter
+
+### 2. Textsuche
+
+### 3. Logstufe
+
+### 4. Addin/Instanz
