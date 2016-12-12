@@ -24,6 +24,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 
 __Aufbau einer Transaktion__
 
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")
 ### 1. Schnitstelle
   
 ### 2. Endpunkt
