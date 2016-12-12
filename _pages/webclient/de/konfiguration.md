@@ -80,6 +80,8 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Bei den Instanzparametern gibt es zwei verschieden: die optionalen und die zwingenden.
   Im obigen Beispiel ist z.B. der Parameter "interval" zwingend. Zu erkennen ist dies an der roten Umrandung. Ohne diese Parameter kann die Instanz nicht ausgeführt werden.
   Die Optionalen sind nicht zwingend für das Ausführen der Instanz.
+  
+  Die Parameter unterscheiden sich von Addin zu Addin
 
 ### 5. Addins miteinander verbinden
   
