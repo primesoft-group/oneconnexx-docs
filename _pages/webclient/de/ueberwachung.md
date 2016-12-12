@@ -46,7 +46,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 
 ### 1. Textfilter
   Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
-  Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
+  Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit reguläre Ausdrücke zu verwenden 
 
 ### 2. Alle ausklappen/einklappen
   Mit dem Plus können alle Schnittstellen ausgeklappt werden.
