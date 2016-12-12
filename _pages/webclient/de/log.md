@@ -21,10 +21,13 @@ Folgende Links enthalten weiterführende Informationen diesbezüglich:
 * <https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck>  
 * <http://regexr.com/>  
 
-
 ### 2. Automatischer Bildlauf
+
+Durch deaktivieren dieser Option wird der automatische Bildlauf gestoppt. Die Logeinträge werden weiterhin automatisch der Liste hinzugefügt, jedoch nicht mehr Automatisch die aktuellsten Logeinträge angezeigt.
 
 ### 3. Anzeige Löschen
 
+Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht werden, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
+Das Löschen wirkt sich nicht auf die Einträge in der LogDatei aus.
 
 ## Auswertung
