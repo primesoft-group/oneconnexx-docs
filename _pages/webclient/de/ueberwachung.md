@@ -79,7 +79,9 @@ Mit dem Symbol in der Mitte kann der Name einer Schnittstelle bearbeitet werden.
 Mit dem Symbol rechts kann eine neue Schnittstelle hinzugefügt werden.
 
 Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die linke gezogen und so den Schnittstellen zugeordnet und beliebig verschoben werden.
-Einer Schnittstelle können beliebig viele AddIns hinzugefügt werden
+* Einer Schnittstelle können beliebig viele AddIns hinzugefügt werden  
+* Einer Schnittstelle kann keine weitere Schnittstelle untergeordnet sein.  
+* AddIns können nur Schnittstellen untergeordnet sein, ein AddIn als Unterelement eines AddIn ist nicht möglich.  
 
 
 ## __Regeln__
