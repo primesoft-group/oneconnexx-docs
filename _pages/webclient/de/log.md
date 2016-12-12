@@ -15,6 +15,12 @@ Die Ansicht «Echtzeitlog» bietet eine Übersicht über die Logeinträge welche
 
 ### 1. Textfilter
 
+Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten. Das kann ein normales Wort sein oder ein sogenannter Regulärer Ausdruck.
+Folgende Links enthalten weiterführende Informationen diesbezüglich:
+* https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck
+* http://regexr.com/
+
+
 ### 2. Automatischer Bildlauf
 
 ### 3. Anzeige Löschen
