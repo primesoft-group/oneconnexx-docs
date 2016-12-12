@@ -9,9 +9,9 @@ Die Ansicht «Echtzeitlog» bietet eine Übersicht über die Logeinträge welche
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realtimelog.png "Realtime Log")
 
-__Aufbau eines Logeintrags__
+ __Aufbau eines Logeintrags__
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logentry.png "Aufbau Logeintrag")
+ ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logentry.png "Aufbau Logeintrag")
 
 ### 1. Textfilter
 
