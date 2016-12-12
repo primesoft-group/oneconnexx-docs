@@ -11,6 +11,6 @@ __Aufbau eines Logeintrags__
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logentry.png "Aufbau Logeintrag")
 
-![X] ({{ site.baseUrl }}/assets/content-images/webclient/de/realtimelog.png "Realtime Log")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realtimelog.png "Realtime Log")
 
 ### Auswertung
