@@ -74,7 +74,6 @@ Mit den Konfigurationsschaltflächen können die Schnittstellen verwaltet und ko
 
 * Mit dem Symbol links kann eine Schnittstelle gelöscht werden. Eine Schnittstelle kann nur gelöscht werden, wenn keine Transaktionen oder Regeln dazu vorhanden sind. Die Untergeordneten AddIns werden automatisch wieder in die rechte Ansicht verschoben.  
 * Mit dem Symbol in der Mitte kann der Name einer Schnittstelle bearbeitet werden.  
-
 * Mit dem Symbol rechts kann eine neue Schnittstelle hinzugefügt werden.
 
 Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die linke gezogen und so den Schnittstellen zugeordnet und beliebig verschoben werden.  
@@ -83,5 +82,5 @@ Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die
 * Einer Schnittstelle kann keine weitere Schnittstelle untergeordnet sein.  
 * AddIns können nur Schnittstellen untergeordnet sein, ein AddIn als Unterelement eines AddIn ist nicht möglich.  
 
-
 ## __Regeln__
+In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittstelle konfiguriert werden.
