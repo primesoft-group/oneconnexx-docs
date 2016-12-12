@@ -50,7 +50,9 @@ __Steuerschaltflächen__
   Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
 
 ### 2. Alle ausklappen/einklappen
-
+  Mit dem Plus können alle Schnittstellen ausgeklappt werden.
+  mit dem Minus können alle Schnittstellen eingeklappt werden.
+  
 ### 3. Nur Fehler Anzeigen
   Zeigt nur die Fehlerhaften Transaktionen an. Schnittstellen welche keine Fehlerhafte Transaktionen enthalten werden automatisch ausgeblendet
   
