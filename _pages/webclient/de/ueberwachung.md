@@ -20,17 +20,17 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 
 ## __Übersicht__
 
-###__Aufbau einer Transaktion  
+###__Aufbau einer Transaktion__
 
-  ### 1. Schnitstelle  
+### 1. Schnitstelle
   
-  ### 2. Endpunkt  
+### 2. Endpunkt
   
-  ### 3. Zeitstempel  
+### 3. Zeitstempel
   
-  ### 4. Status  
+### 4. Status
   
-  ### 5. Nachricht  
+### 5. Nachricht
   
 ## __Schnitstellenkonfiguration__
 
