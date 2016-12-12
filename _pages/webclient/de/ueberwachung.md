@@ -7,6 +7,7 @@ permalink: "webclient/de/ueberwachung/"
 Die Kategorie Überwachung besteht aus den drei Ansichten «Übersicht», «Schnittstellen» und «Regeln». Die Hauptaufgabe der Überwachung ist es die AddIns zu verwalten, Logisch zu sortieren und die von den AddIns geschriebenen Transaktionen übersichtlich darzustellen. Weiter können Regeln zu den Transaktionen definiert werden.
 In der Übersicht werden die von den AddIns geschriebenen Transaktionen übersichtlich Dargestellt. Sie sind nach Schnittstelle gruppiert und alphabetisch sortiert und innerhalb der Gruppe nach Endpunkt Alphabetisch Sortiert.
 Transaktionen werden geschrieben, wenn:  
+
   * Ein AddIn einen aufgerufenen Vorgang erfolgreich ausgeführt hat.  
   * Ein AddIn einen aufgerufenen Vorgang nicht erfolgreich ausführen konnte.  
 
