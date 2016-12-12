@@ -28,7 +28,7 @@ Durch deaktivieren dieser Option wird der automatische Bildlauf gestoppt. Die Lo
 ### 3. Anzeige Löschen
 
 Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht wird, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
-Das Löschen wirkt sich nicht auf die Einträge in der LogDatei aus.
+Das Löschen wirkt sich nicht auf die Einträge in der Logdatei aus.
 
 ## Auswertung
 
@@ -57,12 +57,12 @@ Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschrä
 Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt.
 
 ### 5. Steuerschaltflächen  
-  * Filter Ausblenden  
+  * __Filter Ausblenden__  
     Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden
 	
-  * Log Aktualisieren  
+  * __Log Aktualisieren__  
     Lädt die neuesten Logeinträge aus den Logfiles
 	
-  * Filter zurücksetzen  
+  * __Filter zurücksetzen__  
     Setzt alle Filterkriterien auf ihren Standardwert zurück
   
