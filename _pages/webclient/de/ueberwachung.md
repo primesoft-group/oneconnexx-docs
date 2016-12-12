@@ -41,8 +41,22 @@ __Aufbau einer Transaktion__
 ### 5. Nachricht
   Die Nachricht gibt weiter Details über die Geschrieben Transaktion. Bei erfolgreicher Ausführung was ausgeführt wurde, bei nicht erfolgreicher Ausführung, was fehlgeschlagen ist.
   
+__Steuerschaltflächen__
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")
+
+### 1. Textfilter
+  Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
+  Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
+
+### 2. Alle ausklappen/einklappen
+
+### 3. Nur Fehler Anzeigen
+  Zeigt nur die Fehlerhaften Transaktionen an. Schnittstellen welche keine Fehlerhafte Transaktionen enthalten werden automatisch ausgeblendet
   
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")  
+### 4. Transaktion Löschen
+  Mit dieser Schaltfläche kann eine Transaktion gelöscht werden. Es öffnet sich ein Dialog mit der Aufforderung zur Bestätigung des Löschens. Ein Klick auf die Schaltfläche «Löschen» führt den Befehl zum Löschen aus. Ein Klick auf die Schaltfläche Abbrechen führt wieder zurück auf die Übersicht Seite
+  
 ## __Schnitstellenkonfiguration__
 
 ## __Regeln__
