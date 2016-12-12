@@ -26,7 +26,7 @@ __Aufbau einer Transaktion__
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/transaction.png "Aufbau Transaktion")  
 
-### 1. Schnitstelle  
+### 1. Schnittstelle  
   Die Schnittstelle stellt die übergeordnete logische Gruppierung dar. Auf gleicher Ebene wird Angezeigt, wie viele Fehlerhafte Transaktionen vorhanden sind
 
 ### 2. Endpunkt
