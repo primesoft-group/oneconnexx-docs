@@ -87,6 +87,10 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   
   * Ein LogikAddIn kann mit einem oder mehreren anderen LogikAddIn verbunden werden
   * Ein LogikAddIn kann mit einem oder mehreren EventAddIn verbunden werden 
-  * Ein EventAddIn kann nicht mit einem anderen EventAddIn verbunden werden
+  * Ein EventAddIn kann __nicht__ mit einem anderen EventAddIn verbunden werden
+  Die Ansicht "Abonnierte Ereignisse" erscheint aufgrund des dritten Grundsatzes nur bei LogikAddins.
 
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png)
+  
+  Mit einem Klick auf das grüne Plus kann ein neues Abonniertes Ereignis hinzugefügt werden. 
+  Abonniert eine Instanz eine andere Instanz/Ereignis, dann wird sobald das abonnierte Ereignis ausgelöst wurde, die abonnierende Instanz ausgelöst.
