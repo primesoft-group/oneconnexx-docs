@@ -14,14 +14,14 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * __Einstellungen neu laden__  
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 	
-  * __Im Service Speichern__  
-  Die getätigten änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
+  * __Im Service speichern__  
+  Die getätigten Änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
   
-  * __Cache Löschen__  
-  Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (Ungespeicherte Einstellungen und Konfigurationen) gelöscht.
+  * __Cache löschen__  
+  Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   
-  * __Instanz Hinzufügen__  
-  Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
+  * __Instanz hinzufügen__  
+  Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. __Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist__. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
   <br /><br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br />
   <br />
@@ -29,18 +29,18 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   <br /><br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")
   <br /><br />
-  Standardmässig enthält der Name der Instanz das Präfix Instanztyp_. Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der AddIntyp direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
+  Standardmässig enthält der Name der Instanz das Präfix __Instanztyp___. Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der AddIntyp direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
   * __Neue Guppe erstellen__  
-  Über diese Schaltfläche kann eine neue Gruppe erstellt werden
+  Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__.
   
 ### 2. Instanz Details
-  Die Detailansicht der Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
+  Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
   <br /><br />
   ![X]({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin")
   <br /><br />
-  Neu hinzugekommen ist der Button "Logik Starten mit Parametern".
+  Neu hinzugekommen ist der Button "Logik starten mit Parametern".
   
   * __Name__  
   Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
@@ -58,11 +58,11 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
     * __Instanz kopieren__  
 	Kopiert die aktuelle ausgewählte Instanz.
 	* __Instanz löschen__  
-	Löscht die aktuell ausgewählte Instanz. __Log Einträge und Transaktionen werden nicht gelöscht.__
+	Löscht die aktuell ausgewählte Instanz. __Logeinträge und Transaktionen werden nicht gelöscht.__
 	* __Logik starten/Event auslösen__  
 	Lösst den Event aus/startet die Logik.
 	* __Logik starten mit Parametern__  
-	Der Button "Logik starten mit Parametern" ist nur bei Logik Addins vorhanden. Mit diesem Button kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von diesem auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
+	Der Button "Logik starten mit Parametern" ist nur bei Logik Addins vorhanden. Mit diesem Button kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von dieser auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
 	<br /><br />
 	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
 	
@@ -72,7 +72,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * __Ordnung nach Gruppe__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Grupieren nach Gruppen")
   <br /><br />
-  Sind die Instanzen nicht nach Gruppen geordnet, so kann auch keine neue Gruppe erstellt werden.
+  Sind die Instanzen nicht nach Gruppen geordnet, so kann auch keine neue Gruppe erstellt werden, die Schaltfläche dafür ist in dieser Ansicht ausgeblendet.
   * __Ordnung nach AddIntyp__  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
   
