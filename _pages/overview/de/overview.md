@@ -15,6 +15,7 @@ Der OneConnexx unterstützt Sie zudem mit diversen prozessunterstützenden Funkt
 
 Im Gegensatz zu anderen ESBs, bei denen die Umsysteme angepasst werden müssen, damit diese mit dem ESB kommunizieren können, stellt der OneConnexx Konnektoren zur Verfügung. Im obigen Diagramm sind die Konnektoren durch die grünen Pfeile dargestellt. Konnektoren sind in OneConnexx durch AddIns realisiert.
 Für die gebräuchlichsten Kommunikationsprotokolle und einige Fremdsysteme sind in OneConnexx bereits Konnektoren enthalten (Liste nicht abschliessend):
+
 * Datenbank (MS SQL Server)
 * Dateisystem
 * FTP, SFTP, FTPS, WebDAV, Amazon S3
@@ -29,6 +30,7 @@ Für die gebräuchlichsten Kommunikationsprotokolle und einige Fremdsysteme sind
 
 Bei der Datenverarbeitung und Prozessabwicklung werden oft auch prozessunterstützende Funktionen benötigt. Dazu gehört z.B. das Starten eines Prozesses zu vordefinierten Zeitpunkten oder sobald eine Datei in einem überwachten Verzeichnis abgelegt wird. Aber auch Datentransformationen oder das Versenden von E-Mails gehören in diese Kategorie von Funktionen. 
 OneConnexx bietet bereits viele prozessunterstützende Funktionen als AddIns an (Liste nicht abschliessend):
+
 * Timer (Interval, täglich, wöchentlich, monatlich, jährlich)
 * Verzeichnisse überwachen
 * E-Mails versenden
@@ -42,6 +44,7 @@ OneConnexx bietet bereits viele prozessunterstützende Funktionen als AddIns an 
 Gründe für kundenspezifische Entwicklungen sind vielseitig. Kundenspezifische AddIns enthalten oftmals kundenspezifische Geschäftslogik wie Validierung von Daten oder spezielle Transformationen. Solche sind mit Standard AddIns und dynamischer Konfiguration kaum oder nur mit erheblichem Aufwand zu bewerkstelligen. Auch die Anbindung an spezielle Umsysteme kann eine kundenspezifische Entwicklung erfordern.
 Nebst den bereits vorhandenen Konnektoren und prozessunterstützenden Funktionen können wir ohne grossen Aufwand neue AddIns implementieren. Der Entwicklungsaufwand ist gering, da bei der Implementation auf eine Vielzahl von Basisfunktionen zurückgegrifen werden kann.
 Durch unser Framework profitieren neu entwickelte AddIns automatisch von folgenden Basisfunktionen:
+
 * Logging
 * Überwachung der Ausführung
 * Verknüpfen von AddIns über Ereignisse
@@ -49,8 +52,11 @@ Durch unser Framework profitieren neu entwickelte AddIns automatisch von folgend
  
 ## Abbilden von Prozessen durch Verknüpfen von AddIns 
 
-Durch Verknüpfen von Konnektoren und prozessunterstützenden Funktionen können komplexe Prozesse abgebildet werden. Ein möglicher Prozess wäre z.B.
+Durch Verknüpfen von Konnektoren und prozessunterstützenden Funktionen können komplexe Prozesse abgebildet werden. Ein möglicher Prozess wäre beispielsweise:
+
 Timer (z.B. am 1. jedes Monats) -> Exportieren von Benutzern aus dem Active Directory in eine CSV Datei -> Kopieren dieser CSV Datei auf einen FTP Server -> Informieren einer Person via E-Mail
+
+![x]({{ site.baseurl }}/assets/content-images/overview/de/process.png "Prozess")
 
 ## Administration und Management
 

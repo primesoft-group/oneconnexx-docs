@@ -112,6 +112,7 @@ Tabelle **TransactionCache**: Enthält die letzte Transaktion pro Schnittstelle 
 
 Der Alerting-Service ist optional und wird nur für die Features «Überwachung» und «Alarmierung» benötigt.
 Der Alerting-Service kann mehrere Instanzen des OneConnexx-Services überwachen und ist für die folgenden 2 Aufgaben zuständig:
+
 * Prüfen aller in der Datenbank hinterlegten Regeln. Dazu werden die ebenfalls in der Datenbank abgespeicherten Transaktionen ausgewertet. Wird eine Regelverletzung erkannt, wird ein Eintrag in der Mail-Queue erstellt.
 * Versenden der E-Mails in der Mail-Queue.
 
