@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page
 title: Architektur
 permalink: "architecture/de/overview/"
