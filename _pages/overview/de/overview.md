@@ -34,10 +34,10 @@ OneConnexx bietet bereits viele prozessunterstützende Funktionen als AddIns an 
 * Timer (Interval, täglich, wöchentlich, monatlich, jährlich)
 * Verzeichnisse überwachen
 * E-Mails versenden
-* Dateien komprimieren / dekompromieren
-* XSLT Transformationen
+* Dateien komprimieren / dekomprimieren
+* XSL Transformationen
 * Löschen von alten Dateien
-* Überwachen von Servererreichbarkeit
+* Überwachen der Servererreichbarkeit (Ping)
 
 ## Kundenspezifische AddIns
 
@@ -48,28 +48,28 @@ Durch unser Framework profitieren neu entwickelte AddIns automatisch von folgend
 * Logging
 * Überwachung der Ausführung
 * Verknüpfen von AddIns über Ereignisse
-* Konfiguration des AddIns über den Web-Client
+* Konfiguration der AddIns über eine Webseite
  
 ## Abbilden von Prozessen durch Verknüpfen von AddIns 
 
 Durch Verknüpfen von Konnektoren und prozessunterstützenden Funktionen können komplexe Prozesse abgebildet werden. Ein möglicher Prozess wäre beispielsweise:
 
-Timer (z.B. am 1. jedes Monats) -> Exportieren von Benutzern aus dem Active Directory in eine CSV Datei -> Kopieren dieser CSV Datei auf einen FTP Server -> Informieren einer Person via E-Mail
-
 ![x]({{ site.baseurl }}/assets/content-images/overview/de/process.png "Prozess")
+
+Timer (z.B. am 1. jedes Monats) -> Exportieren von Benutzern aus dem Active Directory in eine CSV Datei -> Kopieren dieser CSV Datei auf einen FTP Server -> Informieren einer Person via E-Mail
 
 ## Administration und Management
 
-Die Administration und Konfiguration des OneConnexx erfolgt über eine moderne Web-Applikation die mit jedem modernen Browser bedient werden kann. Der OneConnexx Web-Client unterstützt sowohl bei der Konfiguration als auch im Betrieb bei der Auswertung der Log- und der Monitoringdaten.
+Die Administration und Konfiguration des OneConnexx erfolgt über eine moderne Web-Applikation die mit jedem modernen Browser bedient werden kann. Die OneConnexx Web-Administration unterstützt sowohl bei der Konfiguration als auch im Betrieb bei der Auswertung der Log- und der Monitoringdaten.
 
 #### AddIns konfigurieren
 
-AddIns werden im OneConnexx Web-Client hinzugefügt, konfiguriert oder gelöscht. AddIns können ausserdem miteinander verknüpft werden. Der Web-Client unterstützt den Benutzer dabei mit einer kurzen Beschreibung der AddIn Parameter und sorgt für eine fehlerfreie Konfiguration.
+AddIns werden in der OneConnexx Web-Administration hinzugefügt, konfiguriert oder gelöscht. AddIns können ausserdem miteinander verknüpft werden. Die Web-Administration unterstützt den Benutzer dabei mit einer kurzen Beschreibung der AddIn Parameter und sorgt für eine fehlerfreie Konfiguration.
 
 #### Log
 
-Bei der Analyse von Problemen oder beim Umsetzen neuer Prozesse sind umfangreiche Protokolldateien unverzichtbar. Der Web-Client bietet einerseits eine Echtzeitansicht und andererseits eine Auswertung der Vergangenheit mit detaillierten Filtermöglichkeiten.
+Bei der Analyse von Problemen oder beim Umsetzen neuer Prozesse sind umfangreiche Protokolldateien unverzichtbar. Die Web-Administration bietet einerseits eine Echtzeitansicht und andererseits eine Auswertung der Vergangenheit mit detaillierten Filtermöglichkeiten.
 
 #### Überwachung und Alarmierung
 
-Die fehlerfreie Ausführung der konfigurierten Prozesse kann durch vielfältige Regeln überwacht werden. Es können E-Mails definiert werden die bei Verletzung einer Regel a vordefinierte Empfänger versendet werden.
+Die fehlerfreie Ausführung der konfigurierten Prozesse kann durch vielfältige Regeln überwacht werden. Es können E-Mails definiert werden, die bei Verletzung einer Regel an vordefinierte Empfänger versendet werden.
