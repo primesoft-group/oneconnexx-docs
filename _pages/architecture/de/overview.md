@@ -1,10 +1,10 @@
----
+﻿---
 layout: page
 title: Architektur
 permalink: "architecture/de/overview/"
 ---
 
-## Architektur und Funktionsweise
+## Übersicht
 
 Eine OneConnexx Installation besteht typischerweise aus den folgenden Komponenten:
 
@@ -37,6 +37,7 @@ eine .NET Remoting Schnittstelle an den OneConnexx-Service übertragen und von d
 #### AddIn Typen
 
 OneConnexx unterscheidet zwischen folgenden 2 Typen von AddIns:
+
 * Instanzen von **Ereignis-AddIns** werden beim Start des OneConnexx-Services gestartet und sind so lange aktiv
 wie der Service läuft. Sie können Ereignisse auslösen die dann wiederum andere AddIns starten. Ein typisches Beispiel
 für ein Ereignis-AddIn ist ein Web-Service, der beim Start einen Socket öffnet, auf die Verbindung eines Clients wartet,
@@ -50,6 +51,7 @@ AddIns werden mithilfe des Microsoft Managed Extensibility Framework instanziert
 werden aus dem «AddIn» Verzeichnis gelesen und in das «Shadow» Verzeichnis kopiert. Der OneConnexx-Service
 lädt die konfigurierten AddIn DLLs aus dem «Shadow» Verzeichnis und überwacht das «AddIn» Verzeichnis auf Änderungen.
 Durch diesen Mechanismus ist es möglich einzelne AddIns im laufenden Betrieb zu aktualisieren:
+
 * Eine neue DLL wird in das «AddIn» Verzeichnis kopiert.
 * Der OneConnexx-Service erkennt die geänderte Datei.
 * Bei Ereignis-AddIns werden alle laufenden Instanzen des entsprechenden AddIns  gestoppt.
