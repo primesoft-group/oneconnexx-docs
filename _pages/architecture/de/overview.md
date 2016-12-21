@@ -38,18 +38,23 @@ eine .NET Remoting Schnittstelle an den OneConnexx-Service übertragen und von d
 
 OneConnexx unterscheidet zwischen folgenden 2 Typen von AddIns:
 
-* Instanzen von **Ereignis-AddIns** werden beim Start des OneConnexx-Services gestartet und sind so lange aktiv
+![x]({{ site.baseurl }}/assets/content-images/architecture/de/eventaddin.png "Ereignis-AddIn")
+Instanzen von **Ereignis-AddIns** werden beim Start des OneConnexx-Services gestartet und sind so lange aktiv
 wie der Service läuft. Sie können Ereignisse auslösen die dann wiederum andere AddIns starten. Ein typisches Beispiel
 für ein Ereignis-AddIn ist ein Web-Service, der beim Start einen Socket öffnet, auf die Verbindung eines Clients wartet,
 und ein Ereignis auslöst sobald eine Client-Anfrage erhalten wurde.
-* Instanzen von **Logik-AddIns** werden durch ein Ereignis aktiviert, erledigen eine bestimmte Aufgabe und sind danach
+
+![x]({{ site.baseurl }}/assets/content-images/architecture/de/logicaddin.png "Logik-AddIn")
+Instanzen von **Logik-AddIns** werden durch ein Ereignis aktiviert, erledigen eine bestimmte Aufgabe und sind danach
 wieder inaktiv. Ein Beispiel für ein Logik-AddIn ist das FileCopy AddIn, welches eine Datei von A nach B kopiert.
 
-#### AddIn Instanzierung
+#### AddIn Framework
 
 AddIns werden mithilfe des Microsoft Managed Extensibility Framework instanziert. Alle verfügbaren AddIns
-werden aus dem «AddIn» Verzeichnis gelesen und in das «Shadow» Verzeichnis kopiert. Der OneConnexx-Service
-lädt die konfigurierten AddIn DLLs aus dem «Shadow» Verzeichnis und überwacht das «AddIn» Verzeichnis auf Änderungen.
+werden aus dem «AddIn» Verzeichnis gelesen und in das «Shadow» Verzeichnis kopiert. Das «Shadow» Verzeichnis
+ist nur sichtbar wenn im Windows-Explorer die Option zur anzeige von versteckten Dateien aktiviert ist.
+
+Der OneConnexx-Service lädt die konfigurierten AddIn DLLs aus dem «Shadow» Verzeichnis und überwacht das «AddIn» Verzeichnis auf Änderungen.
 Durch diesen Mechanismus ist es möglich einzelne AddIns im laufenden Betrieb zu aktualisieren:
 
 * Eine neue DLL wird in das «AddIn» Verzeichnis kopiert.
@@ -60,7 +65,26 @@ Die Abarbeitung von Ereignissen wird unterbrochen, so dass keine neuen Instanzen
 * Die geänderten Dateien aus dem «AddIn» Verzeichnis werden ins «Shadow» Verzeichnis kopiert.
 * Die zuvor beendeten Instanzen des aktualisierten Logik-AddIns werden wieder gestartet.
 
-## Web-Applikation
+#### AddIn Kommunikation
+
+AddIns kommunizieren untereinander über Ereignisse. Jede AddIn-Instanz kann ein Ereignis auslösen. Ein Ereignis ist
+normalerweise durch den Namen der auslösenden Instanz und optional durch einen Ereignistyp definiert. Ein "FileCopy" AddIn
+beispielsweise löst für jede kopierte Datei ein Ereignis vom Typ "Output" aus, das den Namen der kopierten Datei enthält.
+Nachdem alle Dateien kopiert wurden, wird ausserdem ein Ereignis "Done" ausgelöst. Heisst die Instanz beispielsweise "FileCopy_Demo",
+dann heissen die ausgelösten Ereignisse wie folgt:
+
+```
+FileCopy_Demo.Output
+FileCopy_Demo.Done
+```
+
+Instanzen von Logik-AddIns können dieses Ereignis abonnieren und werden aktiviert, sobald das Ereignis ausgelöst wird.
+Treten mehrere Ereignisse auf die eine AddIn-Instanz aboniert hat, werden diese der Reihe nach abgearbeitet. Jede AddIn-Instanz
+hat eine eigene Queue für Ereignisse. Eine parallele Verarbeitung gibt es nur zwischen unterschiedlichen Instanzen.
+
+![x]({{ site.baseurl }}/assets/content-images/architecture/de/eventqueue.png "Ereignis-Queue")
+
+## Web-Administration
 
 ![x]({{ site.baseurl }}/assets/content-images/architecture/de/webapplication.png "Web-Applikation")
 
