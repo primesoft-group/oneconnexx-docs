@@ -57,9 +57,13 @@ Timer (z.B. am 1. jedes Monats) -> Exportieren von Benutzern aus dem Active Dire
 Die Administration und Konfiguration des OneConnexx erfolgt über eine moderne Web-Applikation die mit jedem modernen Browser bedient werden kann. Der OneConnexx Web-Client unterstützt sowohl bei der Konfiguration als auch im Betrieb bei der Auswertung der Log- und der Monitoringdaten.
 
 #### AddIns konfigurieren
-AddIns werden im OneConnexx Web-Client hinzugefügt, konfiguriert oder gelöscht. AddIns können ausserdem miteinander verknüpft werden. Der Web-Client unterstützt den Benutzer dabei mit einer kurzen Beschreibung der AddIn Parameter und sorgt für eine fehlerfreie Konfiguration.
-#### Log
-Bei der Analyse von Problemen oder beim Umsetzen neuer Prozesse sind umfangreiche Protokolldateien unverzichtbar. Der Web-Client bietet einerseits eine Echtzeitansicht und andererseits eine Auswertung der Vergangenheit mit detaillierten Filtermöglichkeiten.
-#### Überwachung und Alarmierung
-Die fehlerfreie Ausführung der konfigurierten Prozesse kann durch vielfältige Regeln überwacht werden. Es können E-Mails definiert werden die bei Verletzung einer Regel a vordefinierte Empfänger versendet werden.
 
+AddIns werden im OneConnexx Web-Client hinzugefügt, konfiguriert oder gelöscht. AddIns können ausserdem miteinander verknüpft werden. Der Web-Client unterstützt den Benutzer dabei mit einer kurzen Beschreibung der AddIn Parameter und sorgt für eine fehlerfreie Konfiguration.
+
+#### Log
+
+Bei der Analyse von Problemen oder beim Umsetzen neuer Prozesse sind umfangreiche Protokolldateien unverzichtbar. Der Web-Client bietet einerseits eine Echtzeitansicht und andererseits eine Auswertung der Vergangenheit mit detaillierten Filtermöglichkeiten.
+
+#### Überwachung und Alarmierung
+
+Die fehlerfreie Ausführung der konfigurierten Prozesse kann durch vielfältige Regeln überwacht werden. Es können E-Mails definiert werden die bei Verletzung einer Regel a vordefinierte Empfänger versendet werden.
