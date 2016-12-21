@@ -39,12 +39,14 @@ eine .NET Remoting Schnittstelle an den OneConnexx-Service übertragen und von d
 OneConnexx unterscheidet zwischen folgenden 2 Typen von AddIns:
 
 ![x]({{ site.baseurl }}/assets/content-images/architecture/de/eventaddin.png "Ereignis-AddIn")
+
 Instanzen von **Ereignis-AddIns** werden beim Start des OneConnexx-Services gestartet und sind so lange aktiv
 wie der Service läuft. Sie können Ereignisse auslösen die dann wiederum andere AddIns starten. Ein typisches Beispiel
 für ein Ereignis-AddIn ist ein Web-Service, der beim Start einen Socket öffnet, auf die Verbindung eines Clients wartet,
 und ein Ereignis auslöst sobald eine Client-Anfrage erhalten wurde.
 
 ![x]({{ site.baseurl }}/assets/content-images/architecture/de/logicaddin.png "Logik-AddIn")
+
 Instanzen von **Logik-AddIns** werden durch ein Ereignis aktiviert, erledigen eine bestimmte Aufgabe und sind danach
 wieder inaktiv. Ein Beispiel für ein Logik-AddIn ist das FileCopy AddIn, welches eine Datei von A nach B kopiert.
 
