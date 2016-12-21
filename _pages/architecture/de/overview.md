@@ -109,9 +109,11 @@ ist wie der OneConnexx-Service.
 
 ![x]({{ site.baseurl }}/assets/content-images/architecture/de/db.png "Datenbank")
 
-Die Datenbank ist optional und wird nur für die Features «Überwachung» und «Alarmierung» benötigt.
+Als Datenbank kommt Microsoft SQL Server (beliebige Ausgabe) zum Einsatz. Eine Datenbank Instanz kann, muss aber nicht,
+von mehreren OneConnexx Instanzen verwendet werden. Eine Datenbank wird nur für die Features «Überwachung» und «Alarmierung»
+benötigt und kann auch wegfallen wenn diese Features nicht verwendet werden.
 
-Alle Datenzugriffe erfolgen über EntityFramework und mittels gespeicherter Prozeduren.
+Alle Datenzugriffe erfolgen mittels EntityFramework und über gespeicherter Prozeduren.
 
 #### Schema
 
