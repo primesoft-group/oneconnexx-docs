@@ -4,7 +4,7 @@ title: Systemvoraussetzungen
 permalink: "setup/de/requirements/"
 ---
 
-## Betriebssystem & Komponenten
+#### Betriebssystem & Komponenten
 
 OneConnexx kann auf folgenden Betriebssystemen installieren werden:
 
@@ -20,7 +20,7 @@ Für den Betrieb der OneConnexx Anwendungen sind folgende Komponenten notwendig:
 * Microsoft .NET Framework 4.5.2 oder höher
 * Optional für Statistik: SQL Server ab Version 2008 (Express oder höher)
 
-### Arbeitsspeicher & CPU Cores
+#### Arbeitsspeicher & CPU Cores
 
 OneConnexx wird als Dienst betrieben. Zur Administration wird zusätzlich ein Webseite innerhalb des Internet Information Servers
 betrieben. Wir empfehlen die Anforderungen von Microsoft zu berücksichtigen.
