@@ -12,6 +12,7 @@ Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügun
 Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
 Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx* entpacken. Dadurch wird folgende Verzeichnisstruktur erstellt:
+
 ```
 \OneConnexx
  |-AlertingService
@@ -30,6 +31,7 @@ OneConnexx.AlertingService.exe –install –servicename=OneConnexx.Alerting
 ```
 
 Zum Deinstallieren:
+
 ```
 OneConnexx.AlertingService.exe –uninstall –servicename=OneConnexx.Alerting
 ```

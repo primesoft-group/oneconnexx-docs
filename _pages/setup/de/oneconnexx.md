@@ -26,9 +26,10 @@ Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohle
 *&lt;Laufwerk&gt;:\OneConnexx\&lt;Instanzname&gt;* zu entpacken.
 
 Danach sollte folgende Verzeichnisstruktur vorhanden sein:
+
 ```
 \OneConnexx
- |-AddIns
+ |-AddIns 
  |-Config
  |-Pipeline
 ```
