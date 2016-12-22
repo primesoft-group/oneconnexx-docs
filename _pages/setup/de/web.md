@@ -66,12 +66,11 @@ IIS läuft die entsprechende Berechtigung erteilt werden.
 
 {% include alert.html type="warning" text="Der letzte Befehl muss für jede installierte OneConnexx Instanz ausgeführt werden. «OneConnexx» ist der Name unter dem der Windows-Dienst installiert wurde. «IIS_IUSRS» ist eine Benutzergruppe die ab IIS 7.0 automatisch alle ApplicationPool-Identitäten enthält." %}
 
-#### Gespeicherte Verbindungen
+#### Logfiles und gespeicherte Verbindungen
+
+Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin*
 
 Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
-
-#### Logfiles
-Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin*
 
 {% include alert.html type="warning" text="Das Verzeichnis %LocalAppData% ist abhängig vom aktuellen Benutzer und zeigt bei einer Web-Applikation normalerweise auf *C:\Users\&lt;ApplicationPoolName&gt;\AppData\Local*." %}
 
@@ -79,14 +78,14 @@ Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec
 
 In der Datei Web.config (unter *&lt;Laufwerk&gt;:\OneConnex\Web*) können folgende Einstellungen vorgenommen werden.
 
-##### Logging
+__Logging__
 
 Standardmässig werden Logdateien ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin* geschrieben.
 Pro Tag wird eine neue Logdatei erstellt und die Dateien der letzten 7 Tage werden archiviert.
 Diese Einstellungen können im Abschnitt &lt;nlog&gt; geändert werden.
 Alle möglichen Einstellungen sind unter https://github.com/nlog/nlog/wiki beschrieben.
 
-##### Anzeigesprache
+__Anzeigesprache__
 
 Die OneConnexx Web-Administration ist zweisprachig (Deutsch/Englisch) und verwendet standardmässig die Browsersprache,
 bzw. Englisch wenn die Browsersprache nicht Deutsch oder Englisch ist. Soll die Anzeigesprache unabhängig von der
@@ -103,7 +102,7 @@ Um die Anzeigesprache fest auf Englisch umzustellen:
 <globalization enableClientBasedCulture="true" uiCulture="en-gb" culture="en-gb" />
 ```
 
-#### Berechtigungen
+__ Berechtigungen__
 
 Der Zugriff auf die Web-Administration wird über «Windows Authentication» gesteuert, d.h. aufgrund des angemeldeten Windows Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
 Benutzer: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
