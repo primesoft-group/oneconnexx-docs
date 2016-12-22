@@ -28,8 +28,9 @@ Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohle
 Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 ```
 \OneConnexx
- |-AddIns
+ |-AddIns 
  |-Config
+ 
  |-Pipeline
 ```
 
