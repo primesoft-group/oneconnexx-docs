@@ -4,12 +4,12 @@ title: Web-Administration
 permalink: "setup/de/web/"
 ---
 
-#### Server vorbereiten
+### Server vorbereiten
 
 Mithilfe des Powershell Skripts [IISOneConnexxScript.ps1]({{ site.baseurl }}/assets/content-files/IISOneConnexxScript.ps1) werden automatisch die erforderlichen Serverrollen und Features
 installiert.
 
-##### Manuelle Installation
+#### Manuelle Installation
 
 Im Server Manager unter «Add roles and features» folgende Serverrollen hinzufügen:
 
@@ -29,7 +29,7 @@ Unter Windows Server 2008:
 * Anwendungsfeature ASP.NET aktivieren
 * WebServer IIS -> Add Roles -> ASP.NET
 
-#### Installationspackete
+### Installationspackete
 
 Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
 
@@ -43,7 +43,7 @@ Auf dem «Web» Unterverzeichnis -> Properties -> Security -> Gruppe IIS_IUSRS h
 
 {% include alert.html type="warning" text="Die Web-Administration muss nur in einer Instanz installiert werden. Sie kann mehrere OneConnexx Installationen administrieren." %}
 
-#### IIS einrichten
+### IIS einrichten
 
 Unter «Sites» -> Rechte Maustaste -> «Add Website…»
 
@@ -74,7 +74,7 @@ IIS läuft die entsprechende Berechtigung erteilt werden.
 Damit die Web-Administration die Logdateien des OneConnexx-Services lesen kann, muss der IIS_IUSRS Benutzergruppe Lesezugriff
 auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\Logs*).
 
-#### Logfiles und gespeicherte Verbindungen
+### Logfiles und gespeicherte Verbindungen
 
 Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin*
 
@@ -82,7 +82,7 @@ Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzei
 
 {% include alert.html type="warning" text="Das Verzeichnis %LocalAppData% ist abhängig vom aktuellen Benutzer und zeigt bei einer Web-Applikation normalerweise auf *C:\Users\&lt;ApplicationPoolName&gt;\AppData\Local*." %}
 
-#### Konfiguration in Web.config
+### Konfiguration in Web.config
 
 In der Datei Web.config (unter *&lt;Laufwerk&gt;:\OneConnex\Web*) können folgende Einstellungen vorgenommen werden.
 
