@@ -66,6 +66,11 @@ IIS läuft die entsprechende Berechtigung erteilt werden.
 
 {% include alert.html type="warning" text="Der letzte Befehl muss für jede installierte OneConnexx Instanz ausgeführt werden. «OneConnexx» ist der Name unter dem der Windows-Dienst installiert wurde. «IIS_IUSRS» ist eine Benutzergruppe die ab IIS 7.0 automatisch alle ApplicationPool-Identitäten enthält." %}
 
+#### Dateisystemberechtigungen für IIS
+
+Damit die Web-Administration die Logdateien des OneConnexx-Services lesen kann, muss dem IIS_IUSRS Benutzer Lesezugriff
+auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\Logs*).
+
 #### Logfiles und gespeicherte Verbindungen
 
 Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin*
@@ -102,13 +107,17 @@ Um die Anzeigesprache fest auf Englisch umzustellen:
 <globalization enableClientBasedCulture="true" uiCulture="en-gb" culture="en-gb" />
 ```
 
-__ Berechtigungen__
+__Berechtigungen__
 
-Der Zugriff auf die Web-Administration wird über «Windows Authentication» gesteuert, d.h. aufgrund des angemeldeten Windows Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
-Benutzer: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
-Konfigurator: Kann zusätzlich AddIns erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
-Administrator: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
+Der Zugriff auf die Web-Administration wird über «Windows Authentication» gesteuert, d.h. aufgrund des angemeldeten Windows
+Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
+
+* *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
+* *Konfigurator*: Kann zusätzlich AddIns erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
+* *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
+
 Diese Rollen können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden.
+
 AdminRole
 ConfigRole
 Authorization
