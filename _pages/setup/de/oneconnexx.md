@@ -4,13 +4,13 @@ title: OneConnexx-Service
 permalink: "setup/de/oneconnexx/"
 ---
 
-#### 32- oder 64-Bit?
+### 32- oder 64-Bit?
 
 Den OneConnexx gibt es in einer 32-Bit und einer 64-Bit Version. Auf einem 64-Bit Betriebssystem wird empfohlen die 64-Bit 
 Version des OneConnexx zu verwenden, ausser ein AddIn erfordert zwingend den 32-Bit Modus. Die AddIns laufen automatisch als
 32-Bit oder 64-Bit Prozesse, je nach Version des OneConnexx.
 
-#### Installationspackete
+### Installationspackete
 
 Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
 
@@ -34,7 +34,7 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
  |-Pipeline
 ```
 
-#### Service installieren
+### Service installieren
 
 Der OneConnexx Windows-Dienst wird pro Installation über die Eingabeaufforderung (Windows Konsole) installiert.
 Die Eingabeaufforderung muss als Administrator geöffnet werden. Der Name unter dem der Dienst installiert wird
@@ -67,7 +67,7 @@ Service installiert wird. Dazu muss folgendermassen vorgegangen werden:
 
 Dem &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* und alle Unterordner volle Berechtigung erteilen.
 
-#### OneConnexx.exe.config
+### OneConnexx.exe.config
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
 
@@ -77,7 +77,7 @@ In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexx.exe.config* 
 
 Alle anderen Konfigurationsparameter sollten nicht verändert werden!
 
-#### nlog.config
+### nlog.config
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\Config\nlog.config* kann die Protokollierung des OneConnexx-Services
 und der AddIns konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
