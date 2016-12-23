@@ -18,7 +18,7 @@ Die Standardinstallation mit der Verteilung auf zwei Server garantiert die beste
 
 ### Alles neu auf einem Server Installation
 Ist kein Datenbankserver verfügbar und Statistikdaten trotzdem erwünscht, kann auf dem OneConnexx Server zusätzlich eine
-Microsoft SQL Server Datenbank installiert werden. Diese Variante kann aber bei Leistungsintensiven Transaktionen und
+Microsoft SQL Server Datenbank installiert werden. Diese Variante kann aber bei leistungsintensiven Transaktionen und
 komplexen Auswertungen zu Performanceeinbussen führen.
 
 ![x]({{ site.baseurl }}/assets/content-images/setup/de/scenario3.png "Szenario 3")
