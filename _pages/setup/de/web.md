@@ -6,18 +6,18 @@ permalink: "setup/de/web/"
 
 #### Server vorbereiten
 
-Mithilfe des Powershell Skripts «IISOneConnexxScript.ps1» werden automatisch die erforderlichen Serverrollen und Features
+Mithilfe des Powershell Skripts [IISOneConnexxScript.ps1]({{ site.baseurl }}/assets/content-files/IISOneConnexxScript.ps1) werden automatisch die erforderlichen Serverrollen und Features
 installiert.
 
 ##### Manuelle Installation
 
 Im Server Manager unter «Add roles and features» folgende Serverrollen hinzufügen:
 * WebServer (IIS)
-** Management Tools
-*** IIS Management Console
-**	Web Server
-*** Security  Windows Authentication
-*** Application Development  ASP.NET 4.5
+  * Management Tools
+    * IIS Management Console
+  * Web Server
+    * Security  Windows Authentication
+    * Application Development  ASP.NET 4.5
 
 Und unter Features:
 * .NET Framework 4.5
@@ -31,7 +31,7 @@ Unter Windows Server 2008:
 Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
 
 * web.7z
-* 
+
 Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
 Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
