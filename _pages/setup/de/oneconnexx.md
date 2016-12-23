@@ -69,7 +69,7 @@ Dem &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* 
 
 ### Konfiguration
 
-#### __OneConnexx.exe.config__
+##### OneConnexx.exe.config
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
 
@@ -79,7 +79,7 @@ In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexx.exe.config* 
 
 Alle anderen Konfigurationsparameter sollten nicht verändert werden!
 
-#### nlog.config
+##### nlog.config
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\Config\nlog.config* kann die Protokollierung des OneConnexx-Services
 und der AddIns konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
