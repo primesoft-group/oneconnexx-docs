@@ -12,7 +12,7 @@ Eine minimale Installation besteht aus dem OneConnexx Windows-Dienst und dem Int
 
 ### Standardinstallation mit vorhandenem Datenbankserver
 Die Standardinstallation ist eine Erweiterung der Minimalinstallation um eine Datenbank, welche auf einem bereits vorhandenen Datenbankserver installiert wird. 
-Die Standardinstallation mit der Verteilung auf zwei Server garantiert die Beste Performance.
+Die Standardinstallation mit der Verteilung auf zwei Server garantiert die beste Performance.
 
 ![x]({{ site.baseurl }}/assets/content-images/setup/de/scenario2.png "Szenario 2")
 
