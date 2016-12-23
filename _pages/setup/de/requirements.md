@@ -4,7 +4,7 @@ title: Systemvoraussetzungen
 permalink: "setup/de/requirements/"
 ---
 
-#### Betriebssystem & Komponenten
+### Betriebssystem & Komponenten
 
 OneConnexx kann auf folgenden Betriebssystemen installieren werden:
 
@@ -20,7 +20,7 @@ Für den Betrieb der OneConnexx Anwendungen sind folgende Komponenten notwendig:
 * Microsoft .NET Framework 4.5.2 oder höher
 * Optional für Statistik: SQL Server ab Version 2008 (Express oder höher)
 
-#### Arbeitsspeicher & CPU Cores
+### Arbeitsspeicher & CPU Cores
 
 OneConnexx wird als Dienst betrieben. Zur Administration wird zusätzlich ein Webseite innerhalb des Internet Information Servers
 betrieben. Wir empfehlen die Anforderungen von Microsoft zu berücksichtigen.
@@ -28,17 +28,17 @@ betrieben. Wir empfehlen die Anforderungen von Microsoft zu berücksichtigen.
 Empfehlenswert sind jedoch mindestens 4 GB Arbeitsspeicher und 2 Cores. Läuft auf dem Server noch weitere Software
 (z.B. der SQL Server) empfiehlt sich einen stärkeren CPU bzw. mehr Arbeitsspeicher zu benutzen.
 
-#### Festplattenspeicher
+### Festplattenspeicher
 
 Die Software selbst benötigt nur wenige MB Festplattenspeicher. Das Logging erzeugt jedoch je nach Konfiguration und Last
 Logfiles, welche insgesamt mehrere GB Festplattenspeicher benötigen können.
 
-#### Active Directory
+### Active Directory
 
 Der Server auf dem OneConnexx installiert wird, kann Mitglied des Active Directory sein. Die Berechtigung der
 Administration des OneConnexx erfolgt entweder über das Active Directory oder mit lokalen Benutzern.
 
-#### Einsatz von Virenscanners auf dem Windows Server
+### Einsatz von Virenscanners auf dem Windows Server
 
 Falls auf dem System auf dem die OneConnexx Anwendungen ausgeführt werden ein Virenscanner im Einsatz ist, sollte
 dieser so konfiguriert werden, dass die Funktionalität von OneConnexx nicht eingeschränkt ist.
