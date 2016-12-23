@@ -68,7 +68,8 @@ Service installiert wird. Dazu muss folgendermassen vorgegangen werden:
 Dem &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* und alle Unterordner volle Berechtigung erteilen.
 
 ### Konfiguration
-#### OneConnexx.exe.config
+
+#### __OneConnexx.exe.config__
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
 
