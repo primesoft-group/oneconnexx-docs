@@ -4,7 +4,7 @@ title: Alerting-Service
 permalink: "setup/de/alerting/"
 ---
 
-#### Installationspackete
+### Installationspackete
 Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
 
 * alertingservice.7z
@@ -19,7 +19,7 @@ Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx* entpacke
 ```
 {% include alert.html type="warning" text="Der Alerting-Service muss nur in einer Instanz installiert werden. Er kann mehrere OneConnexx Installationen und Datenbanken überwachen." %}
 
-#### Service installieren
+### Service installieren
 Der Alerting Windows-Dienst wird über die Eingabeaufforderung (Windows Konsole) installiert. Die Eingabeaufforderung muss als
 Administrator geöffnet werden.
 
