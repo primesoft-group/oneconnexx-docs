@@ -121,8 +121,4 @@ Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folg
 
 Diese Rollen können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden.
 
-AdminRole
-ConfigRole
-Authorization
 
-TODO
