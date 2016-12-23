@@ -12,17 +12,20 @@ installiert.
 ##### Manuelle Installation
 
 Im Server Manager unter «Add roles and features» folgende Serverrollen hinzufügen:
+
 * WebServer (IIS)
   * Management Tools
     * IIS Management Console
   * Web Server
-    * Security  Windows Authentication
-    * Application Development  ASP.NET 4.5
+    * Security -> Windows Authentication
+    * Application Development -> ASP.NET 4.5
 
 Und unter Features:
+
 * .NET Framework 4.5
 
 Unter Windows Server 2008:
+
 * Anwendungsfeature ASP.NET aktivieren
 * WebServer IIS -> Add Roles -> ASP.NET
 
