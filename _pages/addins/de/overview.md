@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Addin Overview
+title: Addin Übersicht
 permalink: "addins/de/overview/"
 ---
 
-## Overview {% include anchor.html name="Overview" %}
-
-__ToDo__
+Tabelle aller AddIns
