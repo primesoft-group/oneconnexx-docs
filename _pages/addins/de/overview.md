@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Addin Uebersicht
+title: Addin Übersicht
 permalink: "addins/de/overview/"
 ---
 
