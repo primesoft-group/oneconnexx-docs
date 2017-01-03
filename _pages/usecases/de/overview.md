@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Addin Overview
-permalink: "addins/de/overview/"/"
+title: Use Cases Overview
+permalink: "usecases/de/overview
 ---
 
 ## Overview {% include anchor.html name="Overview" %}
