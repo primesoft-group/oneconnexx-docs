@@ -10,6 +10,6 @@ Im Bereich Dokumentendienst bietet der OneConnexx einige interessante Funktionen
 
 ![x]({{ site.baseurl }}/assets/content-images/usecases/de/documentationservice.png "Dokumentendienst")
 
-TESCHT
+Eine beliebige Applikation / System übermittelt dem OneConnexx das Ereignis «Dokument erstellen» mit Angaben wie z.B. Vorlagennummer und Sprache.
 
 
