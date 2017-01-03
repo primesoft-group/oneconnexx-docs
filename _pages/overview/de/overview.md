@@ -42,7 +42,7 @@ OneConnexx bietet bereits viele prozessunterstützende Funktionen als AddIns an 
 ## Kundenspezifische AddIns
 
 Gründe für kundenspezifische Entwicklungen sind vielseitig. Kundenspezifische AddIns enthalten oftmals kundenspezifische Geschäftslogik wie Validierung von Daten oder spezielle Transformationen. Solche sind mit Standard AddIns und dynamischer Konfiguration kaum oder nur mit erheblichem Aufwand zu bewerkstelligen. Auch die Anbindung an spezielle Umsysteme kann eine kundenspezifische Entwicklung erfordern.
-Nebst den bereits vorhandenen Konnektoren und prozessunterstützenden Funktionen können wir ohne grossen Aufwand neue AddIns implementieren. Der Entwicklungsaufwand ist gering, da bei der Implementation auf eine Vielzahl von Basisfunktionen zurückgegrifen werden kann.
+Nebst den bereits vorhandenen Konnektoren und prozessunterstützenden Funktionen können wir ohne grossen Aufwand neue AddIns implementieren. Der Entwicklungsaufwand ist gering, da bei der Implementation auf eine Vielzahl von Basisfunktionen zurückgegriffen werden kann.
 Durch unser Framework profitieren neu entwickelte AddIns automatisch von folgenden Basisfunktionen:
 
 * Logging
