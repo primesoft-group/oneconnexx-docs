@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Use Cases - Document Creation
+title: Use Cases - Dokumentendienst
 permalink: "usecases/de/documentcreation/"
 ---
 
