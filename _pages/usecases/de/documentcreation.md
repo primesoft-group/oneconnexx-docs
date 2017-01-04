@@ -13,6 +13,7 @@ Im Bereich Dokumentendienst bietet der OneConnexx einige interessante Funktionen
 
 
 1. Eine beliebige Applikation / System übermittelt dem OneConnexx das Ereignis «Dokument erstellen» mit Angaben wie z.B. Vorlagennummer und Sprache.
+...
 2. Ein AddIn im OneConnexx ist auf dieses Ereignis abonniert und erstellt über die OneOffixx Schnittstelle ein entsprechendes Dokument. Hinweis: Die Dokumentvorlagen werden unter OneOffixx verwaltet. Der Inhalt der Dokumente kann statisch und/oder dynamisch sein. Die dynamischen Daten werden beim Aufruf von der aufrufenden Applikation / System mitgegeben.
 3. Mögliche Ergänzungen:
 	a. Auf Wunsch kann die Adresse über den WebService der Post mit einem WebStamp oder PP ergänzt werden. 
