@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Use Cases
+title: Anwendungsbeispiele
 permalink: "usecases/de/documentcreation/"
 ---
 
