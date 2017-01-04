@@ -4,7 +4,7 @@ title: Anwendungsbeispiele
 permalink: "usecases/de/documentcreation/"
 ---
 
-## OneConnexx - Dokumentendienst 
+## Dokumentendienst 
 
 Im Bereich Dokumentendienst bietet der OneConnexx einige interessante Funktionen.
 
