@@ -26,4 +26,3 @@ __Parameter__
 
 
 __Anwendungsbeispiele__
-
