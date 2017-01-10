@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Standard Addins
-permalink: "addins/de/_standardaddins/"
+permalink: "addins/de/standardaddins/"
 ---
   
 __Standard AddIns__

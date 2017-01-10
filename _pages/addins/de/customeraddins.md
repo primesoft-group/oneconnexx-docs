@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kundenspezifische AddIns
-permalink: "addins/de/_customeraddins/"
+permalink: "addins/de/customeraddins/"
 ---
   
 __Kundenspezifische AddIns__
