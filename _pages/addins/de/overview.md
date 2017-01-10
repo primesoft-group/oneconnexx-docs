@@ -15,7 +15,7 @@ Der OneConnexx kennt folgende AddIn-Typen:
 3. Event
    * AddIn führt ein Initiales Ereignis aus wie z.B. das Erkennen einer neuen Datei
 
-
+{:.table .table-striped}
 | Type | Beschreibung |                      
 | --- | --- |
 | Connector | Schnittstelle zu einer Anwendung / System |
@@ -28,6 +28,7 @@ Folgende Standard AddIns sind aktuell im Lieferumfang des OneConnexx enthalten.<
 Hinweis: Nicht enthalten in dieser Liste sind alle kundenspezifische AddIns.<br />
 Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werden ständig erweitert.
 
+{:.table .table-striped}
 | AddIn | Beschreibung |                      
 | --- | --- |
 | Bizagi | Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus. |
