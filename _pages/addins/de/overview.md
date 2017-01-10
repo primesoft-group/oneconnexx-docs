@@ -10,7 +10,7 @@ Der OneConnexx kennt folgende AddIn-Typen:<br />
 <br />
 
 
-{:.table .table-striped}
+{:.table .table-striped .table-bordered}
 | Type | Beschreibung |                      
 | --- | --- |
 | Connector | Schnittstelle zu einer Anwendung / System |
