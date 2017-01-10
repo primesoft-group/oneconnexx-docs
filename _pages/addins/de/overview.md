@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Addin Übersicht
+title: Addins - Übersicht
 permalink: "addins/de/overview/"
 ---
 
@@ -29,28 +29,29 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 | AddIn | Beschreibung |                      
 | --- | --- |
 | [Bizagi]({{ site.baseurl }}/addins/de/bizagi/) | Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus. |
-| DatabaseMaintenance | Erstellt alle Indexe einer Datenbank neu, um so die Performance zu verbessern
-| DatabaseToCSV | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
-| Dispatcher | Löst Events aufgrund einer SQL Abfrage aus |
-| EventLogger | Schreibt alle mit dem Event übergebenen Parameter ins Logfile |
-| FileCompressor | Komprimiert Dateien |
-| FileCopy | Kopiert Dateien (auch FTP und SFTP) |
-| FileDecompressor | Entpackt Dateien |
-| FileEraser | Löscht bestimmte Dateien |
-| FileReconstructor |  |
-| FileSystemWatcher | Der FileSystemWatcher dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Filepattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien. |
-| Ldap2CSV | |
-| LicenseCheck |LisenceCheck wird als WebService betrieben. Externe Applikationen übermitteln periodisch ihre aktuelle Lizenz. Das LicenseCheck AddIn schreibt die Lizenzdaten in Bizagi, steuert in Bizagi offene Prozesse und sendet letztendlich eine Antwort (ev. ein neues Lizenzfile) an die externe Applikation. |
-| MailSender | Versendet ein E-Mail |
-| MemoryConsumer | Systemtest, Stresstest |
-| OneOffixxDocumentCreator | Erstellt über die OneOffixx Schnittstelle «OneOffixxDocumentCreationServer» (OODCS) Dokumente im CI/CD des Kunden. |
-| ParameterTransformer | Transformiert Parametern zwischen zwei AddIn-Instanzen |
-| ServerCheck | |
-| SharepointEraser | Löscht Items in einer Sharepoint Liste/Bibliothek die älter als xx Stunden sind |
-| Timer | Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu fast jeder beliebigen Zeit und Datum aus. |
-| WebConnect | Das WebConnect AddIn funktioniert als WebService, welcher von externen Applikation aufgerufen wird. Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Parameter wird eine OneMessage mitgegeben. |
-| WebRemote | Sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen angegebenen WebService. |
-| XSLTransform | Transformiert XML Dateien |
-| Xml2Csv | |
+| [DatabaseMaintenance]({{ site.baseurl }}/addins/de/databasemaintenance/) | Erstellt alle Indexe einer Datenbank neu, um so die Performance zu verbessern
+| [DatabaseToCSV]({{ site.baseurl }}/addins/de/databasetocsv/) | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
+| [Dispatcher]({{ site.baseurl }}/addins/de/dispatcher/) | Löst Events aufgrund einer SQL Abfrage aus |
+| [EventLogger]({{ site.baseurl }}/addins/de/eventlogger/) | Schreibt alle mit dem Event übergebenen Parameter ins Logfile |
+| [FileCompressor]({{ site.baseurl }}/addins/de/FileCompressor/) | Komprimiert Dateien |
+| [FileCopy]({{ site.baseurl }}/addins/de/bizagi/) | Kopiert Dateien (auch FTP und SFTP) |
+| [FileDecompressor]({{ site.baseurl }}/addins/de/FileDecompressor/) | Entpackt Dateien |
+| [FileEraser]({{ site.baseurl }}/addins/de/bizagi/) | Löscht bestimmte Dateien |
+| [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) |  |
+| [FileSystemWatcher]({{ site.baseurl }}/addins/de/filesystemwatcher/) | Der FileSystemWatcher dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Filepattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien. |
+| [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | |
+| [LicenseCheck]({{ site.baseurl }}/addins/de/licensecheck/) |LisenceCheck wird als WebService betrieben. Externe Applikationen übermitteln periodisch ihre aktuelle Lizenz. Das LicenseCheck AddIn schreibt die Lizenzdaten in Bizagi, steuert in Bizagi offene Prozesse und sendet letztendlich eine Antwort (ev. ein neues Lizenzfile) an die externe Applikation. |
+| [MailSender]({{ site.baseurl }}/addins/de/mailsender/) | Versendet ein E-Mail |
+| [MemoryConsumer]({{ site.baseurl }}/addins/de/memoryconsumer/) | Systemtest, Stresstest |
+| [OneOffixxDocumentCreator]({{ site.baseurl }}/addins/de/oneoffixxdocumentcreator/) | Erstellt über die OneOffixx Schnittstelle «OneOffixxDocumentCreationServer» (OODCS) Dokumente im CI/CD des Kunden. |
+| [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei AddIn-Instanzen |
+| [ServerCheck]({{ site.baseurl }}/addins/de/servercheck/) | |
+| [SharepointEraser]({{ site.baseurl }}/addins/de/sharepointeraser/) | Löscht Items in einer Sharepoint Liste/Bibliothek die älter als xx Stunden sind |
+| [Timer]({{ site.baseurl }}/addins/de/timer/) | Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu fast jeder beliebigen Zeit und Datum aus. |
+| [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Das WebConnect AddIn funktioniert als WebService, welcher von externen Applikation aufgerufen wird. Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Parameter wird eine OneMessage mitgegeben. |
+| [WebRemote]({{ site.baseurl }}/addins/de/webremote/) | Sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen angegebenen WebService. |
+| [Xml2Csv]({{ site.baseurl }}/addins/de/xml2csv/) | |
+| [XSLTransform]({{ site.baseurl }}/addins/de/xsltransform/) | Transformiert XML Dateien |
+
 
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Addin - Bizagi
+title: Addins - Bizagi
 permalink: "addins/de/bizagi/"
 ---
 
@@ -30,5 +30,5 @@ __Parameter__
 | messageTransformFolder | Ordner, welche die MessageTransform Dateien (*.mt) beinhaltet |
 
 
-__Anwendungsbeispiel__
+__Anwendungsbeispiele__
 
