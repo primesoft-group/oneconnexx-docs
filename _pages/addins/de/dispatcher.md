@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - Dispatcher
+title: Standard AddIns
 permalink: "addins/de/dispatcher/"
 ---
+
+## Dispatcher
 
 Löst Events aufgrund einer SQL Abfrage aus
 

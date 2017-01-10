@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - WebRemote
+title: Standard AddIns
 permalink: "addins/de/webremote/"
 ---
+
+## WebRemote
 
 Sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen angegebenen WebService.
 

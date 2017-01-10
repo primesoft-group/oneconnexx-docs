@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Standard Addins - DatabaseMaintenance
+title: Standard AddIns
 permalink: "addins/de/databasemaintenance/"
 ---
+
+## DatabaseMaintenance
 
 Erstellt alle Indexe einer Datenbank neu, um so die Performance zu verbessern.
 

@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - EventLogger
+title: Standard AddIns
 permalink: "addins/de/eventlogger/"
 ---
+
+## EventLogger
 
 Schreibt alle mit dem Event übergebenen Parameter ins Logfile
 

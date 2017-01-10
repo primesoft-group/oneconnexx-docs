@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - FileCopy
+title: Standard AddIns
 permalink: "addins/de/filecopy/"
 ---
+
+## FileCopy
 
 Dieses AddIn kopiert Dateien (auch FTP und SFTP).
 

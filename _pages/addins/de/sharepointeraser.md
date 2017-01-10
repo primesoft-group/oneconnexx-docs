@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - SharepointEraser
+title: Standard AddIns
 permalink: "addins/de/sharepointeraser/"
 ---
+
+## SharepointEraser
 
 Dieses AddIn löscht Items in einer Sharepoint Liste/Bibliothek die älter als xx Stunden sind.
 

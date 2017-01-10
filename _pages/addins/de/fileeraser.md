@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - FileEraser
+title: Standard AddIns
 permalink: "addins/de/fileeraser/"
 ---
+
+## FileEraser
 
 Dieses AddIn löscht bestimmte Dateien.
 

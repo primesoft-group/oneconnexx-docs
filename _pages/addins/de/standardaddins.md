@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Standard Addins
+title: Standard AddIns
 permalink: "addins/de/standardaddins/"
 ---
   

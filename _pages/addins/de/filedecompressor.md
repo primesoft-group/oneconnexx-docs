@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - FileDecompressor
+title: Standard AddIns
 permalink: "addins/de/filedecompressor/"
 ---
+
+## FileDecompressor
 
 Dieses AddIn entpackt Dateien und Verzeichnisse.
 

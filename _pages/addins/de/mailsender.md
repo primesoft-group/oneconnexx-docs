@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - MailSender
+title: Standard AddIns
 permalink: "addins/de/mailsender/"
 ---
+
+## MailSender
 
 Dieses AddIn versendet ein E-Mail.
 

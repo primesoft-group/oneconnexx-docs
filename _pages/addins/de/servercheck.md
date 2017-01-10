@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - ServerCheck
+title: Standard AddIns
 permalink: "addins/de/servercheck/"
 ---
+
+## ServerCheck
 
 Dieses AddIn ...
 

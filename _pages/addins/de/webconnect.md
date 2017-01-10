@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - WebConnect
+title: Standard AddIns
 permalink: "addins/de/webconnect/"
 ---
+
+## WebConnect
 
 Das WebConnect AddIn funktioniert als WebService, welcher von externen Applikation aufgerufen wird. Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Parameter wird eine OneMessage mitgegeben.
 

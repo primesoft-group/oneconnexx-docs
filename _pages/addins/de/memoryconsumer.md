@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - MemoryConsumer
+title: Standard AddIns
 permalink: "addins/de/memoryconsumer/"
 ---
+
+## MemoryConsumer
 
 Systemtest, Stresstest
 

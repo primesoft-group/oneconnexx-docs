@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - FileReconstructor
+title: Standard AddIns
 permalink: "addins/de/filereconstructor/"
 ---
+
+## FileReconstructor
 
 Dieses AddIn ...
 

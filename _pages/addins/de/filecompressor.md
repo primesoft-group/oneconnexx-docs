@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - FileCompressor
+title: Standard AddIns
 permalink: "addins/de/filecompressor/"
 ---
+
+## FileCompressor
 
 Dieses AddIn komprimiert Dateien und Verzeichnisse
 

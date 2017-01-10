@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Addins - XSLTransform
+title: Standard AddIns
 permalink: "addins/de/xsltransform/"
 ---
+
+## XSLTransform
 
 Transformiert XML Dateien
 
