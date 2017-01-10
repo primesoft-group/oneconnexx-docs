@@ -7,6 +7,7 @@ permalink: "addins/de/overview/"
 __AddIn Typen__
 
 Der OneConnexx kennt folgende AddIn-Typen:
+
 1. Connector
    * Schnittstelle zu einer Anwendung / System
 2. Logic
@@ -24,7 +25,6 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 
 1. Bizagi<br/>
    Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
-
 2. DatabaseMaintenance<br/>
    Erstellt alle Indexe einer Datenbank neu, um so die Performance zu verbessern
 3. DatabaseToCSV<br/>
