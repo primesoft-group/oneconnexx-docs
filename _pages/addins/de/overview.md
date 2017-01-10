@@ -52,5 +52,3 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 | Xml2Csv | |
 
 
-## Bizagi {% include anchor.html name="Bizagi" %}
-
