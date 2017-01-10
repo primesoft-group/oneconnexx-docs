@@ -4,7 +4,7 @@ title: Addins - LicenseCheck
 permalink: "addins/de/licensecheck/"
 ---
 
-LisenceCheck wird als WebService betrieben. Externe Applikationen übermitteln periodisch ihre aktuelle Lizenz. Das LicenseCheck AddIn schreibt die Lizenzdaten in Bizagi, steuert in Bizagi offene Prozesse und sendet letztendlich eine Antwort (ev. ein neues Lizenzfile) an die externe Applikation.
+LisenceCheck wird als WebService betrieben. Externe Applikationen Ã¼bermitteln periodisch ihre aktuelle Lizenz. Das LicenseCheck AddIn schreibt die Lizenzdaten in Bizagi, steuert in Bizagi offene Prozesse und sendet letztendlich eine Antwort (ev. ein neues Lizenzfile) an die externe Applikation.
 
 __Merkmale__
 

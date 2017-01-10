@@ -4,7 +4,7 @@ title: Addins - Dispatcher
 permalink: "addins/de/dispatcher/"
 ---
 
-Löst Events aufgrund einer SQL Abfrage aus
+LÃ¶st Events aufgrund einer SQL Abfrage aus
 
 __Merkmale__
 

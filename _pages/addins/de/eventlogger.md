@@ -4,7 +4,7 @@ title: Addins - EventLogger
 permalink: "addins/de/eventlogger/"
 ---
 
-Schreibt alle mit dem Event übergebenen Parameter ins Logfile
+Schreibt alle mit dem Event Ã¼bergebenen Parameter ins Logfile
 
 __Merkmale__
 

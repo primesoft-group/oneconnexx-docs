@@ -4,7 +4,7 @@ title: Addins - FileEraser
 permalink: "addins/de/fileeraser/"
 ---
 
-Dieses AddIn löscht bestimmte Dateien.
+Dieses AddIn lÃ¶scht bestimmte Dateien.
 
 __Merkmale__
 
