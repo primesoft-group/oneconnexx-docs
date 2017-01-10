@@ -3,20 +3,7 @@ layout: page
 title: Addins - Übersicht
 permalink: "addins/de/overview/"
 ---
-
-__AddIn Typen__
-
-Der OneConnexx kennt folgende AddIn-Typen:<br />
-<br />
-
-
-{:.table .table-striped}
-| Type | Beschreibung |                      
-| --- | --- |
-| Connector | Schnittstelle zu einer Anwendung / System |
-| Logic | AddIn enhält Geschäftlogik wie z.B. das Kopieren von Dateien |
-| Event | AddIn führt ein Initiales Ereignis aus wie z.B. das Erkennen einer neuen Datei |
-    
+  
 __Standard AddIns__
 
 Folgende Standard AddIns sind aktuell im Lieferumfang des OneConnexx enthalten.<br /> 

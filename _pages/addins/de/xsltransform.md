@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Addins - XSLTransform
-permalink: "addins/de/XSLTransform/"
+permalink: "addins/de/xsltransform/"
 ---
 
 Transformiert XML Dateien
