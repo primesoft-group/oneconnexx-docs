@@ -33,10 +33,10 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 | [DatabaseToCSV]({{ site.baseurl }}/addins/de/databasetocsv/) | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
 | [Dispatcher]({{ site.baseurl }}/addins/de/dispatcher/) | Löst Events aufgrund einer SQL Abfrage aus |
 | [EventLogger]({{ site.baseurl }}/addins/de/eventlogger/) | Schreibt alle mit dem Event übergebenen Parameter ins Logfile |
-| [FileCompressor]({{ site.baseurl }}/addins/de/FileCompressor/) | Komprimiert Dateien |
-| [FileCopy]({{ site.baseurl }}/addins/de/bizagi/) | Kopiert Dateien (auch FTP und SFTP) |
-| [FileDecompressor]({{ site.baseurl }}/addins/de/FileDecompressor/) | Entpackt Dateien |
-| [FileEraser]({{ site.baseurl }}/addins/de/bizagi/) | Löscht bestimmte Dateien |
+| [FileCompressor]({{ site.baseurl }}/addins/de/filecompressor/) | Komprimiert Dateien |
+| [FileCopy]({{ site.baseurl }}/addins/de/filecopy/) | Kopiert Dateien (auch FTP und SFTP) |
+| [FileDecompressor]({{ site.baseurl }}/addins/de/filedecompressor/) | Entpackt Dateien |
+| [FileEraser]({{ site.baseurl }}/addins/de/fileeraser/) | Löscht bestimmte Dateien |
 | [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) |  |
 | [FileSystemWatcher]({{ site.baseurl }}/addins/de/filesystemwatcher/) | Der FileSystemWatcher dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Filepattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien. |
 | [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | |
