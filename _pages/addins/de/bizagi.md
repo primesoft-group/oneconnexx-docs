@@ -1,6 +1,6 @@
 ---
 layout: page
-title: [Standard AddIns]({{ site.baseurl }}/addins/de/standardaddins/)
+title: Standard AddIns
 permalink: "addins/de/bizagi/"
 ---
 
