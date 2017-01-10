@@ -15,7 +15,7 @@ Der OneConnexx kennt folgende AddIn-Typen:
 3. Event
    * AddIn führt ein Initiales Ereignis aus wie z.B. das Erkennen einer neuen Datei
 
-{:.table .table-striped}
+
 | Type | Beschreibung |                      
 | --- | --- |
 | Connector | Schnittstelle zu einer Anwendung / System |
