@@ -10,7 +10,7 @@ Der OneConnexx kennt folgende AddIn-Typen:<br />
 <br />
 
 
-{:.table}
+{:.table .table-striped}
 | Type | Beschreibung |                      
 | --- | --- |
 | Connector | Schnittstelle zu einer Anwendung / System |
@@ -25,7 +25,7 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 <br />
 
 
-{:.table}
+{:.table .table-striped}
 | AddIn | Beschreibung |                      
 | --- | --- |
 | [Bizagi]({{ site.baseurl }}/addins/de/bizagi/) | Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus. |

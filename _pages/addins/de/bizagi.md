@@ -6,7 +6,7 @@ permalink: "addins/de/bizagi/"
 
 Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
 
-{:.table}
+{:.table .table-striped}
 | --- | --- |
 | AddIn Type | Connector |
 | Interfaces | In/Out: 2 x Bizagi WebServices (EntityManager und WorkflowEngine) |
@@ -17,7 +17,7 @@ Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Biza
 
 __Parameter__
 
-{:.table}
+{:.table .table-striped}
 | Parameter | Beschreibung |                      
 | --- | --- |
 | configFilename | Anwendungsspezifische Bizagi Konfigurationsdatei |
