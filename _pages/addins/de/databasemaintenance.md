@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Addins - DatabaseMaintenance
+title: Standard Addins - DatabaseMaintenance
 permalink: "addins/de/databasemaintenance/"
 ---
 

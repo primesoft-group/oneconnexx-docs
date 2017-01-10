@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Addins - Übersicht
-permalink: "addins/de/overview/"
+title: Standard Addins
+permalink: "addins/de/_standardaddins/"
 ---
   
 __Standard AddIns__
@@ -27,7 +27,6 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 | [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) |  |
 | [FileSystemWatcher]({{ site.baseurl }}/addins/de/filesystemwatcher/) | Der FileSystemWatcher dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Filepattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien. |
 | [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | |
-| [LicenseCheck]({{ site.baseurl }}/addins/de/licensecheck/) |LisenceCheck wird als WebService betrieben. Externe Applikationen übermitteln periodisch ihre aktuelle Lizenz. Das LicenseCheck AddIn schreibt die Lizenzdaten in Bizagi, steuert in Bizagi offene Prozesse und sendet letztendlich eine Antwort (ev. ein neues Lizenzfile) an die externe Applikation. |
 | [MailSender]({{ site.baseurl }}/addins/de/mailsender/) | Versendet ein E-Mail |
 | [MemoryConsumer]({{ site.baseurl }}/addins/de/memoryconsumer/) | Systemtest, Stresstest |
 | [OneOffixxDocumentCreator]({{ site.baseurl }}/addins/de/oneoffixxdocumentcreator/) | Erstellt über die OneOffixx Schnittstelle «OneOffixxDocumentCreationServer» (OODCS) Dokumente im CI/CD des Kunden. |
