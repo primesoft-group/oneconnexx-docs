@@ -4,7 +4,7 @@ title: Addins - OneOffixxDocumentCreator
 permalink: "addins/de/oneoffixxdocumentcreator/"
 ---
 
-Erstellt mit der OneOffixx Schnittstelle OneOffixxDocumentCreationServer (OODCS) Dokumente im CI/CD des Kunden.
+ToDo
 
 __Merkmale__
 
