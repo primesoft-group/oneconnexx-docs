@@ -6,8 +6,8 @@ permalink: "addins/de/overview/"
 
 __AddIn Typen__
 
-Der OneConnexx kennt folgende AddIn-Typen:
-
+Der OneConnexx kennt folgende AddIn-Typen:<br />
+<br />
 
 
 {:.table .table-striped}
@@ -21,8 +21,8 @@ __Standard AddIns__
 
 Folgende Standard AddIns sind aktuell im Lieferumfang des OneConnexx enthalten.<br /> 
 Hinweis: Nicht enthalten in dieser Liste sind alle kundenspezifische AddIns.<br />
-Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werden ständig erweitert.
-
+Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werden ständig erweitert.<br />
+<br />
 
 
 {:.table .table-striped}
