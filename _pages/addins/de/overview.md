@@ -28,7 +28,7 @@ Hinweis: Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werd
 {:.table}
 | AddIn | Beschreibung |                      
 | --- | --- |
-| [__DocumentCreation__]({{ site.baseurl }}/usecases/de/documentcreation/) | TESCHT |
+| [DocumentCreation]({{ site.baseurl }}/usecases/de/documentcreation/) | TESCHT |
 | Bizagi | Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus. |
 | DatabaseMaintenance | Erstellt alle Indexe einer Datenbank neu, um so die Performance zu verbessern
 | DatabaseToCSV | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
