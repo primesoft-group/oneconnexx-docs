@@ -6,6 +6,8 @@ permalink: "addins/de/bizagi/"
 
 Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
 
+__Merkmale__
+
 {:.table .table-striped}
 | --- | --- |
 | AddIn Type | Connector |
@@ -27,4 +29,6 @@ __Parameter__
 | traceFolder | Ablageordner der Analyse-Dateien |
 | messageTransformFolder | Ordner, welche die MessageTransform Dateien (*.mt) beinhaltet |
 
+
+__Anwendungsbeispiel__
 
