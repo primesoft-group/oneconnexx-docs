@@ -5,7 +5,7 @@ permalink: "addins/de/customeraddins/"
 ---
   
 Kundenspezifische AddIns enthalten Geschäftlogik einer Fachabteilung, welche mit den Standard AddIns nicht abgebildet werden können. Das kann das Einbinden einer Fachspezifischen DLL sein oder die Überprüfung bestimmter Regeln. 
-
+<br />
 
 {:.table .table-striped}
 | AddIn | Beschreibung |                      
