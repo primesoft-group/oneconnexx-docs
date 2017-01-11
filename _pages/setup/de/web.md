@@ -54,6 +54,7 @@ Unter «Sites» -> Rechte Maustaste -> «Add Website…»
 Neu erstellte Site anklicken -> Authentication -> Windows Authentication = Enabled
 
 Unter ApplicationPools den neu erstellten ApplicationPool «OneConnexxAdministration» auswählen, «Advances Settings…» öffnen:
+
 * Load User Profile = True
 * .NET Framework Version = v4.0
 
