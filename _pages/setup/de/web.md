@@ -56,7 +56,8 @@ Neu erstellte Site anklicken -> Authentication -> Windows Authentication = Enabl
 Unter ApplicationPools den neu erstellten ApplicationPool «OneConnexxAdministration» auswählen, «Advances Settings…» öffnen:
 
 * Load User Profile = True
-* .NET Framework Version = v4.0
+* NET Framework Version = v4.0
+
 
 #### IIS Berechtigung erteilen um Dienst zu Stoppen/Starten
 
