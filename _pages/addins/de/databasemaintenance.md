@@ -12,9 +12,9 @@ __Merkmale__
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
-| Transaktionen |  |
+| AddIn Type | Logic |
+| Schnittstellen | Dest: DB |
+| Transaktionen | 1 wenn erfolgreich |
 | Ereignisse |  |
 | Ereignis-Parameter |  |
 
@@ -24,7 +24,7 @@ __Parameter__
 {:.table .table-striped}
 | Parameter | Beschreibung |                      
 | --- | --- |
-| Parameter |  |
+| connectionString | Angabe der Verbindung zur Datenbank, deren Indexe neu erstellt werden sollen |
 
 
 __Anwendungsbeispiele__
