@@ -13,7 +13,7 @@ __Merkmale__
 {:.table .table-striped}
 | --- | --- |
 | AddIn Type | Konnektor |
-| Schnittstellen | In: Bizagi WebServices EntityManager und WorkflowEngine<br/>Out: Bizagi WebServices EntityManager und WorkflowEngine |
+| Schnittstellen | In/Out: Bizagi WebServices EntityManager und WorkflowEngine |
 | Transaktionen |  |
 | Ereignisse |  |
 | Ereignis-Parameter |  |
