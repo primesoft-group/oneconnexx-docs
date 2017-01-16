@@ -24,11 +24,11 @@ __Parameter__
 | Parameter | Beschreibung |                      
 | --- | --- |
 | configFilename | Anwendungsspezifische Bizagi Konfigurationsdatei |
-| workflowUrl | Bizagi WorkflowEngineSOA WebService |
-| entityUrl | Bizagi EntityManagerSOA WebService |
+| workflowUrl | URL des Bizagi WorkflowEngineSOA WebServices |
+| entityUrl | URL des Bizagi EntityManagerSOA WebServices |
 | enableTrace| true	: Datenaustausch wird zur Analyse gespeichert<br/> false : «»
 | traceFolder | Ablageordner der Analyse-Dateien |
-| messageTransformFolder | Ordner, welche die MessageTransform Dateien (*.mt) beinhaltet |
+| messageTransformFolder | Ordner, welcher die MessageTransform Dateien (*.mt) beinhaltet |
 
 
-__Anwendungsbeispiele__
+<!-- __Anwendungsbeispiele__ -->
