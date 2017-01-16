@@ -21,7 +21,6 @@ __Merkmale__
 __Parameter__
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | configFilename | Anwendungsspezifische Bizagi Konfigurationsdatei |
 | workflowUrl | URL des Bizagi WorkflowEngineSOA WebServices |
