@@ -25,7 +25,7 @@ __Quick guide to change color theme:__
 
  1. Change the $color_accent in winstrap\src\scss\win\\_colors.scss.
 
- 1. In git bash run:
+ 1. In git bash, go into folder "winstrap" and run:
  
 	grunt
 
