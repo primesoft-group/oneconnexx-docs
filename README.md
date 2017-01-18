@@ -23,7 +23,7 @@ __Quick guide to change color theme:__
  
 	git clone https://github.com/winjs/winstrap.git
 
- 1. Change the $color_accent in winstrap\src\scss\win\_colors.scss.
+ 1. Change the $color_accent in winstrap\src\scss\win\\_colors.scss.
 
  1. In git bash run:
  
