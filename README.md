@@ -13,12 +13,16 @@ __Quick guide to change color theme:__
 
  1. Download node.js from https://nodejs.org/en/#download
 
- 1. Open cmd and run npm install -g grunt-cli, npm install -g bower
+ 1. Open cmd and run:
+	npm install -g grunt-cli
+	npm install -g bower
 
- 1. Open git bash at preferred Location and run: git clone https://github.com/winjs/winstrap.git
+ 1. Open git bash at preferred Location and run: 
+	git clone https://github.com/winjs/winstrap.git
 
  1. Change the $color_accent in winstrap\src\scss\win\_colors.scss.
 
- 1. In git bash, run "grunt"
+ 1. In git bash run:
+	grunt
 
  1. Go to winstrap\dist\css and copy the files into oneconnexx-docs\assets\css
