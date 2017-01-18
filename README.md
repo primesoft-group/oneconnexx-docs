@@ -30,3 +30,5 @@ __Quick guide to change color theme:__
 	grunt
 
  1. Go to winstrap\dist\css and copy the files into oneconnexx-docs\assets\css
+ 
+ 1. Push oneconnexx-docs to oneconnexx-docs github repo, refresh page, there you go.
