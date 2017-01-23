@@ -1,14 +1,12 @@
 ---
 layout: page
-title: Standard AddIns
+title: EventLogger
 permalink: "addins/de/eventlogger/"
 ---
 
-## EventLogger
+Das EventLogger AddIn schreibt alle mit dem Event übergebenen Parameter ins Logfile.
 
-Schreibt alle mit dem Event übergebenen Parameter ins Logfile
-
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
@@ -19,13 +17,16 @@ __Merkmale__
 | Ereignis-Parameter |  |
 
 
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | Parameter |  |
 
 
-__Anwendungsbeispiele__
+<!-- 
+## Anwendungsbeispiele 
+
+ToDo
+-->
 

@@ -1,31 +1,34 @@
 ---
 layout: page
-title: Standard AddIns
+title: WebRemote
 permalink: "addins/de/webremote/"
 ---
 
-## WebRemote
-
 Sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen angegebenen WebService.
 
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | Out: Externe Applikationen |
 | Transaktionen |  |
 | Ereignisse |  |
 | Ereignis-Parameter |  |
 
 
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
 | Parameter | Beschreibung |                      
 | --- | --- |
-| Parameter |  |
+| remoteUrl | URL des Empfänger WebServices |
+| enableTrace | true = Datenaustausch wird zur Analyse gespeichert<br />false = "" (Default = false) |
+| traceFolder | Ablageordner der Analyse-Dateien |
 
 
-__Anwendungsbeispiele__
+<!-- 
+## Anwendungsbeispiele 
 
+ToDo
+-->

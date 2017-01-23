@@ -1,31 +1,38 @@
 ---
 layout: page
-title: Standard AddIns
+title: FileReconstructor
 permalink: "addins/de/filereconstructor/"
 ---
 
-## FileReconstructor
+Das FileReconstructor AddIn liest eine existierende Datei und erstellt anhand des Dateiinhalts und anhand konfigurierter Regeln eine neue Datei.
+Mit dem FileReconstructor AddIn werden Texte anhand von Regeln eingefügt oder ersetzt. 
 
-Dieses AddIn ...
-
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
 | AddIn Type |  |
 | Schnittstellen |  |
-| Transaktionen |  |
-| Ereignisse |  |
-| Ereignis-Parameter |  |
+| Transaktionen | 1 pro erstellte Datei |
+| Ereignisse | <Instanz>.Done <br />Pro erstellte Datei: <Instanz>.Output |
+| Ereignis-Parameter | Datei |
 
 
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
-| Parameter |  |
+| inputFile | Dateiname inkl. Pfad der Quelldatei. Mehrere Dateien möglich (Optional) |
+| outputFile | Filename des Files, in welches geschrieben werden soll (Optional). Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei  |
+| Reconfiguration | Text, welcher neu in die Datei geschrieben werden soll. Eingabe entweder mit Hochkomatas oder mit Hochkommas. Andere Möglichkeit innerhalb geschweiften Klammern Start Kolonne, End Kolonne, Länge, Auffüll Buchstabe und die Horizontale Ausrichtung angeben.  |
+| deleteInputFile | true = Quelldatei wird gelöscht<br /> false = Quelldatei wird nicht gelöscht (Default = false) |
+| userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
+| password | Zugehöriges Passwort (Optional) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
 
+## Anwendungsbeispiele
 
-__Anwendungsbeispiele__
+Folgende Beispiel zeigen die verschiedenen Möglichkeiten des Parameters Reconfiguration:
+1. Mit Hochkomatas oder mit Hochkommas
+2. Innerhalb geschweiften Klammern Start Kolonne, End Kolonne, Länge, Auffüll Buchstabe und die Horizontale Ausrichtung
 

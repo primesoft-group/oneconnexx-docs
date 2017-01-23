@@ -1,14 +1,12 @@
 ---
 layout: page
-title: Standard AddIns
-permalink: "addins/de/parametertransformer/"
+title: ParameterTransformer
 ---
 
-## ParameterTransformer
 
-Dieses AddIn transformiert Parametern zwischen zwei AddIn-Instanzen.
+Das ParameterTransformer AddIn transformiert Parameter zwischen zwei AddIn-Instanzen.
 
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
@@ -19,13 +17,18 @@ __Merkmale__
 | Ereignis-Parameter |  |
 
 
-__Parameter__
+## Parameter
 
-{:.table .table-striped}
-| Parameter | Beschreibung |                      
+{:.table .table-striped}                
 | --- | --- |
-| Parameter |  |
+| Debug | true = Alle Parameter werden in das Logfile geschrieben. (Optional, Default = false) |
+| definitionFile | XML File welches die Definitionen für die Input Parameter und für die Output Parameter hat. |
 
 
-__Anwendungsbeispiele__
+
+<!-- 
+## Anwendungsbeispiele 
+
+ToDo
+-->
 

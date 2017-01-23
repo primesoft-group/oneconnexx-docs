@@ -1,30 +1,37 @@
 ---
 layout: page
-title: Standard AddIns
+title: OneOffixxDocumentCreator
 permalink: "addins/de/oneoffixxdocumentcreator/"
 ---
 
-## OneOffixxDocumentCreator
 
-Das AddIn OneOffixxDocumentCreator ...
+Das AddIn OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "OneOffixxDocumentCreationServer" (OODCS) Dokumente im CI/CD des Kunden.
 
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Konnektor / Logic |
+| Schnittstellen | In/Out: OneOffixx |
 | Transaktionen |  |
 | Ereignisse |  |
 | Ereignis-Parameter |  |
 
 
-__Parameter__
+## Parameter
 
-{:.table .table-striped}
-| Parameter | Beschreibung |                      
+{:.table .table-striped}                    
 | --- | --- |
-| Parameter |  |
+| configFilename | Datei mit Mapping-Konfiguration (Bsp. $(config)\oodcs.xml) |
+| oodcsUrl | URL des OODCS WebServices |
+| oodcsUsername | Benutzername des OODCS WebServices |
+| oodcsPassword | Passwort des OODCS WebServices |
+| enableTrace | true = Datenaustausch wird zur Analyse gespeichert<br />false = "" (Default = false) |
+| traceFolder | Ablageordner der Analyse-Dateien |
+| messageTransformFolder | Ordner, welche die MessageTransform Dateien (*.mt) beinhaltet |
+| retryCount | Falls eine Anfrage fehlschlägt, wird diese wiederholt. Der Parameter retryCount definiert, wie oft eine Anfrage wiederholt werden soll. (Optional, Default = 1) |
+| maxRequests | Anzahl paralleler Anfragen (Optional, Default = 8) |
 
+## Anwendungsbeispiele
 
-__Anwendungsbeispiele__
+Beim [Anwendungesbeipiel "Dokumentendienst"]({{ site.baseurl }}/usecases/de/documentcreation/) werden die Dokumente über das OneOffixxDocumentCreator AddIn erstellt.

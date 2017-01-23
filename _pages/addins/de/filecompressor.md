@@ -1,31 +1,34 @@
 ---
 layout: page
-title: Standard AddIns
+title: FileCompressor
 permalink: "addins/de/filecompressor/"
 ---
 
-## FileCompressor
+Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verzeichnis und speichert diese dann in einem Archiv ab
 
-Dieses AddIn komprimiert Dateien und Verzeichnisse
-
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
 | AddIn Type |  |
 | Schnittstellen |  |
-| Transaktionen |  |
-| Ereignisse |  |
-| Ereignis-Parameter |  |
+| Transaktionen | 1 wenn erfolgreich |
+| Ereignisse | <Instanz>.Done |
+| Ereignis-Parameter | Datei |
 
 
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
-| Parameter |  |
+| sourceDirectory | Verzeichnis der Quelldatei(en) |
+| sourceFilePattern | Das Format nach welchem die Files gefiltert werden sollen. Mehrere Pattern werden mit Semikolons getrennt. Platzhalter "*" ist erlaubt. (Default = *.*) |
+| archiveName | Ganzer Pfad mit Dateiname des Archives. Die Eingabe {0} wird als Platzhalter für das aktuelle Datum benutzt. Bsp. {0:yyyyMMdd}.zip => 20161128.zip. |
+| archiveType | Angabe des Archivierungstypes. Zur Auswahl stehen Zip, Tar, GZip. (Default = Zip) |
+| compressionType | Der Kompressionstyp. Ist abhängig vom Archivtyp: Zip => BZip2, PPMd, Deflate, LZMA, Tar => GZip, BZip2, GZip => GZip. (Default = LZMA) |
+| deleteSourceAfterProcessing | true = Die Quelldateien werden nach dem Komprimieren gelöscht. (Optional, Default = false) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
 
+## Anwendungsbeispiele
 
-__Anwendungsbeispiele__
-
+Platzsparendes Archvieren irgendwelcher Nutzerdaten

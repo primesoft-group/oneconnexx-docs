@@ -1,14 +1,12 @@
 ---
 layout: page
-title: Standard AddIns
+title: Bizagi
 permalink: "addins/de/bizagi/"
 ---
 
-## Bizagi
-
 Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
 
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
@@ -18,7 +16,7 @@ __Merkmale__
 | Ereignisse |  |
 | Ereignis-Parameter |  |
 
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
 | --- | --- |
@@ -28,10 +26,11 @@ __Parameter__
 | enableTrace| true	: Datenaustausch wird zur Analyse gespeichert<br/> false : «»
 | traceFolder | Ablageordner der Analyse-Dateien |
 | messageTransformFolder | Ordner, welcher die MessageTransform Dateien (*.mt) beinhaltet |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
 
 
 <!-- 
-__Anwendungsbeispiele__ 
+## Anwendungsbeispiele 
 
 ToDo
 -->

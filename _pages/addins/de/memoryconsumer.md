@@ -1,31 +1,34 @@
 ---
 layout: page
-title: Standard AddIns
+title: MemoryConsumer
 permalink: "addins/de/memoryconsumer/"
 ---
 
-## MemoryConsumer
 
-Systemtest, Stresstest
+Das MemoryConsumer AddIn dient einzig zum Systemtest und Stresstest. 
 
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | Out: OS |
 | Transaktionen |  |
 | Ereignisse |  |
 | Ereignis-Parameter |  |
 
 
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
 | Parameter | Beschreibung |                      
 | --- | --- |
-| Parameter |  |
+| memory | Speicher der belegt wird in MB |
 
 
-__Anwendungsbeispiele__
+<!-- 
+## Anwendungsbeispiele 
+
+ToDo
+-->
 

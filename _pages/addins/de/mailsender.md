@@ -1,31 +1,39 @@
 ---
 layout: page
-title: Standard AddIns
+title: MailSender
 permalink: "addins/de/mailsender/"
 ---
 
-## MailSender
 
-Dieses AddIn versendet ein E-Mail.
+Das MailSender AddIn versendet E-Mails.
+Der Inhalt der E-Mail wird mit dem Event an das MailSender AddIn übermittelt.
+Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt werden, können aber auch im AddIn selbst konfiguriert werden.
 
-__Merkmale__
+## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
-| Transaktionen |  |
-| Ereignisse |  |
+| AddIn Type | Logic |
+| Schnittstellen | Out: E-Mail |
+| Transaktionen | 1 wenn erfolgreich |
+| Ereignisse | <Instanz>.Done |
 | Ereignis-Parameter |  |
 
-
-__Parameter__
+## Parameter
 
 {:.table .table-striped}
 | Parameter | Beschreibung |                      
 | --- | --- |
-| Parameter |  |
+| mailServer | Host Name oder URL des Mail Servers |
+| recipients | E-Mail Adressen der Empfänger. Mehrere E-Mails werden mit "," getrennt |
+| sender | E-Mail Adresse des Abenders |
+| subjectPrefix | Betreff |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) | |
 
 
-__Anwendungsbeispiele__
+<!-- 
+## Anwendungsbeispiele 
+
+ToDo
+-->
 
