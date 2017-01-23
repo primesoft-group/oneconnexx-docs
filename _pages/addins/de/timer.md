@@ -20,7 +20,6 @@ Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu f
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | interval | Intervallzeit des Timers in Millisekunden<br />Werden keine weiteren Angaben gemacht, löst das Timer AddIn jeweils nach Ablauf des Intervalls einen Event aus.<br />Werden jedoch weitere Angaben gemacht, wirken sich dies als Filter auf die Intervallzeit aus. Es sind auch Kombinationen möglich, wie z.B. «am 1. Tag pro Monat um 06:00» oder «sonntags um 20:00». |
 | timeOfDay | Filter für eine bestimmte Tageszeit<br />Angabe in Stunden und Minuten. Mehrere Tageszeiten werden mit Semikolon getrennt. Bsp. «06:30; 12.00» |

@@ -22,7 +22,6 @@ Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Paramet
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | baseAddress | URL des WebServices |
 | enableTrace | true = Datenaustausch wird zur Analyse gespeichert<br />false = "" (Default = false) |

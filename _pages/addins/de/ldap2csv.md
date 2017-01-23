@@ -21,7 +21,6 @@ Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und 
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | userName | Benutzer mit den für das LDAP erforderlichen Berechtigungen (Optional) |
 | password | Zugehöriges Passwort (Optional) |

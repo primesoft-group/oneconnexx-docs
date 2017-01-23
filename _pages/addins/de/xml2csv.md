@@ -20,7 +20,6 @@ Das AddIn Xml2Csv schreibt bestimmte XML Nodes in eine CSV Datei. Über die Para
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | sourceDirectory | Das Verzeichnis der Quelldateien (XML-Dateien) |
 | sourceFilePattern | Das Dateipattern dient zur Einschränkung der Quelldateien. (Optional, Default = *.xml) |

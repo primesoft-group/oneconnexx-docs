@@ -20,7 +20,6 @@ Das XMLTransform AddIn transformiert XML Dateien
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | directory | Angabe des Verzeichnisses in welches die transformierte XML Datei gespeichert wird |
 | archive | Verzeichnis, in welchem die Originaldatei und die transformierte Datei archiviert werden sollen. (Optional, Default = "" = nichts archivieren) |

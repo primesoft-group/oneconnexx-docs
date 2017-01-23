@@ -20,7 +20,6 @@ Sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an eine
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | remoteUrl | URL des Empfänger WebServices |
 | enableTrace | true = Datenaustausch wird zur Analyse gespeichert<br />false = "" (Default = false) |

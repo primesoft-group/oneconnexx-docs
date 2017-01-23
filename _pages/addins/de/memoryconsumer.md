@@ -21,7 +21,6 @@ Das MemoryConsumer AddIn dient einzig zum Systemtest und Stresstest.
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | memory | Speicher der belegt wird in MB |
 

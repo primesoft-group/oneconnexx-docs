@@ -22,7 +22,6 @@ Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt wer
 ## Parameter
 
 {:.table .table-striped}
-| Parameter | Beschreibung |                      
 | --- | --- |
 | mailServer | Host Name oder URL des Mail Servers |
 | recipients | E-Mail Adressen der Empfänger. Mehrere E-Mails werden mit "," getrennt |
