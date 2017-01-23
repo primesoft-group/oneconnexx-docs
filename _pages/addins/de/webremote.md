@@ -4,17 +4,17 @@ title: WebRemote
 permalink: "addins/de/webremote/"
 ---
 
-Sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen angegebenen WebService.
+Das WebRemote AddIn sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen bestimmten WebService.
 
 ## Merkmale
 
 {:.table .table-striped}
-| --- | --- |
-| AddIn Type | Logic |
-| Schnittstellen | Out: Externe Applikationen |
-| Transaktionen |  |
-| Ereignisse |  |
-| Ereignis-Parameter |  |
+| --- | --- | --- |
+| AddIn Type | Logic | |
+| Schnittstellen | Out: Externe Applikationen | |
+| Transaktionen |  | |
+| Ereignisse |  | |
+| Ereignis-Parameter |  | |
 
 
 ## Parameter
