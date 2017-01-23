@@ -14,7 +14,7 @@ Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.
 | Schnittstellen | In: Datenbank<br /> Out: CSV-Datei|
 | Transaktionen | 1 pro erstellte Datei |
 | Ereignisse | <Instanz>.Done <br /> Pro erstellte Datei: <Instanz>.Output |
-| Ereignis-Parameter | Datei |
+| Ereignis-Parameter | Datei                                                                                           |
 
 
 ## Parameter
