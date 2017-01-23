@@ -35,7 +35,10 @@ Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.
 
 ## Anwendungsbeispiele 
 
-Oftmals erhält die IT den Auftrag periodisch Datensätze aus einer Datenbank zu exportieren, damit die Fachbereiche die Angaben überprüfen oder weiterverarbeiten können.
-Das AddIn DatabaseToCSV übernimmt diesen Job. Es kann ein beliebiger SQL-Query definiert werden, welcher einen oder mehrere Datensätze retournniert. Pro Datensatz wird eine CSV-Datei generiert.
+Oftmals erhält die IT den Auftrag periodisch Datensätze aus einer Datenbank zu exportieren, damit die Fachbereiche die Angaben überprüfen oder weiterverarbeiten können.<br />
+<br />
+__Das AddIn DatabaseToCSV übernimmt künftig diesen Job!__<br />
+<br />
+Dazu wird eine SQL-Abfrage definiert, welcher einen oder mehrere Datensätze retourniert. Pro Datensatz wird eine CSV-Datei generiert.
 Ein Timer, welcher das AddIn DatabaseToCSV periodisch aufruft und ein MailSender, welcher den Fachbereich über die neu erstellten CSV-Dateien informiert, runden das Paket ab.
 
