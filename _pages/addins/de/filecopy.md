@@ -14,7 +14,7 @@ Das FileCopy AddIn unterstützt auch FTP und SFTP.
 | AddIn Type | Logic |
 | Schnittstellen | In/Out: Dateiverzeichnis |
 | Transaktionen | 1 pro kopierte Datei |
-| Ereignisse | Pro kopierte Datei wenn Ziel = FILE: <Instanz>.Output (Parameter = file)<br /><Instanz>.Done |
+| Ereignisse | Pro kopierte Datei wenn Ziel = FILE: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done |
 
 
 ## Parameter

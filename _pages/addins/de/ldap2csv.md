@@ -14,7 +14,7 @@ Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und 
 | AddIn Type | Logic |
 | Schnittstellen | In: LDAP<br />Out: File |
 | Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | <Instanz>.Done (Parameter = file)|
+| Ereignisse | &lt;Instanz&gt;.Done (Parameter = file)|
 
 
 ## Parameter

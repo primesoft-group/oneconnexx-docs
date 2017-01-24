@@ -13,7 +13,7 @@ Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu f
 | AddIn Type | Event |
 | Schnittstellen |  |
 | Transaktionen |  |
-| Ereignisse | <Instanz> |
+| Ereignisse | &lt;Instanz&gt; |
 
 
 ## Parameter

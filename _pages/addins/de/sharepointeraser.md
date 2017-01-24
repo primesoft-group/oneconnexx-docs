@@ -13,7 +13,7 @@ Das SharepointEraser AddIn löscht Items in einer Sharepoint Liste/Bibliothek di
 | AddIn Type | Logic |
 | Schnittstellen | Sharepoint |
 | Transaktionen | 1 wenn mind. 1 Datei gelöscht |
-| Ereignisse | <Instanz>.Done |
+| Ereignisse | &lt;Instanz&gt;.Done |
 
 
 ## Parameter

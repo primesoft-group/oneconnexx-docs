@@ -13,7 +13,7 @@ Das Xml2Csv AddIn schreibt bestimmte XML Nodes in eine CSV Datei. Über die Para
 | AddIn Type | Logic |
 | Schnittstellen | Dateiverzeichnis |
 | Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | Pro erstellte Datei: <Instanz>.Output (Parameter = file)<br /><Instanz>.Done |
+| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done |
 
 ## Parameter
 

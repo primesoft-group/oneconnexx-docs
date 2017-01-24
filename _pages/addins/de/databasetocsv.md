@@ -13,7 +13,7 @@ Das DatabaseToCSV AddIn erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Date
 | AddIn Type | Logic |
 | Schnittstellen | In: Datenbank<br /> Out: CSV-Datei|
 | Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | Pro erstellte Datei: <Instanz>.Output (Parameter = file) <br /><Instanz>.Done |
+| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />&lt;Instanz&gt;.Done |
 
 
 ## Parameter

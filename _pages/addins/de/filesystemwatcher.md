@@ -13,7 +13,7 @@ Das FileSystemWatcher AddIn dient zur Überwachung von Dateiordern und Dateien. 
 | AddIn Type | Event / Logic |
 | Schnittstellen | In: Dateiverzeichnis |
 | Transaktionen | 1 Transaktion pro Event |
-| Ereignisse | Pro erkannte Änderung und Datei ein Event: <Instanz> (Parameter = file) |
+| Ereignisse | Pro erkannte Änderung und Datei ein Event: &lt;Instanz&gt; (Parameter = file) |
 
 
 ## Parameter

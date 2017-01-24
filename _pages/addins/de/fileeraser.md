@@ -13,7 +13,7 @@ Das FileErase AddIn löscht oder verschiebt Dateien in einem bestimmten Verzeich
 | AddIn Type | Logic |
 | Schnittstellen | In/Out: Dateieverzeichnis |
 | Transaktionen | 1 wenn mind. 1 Datei gelöscht/verschoben und keine Fehler |
-| Ereignisse | <Instanz>.Done |
+| Ereignisse | &lt;Instanz&gt;.Done |
 
 
 ## Parameter

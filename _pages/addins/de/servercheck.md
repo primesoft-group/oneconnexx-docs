@@ -14,7 +14,7 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 | AddIn Type |  |
 | Schnittstellen |  |
 | Transaktionen | 1 pro nicht erreichtem Server |
-| Ereignisse | <Instanz>.Done (Parameter = OneMessage)|
+| Ereignisse | &lt;Instanz&gt;.Done (Parameter = OneMessage)|
 
 
 ## Parameter

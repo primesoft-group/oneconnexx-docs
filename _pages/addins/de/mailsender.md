@@ -15,7 +15,7 @@ Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt wer
 | AddIn Type | Logic |
 | Schnittstellen | Out: E-Mail |
 | Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | <Instanz>.Done |
+| Ereignisse | &lt;Instanz&gt;.Done |
 
 ## Parameter
 

@@ -13,7 +13,7 @@ Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verz
 | AddIn Type | Logic |
 | Schnittstellen | In/Out: Dateieverzeichnis |
 | Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | <Instanz>.Done (Parameter = file) |
+| Ereignisse | &lt;Instanz&gt;.Done (Parameter = file) |
 
 
 ## Parameter

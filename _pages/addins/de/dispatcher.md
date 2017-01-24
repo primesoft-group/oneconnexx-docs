@@ -14,7 +14,7 @@ Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Wer
 | AddIn Type | Event / Logic |
 | Schnittstellen |  |
 | Transaktionen | 1 wenn mind. 1 Datensatz |
-| Ereignisse | Pro DataRow: <Instanz> (Parameter = Alle Spalten der SQL-Abfrage)<br /><Instanz>.Done |
+| Ereignisse | Pro DataRow: &lt;Instanz&gt; (Parameter = Alle Spalten der SQL-Abfrage)<br />&lt;Instanz&gt;.Done |
 
 
 ## Parameter

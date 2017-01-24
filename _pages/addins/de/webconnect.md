@@ -15,7 +15,7 @@ Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Paramet
 | AddIn Type | Konnektor / Event |
 | Schnittstellen | In: Externe Applikationen |
 | Transaktionen |  |
-| Ereignisse | <Instanz>.<service> (Parameter = OneMessage)|
+| Ereignisse | &lt;Instanz&gt;.<service> (Parameter = OneMessage)|
 
 
 ## Parameter
