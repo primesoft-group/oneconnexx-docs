@@ -34,8 +34,8 @@ Die Regeln beinhalten das Einfügen und Ersetzen von Texten.
 
 ### Schlüsseltexte bei fixer Spaltebreite:
 Die Zieldatei ist eine Text-Datei mit folgendem Aufbau:<br />
-- Datensätze zu je 6 Feldern mit folgenden Feldlängen: 2,20,20,15,20,121
-- Feld-Inhalte pro Datensatz: Schlüssel „01“; Währungskürzel dreistellig, Gegenwährungskürzel dreistellig, Schlüssel „D“, Datum im Format „ddmmyyyy“, FX-Kurs im Format *#.####
+ - Datensätze zu je 6 Feldern mit folgenden Feldlängen: 2,20,20,15,20,121
+ - Feld-Inhalte pro Datensatz: Schlüssel „01“; Währungskürzel dreistellig, Gegenwährungskürzel dreistellig, Schlüssel „D“, Datum im Format „ddmmyyyy“, FX-Kurs im Format *#.####
 
 reconfiguration = "01"{0,3,20,}{3,6,20}"D"{0,0,14}{163,165}{161,163}{157,161,16}{171,191,121}
 
