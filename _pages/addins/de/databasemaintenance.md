@@ -4,7 +4,7 @@ title: DatabaseMaintenance
 permalink: "addins/de/databasemaintenance/"
 ---
 
-Das DatabaseMaintenance AddIn erneuert die Indexe einer Datenbank, um so die Performance zu verbessern.
+Das DatabaseMaintenance AddIn erneuert die Indexe einer Datenbank, um so die Performance zu verbessern.<br />
 Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keinen SQL Server Agent beinhaltet. 
 
 ## Merkmale
@@ -26,6 +26,6 @@ Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keine
 
 ## Anwendungsbeispiele 
 
-Das automatisches erneuern der Inidizes ist beim SQL Server Express nicht möglich.
+Das automatisches Erneuern der Inidizes ist beim SQL Server Express nicht möglich.<br />
 Zusammen mit einem Timer AddIn erstellt das DatabaseMaintenance AddIn die Inidizes eine SQL Server Express Datenbank automatisch täglich neu.
 
