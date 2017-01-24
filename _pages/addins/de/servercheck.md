@@ -28,5 +28,5 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 
 ## Anwendungsbeispiele
 
-Mit dem SeerverCheck AddIn werden wichtige Server sowohl innerhalb der Firma als auch extern täglich (oder stündlich/minütlich) überprüft. Der Ausfall eines Servers wird schnell erkannt und die nötigen Schritte eingeleitet.
+Mit dem ServerCheck AddIn werden wichtige Server sowohl innerhalb der Firma als auch extern täglich (oder stündlich/minütlich) überprüft. Der Ausfall eines Servers wird schnell erkannt und die nötigen Schritte eingeleitet.
 
