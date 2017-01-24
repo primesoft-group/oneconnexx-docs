@@ -23,15 +23,6 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 | inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
 | outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei  |
 | outputPath | Zielverzeichnis(Optional, Default = "") |
-| reconfiguration | Zeilenweise angewandte Konvertierungsregeln.<br />
-Fix Text: Eingabe in Hochkommas ' oder Anführungszeichen "<br />
-Verweis auf Ursprungszeile: Geschweifte Klammern im Format
-{Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]}<br />
-Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br />
-Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.<br />
-Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet.<br />
-Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Standard: ' ').<br />
-Das Auffüllzeichen wird je nach Ausrichtung ('left'/'l' (Standard) oder 'right'/'r') rechts beziehungsweise links eingefügt. |
 | deleteInputFile | true = Quelldatei wird gelöscht (Optional, Default = false) |
 | userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
 | password | Zugehöriges Passwort (Optional) |
