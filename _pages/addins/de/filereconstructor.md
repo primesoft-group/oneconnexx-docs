@@ -8,31 +8,18 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 
 {:.table .table-striped}
 | --- | --- |
-| | __Merkmale__ |
+| __Merkmale__ | |
 | AddIn Type | Logic |
 | Schnittstellen | In/Out: Dateieverzeichnis |
 | Transaktionen | 1 pro erstellte Datei |
 | Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />&lt;Instanz&gt;.Done |
 | | |
-| | __Parameter__ |
+| __Parameter__ | |
 | inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
+| reconfiguration | Zeilenweise angewandte Konvertierungsregeln. |
 | outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei  |
 | outputPath | Zielverzeichnis(Optional, Default = "") |
 | deleteInputFile | true = Quelldatei wird gelöscht (Optional, Default = false) |
-| userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
-| password | Zugehöriges Passwort (Optional) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
-
-
-{:.table .table-striped}
-| --- | --- |
-| inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
-| reconfiguration | Zeilenweise angewandte Konvertierungsregeln.<br />
-Fix Text: Eingabe in Hochkommas ' oder Anführungszeichen "<br />
-Verweis auf Ursprungszeile: Geschweifte Klammern im Format
-{Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]}<br />
-Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br />
-Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet. |
 | userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
 | password | Zugehöriges Passwort (Optional) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
