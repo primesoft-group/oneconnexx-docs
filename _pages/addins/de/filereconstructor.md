@@ -4,8 +4,7 @@ title: FileReconstructor
 permalink: "addins/de/filereconstructor/"
 ---
 
-Das FileReconstructor AddIn liest eine existierende Datei und erstellt anhand des Dateiinhalts und anhand konfigurierter Regeln eine neue Datei.
-Die Regeln beinhalten das Einfügen und Ersetzen von Texten.
+Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise den Inhalt anhand konfigurierten Regeln um und schreibt die rekonstruierten Zeilen in eine neue Datei.
 
 ## Merkmale
 
@@ -24,7 +23,15 @@ Die Regeln beinhalten das Einfügen und Ersetzen von Texten.
 | inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
 | outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei  |
 | outputPath | Zielverzeichnis(Optional, Default = "") |
-| reconfiguration | Konvertierungs-Regeln.<br />Eingabe entweder mit Hochkomatas oder mit Hochkommas.<br />Oder innerhalb geschweiften Klammern Start Kolonne, End Kolonne, Länge, Auffüll Buchstabe und die Horizontale Ausrichtung angeben.<br />Anwendungsbeispiele beachten. |
+| reconfiguration | Zeilenweise angewandte Konvertierungsregeln.<br />
+Fix Text: Eingabe in Hochkommas ' oder Anführungszeichen "<br />
+Verweis auf Ursprungszeile: Geschweifte Klammern im Format
+{Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]}<br />
+Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br />
+Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.<br />
+Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet.<br />
+Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Standard: ' ').<br />
+Das Auffüllzeichen wird je nach Ausrichtung ('left'/'l' (Standard) oder 'right'/'r') rechts beziehungsweise links eingefügt. |
 | deleteInputFile | true = Quelldatei wird gelöscht (Optional, Default = false) |
 | userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
 | password | Zugehöriges Passwort (Optional) |
@@ -33,9 +40,23 @@ Die Regeln beinhalten das Einfügen und Ersetzen von Texten.
 ## Anwendungsbeispiele
 
 ### Schlüsseltexte bei fixer Spaltebreite:
-Die Zieldatei ist eine Text-Datei mit folgendem Aufbau:<br />
- - Datensätze zu je 6 Feldern mit folgenden Feldlängen: 2,20,20,15,20,121
- - Feld-Inhalte pro Datensatz: Schlüssel „01“; Währungskürzel dreistellig, Gegenwährungskürzel dreistellig, Schlüssel „D“, Datum im Format „ddmmyyyy“, FX-Kurs im Format *#.####
+Die Eingabedatei enthält Spalten mit fixer breite, Inhalt sieht folgendermassen aus:
+EUR1000     CHF1072
+EUR400      USD430
 
-reconfiguration = "01"{0,3,20,}{3,6,20}"D"{0,0,14}{163,165}{161,163}{157,161,16}{171,191,121}
+Die Ausgabedatei soll aus 6 Spalten bestehen und mittels Semikolon separiert sein:
+TO;CHF;**1072;FROM;EUR;1000  
+TO;USD;***430;FROM;EUR;400   
 
+Eine mögliche Konfiguration sieht so aus:
+'TO;'{12,,3}';'{15,21,,*,r}';FROM;'{0,3}';'{3,9}
+
+Beschreibung:
+ - 'TO;' = fixer Text
+ - {12,,3} = ab Position 12 werden 3 Zeichen kopiert (Bsp. CHF)
+ - ';' = fixer Text (Semikolon)
+ - {15,21,,*,r} = Position 15 bis 21 kopieren und auf linker Seite (weil Ausrichtung = rechts) mit * auffüllen (Bsp. **1072)
+ - ';FROM;' = fixer Text
+ - {0,3} = ab Position 0 werden 3 Zeichen kopiert (Bsp. EUR)
+ - ';' = fixer Text (Semikolon)
+ - {3,9} = Position 3 bis 9 kopieren
