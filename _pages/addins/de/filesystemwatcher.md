@@ -23,7 +23,7 @@ Das FileSystemWatcher AddIn dient zur Überwachung von Dateiordern und Dateien. 
 | directory | Zu überwachendes Verzeichnis (Pfad immer absolut) |
 | usePolling | Art der Überwachung<br />true = Ordner wird periodisch überprüft, anhand pollingIntervall<br />false = Ordner wird dauernd überwacht |
 | pollingInterval | PollingIntervall in Sekunden, falls usePolling = true |
-| initialPull | true = Erzeugt beim Start des OneConnexx pro Datei ein CreateEvent |
+| initialPull | true = Erzeugt beim Start des OneConnexx pro im zu überwachenden Verzeichnis vorhanderer Datei ein CreateEvent |
 | includeSubdirectories | true = Alle Unterordner werden ebenfalls überwacht |
 | filter | Das Dateipattern dient zur Einschränkungder der zu überwachenden Dateinamen. Bsp. "*.txt" -> Alle Dateien mit der Endung «.txt» werden überwacht |
 | bufferSize | Interner Buffer in Bytes, Default =  8192 |
