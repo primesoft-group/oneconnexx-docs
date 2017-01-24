@@ -13,7 +13,7 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 | --- | --- |
 | AddIn Type |  |
 | Schnittstellen |  |
-| Transaktionen | 1 Pro nicht erreichtem Server |
+| Transaktionen | 1 pro nicht erreichtem Server |
 | Ereignisse | <Instanz>.Done (Parameter = OneMessage)|
 
 
@@ -28,5 +28,5 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 
 ## Anwendungsbeispiele
 
-Mit dem ServerCheck AddIn werden wichtige Server sowohl innerhalb der Firma als auch extern täglich (oder stündlich/minütlich) überprüft. Der Ausfall eines Servers wird schnell erkannt und die nötigen Schritte eingeleitet.
+Mit dem ServerCheck AddIn werden kritische Server sowohl innerhalb der Firma als auch extern, täglich (oder stündlich/minütlich) überprüft.<br />Der Ausfall eines Servers wird schnell erkannt und die nötigen Schritte eingeleitet.
 
