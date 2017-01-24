@@ -19,7 +19,6 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 | reconfiguration | Zeilenweise angewandte Konvertierungsregeln. <br />
 Fix Text: Eingabe in Hochkommas ' oder Anführungszeichen "<br />
 Verweis auf Ursprungszeile: Geschweifte Klammern im Format
-{Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]}<br />
 |
 | outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei  |
 | outputPath | Zielverzeichnis(Optional, Default = "") |
