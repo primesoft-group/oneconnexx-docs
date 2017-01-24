@@ -28,28 +28,36 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | Zeilenweise angewandte Konvertierungsregeln.<br /> |
+| reconfiguration | Zeilenweise angewandte Konvertierungsregeln. |
+
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | Fix Text: Eingabe in Hochkommas ' oder Anführungszeichen "<br /> |
+| reconfiguration | Fix Text: Eingabe in Hochkommas ' oder Anführungszeichen " |
+
 {:.table .table-striped} 
 | --- | --- |
 | reconfiguration | Verweis auf Ursprungszeile: Geschweifte Klammern im Format |
+
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | {Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]}<br /> |
+| reconfiguration | {Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]} |
+
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br /> |
+| reconfiguration | Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.|
+
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.<br /> |
+| reconfiguration | Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.|
+
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet.<br /> |
+| reconfiguration | Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet. |
+
 {:.table .table-striped} 
 | --- | --- |
-| reconfiguration | Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Standard: ' ').<br /> |
+| reconfiguration | Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Standard: ' '). |
+
 {:.table .table-striped} 
 | --- | --- |
 | reconfiguration | Das Auffüllzeichen wird je nach Ausrichtung ('left'/'l' (Standard) oder 'right'/'r') rechts beziehungsweise links eingefügt. |
