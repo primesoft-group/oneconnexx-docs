@@ -8,7 +8,7 @@ Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx.<br />Das
 
 ## Merkmale
 
-{:.table .table-striped}
+{:.table .table-striped .columnStyles=width:100px,width:500px}
 | --- | --- |
 | AddIn Type | Konnektor |
 | Schnittstellen | In/Out: Bizagi WebServices EntityManager und WorkflowEngine |
