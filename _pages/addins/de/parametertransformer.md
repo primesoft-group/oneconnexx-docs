@@ -10,11 +10,10 @@ Das ParameterTransformer AddIn transformiert Parameter zwischen zwei AddIn-Insta
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | AddIn |
 | Transaktionen |  |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
 
 
 ## Parameter
@@ -22,7 +21,7 @@ Das ParameterTransformer AddIn transformiert Parameter zwischen zwei AddIn-Insta
 {:.table .table-striped}                
 | --- | --- |
 | Debug | true = Alle Parameter werden in das Logfile geschrieben. (Optional, Default = false) |
-| definitionFile | XML File welches die Definitionen für die Input Parameter und für die Output Parameter hat. |
+| definitionFile | XML Datei mit den Transformationsregeln |
 
 
 

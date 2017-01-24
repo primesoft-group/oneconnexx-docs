@@ -12,11 +12,10 @@ Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Paramet
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type | Event |
+| AddIn Type | Konnektor / Event |
 | Schnittstellen | In: Externe Applikationen |
 | Transaktionen |  |
-| Ereignisse | <Instanz>.<service> |
-| Ereignis-Parameter | OneMessage |
+| Ereignisse | <Instanz>.<service> (Parameter = OneMessage)|
 
 
 ## Parameter
@@ -24,8 +23,8 @@ Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Paramet
 {:.table .table-striped}
 | --- | --- |
 | baseAddress | URL des WebServices |
-| enableTrace | true = Datenaustausch wird zur Analyse gespeichert<br />false = "" (Default = false) |
-| traceFolder | Ablageordner der Analyse-Dateien |
+| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
+| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
 
 
 <!-- 

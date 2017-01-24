@@ -4,31 +4,29 @@ title: FileDecompressor
 permalink: "addins/de/filedecompressor/"
 ---
 
-
-Das FileDecompressor AddIn entpacket Zip-, GZip-, oder Tar-Dateien in ein bestimmtes Verzeichnis.
+Das FileDecompressor AddIn entpackt Zip-, GZip-, oder Tar-Dateien
 
 ## Merkmale
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | In/Out: Dateieverzeichnis |
 | Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | <Instanz>.Done <br />Pro erstellte Datei: <Instanz>.Output |
-| Ereignis-Parameter | Datei |
+| Ereignisse | Pro erstellte Datei: <Instanz>.Output (Parameter = file)<br /> <Instanz>.Done |
 
 
 ## Parameter
 
 {:.table .table-striped}
 | --- | --- |
-| sourceDirectory | Pfad, in welchem sich die komprimierten Dateien befinden |
-| sourceFilePattern | Das Dateipattern dient zur Einschränkung der komprimierten Dateien. <br /> * = alles; Bsp. "*.zip" => alle Dateien mit Endung .zip <br />? = unsicher wie die Datei heisst. Bsp. "1?.zip" => alle Zip-Dateien welche mindestens eine 1 beinhalten. <br />Auch können mehrere Patterns eingegeben, indem sie mit ";" getrennt werden. Bsp. "*.zip; *.tar" |
+| sourceDirectory | Quellverzeichnis mit den komprimierten Dateien |
+| sourceFilePattern | Das Dateipattern dient zur Einschränkung der komprimierten Dateien<br /> * = alles; Bsp. «*.zip» => alle ZIP-Dateien<br />? = unsicher wie die Datei heisst. Bsp. «1?.zip» => alle ZIP-Dateien welche mindestens eine 1 beinhalten. <br />Mehrere Pattern werden mit Semikolon getrennt. Bsp. «*.zip; *.tar» => alle ZIP- und TAR-Dateien |
 | destinationDirectory | Zielverzeichnis, wohin die Dateien entpackt werden |
-| archivePassword | Zum automatischen Entpacken von passwortgeschützten Archiven |
-| deleteSourceAfterProcessing | true = Die komprimierte Datei wird nach dem Entpacken gelöscht <br />false = Die komprimierte Datei wird nicht gelöscht (Default = false) | 
-| decompressToSubFolder | true = Die Dateien werden in ein Unterverzeichnis mit demselben Namen wie das Archiv entpackt <br /> false = Die Dateien werden in das Zielverzeichnis entpackt (Default = false)|
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| archivePassword | Zum automatischen Entpacken von passwortgeschützten Archiven (Optional) |
+| deleteSourceAfterProcessing | true = Die komprimierte Datei wird nach dem Entpacken gelöscht (Default = false) | 
+| decompressToSubFolder | true = Die Dateien werden in ein Unterverzeichnis mit demselben Namen wie das Archiv entpackt <br /> false = Die Dateien werden direkt in das Zielverzeichnis entpackt (Default = false)|
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
 ## Anwendungsbeispiele 

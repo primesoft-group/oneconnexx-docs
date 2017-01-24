@@ -10,11 +10,10 @@ Das XMLTransform AddIn transformiert XML Dateien
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | Dateiverzeichnis |
 | Transaktionen |  |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
 
 
 ## Parameter

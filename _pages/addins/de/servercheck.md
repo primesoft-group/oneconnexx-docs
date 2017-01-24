@@ -13,9 +13,8 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 | --- | --- |
 | AddIn Type |  |
 | Schnittstellen |  |
-| Transaktionen | 1 Pro Server |
-| Ereignisse | <Instanz>.Done |
-| Ereignis-Parameter | OneMessage |
+| Transaktionen | 1 Pro nicht erreichtem Server |
+| Ereignisse | <Instanz>.Done (Parameter = OneMessage)|
 
 
 ## Parameter
@@ -24,7 +23,7 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 | --- | --- |
 | servers | Kommaseprarierte Liste der zu überwachenden Server. Akzeptiert werden Servernamen oder IP der Server |
 | subject | Betreff der E-Mail, welche nach der Überprüfung versendet wird. (Hinweis: Empfänger werden im Mail AddIn definiert) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
 ## Anwendungsbeispiele

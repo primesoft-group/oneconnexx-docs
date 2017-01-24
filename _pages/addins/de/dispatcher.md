@@ -11,23 +11,23 @@ Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Wer
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
+| AddIn Type | Event / Logic |
 | Schnittstellen |  |
 | Transaktionen | 1 wenn mind. 1 Datensatz |
-| Ereignisse | <Instanz>.Done <br/> Pro DataRow: <Instanz> |
-| Ereignis-Parameter | Alle Spalten der SQL-Abfrage |
+| Ereignisse | Pro DataRow: <Instanz> (Parameter = Alle Spalten der SQL-Abfrage)<br /><Instanz>.Done |
 
 
 ## Parameter
 
 {:.table .table-striped}
 | --- | --- |
-| connectionString | Angabe der Datenbank Verbindung der Datenbank, mit welcher man sich verbinden will. |
-| query | SQL Query welche benutzt werden soll, um das Dataset zu bekommen, von welchem dann pro Zeile ein Event ausgeführt wird. |
-| dueTimeColumn | Kolonnen Angabe welche besagt, ob für diese Zeile ein Event ausgeführt werden soll oder nicht. (Optional) |
-| lastProcessedColumn | Angabe der Kolonne, welche die Informationen darüber hat, wann die Zeile als letztes verarbeitet wurde. (Optional) |
-| updateQuery | SQL Query um das Datum in der Kolonne, welche im Parameter «lastProcessedColumn» angegeben wurde, zu aktualisieren. (Optional)  |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| connectionString | Verbindungszeichenfolge der Datenbank |
+| query | SQL Abfrage<br />Für jede zurückgegebene Zeile wird ein Ereignis ausgelöst |
+| dueTimeColumn | Name der Spalte die eine Tageszeit enthält, zu der der Datensatz verarbeitet werden soll (Optional, Default = "") |
+| lastProcessedColumn | Name der Spalte die einen Zeitstempel enthält, wann der Datensatz zuletzt verarbeitet wurde (Optional, Default = "") |
+| updateQuery | SQL Befehl zum Aktualisieren des Zeitstempels (in 'lastProcessedColumn') nachdem ein Datensatz verarbeitet wurde (Optional, Default = "") |
+| configUrl | Link zur erweiterten Konfiguration (Optional, Default = "") |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 ## Anwendungsbeispiele
 

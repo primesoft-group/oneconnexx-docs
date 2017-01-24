@@ -10,19 +10,16 @@ Das EventLogger AddIn schreibt alle mit dem Event übergebenen Parameter ins Log
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
+| AddIn Type | Logic |
 | Schnittstellen |  |
 | Transaktionen |  |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
 
 
 ## Parameter
 
 {:.table .table-striped}
 | --- | --- |
-| Parameter |  |
-
 
 <!-- 
 ## Anwendungsbeispiele 

@@ -4,7 +4,7 @@ title: Bizagi
 permalink: "addins/de/bizagi/"
 ---
 
-Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
+Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx.<br />Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
 
 ## Merkmale
 
@@ -14,7 +14,6 @@ Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Biza
 | Schnittstellen | In/Out: Bizagi WebServices EntityManager und WorkflowEngine |
 | Transaktionen |  |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
 
 ## Parameter
 
@@ -23,10 +22,9 @@ Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Biza
 | configFilename | Anwendungsspezifische Bizagi Konfigurationsdatei |
 | workflowUrl | URL des Bizagi WorkflowEngineSOA WebServices |
 | entityUrl | URL des Bizagi EntityManagerSOA WebServices |
-| enableTrace| true	: Datenaustausch wird zur Analyse gespeichert<br/> false : «»
-| traceFolder | Ablageordner der Analyse-Dateien |
-| messageTransformFolder | Ordner, welcher die MessageTransform Dateien (*.mt) beinhaltet |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
+| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
+| msgt | Verzeichnis mit den MessageTransform Dateien (*.mt) (Optional, Default = "Config\\MessageTransform") |
 
 
 <!-- 

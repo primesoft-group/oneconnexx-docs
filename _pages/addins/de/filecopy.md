@@ -11,11 +11,10 @@ Das FileCopy AddIn unterstützt auch FTP und SFTP.
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
+| AddIn Type | Logic |
 | Schnittstellen | In/Out: Dateiverzeichnis |
 | Transaktionen | 1 pro kopierte Datei |
-| Ereignisse | <Instanz>.Done <br />Pro kopierte Datei wenn Ziel = FILE: <Instanz>.Output |
-| Ereignis-Parameter | Datei |
+| Ereignisse | Pro kopierte Datei wenn Ziel = FILE: <Instanz>.Output (Parameter = file)<br /><Instanz>.Done |
 
 
 ## Parameter
@@ -36,12 +35,12 @@ Das FileCopy AddIn unterstützt auch FTP und SFTP.
 | sourcePassword | Zugehöriges Passwort (Optional) |
 | destUserName | Benutzer mit den für das Zielverzeichnis erforderlichen Berechtigungen (Optional) |
 | destPassword | Zugehöriges Passwort (Optional) |
-| tempDirectory | Während eines Kopiervorganges werden Dateien lokal gespeichert. <br/>Ist der Parameter tempDirectory definiert werden die Dateien hier gespeichert, ansonsten im Temp-Verzeichnis des Systems. |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| tempDirectory | Während eines Kopiervorganges werden Dateien lokal im Verzeichnis tempDirectory gespeichert. (Optional, Default = Temp-Verzeichnis des Systems) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
 ## Anwendungsbeispiele
 
 Das FileCopy AddIn wird beim automatischen Austauchs mit FTP-Servern aber auch bei automatischen Abgleichen innerhalb des Firmenetzes eingesetzt.
-Das FileCopy AddIn ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Einschränkung mit filePattern vielseitig einsetzbar.
+Das FileCopy AddIn ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Einschränkung mit DateiPattern vielseitig einsetzbar.
 

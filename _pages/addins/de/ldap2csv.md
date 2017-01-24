@@ -14,8 +14,7 @@ Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und 
 | AddIn Type | Logic |
 | Schnittstellen | In: LDAP<br />Out: File |
 | Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | <Instanz>.Done |
-| Ereignis-Parameter | Datei |
+| Ereignisse | <Instanz>.Done (Parameter = file)|
 
 
 ## Parameter
@@ -28,14 +27,14 @@ Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und 
 | root | Bei der Suche nach unterliegenden Objekt Klassen, kann das Root Objekt definiert werden (Optional) |
 | sizeLimit | Anzahl Einträge, welche maximal exportiert werden (Optional, Default = 1000) |
 | filter | Zur Einschränkung auf bestimmte Klassen (Optional) |
-| properties | Zu exportierende Properties<br />Domänen Attribute starten mit $<br/>Typ, Format und Kolonnen Namen werden mit # getrennt (Bsp. "$DomänenAttribut#date#yyyy-MM-dd#KolonnenNamen")<br/>Mehrere Eingaben sind möglich wenn sie mit "," getrennt werden |
+| properties | Zu exportierende Properties<br />Domänen Attribute starten mit $<br/>Typ, Format und Kolonnen Namen werden mit # getrennt (Bsp. "$DomänenAttribut#date#yyyy-MM-dd#KolonnenNamen")<br/>Mehrere Eingaben werden mit "," getrennt |
 | fileNamePattern | Name der zu erstellenden Datei. Folgende Platzhalter stehen zur Verfügung: <br />{now}: Aktuelles Datum<br />{lastMonth}: Datum des letzten Monates |
 | fileSaveLocation | Verzeichnis wohin die Datei erstellt wird |
-| delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = ; ) |
+| delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = Semikolon ) |
 | includeHeaderRow | true = inklusive Spaltenüberschriften (Optional, Default = true) |
-| encoding | Kodierung der CSV-Datei (Optional, Default = utf-8) |
+| encoding | Kodierung der CSV-Datei (Optional, Default = "utf-8") |
 | additionalData |  |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
 ## Anwendungsbeispiele 

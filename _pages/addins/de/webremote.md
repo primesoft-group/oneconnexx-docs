@@ -9,12 +9,11 @@ Das WebRemote AddIn sendet eine Nachricht mit Namen des Events und den dazugehö
 ## Merkmale
 
 {:.table .table-striped}
-| --- | --- | --- |
-| AddIn Type | Logic | |
-| Schnittstellen | Out: Externe Applikationen | |
-| Transaktionen |  | |
-| Ereignisse |  | |
-| Ereignis-Parameter |  | |
+| --- | --- |
+| AddIn Type | Konnektor |
+| Schnittstellen | Out: Externe Applikationen |
+| Transaktionen |  |
+| Ereignisse |  |
 
 
 ## Parameter
@@ -22,8 +21,8 @@ Das WebRemote AddIn sendet eine Nachricht mit Namen des Events und den dazugehö
 {:.table .table-striped}
 | --- | --- |
 | remoteUrl | URL des Empfänger WebServices |
-| enableTrace | true = Datenaustausch wird zur Analyse gespeichert<br />false = "" (Default = false) |
-| traceFolder | Ablageordner der Analyse-Dateien |
+| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
+| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
 
 
 <!-- 

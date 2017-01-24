@@ -15,7 +15,6 @@ Das MemoryConsumer AddIn dient einzig zum Systemtest und Stresstest.
 | Schnittstellen | Out: OS |
 | Transaktionen |  |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
 
 
 ## Parameter

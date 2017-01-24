@@ -10,11 +10,10 @@ Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verz
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | In/Out: Dateieverzeichnis |
 | Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | <Instanz>.Done |
-| Ereignis-Parameter | Datei |
+| Ereignisse | <Instanz>.Done (Parameter = file) |
 
 
 ## Parameter
@@ -22,12 +21,12 @@ Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verz
 {:.table .table-striped}
 | --- | --- |
 | sourceDirectory | Verzeichnis der Quelldatei(en) |
-| sourceFilePattern | Das Format nach welchem die Files gefiltert werden sollen. Mehrere Pattern werden mit Semikolons getrennt. Platzhalter "*" ist erlaubt. (Default = *.*) |
-| archiveName | Ganzer Pfad mit Dateiname des Archives. Die Eingabe {0} wird als Platzhalter für das aktuelle Datum benutzt. Bsp. {0:yyyyMMdd}.zip => 20161128.zip. |
-| archiveType | Angabe des Archivierungstypes. Zur Auswahl stehen Zip, Tar, GZip. (Default = Zip) |
-| compressionType | Der Kompressionstyp. Ist abhängig vom Archivtyp: Zip => BZip2, PPMd, Deflate, LZMA, Tar => GZip, BZip2, GZip => GZip. (Default = LZMA) |
+| sourceFilePattern | Das Dateipattern dient zur Einschränkung der Quelldateien<br /> * = alles; Bsp. «*.txt» => alle Dateien mit Endung .txt <br />Mehrere Pattern werden mit Semikolon getrennt. Bsp. «*.txt; *.xml» => alle Text und XML Dateien. |
+| archiveName | Dateiname (inkl. Verzeichnis) des Archivs. Die Eingabe {0} wird als Platzhalter für das aktuelle Datum benutzt. Bsp. {0:yyyyMMdd}.zip => 20161128.zip. |
+| archiveType | Typ der Archivdatei: Zip, Tar oder GZip. (Default = "Zip") |
+| compressionType | Kompressionstyp in Abhängigkeit vom Typ des Archivs (Default = "LZMA"):<br />- Zip => BZip2, PPMd, Deflate, LZMA<br />- Tar => GZip, BZip2<br />- GZip => GZip. |
 | deleteSourceAfterProcessing | true = Die Quelldateien werden nach dem Komprimieren gelöscht. (Optional, Default = false) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 ## Anwendungsbeispiele
 

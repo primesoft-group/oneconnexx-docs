@@ -10,12 +10,10 @@ Das Xml2Csv AddIn schreibt bestimmte XML Nodes in eine CSV Datei. Über die Para
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| AddIn Type | Logic |
+| Schnittstellen | Dateiverzeichnis |
 | Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | <Instanz>.Done<br />Pro erstellte Datei: <Instanz>.Output |
-| Ereignis-Parameter | Datei |
-
+| Ereignisse | Pro erstellte Datei: <Instanz>.Output (Parameter = file)<br /><Instanz>.Done |
 
 ## Parameter
 
@@ -25,10 +23,10 @@ Das Xml2Csv AddIn schreibt bestimmte XML Nodes in eine CSV Datei. Über die Para
 | sourceFilePattern | Das Dateipattern dient zur Einschränkung der Quelldateien. (Optional, Default = *.xml) |
 | rowXPath | XPath zur Einschränkung der Zeilen |
 | additionalColumnXPath | XPath um Spalten ausserhalb der mit rowXPath definierten Zeile miteinzubeziehen. Mehrere Spalten mit Semikolon trennen. (Optional) |
-| stripNamespace | true = Namespace Präfixes des XML File werden im neuen CSV File nicht als Kolonnennamen angezeigt. (Optional, Default = true) |
-| delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = ";") |
+| stripNamespace | true = Namespace Präfixes der XML Datei werden in der neuen CSV Datei nicht als Kolonnennamen angezeigt. (Optional, Default = true) |
+| delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = Semikolon) |
 | destinationDirectory | Verzeichnis zum Speichern der CSV-Datei. (Optional, Default = sourceDirectory) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
 ## Anwendungsbeispiele 

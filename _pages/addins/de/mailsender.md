@@ -16,17 +16,16 @@ Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt wer
 | Schnittstellen | Out: E-Mail |
 | Transaktionen | 1 wenn erfolgreich |
 | Ereignisse | <Instanz>.Done |
-| Ereignis-Parameter |  |
 
 ## Parameter
 
 {:.table .table-striped}
 | --- | --- |
-| mailServer | Host Name oder URL des Mail Servers |
-| recipients | E-Mail Adressen der Empfänger. Mehrere E-Mails werden mit "," getrennt |
+| mailServer | Hostname oder IP Adresse des Mail-Servers |
+| recipients | Kommaseparierte Liste von Empfängeradressen|
 | sender | E-Mail Adresse des Abenders |
-| subjectPrefix | Betreff |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional) | |
+| subjectPrefix | Ein Präfix das der Betreffzeile jedes E-Mails vorangestellt wird (Bsp. "Test - " damit E-Mails des Testsystem sofort erkannt werden) |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
 <!-- 
