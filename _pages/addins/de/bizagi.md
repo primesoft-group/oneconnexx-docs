@@ -45,7 +45,7 @@ line (7% of column 1).
 ## Merkmale
 
 {:.table .table-striped}
-|| --- || --- ||
+| --- | --- |
 | AddIn Type | Konnektor |
 | Schnittstellen | In/Out: Bizagi WebServices EntityManager und WorkflowEngine |
 | Transaktionen |  |
