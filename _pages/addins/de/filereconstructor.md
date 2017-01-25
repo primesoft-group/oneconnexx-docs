@@ -16,33 +16,13 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 | | |
 | __Parameter__ | |
 | inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
-| reconfiguration | 
-Zeilenweise angewandte Konvertierungsregeln.<br />
-Fix Text: Eingabe in Hochkommas oder Anführungszeichen<br />
-Verweis auf Ursprungszeile: Geschweifte Klammern im Format<br />
-{Index Start-Zeichen, Index End-Zeichen, [Textlänge, optional], [Auffüll-Zeichen. Optional], [Horizontale Ausrichtung, optional]} |
+| reconfiguration | |
 | outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei  |
 | outputPath | Zielverzeichnis(Optional, Default = "") |
 | deleteInputFile | true = Quelldatei wird gelöscht (Optional, Default = false) |
 | userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
 | password | Zugehöriges Passwort (Optional) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
-
-
-Ein Zwischentext
-
-{:.table .table-striped}
-| --- | --- |
-| reconfig 2 | Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br />
-Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.<br />
-Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet. |
-
-Ein Zwischentext
-
-{:.table .table-striped}
-| --- | --- |
-| reconfig 3 | Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Default = Space).<br />
-Das Auffüllzeichen wird je nach Ausrichtung ('left'/'l' (Standard) oder 'right'/'r') rechts beziehungsweise links eingefügt. |
 
 
 ## Anwendungsbeispiele
@@ -56,15 +36,3 @@ Die Ausgabedatei soll aus 6 Spalten bestehen und mittels Semikolon separiert sei
 TO;CHF;**1072;FROM;EUR;1000  
 TO;USD;***430;FROM;EUR;400   
 
-Eine mögliche Konfiguration sieht so aus:
-'TO;'{12,,3}';'{15,21,,*,r}';FROM;'{0,3}';'{3,9}
-
-Beschreibung:
- - 'TO;' = fixer Text
- - {12,,3} = ab Position 12 werden 3 Zeichen kopiert (Bsp. CHF)
- - ';' = fixer Text (Semikolon)
- - {15,21,,*,r} = Position 15 bis 21 kopieren und auf linker Seite (weil Ausrichtung = rechts) mit * auffüllen (Bsp. **1072)
- - ';FROM;' = fixer Text
- - {0,3} = ab Position 0 werden 3 Zeichen kopiert (Bsp. EUR)
- - ';' = fixer Text (Semikolon)
- - {3,9} = Position 3 bis 9 kopieren
