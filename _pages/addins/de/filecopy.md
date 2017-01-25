@@ -7,20 +7,15 @@ permalink: "addins/de/filecopy/"
 Das FileCopy AddIn wird dazu verwendet um Dateien in einem bestimmten Verzeichnis eines Systems auf ein anderes System mit einem bestimmten Protokoll zu kopieren.
 Das FileCopy AddIn unterstützt auch FTP und SFTP.
 
-## Merkmale
-
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type | Logic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| __Merkmale__ | |
+| AddIn Type | Logic |
 | Schnittstellen | In/Out: Dateiverzeichnis |
 | Transaktionen | 1 pro kopierte Datei |
 | Ereignisse | Pro kopierte Datei wenn Ziel = FILE: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done |
-
-
-## Parameter
-
-{:.table .table-striped}
-| --- | --- |
+| | |
+| __Parameter__ | |
 | sourceProtocol | Das zu verwendende Protokoll beim Laden der Quelldateien. Zur Auswahl stehen FILE, FTP, FTPS, SFTP, S3 und WebDAV |
 | sourceSystem | URL-Adresse des Quellservers <br />bei FILE leer lassen<br/>bei FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellservers <br />bei S3: RegionEndPoint wenn nicht EUWest1 |
 | sourcePath | Pfad zu den Quelldateien. Bei S3 wird der Bucket Name definiert. |

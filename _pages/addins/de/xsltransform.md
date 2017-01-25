@@ -6,20 +6,15 @@ permalink: "addins/de/xsltransform/"
 
 Das XMLTransform AddIn transformiert XML Dateien
 
-## Merkmale
-
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type | Logic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| __Merkmale__ | |
+| AddIn Type | Logic |
 | Schnittstellen | Dateiverzeichnis |
 | Transaktionen |  |
 | Ereignisse |  |
-
-
-## Parameter
-
-{:.table .table-striped}
-| --- | --- |
+| | |
+| __Parameter__ | |
 | directory | Angabe des Verzeichnisses in welches die transformierte XML Datei gespeichert wird |
 | archive | Verzeichnis, in welchem die Originaldatei und die transformierte Datei archiviert werden sollen. (Optional, Default = "" = nichts archivieren) |
 | enableDocumentFunction | true = Aktiviert die Documentfunction für den Zugriff auf Nodes im XML Dokument (Optional, Default = false)<br />(Details unter <a href="https://msdn.microsoft.com/de-de/library/ms256465(v=vs.120).aspx" target="_blank">https://msdn.microsoft.com/de-de/library/ms256465(v=vs.120).aspx</a>) |
