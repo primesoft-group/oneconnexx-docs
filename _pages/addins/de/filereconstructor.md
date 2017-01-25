@@ -25,14 +25,11 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
-### Schlüsseltexte bei fixer Spaltebreite:
-Die Eingabedatei enthält Spalten mit fixer breite, Inhalt sieht folgendermassen aus:
-EUR1000     CHF1072
-EUR400      USD430
+#### Quelldatei mit fixer Spaltenbreite -> Zieldatei CSV:
+Die Eingabedatei enthält Spalten mit fixer Breite, Inhalt sieht folgendermassen aus:<br />EUR1000     CHF1072<br />EUR400      USD430<br />
 
-Die Ausgabedatei soll aus 6 Spalten bestehen und mittels Semikolon separiert sein:
-TO;CHF;**1072;FROM;EUR;1000  
-TO;USD;***430;FROM;EUR;400   
+Die Ausgabedatei soll aus 6 Spalten bestehen und mittels Semikolon separiert sein:<br />TO;CHF;**1072;FROM;EUR;1000<br />TO;USD;***430;FROM;EUR;400<br />
+
 
