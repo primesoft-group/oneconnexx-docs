@@ -30,6 +30,6 @@ Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise
 #### Quelldatei mit fixer Spaltenbreite -> Zieldatei CSV:
 Die Eingabedatei enthält Spalten mit fixer Breite, Inhalt sieht folgendermassen aus:<br />EUR1000     CHF1072<br />EUR400      USD430<br />
 
-Die Ausgabedatei soll aus 6 Spalten bestehen und mittels Semikolon separiert sein:<br />TO;CHF;**1072;FROM;EUR;1000<br />TO;USD;***430;FROM;EUR;400<br />
+Die Ausgabedatei soll aus 6 Spalten bestehen und mittels Semikolon separiert sein:<br />TO;CHF;&lowast;&lowast;1072;FROM;EUR;1000<br />TO;USD;&lowast;&lowast;&lowast;430;FROM;EUR;400<br />
 
 
