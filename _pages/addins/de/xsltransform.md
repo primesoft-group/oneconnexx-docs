@@ -4,7 +4,7 @@ title: XSLTransform
 permalink: "addins/de/xsltransform/"
 ---
 
-Das XMLTransform AddIn transformiert XML Dateien
+Das XMLTransform AddIn transformiert XML Dateien<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -24,7 +24,7 @@ Das XMLTransform AddIn transformiert XML Dateien
 
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

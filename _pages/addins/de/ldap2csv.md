@@ -4,8 +4,7 @@ title: Ldap2CSV
 permalink: "addins/de/ldap2csv/"
 ---
 
-
-Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und speichert diese in einer CSV-Datei.
+Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und speichert diese in einer CSV-Datei.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -32,7 +31,7 @@ Das Ldap2CSV AddIn ermittelt via LDAP Angaben aus dem AD (Active Directory) und 
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

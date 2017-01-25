@@ -4,7 +4,7 @@ title: FileEraser
 permalink: "addins/de/fileeraser/"
 ---
 
-Das FileErase AddIn löscht oder verschiebt Dateien in einem bestimmten Verzeichnis.
+Das FileErase AddIn löscht oder verschiebt Dateien in einem bestimmten Verzeichnis<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -25,7 +25,7 @@ Das FileErase AddIn löscht oder verschiebt Dateien in einem bestimmten Verzeich
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

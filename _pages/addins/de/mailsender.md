@@ -4,9 +4,7 @@ title: MailSender
 permalink: "addins/de/mailsender/"
 ---
 
-Das MailSender AddIn versendet E-Mails.
-Der Inhalt der E-Mail wird mit dem Event an das MailSender AddIn übermittelt.
-Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt werden, können aber auch im AddIn selbst konfiguriert werden.
+Das MailSender AddIn versendet E-Mails. Der Inhalt der E-Mail wird mit dem Event an das MailSender AddIn übermittelt. Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt werden, können aber auch im AddIn selbst konfiguriert werden.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -25,7 +23,7 @@ Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt wer
 
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

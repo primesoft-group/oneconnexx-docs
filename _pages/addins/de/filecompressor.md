@@ -4,7 +4,7 @@ title: FileCompressor
 permalink: "addins/de/filecompressor/"
 ---
 
-Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verzeichnis und speichert diese dann in einem Archiv ab
+Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verzeichnis und speichert diese dann in einem Archiv ab<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -23,6 +23,6 @@ Das FileCompressor AddIn komprimiert bestimmte Dateien aus einem bestimmten Verz
 | deleteSourceAfterProcessing | true = Die Quelldateien werden nach dem Komprimieren gelöscht. (Optional, Default = false) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Platzsparendes Archvieren irgendwelcher Nutzerdaten

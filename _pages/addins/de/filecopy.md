@@ -4,8 +4,7 @@ title: FileCopy
 permalink: "addins/de/filecopy/"
 ---
 
-Das FileCopy AddIn wird dazu verwendet um Dateien in einem bestimmten Verzeichnis eines Systems auf ein anderes System mit einem bestimmten Protokoll zu kopieren.
-Das FileCopy AddIn unterstützt auch FTP und SFTP.
+Das FileCopy AddIn wird dazu verwendet um Dateien in einem bestimmten Verzeichnis eines Systems auf ein anderes System mit einem bestimmten Protokoll zu kopieren. Das FileCopy AddIn unterstützt auch FTP und SFTP.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -34,7 +33,7 @@ Das FileCopy AddIn unterstützt auch FTP und SFTP.
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Das FileCopy AddIn wird beim automatischen Austauchs mit FTP-Servern aber auch bei automatischen Abgleichen innerhalb des Firmenetzes eingesetzt.
 Das FileCopy AddIn ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Einschränkung mit DateiPattern vielseitig einsetzbar.

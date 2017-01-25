@@ -4,7 +4,7 @@ title: FileDecompressor
 permalink: "addins/de/filedecompressor/"
 ---
 
-Das FileDecompressor AddIn entpackt Zip-, GZip-, oder Tar-Dateien
+Das FileDecompressor AddIn entpackt Zip-, GZip-, oder Tar-Dateien<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -24,7 +24,7 @@ Das FileDecompressor AddIn entpackt Zip-, GZip-, oder Tar-Dateien
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

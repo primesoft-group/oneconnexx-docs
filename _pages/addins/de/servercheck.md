@@ -4,8 +4,7 @@ title: ServerCheck
 permalink: "addins/de/servercheck/"
 ---
 
-
-Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle konfigurierten Server an und versendet das Ergebnis in einem E-Mail.
+Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle konfigurierten Server an und versendet das Ergebnis in einem E-Mail.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -21,7 +20,7 @@ Das ServerCheck AddIn überprüft die Erreichbarkeit von Servern. Es pingt alle 
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Mit dem ServerCheck AddIn werden kritische Server sowohl innerhalb der Firma als auch extern, täglich (oder stündlich/minütlich) überprüft.<br />Der Ausfall eines Servers wird schnell erkannt und die nötigen Schritte eingeleitet.
 

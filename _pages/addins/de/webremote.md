@@ -4,7 +4,7 @@ title: WebRemote
 permalink: "addins/de/webremote/"
 ---
 
-Das WebRemote AddIn sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen bestimmten WebService.
+Das WebRemote AddIn sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen bestimmten WebService.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -21,7 +21,7 @@ Das WebRemote AddIn sendet eine Nachricht mit Namen des Events und den dazugehö
 
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

@@ -4,7 +4,7 @@ title: EventLogger
 permalink: "addins/de/eventlogger/"
 ---
 
-Das EventLogger AddIn schreibt alle mit dem Event übergebenen Parameter ins Logfile.
+Das EventLogger AddIn schreibt alle mit dem Event übergebenen Parameter ins Logfile.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -18,7 +18,7 @@ Das EventLogger AddIn schreibt alle mit dem Event übergebenen Parameter ins Log
 | | |
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

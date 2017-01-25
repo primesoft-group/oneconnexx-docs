@@ -4,8 +4,7 @@ title: OneOffixxDocumentCreator
 permalink: "addins/de/oneoffixxdocumentcreator/"
 ---
 
-
-Das AddIn OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "OneOffixxDocumentCreationServer" (OODCS) Dokumente im CI/CD des Kunden.
+Das AddIn OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "OneOffixxDocumentCreationServer" (OODCS) Dokumente im CI/CD des Kunden.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -26,6 +25,6 @@ Das AddIn OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "O
 | retryCount | Falls eine Anfrage fehlschlägt, wird diese wiederholt. Der Parameter retryCount definiert, wie oft eine Anfrage wiederholt werden soll. (Optional, Default = 1) |
 | maxRequests | Anzahl paralleler Anfragen (Optional, Default = 8) |
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Beim [Anwendungesbeipiel "Dokumentendienst"]({{ site.baseurl }}/usecases/de/documentcreation/) werden die Dokumente über das OneOffixxDocumentCreator AddIn erstellt.

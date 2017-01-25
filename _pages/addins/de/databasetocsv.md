@@ -4,7 +4,7 @@ title: DatabaseToCSV
 permalink: "addins/de/databasetocsv/"
 ---
 
-Das DatabaseToCSV AddIn erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.
+Das DatabaseToCSV AddIn erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -26,7 +26,7 @@ Das DatabaseToCSV AddIn erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Date
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
  
  
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 Oftmals erhält die IT den Auftrag periodisch Datensätze aus einer Datenbank zu exportieren, damit die Fachbereiche die Angaben überprüfen oder weiterverarbeiten können.<br />
 <br />

@@ -4,7 +4,7 @@ title: Timer
 permalink: "addins/de/timer/"
 ---
 
-Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu fast jeder beliebigen Zeit und Datum aus.
+Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu fast jeder beliebigen Zeit und Datum aus.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -21,18 +21,18 @@ Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu f
 | dayOfWeek | Filter für bestimmte Wochentage (1=Montag, …, 7=Sonntag)<br />Bsp. «1;2;3;4;5» für alle Arbeitstage |
 
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
-### Jeden Morgen um 6:00
+#### Jeden Morgen um 6:00
 - interval = 60000 (pro Minute einmal die weiteren Filter überprüfen)
 - timeOfDay = 06:00 (Morgens um 6:00)
 
-### Jährlich am 1.Januar ausführen
+#### Jährlich am 1.Januar ausführen
 - interval = 60000 
 - timeOfDay = 06:00 
 - dateOfYear = 1.1 (am 1. Januar)
 
-### Am ersten Montag eines Monats
+#### Am ersten Montag eines Monats
 - interval = 60000 
 - timeOfDay = 06:00 
 - dateOfYear = 1.; 2.; 3.; 4.; 5.; 6.; 7.  (am 1. oder 2. oder ...)

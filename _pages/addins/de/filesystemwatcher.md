@@ -4,7 +4,7 @@ title: FileSystemWatcher
 permalink: "addins/de/filesystemwatcher/"
 ---
 
-Das FileSystemWatcher AddIn dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Detaipattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien.
+Das FileSystemWatcher AddIn dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Detaipattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -31,7 +31,7 @@ Das FileSystemWatcher AddIn dient zur Überwachung von Dateiordern und Dateien. 
 
 
 <!-- 
-## Anwendungsbeispiele 
+### Anwendungsbeispiele 
 
 ToDo
 -->

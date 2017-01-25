@@ -5,9 +5,7 @@ permalink: "addins/de/standardaddins/"
 ---
   
 Folgende Standard AddIns sind aktuell im Lieferumfang des OneConnexx enthalten.<br /> 
-Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werden ständig erweitert.<br />
-<br />
-
+Sowohl die Liste wie auch der Funktionsumfang der einzelnen AddIns werden ständig erweitert.<br /><br />
 
 {:.table .table-striped}
 | AddIn | Beschreibung |                      

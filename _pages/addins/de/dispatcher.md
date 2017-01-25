@@ -4,8 +4,7 @@ title: Dispatcher
 permalink: "addins/de/dispatcher/"
 ---
 
-Das Dispatcher AddIn löst aufgrund einer SQL Abfrage OneConnexx Events aus.
-Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Werten ausgelöst.
+Das Dispatcher AddIn löst aufgrund einer SQL Abfrage OneConnexx Events aus. Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Werten ausgelöst.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -24,7 +23,7 @@ Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Wer
 | configUrl | Link zur erweiterten Konfiguration (Optional, Default = "") |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-## Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Das Dispatcher AddIn wird von einem Timer AddIn stündlich aufgerufen. Es fragt den Inhalt einer bestimmten Tabelle mit einem bestimmten Status oder weiteren bestimmen Angaben ab. So werden neue Einträge erkannt und können weiterverarbeitet werden.
 In der Antwort erhält das Dispatcher AddIn weitere Angaben, welche zur Weiterverarbeitung benötigt werden.
