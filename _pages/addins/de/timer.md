@@ -4,8 +4,7 @@ title: Timer
 permalink: "addins/de/timer/"
 ---
 
-Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu fast jeder beliebigen Zeit und Datum aus.<br />
-
+Das Timer AddIn ist das meistverwendete AddIn. Das Timer AddIn löst Events zu fast jeder beliebigen Zeit und Datum aus.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
