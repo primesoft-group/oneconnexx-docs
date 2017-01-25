@@ -4,8 +4,8 @@ title: FileReconstructor
 permalink: "addins/de/filereconstructor/"
 ---
 
-Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise den Inhalt anhand konfigurierten Regeln um und schreibt die rekonstruierten Zeilen in eine neue Datei.
-<br />
+Das FileReconstructor AddIn liest eine existierende Datei ein, formt zeilenweise den Inhalt anhand konfigurierten Regeln um und schreibt die rekonstruierten Zeilen in eine neue Datei.<br /><br />
+
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | |
