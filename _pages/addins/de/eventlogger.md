@@ -12,7 +12,7 @@ Das EventLogger AddIn schreibt alle mit dem Event übergebenen Parameter ins Log
 | AddIn Type | Logic |
 | Schnittstellen |  |
 | Transaktionen |  |
-| Ereignisse2 |  |
+| Ereignisse |  |
 | | |
 | __Parameter__ | |
 | | |
