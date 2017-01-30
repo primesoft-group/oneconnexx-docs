@@ -10,21 +10,17 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
 
 ### 1. OneConnexx Verwalten
-
   * Einstellungen neu laden  
   
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
-	
-  * Im Service speichern
   
+  * Im Service speichern
   Die getätigten Änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
   
   * Cache löschen  
-  
   Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   
   * Instanz hinzufügen  
-  
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. __Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist__. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
   <br /><br />
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br />
@@ -37,7 +33,6 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
   * Neue Guppe erstellen  
-  
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__.
   
 ### 2. Instanz Details
@@ -48,19 +43,15 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Neu hinzugekommen ist der Button "Logik starten mit Parametern".
   
   * Name  
-  
   Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
   
   * Addin  
-  
   Der Typ des AddIns.
   
   * Dateipfad  
-  
   Der Pfad, in welchem Verzeichnis des Hosts die Addindaten liegen.
   
   * Aktiv  
-  
   Checkbox ob die Instanz aktiv sein soll oder nicht. Ist sie nicht aktiv wird bei einem Aufruf des Addins nichts gemacht. Nur wenn es manuell ausgeführt wird, wird das Addin auch ausgeführt wenn es nicht aktiv ist.
   
   * Buttons  
