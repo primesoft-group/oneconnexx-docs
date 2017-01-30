@@ -1,31 +1,28 @@
 ---
 layout: page
-title: Standard AddIns
+title: WebConnect
 permalink: "addins/de/webconnect/"
 ---
-
-## WebConnect
-
-Das WebConnect AddIn funktioniert als WebService, welcher von externen Applikation aufgerufen wird. Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Parameter wird eine OneMessage mitgegeben.
-
-__Merkmale__
+ 
+Das WebConnect AddIn funktioniert als WebService, welcher von externen Applikation aufgerufen wird. Das WebConnect AddIn löst einen Event aus mit dem Instanznamen aus. Als Parameter wird eine OneMessage mitgegeben.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| AddIn Type | Konnektor / Event |
+| Schnittstellen | In: Externe Applikationen |
 | Transaktionen |  |
-| Ereignisse |  |
-| Ereignis-Parameter |  |
+| Ereignisse | &lt;Instanz&gt;.<service> (Parameter = OneMessage)|
+| | |
+| __Parameter__ | |
+| baseAddress | URL des WebServices |
+| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
+| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
 
 
-__Parameter__
+<!-- 
+### Anwendungsbeispiele 
 
-{:.table .table-striped}
-| Parameter | Beschreibung |                      
-| --- | --- |
-| Parameter |  |
-
-
-__Anwendungsbeispiele__
+ToDo
+-->
 

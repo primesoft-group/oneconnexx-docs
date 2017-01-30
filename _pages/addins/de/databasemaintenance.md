@@ -1,31 +1,25 @@
 ---
 layout: page
-title: Standard AddIns
+title: DatabaseMaintenance
 permalink: "addins/de/databasemaintenance/"
 ---
 
-## DatabaseMaintenance
-
-Erstellt alle Indexe einer Datenbank neu, um so die Performance zu verbessern.
-
-__Merkmale__
+Das DatabaseMaintenance AddIn erneuert die Indexe einer Datenbank, um so die Performance zu verbessern. Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keinen SQL Server Agent beinhaltet.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
+| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | AddIn Type | Logic |
-| Schnittstellen | Dest: DB |
+| Schnittstellen | Out: Datenbank |
 | Transaktionen | 1 wenn erfolgreich |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
+| | |
+| __Parameter__ | |
+| connectionString | Verbindungszeichenfolge der Datenbank, deren Indexe neu erstellt werden |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
+### Anwendungsbeispiele 
 
-__Parameter__
-
-{:.table .table-striped}
-| Parameter | Beschreibung |                      
-| --- | --- |
-| connectionString | Angabe der Verbindung zur Datenbank, deren Indexe neu erstellt werden sollen |
-
-
-__Anwendungsbeispiele__
+Das automatisches Erneuern der Inidizes ist beim SQL Server Express nicht möglich.<br />
+Zusammen mit einem Timer AddIn erstellt das DatabaseMaintenance AddIn die Inidizes eine SQL Server Express Datenbank automatisch täglich neu.
 

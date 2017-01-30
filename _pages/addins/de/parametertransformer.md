@@ -1,31 +1,28 @@
 ---
 layout: page
-title: Standard AddIns
+title: ParameterTransformer
 permalink: "addins/de/parametertransformer/"
 ---
 
-## ParameterTransformer
-
-Dieses AddIn transformiert Parametern zwischen zwei AddIn-Instanzen.
-
-__Merkmale__
+Das ParameterTransformer AddIn transformiert Parameter zwischen zwei AddIn-Instanzen.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| AddIn Type |  |
-| Schnittstellen |  |
+| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| AddIn Type | Logic |
+| Schnittstellen | AddIn |
 | Transaktionen |  |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
+| | |
+| __Parameter__ | |
+| Debug | true = Alle Parameter werden in das Logfile geschrieben. (Optional, Default = false) |
+| definitionFile | XML Datei mit den Transformationsregeln |
 
 
-__Parameter__
 
-{:.table .table-striped}
-| Parameter | Beschreibung |                      
-| --- | --- |
-| Parameter |  |
+<!-- 
+### Anwendungsbeispiele 
 
-
-__Anwendungsbeispiele__
+ToDo
+-->
 

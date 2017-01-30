@@ -1,37 +1,30 @@
 ---
 layout: page
-title: Standard AddIns
+title: Bizagi
 permalink: "addins/de/bizagi/"
 ---
 
-## Bizagi
-
-Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx. Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.
-
-__Merkmale__
+Das Bizagi AddIn dient zur Anbindung des Bizagi BPMN an den OneConnexx.<br />Das Bizagi AddIn tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
+| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | AddIn Type | Konnektor |
 | Schnittstellen | In/Out: Bizagi WebServices EntityManager und WorkflowEngine |
-| Transaktionen |  |
+| Transaktionen | |
 | Ereignisse |  |
-| Ereignis-Parameter |  |
-
-__Parameter__
-
-{:.table .table-striped}
-| --- | --- |
+| | |
+| __Parameter__ | |
 | configFilename | Anwendungsspezifische Bizagi Konfigurationsdatei |
 | workflowUrl | URL des Bizagi WorkflowEngineSOA WebServices |
 | entityUrl | URL des Bizagi EntityManagerSOA WebServices |
-| enableTrace| true	: Datenaustausch wird zur Analyse gespeichert<br/> false : «»
-| traceFolder | Ablageordner der Analyse-Dateien |
-| messageTransformFolder | Ordner, welcher die MessageTransform Dateien (*.mt) beinhaltet |
+| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
+| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
+| msgt | Verzeichnis mit den MessageTransform Dateien (*.mt) (Optional, Default = "Config\\MessageTransform") |
 
 
 <!-- 
-__Anwendungsbeispiele__ 
+### Anwendungsbeispiele 
 
 ToDo
 -->
