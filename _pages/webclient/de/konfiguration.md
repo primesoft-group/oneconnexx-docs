@@ -32,7 +32,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
   * Neue Guppe erstellen  
-  Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__.
+  Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   
 ### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
@@ -94,5 +94,5 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png "Ereignisse Abonnieren")
   
-  Mit einem Klick auf das grüne Plus kann ein neues abonniertes Ereignis hinzugefügt werden. 
+  Mit einem Klick auf das schwarze Plus kann ein neues abonniertes Ereignis hinzugefügt werden. 
   Abonniert eine Instanz eine andere Instanz/Ereignis, dann wird sobald das abonnierte Ereignis ausgelöst wurde, die abonnierende Instanz ausgelöst.
