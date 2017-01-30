@@ -10,11 +10,10 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
 
 ### 1. OneConnexx Verwalten
-  * Einstellungen neu laden  
-  
+  * Einstellungen neu laden    
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
   
-  * Im Service speichern
+  * Im Service speichern  
   Die getätigten Änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
   
   * Cache löschen  
