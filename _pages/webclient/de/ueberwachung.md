@@ -3,7 +3,7 @@ layout: page
 title: Überwachung
 permalink: "webclient/de/ueberwachung/"
 ---
-## __Übersicht__
+## Übersicht
 
 Die Kategorie Überwachung besteht aus den drei Ansichten «Übersicht», «Schnittstellen» und «Regeln». Die Hauptaufgabe der Überwachung ist es die AddIns zu verwalten, Logisch zu sortieren und die von den AddIns geschriebenen Transaktionen übersichtlich darzustellen. Weiter können Regeln zu den Transaktionen definiert werden.
 In der Übersicht werden die von den AddIns geschriebenen Transaktionen übersichtlich Dargestellt. Sie sind nach Schnittstelle gruppiert und alphabetisch sortiert und innerhalb der Gruppe nach Endpunkt Alphabetisch Sortiert.
@@ -21,7 +21,7 @@ Bei Transaktionen welche fehlerhaft sind, wird der Status und der Nachrichtentex
 Pro Schnittstelle werden maximal die Aktuellsten 20 Transaktionen angezeigt.
 Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an Aufgeklappt
 
-### __Aufbau einer Transaktion__
+### Aufbau einer Transaktion
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/transaction.png "Aufbau Transaktion")  
 
@@ -40,7 +40,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 ### 5. Nachricht
   Die Nachricht gibt weiter Details über die Geschrieben Transaktion. Bei erfolgreicher Ausführung was ausgeführt wurde, bei nicht erfolgreicher Ausführung, was fehlgeschlagen ist.
   
-### __Steuerschaltflächen__
+### Steuerschaltflächen
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")
 
