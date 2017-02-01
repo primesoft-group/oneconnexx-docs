@@ -59,7 +59,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
   Mit dieser Schaltfläche kann eine Transaktion gelöscht werden. Es öffnet sich ein Dialog mit der Aufforderung zur Bestätigung des Löschens. Ein Klick auf die Schaltfläche «Löschen» führt den Befehl zum Löschen aus. Ein Klick auf die Schaltfläche Abbrechen führt wieder zurück auf die Übersichtseite
   
 ### 5. Verlauf der Schnittstelle laden
-  Mit dieser Schaltfläche kann der Verlauf aller Transaktionen einer Schnittstellen/Endpunkt Kombination geladen werden. Es werden jeweils die 25 nächsten Einträge geladen. Über eine Weitere erscheinende Schaltfläche können die nächsten 25 Geladen werden. Werden nicht mehr 25 Datensätze aus der Datenbank geladen, dann wird auch die Schaltfläche zum mehr laden nicht mehr angezeigt.
+  Mit dieser Schaltfläche kann der Verlauf aller Transaktionen einer Schnittstellen/Endpunkt Kombination geladen werden. Es werden jeweils die 25 nächsten Einträge geladen. Über eine Weitere erscheinende Schaltfläche können die nächsten 25 Geladen werden. Werden nicht mehr als 25 Datensätze in der Datenbank gefunden, dann wird auch die Schaltfläche zum mehr laden nicht mehr angezeigt.
   
 ## Schnittstellenkonfiguration
 In der Ansicht «Schnittstellen» können die Schnittstellen konfiguriert werden. Eine Schnittstelle dient dazu, die konfigurierten AddIn Instanzen zu Ordnen und Gruppieren.
