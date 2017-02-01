@@ -49,8 +49,8 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
   Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit reguläre Ausdrücke zu verwenden 
 
 ### 2. Alle ausklappen/einklappen
-  Mit dem Plus können alle Schnittstellen ausgeklappt werden.
-  mit dem Minus können alle Schnittstellen eingeklappt werden.
+  Mit dem Pfeil nach unten können alle Schnittstellen ausgeklappt werden.
+  mit dem Pfeil nach oben können alle Schnittstellen eingeklappt werden.
   
 ### 3. Nur Fehler anzeigen
   Zeigt nur die Fehlerhaften Transaktionen an. Schnittstellen welche keine Fehlerhafte Transaktionen enthalten werden automatisch ausgeblendet
@@ -58,7 +58,10 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 ### 4. Transaktion löschen
   Mit dieser Schaltfläche kann eine Transaktion gelöscht werden. Es öffnet sich ein Dialog mit der Aufforderung zur Bestätigung des Löschens. Ein Klick auf die Schaltfläche «Löschen» führt den Befehl zum Löschen aus. Ein Klick auf die Schaltfläche Abbrechen führt wieder zurück auf die Übersichtseite
   
-## __Schnittstellenkonfiguration__
+### 5. Verlauf der Schnittstelle laden
+  Mit dieser Schaltfläche kann der Verlauf aller Transaktionen einer Schnittstellen/Endpunkt Kombination geladen werden. Es werden jeweils die 25 nächsten Einträge geladen. Über eine Weitere erscheinende Schaltfläche können die nächsten 25 Geladen werden. Werden nicht mehr 25 Datensätze aus der Datenbank geladen, dann wird auch die Schaltfläche zum mehr laden nicht mehr angezeigt.
+  
+## Schnittstellenkonfiguration
 In der Ansicht «Schnittstellen» können die Schnittstellen konfiguriert werden. Eine Schnittstelle dient dazu, die konfigurierten AddIn Instanzen zu Ordnen und Gruppieren.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/interfaceconfiguration.png "Schnittstellenkonfiguration")
@@ -82,5 +85,5 @@ Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die
 * Einer Schnittstelle kann keine weitere Schnittstelle untergeordnet sein.  
 * AddIns können nur Schnittstellen untergeordnet sein, ein AddIn als Unterelement eines AddIn ist nicht möglich.  
 
-## __Regeln__
+## Regeln
 In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittstelle konfiguriert werden.
