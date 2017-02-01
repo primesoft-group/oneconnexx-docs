@@ -3,13 +3,13 @@ layout: page
 title: Log
 permalink: "webclient/de/log/"
 ---
-## __Echtzeit__
+## Echtzeit
 
 Die Ansicht «Echtzeitlog» bietet eine Übersicht über die Logeinträge welche Aktuell geschrieben werden. Der Aktualisierungszyklus liegt bei einer Sekunde. Neue Einträge werden unten an der Liste angefügt und der Bildlauf automatisch aktualisiert, d.h. das Fenster scrollt automatisch nach unten um die aktuellsten Logeinträge anzuzeigen
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realtimelog.png "Realtime Log")
 
-#### __Aufbau eines Logeintrags__
+#### Aufbau eines Logeintrags
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logentry.png "Aufbau Logeintrag")
 
@@ -30,7 +30,7 @@ Durch deaktivieren dieser Option wird der automatische Bildlauf gestoppt. Die Lo
 Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht wird, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
 Das Löschen wirkt sich nicht auf die Einträge in der Logdatei aus.
 
-## __Auswertung__
+## Auswertung
 
 In der Ansicht «Auswertung» können die gesamten im Logverzeichnis liegenden Logeinträge gefiltert werden. Im Unterschied zum Echtzeitlog werden die neu geschriebenen Logs nicht automatisch geladen. Die Schaltfläche «Log Aktualisieren» erlaubt aber jederzeit eine Aktualisierung der Liste. Der Filtervorgang wird automatisch ausgeführt, sobald sich ein Wert in den Filterboxen ändert. (Verzögerung ca. 1.5 Sekunden)
 
@@ -54,15 +54,15 @@ Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschrä
 
 ### 4. Addin/Instanz
 
-Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden.
+Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
 
 ### 5. Steuerschaltflächen  
-  * __Filter Ausblenden__  
+  * Filter Ausblenden  
     Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden
 	
-  * __Log Aktualisieren__  
+  * Log Aktualisieren  
     Lädt die neuesten Logeinträge aus den Logfiles
 	
-  * __Filter zurücksetzen__  
+  * Filter zurücksetzen  
     Setzt alle Filterkriterien auf ihren Standardwert zurück
   
