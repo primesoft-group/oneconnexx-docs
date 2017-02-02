@@ -86,4 +86,29 @@ Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die
 * AddIns können nur Schnittstellen untergeordnet sein, ein AddIn als Unterelement eines AddIn ist nicht möglich.  
 
 ## Regeln
-In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittstelle konfiguriert werden.
+In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittstelle konfiguriert werden. Diese Regeln dienen nicht dazu, Fehlerhaft Transaktionen zu Überwachen, sondern zur Überprüfung ob eine Schnittstellen/Endpunkt Kombination eine gewisse Anzahl __erfolgreicher Transaktionen__ schreibt.
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverView.png "Regeln")
+
+### 1. Textsuche  
+Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
+Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
+
+
+### 2. Sortierung  
+Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. diese Schaltfläche ist bei jeder Spalte vorhanden.
+
+### 3. Regel hinzufügen  
+Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:
+
+###Aufbau der Regel: 
+Eine Regel setzt sich wie folgt zusammen: 
+Eine Regel hat einen Namen, eine Schnittstelle und einen Endpunkt für welchen die Regel angewendet wird.
+Weiter enthält sie die Felder Limit-Modus (1) (maximale oder minimale Obergrenze), Anzahl Transaktionen (2) und betrachteter Zeitraum (3). Diese Felder ergeben zusammen die Regel (zum Beispiel: Maximal 4 Transaktionen in den letzten 6 Stunden), welche auf die angegebene Schnittstelle und den Endpunkt angewendet wird.
+Eine Regel wird täglich einmal zur Ausführzeit (4) evaluiert, welche auf die Minute genau angegeben werden kann. Das Wiederholen nach (5) Feld gibt an, nach wie vielen Stunden die Regel erneut evaluiert wird.
+
+### 4. Regel löschen/bearbeiten  
+Mit einem Klick auf die linke Schaltfläche kann eine Regel bearbeitet werden.
+Mit einem Klick auf die rechte Schaltfläche kann eine Regel gelöscht werden
+
+
