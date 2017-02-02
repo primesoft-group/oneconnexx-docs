@@ -98,14 +98,14 @@ Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Mögli
 
 
 ### 2. Sortierung  
-Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. diese Schaltfläche ist bei jeder Spalte vorhanden.
+Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. Diese Schaltfläche ist bei jeder Spalte vorhanden.
 
 ### 3. Regel hinzufügen  
 Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:  
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addNewRule.png "Neue Regel hinzufügen")  
 
-###Aufbau der Regel:  
+### Aufbau der Regel:  
 Eine Regel setzt sich wie folgt zusammen: 
 Eine Regel hat einen Namen, eine Schnittstelle und einen Endpunkt für welchen die Regel angewendet wird.
 Weiter enthält sie die Felder Limit-Modus (1) (maximale oder minimale Obergrenze), Anzahl Transaktionen (2) und betrachteter Zeitraum (3). Diese Felder ergeben zusammen die Regel (zum Beispiel: Maximal 4 Transaktionen in den letzten 6 Stunden), welche auf die angegebene Schnittstelle und den Endpunkt angewendet wird.
