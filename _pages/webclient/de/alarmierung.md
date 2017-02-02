@@ -30,7 +30,6 @@ Die Alarmierung registriert die fehlerhaft Transaktion und löst dementsprechend
 Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
 Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
 
-
 ### 2. Sortierung  
 Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. Diese Schaltfläche ist bei jeder Spalte vorhanden.
 
