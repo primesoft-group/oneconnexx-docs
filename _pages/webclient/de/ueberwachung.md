@@ -86,7 +86,9 @@ Die AddIns können ganz einfach per Drag and Drop von der Rechten Ansicht in die
 * AddIns können nur Schnittstellen untergeordnet sein, ein AddIn als Unterelement eines AddIn ist nicht möglich.  
 
 ## Regeln
-In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittstelle konfiguriert werden. Diese Regeln dienen nicht dazu, Fehlerhaft Transaktionen zu Überwachen, sondern zur Überprüfung ob eine Schnittstellen/Endpunkt Kombination eine gewisse Anzahl __erfolgreicher Transaktionen__ schreibt.
+In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittstelle konfiguriert werden. Diese Regeln dienen nicht dazu, fehlerhafte Transaktionen zu überwachen, sondern zu überprüfen ob eine Schnittstellen/Endpunkt Kombination eine gewisse Anzahl __erfolgreicher Transaktionen__ in einem definierten Zeitraum schreibt.
+Wird dieser Regel nicht erfüllt, so wird eine fehlerhafte Transaktion auf den Endpunkt geschrieben, welchem die Regel zugeordnet ist.
+Diese Transaktion kann entweder einfach so belassen werden, wird aber im Normalfall mit der Alarmierung verbunden. In der Alarmierung kann eine Überwachung auf eine Schnittstellen/Endpunkt Kombination gesetzt werden, welche bei einer fehlerhaften Transaktion eine Hinweismail auslöst. Mehr dazu unter "Alarmierung"
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverView.png "Regeln")
 
@@ -99,9 +101,11 @@ Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Mögli
 Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. diese Schaltfläche ist bei jeder Spalte vorhanden.
 
 ### 3. Regel hinzufügen  
-Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:
+Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:  
 
-###Aufbau der Regel: 
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addNewRule.png "Neue Regel hinzufügen")  
+
+###Aufbau der Regel:  
 Eine Regel setzt sich wie folgt zusammen: 
 Eine Regel hat einen Namen, eine Schnittstelle und einen Endpunkt für welchen die Regel angewendet wird.
 Weiter enthält sie die Felder Limit-Modus (1) (maximale oder minimale Obergrenze), Anzahl Transaktionen (2) und betrachteter Zeitraum (3). Diese Felder ergeben zusammen die Regel (zum Beispiel: Maximal 4 Transaktionen in den letzten 6 Stunden), welche auf die angegebene Schnittstelle und den Endpunkt angewendet wird.
