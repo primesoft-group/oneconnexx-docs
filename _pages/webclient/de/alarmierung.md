@@ -4,6 +4,8 @@ title: Alarmierung
 permalink: "webclient/de/alarmierung/"
 ---
 ## Übersicht
+Die Alarmierung hängt eng mit den Regeln aus dem Bereich "Überwachung" zusammen.
+Die Hauptaufgabe der Alarmierung ist es, eine angegebene Kombination aus Schnittstelle/Endpunkt zu überwachen und sobald eine fehlerhafte Transaktion geschrieben wird dementsprechend eine Informations Mail zu senden.
 Die Alarmierung wird im Normalfall so gesetzt, dass von der Regelüberwachung geschrieben Regelverletzungen (in Form einer Transaktion) direkt die Alarmierungsmail auslösen. 
 
 __Beispiel__ 
@@ -42,8 +44,7 @@ Mit einem Klick auf die linke Schaltfläche kann eine Alarmierung bearbeitet wer
 Mit einem Klick auf die rechte Schaltfläche kann eine Alarmierung gelöscht werden
 
 
-Die Alarmierung hängt eng mit den Regeln aus dem Bereich "Überwachung" zusammen.
-Die Hauptaufgabe der Alarmierung ist es, eine angegebene Kombination aus Schnittstelle/Endpunkt zu überwachen und sobald eine fehlerhafte Transaktion geschrieben wird dementsprechend eine Informations Mail zu senden.
+
 
 
 			
