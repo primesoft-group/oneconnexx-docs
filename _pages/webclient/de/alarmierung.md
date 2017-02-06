@@ -13,7 +13,7 @@ __Beispiel__
 Ausgangslage:
 
 Endpunkt a der Schnitstelle x soll innerhalb von 24 Stunden maximal drei erfolgreiche Transaktionen schreiben (Regel).
-Wenn endpunkt a der Schnittstelle x eine fehlerhafte Transaktion schreibt, soll eine Hinweismail gesendet werden (Alarmierung).
+Wenn Endpunkt a der Schnittstelle x eine fehlerhafte Transaktion schreibt, soll eine Hinweismail gesendet werden (Alarmierung).
 
 Annahme:
 
