@@ -33,7 +33,7 @@ Ein klick auf Name, Server oder Port lädt die Installation
 	
  Steuerschaltlächen
 
-### 1. Installation Hinzufügen  
+#### 1. Installation Hinzufügen  
 
 Ein Klick auf das Plus öffenet den folgenden Dialog:
 
@@ -47,7 +47,7 @@ Ein Klick auf das Plus öffenet den folgenden Dialog:
  * Verbindungszeichenfolge  
  Die Verbindungszeichenfolge (Connectionstring) für die SQL-Datenbank (falls vorhanden). Mit dem Button unter dem Eingabefeld kann die Verbindung direkt getestet werden.
 
-### 2. Installation Bearbeiten/Löschen    
+#### 2. Installation Bearbeiten/Löschen    
 
  Mit diesen beiden Schaltflächen kann eine Installtion bearbeitet/gelöscht werden.
  

@@ -9,7 +9,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 
 ![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Addin Overview")
 
-### 1. OneConnexx Verwalten
+#### 1. OneConnexx Verwalten
   * Einstellungen neu laden    
   Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
   
@@ -34,7 +34,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * Neue Guppe erstellen  
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   
-### 2. Instanz Details
+#### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Addins ausgewählt wurde. Bei einem Logik Addin würde diese folgendermassen Aussehen:
   <br /><br />
   ![X]({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Addin")
@@ -65,7 +65,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
 	<br /><br />
 	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
 	
-### 3. Instanzen Übersicht.
+#### 3. Instanzen Übersicht.
   Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
   
   * Ordnung nach Gruppe  
@@ -75,14 +75,14 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Addin In
   * Ordnung nach AddIntyp  
   ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gupieren nach AddIntype")
   
-### 4. Instanzparameter
+#### 4. Instanzparameter
   Bei den Instanzparametern gibt es zwei verschieden: die optionalen und die zwingenden.
   Im obigen Beispiel ist z.B. der Parameter "interval" zwingend. Zu erkennen ist dies an der roten Umrandung. Ohne diese Parameter kann die Instanz nicht ausgeführt werden.
   Die Optionalen sind nicht zwingend für das Ausführen der Instanz.
   
   Die Parameter unterscheiden sich von Addin zu Addin
 
-### 5. Addins miteinander verbinden
+#### 5. Addins miteinander verbinden
   
   AddIns können miteinander verbunden werden. Dazu gibt es folgende Grundsätze:
   
