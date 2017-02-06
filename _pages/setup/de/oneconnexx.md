@@ -85,7 +85,7 @@ In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\Config\nlog.config* kan
 und der AddIns konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
 Die Standardkonfiguration lautet:
 
-* Logdateien werden im Unterverzeichnis «Log» erstellt
+* Logdateien werden im Unterverzeichnis «Logs» erstellt
 * Die aktuelle Logdatei heisst «oneconnexx.log»
 * Pro Tag wird eine neue Logdatei geschrieben, die Logdateien der letzten 7 Tage werden aufbewahrt
 * Es werden alle Logmeldungen protokolliert
