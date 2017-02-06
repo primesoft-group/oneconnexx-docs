@@ -23,9 +23,12 @@ In der Übersicht über die Installationen werden alle Installationen Angezeigt.
 	
 * Windows Service: 	Zeigt an, ob der Service bereits gestartet ist.
 	
-#### Steuerschaltlächen
+ Steuerschaltlächen
 
- 1. Installation Hinzufügen  
+## 1. Installation Hinzufügen
+
+
+## 2. Installation Bearbeiten/Löschen    
  
  Ein Klick auf das Plus öffenet den folgenden Dialog:
 
