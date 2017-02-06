@@ -3,7 +3,7 @@ layout: page
 title: Alarmierung
 permalink: "webclient/de/alarmierung/"
 ---
-## Übersicht
+## Einleitung
 Die Alarmierung hängt eng mit den Regeln aus dem Bereich "Überwachung" zusammen.
 Die Hauptaufgabe der Alarmierung ist es, eine angegebene Kombination aus Schnittstelle/Endpunkt zu überwachen und sobald eine fehlerhafte Transaktion geschrieben wird dementsprechend eine Informations Mail zu senden.
 Die Alarmierung wird im Normalfall so gesetzt, dass von der Regelüberwachung geschrieben Regelverletzungen (in Form einer Transaktion) direkt die Alarmierungsmail auslösen. 
@@ -23,6 +23,10 @@ Resultat:
 
 Die Regelüberwachung schreibt eine Regelverletzungstransaktion (= eine fehlerhafte Transaktion).
 Die Alarmierung registriert die fehlerhaft Transaktion und löst dementsprechend die infomail aus.
+
+Die Infomail wird aber auch ausgelöst wenn Endpunkt a der Schnittstelle x ohne Regelverletzung eine fehlerhafte Transaktion schreibt (z.B. Filecopy schlägt fehl weil Gründe)
+
+## Übersicht
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/alerting.png "Übersicht Regeln")  
 
