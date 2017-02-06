@@ -48,7 +48,7 @@ Auf dem «Web» Unterverzeichnis -> Properties -> Security -> Gruppe IIS_IUSRS h
 Unter «Sites» -> Rechte Maustaste -> «Add Website…»
 
 * Name = OneConnexxAdministration
-* Physical Path = <Laufwerk>:\OneConnexx\Web
+* Physical Path = &lt;Laufwerk&gt;:\OneConnexx\Web
 * Binding, Port = 9500
 
 Neu erstellte Site anklicken -> Authentication -> Windows Authentication = Enabled
