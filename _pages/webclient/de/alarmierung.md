@@ -12,12 +12,12 @@ __Beispiel__
 
 Ausgangslage:
 
-Endpunkt a der Schnitstelle x soll innerhalb von 24 Stunden maximal 3 Transaktionen schreiben (Regel).
+Endpunkt a der Schnitstelle x soll innerhalb von 24 Stunden maximal drei erfolgreiche Transaktionen schreiben (Regel).
 Wenn endpunkt a der Schnittstelle x eine fehlerhafte Transaktion schreibt, soll eine Hinweismail gesendet werden (Alarmierung).
 
 Annahme:
 
-Für den Endpunkt a der Schnittstelle x werden 4 Transaktionen innerhalb von 24 Stunden geschrieben
+Für den Endpunkt a der Schnittstelle x werden vier erfolgreiche Transaktionen innerhalb von 24 Stunden geschrieben
 
 Resultat:
 
