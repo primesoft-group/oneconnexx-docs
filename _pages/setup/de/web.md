@@ -39,7 +39,7 @@ Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&
 
 Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
 
-Die Datei *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* umbenennen.
+Die Datei *Web.config.sevitec* in *Web.config* umbenennen.
 
 Auf dem «Web» Unterverzeichnis -> Properties -> Security -> Gruppe IIS_IUSRS hinzufügen mit Read & execute Rechten.
 
