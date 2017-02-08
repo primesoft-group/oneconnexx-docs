@@ -52,3 +52,12 @@ vorgegangen werden:
 * This account: &lt;OneConnexx-User&gt;
 * Password: siehe Zugangsdaten des jeweiligen Kunden
 * «Services» wieder schliessen
+
+### Konfiguration
+
+## OneConnexx.AlertingService.exe.config
+
+In der Konfigurationsdatei &lt;Laufwerk&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config sind folgende Parameter zu konfigurieren:
+
+* connectionString: Der Connection-String zur Datenbank. Wenn der AlertingService Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn der AlertingService mehrere Datenbanken überwachen soll, können mehrere Connection-Strings angegeben werden.
+
