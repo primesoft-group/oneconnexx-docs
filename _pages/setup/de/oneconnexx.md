@@ -49,7 +49,7 @@ Server installiert werden, muss für jede Instanz ein eindeutiger Name verwendet
 Ins Stammverzeichnis des OneConnexx wechseln und den Service installieren:
 
 ```
-cd \OneConnexx
+cd \OneConnexx\OneConnexxService
 OneConnexx.exe –install –servicename=OneConnexx
 ```
 
