@@ -20,7 +20,7 @@ Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügun
 
 Alle benötigten Installationspackete auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Falls nur eine OneConnexx Instanz installiert wird, den Inhalt aller Installationspackete nach *&lt;Laufwerk&gt;:\OneConnexx* entpacken.
+Falls nur eine OneConnexx Instanz installiert wird, den Inhalt aller Installationspackete nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken.
 
 Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspackete in einen Unterordner
 *&lt;Laufwerk&gt;:\OneConnexx\&lt;Instanzname&gt;* zu entpacken.
@@ -29,9 +29,10 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 
 ```
 \OneConnexx
- |-AddIns 
- |-Config
- |-Pipeline
+ |-OneConnexxService
+   |-AddIns 
+   |-Config
+   |-Pipeline
 ```
 Bei der Erstinstallation die Datei *OneConnexx.exe.config.sevitec* nach *OneConnexx.exe.config* umbenennen.
 
