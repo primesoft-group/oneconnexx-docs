@@ -35,7 +35,7 @@ Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügun
 
 * web.7z
 
-Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren, und die Datei *Web.config.sevitec* in *Web.config* umbenennen.
 
 Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
 
