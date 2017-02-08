@@ -22,7 +22,7 @@ CREATE LOGIN ocxservice WITH PASSWORD = '...'
 GO
 ```
 
-Auf der OneConnexx Datenbank ausführen:
+Auf der *OneConnexx* Datenbank ausführen:
 
 ```
 CREATE USER ocxservice FROM LOGIN ocxservice
@@ -31,7 +31,7 @@ GO
 
 #### Datenbankrollen
 
-Eine neue Rolle *db_executor* erstellen. Den OneConnexx Service-User zu den Rollen *db_datareader*, *db_datawriter* und
+Auf der *OneConnexx* Datenbank eine neue Rolle *db_executor* erstellen. Den OneConnexx Service-User zu den Rollen *db_datareader*, *db_datawriter* und
 *db_executor* hinzufügen. 
 
 ```
