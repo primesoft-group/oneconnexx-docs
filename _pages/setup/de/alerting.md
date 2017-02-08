@@ -11,14 +11,16 @@ Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügun
 
 Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\AlertingService* entpacken. Dadurch wird folgende Verzeichnisstruktur erstellt:
+Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\AlertingService* entpacken.
+
+Bei der Erstinstallation die Datei *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* umbenennen.
+
+Dadurch wird folgende Verzeichnisstruktur erstellt:
 
 ```
 \OneConnexx
  |-AlertingService
 ```
-
-{% include alert.html type="warning" text="Bei der Erstinstallation die Datei *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* umbenennen." %}
 
 {% include alert.html type="warning" text="Der Alerting-Service muss nur in einer Instanz installiert werden. Er kann mehrere OneConnexx Installationen und Datenbanken überwachen." %}
 
