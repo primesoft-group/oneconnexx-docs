@@ -41,14 +41,12 @@ Zum Deinstallieren:
 OneConnexx.AlertingService.exe –uninstall –servicename=OneConnexx.Alerting
 ```
 
-_-servicename=OneConnexx.Alerting_ wird dabei durch den gewählten eindeutigen Namen ersetzt.
-
 In einem Unternehmensnetzwerk wird empfohlen, für den Alerting-Service einen eigenen Benutzer anzulegen unter dem der
 Service installiert wird. Es kann derselbe Benutzer wie für den OneConnexx-Service verwendet werden. Dazu muss folgendermassen
 vorgegangen werden:
 
 * «Services» öffnen (Windows-Taste -> Services)
-* OneConnexx -> rechte Maustaste -> Properties -> Log On
+* OneConnexx.Alerting -> rechte Maustaste -> Properties -> Log On
 * This account: &lt;OneConnexx-User&gt;
 * Password: siehe Zugangsdaten des jeweiligen Kunden
 * «Services» wieder schliessen
