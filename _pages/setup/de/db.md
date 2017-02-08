@@ -8,8 +8,8 @@ permalink: "setup/de/db/"
 
 Folgende Skripts können verwendet werden um das Datenbankschema zu erstellen:
 
-Tabellen
-Gespeicherte Prozeduren
+* [Tabellen]({{ site.baseurl }}/assets/content-files/create_tables.sql)
+* [Gespeicherte Prozeduren]({{ site.baseurl }}/assets/content-files/create_stored_procedures.sql)
 
 #### Service User
 
