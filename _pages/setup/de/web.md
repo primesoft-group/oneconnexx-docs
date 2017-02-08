@@ -77,7 +77,7 @@ IIS läuft die entsprechende Berechtigung erteilt werden.
 #### Dateisystemberechtigungen für IIS
 
 Damit die Web-Administration die Logdateien des OneConnexx-Services lesen kann, muss der IIS_IUSRS Benutzergruppe Lesezugriff
-auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\Logs*).
+auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Logs*). Bei mehreren installierten OneConnexx Instanzen muss die Berechtigung für jedes Log-Verzeichnis einzeln gesetzt werden. 
 
 ### Logfiles und gespeicherte Verbindungen
 
