@@ -76,7 +76,7 @@ Dem &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* 
 
 ##### OneConnexx.exe.config
 
-In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
+In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
 
 * connectionString: Der Connection-String zur Datenbank. Wenn der OneConnexx Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn keine Datenbank verwendet werden soll darf kein Connection-String konfiguriert werden.
 * AdminTcpChannel: Standardmässig ist TCP Port 9500 konfiguriert. Sollen mehrere OneConnexx Instanzen auf einem Server installiert werden, muss für jede Instanz ein eindeutiger Port konfiguriert werden.
@@ -86,7 +86,7 @@ Alle anderen Konfigurationsparameter sollten nicht verändert werden!
 
 ##### nlog.config
 
-In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\Config\nlog.config* kann die Protokollierung des OneConnexx-Services
+In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Config\nlog.config* kann die Protokollierung des OneConnexx-Services
 und der AddIns konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
 Die Standardkonfiguration lautet:
 
