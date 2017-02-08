@@ -55,9 +55,19 @@ vorgegangen werden:
 
 ### Konfiguration
 
-## OneConnexx.AlertingService.exe.config
+##### OneConnexx.AlertingService.exe.config
 
-In der Konfigurationsdatei &lt;Laufwerk&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config sind folgende Parameter zu konfigurieren:
+In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config* sind folgende Parameter zu konfigurieren:
 
-* connectionString: Der Connection-String zur Datenbank. Wenn der AlertingService Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn der AlertingService mehrere Datenbanken überwachen soll, können mehrere Connection-Strings angegeben werden.
+* connectionStrings: Der Connection-String zur Datenbank. Wenn der AlertingService Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn der AlertingService mehrere Datenbanken überwachen soll, können mehrere Connection-Strings angegeben werden.
+* nlog: Konfiguration der Protokollierung des Alerting-Service. Standardmässig wird in eine Datei *oneconnexx.alerting.log* im Unterverzeichnis *logs* protokolliert.
+* MailSenderDefaultTimeout: Interval in Millisekunden in dem Mails versendet werden (Standard: 30000, alle 30 Sekunden).
+* RuleCheckerDefaultTimeout: Interval in Millisekunden in dem Regelverletzungen geprüft werden (Standard: 60000, jede Minute).
+* MailSenderDefaultFrom: Absenderadresse der versendeten E-Mails.
+* MailSenderClientServer: IP Adresse oder Hostname des Mailserver für ausgehende E-Mails.
+* MailSenderClientPort: Port des Mailservers (Standard: 25).
+* MailSenderClientTimeout: Timeout in Millisekunden für das Versenden von E-Mails.
+* MailSenderClientSsl: True = SSL verwenden, False = kein SSL (Standard: False).
+* MailSenderClientUserName: Optional der Benutzername für den Mailserver.
+* MailSenderClientUserPassword: Optional ein Passwort für den Mailserver.
 
