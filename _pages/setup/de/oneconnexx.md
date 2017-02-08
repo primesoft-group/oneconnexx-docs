@@ -33,6 +33,7 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
  |-Config
  |-Pipeline
 ```
+Bei der Erstinstallation die Datei *OneConnexx.exe.config.sevitec* nach *OneConnexx.exe.config* umbenennen.
 
 ### Service installieren
 
