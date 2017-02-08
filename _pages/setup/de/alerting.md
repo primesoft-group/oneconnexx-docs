@@ -17,6 +17,8 @@ Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx* entpacke
 \OneConnexx
  |-AlertingService
 ```
+Die Datei *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* umbenennen.
+
 {% include alert.html type="warning" text="Der Alerting-Service muss nur in einer Instanz installiert werden. Er kann mehrere OneConnexx Installationen und Datenbanken überwachen." %}
 
 ### Service installieren
