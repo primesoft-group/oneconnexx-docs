@@ -25,6 +25,8 @@ Falls nur eine OneConnexx Instanz installiert wird, den Inhalt aller Installatio
 Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspackete in einen Unterordner
 *&lt;Laufwerk&gt;:\OneConnexx\&lt;Instanzname&gt;* zu entpacken.
 
+Bei der Erstinstallation die Datei *OneConnexx.exe.config.sevitec* in *OneConnexx.exe.config* umbenennen.
+
 Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 
 ```
@@ -34,7 +36,6 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
    |-Config
    |-Pipeline
 ```
-{% include alert.html type="warning" text="Bei der Erstinstallation die Datei OneConnexx.exe.config.sevitec in OneConnexx.exe.config umbenennen." %}
 
 {% include alert.html type="warning" text="Der Alerting-Service muss nur in einer Instanz installiert werden. Er kann mehrere OneConnexx Installationen und Datenbanken überwachen." %}
 
