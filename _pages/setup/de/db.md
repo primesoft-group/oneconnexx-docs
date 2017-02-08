@@ -46,3 +46,7 @@ sp_addrolemember 'db_datareader', 'ocxservice'
 sp_addrolemember 'db_datawriter', 'ocxservice'
 GO
 ```
+
+#### Hinweis zu Azure
+
+In einer Azure Datenbank kann einem Login/User keine Default-Datenbank zugewiesen werden. Ein Verbindung (z.B. mit SQL Server Management Studio) ist somit nur möglich wenn die Datenbank explizit angegeben wird.
