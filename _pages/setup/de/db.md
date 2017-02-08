@@ -50,3 +50,18 @@ GO
 #### Hinweis zu Azure
 
 In einer Azure Datenbank kann einem Login/User keine Default-Datenbank zugewiesen werden. Ein Verbindung (z.B. mit SQL Server Management Studio) ist somit nur möglich wenn die Datenbank explizit angegeben wird.
+
+
+#### Connection Strings
+
+Azure
+
+```
+server=xxx.database.windows.net;database=OneConnexx;User ID=ocxservice;Password=...;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=True;App=EntityFramework
+```
+
+SQL Server (mit Domänenbenutzer)
+
+```
+data source=xxx;initial catalog=OneConnexx;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework
+```
