@@ -8,7 +8,6 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 Sowohl die Liste wie auch der Funktionsumfang der einzelnen Add-Ins werden ständig erweitert.<br /><br />
 
 {:.table .table-striped}
-| AddIn | Beschreibung |                      
 | --- | --- |
 | __Basis Add-Ins__ |
 | [DatabaseToCSV]({{ site.baseurl }}/addins/de/databasetocsv/) | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
