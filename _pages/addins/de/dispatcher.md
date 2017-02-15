@@ -4,12 +4,12 @@ title: Dispatcher
 permalink: "addins/de/dispatcher/"
 ---
 
-Das Dispatcher AddIn löst aufgrund einer SQL Abfrage OneConnexx Events aus. Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Werten ausgelöst.<br /><br />
+Das Dispatcher Add-In löst aufgrund einer SQL Abfrage OneConnexx Events aus. Pro Eintrag im Ergebnis der SQL Abfrage wird ein Event mit den retournierten Werten ausgelöst.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| AddIn Type | Event / Logic |
+| Add-In Type | Event / Logic |
 | Schnittstellen |  |
 | Transaktionen | 1 wenn mind. 1 Datensatz |
 | Ereignisse | Pro DataRow: &lt;Instanz&gt; (Parameter = Alle Spalten der SQL-Abfrage)<br />&lt;Instanz&gt;.Done |
@@ -25,7 +25,7 @@ Das Dispatcher AddIn löst aufgrund einer SQL Abfrage OneConnexx Events aus. Pro
 
 ### Anwendungsbeispiele
 
-Das Dispatcher AddIn wird von einem Timer AddIn stündlich aufgerufen. Es fragt den Inhalt einer bestimmten Tabelle mit einem bestimmten Status oder weiteren bestimmen Angaben ab. So werden neue Einträge erkannt und können weiterverarbeitet werden.
-In der Antwort erhält das Dispatcher AddIn weitere Angaben, welche zur Weiterverarbeitung benötigt werden.
-Pro Eintrag erstellt das Dispatcher AddIn  einen Event, welcher von weiteren AddIns abonniert werden können.
+Das Dispatcher Add-In wird von einem Timer Add-In stündlich aufgerufen. Es fragt den Inhalt einer bestimmten Tabelle mit einem bestimmten Status oder weiteren bestimmen Angaben ab. So werden neue Einträge erkannt und können weiterverarbeitet werden.
+In der Antwort erhält das Dispatcher Add-In weitere Angaben, welche zur Weiterverarbeitung benötigt werden.
+Pro Eintrag erstellt das Dispatcher Add-In  einen Event, welcher von weiteren Add-Ins abonniert werden können.
 

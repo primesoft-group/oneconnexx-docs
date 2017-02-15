@@ -7,7 +7,7 @@ permalink: "setup/de/oneconnexx/"
 ### 32- oder 64-Bit?
 
 Den OneConnexx gibt es in einer 32-Bit und einer 64-Bit Version. Auf einem 64-Bit Betriebssystem wird empfohlen die 64-Bit 
-Version des OneConnexx zu verwenden, ausser ein AddIn erfordert zwingend den 32-Bit Modus. Die AddIns laufen automatisch als
+Version des OneConnexx zu verwenden, ausser ein Add-In erfordert zwingend den 32-Bit Modus. Die Add-Ins laufen automatisch als
 32-Bit oder 64-Bit Prozesse, je nach Version des OneConnexx.
 
 ### Installationspackete
@@ -15,8 +15,8 @@ Version des OneConnexx zu verwenden, ausser ein AddIn erfordert zwingend den 32-
 Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
 
 * service.7z (Basis Service)
-* addins.7z (Standard AddIns)
-* Allfällige kundenspezifische AddIns in einem separaten Installationspacket.
+* addins.7z (Standard Add-Ins)
+* Allfällige kundenspezifische Add-Ins in einem separaten Installationspacket.
 
 Alle benötigten Installationspackete auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
@@ -87,7 +87,7 @@ Alle anderen Konfigurationsparameter sollten nicht verändert werden!
 ##### nlog.config
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Config\nlog.config* kann die Protokollierung des OneConnexx-Services
-und der AddIns konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
+und der Add-Ins konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
 Die Standardkonfiguration lautet:
 
 * Logdateien werden im Unterverzeichnis «Logs» erstellt

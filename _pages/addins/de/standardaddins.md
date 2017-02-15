@@ -29,7 +29,7 @@ Sowohl die Liste wie auch der Funktionsumfang der einzelnen Add-Ins werden stän
 | [FileDecompressor]({{ site.baseurl }}/addins/de/filedecompressor/) | Entpackt Dateien |
 | [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) | Liest eine existierende Datei und erstellt anhand des Dateiinhalts und anhand konfigurierter Regeln eine neue Datei |
 | [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | Ermittelt via LDAP Angaben aus dem AD (Active Directory) und speichert diese in einer CSV-Datei |
-| [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei AddIn-Instanzen |
+| [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei Add-In Instanzen |
 | [ServerCheck]({{ site.baseurl }}/addins/de/servercheck/) | Überprüft die Erreichbarkeit von Servern. Es pingt alle konfigurierten Server an und versendet das Ergebnis in einem E-Mail |
 | [SharepointEraser]({{ site.baseurl }}/addins/de/sharepointeraser/) | Löscht Items in einer Sharepoint Liste/Bibliothek die älter als xx Stunden sind |
 | [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Funktioniert als WebService, welcher von externen Applikation aufgerufen wird |

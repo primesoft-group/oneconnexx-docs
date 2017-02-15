@@ -125,7 +125,7 @@ Der Zugriff auf die Web-Administration wird über «Windows Authentication» ges
 Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
 
 * *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
-* *Konfigurator*: Kann zusätzlich AddIns erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
+* *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
 * *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
 
 Diese Rollen können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden.
