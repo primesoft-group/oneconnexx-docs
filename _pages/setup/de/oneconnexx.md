@@ -70,10 +70,20 @@ Service installiert wird. Dazu muss folgendermassen vorgegangen werden:
 * Password: siehe Zugangsdaten des jeweiligen Kunden
 * «Services» wieder schliessen
 
-Falls der OneConnexx Service nicht unter dem lokalen Systemkonto (Lokales System / Local System) installiert wird, müssen zusätzliche folgende Berechtigungen erteilt werden:
+#### Dateisystemberechtigungen
 
-* Dem &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* und alle Unterordner volle Berechtigung erteilen.
-* Im Verzeichnis *%ProgramData%* (normalerweise *C:\ProgramData*) ein Unterverzeichnis "Sevitec" erstellen und dem &lt;OneConnexx-User&gt; darauf Schreibrechte erteilen.
+Falls der OneConnexx Service nicht unter dem lokalen Systemkonto (Lokales System/Local System) installiert wird, muss dem  &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* und alle Unterordner volle Berechtigung erteilt werden. In diesem Beispiel wurde OneConnexx unter *C:\OneConnexx* installiert und läuft unter einem Benutzer mit Namen *ocxservice*:
+
+```
+icacls C:\OneConnexx /grant ocxservice:(OI)(CI)R /T
+```
+
+Da verschiedene Dateien im Verzeichnis *%ProgramData%\Sevitec\OneConnexx* gespeichert werden, muss bei der ersten Installation sichergestellt werden, dass normale Benutzer Schreibzugriff auf dieses Verzeichnis haben. Die folgenden Befehle erstellen dieses Verzeichnis und erteilen die benötigte Berechtigung:
+
+```
+mkdir "%ProgramData%\Sevitec\OneConnexx"
+icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)R /T
+```
 
 ### Konfiguration
 
