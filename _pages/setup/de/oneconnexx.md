@@ -70,7 +70,7 @@ Service installiert wird. Dazu muss folgendermassen vorgegangen werden:
 * Password: siehe Zugangsdaten des jeweiligen Kunden
 * «Services» wieder schliessen
 
-### Dateisystemberechtigungen
+#### Dateisystemberechtigungen
 
 Falls der OneConnexx Service nicht unter dem lokalen Systemkonto (Lokales System/Local System) installiert wird, muss dem  &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* und alle Unterordner volle Berechtigung erteilt werden. In diesem Beispiel wurde OneConnexx unter *C:\OneConnexx* installiert und läuft unter einem Benutzer mit Namen *ocxservice*:
 
