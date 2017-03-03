@@ -55,11 +55,7 @@ Unter «Sites» -> Rechte Maustaste -> «Add Website…»
 
 Neu erstellte Site anklicken -> Authentication -> Windows Authentication = Enabled
 
-Unter ApplicationPools den neu erstellten ApplicationPool «OneConnexxAdministration» auswählen, «Advances Settings…» öffnen:
-
-* Load User Profile = True
-* NET Framework Version = v4.0
-
+Unter ApplicationPools sicherstellen dass der neu erstellte ApplicationPool «OneConnexxAdministration» als ".NET CLR Version" die Version "v4.0" ausgewählt hat.
 
 #### IIS Berechtigung erteilen um Dienst zu Stoppen/Starten
 
@@ -85,11 +81,11 @@ icacls C:\OneConnexx\OneConnexxService\Logs /grant IIS_IUSRS:(OI)(CI)R
 
 ### Logfiles und gespeicherte Verbindungen
 
-Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin*
+Die Web-Administration schreibt Logfiles ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin*
 
-Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
+Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
 
-{% include alert.html type="warning" text="Das Verzeichnis %LocalAppData% ist abhängig vom aktuellen Benutzer und zeigt bei einer Web-Applikation normalerweise auf *C:\Users\&lt;ApplicationPoolName&gt;\AppData\Local*." %}
+{% include alert.html type="warning" text="Das Verzeichnis %ProgramData% ist normalerweise ein unsichtbares Verzeichnis und befindet sich unter *C:\ProgramData*. %}
 
 ### Konfiguration in Web.config
 
@@ -97,7 +93,7 @@ In der Datei Web.config (unter *&lt;Laufwerk&gt;:\OneConnex\Web*) können folgen
 
 __Logging__
 
-Standardmässig werden Logdateien ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin* geschrieben.
+Standardmässig werden Logdateien ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* geschrieben.
 Pro Tag wird eine neue Logdatei erstellt und die Dateien der letzten 7 Tage werden archiviert.
 Diese Einstellungen können im Abschnitt &lt;nlog&gt; geändert werden.
 Alle möglichen Einstellungen sind unter https://github.com/nlog/nlog/wiki beschrieben.
