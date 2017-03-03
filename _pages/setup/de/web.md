@@ -85,7 +85,7 @@ Die Web-Administration schreibt Logfiles ins Verzeichnis *%ProgramData%\Sevitec\
 
 Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
 
-{% include alert.html type="warning" text="Das Verzeichnis %ProgramData% ist normalerweise ein unsichtbares Verzeichnis und befindet sich unter *C:\ProgramData*. %}
+{% include alert.html type="warning" text="Das Verzeichnis %ProgramData% ist normalerweise ein unsichtbares Verzeichnis und befindet sich unter *C:\ProgramData*." %}
 
 ### Konfiguration in Web.config
 
