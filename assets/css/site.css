@@ -20,6 +20,7 @@ body {
 	margin-top: 5px;
 	vertical-align: bottom;
 	font-weight: bold;
+	height: 50px;
 	font-size: 18px;
   	line-height: 20px;
 }
@@ -30,9 +31,8 @@ body {
 	vertical-align: bottom;
 	font-weight: bold;
 	height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+	font-size: 18px;
+  	line-height: 20px;
 }
 
 .navbar-brand > img{
