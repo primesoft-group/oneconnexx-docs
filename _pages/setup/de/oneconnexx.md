@@ -85,8 +85,6 @@ mkdir "%ProgramData%\Sevitec\OneConnexx"
 icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)R /T
 ```
 
-{% include alert.html type="warning" text="Die Dateisystemberechtigungen müssen gesetzt werden bevor der OneConnexx Service zum ersten Mal gestartet wird. Andernfalls muss der Dienst nochmals gestoppt und die Dateien unter %ProgramData%\Sevitec\OneConnexx\Installations gelöscht werden." %}
-
 ### Konfiguration
 
 ##### OneConnexx.exe.config
