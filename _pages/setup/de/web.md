@@ -70,7 +70,7 @@ IIS läuft die entsprechende Berechtigung erteilt werden.
 
 {% include alert.html type="warning" text="Der letzte Befehl muss für jede installierte OneConnexx Instanz ausgeführt werden. «OneConnexx» ist der Name unter dem der Windows-Dienst installiert wurde. «IIS_IUSRS» ist eine Benutzergruppe die ab IIS 7.0 automatisch alle ApplicationPool-Identitäten enthält." %}
 
-#### Optional: Dateisystemberechtigungen für IIS
+#### Dateisystemberechtigungen für IIS
 
 Damit die Web-Administration die Logdateien des OneConnexx-Services lesen kann, muss der IIS_IUSRS Benutzergruppe Lesezugriff
 auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Logs*). Bei mehreren installierten OneConnexx Instanzen muss die Berechtigung für jedes Log-Verzeichnis einzeln gesetzt werden. 
