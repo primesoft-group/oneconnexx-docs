@@ -4,14 +4,14 @@ title: Alerting-Service
 permalink: "setup/de/alerting/"
 ---
 
-### Installationspackete
-Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
+### Installationspakete
+Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
 
 * alertingservice.7z
 
-Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Das benötigte Installationspaket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\AlertingService* entpacken.
+Den Inhalt des Installationspakets nach *&lt;Laufwerk&gt;:\OneConnexx\AlertingService* entpacken.
 
 Bei der Erstinstallation die Datei *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* umbenennen.
 
