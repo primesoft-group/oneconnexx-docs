@@ -16,7 +16,8 @@ body {
 }
 
 .navbar-brand .one {
-    color: #1C1C1B;
+	color: #1C1C1B;
+	font-family:"Gill Sans";
 	margin-top: 5px;
 	vertical-align: bottom;
 	font-weight: bold;
@@ -26,7 +27,8 @@ body {
 }
 
 .navbar-brand .connexx {
-    color: #52AE32;
+	color: #52AE32;
+	font-family:"Gill Sans";
 	margin-top: 5px;
 	vertical-align: bottom;
 	font-weight: bold;
