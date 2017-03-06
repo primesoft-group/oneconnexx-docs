@@ -19,12 +19,14 @@ body {
     color: #1C1C1B;
 	margin-top: 5px;
 	vertical-align: bottom;
+	font-weight: bold;
 }
 
 .navbar-brand .connexx {
     color: #52AE32;
 	margin-top: 5px;
 	vertical-align: bottom;
+	font-weight: bold;
 }
 
 .navbar-brand > img{
