@@ -20,6 +20,8 @@ body {
 	margin-top: 5px;
 	vertical-align: bottom;
 	font-weight: bold;
+	font-size: 18px;
+  	line-height: 20px;
 }
 
 .navbar-brand .connexx {
@@ -27,6 +29,10 @@ body {
 	margin-top: 5px;
 	vertical-align: bottom;
 	font-weight: bold;
+	height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .navbar-brand > img{
