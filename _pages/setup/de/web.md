@@ -29,15 +29,15 @@ Unter Windows Server 2008:
 * Anwendungsfeature ASP.NET aktivieren
 * WebServer IIS -> Add Roles -> ASP.NET
 
-### Installationspackete
+### Installationspakete
 
-Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
+Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
 
 * web.7z
 
-Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Das benötigte Installationspaket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
+Den Inhalt des Installationspakets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
 
 Die Datei *Web.config.sevitec* in *Web.config* umbenennen.
 
