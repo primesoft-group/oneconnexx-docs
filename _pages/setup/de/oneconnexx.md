@@ -10,19 +10,19 @@ Den OneConnexx gibt es in einer 32-Bit und einer 64-Bit Version. Auf einem 64-Bi
 Version des OneConnexx zu verwenden, ausser ein Add-In erfordert zwingend den 32-Bit Modus. Die Add-Ins laufen automatisch als
 32-Bit oder 64-Bit Prozesse, je nach Version des OneConnexx.
 
-### Installationspackete
+### Installationspakete
 
-Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
+Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
 
 * service.7z (Basis Service)
 * addins.7z (Standard Add-Ins)
 * Allfällige kundenspezifische Add-Ins in einem separaten Installationspacket.
 
-Alle benötigten Installationspackete auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Alle benötigten Installationspakete auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Falls nur eine OneConnexx Instanz installiert wird, den Inhalt aller Installationspackete nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken.
+Falls nur eine OneConnexx Instanz installiert wird, den Inhalt aller Installationspakete nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken.
 
-Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspackete in einen Unterordner
+Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspakete in einen Unterordner
 *&lt;Laufwerk&gt;:\OneConnexx\&lt;Instanzname&gt;* zu entpacken.
 
 Bei der Erstinstallation die Datei *OneConnexx.exe.config.sevitec* in *OneConnexx.exe.config* umbenennen.
