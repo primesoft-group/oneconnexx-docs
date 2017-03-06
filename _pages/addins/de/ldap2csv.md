@@ -22,11 +22,11 @@ Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und
 | authenticationType | Secure = Für die Anmeldung an den LDAP Server wird der im Paramter "userName" angegebene Benutzer verwendet, bzw. die Identität des OneConnexx Service wenn kein Benutzer angegeben wurde.<br/>Anonymous = Die Anmeldung am LDAP Server erfolgt anonym. |
 | sizeLimit | Anzahl Einträge, welche maximal exportiert werden (Optional, Default = 1000) |
 | filter | Zur Einschränkung auf bestimmte Objekte, z.B. "(objectClass=person)" (Optional) |
-| properties | Zu exportierende Spalten.<br />Domänen Attribute starten mit $, z.B. $maxPwdAge.<br/>Typ, Format und Spaltenname  werden mit # getrennt (Bsp. "$DomänenAttribut#date#yyyy-MM-dd#Spaltenname")<br/>Mehrere Eingaben werden mit "," getrennt |
+| properties | Die zu exportierende Spalten, durch , getrennt.<br />Domänenattribute starten mit $ (Beispiel: $maxPwdAge).<br/>Datentyp, Format und CSV-Spaltenname können durch # getrennt angefügt werden (Bsp. "$DomänenAttribut#date#yyyy-MM-dd#Spaltenname") |
 | fileNamePattern | Name der zu erstellenden Datei. Folgende Platzhalter stehen zur Verfügung: <br />{now}: Aktuelles Datum<br />{lastMonth}: Datum des letzten Monates |
 | fileSaveLocation | Verzeichnis in dem die Datei erstellt wird |
 | delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = Semikolon) |
-| includeHeaderRow | true = inklusive Spaltenüberschriften |
+| includeHeaderRow | true = inklusive Spaltenüberschriften in der ersten Zeile<br/>false = ohne Spaltenüberschriften |
 | encoding | Kodierung der CSV-Datei (Optional, Default = "utf-8") |
 | additionalData | Kommaseparierte List von Schlüssel-Wert-Paaren welche die im Parameter "properties" angegebenen Spalten überschreiben. Der Schlüssel muss dabei dem Spaltenname entsprechen. (Optional)  |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
