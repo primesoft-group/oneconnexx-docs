@@ -76,7 +76,14 @@ Damit die Web-Administration die Logdateien des OneConnexx-Services lesen kann, 
 auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Logs*). Bei mehreren installierten OneConnexx Instanzen muss die Berechtigung für jedes Log-Verzeichnis einzeln gesetzt werden. 
 
 ```
-icacls C:\OneConnexx\OneConnexxService\Logs /grant IIS_IUSRS:(OI)(CI)R
+icacls C:\OneConnexx\OneConnexxService\Logs /grant IIS_IUSRS:(OI)(CI)RW
+```
+
+Falls noch nicht bei der Installation des OneConnexx Service geschehen, müssen Schreibrechte für das Verzeichnis *%ProgramData%\Sevitec\OneConnexx* erteilt werden:
+
+```
+mkdir "%ProgramData%\Sevitec\OneConnexx"
+icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
 ```
 
 ### Logfiles und gespeicherte Verbindungen
