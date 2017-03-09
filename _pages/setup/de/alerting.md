@@ -7,7 +7,7 @@ permalink: "setup/de/alerting/"
 ### Installationspakete
 Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
 
-* alertingservice.7z
+* ocx-alertingservice.7z
 
 Das benötigte Installationspaket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
@@ -42,14 +42,15 @@ OneConnexx.AlertingService.exe –uninstall –servicename=OneConnexx.Alerting
 ```
 
 In einem Unternehmensnetzwerk wird empfohlen, für den Alerting-Service einen eigenen Benutzer anzulegen unter dem der
-Service installiert wird. Es kann derselbe Benutzer wie für den OneConnexx-Service verwendet werden. Dazu muss folgendermassen
-vorgegangen werden:
+Service installiert wird. Um den Service unter diesem Benutzer auszuführen muss folgendermassen vorgegangen werden:
 
-* «Services» öffnen (Windows-Taste -> Services)
-* OneConnexx.Alerting -> rechte Maustaste -> Properties -> Log On
-* This account: &lt;OneConnexx-User&gt;
-* Password: siehe Zugangsdaten des jeweiligen Kunden
-* «Services» wieder schliessen
+```
+sc config OneConnexx.Alerting obj= "<Benutzername>" password= "<Passwort>"
+```
+
+* *OneConnexx.Alerting* durch den Namen ersetzen unter dem der Service installiert wurde
+* \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzername* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzername*
+* Wichtig ist der Abstand nach <code>obj=</code> bzw. <code>password=</code>
 
 ### Konfiguration
 
