@@ -68,8 +68,8 @@ sc config OneConnexx obj= "<Benutzername>" password= "<Passwort>"
 ```
 
 * *OneConnexx* durch den Namen ersetzen unter dem der Service installiert wurde
-* &lt; ?? \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzer* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzer*
-* Wichtig ist der Abstand nach obj= bzw. password=
+* \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzername* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzername*
+* Wichtig ist der Abstand nach <code>obj=</code> bzw. <code>password=</code>
 
 #### Dateisystemberechtigungen
 
