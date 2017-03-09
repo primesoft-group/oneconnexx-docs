@@ -63,11 +63,12 @@ _-servicename=OneConnexx_ wird dabei durch den gewählten eindeutigen Namen der 
 In einem Unternehmensnetzwerk wird empfohlen, für den OneConnexx einen eigenen Benutzer anzulegen unter dem der
 Service installiert wird. Dazu muss folgendermassen vorgegangen werden:
 
-* «Services» öffnen (Windows-Taste -> Services)
-* OneConnexx -> rechte Maustaste -> Properties -> Log On
-* This account: &lt;OneConnexx-User&gt;
-* Password: siehe Zugangsdaten des jeweiligen Kunden
-* «Services» wieder schliessen
+```
+sc config OneConnexx obj= "<Benutzername>" password= "<Passwort>"
+```
+
+* <Benutzername> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzer* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzer*
+* Wichtig ist der Abstand nach obj= bzw. password=
 
 #### Dateisystemberechtigungen
 
