@@ -37,7 +37,7 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
    |-Pipeline
 ```
 
-{% include alert.html type="warning" text="Der Alerting-Service muss nur in einer Instanz installiert werden. Er kann mehrere OneConnexx Installationen und Datenbanken überwachen." %}
+{% include alert.html type="warning" text="Bei der Erstinstallation folgende Dateien umbenennen: OneConnexx.exe.config.sevitec in OneConnexx.exe.config und Config\nlog.config.sevitec in Config\nlog.config. *Test* " %}
 
 ### Service installieren
 
