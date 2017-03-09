@@ -61,13 +61,14 @@ OneConnexx.exe –uninstall –servicename=OneConnexx
 _-servicename=OneConnexx_ wird dabei durch den gewählten eindeutigen Namen der Instanz ersetzt.
 
 In einem Unternehmensnetzwerk wird empfohlen, für den OneConnexx einen eigenen Benutzer anzulegen unter dem der
-Service installiert wird. Dazu muss folgendermassen vorgegangen werden:
+Service installiert wird. Um den Service unter diesem Benutzer auszuführen muss folgendermassen vorgegangen werden:
 
 ```
 sc config OneConnexx obj= "<Benutzername>" password= "<Passwort>"
 ```
 
-* <Benutzername> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzer* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzer*
+* *OneConnexx* durch den Namen ersetzen unter dem der Service installiert wurde
+* &lt; ?? \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzer* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzer*
 * Wichtig ist der Abstand nach obj= bzw. password=
 
 #### Dateisystemberechtigungen
