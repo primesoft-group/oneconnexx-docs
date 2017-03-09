@@ -14,18 +14,16 @@ Version des OneConnexx zu verwenden, ausser ein Add-In erfordert zwingend den 32
 
 Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
 
-* service.7z (Basis Service)
-* addins.7z (Standard Add-Ins)
+* ocx-service.7z (Basis Service)
+* ocx-addins.7z (Standard Add-Ins)
 * Allfällige kundenspezifische Add-Ins in einem separaten Installationspacket.
 
 Alle benötigten Installationspakete auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Falls nur eine OneConnexx Instanz installiert wird, den Inhalt aller Installationspakete nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken.
+Falls nur eine OneConnexx Instanz installiert wird, den Inhalt von *ocx-service.7z* nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken, und den Inhalt von *ocx-addins.7z* in ein Unterverzeichnis *AddIns*.
 
 Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspakete in einen Unterordner
 *&lt;Laufwerk&gt;:\OneConnexx\&lt;Instanzname&gt;* zu entpacken.
-
-Bei der Erstinstallation die Datei *OneConnexx.exe.config.sevitec* in *OneConnexx.exe.config* umbenennen.
 
 Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 
@@ -37,7 +35,7 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
    |-Pipeline
 ```
 
-{% include alert.html type="warning" text="Bei der Erstinstallation folgende Dateien umbenennen: OneConnexx.exe.config.sevitec in OneConnexx.exe.config und Config\nlog.config.sevitec in Config\nlog.config. *Test* " %}
+{% include alert.html type="warning" text="Bei der Erstinstallation folgende Dateien umbenennen: OneConnexx.exe.config.sevitec in OneConnexx.exe.config und Config\nlog.config.sevitec in Config\nlog.config. <br/><b>Test</b>" %}
 
 ### Service installieren
 
