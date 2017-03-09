@@ -92,8 +92,8 @@ icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
 
 In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
 
-* connectionString: Der Connection-String zur Datenbank. Wenn der OneConnexx Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn keine Datenbank verwendet werden soll darf kein Connection-String konfiguriert werden.
-* AdminTcpChannel: Standardmässig ist TCP Port 9500 konfiguriert. Sollen mehrere OneConnexx Instanzen auf einem Server installiert werden, muss für jede Instanz ein eindeutiger Port konfiguriert werden.
+* connectionString: Die Verbindungszeichenfolge zur Datenbank. Wenn der OneConnexx Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn keine Datenbank verwendet werden soll darf kein Connection-String konfiguriert werden.
+* AdminTcpChannel: Standardmässig ist TCP Port 9501 konfiguriert. Sollen mehrere OneConnexx Instanzen auf einem Server installiert werden, muss für jede Instanz ein eindeutiger Port konfiguriert werden.
 * ConfigArchiveDirectory: Optional kann ein Verzeichnis (lokal oder als Netzwerkpfad) angegeben werden, in das bei jeder Konfigurationsänderung eine Sicherung der Konfigurationsdatei kopiert wird.
 
 Alle anderen Konfigurationsparameter sollten nicht verändert werden!
