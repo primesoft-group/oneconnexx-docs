@@ -4,12 +4,12 @@ title: FileCopy
 permalink: "addins/de/filecopy/"
 ---
 
-Das FileCopy AddIn wird dazu verwendet um Dateien in einem bestimmten Verzeichnis eines Systems auf ein anderes System mit einem bestimmten Protokoll zu kopieren. Das FileCopy AddIn unterstützt auch FTP und SFTP.<br /><br />
+Das FileCopy Add-In wird dazu verwendet um Dateien in einem bestimmten Verzeichnis eines Systems auf ein anderes System mit einem bestimmten Protokoll zu kopieren. Das FileCopy Add-In unterstützt auch FTP und SFTP.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| AddIn Type | Logic |
+| Add-In Type | Logic |
 | Schnittstellen | In/Out: Dateiverzeichnis |
 | Transaktionen | 1 pro kopierte Datei |
 | Ereignisse | Pro kopierte Datei wenn Ziel = FILE: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done |
@@ -35,6 +35,6 @@ Das FileCopy AddIn wird dazu verwendet um Dateien in einem bestimmten Verzeichni
 
 ### Anwendungsbeispiele
 
-Das FileCopy AddIn wird beim automatischen Austauchs mit FTP-Servern aber auch bei automatischen Abgleichen innerhalb des Firmenetzes eingesetzt.
-Das FileCopy AddIn ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Einschränkung mit DateiPattern vielseitig einsetzbar.
+Das FileCopy Add-In wird beim automatischen Austauchs mit FTP-Servern aber auch bei automatischen Abgleichen innerhalb des Firmenetzes eingesetzt.
+Das FileCopy Add-In ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Einschränkung mit DateiPattern vielseitig einsetzbar.
 

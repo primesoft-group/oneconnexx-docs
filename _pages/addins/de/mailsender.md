@@ -4,12 +4,12 @@ title: MailSender
 permalink: "addins/de/mailsender/"
 ---
 
-Das MailSender AddIn versendet E-Mails. Der Inhalt der E-Mail wird mit dem Event an das MailSender AddIn übermittelt. Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt werden, können aber auch im AddIn selbst konfiguriert werden.<br /><br />
+Das MailSender Add-In versendet E-Mails. Der Inhalt der E-Mail wird mit dem Event an das MailSender Add-In übermittelt. Weitere Angaben wie Empfänger, Sender und Betreff können auch übermittelt werden, können aber auch im Add-In selbst konfiguriert werden.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| AddIn Type | Logic |
+| Add-In Type | Logic |
 | Schnittstellen | Out: E-Mail |
 | Transaktionen | 1 wenn erfolgreich |
 | Ereignisse | &lt;Instanz&gt;.Done |

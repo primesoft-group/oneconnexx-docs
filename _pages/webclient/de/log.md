@@ -52,9 +52,9 @@ Durch das Aktivieren der erweiterten Suche können Reguläre Ausdrücke verwende
 
 Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschränkt.  
 
-### 4. Addin/Instanz
+### 4. Add-In/Instanz
 
-Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
+Mit dem Filter Add-In wird die Liste auf ein oder mehrere spezifische Add-Ins eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
 
 ### 5. Steuerschaltflächen  
   * Filter Ausblenden  

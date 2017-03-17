@@ -29,17 +29,23 @@ Unter Windows Server 2008:
 * Anwendungsfeature ASP.NET aktivieren
 * WebServer IIS -> Add Roles -> ASP.NET
 
-### Installationspackete
+### Installationspakete
 
-Installationspackete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Packete werden benötigt:
+Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
 
-* web.7z
+* ocx-web.7z
 
-Das benötigte Installationspacket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Das benötigte Installationspaket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
 
-Den Inhalt des Installationspackets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
+Den Inhalt des Installationspakets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
+
+Die Datei *Web.config.sevitec* in *Web.config* umbenennen.
 
 Auf dem «Web» Unterverzeichnis -> Properties -> Security -> Gruppe IIS_IUSRS hinzufügen mit Read & execute Rechten.
+
+```
+icacls C:\OneConnexx\Web /grant IIS_IUSRS:(OI)(CI)RX
+```
 
 {% include alert.html type="warning" text="Die Web-Administration muss nur in einer Instanz installiert werden. Sie kann mehrere OneConnexx Installationen administrieren." %}
 
@@ -53,18 +59,14 @@ Unter «Sites» -> Rechte Maustaste -> «Add Website…»
 
 Neu erstellte Site anklicken -> Authentication -> Windows Authentication = Enabled
 
-Unter ApplicationPools den neu erstellten ApplicationPool «OneConnexxAdministration» auswählen, «Advances Settings…» öffnen:
-
-* Load User Profile = True
-* NET Framework Version = v4.0
-
+Unter ApplicationPools sicherstellen dass der neu erstellte ApplicationPool «OneConnexxAdministration» als ".NET CLR Version" die Version "v4.0" ausgewählt hat.
 
 #### IIS Berechtigung erteilen um Dienst zu Stoppen/Starten
 
 Damit der OneConnexx Windows-Dienst von der Web-Applikation gestoppt/gestartet werden kann, muss dem Benutzer unter dem der
 IIS läuft die entsprechende Berechtigung erteilt werden.
 
-1. subinacl herunterladen (http://www.microsoft.com/en-us/download/details.aspx?id=23510)
+1. subinacl herunterladen ([http://www.microsoft.com/en-us/download/details.aspx?id=23510](http://www.microsoft.com/en-us/download/details.aspx?id=23510))
 1. subinacl installieren
 1. Eingabeaufforderung als Administrator öffnen
 1. Ins Verzeichnis wechseln wo subinacl installiert wurde (z.B. C:\Program Files (x86)\Windows Resource Kits\Tools\)
@@ -75,15 +77,26 @@ IIS läuft die entsprechende Berechtigung erteilt werden.
 #### Dateisystemberechtigungen für IIS
 
 Damit die Web-Administration die Logdateien des OneConnexx-Services lesen kann, muss der IIS_IUSRS Benutzergruppe Lesezugriff
-auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\Logs*).
+auf das Verzeichnis mit den Logdateien gewährt werden (*&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Logs*). Bei mehreren installierten OneConnexx Instanzen muss die Berechtigung für jedes Log-Verzeichnis einzeln gesetzt werden. 
+
+```
+icacls C:\OneConnexx\OneConnexxService\Logs /grant IIS_IUSRS:(OI)(CI)R
+```
+
+Falls noch nicht bei der Installation des OneConnexx Service geschehen, müssen Schreibrechte für das Verzeichnis *%ProgramData%\Sevitec\OneConnexx* erteilt werden:
+
+```
+mkdir "%ProgramData%\Sevitec\OneConnexx"
+icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
+```
 
 ### Logfiles und gespeicherte Verbindungen
 
-Die Web-Administration schreibt Logfiles ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin*
+Die Web-Administration schreibt Logfiles ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin*
 
-Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
+Konfigurierte Verbindungen werden in einer Datei «connection.config» im Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
 
-{% include alert.html type="warning" text="Das Verzeichnis %LocalAppData% ist abhängig vom aktuellen Benutzer und zeigt bei einer Web-Applikation normalerweise auf *C:\Users\&lt;ApplicationPoolName&gt;\AppData\Local*." %}
+{% include alert.html type="warning" text="Das Verzeichnis %ProgramData% ist normalerweise ein unsichtbares Verzeichnis und befindet sich unter C:\ProgramData." %}
 
 ### Konfiguration in Web.config
 
@@ -91,7 +104,7 @@ In der Datei Web.config (unter *&lt;Laufwerk&gt;:\OneConnex\Web*) können folgen
 
 __Logging__
 
-Standardmässig werden Logdateien ins Verzeichnis *%LocalAppData%\Sevitec\OneConnexx\WebAdmin* geschrieben.
+Standardmässig werden Logdateien ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* geschrieben.
 Pro Tag wird eine neue Logdatei erstellt und die Dateien der letzten 7 Tage werden archiviert.
 Diese Einstellungen können im Abschnitt &lt;nlog&gt; geändert werden.
 Alle möglichen Einstellungen sind unter https://github.com/nlog/nlog/wiki beschrieben.
@@ -119,7 +132,7 @@ Der Zugriff auf die Web-Administration wird über «Windows Authentication» ges
 Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
 
 * *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
-* *Konfigurator*: Kann zusätzlich AddIns erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
+* *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
 * *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
 
 Diese Rollen können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden.

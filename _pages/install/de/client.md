@@ -46,7 +46,7 @@ Der OneOffixx Client kommuniziert __ausschliesslich über HTTP/HTTPS__ mit dem O
 
 ## <i class="fa fa-windows" aria-hidden="true"></i> MSI Parameter {% include anchor.html name="msi" %}
 
-Das OneOffixx MSI-Paket enthält den OneOffixx Client und die diversen Microsoft Office Addins. 
+Das OneOffixx MSI-Paket enthält den OneOffixx Client und die diversen Microsoft Office Add-Ins. 
 
 __OneOffixx-Spezifische Parameter:__
 
@@ -125,16 +125,16 @@ Die Einstellungen können ebenfalls wie der Cache in einen eigenen Ordner gespei
 
 ## <i class="fa fa-life-ring" aria-hidden="true"></i> Troubleshooting {% include anchor.html name="troubleshooting" %}
 
-__OneOffixx Addins in Microsoft Office starten nicht__
+__OneOffixx Add-Ins in Microsoft Office starten nicht__
 
-Falls sich die OneOffixx Addins nicht starten lassen, d.h. es ist kein OneOffixx Icon im Office Ribbon zu sehen kann es verschiedene Ursachen haben:
+Falls sich die OneOffixx Add-Ins nicht starten lassen, d.h. es ist kein OneOffixx Icon im Office Ribbon zu sehen kann es verschiedene Ursachen haben:
 
-* Das OneOffixx Addin ist nicht installiert: 
-    * Sollte das OneOffixx Addin unter "Datei - Optionen - Addins" unter den COM Addins nicht auftauchen, ist es evtl. nicht installiert. Prüfen Sie ob das entsprechende Addin bei der Installation ausgewählt wurde.
+* Das OneOffixx Add-In ist nicht installiert: 
+    * Sollte das OneOffixx Add-In unter "Datei - Optionen - AddIns" unter den COM Add-Ins nicht auftauchen, ist es evtl. nicht installiert. Prüfen Sie ob das entsprechende Add-In bei der Installation ausgewählt wurde.
 * Office ist in der 64bit Variante installiert, aber es wurde der 32bit OneOffixx Installer benutzt.
     * Sollte eine 64bit Office Installation benutzt sein, muss auch der 64bit Installer von OneOffixx genutzt werden.
 * Visual C++ Redistributable 2015 Package fehlt oder ist nicht richtig installiert 
-    * Ab OneOffixx Version 2.3.40140 ist das VC++ Redistributable 2015 Package im OneOffixx enthalten, allerdings kann es passieren dass eine "korrupte" System Installation des Package die Ausführung unseres Addins unterbindet. In dem Fall sollte nochmals die Installation des [VC++ Redistributable 2015 Package](https://www.microsoft.com/de-ch/download/details.aspx?id=48145) vorgenommen werden.
+    * Ab OneOffixx Version 2.3.40140 ist das VC++ Redistributable 2015 Package im OneOffixx enthalten, allerdings kann es passieren dass eine "korrupte" System Installation des Package die Ausführung unseres Add-Ins unterbindet. In dem Fall sollte nochmals die Installation des [VC++ Redistributable 2015 Package](https://www.microsoft.com/de-ch/download/details.aspx?id=48145) vorgenommen werden.
 		
 	
 {% include alert.html type="warning" text="Bei Fragen oder Problemen helfen wir Ihnen natürlich gern weiter - melden Sie sich einfach bei unserem Support." %}
