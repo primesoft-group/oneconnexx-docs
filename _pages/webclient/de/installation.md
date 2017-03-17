@@ -33,9 +33,6 @@ Ein klick auf Name, Server oder Port lädt die Installation
 	
  Steuerschaltlächen
 
- 
- 
-
 #### 1. Installation Bearbeiten    
 
 Mit dem Klick auf das Bearbeiten Icon öffnet sich folgender Dialog:
@@ -51,6 +48,6 @@ Mit dem Klick auf das Bearbeiten Icon öffnet sich folgender Dialog:
  
 #### 2. Installation Löschen 
  
- Mit dem Klick auf das Löschen Icon kann eine Installetion gelöscht werden
+ Mit dem Klick auf das Löschen Icon kann eine Installation gelöscht werden
  
 
