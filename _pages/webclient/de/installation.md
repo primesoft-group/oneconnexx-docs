@@ -13,10 +13,7 @@ In der Übersicht über die Installationen werden alle Installationen angezeigt.
 
 * Name:  
 Der Name der Installation, kann nach belieben gewählt werden  
-	
-* Server:  
-Der Name des IIS Webservers auf welchem der Service installiert ist.  
-	
+		
 * Port:  
 Der Port über welchen der Service Ansprechbar ist.  
 	
@@ -29,7 +26,7 @@ Zeigt an, ob die hinterlegte Datenbank erreichbar ist.
 * Windows Service:  
 Zeigt an, ob der Service bereits gestartet ist.
 	
-Ein klick auf Name, Server oder Port lädt die Installation	
+Ein klick auf Name oder Port lädt die Installation	
 	
  Steuerschaltlächen
 
