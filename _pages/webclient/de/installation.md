@@ -28,7 +28,6 @@ Zeigt an, ob der Service bereits gestartet ist.
 	
 Ein klick auf Name oder Port lädt die Installation	
 	
- Steuerschaltlächen
 
 #### 1. Installation Bearbeiten    
 
