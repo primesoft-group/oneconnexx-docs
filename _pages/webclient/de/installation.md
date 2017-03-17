@@ -12,7 +12,7 @@ In der Übersicht über die Installationen werden alle Installationen angezeigt.
 
 
 * Name:  
-Der Name der Installtion, kann nach belieben gewählt werden  
+Der Name der Installation, kann nach belieben gewählt werden  
 	
 * Server:  
 Der Name des IIS Webservers auf welchem der Service installiert ist.  
@@ -33,11 +33,6 @@ Ein klick auf Name, Server oder Port lädt die Installation
 	
  Steuerschaltlächen
 
-#### 1. Installation Hinzufügen  
-
-Ein Klick auf das Plus öffenet den folgenden Dialog:
-
- ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion hinzufügen") 
  
  Beim Hinzufügen einer Insatallation müssen nebst Namen, Server und Port auch noch zwei weitere Parameter angegeben werden:
  
@@ -47,8 +42,16 @@ Ein Klick auf das Plus öffenet den folgenden Dialog:
  * Verbindungszeichenfolge  
  Die Verbindungszeichenfolge (Connectionstring) für die SQL-Datenbank (falls vorhanden). Mit dem Button unter dem Eingabefeld kann die Verbindung direkt getestet werden.
 
-#### 2. Installation Bearbeiten/Löschen    
+#### 1. Installation Bearbeiten    
 
- Mit diesen beiden Schaltflächen kann eine Installtion bearbeitet/gelöscht werden.
+Mit dem Klick auf das Bearbeiten Icon öffnet sich folgender Dialog:
+
+ ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
+ 
+ Es können nur die Parameter Name und Verbindungszeichenfolge angepasst werden, die anderen werden bei der Installation festgesetzt und können nur eingesehn, jedoch nicht geändert werden.
+ 
+#### 1. Installation Löschen 
+ 
+ mit dem Klick auf das Löschen Icon kann eine Installetion gelöscht werden
  
 
