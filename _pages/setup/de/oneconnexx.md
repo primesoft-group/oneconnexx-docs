@@ -35,9 +35,9 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
    |-Pipeline
 ```
 
-{% include alert.html type="warning" text="Bei der Erstinstallation folgende Dateien umbenennen:<br/> <em>OneConnexx.exe.config.sevitec</em> in <em>OneConnexx.exe.config</em><br/>
+{% include alert.html type="warning" text="Bei der Erstinstallation folgende Dateien umbenennen:<br/><p> <em>OneConnexx.exe.config.sevitec</em> in <em>OneConnexx.exe.config</em><br/>
 <em>Config\oneconnexx.config.sevitec</em> in <em>Config\oneconnexx.config</em><br/>
-<em>Config\nlog.config.sevitec</em> in <em>Config\nlog.config</em>" %}
+<em>Config\nlog.config.sevitec</em> in <em>Config\nlog.config</em></p>" %}
 
 ### Service installieren
 
