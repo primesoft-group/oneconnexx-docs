@@ -34,13 +34,7 @@ Ein klick auf Name, Server oder Port lädt die Installation
  Steuerschaltlächen
 
  
- Beim Hinzufügen einer Insatallation müssen nebst Namen, Server und Port auch noch zwei weitere Parameter angegeben werden:
  
- * Service  
- der Name des Service über welchen er in den Diensten gefunden werden kann.
- 
- * Verbindungszeichenfolge  
- Die Verbindungszeichenfolge (Connectionstring) für die SQL-Datenbank (falls vorhanden). Mit dem Button unter dem Eingabefeld kann die Verbindung direkt getestet werden.
 
 #### 1. Installation Bearbeiten    
 
@@ -48,10 +42,15 @@ Mit dem Klick auf das Bearbeiten Icon öffnet sich folgender Dialog:
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
  
- Es können nur die Parameter Name und Verbindungszeichenfolge angepasst werden, die anderen werden bei der Installation festgesetzt und können nur eingesehn, jedoch nicht geändert werden.
+ Es können nur die folgenden Parameter angepasst werden:
+
+ * Name  
  
-#### 1. Installation Löschen 
+ * Verbindungszeichenfolge  
+ Die Verbindungszeichenfolge (Connectionstring) für die SQL-Datenbank (falls vorhanden). Mit dem Button unter dem Eingabefeld kann die Verbindung direkt getestet werden.
  
- mit dem Klick auf das Löschen Icon kann eine Installetion gelöscht werden
+#### 2. Installation Löschen 
+ 
+ Mit dem Klick auf das Löschen Icon kann eine Installetion gelöscht werden
  
 
