@@ -92,9 +92,9 @@ icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
 
 ### Logfiles und gespeicherte Verbindungen
 
-Die Web-Administration schreibt Logfiles ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin*
+Die Web-Administration schreibt Logfiles ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin*.
 
-Die Web-Administration liest eine Liste aller installierten OneConnexx-Instanzen aus dem Verzeichnis *%ProgramData%\Sevitec\OneConnexx\Installations*
+Die Web-Administration liest eine Liste aller installierter OneConnexx-Instanzen aus dem Verzeichnis *%ProgramData%\Sevitec\OneConnexx\Installations*.
 
 Wird für eine OneConnexx-Instanz der Name oder die Verbindungszeichenfolge der Datenbank konfiguriert, werden diese Informationen in einer Datei «connection.config» im Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
 
