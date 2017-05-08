@@ -15,7 +15,7 @@ Auf dieser Seite werden alle OneConnexx Installationen auf dem lokalen System an
 * __Port:__ Der Port über welchen der Service ansprechbar ist, dieser wird automatisch ermittelt und kann nur in der OneConnexx Konfigurationsdatei der entsprechenden Installation geändert werden.
 * __Status:__ Zeigt an, ob die Installation momentan gestartet und verbunden ist.
 * __SQL-Datenbank:__ Zeigt an, ob eine Datenbank konfiguriert wurde und ob diese erreichbar ist.
-* __Windows Service:__ Zeigt an, ob der Windows-Service gestartet ist, und ermöglicht es den Service manuell zu starten oder stoppen.
+* __Windows Service:__ Zeigt an, ob der Windows-Service gestartet ist, und ermöglicht es den Service manuell zu starten oder zu stoppen.
 
 Ein klick auf Name oder Port lädt die Installation	
 	
