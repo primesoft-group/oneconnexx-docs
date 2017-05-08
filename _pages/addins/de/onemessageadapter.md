@@ -13,6 +13,6 @@ Das Add-In OneMessageAdapter erstellt aus einem Ereignis eine OneMessage, die da
 | Add-In Type | Logic |
 | Schnittstellen | In: Ereignis<br /> Out: Ereignis mit OneMessage |
 | Transaktionen | |
-| Ereignisse | <Instanz> |
+| Ereignisse | &lt;Instanz&gt; |
 
 Die OneMessage enthält den Namen des ursprünglichen Ereignisses im Parameter __originalEvent__ und unter __/parameters__ alle Parameter des rsprünglichen Ereignisses als Key-Value Paare.
