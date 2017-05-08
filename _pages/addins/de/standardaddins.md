@@ -17,6 +17,7 @@ Sowohl die Liste wie auch der Funktionsumfang der einzelnen Add-Ins werden stän
 | [FileSystemWatcher]({{ site.baseurl }}/addins/de/filesystemwatcher/) | Dient zur Überwachung (Erstellen, Ändern, Umbenennen und/oder Löschen) von Dateiordern und Dateien |
 | [MailSender]({{ site.baseurl }}/addins/de/mailsender/) | Versendet ein E-Mail |
 | [MemoryConsumer]({{ site.baseurl }}/addins/de/memoryconsumer/) | Systemtest, Stresstest |
+| [OneMessageAdapter]({{ site.baseurl }}/addins/de/onemessageadapter/) | Erstellt aus einem Ereignis eine OneMessage, die dann an das _OneOffixxDocumentCreator_ oder _Bizagi_ Add-In weitergeleitet werden kann |
 | [OneOffixxDocumentCreator]({{ site.baseurl }}/addins/de/oneoffixxdocumentcreator/) | Erstellt über die OneOffixx Schnittstelle «OneOffixxDocumentCreationServer» (OODCS) Dokumente im CI/CD des Kunden |
 | [Timer]({{ site.baseurl }}/addins/de/timer/) | Löst Events zu fast jeder beliebigen Zeit und Datum aus |
 | [Xml2Csv]({{ site.baseurl }}/addins/de/xml2csv/) | Schreibt bestimmte XML Nodes in eine CSV Datei |
