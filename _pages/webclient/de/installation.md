@@ -17,12 +17,12 @@ Auf dieser Seite werden alle OneConnexx Installationen auf dem lokalen System an
 * __SQL-Datenbank:__ Zeigt an, ob eine Datenbank konfiguriert wurde und ob diese erreichbar ist.
 * __Windows Service:__ Zeigt an, ob der Windows-Service gestartet ist, und ermöglicht es den Service manuell zu starten oder zu stoppen.
 
-Ein klick auf Name oder Port lädt die Installation	
+Ein Klick auf Name oder Port lädt die Installation.
 	
 
 #### 1. Installation bearbeiten
 
-Mit dem Klick auf das "Bearbeiten" Symbol öffnet sich folgender Dialog:
+Mit einem Klick auf das "Bearbeiten" Symbol öffnet sich folgender Dialog:
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
  
@@ -34,4 +34,4 @@ Es können nur die folgenden Parameter angepasst werden:
  
 #### 2. Installation löschen
  
-Mit dem Klick auf das "Löschen" Symbol kann eine Installation aus der Liste entfernt werden. Das entfernen einer Installation ist nur möglich wenn der entsprechende OneConnexx nicht gestartet ist.
+Mit einem Klick auf das "Löschen" Symbol kann eine Installation aus der Liste entfernt werden. Das entfernen einer Installation ist nur möglich wenn der entsprechende OneConnexx nicht gestartet ist.
