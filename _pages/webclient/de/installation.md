@@ -31,4 +31,4 @@ Mit der Schaltfläche "Verbindung prüfen" kann die Verbindung zur SQL-Datenbank
  
 #### 2. Installation löschen
  
-Mit einem Klick auf das "Löschen" Symbol kann eine Installation aus der Liste entfernt werden. Das entfernen einer Installation ist nur möglich wenn der entsprechende OneConnexx nicht gestartet ist.
+Mit einem Klick auf das "Löschen" Symbol kann eine Installation aus der Liste entfernt werden. Das Entfernen einer Installation ist nur möglich, wenn der entsprechende OneConnexx nicht gestartet ist.
