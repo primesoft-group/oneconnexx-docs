@@ -26,11 +26,7 @@ Mit einem Klick auf das "Bearbeiten" Symbol öffnet sich folgender Dialog:
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
  
-Es können nur die folgenden Parameter angepasst werden:
-
- * Name
- * Verbindungszeichenfolge
- 
+Es können nur die Parameter __Name__ und __Verbindungszeichenfolge__ angepasst werden.
 Mit der Schaltfläche "Verbindung prüfen" kann die Verbindung zur SQL-Datenbank direkt getestet werden.
  
 #### 2. Installation löschen
