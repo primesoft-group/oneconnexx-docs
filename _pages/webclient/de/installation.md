@@ -30,7 +30,8 @@ Es können nur die folgenden Parameter angepasst werden:
 
  * Name
  * Verbindungszeichenfolge
- Die Verbindungszeichenfolge (Connection-String) für die SQL-Datenbank (falls vorhanden). Mit der Schaltfläche "Verbindung prüfen" kann die Verbindung direkt getestet werden.
+ 
+Mit der Schaltfläche "Verbindung prüfen" kann die Verbindung zur SQL-Datenbank direkt getestet werden.
  
 #### 2. Installation löschen
  
