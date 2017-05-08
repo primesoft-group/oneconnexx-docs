@@ -14,3 +14,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ 'Letzte 5 min' Schaltfläche auf der Log-Analyse Seite hat Startzeit nicht aktuelisiert
 * __Fehler__ Logdateien werden neu standardmässing in UTF-8 geschrieben
 
+
+#### 1.1.0
+
+* __Neu__ OneConnexx Installationen werden unter %ProgramData%\Sevitec\OneConnexx\Installations gespeichert und können in der Web-Administration nicht mehr manuell hinzugefügt werden
