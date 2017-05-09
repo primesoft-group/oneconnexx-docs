@@ -4,6 +4,13 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### 1.1.3
+
+* __Neu__ Zustand der Checkbox und Schnittstellen auf der Seite Überwachung/Übersicht wird in einem Cookie gespeichert
+* __Fehler__ Falsches Englisches Datumsformat auf der Seite Überwachung/Übersicht korrigiert
+* __Fehler__ Ein-/Ausklappen auf der Seite Überwachung/Übersicht korrigiert
+
+
 #### 1.1.2
 
 * __Neu__ Standard Add-In "OneMessageAdapter"
