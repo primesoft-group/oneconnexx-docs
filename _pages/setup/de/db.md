@@ -57,11 +57,11 @@ In einer Azure Datenbank kann einem Login/User keine Default-Datenbank zugewiese
 Azure
 
 ```
-server=xxx.database.windows.net;database=OneConnexx;User ID=ocxservice;Password=...;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=True;App=EntityFramework
+server=xxx.database.windows.net;database=OneConnexx;User ID=ocxservice;Password=...;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=True
 ```
 
 SQL Server (mit Domänenbenutzer)
 
 ```
-data source=xxx;initial catalog=OneConnexx;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework
+data source=xxx;initial catalog=OneConnexx;integrated security=True;MultipleActiveResultSets=True
 ```
