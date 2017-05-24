@@ -17,7 +17,7 @@ Das FileErase Add-In löscht oder verschiebt Dateien in einem bestimmten Verzeic
 | __Parameter__ | |
 | timeoutDays | Anzahl Tage nach denen Dateien gelöscht/verschoben werden |
 | directory | Das zu überwachende Verzeichnis |
-| pattern | Das Suchmuster für die zu löschenden/verschiebenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "*.txt;*.xml" => alle Text und XML Dateien. |
+| pattern | Das Suchmuster für die zu löschenden/verschiebenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
 | useCreateInsteadModifyDate | true = Das Erstellungsdatum anstelle des Änderungsdatums wird geprüft (Optional, Default = false) |
 | destinationDirectory | Zielverzeichnis, in welches die Dateien verschoben werden, anstatt sie zu löschen (Optional) |
 | userName | Benutzer mit dem auf die Verzeichnisse "directory" und "destinationDirectory" zugegriffen wird (Optional) |
