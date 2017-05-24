@@ -4,6 +4,11 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### vNext
+
+* __Neu__ Liste der Installationen ist alphabetisch nach Name sortiert
+* __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummerenthielt, wurde der falsche Connection-String verwendet
+
 #### 1.1.3
 
 * __Neu__ Zustand der Checkbox und Schnittstellen auf der Seite Überwachung/Übersicht wird in einem Cookie gespeichert
