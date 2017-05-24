@@ -33,6 +33,9 @@ Pro Eintrag löst das Dispatcher Add-In ein Ereignis aus, welches von weiteren A
 
 Voraussetzung: Eine Datenbank-Tabelle "Dispatcher" mit mindestens den Spalten "DispatcherId" vom Typ "int", "DueTime" vom Typ "nvarchar" und "LastProcessed" vom Typ "datetime".
 
-Parameter: "dueTimeColumn" = "DueTime", "lastProcessedColumn" = "LastProcessed", "updateQuery" = "UPDATE Dispatcher SET LastProcessed = GETDATE() WHERE DispatcherId = {DispatcherId}"
+Parameter:
+* dueTimeColumn = "DueTime"
+* lastProcessedColumn = "LastProcessed"
+* updateQuery = "UPDATE Dispatcher SET LastProcessed = GETDATE() WHERE DispatcherId = {DispatcherId}"
 
 Funktionsweise: Für jede Zeile im Resultat der SQL Abfrage wird nur dann ein Ereignis ausgelöst, wenn die aktuelle Tageszeit grösser als die Uhrzeit in "DueTime" ist, und die letzte Ausführung (in "LastProcessed") nicht innerhalb des aktuellen Tages liegt. Wurde ein Ereignis ausgelöst, wird die aktuelle Uhrzeit in die Spalte "LastProcessed" geschrieben.
