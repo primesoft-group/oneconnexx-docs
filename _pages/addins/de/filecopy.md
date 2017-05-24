@@ -18,12 +18,12 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | sourceProtocol | Das zu verwendende Protokoll zum Lesen der Quelldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3 und WebDAV |
 | sourceSystem | Abhängig von "sourceProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* |
 | sourcePath | Abhängig von "sourceProtocol"<br />FILE: UNC Pfad zu den Quelldateien<br />WebDAV: URL der Quelldateien<br />FTP, FTPS, SFTP: Relativer Pfad<br /> S3: Bucketname |
-| sourceArchivePath | Verzeichnis (im Format wie "sourcePath"), wohin erfolgreich kopierte Dateien zusätzlich verschoben werden. (Optional) |
+| sourceArchivePath | Verzeichnis (Format siehe "sourcePath"), wohin erfolgreich kopierte Dateien zusätzlich verschoben werden (Optional) |
 | destinationFileName | Name der kopierten Dateien auf dem Zielsystem, falls diese anders heissen sollen als die Originaldateien. Mögliche Platzhalter: <br /> {0}: Name der Ursprungsdatei ohne Endung <br /> {1}: Endung der Ursprungsdatei <br /> {2}: Aktuelle Zeit. Default Format = yyyyMMddHHss |
 | destinationProtocol | Das zu verwendende Protokoll zum Schreiben der Zieldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV und SHAREPOINT |
 | destinationSystem | Abhängig von "destinationProtocol"<br />FILE, SHAREPOINT: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Zielsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* |
 | destinationPath | Abhängig von "destinationProtocol"<br />FILE: UNC Pfad des Zielverzeichnis<br/>S3: Bucketname<br/>SHAREPOINT: URL der Dokumentenbibliothek |
-| filePattern | Suchmuster zur Einschränkung der zu kopierenden Dateien. <br />Bsp.: \* = alles, \*.txt = alle Dateien mit Endung .txt <br />? = unsicher wie die Datei heisst. Bsp. "1?.txt" => alle Text Dateien welche mindestens eine 1 beinhalten. <br />Mehrere Patterns werden mit Semikolon getrennt. Bsp. "*.txt; *.xml" => alle Text und XML Dateien. |
+| filePattern | Suchmuster der zu kopierenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
 | moveFiles | true = Dateien werden verschoben, also auf dem Quellsystem gelöscht<br />false = Dateien werden kopiert und verbleiben auf dem Quellsystem |
 | sourceUserName | Benutzer für den Zugriff auf das Quellsystem (Optional) |
 | sourcePassword | Zugehöriges Passwort (Optional) |
