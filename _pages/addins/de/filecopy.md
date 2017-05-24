@@ -42,5 +42,8 @@ Das FileCopy Add-In ist Dank den Möglichkeiten des Archivierens und des Verschi
 
 Sollen alle kopierten Dateien auf dem Zielsystem mit einem Zeitstempel versehen werden, lässt sich das über den Parameter "destinationFileName" mit dem Wert "{0}\_{2:yyyyMMdd\_HHmmss}.{1}" umsetzen.
 
-*Beispiel:* Datei "test.txt" wird auf dem Zielsystem zu "test_20170524_094825.txt"
+*Beispiel:* Eine Datei "test.txt" wird auf dem Zielsystem zu "test_20170524_094825.txt"
 
+##### NULL Protokoll
+
+Das NULL Übertragungsprotokoll kann als "destinationProtocol" verwendet werden, wenn nur die Existenz einer Datei auf dem Quellsystem überprüft werden soll. Dieses Protokoll kopiert keine Dateien, aber es wird trotzdem für jede gefundene Datei auf dem Quellsystem eine Transaktion geschrieben, welche dann durch eine Regel überwacht werden kann.
