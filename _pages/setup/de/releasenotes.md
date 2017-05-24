@@ -7,7 +7,7 @@ permalink: "setup/de/releasenotes/"
 #### vNext
 
 * __Neu__ Liste der Installationen ist alphabetisch nach Name sortiert
-* __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummerenthielt, wurde der falsche Connection-String verwendet
+* __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
 
 #### 1.1.3
 
