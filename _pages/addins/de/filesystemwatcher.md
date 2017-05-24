@@ -4,35 +4,40 @@ title: FileSystemWatcher
 permalink: "addins/de/filesystemwatcher/"
 ---
 
-Das FileSystemWatcher Add-In dient zur Überwachung von Dateiordern und Dateien. Die Überwachung kann mit Detaipattern auf bestimmte Dateien eingeschränkt werden. Überwacht wird das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien.<br /><br />
+Das FileSystemWatcher Add-In dient zur Überwachung von Verzeichnissen und Dateien. Die Überwachung kann mit Hilfe eines Suchmusters auf bestimmte Dateien beschränkt werden. Überwacht werden kann das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-In Type | Event / Logic |
 | Schnittstellen | In: Dateiverzeichnis |
-| Transaktionen | 1 Transaktion pro Event |
-| Ereignisse | Pro erkannte Änderung und Datei ein Event: &lt;Instanz&gt; (Parameter = file) |
+| Transaktionen | 1 Transaktion pro Ereignis |
+| Ereignisse | Pro erkannte Änderung und Datei ein Event: &lt;Instanz&gt; (Parameter = file, eventType) |
 | | |
 | __Parameter__ | |
-| directory | Zu überwachendes Verzeichnis (Pfad immer absolut) |
-| usePolling | Art der Überwachung<br />true = Ordner wird periodisch überprüft, anhand pollingIntervall<br />false = Ordner wird dauernd überwacht |
-| pollingInterval | PollingIntervall in Sekunden, falls usePolling = true |
-| initialPull | true = Erzeugt beim Start des OneConnexx pro im zu überwachenden Verzeichnis vorhanderer Datei ein CreateEvent |
-| includeSubdirectories | true = Alle Unterordner werden ebenfalls überwacht |
-| filter | Das Dateipattern dient zur Einschränkungder der zu überwachenden Dateinamen. Bsp. "*.txt" -> Alle Dateien mit der Endung «.txt» werden überwacht |
-| bufferSize | Interner Buffer in Bytes, Default =  8192 |
-| ensureFileWrittenTimeOut | Das Schreiben einer Datei wird sofort erkannt. Um sicherzustellen, dass die Datei fertig geschrieben ist, bevor ein Event ausgelöst wird, kann ensureFileWrittenTimeOut gesetzt werden.<br />>0 = Wartezeit im ms bis Event ausgelöst wird<br />0 = Event sofort auslösen |
-| createEvent | true = Löst einen Event aus beim Erstellen einer Datei |
-| changeEvent | true = Löst einen Event aus beim Bearbeiten einer vorhandenen Datei |
-| deleteEvent | true = Löst einen Event aus beim Löschen einer Datei |
-| renameEvent | true = Löst einen Event aus beim Umbenennen einer Datei |
+| directory | Zu überwachendes Verzeichnis als absoluter Pfad |
+| usePolling | Art der Überwachung<br />true = Ordner wird periodisch überprüft (siehe "pollingIntervall")<br />false = Ordner wird dauernd überwacht |
+| pollingInterval | falls "usePolling" auf "true" gesetzt wurde, kann hier das Interval in Sekunden angegeben werden |
+| initialPull | true = Erzeugt beim Start des OneConnexx pro im zu überwachenden Verzeichnis vorhanderer Datei ein "create"-Ereignis |
+| includeSubdirectories | true = Unterverzeichnisse werden ebenfalls überwacht |
+| filter | Das Suchmuster zur Einschränkung der zu überwachenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. |
+| bufferSize | Interne Puffergrösse in Bytes (Default = 8192)<br/>Wenn eine sehr grosse Anzahl Dateien überwacht werden soll kann es nötig sein diesen Wert in Schritten von 4096 bis zum Maximalwert von 65536 zu erhöhen. |
+| ensureFileWrittenTimeOut | Zeit in Millisekunden die vor dem Auslösen des Ereignisses maximal gewartet wird, bis die Datei fertig geschrieben wurde. Ein Wert von 0 bedeutet dass immer gewartet wird bis die Datei für Leseoperationen geöffnet werden kann. |
+| createEvent | true = Löst ein Ereignis aus beim Erstellen einer Datei |
+| changeEvent | true = Löst ein Ereignis aus beim Ändern einer vorhandenen Datei |
+| deleteEvent | true = Löst ein Ereignis aus beim Löschen einer Datei |
+| renameEvent | true = Löst ein Ereignis aus beim Umbenennen einer Datei |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-
-<!-- 
 ### Anwendungsbeispiele 
 
-ToDo
--->
+In einem sogenannten "Dropfolder" werden Dateien von einem Fremdsystem abgelegt. Sobald eine neue Datei in dieses Verzeichnis kopiert wurde, soll es von OneConnexx in eine SharePoint Dokumentenbibliothek verschoben werden.
+
+Dazu wird eine Instanz des FileSystemWatcher Add-Ins erstellt, die den "Dropfolder" überwacht. Es wird nur das "created" Ereignis überwacht. Wird eine neue Datei erkannt, wird vom FileSystemWatcher Add-In ein Ereignis ausgelöst, und der Pfad und Dateiname der neuen Datei werden im Parameter "file" an nachfolgende Add-Ins mitgegeben.
+
+Ein FileCopy Add-In abonniert das Ereignis des FileSystemWatcher Add-Ins. Da dieses Ereignis einen Parameter "file" enthält, wird dieser als Quelldatei interpretiert und die Datei wird auf das konfigurierte Zielsystem (in diesem Fall SharePoint) kopiert.
+
+##### Wann "polling" gewählt werden sollte
+
+Wenn "usePolling" auf "false" steht, werden betriebssysteminterne Mechanismen zur Überwachung des Verzeichnisses verwendet. Es hat sich allerdings gezeigt, dass dies mit Netzlaufwerken nicht immer zuverlässig funktioniert wenn die Netzwerkverbindung instabil ist. Grundsätzlich wird empfohlen "usePolling" auf "false" zu belassen, und nur auf "true" umzustellen wenn Netzlaufwerke überwacht werden sollen und dies nicht stabil funktioniert.
 
