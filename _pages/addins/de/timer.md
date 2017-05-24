@@ -15,10 +15,10 @@ Das Timer Add-In ist das meistverwendete Add-In. Das Timer Add-In löst Ereignis
 | Ereignisse | &lt;Instanz&gt; |
 | | |
 | __Parameter__ | |
-| interval | Intervallzeit des Timers in Millisekunden<br />Werden keine weiteren Angaben gemacht, löst das Timer Add-In jeweils nach Ablauf des Intervalls ein Ereignis aus.<br />Werden jedoch weitere Angaben gemacht, wirken sich diese als zusätzliche Filter aus. Es sind auch Kombinationen möglich, wie z.B. «am 1. Tag pro Monat um 06:00» oder «Sonntags um 20:00». |
+| interval | Intervallzeit des Timers in Millisekunden<br />Werden keine weiteren Angaben gemacht, löst das Timer Add-In jeweils nach Ablauf des Intervalls ein Ereignis aus.<br />Werden jedoch weitere Angaben gemacht, wirken sich diese als zusätzliche Filter aus. Es sind auch Kombinationen möglich, wie z.B. «am 1. Tag jeden Monat um 06:00» oder «Sonntags um 20:00». |
 | timeOfDay | Filter für eine bestimmte Tageszeit<br />Angabe in Stunden und Minuten. Mehrere Tageszeiten werden mit Semikolon getrennt. Bsp.: «06:30;12:00» |
-| dateOfYear | Filter für ein bestimmtes Datum oder Tag des Monats.<br />Mehrere Daten können durch Semikolon getrennt werden. Bsp.: «31.12.» (nur an diesem Tag) oder «1.;14.» (jeden  Monat am 1. und 14. Tag) |
-| dayOfWeek | Filter für bestimmte Wochentage (1=Montag, …, 7=Sonntag)<br />Bsp.: «1;2;3;4;5» für alle Arbeitstage |
+| dateOfYear | Filter für ein bestimmtes Datum oder Tag des Monats<br />Mehrere Daten können durch Semikolon getrennt werden. Bsp.: «31.12.» (nur an diesem Tag) oder «1.;14.» (immer am 1. und 14. jedes Monats) |
+| dayOfWeek | Filter für bestimmte Wochentage (1=Montag, …, 7=Sonntag)<br />Bsp.: «1;2;3;4;5» (an allen Arbeitstagen) |
 
 
 ### Anwendungsbeispiele
