@@ -42,7 +42,7 @@ SELECT 'DataTable_export.csv';
 
 ##### Erstellen mehrerer CSV-Dateien
 
-Wenn die SQL Abfrage ein mehrfaches von 2 Resultatsets zurückgibt, werden mehrere CSV-Dateien erstellt. In diesem Fall kann der Dateinamen also nicht über den Parameter "fileNamePattern" festgelegt werden.  Beispiel einer SQL Abfrage:
+Wenn die SQL Abfrage ein mehrfaches von 2 Resultatsets zurückgibt, werden mehrere CSV-Dateien erstellt. In diesem Fall kann der Dateinamen also nicht über den Parameter "fileNamePattern" festgelegt werden.  Beispiel einer SQL Abfrage die zwei CSV-Dateien erstellt:
 ```
 SELECT * FROM DataTable;
 SELECT 'DataTable_export.csv'; 
