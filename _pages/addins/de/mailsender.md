@@ -1,4 +1,4 @@
-s---
+---
 layout: page
 title: MailSender
 permalink: "addins/de/mailsender/"
