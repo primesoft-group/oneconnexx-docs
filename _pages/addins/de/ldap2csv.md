@@ -17,8 +17,8 @@ Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und
 | __Parameter__ | |
 | userName | Benutzer mit den für das LDAP erforderlichen Berechtigungen. Der Benutzer muss im LDAP Format angegeben werden, z.B. cn=read-only-admin,dc=example,dc=com. Falls kein Benutzer angegeben wird und authenticationType = Secure ist, wird die Identität des OneConnexx Services verwendet. |
 | password | Zugehöriges Passwort (Optional) |
-| domain | Name oder IP-Adresse des LDAP Servers |
-| root | Die BaseDN definiert, wo im Verzeichnisbaum abwärts die Suche nach bestimmten Objekten gestartet werden soll. |
+| domain | Name oder IP-Adresse des LDAP Servers<br/>Bsp.: corp.sevitec.ch |
+| root | Die BaseDN definiert, wo im Verzeichnisbaum abwärts die Suche nach bestimmten Objekten gestartet werden soll<br\>Bsp.: CN=Configuration,DC=corp,DC=sevitec,DC=ch |
 | authenticationType | Secure = Für die Anmeldung an den LDAP Server wird der im Paramter "userName" angegebene Benutzer verwendet, bzw. die Identität des OneConnexx Service wenn kein Benutzer angegeben wurde.<br/>Anonymous = Die Anmeldung am LDAP Server erfolgt anonym. |
 | sizeLimit | Anzahl Einträge, welche maximal exportiert werden (Optional, Default = 1000) |
 | filter | Zur Einschränkung auf bestimmte Objekte, z.B. "(objectClass=person)" (Optional)<br/>Der Platzhalter {lastrun} wird durch einen Zeitstempel der letzten erfolgreichen Ausführung ersetzt. |
