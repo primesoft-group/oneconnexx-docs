@@ -19,7 +19,7 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | sourceSystem | Abhängig von "sourceProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* |
 | sourcePath | Abhängig von "sourceProtocol"<br />FILE: UNC Pfad zu den Quelldateien<br />WebDAV: URL der Quelldateien<br />FTP, FTPS, SFTP: Relativer Pfad<br /> S3: Bucketname |
 | sourceArchivePath | Verzeichnis (Format siehe "sourcePath"), wohin erfolgreich kopierte Dateien zusätzlich verschoben werden (Optional) |
-| destinationFileName | Name der kopierten Dateien auf dem Zielsystem, falls diese anders heissen sollen als die Originaldateien. Mögliche Platzhalter: <br /> {0}: Name der Ursprungsdatei ohne Endung <br /> {1}: Endung der Ursprungsdatei <br /> {2}: Aktuelle Zeit. Default Format = yyyyMMddHHss |
+| destinationFileName | Name der kopierten Dateien auf dem Zielsystem, falls diese anders heissen sollen als die Originaldateien. Mögliche Platzhalter: <br /> {0}: Name der Ursprungsdatei ohne Endung <br /> {1}: Endung der Ursprungsdatei <br /> {2}: Aktuelle Zeit. Default Format = yyyyMMddHHmmss |
 | destinationProtocol | Das zu verwendende Protokoll zum Schreiben der Zieldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV und SHAREPOINT |
 | destinationSystem | Abhängig von "destinationProtocol"<br />FILE, SHAREPOINT: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Zielsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* |
 | destinationPath | Abhängig von "destinationProtocol"<br />FILE: UNC Pfad des Zielverzeichnis<br/>S3: Bucketname<br/>SHAREPOINT: URL der Dokumentenbibliothek |
@@ -36,5 +36,11 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 ### Anwendungsbeispiele
 
 Das FileCopy Add-In wird beim automatischen Austauchs mit FTP-Servern aber auch bei automatischen Abgleichen innerhalb des Firmenetzes eingesetzt.
-Das FileCopy Add-In ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Einschränkung mit DateiPattern vielseitig einsetzbar.
+Das FileCopy Add-In ist Dank den Möglichkeiten des Archivierens und des Verschiebens, sowie der Unterstützung vieler Protokolle sehr vielseitig einsetzbar.
+
+##### Zeitstempel hinzufügen
+
+Sollen alle kopierten Dateien auf dem Zielsystem mit einem Zeitstempel versehen werden, lässt sich das über den Parameter "destinationFileName" mit dem Wert "{0}\_{2:yyyyMMdd\_HHmmss}.{1}" umsetzen.
+
+*Beispiel:* Datei "test.txt" wird auf dem Zielsystem zu "test_20170524_094825.txt"
 
