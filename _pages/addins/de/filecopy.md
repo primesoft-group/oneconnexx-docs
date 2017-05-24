@@ -47,3 +47,17 @@ Sollen alle kopierten Dateien auf dem Zielsystem mit einem Zeitstempel versehen 
 ##### NULL Protokoll
 
 Das NULL Übertragungsprotokoll kann als "destinationProtocol" verwendet werden, wenn nur die Existenz einer Datei auf dem Quellsystem überprüft werden soll. Dieses Protokoll kopiert keine Dateien, aber es wird trotzdem für jede gefundene Datei auf dem Quellsystem eine Transaktion geschrieben, welche dann durch eine Regel überwacht werden kann.
+
+##### Quelldatei über "file" Parameter
+
+Wird das FileCopy Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als Quelldatei interpretiert und auf das Zielsystem kopiert. In diesem Fall werden die konfigurierten Parameter "sourcePath" und "filePattern" ignoriert.
+
+Ereignisse mit "file" Parameter werden von folgenden Add-Ins ausgelöst:
+* DatabaseToCSV
+* FileDecompressor
+* FileCompressor
+* FileCopy
+* FileReconstructor
+* FileSystemWatcher
+* Ldap2CSV
+* Xml2Csv
