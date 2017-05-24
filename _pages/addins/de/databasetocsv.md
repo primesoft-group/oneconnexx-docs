@@ -32,9 +32,9 @@ Oftmals erhält die IT den Auftrag periodisch Datensätze aus einer Datenbank zu
 
 Dazu wird eine SQL-Abfrage definiert, welche die Daten zurückgibt. Ein Timer, welcher das Add-In DatabaseToCSV periodisch aufruft und ein MailSender, welcher den Fachbereich über die neu erstellten CSV-Dateien informiert, runden das Paket ab.
 
-##### Dateiname in SQL-Abfrage festlegen
+##### Dateiname in SQL Abfrage festlegen
 
-Wird von der SQL-Abfrage ein 2. Resultatset zurückgegeben, dann wird die 1. Spalte der 1. Zeile des 2. Resultatsets als Dateiname interpretiert. Beispiel:
+Wird von der SQL Abfrage ein 2. Resultatset zurückgegeben, dann wird die 1. Spalte der 1. Zeile des 2. Resultatsets als Dateiname interpretiert. Der Parameter "fileNamePattern" wird in diesem Fall ignoriert. Beispiel einer SQL Abfrage:
 ```
 SELECT * FROM DataTable;
 SELECT 'DataTable_export.csv'; 
@@ -42,4 +42,10 @@ SELECT 'DataTable_export.csv';
 
 ##### Erstellen mehrerer CSV-Dateien
 
-
+Wenn die SQL Abfrage ein mehrfaches von 2 Resultatsets zurückgibt, werden mehrere CSV-Dateien erstellt. In diesem Fall kann der Dateinamen also nicht über den Parameter "fileNamePattern" festgelegt werden.  Beispiel einer SQL Abfrage:
+```
+SELECT * FROM DataTable;
+SELECT 'DataTable_export.csv'; 
+SELECT * FROM StatisticData;
+SELECT 'Statistic_export.csv'; 
+```
