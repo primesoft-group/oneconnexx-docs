@@ -24,8 +24,18 @@ Das Xml2Csv Add-In schreibt bestimmte XML Nodes in eine CSV-Datei. Über die Par
 | destinationDirectory | Verzeichnis in dem die CSV-Datei erstellt wird (Optional, Default = sourceDirectory) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-<!-- 
 ### Anwendungsbeispiele 
 
-ToDo
--->
+##### Quelldatei über "file" Parameter
+
+Wird das Xml2Csv Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als XML-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
+
+Ereignisse mit  "file" Parameter werden von folgenden Add-Ins ausgelöst:
+* DatabaseToCSV
+* FileDecompressor
+* FileCompressor
+* FileCopy
+* FileReconstructor
+* FileSystemWatcher
+* Ldap2CSV
+* Xml2Csv
