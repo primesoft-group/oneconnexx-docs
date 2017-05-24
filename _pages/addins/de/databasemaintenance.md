@@ -4,7 +4,7 @@ title: DatabaseMaintenance
 permalink: "addins/de/databasemaintenance/"
 ---
 
-Das DatabaseMaintenance Add-In erneuert die Indexe einer Datenbank, um so die Performance zu verbessern. Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keinen SQL Server Agent beinhaltet.<br /><br />
+Das DatabaseMaintenance Add-In erneuert die Inidizes einer Datenbank, um so die Performance zu verbessern. Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keinen SQL Server Agent beinhaltet.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -15,11 +15,32 @@ Das DatabaseMaintenance Add-In erneuert die Indexe einer Datenbank, um so die Pe
 | Ereignisse |  |
 | | |
 | __Parameter__ | |
-| connectionString | Verbindungszeichenfolge der Datenbank, deren Indexe neu erstellt werden |
+| connectionString | Verbindungszeichenfolge der Datenbank, deren Inidizes neu erstellt werden |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 ### Anwendungsbeispiele 
 
-Das automatisches Erneuern der Inidizes ist beim SQL Server Express nicht möglich.<br />
-Zusammen mit einem Timer Add-In erstellt das DatabaseMaintenance Add-In die Inidizes eine SQL Server Express Datenbank automatisch täglich neu.
+Das automatische Erneuern der Inidizes ist beim SQL Server Express nicht möglich. Zusammen mit einem Timer Add-In erstellt das DatabaseMaintenance Add-In die Inidizes eine SQL Server Express Datenbank automatisch täglich neu.
 
+##### Verwendetes SQL
+
+Intern wird folgendes SQL Skript ausgeführt:
+```sql
+DECLARE @TableName VARCHAR(255)
+
+DECLARE TableCursor CURSOR FOR
+	SELECT table_name
+	FROM information_schema.tables
+	WHERE table_type = 'base table'
+	
+OPEN TableCursor
+FETCH NEXT FROM TableCursor INTO @TableName
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	DBCC DBREINDEX(@TableName, ' ', 100)
+	FETCH NEXT FROM TableCursor INTO @TableName
+END
+CLOSE TableCursor
+
+DEALLOCATE TableCursor
+```
