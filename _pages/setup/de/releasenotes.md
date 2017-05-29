@@ -8,6 +8,7 @@ permalink: "setup/de/releasenotes/"
 
 * __Neu__ Liste der Installationen ist alphabetisch nach Name sortiert
 * __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
+* __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 
 #### 1.1.3
 
