@@ -10,6 +10,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ FileEraser Add-In untersützt mehere Suchmuster
 * __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
+* __Fehler__ FileCopy Add-In: Bei einem Fehler wurde der falsche Endpunkt in die Transaktion geschrieben wenn dieser von einem Dispatcher Add-In kommt
 * __Fehler__ Direkt nach dem Umbenennen einer Instanz wurden Parameteränderungen nicht gespeichert
 
 
