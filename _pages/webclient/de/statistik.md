@@ -23,7 +23,7 @@ Die Funktionen: Erstellen, Editieren und Löschen stehen nur für Nutzer mit Adm
 #### 2. Statistik Anzeige
 Die geladenen Diagramme werden hier angezeigt. 
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statistikInputdial.PNG "Erstellen / Editieren Dialog")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statistikInputDial.PNG "Erstellen / Editieren Dialog")
 
 #### 3. Dialog Eingabe Felder
 
