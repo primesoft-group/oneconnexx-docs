@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Statistik
-permalink: "webclient/de/statistic/"
+permalink: "webclient/de/statistik/"
 ---
 
 Auf der Statistikseite werden konfigurierte Statistiken aus der Datenbank angezeigt. Es gibt vier verschiedene Diagrammtypen: Kreis-, vertikale Balken-, horizontale Balken- und Liniendiagramm. 
