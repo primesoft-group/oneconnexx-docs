@@ -8,7 +8,7 @@ Auf der Statistikseite werden konfigurierte Statistiken aus der Datenbank angeze
 
 {Bild der Seite}
 
-### 1. Statistik Übersicht
+#### 1. Statistik Übersicht
 Die Funktionen: Erstellen, Editieren und Löschen stehen nur für Nutzer mit Admin-/Konfiguratorrechten zur Verfügung.
 
 * Anzeige aller Statistiken
@@ -20,12 +20,12 @@ Die Funktionen: Erstellen, Editieren und Löschen stehen nur für Nutzer mit Adm
 * Löschen
 	Wenn man das Abfalleimer Icon drückt kommt ein Dilog mit der Info, dass diese Statistik gelöscht wird. Mit einem erneuten Klick auf Löschen wird die Aktion schlussendlich ausgeführt. Die Statistik wird aus der Datenbank gelöscht und auch gleich von der Seite entfernt.
 	
-### 2. Statistik Anzeige
+#### 2. Statistik Anzeige
 Die geladenen Diagramme werden hier angezeigt. 
 
 {Bild des Eingabedialoges}
 
-### 3. Dialog Eingabe Felder
+#### 3. Dialog Eingabe Felder
 
 * Name
 	Der Statistik kann ein Name gegeben werden um dem Betrachter informationen über den Inhalt zu geben.
