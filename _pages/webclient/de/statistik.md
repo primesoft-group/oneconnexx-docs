@@ -6,7 +6,7 @@ permalink: "webclient/de/statistik/"
 
 Auf der Statistikseite werden konfigurierte Statistiken aus der Datenbank angezeigt. Es gibt vier verschiedene Diagrammtypen: Kreis-, vertikale Balken-, horizontale Balken- und Liniendiagramm. 
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticPage.png "Statistik Seite")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticPage.PNG "Statistik Seite")
 
 #### 1. Statistik Übersicht
 Die Funktionen: Erstellen, Editieren und Löschen stehen nur für Nutzer mit Admin-/Konfiguratorrechten zur Verfügung.
@@ -23,7 +23,7 @@ Die Funktionen: Erstellen, Editieren und Löschen stehen nur für Nutzer mit Adm
 #### 2. Statistik Anzeige
 Die geladenen Diagramme werden hier angezeigt. 
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statistikInputdial.png "Erstellen / Editieren Dialog")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statistikInputdial.PNG "Erstellen / Editieren Dialog")
 
 #### 3. Dialog Eingabe Felder
 
