@@ -14,6 +14,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 * __Fehler__ FileCopy Add-In: Bei einem Fehler wurde der falsche Endpunkt in die Transaktion geschrieben wenn dieser von einem Dispatcher Add-In kommt
 * __Fehler__ Direkt nach dem Umbenennen einer Instanz wurden Parameteränderungen nicht gespeichert
+* __Fehler__ Verhalten beim Verschieben von Instanzen zu Schnittstellen verbessert
 
 
 #### 1.1.3
