@@ -11,7 +11,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Seite "Alarmierung" ist jetzt eine Unterseite von "Überwachung"
 * __Neu__ Neue Seite "Statistik"
 * __Neu__ Verbesserte Darstellung bei kleiner Bildschirmbreite (z.B. Mobilgeräte)
-* __Neu__ Möglichkeit Regeln nur an bestimmten Wochentagen oder Tage im Monat zu prüfen
+* __Neu__ Möglichkeit Regeln nur an bestimmten Wochentagen oder Tagen im Monat zu prüfen
 * __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 * __Fehler__ FileCopy Add-In: Bei einem Fehler wurde der falsche Endpunkt in die Transaktion geschrieben wenn dieser von einem Dispatcher Add-In kommt
