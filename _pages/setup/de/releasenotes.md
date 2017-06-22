@@ -21,6 +21,11 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ In der HTML Ansicht wurden Änderungen am E-Mail Text von Alarmierungen nicht gespeichert
 
 
+#### 1.1.4
+
+* __Fehler__ Bizagi/OneMessage Transformation korrigiert
+
+
 #### 1.1.3
 
 * __Neu__ Zustand der Checkbox und Schnittstellen auf der Seite Überwachung/Übersicht wird in einem Cookie gespeichert
