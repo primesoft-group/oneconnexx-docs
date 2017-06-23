@@ -140,3 +140,25 @@ Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folg
 Diese Rollen können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden.
 
 
+__Deaktivieren von Funktionen__
+
+Durch folgenden Eintrag kann die Seite "Konfigurationsdateien" im Hauptmenu deaktiviert werden:
+
+```
+<add key="Feature.ConfigFiles" value="false" />
+```
+
+Durch folgenden Eintrag kann die Seite "Statistik" im Hauptmenu deaktiviert werden:
+
+```
+<add key="Feature.Statistic" value="false" />
+```
+
+__Standardtexte für neue Alarmierungen__
+
+Der E-Mail Betreff und Text für neu erstellte Alarmierungen kann mit den folgenden Einträgen festgelegt werden:
+
+```
+<add key="Alert.Subject.Default" value="Error on interface {interface} / {endpoint}" />
+<add key="Alert.Body.Default" value="There was a problem with the interface {interface} and endpoint {endpoint}:&lt;br/&gt;{message}" />
+```
