@@ -21,6 +21,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ Verhalten beim Verschieben von Instanzen zu Schnittstellen verbessert
 * __Fehler__ In der HTML Ansicht wurden Änderungen am E-Mail Text von Alarmierungen nicht gespeichert
 * __Fehler__ Encoding Fehler beim Nachladen von Transaktionen auf der Seite "Überwachung"
+* __Fehler__ Logauswertung hat nicht funktioniert wenn sich im "Logs" Verzeichnis noch andere Dateien befinden
 
 
 #### 1.1.4
