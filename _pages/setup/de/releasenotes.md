@@ -20,6 +20,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ Direkt nach dem Umbenennen einer Instanz wurden Parameteränderungen nicht gespeichert
 * __Fehler__ Verhalten beim Verschieben von Instanzen zu Schnittstellen verbessert
 * __Fehler__ In der HTML Ansicht wurden Änderungen am E-Mail Text von Alarmierungen nicht gespeichert
+* __Fehler__ Encoding Fehler beim Nachladen von Transaktionen auf der Seite "Überwachung"
 
 
 #### 1.1.4
