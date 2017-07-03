@@ -7,7 +7,7 @@ permalink: "webclient/de/konfiguration/"
 Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In Instanzen und deren Details 
 
 
-![x]({{ site.baseurl }}/assets/content-images/webclient/de/addinoverview.png "Add-In Overview")
+![x]({{ site.baseurl }}/assets/content-images/webclient/de/addInOverview.png "Add-In Overview")
 
 #### 1. OneConnexx Verwalten
   * Einstellungen neu laden    
