@@ -8,7 +8,7 @@ permalink: "webclient/de/installation/"
 
 Auf dieser Seite werden alle OneConnexx Installationen auf dem lokalen System angezeigt, sobald diese einmal gestartet wurden.
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/installation.png "Übersicht Installtionen")  
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/installations.png "Übersicht Installtionen")  
 
 
 * __Name:__ Der Name der Installation kann nach belieben gewählt werden.
