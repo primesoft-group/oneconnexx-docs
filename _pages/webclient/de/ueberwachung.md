@@ -90,7 +90,7 @@ In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittste
 Wird dieser Regel nicht erfüllt, so wird eine fehlerhafte Transaktion auf den Endpunkt geschrieben, welchem die Regel zugeordnet ist.
 Diese Transaktion kann entweder einfach so belassen werden, wird aber im Normalfall mit der Alarmierung verbunden. In der Alarmierung kann eine Überwachung auf eine Schnittstellen/Endpunkt Kombination gesetzt werden, welche bei einer fehlerhaften Transaktion eine Hinweismail auslöst. Mehr dazu unter "Alarmierung"
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverview.PNG "Regeln")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverview.png "Regeln")
 
 #### 1. Textsuche  
 Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
