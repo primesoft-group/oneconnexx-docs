@@ -107,9 +107,24 @@ Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:
 
 ### Aufbau der Regel:  
 Eine Regel setzt sich wie folgt zusammen: 
+
 Eine Regel hat einen Namen, eine Schnittstelle und einen Endpunkt für welchen die Regel angewendet wird.
-Weiter enthält sie die Felder Limit-Modus (1) (maximale oder minimale Obergrenze), Anzahl Transaktionen (2) und betrachteter Zeitraum (3). Diese Felder ergeben zusammen die Regel (zum Beispiel: Maximal 4 Transaktionen in den letzten 6 Stunden), welche auf die angegebene Schnittstelle und den Endpunkt angewendet wird.
-Eine Regel wird täglich einmal zur Ausführzeit (4) evaluiert, welche auf die Minute genau angegeben werden kann. Das Wiederholen nach (5) Feld gibt an, nach wie vielen Stunden die Regel erneut evaluiert wird.
+
+__1:__ Sie enthält einen Limit-Modus (maximale oder minimale Obergrenze).
+
+__2:__ Die Anzahl Transaktionen in einem gewissen Zeitraum kann ebenfalls mitgegeben werden.
+
+Diese Felder ergeben zusammen die Regel (zum Beispiel: Maximal 1 Transaktionen in den letzten 24 Stunden), welche auf die angegebene Schnittstelle und den Endpunkt angewendet wird.
+
+__3:__ Eine Regel wird täglich einmal zur Ausführzeit evaluiert, welche auf die Minute genau angegeben werden kann. 
+
+__4:__ Das Wiederholen nach Feld gibt an, nach wie vielen Stunden die Regel erneut evaluiert wird.
+
+__5:__ An welchen Wochentagen die Regel evaluiert wird, kann auch mitgegeben werden.
+
+__6:__ Im Feld Tage des Monats kann angebenen werden, an welchen Tagen im Monat die Regel evaluiert wird.
+
+Zum Beispiel: Die Regel wird am ersten, dritten und fünften bis zehnten Tag des Monats evaluiert.
 
 #### 4. Regel löschen/bearbeiten  
 Mit einem Klick auf die linke Schaltfläche kann eine Regel bearbeitet werden.
