@@ -24,11 +24,11 @@ Resultat:
 Die Regelüberwachung schreibt eine Regelverletzungstransaktion (= eine fehlerhafte Transaktion).
 Die Alarmierung registriert die fehlerhaft Transaktion und löst dementsprechend die infomail aus.
 
-Die Infomail wird aber auch ausgelöst wenn Endpunkt a der Schnittstelle x ohne Regelverletzung eine fehlerhafte Transaktion schreibt (z.B. Filecopy schlägt fehl weil Gründe)
+Die Infomail wird aber auch ausgelöst wenn Endpunkt a der Schnittstelle x ohne Regelverletzung eine fehlerhafte Transaktion schreibt (z.B. Filecopy schlägt fehl)
 
 ## Übersicht
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/alerting.png "Übersicht Regeln")  
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/alertingOverview.png "Übersicht Regeln")  
 
 #### 1. Textsuche  
 Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
