@@ -42,7 +42,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
   
 ### Steuerschaltflächen
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringoverview.png "Überwachung Übersicht")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringOverview.PNG "Überwachung Übersicht")
 
 #### 1. Textfilter
   Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
@@ -64,7 +64,7 @@ Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an A
 ## Schnittstellenkonfiguration
 In der Ansicht «Schnittstellen» können die Schnittstellen konfiguriert werden. Eine Schnittstelle dient dazu, die konfigurierten Add-In Instanzen zu Ordnen und Gruppieren.
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/interfaceconfiguration.png "Schnittstellenkonfiguration")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/interfaceConfiguration.PNG "Schnittstellenkonfiguration")
 
 In der Linken Ansicht befinden sich die Schnittstellen und die zugeordneten Add-Ins, in der rechten die konfigurierten Add-Ins welche keiner Schnittstelle zugeordnet sind
 
@@ -90,7 +90,7 @@ In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittste
 Wird dieser Regel nicht erfüllt, so wird eine fehlerhafte Transaktion auf den Endpunkt geschrieben, welchem die Regel zugeordnet ist.
 Diese Transaktion kann entweder einfach so belassen werden, wird aber im Normalfall mit der Alarmierung verbunden. In der Alarmierung kann eine Überwachung auf eine Schnittstellen/Endpunkt Kombination gesetzt werden, welche bei einer fehlerhaften Transaktion eine Hinweismail auslöst. Mehr dazu unter "Alarmierung"
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverView.png "Regeln")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverview.PNG "Regeln")
 
 #### 1. Textsuche  
 Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
