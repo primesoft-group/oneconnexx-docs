@@ -90,17 +90,23 @@ In der Ansicht «Regeln» können Regeln für die Transaktionen einer Schnittste
 Wird dieser Regel nicht erfüllt, so wird eine fehlerhafte Transaktion auf den Endpunkt geschrieben, welchem die Regel zugeordnet ist.
 Diese Transaktion kann entweder einfach so belassen werden, wird aber im Normalfall mit der Alarmierung verbunden. In der Alarmierung kann eine Überwachung auf eine Schnittstellen/Endpunkt Kombination gesetzt werden, welche bei einer fehlerhaften Transaktion eine Hinweismail auslöst. Mehr dazu unter "Alarmierung"
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/ruleOverview.png "Regeln")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/rulesOverview.png "Regeln")
 
 #### 1. Textsuche  
 Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
 Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
 
+#### 2. Filtern
+Hat die Checkbox Inaktiv kein Häkchen, werden nur die aktiven Regeln angezeigt.
+Das Gegenteil passiert, wenn die Checkbox Aktiv kein Häkchen hat.
 
-#### 2. Sortierung  
+#### 3. Sortierung  
 Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. Diese Schaltfläche ist bei jeder Spalte vorhanden.
 
-#### 3. Regel hinzufügen  
+#### 4. Export
+Alle Regeln werden exportiert beim Klick auf diese Schaltfläche.
+
+#### 5. Regel hinzufügen  
 Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:  
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addNewMonitoringRule.png "Neue Regel hinzufügen")  
@@ -126,8 +132,6 @@ __7:__ Im Feld Tage des Monats kann angebenen werden, an welchen Tagen im Monat 
 
 Zum Beispiel: Die Regel wird am ersten, dritten und fünften bis zehnten Tag des Monats evaluiert.
 
-#### 4. Regel löschen/bearbeiten  
+#### 6. Regel löschen/bearbeiten  
 Mit einem Klick auf die linke Schaltfläche kann eine Regel bearbeitet werden.
 Mit einem Klick auf die rechte Schaltfläche kann eine Regel gelöscht werden
-
-
