@@ -57,17 +57,17 @@ Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschrä
 Mit dem Filter Add-In wird die Liste auf ein oder mehrere spezifische Add-Ins eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
 
 ### 5. Steuerschaltflächen  
-  * Filter Ausblenden  
+  * Filter Ausblenden
     Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden.
 	
-  * Log Aktualisieren  
+  * Log Aktualisieren
     Lädt die neuesten Logeinträge aus den Logfiles.
 	
-  * Filter zurücksetzen  
+  * Filter zurücksetzen
     Setzt alle Filterkriterien auf ihren Standardwert zurück.
     
-  * Älteste zuoberst
+  * Älteste zuoberst <br />
     Ordnet die Logeinträge nach Zeit, so dass der älteste Eintrag zuoberst ist.
   
-  * Neuste zuoberst
+  * Neuste zuoberst <br />
     Ordnet die Logeinträge nach Zeit, so dass der neuste Eintrag zuoberst ist.
