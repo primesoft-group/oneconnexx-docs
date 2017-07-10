@@ -34,7 +34,7 @@ Das Löschen wirkt sich nicht auf die Einträge in der Logdatei aus.
 
 In der Ansicht «Auswertung» können die gesamten im Logverzeichnis liegenden Logeinträge gefiltert werden. Im Unterschied zum Echtzeitlog werden die neu geschriebenen Logs nicht automatisch geladen. Die Schaltfläche «Log Aktualisieren» erlaubt aber jederzeit eine Aktualisierung der Liste. Der Filtervorgang wird automatisch ausgeführt, sobald sich ein Wert in den Filterboxen ändert. (Verzögerung ca. 1.5 Sekunden)
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterLog.png "Log Auswertung")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterLogs.png "Log Auswertung")
 
 ### 1. Datumsfilter
 
@@ -58,11 +58,16 @@ Mit dem Filter Add-In wird die Liste auf ein oder mehrere spezifische Add-Ins ei
 
 ### 5. Steuerschaltflächen  
   * Filter Ausblenden  
-    Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden
+    Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden.
 	
   * Log Aktualisieren  
-    Lädt die neuesten Logeinträge aus den Logfiles
+    Lädt die neuesten Logeinträge aus den Logfiles.
 	
   * Filter zurücksetzen  
-    Setzt alle Filterkriterien auf ihren Standardwert zurück
+    Setzt alle Filterkriterien auf ihren Standardwert zurück.
+    
+  * Älteste zuoberst
+    Ordnet die Logeinträge nach Zeit, so dass der älteste Eintrag zuoberst ist.
   
+  * Neuste zuoberst
+    Ordnet die Logeinträge nach Zeit, so dass der neuste Eintrag zuoberst ist.
