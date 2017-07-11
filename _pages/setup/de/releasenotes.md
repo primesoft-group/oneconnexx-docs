@@ -22,7 +22,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ In der HTML Ansicht wurden Änderungen am E-Mail Text von Alarmierungen nicht gespeichert
 * __Fehler__ Encoding Fehler beim Nachladen von Transaktionen auf der Seite "Überwachung"
 * __Fehler__ Logauswertung hat nicht funktioniert wenn sich im "Logs" Verzeichnis noch andere Dateien befinden
-* __Fehler__ Echtzeit-Log wird bei jedem Neuladen der Siete zurückgesetzt, da sonst bei grossen Datenmengen der Browser einfriert
+* __Fehler__ Echtzeit-Log wird bei jedem Neuladen der Seite zurückgesetzt, da sonst bei grossen Datenmengen der Browser einfriert
 
 
 #### 1.1.4
