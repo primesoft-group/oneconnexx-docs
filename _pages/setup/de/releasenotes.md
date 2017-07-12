@@ -16,6 +16,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Möglichkeit in Log Analyse die neusten Einträge zuoberst anzuzeigen
 * __Neu__ Regeln und Alarmierungen können als Excel Datei exportiert werden
 * __Neu__ Regeln und Alarmierungen können nach aktiv/inaktiv gefiltert werden
+* __Neu__ Möglichkeit Alarmierungen nur bei Regelverletzungen auszuführen und nicht bei jeder fehlerhaften Transaktion
 * __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 * __Fehler__ FileCopy Add-In: Wenn Parameter vo einem Dispatcher Add-In gesetzt wurden und gleichzeitig die Konfiguration ändert, wurden die Parameter wieder zurückgesetzt
