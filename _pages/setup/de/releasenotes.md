@@ -7,7 +7,7 @@ permalink: "setup/de/releasenotes/"
 #### vNext
 
 * __Neu__ Liste der Installationen ist alphabetisch nach Name sortiert
-* __Neu__ FileEraser Add-In unterstützt mehere Suchmuster
+* __Neu__ FileEraser Add-In unterstützt mehrere Suchmuster
 * __Neu__ Seite "Alarmierung" ist jetzt eine Unterseite von "Überwachung"
 * __Neu__ Neue Seite "Statistik"
 * __Neu__ Verbesserte Darstellung bei kleiner Bildschirmbreite (z.B. Mobilgeräte)
