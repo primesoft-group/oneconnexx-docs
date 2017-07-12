@@ -47,9 +47,9 @@ Alle Alamierungen werden exportiert beim Klick auf diese Schaltfläche.
 #### 5. Alarmierung hinzufügen  
 Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:  
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addNewAlerting.png "Neue Regel hinzufügen")  
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addAlerting.png "Neue Regel hinzufügen")  
 
-Für das Erstellen der Alarmierung kann aus der Liste der bestehenden Schnittstellen eine ausgewählt werden. Dazu kann auch noch ein spezifischer Endpunkt der Schnittstelle eingegeben (nicht ausgewählt) werden (* für alle Endpunkte der gewählten Schnittstelle). Diese werden dann Überwacht und sobald eine fehlerhafte Transaktion geschrieben wird, wird eine Mail an den definierten Empfänger gesendet. Zudem kann im Text über die unter dem Eingabefeld für die Nachricht definierten Platzhalter auf den Namen der Schnittstelle und des Endpunktes, und die Nachricht der Transaktion zugegriffen werden. 
+Für das Erstellen der Alarmierung kann aus der Liste der bestehenden Schnittstellen eine ausgewählt werden. Dazu kann auch noch ein spezifischer Endpunkt der Schnittstelle eingegeben (nicht ausgewählt) werden (* für alle Endpunkte der gewählten Schnittstelle). Es kann auch ausgewählt werden, ob die Alamierung nur bei einer Regelverletzung ausgeführt werden soll oder bei jeder fehlerhaften Transaktion. Die Schnittstelle und der Endpunkt werden dann Überwacht und sobald eine fehlerhafte Transaktion oder eine Regelverletzung geschrieben wird, wird eine Mail an den definierten Empfänger gesendet. Zudem kann im Text über die unter dem Eingabefeld für die Nachricht definierten Platzhalter auf den Namen der Schnittstelle und des Endpunktes, und die Nachricht der Transaktion zugegriffen werden. 
 
 #### 6. Alarmierung löschen/bearbeiten  
 Mit einem Klick auf die linke Schaltfläche kann eine Alarmierung bearbeitet werden.
