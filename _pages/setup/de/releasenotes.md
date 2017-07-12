@@ -14,6 +14,8 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Möglichkeit Regeln nur an bestimmten Wochentagen oder Tagen im Monat zu prüfen
 * __Neu__ Für neue Alarmierungen können Standardtexte in Web.config definiert werden
 * __Neu__ Möglichkeit in Log Analyse die neusten Einträge zuoberst anzuzeigen
+* __Neu__ Regeln und Alarmierungen können als Excel Datei exportiert werden
+* __Neu__ Regeln und Alarmierungen können nach aktiv/inaktiv gefiltert werden
 * __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 * __Fehler__ FileCopy Add-In: Wenn Parameter vo einem Dispatcher Add-In gesetzt wurden und gleichzeitig die Konfiguration ändert, wurden die Parameter wieder zurückgesetzt
