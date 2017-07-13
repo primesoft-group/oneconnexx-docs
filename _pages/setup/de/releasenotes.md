@@ -22,6 +22,8 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 * __Fehler__ FileCopy Add-In: Wenn Parameter vo einem Dispatcher Add-In gesetzt wurden und gleichzeitig die Konfiguration ändert, wurden die Parameter wieder zurückgesetzt
 * __Fehler__ FileCopy Add-In: Dateiname wird in Transaktion geschrieben
+* __Fehler__ FileCopy Add-In: Beim SFTP Protokoll funktionieren jetzt auch absolute Pfade
+* __Fehler__ Ldap2CSV: Datumsformat funktioniert jetzt auch für Datumsfelder
 * __Fehler__ Direkt nach dem Umbenennen einer Instanz wurden Parameteränderungen nicht gespeichert
 * __Fehler__ Verhalten beim Verschieben von Instanzen zu Schnittstellen verbessert
 * __Fehler__ In der HTML Ansicht wurden Änderungen am E-Mail Text von Alarmierungen nicht gespeichert
