@@ -5,7 +5,8 @@ permalink: "addins/de/xls2csv/"
 ---
 
 Das Xls2Csv Add-In konvertiert eine Excel-Datei (.xls oder .xlsx) in eine CSV Datei.
-Falls die Excel-Datei mehrere Arbeitsmappen enthält wird nur die erste konvertiert.<br /><br />
+Falls die Excel-Datei mehrere Arbeitsmappen enthält wird nur die erste konvertiert.
+Die erzeugte CSV-Datei hat denselben Namen wie die Excel-Datei, nur wird die Dateiendung auf CSV geändert.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
