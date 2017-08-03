@@ -4,7 +4,9 @@ title: Csv2Database
 permalink: "addins/de/csv2database/"
 ---
 
-Das Csv2Database Add-In lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle.<br /><br />
+Das Csv2Database Add-In lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle.
+Alle Zeilen in der CSV-Datei werden als neue Datensätze in die Datenbank eingefügt.
+Die erste Zeile der CSV-Datei muss die Spaltennamen enthalten. Es werden nur diejenigen Spalten in die Datenbank eingefügt, deren Namen exakt mit den Spaltennamen der Datenbanktabelle übereinstimmen.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -12,40 +14,28 @@ Das Csv2Database Add-In lädt Daten aus einer CSV-Datei in eine SQL Datenbanktab
 | Add-In Type | Logic |
 | Schnittstellen | In: CSV-Datei<br /> Out: Datenbank|
 | Transaktionen | 1 pro verarbeitete Datei |
-| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />1x am Schluss: &lt;Instanz&gt;.Done |
+| Ereignisse | 1x am Schluss: &lt;Instanz&gt;.Done |
 | | |
 | __Parameter__ | |
 | connectionString | Verbindungszeichenfolge der Datenbank | 
-| delimiter | Trennzeichen in der CSV-Datei (Optional, Default = Semikolon) | 
-| encoding | Kodierung der CSV-Datei (Optional, Default = "UTF-8") | 
-| fileNamePattern | Dateiname der CSV-Datei<br/>Wird ignoriert wenn der Dateiname von der SQL Abfrage zurückgegeben wird. Der Platzhalter {0} wird durch einen aktuellen Zeitstempel ersetzt. Bsp.: File\_{0: yyyyMMdd_hhmmss}.csv = File\_20160523\_115620.csv<br/>Bestehende Dateien werden überschrieben. | 
-| fileSaveLocation | Zielverzeichnis der CSV-Datei | 
-| includeColumnName | true: Spaltenname werden in die 1. Zeile geschrieben (Optional, default = false) | 
-| query | Eine SQL Abfrage welche die zu exportierenden Daten zurückgibt<br />Nur SELECT oder EXEC sind erlaubt. Pro Resultatset wird eine CSV-Datei erstellt | 
-| timeOut | Timeout in Sekunden bis der SQL-Befehl abgebrochen wird. (Optional, default = 30) | 
+| tableName | Name der Datenbanktabelle in welche Daten eingefügt werden | 
+| sourceDirectory | Quellverzeichnis in dem CSV Dateien gesucht werden | 
+| sourceFilePattern | Muster für die Suche nach CSV-Dateien | 
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
  
  
 ### Anwendungsbeispiele 
 
-Oftmals erhält die IT den Auftrag periodisch Datensätze aus einer Datenbank zu exportieren, damit die Fachbereiche die Angaben überprüfen oder weiterverarbeiten können.
+##### Quelldatei über "file" Parameter
 
-Dazu wird eine SQL-Abfrage definiert, welche die Daten zurückgibt. Ein Timer, welcher das Add-In DatabaseToCSV periodisch aufruft und ein MailSender, welcher den Fachbereich über die neu erstellten CSV-Dateien informiert, runden das Paket ab.
+Wird das Csv2Database Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als CSV-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
 
-##### Dateiname in SQL Abfrage festlegen
-
-Wird von der SQL Abfrage ein 2. Resultatset zurückgegeben, dann wird die 1. Spalte der 1. Zeile des 2. Resultatsets als Dateiname interpretiert. Der Parameter "fileNamePattern" wird in diesem Fall ignoriert. Beispiel einer SQL Abfrage:
-```
-SELECT * FROM DataTable;
-SELECT 'DataTable_export.csv'; 
-```
-
-##### Erstellen mehrerer CSV-Dateien
-
-Wenn die SQL Abfrage ein mehrfaches von 2 Resultatsets zurückgibt, werden mehrere CSV-Dateien erstellt. In diesem Fall kann der Dateinamen also nicht über den Parameter "fileNamePattern" festgelegt werden.  Beispiel einer SQL Abfrage die zwei CSV-Dateien erstellt:
-```
-SELECT * FROM DataTable;
-SELECT 'DataTable_export.csv'; 
-SELECT * FROM StatisticData;
-SELECT 'Statistic_export.csv'; 
-```
+Ereignisse mit "file" Parameter können von folgenden Add-Ins abonniert werden:
+* DatabaseToCSV
+* FileDecompressor
+* FileCompressor
+* FileCopy
+* FileReconstructor
+* FileSystemWatcher
+* Ldap2CSV
+* Xml2Csv
