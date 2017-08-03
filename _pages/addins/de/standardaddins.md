@@ -9,6 +9,7 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 {:.table .table-striped}
 | --- | --- |
 | __Basis Add-Ins__ |
+| [Csv2Database]({{ site.baseurl }}/addins/de/csv2database/) | Lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle. |
 | [DatabaseToCSV]({{ site.baseurl }}/addins/de/databasetocsv/) | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
 | [EventLogger]({{ site.baseurl }}/addins/de/eventlogger/) | Schreibt alle mit dem Ereignis übergebenen Parameter ins Logfile |
 | [FileCopy]({{ site.baseurl }}/addins/de/filecopy/) | Kopiert Dateien zwischen verschiedenen Systemen |
@@ -19,6 +20,7 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | [OneMessageAdapter]({{ site.baseurl }}/addins/de/onemessageadapter/) | Erstellt aus einem Ereignis eine OneMessage, die dann an das _OneOffixxDocumentCreator_ oder _Bizagi_ Add-In weitergeleitet werden kann |
 | [OneOffixxDocumentCreator]({{ site.baseurl }}/addins/de/oneoffixxdocumentcreator/) | Erstellt über die OneOffixx Schnittstelle «OneOffixxDocumentCreationServer» (OODCS) Dokumente im CI/CD des Kunden |
 | [Timer]({{ site.baseurl }}/addins/de/timer/) | Löst Ereignisse zu konfigurierbaren Zeitpunkten aus |
+| [Xls2Csv]({{ site.baseurl }}/addins/de/xls2csv/) | Konvertiert eine Excel-Datei in eine CSV-Datei |
 | [Xml2Csv]({{ site.baseurl }}/addins/de/xml2csv/) | Konvertiert eine XML-Datei nach konfigurierten Regeln in eine CSV-Datei |
 | | |
 | __Erweiterte Add-Ins__ | |
