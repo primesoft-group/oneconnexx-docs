@@ -1,17 +1,17 @@
 ---
 layout: page
-title: DatabaseToCSV
-permalink: "addins/de/databasetocsv/"
+title: Csv2Database
+permalink: "addins/de/csv2database/"
 ---
 
-Das DatabaseToCSV Add-In erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.<br /><br />
+Das Csv2Database Add-In lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-In Type | Logic |
-| Schnittstellen | In: Datenbank<br /> Out: CSV-Datei|
-| Transaktionen | 1 pro erstellte Datei |
+| Schnittstellen | In: CSV-Datei<br /> Out: Datenbank|
+| Transaktionen | 1 pro verarbeitete Datei |
 | Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />1x am Schluss: &lt;Instanz&gt;.Done |
 | | |
 | __Parameter__ | |
