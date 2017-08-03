@@ -18,6 +18,8 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Regeln und Alarmierungen können nach aktiv/inaktiv gefiltert werden
 * __Neu__ Möglichkeit Alarmierungen nur bei Regelverletzungen auszuführen und nicht bei jeder fehlerhaften Transaktion
 * __Neu__ FileCopy Add-In: Möglichkeit Dateien >2MB auf SharePoint Online hochzuladen
+* __Neu__ Xls2Csv Add-In
+* __Neu__ Csv2Database Add-In
 * __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
 * __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
 * __Fehler__ FileCopy Add-In: Wenn Parameter vo einem Dispatcher Add-In gesetzt wurden und gleichzeitig die Konfiguration ändert, wurden die Parameter wieder zurückgesetzt
@@ -30,6 +32,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ Encoding Fehler beim Nachladen von Transaktionen auf der Seite "Überwachung"
 * __Fehler__ Logauswertung hat nicht funktioniert wenn sich im "Logs" Verzeichnis noch andere Dateien befinden
 * __Fehler__ Echtzeit-Log wird bei jedem Neuladen der Seite zurückgesetzt, da sonst bei grossen Datenmengen der Browser einfriert
+* __Fehler__ Ldap2CSV, Xml2Csv: Anführungszeichen wenn nötig verdoppeln
 
 
 #### 1.1.4
