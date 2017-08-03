@@ -9,7 +9,7 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 {:.table .table-striped}
 | --- | --- |
 | __Basis Add-Ins__ |
-| [Csv2Database]({{ site.baseurl }}/addins/de/csv2database/) | Lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle. |
+| [Csv2Database]({{ site.baseurl }}/addins/de/csv2database/) | Lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle |
 | [DatabaseToCSV]({{ site.baseurl }}/addins/de/databasetocsv/) | Erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien |
 | [EventLogger]({{ site.baseurl }}/addins/de/eventlogger/) | Schreibt alle mit dem Ereignis übergebenen Parameter ins Logfile |
 | [FileCopy]({{ site.baseurl }}/addins/de/filecopy/) | Kopiert Dateien zwischen verschiedenen Systemen |
