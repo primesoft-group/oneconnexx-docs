@@ -30,7 +30,7 @@ Die erzeugte CSV-Datei hat denselben Namen wie die Excel-Datei, nur wird die Dat
 
 ##### Quelldatei über "file" Parameter
 
-Wird das Xls2Csv Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als XML-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
+Wird das Xls2Csv Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als Excel-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
 
 Ereignisse mit "file" Parameter können von folgenden Add-Ins abonniert werden:
 * FileDecompressor
