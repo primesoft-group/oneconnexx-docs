@@ -21,6 +21,8 @@ Die erste Zeile der CSV-Datei muss die Spaltennamen enthalten. Es werden nur die
 | tableName | Name der Datenbanktabelle in welche Daten eingefügt werden | 
 | sourceDirectory | Quellverzeichnis in dem CSV Dateien gesucht werden | 
 | sourceFilePattern | Muster für die Suche nach CSV-Dateien | 
+| csvDelimiter | Das genutzte Trennzeichen in der CSV-Datei |
+| archiveDirectory | Optional ein Verzeichnis in das die eingelesenen Dateien verschoben werden |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
  
  
