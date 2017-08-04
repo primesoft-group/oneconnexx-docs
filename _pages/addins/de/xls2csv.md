@@ -23,6 +23,7 @@ Die erzeugte CSV-Datei hat denselben Namen wie die Excel-Datei, nur wird die Dat
 | dateTimePattern | Optionales Format mit dem Datum-/Zeitwerte in der CSV Datei formatiert werden (z.B. dd.MM.yyyy) | 
 | destinationDirectory | Zielverzeichnis in das CSV Dateien geschrieben werden. Wenn leer werden die Dateien im Quellverzeichnis erstellt. | 
 | overwrite | Gibt an, ob eine bestehende CSV Datei überschrieben werden soll. Wenn 'false', wird eine Zahl an den Dateinamen angehängt so dass dieser eindeutig wird. | 
+| deleteSourceFile | Gibt an, ob die Eingangsdatei nach erfolgreicher Konvertierung gelöscht werden soll | 
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
  
  
