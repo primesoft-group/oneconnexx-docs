@@ -9,7 +9,7 @@ Auf der Statistikseite werden konfigurierte Statistiken aus der Datenbank angeze
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticsPage.PNG "Statistik Seite")
 
 ### Statistik Übersicht
-Die Funktionen: Erstellen, Editieren und Löschen stehen nur für Nutzer mit Admin-/Konfiguratorrechten zur Verfügung.
+Die Funktionen erstellen, editieren und löschen stehen nur für Nutzer mit Admin-/Konfiguratorrechten zur Verfügung.
 Links werden alle Statistikbereiche angezeigt und rechts die Statistiken des momentan aktiven Bereichs.
 Falls kein Bereich in der Datenbank vorhanden ist, wird der Bereich "Allgemeine Statistiken" erstellt.
 Ein Bereich kann nur gelöscht werden, wenn er keine Statistiken enthält.
@@ -32,22 +32,28 @@ Die Diagramme des momentan aktiven Bereichs werden hier angezeigt.
 
 ### Statistik Eingabe Felder
 * Name:
+
 	Der Statistik kann ein Name gegeben werden um dem Betrachter informationen über den Inhalt zu geben.
 	
 * Diagramm Typ:
+
 	Die Art des Diagramms kann hier ausgewählt werden.
 	
 * Höche/Breite:
+
 	Um das Diagramm besser lesbar zu gestalten, kann man selber definieren wie gross/klein es dargestellt werden soll.
 	
 * Legende:
+
 	Hier können per Komma getrennt die Legenden eingegeben werden.
 
 * Sql:
+
 	Die Abfrage der Datenbank, welche dazu benötigt wird, die anzuzeigenden Daten zu liefern. Das Ergebnis muss im Format: Label, String \| FirstValue, int \| SecondValue, int zurückgegeben werden. Wobei das Feld SecondValue optional ist.
 	
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addStatisticArea.PNG "Statistikbereich erstellen/editieren Dialog")
 
 ### Statistikbereich Eingabe Felder
 * Name:
+
 	Dem StatistikBereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
