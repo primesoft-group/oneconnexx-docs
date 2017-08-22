@@ -16,6 +16,9 @@ Das DatabaseMaintenance Add-In erneuert die Inidizes einer Datenbank, um so die 
 | | |
 | __Parameter__ | |
 | connectionString | Verbindungszeichenfolge der Datenbank, deren Inidizes neu erstellt werden |
+| rebuildIndices | Wenn 'true', werden alle Indices der Datenbank neu erstellt |
+| sqlCommand | Optional ein SQL Befehl der ausgeführt wird |
+| commandTimeout | Timeout für SQL Befehl in Sekunden (0 = unbegrenzt) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 ### Anwendungsbeispiele 
