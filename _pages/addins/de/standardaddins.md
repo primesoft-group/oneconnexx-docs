@@ -25,7 +25,7 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | | |
 | __Erweiterte Add-Ins__ | |
 | TODO [Bizagi]({{ site.baseurl }}/addins/de/bizagi/) | Dient zur Anbindung des Bizagi BPMN an den OneConnexx |
-| [DatabaseMaintenance]({{ site.baseurl }}/addins/de/databasemaintenance/) | Erstellt alle Indizes einer Datenbank neu, um so die Performance zu verbessern |
+| [DatabaseMaintenance]({{ site.baseurl }}/addins/de/databasemaintenance/) | Erstellt alle Indizes einer Datenbank neu, oder führt einen beliebigen SQL Befehl aus |
 | [Dispatcher]({{ site.baseurl }}/addins/de/dispatcher/) | Löst ein Ereignis für jede Zeile im Resultat einer SQL Abfrage aus |
 | TODO [FileCompressor]({{ site.baseurl }}/addins/de/filecompressor/) | Komprimiert Dateien |
 | TODO [FileDecompressor]({{ site.baseurl }}/addins/de/filedecompressor/) | Entpackt Dateien |
