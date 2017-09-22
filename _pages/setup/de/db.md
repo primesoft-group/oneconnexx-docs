@@ -15,6 +15,10 @@ Folgende Skripts können verwendet werden um das Datenbankschema zu erstellen:
 
 Der OneConnexx-Service, Alerting-Service und Web-Administration sollten einen DB Benutzer verwenden der Daten lesen, schreiben und gespeicherte Prozeduren ausführen darf. Änderungen am DB Schema sollten jedoch nicht erlaubt sein.
 
+Es gibt die Möglichkeit einen *Windows Benutzer* oder einen *SQL Server Benutzer* zu verwenden. Der *SQL Server Benutzer* hat den Nachteil, dass das zugehörige Passwort im Klartext im Connection-String angegeben werden muss. Ein *Windows Benutzer* kann nur verwendet werden wenn auch der OneConnexx-Service unter einem eigenen Windows Benutzer installiert wurde.
+
+##### SQL Server Benutzer
+
 Auf der *Master* Datenbank ausführen:
 
 ```
