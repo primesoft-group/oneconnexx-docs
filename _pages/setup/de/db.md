@@ -33,6 +33,15 @@ CREATE USER ocxservice FROM LOGIN ocxservice
 GO
 ```
 
+##### SQL Server Benutzer
+
+Auf der *OneConnexx* Datenbank ausführen:
+
+```
+CREATE USER ocxservice FROM LOGIN "domäne\benutzername"
+GO
+```
+
 #### Datenbankrollen
 
 Auf der *OneConnexx* Datenbank eine neue Rolle *db_executor* erstellen. Den OneConnexx Service-User zu den Rollen *db_datareader*, *db_datawriter* und
