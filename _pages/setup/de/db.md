@@ -33,12 +33,28 @@ CREATE USER ocxservice FROM LOGIN ocxservice
 GO
 ```
 
-##### SQL Server Benutzer
+##### Windows Benutzer
 
 Auf der *OneConnexx* Datenbank ausführen:
 
 ```
 CREATE USER ocxservice FROM LOGIN "domäne\benutzername"
+GO
+```
+
+Falls Datenbank und Web-Administration auf unterschiedlichen Servern installiert wurden, muss dem Computer-Account der Web-Administration Zugriff auf die Datenbank gewährt werden. Der Computer-Account besteht aus dem Computernamen gefolgt von einem Dollar-Zeichen ($).
+
+Auf der *Master* Datenbank ausführen:
+
+```
+CREATE LOGIN "domäne\computer$" FROM WINDOWS
+GO
+```
+
+Auf der *OneConnexx* Datenbank ausführen:
+
+```
+CREATE USER "domäne\computer$" FROM LOGIN "domäne\computer$"
 GO
 ```
 
