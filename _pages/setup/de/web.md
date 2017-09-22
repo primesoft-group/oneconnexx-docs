@@ -131,7 +131,16 @@ Um die Anzeigesprache fest auf Englisch umzustellen:
 __Berechtigungen__
 
 Der Zugriff auf die Web-Administration wird über «Windows Authentication» gesteuert, d.h. aufgrund des angemeldeten Windows
-Benutzers. Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
+Benutzers. Wer grundsätzlich Zugriff auf die Web-Administration hat wird im Abschnitt &lt;authorization&gt; festgelegt:
+
+```
+<authorization>
+  <allow roles="corp\OcxAdmins" />
+  <deny users="*" />
+</authorization>
+```
+
+Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
 
 * *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
 * *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
