@@ -35,7 +35,7 @@ GO
 
 ##### Windows Benutzer
 
-Auf der *OneConnexx* Datenbank ausführen:
+Auf der *OneConnexx* Datenbank ausführen und den Windows Benutzer angeben unter dem der OneConnexx-Service installiert wurde:
 
 ```
 CREATE USER ocxservice FROM LOGIN "domäne\benutzername"
@@ -44,7 +44,7 @@ GO
 
 Falls Datenbank und Web-Administration auf unterschiedlichen Servern installiert wurden, muss dem Computer-Account der Web-Administration Zugriff auf die Datenbank gewährt werden. Der Computer-Account besteht aus dem Computernamen gefolgt von einem Dollar-Zeichen ($).
 
-Auf der *Master* Datenbank ausführen:
+Auf der *Master* Datenbank ausführen und den Domänen- und Computernamen des Web-Servers angeben, auf dem die Web-Administration installiert wurde:
 
 ```
 CREATE LOGIN "domäne\computer$" FROM WINDOWS
