@@ -140,6 +140,8 @@ Benutzers. Wer grundsätzlich Zugriff auf die Web-Administration hat wird im Abs
 </authorization>
 ```
 
+Mit diesem Beispiel haben alle Mitglieder der Benutzergruppe "OcxAdmin" in der Domäne "corp" Zugriff. Anstatt einer Benutzergruppe können auch einzelne Benutzer angegeben werden (Beispiel: &lt;allow users="corp\jones" /&gt;).
+
 Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
 
 * *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
