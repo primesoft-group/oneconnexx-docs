@@ -29,7 +29,7 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 
 ```
 \OneConnexx
- |-OneConnexxService
+ |-<Instanzname>
    |-AddIns 
    |-Config
    |-Pipeline
