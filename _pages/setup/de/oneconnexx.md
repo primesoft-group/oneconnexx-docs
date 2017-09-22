@@ -23,7 +23,7 @@ Alle benötigten Installationspakete auf den Server ins Verzeichnis *&lt;Laufwer
 Falls nur eine OneConnexx Instanz installiert wird, den Inhalt von *ocx-service.7z* nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken, und den Inhalt von *ocx-addins.7z* in ein Unterverzeichnis *AddIns*.
 
 Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspakete in einen Unterordner
-*&lt;Laufwerk&gt;:\OneConnexx\&lt;Instanzname&gt;* zu entpacken.
+*<Laufwerk>:\OneConnexx\<Instanzname>* zu entpacken.
 
 Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 
