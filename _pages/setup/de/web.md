@@ -135,21 +135,29 @@ Benutzers. Wer grundsätzlich Zugriff auf die Web-Administration hat wird im Abs
 
 ```
 <authorization>
-  <allow roles="corp\OcxAdmins" />
+  <allow roles="corp\OcxUsers" />
   <deny users="*" />
 </authorization>
 ```
 
-Mit diesem Beispiel haben alle Mitglieder der Benutzergruppe "OcxAdmin" in der Domäne "corp" Zugriff. Anstatt einer Benutzergruppe können auch einzelne Benutzer angegeben werden (Beispiel: &lt;allow users="corp\jones" /&gt;).
+Mit diesem Beispiel haben alle Mitglieder der Benutzergruppe "OcxUsers" in der Domäne "corp" Zugriff. Anstatt einer Benutzergruppe können auch einzelne Benutzer angegeben werden (Beispiel: &lt;allow users="corp\jones" /&gt;).
 
-Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
+Weiterführende Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
 
 * *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
 * *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
 * *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
 
-Diese Rollen können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden.
+Dies Rollen *Konfigurator* und *Administrator* können einzelnen Windows Benutzern oder Windows Benutzergruppen zugeordnet werden:
 
+```
+<add key="AdminRole" value="corp\OcxAdmins" />
+<add key="ConfigRole" value="corp\OcxConfigurators" />
+```
+
+Wird einer diese Parameter nicht, bzw. auf einen leeren Eintrag gesetzt, gilt die Rolle für alle Benutzer.
+
+Benutzer die weder in der *Konfigurator* noch in der *Administrator* Rolle sind, aber grundsätzlich Zugriff auf die Web-Applikation haben, gehören in die *Benutzer* Rolle.
 
 __Deaktivieren von Funktionen__
 
