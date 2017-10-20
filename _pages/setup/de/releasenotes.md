@@ -4,7 +4,7 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
-#### vNext
+#### 1.3.0
 
 * __Neu__ DatabaseMaintenance Add-In: Möglichkeit einen beliebigen SQL Befehl auszuführen
 * __Neu__ Die Reihenfolge der Statistiken kann mittels Drag-and-Drop geändert werden
