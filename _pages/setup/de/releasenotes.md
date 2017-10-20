@@ -8,6 +8,8 @@ permalink: "setup/de/releasenotes/"
 
 * __Neu__ DatabaseMaintenance Add-In: Möglichkeit einen beliebigen SQL Befehl auszuführen
 * __Neu__ Die Reihenfolge der Statistiken kann mittels Drag-and-Drop geändert werden
+* __Neu__ Neuer Parametertyp für mehrzeilige Texte
+* __Neu__ Anzeige der OneConnexx Version in der Web-Administration, Hinweis auf inkompatible Versionen
 
 
 #### 1.2.1
