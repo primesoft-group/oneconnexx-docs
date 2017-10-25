@@ -24,18 +24,18 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | [Xml2Csv]({{ site.baseurl }}/addins/de/xml2csv/) | Konvertiert eine XML-Datei nach konfigurierten Regeln in eine CSV-Datei |
 | | |
 | __Erweiterte Add-Ins__ | |
-| TODO [Bizagi]({{ site.baseurl }}/addins/de/bizagi/) | Dient zur Anbindung des Bizagi BPMN an den OneConnexx |
+| [Bizagi]({{ site.baseurl }}/addins/de/bizagi/) | Dient zur Anbindung des Bizagi BPMN an den OneConnexx |
 | [DatabaseMaintenance]({{ site.baseurl }}/addins/de/databasemaintenance/) | Erstellt alle Indizes einer Datenbank neu, oder führt einen beliebigen SQL Befehl aus |
 | [Dispatcher]({{ site.baseurl }}/addins/de/dispatcher/) | Löst ein Ereignis für jede Zeile im Resultat einer SQL Abfrage aus |
-| TODO [FileCompressor]({{ site.baseurl }}/addins/de/filecompressor/) | Komprimiert Dateien |
-| TODO [FileDecompressor]({{ site.baseurl }}/addins/de/filedecompressor/) | Entpackt Dateien |
-| TODO [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) | Liest eine existierende Datei und erstellt anhand des Dateiinhalts und anhand konfigurierter Regeln eine neue Datei |
-| TODO [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | Liest Objekte aus einem LDAP- bzw. ActiveDirectory-Server und schreibt diese in eine CSV-Datei |
-| TODO [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei Add-In Instanzen |
-| TODO [ServerCheck]({{ site.baseurl }}/addins/de/servercheck/) | Überprüft die Erreichbarkeit von Servern mit Hilfe des "Ping" Befehls |
-| TODO [SharepointEraser]({{ site.baseurl }}/addins/de/sharepointeraser/) | Löscht Elemente in einer SharePoint Liste/Bibliothek die ein bestimmtes Alter erreicht haben |
-| TODO [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Ein WebService, welcher von externen Applikationen aufgerufen werden kann und ein Ereignis auslöst |
-| TODO [WebRemote]({{ site.baseurl }}/addins/de/webremote/) | Sendet eine Nachricht mit Namen des Ereignisses und den dazugehörigen Parametern an einen WebService |
-| TODO [XSLTransform]({{ site.baseurl }}/addins/de/xsltransform/) | Transformiert XML Dateien |
+| [FileCompressor]({{ site.baseurl }}/addins/de/filecompressor/) | Komprimiert Dateien |
+| [FileDecompressor]({{ site.baseurl }}/addins/de/filedecompressor/) | Entpackt Dateien |
+| [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) | Liest eine existierende Datei und erstellt anhand des Dateiinhalts und anhand konfigurierter Regeln eine neue Datei |
+| [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | Liest Objekte aus einem LDAP- bzw. ActiveDirectory-Server und schreibt diese in eine CSV-Datei |
+| [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei Add-In Instanzen |
+| [ServerCheck]({{ site.baseurl }}/addins/de/servercheck/) | Überprüft die Erreichbarkeit von Servern mit Hilfe des "Ping" Befehls |
+| [SharepointEraser]({{ site.baseurl }}/addins/de/sharepointeraser/) | Löscht Elemente in einer SharePoint Liste/Bibliothek die ein bestimmtes Alter erreicht haben |
+| [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Ein WebService, welcher von externen Applikationen aufgerufen werden kann und ein Ereignis auslöst |
+| [WebRemote]({{ site.baseurl }}/addins/de/webremote/) | Sendet eine Nachricht mit Namen des Ereignisses und den dazugehörigen Parametern an einen WebService |
+| [XSLTransform]({{ site.baseurl }}/addins/de/xsltransform/) | Transformiert XML Dateien |
 
 
