@@ -23,7 +23,7 @@ Verbindungen zu Mail-Servern die von Anfang an eine verschlüsselte SSL Verbindu
 | useDefaultCredentials | Gibt an, ob der OneConnexx Service-User für die Authentifizierung gegenüber dem SMTP Server verwendet werden soll. Dazu muss der Mail-Server NTLM Authentifizierung unterstützen. |
 | userName | Benutzername für die Authentifizierung gegenüber dem SMTP Server (Optional) |
 | password | Passwort für die Authentifizierung gegenüber dem SMTP Server (Optional) |
-| recipients | Kommaseparierte Liste von Empfängeradressen, kann durch einen Parameter im auslösenden Ereignis überschrieben werden. |
+| recipients | Kommaseparierte Liste von Empfängeradressen, kann durch einen Parameter im auslösenden Ereignis überschrieben werden |
 | sender | E-Mail Adresse des Abenders |
 | subjectPrefix | Ein Präfix das der Betreffzeile jedes E-Mails vorangestellt wird (Bsp. "Test - " damit E-Mails des Testsystem sofort erkannt werden) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
