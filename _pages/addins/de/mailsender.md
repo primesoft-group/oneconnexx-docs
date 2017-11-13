@@ -21,8 +21,8 @@ Verbindungen zu Mail-Servern die von Anfang an eine verschlüsselte SSL Verbindu
 | port | Port des SMTP Servers (Optional, Standard = 25) |
 | useSsl | Gibt an, ob die Verbindung zum Mail-Server mittels TLS verschlüsselt werden soll |
 | useDefaultCredentials | Gibt an, ob der OneConnexx Service-User für die Authentifizierung gegenüber dem SMTP Server verwendet werden soll. Dazu muss der Mail-Server NTLM Authentifizierung unterstützen. |
-| userName | Optional der Benutzername für die Authentifizierung gegenüber dem SMTP Server (Optional) |
-| password | Optional das Passwort für die Authentifizierung gegenüber dem SMTP Server (Optional) |
+| userName | Benutzername für die Authentifizierung gegenüber dem SMTP Server (Optional) |
+| password | Passwort für die Authentifizierung gegenüber dem SMTP Server (Optional) |
 | recipients | Kommaseparierte Liste von Empfängeradressen|
 | sender | E-Mail Adresse des Abenders |
 | subjectPrefix | Ein Präfix das der Betreffzeile jedes E-Mails vorangestellt wird (Bsp. "Test - " damit E-Mails des Testsystem sofort erkannt werden) |
