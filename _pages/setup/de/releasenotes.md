@@ -4,6 +4,11 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### vNext
+
+* __Neu__ MailSender Add-In unterstützt TLS und Authentifizierung
+
+
 #### 1.3.0
 
 * __Neu__ DatabaseMaintenance Add-In: Möglichkeit einen beliebigen SQL Befehl auszuführen
