@@ -5,6 +5,8 @@ permalink: "addins/de/mailsender/"
 ---
 
 Das MailSender Add-In versendet E-Mails. Der Inhalt und Betreff der E-Mail werden als Parameter im Ereignis an das MailSender Add-In übermittelt. Das MailSender Add-In unterstützt Authentifizierung mittels Benutzername und Passwort über SSL/TLS.<br /><br />
+Verbindungen zu Mail-Servern die von Anfang an eine verschlüsselte SSL Verbindung (meist auf Port 465) erwarten, werden nicht unterstützt. Stattdessen wird zuerst eine unverschlüsselte Verbindung (meist auf Port 587) aufgebaut, und dann mittels dem STARTTLS Befehl die Verschlüsselung initiiert.
+<br/><br/>
 
 {:.table .table-striped}
 | --- | --- |
