@@ -8,6 +8,7 @@ permalink: "setup/de/releasenotes/"
 
 * __Neu__ MailSender Add-In unterstützt TLS und Authentifizierung
 * __Neu__ Konfigurator-Rolle kann pro Instanz definiert werden
+* __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
 
 
 #### 1.3.0
