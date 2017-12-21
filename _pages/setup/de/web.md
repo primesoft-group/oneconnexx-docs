@@ -148,7 +148,7 @@ Weiterführende Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt
 * *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
 * *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
 
-Die Rolle *Administrator* kann in der Datei Web.config einem einzelnen Windows Benutzern oder einer Windows Benutzergruppen zugeordnet werden:
+Die Rolle *Administrator* kann in der Datei Web.config einem einzelnen Windows Benutzer oder einer Windows Benutzergruppe zugeordnet werden. Mehrere Benutzer oder Benutzergruppen können durch Komma getrennt angegeben werden.
 
 ```
 <add key="AdminRole" value="corp\OcxAdmins" />
