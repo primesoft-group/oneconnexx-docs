@@ -148,15 +148,25 @@ Weiterführende Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt
 * *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
 * *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
 
-Die Rolle *Administrator* kann in der Datei Web.config einem einzelnen Windows Benutzer oder einer Windows Benutzergruppe zugeordnet werden. Mehrere Benutzer oder Benutzergruppen können durch Komma getrennt angegeben werden.
+Die Rolle *Administrator* kann in der Datei *Web.config* einem einzelnen Windows Benutzer oder einer Windows Benutzergruppe zugeordnet werden. Mehrere Benutzer oder Benutzergruppen können durch Komma getrennt angegeben werden.
 
 ```
 <add key="AdminRole" value="corp\OcxAdmins" />
 ```
 
-Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge gesetzt, gilt die Rolle "Administrator" für _alle_ Benutzer.
+Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge gesetzt, gilt die Rolle *Administrator* für **alle** Benutzer.
 
-Benutzer die weder in der *Konfigurator* noch in der *Administrator* Rolle sind, aber grundsätzlich Zugriff auf die Web-Applikation haben, gehören in die *Benutzer* Rolle.
+Die Rolle *Konfigurator* kann pro OneConnexx-Installation in der Datei *OneConnexx.config* einem einzelnen Windows Benutzer oder einer Windows Benutzergruppe zugeordnet werden. Mehrere Benutzer oder Benutzergruppen können durch Komma getrennt angegeben werden.
+
+```
+<authorization>
+  <role name="ConfigRole" value="corp\OcxConfig" />
+</authorization>
+```
+
+Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge gesetzt, gilt die Rolle *Konfigurator* für **alle** Benutzer.
+
+Benutzer die weder in der *Konfigurator* noch in der *Administrator* Rolle sind, aber grundsätzlich Zugriff auf die Web-Applikation haben, gehören in die Rolle *Benutzer*.
 
 __Deaktivieren von Funktionen__
 
