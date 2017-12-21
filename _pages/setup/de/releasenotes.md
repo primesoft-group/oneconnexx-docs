@@ -7,6 +7,7 @@ permalink: "setup/de/releasenotes/"
 #### vNext
 
 * __Neu__ MailSender Add-In unterstützt TLS und Authentifizierung
+* __Neu__ Konfigurator-Rolle kann pro Instanz definiert werden
 
 
 #### 1.3.0
