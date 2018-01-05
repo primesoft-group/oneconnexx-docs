@@ -11,6 +11,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Anzeige der Versionsnummer und des Änderungsdatums eines Add-In
 * __Neu__ Verbesserte Anzeige der Alarmierungen bei vielen E-Mail Adressen
 * __Neu__ Verbesserte Anzeige der Regelausführungszeit in der Übersicht
+* __Neu__ Statistiken können manuell aktualisiert werden
 * __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
 
 
