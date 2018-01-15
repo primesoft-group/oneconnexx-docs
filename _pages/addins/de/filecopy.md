@@ -12,7 +12,7 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | Add-In Type | Logic |
 | Schnittstellen | In/Out: Dateiverzeichnis |
 | Transaktionen | 1 pro kopierte Datei |
-| Ereignisse | Pro kopierte Datei wenn Ziel = FILE: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done |
+| Ereignisse | Pro kopierte Datei wenn Ziel = FILE: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done<br />&lt;Instanz&gt;.Filter (Parameter = file, siehe Anwendungsbeispiele) |
 | | |
 | __Parameter__ | |
 | sourceProtocol | Das zu verwendende Protokoll zum Lesen der Quelldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3 und WebDAV |
@@ -61,3 +61,7 @@ Ereignisse mit "file" Parameter werden von folgenden Add-Ins ausgelöst:
 * FileSystemWatcher
 * Ldap2CSV
 * Xml2Csv
+
+##### Verwenden des "Filter" Ereignisses
+
+Das "Filter" Ereignis wird ausgelöst, nach dem die FileCopy Instanz eine Datei vom Quellsystem ins temporäre Verzeichnis kopiert hat. Der Parameter "file" zeigt auf die zu kopierende Datei im temporären Verzeichnis. Hat ein anderes Add-In dieses Ereignis abonniert, wartet die FileCopy Instanz mit dem Kopieren auf das Zielsystem bis das andere Add-In das Ereinigs fertig bearbeitet hat. In Kombination mit dem "TextReplace" Add-In kann so eine Datei von A nach B kopiert, und gleichzeitig konvertiert werden.
