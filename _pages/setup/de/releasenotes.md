@@ -6,13 +6,16 @@ permalink: "setup/de/releasenotes/"
 
 #### vNext
 
-* __Neu__ MailSender Add-In unterstützt TLS und Authentifizierung
+* __Neu__ FileCopy Add-In: Unterstützung für ein "Filter" Ereignis mit dem ein anderes Add-In die zu kopierende Datei manipulieren kann
+* __Neu__ TextReplace Add-In
+* __Neu__ MailSender Add-In: Unterstützung von TLS und Authentifizierung
 * __Neu__ Konfigurator-Rolle kann pro Instanz definiert werden
 * __Neu__ Anzeige der Versionsnummer und des Änderungsdatums eines Add-In
 * __Neu__ Verbesserte Anzeige der Alarmierungen bei vielen E-Mail Adressen
 * __Neu__ Verbesserte Anzeige der Regelausführungszeit in der Übersicht
 * __Neu__ Statistiken können manuell aktualisiert werden
 * __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
+* __Fehler__ Parameterwerte die XML Tags enthielten konnten nicht korrekt gespeichert werden
 
 
 #### 1.3.0
