@@ -27,9 +27,9 @@ Das TextReplace Add-In kann verwendet werden um in einer Textdatei bestimmte Zei
 Die Parameter "expression" und "replacement" können mehrzeiligen Text enthalten. Pro Zeile muss in "expression" ein Regulärer Ausdruck und in "replacement" ein Ersatztext angegeben werden. Beide Parameter müssen dieselbe Anzahl Zeilen beinhalten.
 
 {:.table .table-striped}
-| --- | --- |
 | expression | replacement ||
-| encoding="ISO-8859-1"&nbsp;&nbsp; | encoding="UTF-8"&nbsp;&nbsp; | Ersetzt den Ausdruck __encoding="ISO-8859-1"__ durch __encoding="UTF-8"__.  |
+| encoding="ISO-8859-1" | encoding="UTF-8" | Ersetzt den Ausdruck __encoding="ISO-8859-1"__ durch __encoding="UTF-8"__. |
+| ([^=])(") | $1&quot; | Ersetzt alle vorkommen von __"__ (Gruppe 2) die nicht nach einem __=__ (Gruppe 1) stehen durch __&quot;__ |
 
 Das TextReplace Add-In erhält den Namen der zu bearbeitenden Datei im abonnierten Ereignis im "file" Parameter. Dieser Parameter wird von folgenden Add-Ins bereitgestellt:
 
