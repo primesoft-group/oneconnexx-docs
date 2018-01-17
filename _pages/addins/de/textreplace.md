@@ -29,7 +29,7 @@ Die Parameter "expression" und "replacement" können mehrzeiligen Text enthalten
 {:.table .table-striped}
 | expression | replacement ||
 | encoding="ISO-8859-1" | encoding="UTF-8" | Ersetzt den Ausdruck __encoding="ISO-8859-1"__ durch __encoding="UTF-8"__. |
-| ([^=])(") | $1&quot; | Ersetzt alle vorkommen von __"__ (Gruppe 2) die nicht nach einem __=__ (Gruppe 1) stehen durch __&quot;__ |
+| ([^=])(") | $1&amp;quot; | Ersetzt alle vorkommen von __"__ (Gruppe 2) die nicht nach einem __=__ (Gruppe 1) stehen durch __&amp;quot;__ |
 
 Das TextReplace Add-In erhält den Namen der zu bearbeitenden Datei im abonnierten Ereignis im "file" Parameter. Dieser Parameter wird von folgenden Add-Ins bereitgestellt:
 
