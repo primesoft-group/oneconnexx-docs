@@ -45,7 +45,7 @@ Das TextReplace Add-In erhält den Namen der zu bearbeitenden Datei im abonniert
 
 ### Zeichensatz
 
-Wenn der Parameter "inputEncoding" auf "UTF-8" festgelegt wurde, und die zu verarbeitende Datei in einem anderen Fromat vorliegt, dann wird automatisch versucht die Datei im Standard-Zeichensatz des Systems (normalerweise ISO-8859-1) einzulesen.
+Wenn der Parameter "inputEncoding" auf "UTF-8" festgelegt wurde, und die zu verarbeitende Datei in einem anderen Format vorliegt, dann wird automatisch versucht die Datei im Standard-Zeichensatz des Systems (normalerweise ISO-8859-1) einzulesen.
 
 
 
