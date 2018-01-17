@@ -4,7 +4,7 @@ title: TextReplace
 permalink: "addins/de/textreplace/"
 ---
 
-Das TextReplace Add-In ersetzt mit Hilfe Regulärer Ausdrücke Teile einer Textdatei. Ausserdem kann der Zeichensatz einer Textdatei konvertiert werden.<br /><br />
+Das TextReplace Add-In kann verwendet werden um in einer Textdatei bestimmte Zeichenfolgen zu ersetzen. Dabei wird die Datei zeilenweise eingelesen und die zu ersetzenden Zeichenfolgen können über Reguläre Ausdrücke definiert werden. Ausserdem kann der Zeichensatz einer Textdatei konvertiert werden.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -23,6 +23,11 @@ Das TextReplace Add-In ersetzt mit Hilfe Regulärer Ausdrücke Teile einer Textd
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 ### Anwendungsbeispiele 
+
+Die Parameter "expression" und "replacement" können mehrzeiligen Text enthalten. Pro Zeile muss in "expression" ein Regulärer Ausdruck und in "replacement" ein Ersatztext angegeben werden. Beide Parameter müssen dieselbe Anzahl Zeilen beinhalten.
+
+| expression | replacement ||
+| encoding="ISO-8859-1" | encoding="UTF-8" | Ersetzt |
 
 Das TextReplace Add-In erhält den Namen der zu bearbeitenden Datei im abonnierten Ereignis im "file" Parameter. Dieser Parameter wird von folgenden Add-Ins bereitgestellt:
 
