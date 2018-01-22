@@ -16,6 +16,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Statistiken können manuell aktualisiert werden
 * __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
 * __Fehler__ Parameterwerte die XML Tags enthielten konnten nicht korrekt gespeichert werden
+* __Fehler__ Mehrzeilige Parameter wurden nicht korrekt behandelt (DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
 
 
 #### 1.3.0
