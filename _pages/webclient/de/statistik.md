@@ -26,11 +26,17 @@ Mit einem Klick auf das Icon mit dem Stift und dem Papier kann die Statistik bea
 Hier kann ein neuer Statistikbereich hinzugefügt werden.
 
 #### 4. Statistik Anzeige
-Die Diagramme des momentan aktiven Bereichs werden hier angezeigt. 
+Die Diagramme des momentan aktiven Bereichs werden hier angezeigt. Fährt man mit der Maus über ein Diagramm, werden oben rechts 3 Icons eingeblendet um die Statistik zu **aktualisieren**, **editieren** oder zu **löschen**.
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticrefresh.png "Statistik aktualisieren/editieren/löschen")
+
+### Statistik Bearbeiten
+
+Durch Klicken auf das Bearbeiten Icon wird der Dialog mit den Eigenschaften der Statistik geöffnet:
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticInputDial.PNG "Statistik erstellen/editieren Dialog")
 
-### Statistik Eingabe Felder
+
 * Name:
 
 	Der Statistik kann ein Name gegeben werden um dem Betrachter informationen über den Inhalt zu geben.
