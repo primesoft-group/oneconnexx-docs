@@ -30,9 +30,9 @@ Die Diagramme des momentan aktiven Bereichs werden hier angezeigt. Fährt man mi
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticrefresh.png "Statistik aktualisieren/editieren/löschen")
 
-### Statistik Bearbeiten
+### Statistik bearbeiten
 
-Durch Klicken auf das Bearbeiten Icon wird der Dialog mit den Eigenschaften der Statistik geöffnet:
+Durch Klicken auf das Bearbeiten-Icon wird der Dialog mit den Eigenschaften der Statistik geöffnet:
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticInputDial.PNG "Statistik erstellen/editieren Dialog")
 
@@ -57,9 +57,13 @@ Durch Klicken auf das Bearbeiten Icon wird der Dialog mit den Eigenschaften der 
 
 	Die Abfrage der Datenbank, welche dazu benötigt wird, die anzuzeigenden Daten zu liefern. Das Ergebnis muss im Format: Label, String \| FirstValue, int \| SecondValue, int zurückgegeben werden. Wobei das Feld SecondValue optional ist.
 	
+
+### Statistikbereich bearbeiten
+
+Klickt man auf das Bearbeiten-Icon eines Statistikbereichs oder auf das Icon zum Erstellen eines neuen Bereichs, wird der Dialog mit den Eigenschaften des Statistikbereichs geöffnet:
+
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addStatisticArea.PNG "Statistikbereich erstellen/editieren Dialog")
 
-### Statistikbereich Eingabe Felder
 * Name:
 
 	Dem StatistikBereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
