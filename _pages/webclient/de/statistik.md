@@ -21,6 +21,8 @@ Beim Erstellen wird der aktuelle Bereich schon selektiert.
 	
 #### 2. Statistik editieren und löschen
 Mit einem Klick auf das Icon mit dem Stift und dem Papier kann die Statistik bearbeitet werden. Mit dem Abfalleimer Icon erscheint ein Dialog mit einer Info, dass diese Aktion schlussendlich ausgeführt. Die Statistik wird aus der Datenbank gelöscht und auch gleich von der Seite entfernt.
+
+Mittels drap-and-drop kann die Reihenfolge der Statistiken innerhalb eines Bereichs verschoben werden. Dadurch wird auch sofort die Reihenfolge der Diagramme angepasst.
 	
 #### 3. Statistikbereich hinzufügen
 Hier kann ein neuer Statistikbereich hinzugefügt werden.
@@ -29,6 +31,8 @@ Hier kann ein neuer Statistikbereich hinzugefügt werden.
 Die Diagramme des momentan aktiven Bereichs werden hier angezeigt. Fährt man mit der Maus über ein Diagramm, werden oben rechts 3 Icons eingeblendet um die Statistik zu **aktualisieren**, **editieren** oder zu **löschen**.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticrefresh.png "Statistik aktualisieren/editieren/löschen")
+
+Mittels drap-and-drop kann die Reihenfolge der Diagramme geändert werden. Dadurch wird auch sofort die Reihenfolge der Statistiken im Statistikbereich geändert.
 
 ### Statistik bearbeiten
 
