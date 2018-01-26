@@ -71,3 +71,12 @@ Mit dem Filter Add-In wird die Liste auf ein oder mehrere spezifische Add-Ins ei
   
   * Neuste zuoberst <br />
     Ordnet die Logeinträge nach Zeit, so dass der neuste Eintrag zuoberst ist.
+
+### 6. Kontextmenu / Filtern nach einer Instanz
+
+Klickt man mit der rechten Maustaste auf einen Logeintrag, wird ein Kontextmenu angezeigt:
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/contextmenu.png "Kontextmenu")
+
+Mit dem Befehl "Nach Instanz filtern" wird der Filter automatisch so angepasst, dass nur noch Logeinträge der ausgewählten Instanz in einem Bereich von +/- 1 Minute zum ausgewählten Logeintrag angezeigt werden.
+
