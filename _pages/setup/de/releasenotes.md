@@ -14,6 +14,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Verbesserte Anzeige der Alarmierungen bei vielen E-Mail Adressen
 * __Neu__ Verbesserte Anzeige der Regelausführungszeit in der Übersicht
 * __Neu__ Statistiken können manuell aktualisiert werden
+* __Neu__ Statistiken können auch als Tabellen angezeigt werden
 * __Neu__ Kontextmenu in Logauswertung zum Filtern von Logeinträgen nach einer Instanz
 * __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
 * __Fehler__ Parameterwerte die XML Tags enthielten konnten nicht korrekt gespeichert werden
