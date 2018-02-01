@@ -18,6 +18,7 @@ permalink: "setup/de/releasenotes/"
 * __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
 * __Fehler__ Parameterwerte die XML Tags enthielten konnten nicht korrekt gespeichert werden
 * __Fehler__ Mehrzeilige Parameter wurden nicht korrekt behandelt (DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
+* __Fehler__ Kein Session-Timeout mehr in Web-Administration
 
 
 #### 1.3.0
