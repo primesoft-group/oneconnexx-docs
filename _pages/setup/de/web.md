@@ -156,7 +156,7 @@ Die Rolle *Administrator* kann in der Datei *Web.config* einem einzelnen Windows
 
 Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge gesetzt, gilt die Rolle *Administrator* für **alle** Benutzer.
 
-Die Rolle *Konfigurator* kann pro OneConnexx-Installation in der Datei *OneConnexx.config* einem einzelnen Windows Benutzer oder einer Windows Benutzergruppe zugeordnet werden. Mehrere Benutzer oder Benutzergruppen können durch Komma getrennt angegeben werden.
+Die Mitglieder der Rolle *Konfigurator* können pro OneConnexx-Installation direkt auf der [Konfigurationsseite]({{site.baseurl }}/webclient/de/konfiguration/) bearbeitet werden.
 
 ```
 <authorization>
