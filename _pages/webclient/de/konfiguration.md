@@ -34,6 +34,11 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   * Neue Guppe erstellen  
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   
+  * Berechtigungen
+  Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
+  
+  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")  
+  
 #### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Add-Ins ausgewählt wurde. Bei einem Logik Add-In würde diese folgendermassen Aussehen:
   <br /><br />
@@ -54,15 +59,14 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   Checkbox ob die Instanz aktiv sein soll oder nicht. Ist sie nicht aktiv wird bei einem Aufruf des Add-Ins nichts gemacht. Nur wenn es manuell ausgeführt wird, wird das Add-In auch ausgeführt wenn es nicht aktiv ist.
   
   * Buttons  
-    * Instanz kopieren  
+  	* Instanz kopieren  
 	Kopiert die aktuelle ausgewählte Instanz.
 	* Instanz löschen  
 	Löscht die aktuell ausgewählte Instanz. __Logeinträge und Transaktionen werden nicht gelöscht.__
 	* Logik starten/Event auslösen  
-	Lösst den Event aus/startet die Logik.
+	Löst den Event aus/startet die Logik.
 	* Logik starten mit Parametern  
 	Der Button "Logik starten mit Parametern" ist nur bei Logik Add-Ins vorhanden. Mit diesem Button kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von dieser auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
-	<br /><br />
 	![X]({{ site.baseurl }}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
 	
 #### 3. Instanzen Übersicht.
