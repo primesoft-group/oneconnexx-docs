@@ -39,7 +39,9 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
 
 #### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Add-Ins ausgewählt wurde. Bei einem Logik Add-In würde diese folgendermassen Aussehen:
-![X]({{site.baseurl}}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Add-In")<br/>
+  
+![X]({{site.baseurl}}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Add-In")
+
   Neu hinzugekommen ist der Button "Logik starten mit Parametern".
   
   * Name  
