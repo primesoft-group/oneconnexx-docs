@@ -30,7 +30,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
   * Neue Guppe erstellen  
-  Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
+  Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Gruppe vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   
   * Berechtigungen  
   Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
@@ -69,11 +69,11 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
   
   * Ordnung nach Gruppe  
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Grupieren nach Gruppen")
+  ![X]({{site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Gruppieren nach Gruppen")
   <br /><br />
   Sind die Instanzen nicht nach Gruppen geordnet, so kann auch keine neue Gruppe erstellt werden, die Schaltfläche dafür ist in dieser Ansicht ausgeblendet.
   * Ordnung nach Add-In Typ  
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gruppieren nach Add-In Type")
+  ![X]({{site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gruppieren nach Add-In Type")
   
 #### 4. Instanzparameter
   Bei den Instanzparametern gibt es zwei verschieden: die optionalen und die zwingenden.
@@ -92,7 +92,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   
   Die Ansicht "Abonnierte Ereignisse" erscheint aufgrund des dritten Grundsatzes nur bei Logik Add-Ins.
 
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/abonnieren.png "Ereignisse Abonnieren")
+  ![X]({{site.baseurl}}/assets/content-images/webclient/de/abonnieren.png "Ereignisse Abonnieren")
   
   Mit einem Klick auf das schwarze Plus kann ein neues abonniertes Ereignis hinzugefügt werden. 
   Abonniert eine Instanz eine andere Instanz/Ereignis, dann wird sobald das abonnierte Ereignis ausgelöst wurde, die abonnierende Instanz ausgelöst. Im Feld "Typ" kann der entsprechende Name des zu abonnierenden Ereignisses spezifiziert werden. Viele Add-Ins haben eigene Ereignistypen welche im bereich Standard Add-Ins beschrieben sind. Das häufigste Ereigniss ist das __.Done__ Ereigniss, welches bei erfolgreichem Abschluss einer Logik ausgelöst wird.
