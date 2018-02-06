@@ -7,7 +7,7 @@ permalink: "webclient/de/konfiguration/"
 Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In Instanzen und deren Details 
 
 
-![x]({{ site.baseurl }}/assets/content-images/webclient/de/addInOverview.png "Add-In Overview")
+![x]({{site.baseurl}}/assets/content-images/webclient/de/addInOverview.png "Add-In Overview")
 
 #### 1. OneConnexx Verwalten
   * Einstellungen neu laden    
@@ -21,13 +21,9 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   
   * Instanz hinzufügen  
   Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. __Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist__. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog;
-  <br /><br />
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br />
-  <br />
+  ![X]({{site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")
   Per Mausklick oder mit Shift und Enter kann der gewünschte Add-In Typ ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
-  <br /><br />
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/nameinstance.png" Name new Instance")
-  <br /><br />
+  ![X]({{site.baseurl}}/assets/content-images/webclient/de/nameinstance.png" Name new Instance")
   Standardmässig enthält der Name der Instanz das Präfix __Instanztyp_.__ Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der Add-In Typ direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
@@ -37,13 +33,11 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   * Berechtigungen  
   Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
   
-![X]({{site.baseurl}}/assets/content-images/webclient/de/permission.png" Berechtigung zum Bearbeiten")
+![X]({{site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")
 
 #### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Add-Ins ausgewählt wurde. Bei einem Logik Add-In würde diese folgendermassen Aussehen:
-  <br /><br />
-  ![X]({{ site.baseurl }}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Add-In")
-  <br /><br />
+![X]({{site.baseurl}}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Add-In")
   Neu hinzugekommen ist der Button "Logik starten mit Parametern".
   
   * Name  
