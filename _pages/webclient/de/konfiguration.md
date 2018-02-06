@@ -33,7 +33,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Gruppe vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   
   * Berechtigungen  
-  Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
+  Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren, sowie alle Konfigurationsparameter einsehen und verändern. Achtung: Werden keine Benutzer oder Gruppen angegeben, gilt die Rolle *Konfigurator* für **alle** Benutzer.
   
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")<br/>
 
