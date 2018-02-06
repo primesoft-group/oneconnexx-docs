@@ -24,7 +24,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
 
   Per Mausklick oder mit Shift und Enter kann der gewünschte Add-In Typ ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
 
-![X]({{site.baseurl}}/assets/content-images/webclient/de/nameinstance.png" Name new Instance")<br/>
+![X]({{site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")<br/>
 
   Standardmässig enthält der Name der Instanz das Präfix __Instanztyp_.__ Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der Add-In Typ direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
