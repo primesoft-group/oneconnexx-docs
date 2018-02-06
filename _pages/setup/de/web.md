@@ -158,14 +158,6 @@ Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge
 
 Die Mitglieder der Rolle *Konfigurator* können pro OneConnexx-Installation direkt auf der [Konfigurationsseite]({{site.baseurl }}/webclient/de/konfiguration/) bearbeitet werden.
 
-```
-<authorization>
-  <role name="ConfigRole" value="corp\OcxConfig" />
-</authorization>
-```
-
-Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge gesetzt, gilt die Rolle *Konfigurator* für **alle** Benutzer.
-
 Benutzer die weder in der *Konfigurator* noch in der *Administrator* Rolle sind, aber grundsätzlich Zugriff auf die Web-Applikation haben, gehören in die Rolle *Benutzer*.
 
 __Deaktivieren von Funktionen__
