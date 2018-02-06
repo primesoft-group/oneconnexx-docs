@@ -34,11 +34,11 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   * Neue Guppe erstellen  
   Über diese Schaltfläche kann eine neue Gruppe erstellt werden. __Wenn keine Grupper vorhanden ist, kann auch keine Instanz konfiguriert werden__. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   
-  * Berechtigungen
+  * Berechtigungen  
   Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
   
-  ![X]({{ site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")  
-  
+  ![X]({{site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")
+
 #### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Add-Ins ausgewählt wurde. Bei einem Logik Add-In würde diese folgendermassen Aussehen:
   <br /><br />
