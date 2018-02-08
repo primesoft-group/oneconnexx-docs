@@ -4,7 +4,7 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
-#### vNext
+#### 1.4.0
 
 * __Neu__ FileCopy Add-In: Unterstützung für ein "Filter" Ereignis mit dem ein anderes Add-In die zu kopierende Datei manipulieren kann
 * __Neu__ TextReplace Add-In
