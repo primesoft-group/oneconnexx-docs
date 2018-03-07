@@ -4,6 +4,10 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### vNext
+* __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen.
+
+
 #### 1.4.0
 
 * __Neu__ FileCopy Add-In: Unterstützung für ein "Filter" Ereignis mit dem ein anderes Add-In die zu kopierende Datei manipulieren kann
