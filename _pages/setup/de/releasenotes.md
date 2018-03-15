@@ -6,6 +6,7 @@ permalink: "setup/de/releasenotes/"
 
 #### vNext
 * __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen.
+* __Neu__ FileCopy Add-In: Neuer Parameter "skipExistingFiles".
 
 
 #### 1.4.0
