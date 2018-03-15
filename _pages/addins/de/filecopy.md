@@ -25,6 +25,7 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | destinationPath | Abhängig von "destinationProtocol"<br />FILE: UNC Pfad des Zielverzeichnis<br/>S3: Bucketname<br/>SHAREPOINT: URL der Dokumentenbibliothek |
 | filePattern | Suchmuster der zu kopierenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
 | moveFiles | true = Dateien werden verschoben, also auf dem Quellsystem gelöscht<br />false = Dateien werden kopiert und verbleiben auf dem Quellsystem |
+| skipExistingFiles | Wenn 'true' werden kopierte Dateien nicht aus dem temp Verzeichnis gelöscht und Dateien die im temp Verzeichnis bereits existieren werden übersprungen. |
 | sourceUserName | Benutzer für den Zugriff auf das Quellsystem (Optional) |
 | sourcePassword | Zugehöriges Passwort (Optional) |
 | destUserName | Benutzer für den Zugriff auf das Zielsystem (Optional) |
@@ -65,3 +66,7 @@ Ereignisse mit "file" Parameter werden von folgenden Add-Ins ausgelöst:
 ##### Verwenden des "Filter" Ereignisses
 
 Das "Filter" Ereignis wird ausgelöst, nach dem die FileCopy Instanz eine Datei vom Quellsystem ins temporäre Verzeichnis kopiert hat. Der Parameter "file" zeigt auf die zu kopierende Datei im temporären Verzeichnis. Hat ein anderes Add-In dieses Ereignis abonniert, wartet die FileCopy Instanz mit dem Kopieren auf das Zielsystem bis das andere Add-In das Ereinigs fertig bearbeitet hat. In Kombination mit dem "TextReplace" Add-In kann so eine Datei von A nach B kopiert, und gleichzeitig konvertiert werden.
+
+##### Verwenden des "skipExistingFiles" Parameters
+
+Der Parameter 'skipExistingfiles' kann auf 'true' gesetzt werden, wenn Dateien auf dem Quellsystem nicht gelöscht oder verschoben werden können, aber trotzdem nur neu hinzugekommene Dateien kopiert werden sollen. Dabei werden Dateien nach dem Kopieren nicht aus dem lokalen temporären Verzeichnis gelöscht, und Dateien die bereits im lokalen temporären Verzeichnis existieren werden übersprungen. Wird diese Option verwendet, sollte 'tempDirectory' auf ein Verzeichnis gesetzt werden das ausschliesslich diesem Zweck dient.
