@@ -5,8 +5,9 @@ permalink: "setup/de/releasenotes/"
 ---
 
 #### vNext
-* __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen.
-* __Neu__ FileCopy Add-In: Neuer Parameter "skipExistingFiles".
+* __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen
+* __Fehler__ Csv2Database Add-In: Unterstützung von Tabulator als Trennzeichen, Unterstützung von Spaltennamen mit Sonderzeichen
+* __Neu__ FileCopy Add-In: Neuer Parameter "skipExistingFiles"
 
 
 #### 1.4.0
