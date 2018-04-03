@@ -4,7 +4,7 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
-#### 1.4.2
+#### 1.4.1
 
 * __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen
 * __Fehler__ Csv2Database Add-In: Unterstützung von Tabulator als Trennzeichen, Unterstützung von Spaltennamen mit Sonderzeichen
