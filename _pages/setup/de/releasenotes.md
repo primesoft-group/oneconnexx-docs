@@ -4,9 +4,6 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
-#### vNext
-
-
 #### 1.4.2
 
 * __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen
