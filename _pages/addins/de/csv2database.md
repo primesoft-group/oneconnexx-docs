@@ -29,6 +29,7 @@ Die erste Zeile der CSV-Datei muss die Spaltennamen enthalten. Es werden nur die
 | preCommand | Optional ein SQL Befehl der vor dem Einlesen der CSV-Dateien ausgeführt wird |
 | postCommand | Optional ein SQL Befehl der nach dem Einlesen der CSV-Dateien ausgeführt wird |
 | primaryKey | Optional der Name des Primärschlüssels der Datenbanktabelle. Falls angegeben, wird zuerst nach einem Datensatz mit diesem Primärschlüssel gesucht und dieser aktualisiert. Wenn kein solcher Datensatz gefunden wurde wird ein neuer Datensatz eingefügt. |
+| fileNameColumn | Optional der Name der Spalte der Datenbanktabelle in die der Dateiname der CSV-Datei geschrieben wird  (Optional, Default = "") |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
  
  
