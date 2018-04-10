@@ -4,6 +4,11 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### vNext
+
+* __Neu__ Csv2Database Add-In: Neuer Parameter "fileNameColumn"
+
+
 #### 1.4.1
 
 * __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen
