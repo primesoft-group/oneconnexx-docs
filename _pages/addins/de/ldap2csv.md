@@ -35,10 +35,19 @@ Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und
 
 ##### Datum formatieren
 
-Um zum Beispiel das Datum auszugeben an dem ein Benutzer zuletzt sein PAsswort geändert hat, kann folgender Ausdruck im Parameter "properties" verwendet werden:
+Um zum Beispiel das Datum auszugeben, an dem ein Benutzer zuletzt sein Passwort geändert hat, kann folgender Ausdruck im Parameter "properties" verwendet werden:
 ```
 pwdLastSet#date#yyyy-MM-dd#Passwort gesetzt
 ```
 
+##### Ein Feld mit fixem Text einfügen
+
+Soll in der erstellten CSV Datei eine Spalte mit fixem Text eingefügt werden, kann der fixe Text im Parameter "additionalData" angegeben werden:
+
+```
+identifier_manager=keepmymanager
+```
+
+Falls unter "properties" ein Attribut mit dem Namen "identifier_manager" existiert, wird dieses durch den fixen Text "keepmymanager" ersetzt.
 
 
