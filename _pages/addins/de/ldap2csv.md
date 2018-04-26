@@ -31,9 +31,14 @@ Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und
 | additionalData | Kommaseparierte List von Schlüssel-Wert-Paaren welche die im Parameter "properties" angegebenen Spalten überschreiben. Der Schlüssel muss dabei dem Spaltenname entsprechen. (Optional)<br/>Beispiel: Spalte1=Wert1,Spalte2=Wert2  |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-<!-- 
 ### Anwendungsbeispiele 
 
-ToDo
--->
+##### Datum formatieren
+
+Um zum Beispiel das Datum auszugeben an dem ein Benutzer zuletzt sein PAsswort geändert hat, kann folgender Ausdruck im Parameter "properties" verwendet werden:
+```
+pwdLastSet#date#yyyy-MM-dd#Passwort gesetzt
+```
+
+
 
