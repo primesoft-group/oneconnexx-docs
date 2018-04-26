@@ -50,4 +50,12 @@ identifier_manager=keepmymanager
 
 Falls unter "properties" ein Attribut mit dem Namen "identifier_manager" existiert, wird dieses durch den fixen Text "keepmymanager" ersetzt.
 
+##### Den Wert eines Bits aus einer Bitmaske anzeigen
 
+Mit dem Datentyp "bitmask" kann ein integer oder long Wert mit einer Bitmaske UND verknüpft werden. Die Bitmaske wird dabei dem dem Datentyp durch einen Unterstrich getrennt nachgestellt. Folgendes Beispiel prüft das 2. Bit des AD Attributs "userAccountControl":
+
+```
+userAccountControl#bitmask_2#!bool#active
+```
+
+Wird kein Format angegeben, wird direkt das Resultat der UND Verknüpfung angezeigt, in diesem Beispiel also 2. Das Format "bool" gibt 1 zurück, falls der Wert ungleich 0 ist, oder 0 wenn der Wert gleich 0 ist. Das Format "!bool" funktioniert genau gleich, invertiert aber das Ergebnis.
