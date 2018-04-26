@@ -52,7 +52,7 @@ Falls unter "properties" ein Attribut mit dem Namen "identifier_manager" existie
 
 ##### Den Wert eines Bits aus einer Bitmaske anzeigen
 
-Mit dem Datentyp "bitmask" kann ein integer oder long Wert mit einer Bitmaske UND verknüpft werden. Die Bitmaske wird dabei dem dem Datentyp durch einen Unterstrich getrennt nachgestellt. Folgendes Beispiel prüft das 2. Bit des AD Attributs "userAccountControl":
+Mit dem Datentyp "bitmask" kann ein integer oder long Wert mit einer Bitmaske UND verknüpft werden. Die Bitmaske wird dabei dem Datentyp durch einen Unterstrich getrennt nachgestellt. Folgendes Beispiel prüft das 2. Bit des AD Attributs "userAccountControl":
 
 ```
 userAccountControl#bitmask_2#!bool#active
