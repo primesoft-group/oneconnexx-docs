@@ -9,6 +9,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Ldap2CSV Add-In: Neuer Datentyp "bitmask"
 * __Neu__ Csv2Database Add-In: Neuer Parameter "fileNameColumn"
 * __Fehler__ Csv2Database Add-In: Überlange Texte werden auf die Länge des Datenbankfeldes gekürzt
+* __Fehler__ OneMessageAddIn: Fehler behoben wenn kein Trace verwendet wurde
 
 
 #### 1.4.1
