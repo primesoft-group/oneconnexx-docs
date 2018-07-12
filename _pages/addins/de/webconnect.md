@@ -5,9 +5,9 @@ permalink: "addins/de/webconnect/"
 ---
  
 Das WebConnect Add-In funktioniert als WebAPI Server, welcher von externen Applikation aufgerufen wird. Das WebConnect Add-In löst einen Event aus mit dem Instanznamen und dem Event-Namen aus der URL. Als Parameter wird eine OneMessage mitgegeben.<br /><br />
-Folgende WebAPI Methoden stehen zur Verfügung:
-/api/services/<eventname>
-/api/connect/<eventname>
+Folgende WebAPI Methoden stehen zur Verfügung:<br />
+/api/services/<eventname><br />
+/api/connect/<eventname><br />
 <br /><br />
  
 {:.table .table-striped}
@@ -16,7 +16,7 @@ Folgende WebAPI Methoden stehen zur Verfügung:
 | Add-In Type | Konnektor / Event |
 | Schnittstellen | In: Externe Applikationen |
 | Transaktionen |  |
-| Ereignisse | &lt;Instanz&gt;.<service> (Parameter = OneMessage)|
+| Ereignisse | &lt;Instanz&gt;.&lt;service&gt; (Parameter = OneMessage)|
 | | |
 | __Parameter__ | |
 | baseAddress | Basis-URL des WebServices |
@@ -29,7 +29,25 @@ Folgende WebAPI Methoden stehen zur Verfügung:
 
 Beispiel Basis-URL: http://localhost/connect
 
-Auslösen eines Ereignisses "eventname" mittels GET Request:
+Auslösen eines Ereignisses "eventname" mit leerer OneMessage mittels GET Request:
 ```
 http://localhost/connect/api/services/eventname
 ```
+Als Resultat wird die Anzahl ausgelöster Ereignisse als JSON zurückgegeben.
+
+Auslösen eines Ereignisses "eventname" mit JSON Parameter mittels POST Request:
+```
+http://localhost/connect/api/services/eventname
+```
+Ein JSON Objekt wird dem POST Request als Parameter "data" mitgegeben. Die Objekte unter oneconnexx/data werden als OneMessage weitergegeben. Als Resultat wird die Anzahl ausgelöster Ereignisse als JSON zurückgegeben.
+
+Auslösen eines Ereignisses "eventname" mit OneMessage Parameter mittels POST Request:
+```
+http://localhost/connect/api/connect/eventname
+```
+Der POST Request erwartet die Parameter "Data" und "Entities", aus denen die OneMessage zusammengesetzt wird. Als Resultat wird die Anzahl ausgelöster Ereignisse als XML OneMessage zurückgegeben.
+
+
+
+
+
