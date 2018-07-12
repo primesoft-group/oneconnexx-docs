@@ -49,7 +49,7 @@ Auslösen eines Ereignisses "eventname" mit OneMessage Parameter mittels POST Re
 ```
 http://localhost/connect/api/connect/eventname
 ```
-Der POST Body muss mit Content-Tyle "text/xml" übermittelt werden und ein XML Dokument mit mindestens den Nodes `<oneconnexx><data>` enthalten:
+Der POST Body muss mit Content-Tyle "text/xml" übermittelt werden und ein XML Dokument mit mindestens den Nodes `<oneconnexx><data>` enthalten. Der Inhalt der `<data>` Node wird in eine OneMessage umgewandelt.
 ```
 <oneconnexx><data><add name="Key" value="Value" /></data></oneconnexx>
 ```
