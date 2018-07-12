@@ -39,7 +39,7 @@ Auslösen eines Ereignisses "eventname" mit JSON Parameter mittels POST Request:
 ```
 http://localhost/connect/api/services/eventname
 ```
-Der POST Body muss als "application/json" übermittelt werden und ein JSON Objekt enthalten:
+Der POST Body muss mit Content-Type "application/json" übermittelt werden und ein JSON Objekt enthalten:
 ```
 {"oneconnexx": { "data": { }}}
 ```
@@ -49,7 +49,11 @@ Auslösen eines Ereignisses "eventname" mit OneMessage Parameter mittels POST Re
 ```
 http://localhost/connect/api/connect/eventname
 ```
-Der POST Request erwartet die Parameter "Data" und "Entities", aus denen die OneMessage zusammengesetzt wird. Als Resultat wird die Anzahl ausgelöster Ereignisse als XML OneMessage zurückgegeben.
+Der POST Body muss mit Content-Tyle "text/xml" übermittelt werden und ein XML Dokument mit mindestens den Nodes `<oneconnexx><data>` enthalten:
+```
+<oneconnexx><data><add name="Key" value="Value" /></data></oneconnexx>
+```
+Als Resultat wird die Anzahl ausgelöster Ereignisse als XML OneMessage zurückgegeben.
 
 
 ### Berechtigungen zum Abhören eines Ports
