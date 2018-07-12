@@ -39,7 +39,11 @@ Auslösen eines Ereignisses "eventname" mit JSON Parameter mittels POST Request:
 ```
 http://localhost/connect/api/services/eventname
 ```
-Ein JSON Objekt wird dem POST Request als Parameter "data" mitgegeben. Die Objekte unter oneconnexx/data werden als OneMessage weitergegeben. Als Resultat wird die Anzahl ausgelöster Ereignisse als JSON zurückgegeben. Beispiel: `{"oneconnexx": { "invoked": 1}}`
+Der POST Body muss als "application/json" übermittelt werden und ein JSON Objekt enthalten:
+```
+{"oneconnexx": { "data": { }}}
+```
+"data" ist wiederum ein JSON Objekt das in eine OneMessage umgewandelt wird. Als Resultat wird die Anzahl ausgelöster Ereignisse als JSON zurückgegeben. Beispiel: `{"oneconnexx": { "invoked": 1}}`
 
 Auslösen eines Ereignisses "eventname" mit OneMessage Parameter mittels POST Request:
 ```
