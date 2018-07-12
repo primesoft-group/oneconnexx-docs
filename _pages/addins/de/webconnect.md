@@ -4,7 +4,7 @@ title: WebConnect
 permalink: "addins/de/webconnect/"
 ---
  
-Das WebConnect Add-In funktioniert als WebAPI Server, welcher von externen Applikation aufgerufen werden kann um Aktionen in OneConnexx zu starten. Das WebConnect Add-In löst einen Event aus mit dem Instanznamen und dem Event-Namen aus der URL. Als Parameter kann eine OneMessage an andere Add-Ins mitgegeben werden.<br /><br />
+Das WebConnect Add-In funktioniert als WebAPI-Server, welcher von externen Applikation aufgerufen werden kann um Aktionen in OneConnexx zu starten. Das WebConnect Add-In löst einen Event aus mit dem Instanznamen und dem Event-Namen aus der URL. Als Parameter kann eine OneMessage an andere Add-Ins mitgegeben werden.<br /><br />
 Folgende WebAPI Methoden stehen zur Verfügung:<br />
 /api/services/<eventname><br />
 /api/connect/<eventname><br />
@@ -25,7 +25,7 @@ Folgende WebAPI Methoden stehen zur Verfügung:<br />
 
 
 
-### Anwendungsbeispiele 
+### Anwendungsbeispiele
 
 Beispiel Basis-URL: http://localhost/connect
 
@@ -48,6 +48,13 @@ http://localhost/connect/api/connect/eventname
 Der POST Request erwartet die Parameter "Data" und "Entities", aus denen die OneMessage zusammengesetzt wird. Als Resultat wird die Anzahl ausgelöster Ereignisse als XML OneMessage zurückgegeben.
 
 
+### Berechtigungen zum Abhören eines Ports
 
+Falls der WebAPI-Server nicht berechtigt ist die angegebene URL/Port abzuhören, kann diese Berechtigung in der als Administrator gestarteten Eingabeaufforderung erteilt werden:
 
+```
+netsh http add urlacl url=http://+:8355/webconnect/ user=domain\user
+```
+
+Dieser Befehl erteilt dem Benutzer domain\user die Berechtigung auf Port 8355 die URL /webconnect abzuhören. Wichtig: Die URL im Parameter baseAddress muss exakt mit der angegebenen URL übereinstimmen, inklusive dem + Zeichen anstelle des Hostnamens! 
 
