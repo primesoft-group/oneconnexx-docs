@@ -4,7 +4,7 @@ title: FileCopy
 permalink: "addins/de/filecopy/"
 ---
 
-Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein anderes System zu kopieren. Es werden die unterschiedlichsten Übertragungsprotokolle unterstützt..<br /><br />
+Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein anderes System zu kopieren. Es werden die unterschiedlichsten Übertragungsprotokolle unterstützt.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -15,14 +15,15 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | Ereignisse | Pro kopierte Datei wenn Ziel = FILE: &lt;Instanz&gt;.Output (Parameter = file)<br />&lt;Instanz&gt;.Done<br />&lt;Instanz&gt;.Filter (Parameter = file, siehe Anwendungsbeispiele) |
 | | |
 | __Parameter__ | |
-| sourceProtocol | Das zu verwendende Protokoll zum Lesen der Quelldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3 und WebDAV |
-| sourceSystem | Abhängig von "sourceProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* |
-| sourcePath | Abhängig von "sourceProtocol"<br />FILE: UNC Pfad zu den Quelldateien<br />WebDAV: URL der Quelldateien<br />FTP, FTPS, SFTP: Relativer Pfad<br /> S3: Bucketname |
+| sourceProtocol | Das zu verwendende Protokoll zum Lesen der Quelldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV und SHAREPOINT |
+| sourceSystem | Abhängig von "sourceProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* <br /> SHAREPOINT: URL zur Quell-Liste auf Sharepoint (ohne Ordner). Der Teil nach dem letzten '/' der URL muss dem Quell-Listennamen entsprechen (ggf. mit Sonderzeichen). |
+| sourcePath | Abhängig von "sourceProtocol"<br />FILE: UNC Pfad zu den Quelldateien<br />WebDAV: URL der Quelldateien<br />FTP, FTPS, SFTP: Relativer Pfad<br /> S3: Bucketname <br /> SHAREPOINT: Relativer Pfad von der Quellliste zum Quellverzeichnis|
 | sourceArchivePath | Verzeichnis (Format siehe "sourcePath"), wohin erfolgreich kopierte Dateien zusätzlich verschoben werden (Optional) |
+| sourceTimeFilter | SHAREPOINT: Zeitfilter, um nur Dateien, welche älter als die gesetzte Zeit (in Minuten) sind, zu verarbeiten |
 | destinationFileName | Name der kopierten Dateien auf dem Zielsystem, falls diese anders heissen sollen als die Originaldateien. Mögliche Platzhalter: <br /> {0}: Name der Ursprungsdatei ohne Endung <br /> {1}: Endung der Ursprungsdatei <br /> {2}: Aktuelle Zeit. Default Format = yyyyMMddHHmmss |
 | destinationProtocol | Das zu verwendende Protokoll zum Schreiben der Zieldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV und SHAREPOINT |
-| destinationSystem | Abhängig von "destinationProtocol"<br />FILE, SHAREPOINT: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Zielsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* |
-| destinationPath | Abhängig von "destinationProtocol"<br />FILE: UNC Pfad des Zielverzeichnis<br/>S3: Bucketname<br/>SHAREPOINT: URL der Dokumentenbibliothek |
+| destinationSystem | Abhängig von "destinationProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Zielsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* <br /> SHAREPOINT: URL zur Ziel-Liste auf Sharepoint (ohne Ordner). Der Teil nach dem letzten '/' der URL muss dem Ziel-Listennamen entsprechen (ggf. mit Sonderzeichen). |
+| destinationPath | Abhängig von "destinationProtocol"<br />FILE: UNC Pfad des Zielverzeichnis<br/>S3: Bucketname<br /> SHAREPOINT: Relativer Pfad von der Quellliste zum Quellverzeichnis |
 | filePattern | Suchmuster der zu kopierenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
 | moveFiles | true = Dateien werden verschoben, also auf dem Quellsystem gelöscht<br />false = Dateien werden kopiert und verbleiben auf dem Quellsystem |
 | skipExistingFiles | Wenn 'true' werden kopierte Dateien nicht aus dem temp Verzeichnis gelöscht und Dateien die im temp Verzeichnis bereits existieren werden übersprungen. |
