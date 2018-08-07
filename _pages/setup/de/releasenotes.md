@@ -4,8 +4,6 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
-#### vNext
-
 
 #### 1.4.3
 
