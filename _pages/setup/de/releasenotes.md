@@ -4,6 +4,11 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### vNext
+
+* __Neu__ FileCopy Add-In: Dateien können aus SharePoint Online Dokumentenbibliotheken heruntergeladen werden.
+* __BREAKING CHANGE__ FileCopy Add-In: Bei "destinationProtocol" = SHAREPOINT muss die URL zur Dokumentenbibliothek neu im Parameter "destinationSystem" angegeben werden.
+
 
 #### 1.4.3
 
