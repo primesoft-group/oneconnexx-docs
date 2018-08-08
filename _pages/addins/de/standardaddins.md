@@ -31,6 +31,7 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | [FileDecompressor]({{ site.baseurl }}/addins/de/filedecompressor/) | Entpackt Dateien |
 | [FileReconstructor]({{ site.baseurl }}/addins/de/filereconstructor/) | Liest eine existierende Datei und erstellt anhand des Dateiinhalts und anhand konfigurierter Regeln eine neue Datei |
 | [Ldap2CSV]({{ site.baseurl }}/addins/de/ldap2csv/) | Liest Objekte aus einem LDAP- bzw. ActiveDirectory-Server und schreibt diese in eine CSV-Datei |
+| [List2CSV]({{ site.baseurl }}/addins/de/list2csv/) | Exportiert Sharepoint Listen und Views als CSV-Datei |
 | [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei Add-In Instanzen |
 | [ServerCheck]({{ site.baseurl }}/addins/de/servercheck/) | Überprüft die Erreichbarkeit von Servern mit Hilfe des "Ping" Befehls |
 | [SharepointEraser]({{ site.baseurl }}/addins/de/sharepointeraser/) | Löscht Elemente in einer SharePoint Liste/Bibliothek die ein bestimmtes Alter erreicht haben |
@@ -38,6 +39,4 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Ein WebService, welcher von externen Applikationen aufgerufen werden kann und ein Ereignis auslöst |
 | [WebRemote]({{ site.baseurl }}/addins/de/webremote/) | Sendet eine Nachricht mit Namen des Ereignisses und den dazugehörigen Parametern an einen WebService |
 | [XSLTransform]({{ site.baseurl }}/addins/de/xsltransform/) | Transformiert XML Dateien |
-| [List2CSV]({{ site.baseurl }}/addins/de/list2csv/) | Exportiert Sharepoint Listen und Views als CSV-Datei |
-
 
