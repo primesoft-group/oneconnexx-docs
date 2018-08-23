@@ -12,7 +12,7 @@ Mit dem ListToCSV Add-In können Sharepoint-Online Listen oder Views in eine CSV
 | Add-In Type | Logic |
 | Schnittstellen | In: Sharepoint-Liste <br /> Out: CSV-Datei |
 | Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | <Instanz>.Done (Parameter = file) |
+| Ereignisse | &lt;Instanz&gt;.Done (Parameter = file) |
 | | |
 | __Parameter__ | |
 | spSiteUrl | Die URL zur Sharepoint-Seite |
