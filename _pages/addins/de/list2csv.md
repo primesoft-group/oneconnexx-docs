@@ -23,5 +23,5 @@ Mit dem ListToCSV Add-In können Sharepoint-Online Listen oder Views in eine CSV
 | fileSaveLocation | Der komplette Speicherpfad der CSV-Datei. |
 | customHeader | (Optional) Header für die erste Zeile im CSV. Wenn leer werden die internen Sharepoint Spaltennamen verwendet. |
 | delimiter | Trennzeichen |
-| entriesToExport | Legt fest, ob alle Einträge oder nur solche, welche nach der letzten Ausführung dazugekommen sind, exportiert werden. |
+| entriesToExport | Legt fest, ob alle Einträge oder nur solche, welche nach der letzten Ausführung geändert haben, exportiert werden. |
 | endpoint | Optionaler Name des Endpunktes der in der Transaktion verwendet wird. |
