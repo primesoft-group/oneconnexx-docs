@@ -8,6 +8,7 @@ permalink: "setup/de/releasenotes/"
 
 * __Neu__ Neues Add-In List2Csv um SharePoint Online Listen in CSV Dateien zu exportieren.
 * __Neu__ FileCopy Add-In: Dateien können aus SharePoint Online Dokumentenbibliotheken heruntergeladen werden.
+* __Neu__ SharepointEraser Add-In: Neue Parameters "subFolder" und "recursive".
 * __BREAKING CHANGE__ FileCopy Add-In: Bei "destinationProtocol" = SHAREPOINT muss die URL zur Dokumentenbibliothek neu im Parameter "destinationSystem" angegeben werden.
 
 
