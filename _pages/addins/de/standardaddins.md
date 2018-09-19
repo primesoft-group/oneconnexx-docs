@@ -35,6 +35,7 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | [ParameterTransformer]({{ site.baseurl }}/addins/de/parametertransformer/) | Transformiert Parametern zwischen zwei Add-In Instanzen |
 | [ServerCheck]({{ site.baseurl }}/addins/de/servercheck/) | Überprüft die Erreichbarkeit von Servern mit Hilfe des "Ping" Befehls |
 | [SharepointEraser]({{ site.baseurl }}/addins/de/sharepointeraser/) | Löscht Elemente in einer SharePoint Liste/Bibliothek die ein bestimmtes Alter erreicht haben |
+| [SharepointToDatabase]({{ site.baseurl }}/addins/de/sharepointtodatabase/) | Exportiert Items einer SharePoint Liste/Bibliothek in eine SQL Datenbank |
 | [TextReplace]({{ site.baseurl }}/addins/de/textreplace/) | Ersetzt Reguläre Ausdrücke in einer Textdatei und konvertiert den Zeichensatz |
 | [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Ein WebService, welcher von externen Applikationen aufgerufen werden kann und ein Ereignis auslöst |
 | [WebRemote]({{ site.baseurl }}/addins/de/webremote/) | Sendet eine Nachricht mit Namen des Ereignisses und den dazugehörigen Parametern an einen WebService |
