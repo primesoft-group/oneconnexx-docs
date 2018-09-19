@@ -29,9 +29,11 @@ Das SharepointToDatabase Add-In exportiert Items einer Sharepoint Liste/Biblioth
 | columnMapping | (Optional) Zuordnung von Sharepoint Feldern zu Datanbank Spalten. Beispiel: spField1:dbColumn1,spField2:dbColumn2 |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-<!-- 
-### Anwendungsbeispiele 
 
-ToDo
--->
+### Mapping der SharePoint-Felder zu Datenbank-Spalten
+
+Standardmässig werden SharePoint-Felder in Datenbank-Spalten geschrieben die gleich heissen. Mittels des *columnMapping* Parameters kann dieses Verhalten beeinflusst werden. Folgendes Beispiel mappt ein SharePoint Feld "Account Type" auf die Datenbank-Spalte "AccountType":
+
+Account_x0020_Type:AccountType
+
 
