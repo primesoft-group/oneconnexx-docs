@@ -4,25 +4,29 @@ title: SharepointToDatabase
 permalink: "addins/de/sharepointtodatabase/"
 ---
 
-Das SharepointToDatabase Add-In exportiert Items einer Sharepoint Liste/Bibliothek in eine SQL Datenbank. Im Falle einer Dokumentenbibliothek kann das Dokument in ein Binäres-Datenbankfeld gespeichert werden.<br /><br />
+Das SharepointToDatabase Add-In exportiert Items einer Sharepoint Liste/Bibliothek in eine SQL Datenbank. Im Falle einer Dokumentenbibliothek kann das Dokument in ein binäres Datenbankfeld gespeichert werden.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
 | __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-In Type | Logic |
 | Schnittstellen | Sharepoint |
-| Transaktionen | 1 wenn mind. 1 Datei gelöscht |
+| Transaktionen | 1 |
 | Ereignisse | &lt;Instanz&gt;.Done |
 | | |
 | __Parameter__ | |
-| userName | Benutzer mit den für den SharePoint-Server erforderlichen Berechtigungen (Optional) |
-| password | Zugehöriges Passwort (Optional) |
-| libraryUrl | URL der Sharepoint-Bibliothek inklusive deren Namen |
-| subFolder | (Optional) Server-relative URL zu einem Unterverzeichnis der Dokumentenbibliothek. |
-| recursive | Wenn 'true' werden auch Dateien in Unterverzeichnissen gelöscht ("subfolder" wird in diesem Fall ignoriert). |
-| deleteTimeout | Alter der Items in Stunden, ab wann sie gelöscht werden sollen. |
-| testRun | true = Testlauf um zu überprüfen ob alles reibungslos durchläuft.<br />Die Items werden dabei nicht gelöscht, Logeinträge werden aber geschrieben. (Optional, Default = false) |
-| requestTimeout | Automatische Verbindungstrennung, wenn der Request länger als die angegebene Zeit in Millisekunden dauert. (Optional, Default = 60000) |
+| spWebUrl | Sharepoint Web URL. |
+| spListName | Name der Sharepoint-Liste oder -Bibliothek. |
+| spViewName | (Optional) Name der Sharepoint-View welche die zu exportierenden Felder enthält. Wenn leer wird die Default-View verwendet. |
+| spUser | (Optional) Benutzername zur Authentifizierung auf Sharepoint. |
+| spPassword | (Optional) Passwort zur Authentifizierung auf Sharepoint. |
+| entriesToExport | Legt fest, ob alle oder nur die seit der letzten Ausführung geänderten Einträge exportiert werden. |
+| connectionString | Verbindungszeichenfolge zur Datenbank. |
+| useDbTransaction | Wenn aktiv, wird eine Datenbank-Transaktion verwendet und bei einem Fehler ein Rollback durchgeführt. |
+| tableName | Name der Datenbanktabelle. |
+| primaryKeyColumn | (Optional) Name der Primärschlüssel-Spalte. Existierende Zeilen mit passendem Primärschlüssel werden gelöscht und neu eingefügt. |
+| fileColumn | (Optional) Name der binären Datenbankspalte in welche die Datei geschrieben wird wenn es sich um eine Sharepoint Bibliothek handelt. |
+| columnMapping | (Optional) Zuordnung von Sharepoint Feldern zu Datanbank Spalten. Beispiel: spField1:dbColumn1,spField2:dbColumn2 |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 <!-- 
