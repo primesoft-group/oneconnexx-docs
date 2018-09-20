@@ -52,4 +52,4 @@ Handelt es sich bei der im Parameter *spListName* angegebenen Liste um eine Doku
 
 ## Inkrementelle Exports
 
-Wird der Parameter *entriesToExport* auf *CHANGED* gesetzt, werden nur diejenigen Elemente synchronisiert die seit der letzten Ausführung geändert haben. Dazu wird das *Last modified* Datum des SharePoint Elements mit dem Datum der letzten Ausführung des Add-In Instanz verglichen. Das Datum der letzten Ausführung wird als Instanz-Parameter im Verzeichnis *%programdata%\Sevitec\OneConnexx\AddInData* gespeichert.
+Wird der Parameter *entriesToExport* auf *CHANGED* gesetzt, werden nur diejenigen Elemente synchronisiert, die seit der letzten Ausführung geändert haben. Dazu wird das *Last modified* Datum des SharePoint Elements mit dem Datum der letzten Ausführung der Add-In Instanz verglichen. Das Datum der letzten Ausführung wird als Instanz-Parameter im Verzeichnis *%programdata%\Sevitec\OneConnexx\AddInData* gespeichert.
