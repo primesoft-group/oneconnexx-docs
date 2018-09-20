@@ -4,7 +4,7 @@ title: SharepointToDB
 permalink: "addins/de/sharepointtodb/"
 ---
 
-Das SharepointToDB Add-In exportiert Items einer Sharepoint Liste/Bibliothek in eine SQL Datenbank. Im Falle einer Dokumentenbibliothek kann das Dokument in ein binäres Datenbankfeld gespeichert werden.<br /><br />
+Das SharepointToDB Add-In exportiert Elemente einer Sharepoint Liste oder Dokumentenbibliothek in eine SQL Datenbank. Im Falle einer Dokumentenbibliothek kann das Dokument in ein binäres Datenbankfeld gespeichert werden.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
