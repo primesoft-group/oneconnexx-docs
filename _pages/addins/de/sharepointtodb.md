@@ -44,6 +44,8 @@ Möchte man verhindern dass ein SharePoint-Feld auf eine Datenbank-Spalte gemapp
 ID:
 ```
 
+Im *columnMapping* Parameter können mehrere Mappings durch Kommas getrennt angegeben werden.
+
 ### Speichern von Dateien aus Dokumentenbibliotheken
 
 Handelt es sich bei der im Parameter *spListName* angegebenen Liste um eine Dokumentenbibliothek, kann das Dokument des Elements in eine binäre Datenbank-Spalte geschrieben werden. Die Datenbank-Spalte muss dazu vom Typ *varbinary* oder *image* sein und ihr Name muss im Parameter *fileColumn* angegeben werden.
