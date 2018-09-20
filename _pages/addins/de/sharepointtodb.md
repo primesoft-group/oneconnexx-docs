@@ -50,6 +50,6 @@ Im *columnMapping* Parameter können mehrere Mappings durch Kommas getrennt ange
 
 Handelt es sich bei der im Parameter *spListName* angegebenen Liste um eine Dokumentenbibliothek, kann das Dokument des Elements in eine binäre Datenbank-Spalte geschrieben werden. Die Datenbank-Spalte muss dazu vom Typ *varbinary* oder *image* sein und ihr Name muss im Parameter *fileColumn* angegeben werden.
 
-## Inkrementelle Exports
+### Inkrementelle Exports
 
 Wird der Parameter *entriesToExport* auf *CHANGED* gesetzt, werden nur diejenigen Elemente synchronisiert, die seit der letzten Ausführung geändert haben. Dazu wird das *Last modified* Datum des SharePoint Elements mit dem Datum der letzten Ausführung der Add-In Instanz verglichen. Das Datum der letzten Ausführung wird als Instanz-Parameter im Verzeichnis *%programdata%\Sevitec\OneConnexx\AddInData* gespeichert.
