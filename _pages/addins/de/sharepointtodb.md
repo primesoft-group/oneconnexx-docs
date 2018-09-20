@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SharepointToDatabase
-permalink: "addins/de/sharepointtodatabase/"
+title: SharepointToDB
+permalink: "addins/de/sharepointtodb/"
 ---
 
 Das SharepointToDatabase Add-In exportiert Items einer Sharepoint Liste/Bibliothek in eine SQL Datenbank. Im Falle einer Dokumentenbibliothek kann das Dokument in ein binäres Datenbankfeld gespeichert werden.<br /><br />
