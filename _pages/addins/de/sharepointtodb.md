@@ -34,11 +34,15 @@ Das SharepointToDB Add-In exportiert Items einer Sharepoint Liste/Bibliothek in 
 
 Standardmässig werden SharePoint-Felder in Datenbank-Spalten geschrieben die gleich heissen. Mittels des *columnMapping* Parameters kann dieses Verhalten beeinflusst werden. Folgendes Beispiel mappt ein SharePoint Feld "Account Type" auf die Datenbank-Spalte "AccountType":
 
+```
 Account_x0020_Type:AccountType
+```
 
 Möchte man verhindern dass ein SharePoint-Feld auf eine Datenbank-Spalte gemappt wird, z.B. beim Feld "ID" welches bei jedem SharePoint Element vorhanden ist, kann dieses auf eine "leere" DB Spalte gemappt werden:
 
+```
 ID:
+```
 
 ### Speichern von Dateien aus Dokumentenbibliotheken
 
