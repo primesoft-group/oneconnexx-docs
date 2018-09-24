@@ -10,7 +10,7 @@ permalink: "setup/de/releasenotes/"
 * __Neu__ Neues Add-In SharepointToDB um Items aus SharePoint Online Dokumentbibliotheken oder Listen in eine Datenbank zu exportieren.
 * __Neu__ FileCopy Add-In: Dateien können aus SharePoint Online Dokumentenbibliotheken heruntergeladen werden.
 * __Neu__ SharepointEraser Add-In: Neue Parameters "subFolder" und "recursive".
-* __Neu__ Anzeige des Alarmverlaufs (Liste der zuletzt versendeten Alarmierungen)
+* __Neu__ Anzeige des Alarmverlaufs (Liste der zuletzt versendeten Alarmierungen).
 * __BREAKING CHANGE__ FileCopy Add-In: Bei "destinationProtocol" = SHAREPOINT muss die URL zur Dokumentenbibliothek neu im Parameter "destinationSystem" angegeben werden.
 
 
