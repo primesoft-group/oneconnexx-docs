@@ -23,6 +23,8 @@ Das SharepointToDB Add-In exportiert Elemente einer Sharepoint Liste oder Dokume
 | entriesToExport | Legt fest, ob alle oder nur die seit der letzten Ausführung geänderten Einträge exportiert werden. |
 | connectionString | Verbindungszeichenfolge zur Datenbank. |
 | useDbTransaction | Wenn aktiv, wird eine Datenbank-Transaktion verwendet und bei einem Fehler ein Rollback durchgeführt. |
+| preCommand | Optional ein SQL Befehl der vor dem Abgleich ausgeführt wird |
+| postCommand | Optional ein SQL Befehl der nach dem Abgleich ausgeführt wird |
 | tableName | Name der Datenbanktabelle. |
 | primaryKeyColumn | (Optional) Name der Primärschlüssel-Spalte. Existierende Zeilen mit passendem Primärschlüssel werden gelöscht und neu eingefügt. |
 | fileColumn | (Optional) Name der binären Datenbankspalte in welche die Datei geschrieben wird wenn es sich um eine Sharepoint Bibliothek handelt. |
