@@ -53,4 +53,4 @@ Klickt man auf das Bearbeiten-Icon eines Statistikbereichs oder auf das Icon zum
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addStatisticArea.PNG "Statistikbereich erstellen/editieren Dialog")
 
-* **Name:**	Dem StatistikBereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
+* **Name:**	Dem Statistikbereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
