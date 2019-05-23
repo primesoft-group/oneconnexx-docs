@@ -4,7 +4,7 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
-#### vNext
+#### 1.4.4
 
 * __Neu__ Neues Add-In List2Csv um SharePoint Online Listen in CSV Dateien zu exportieren.
 * __Neu__ Neues Add-In SharepointToDB um Items aus SharePoint Online Dokumentbibliotheken oder Listen in eine Datenbank zu exportieren.
