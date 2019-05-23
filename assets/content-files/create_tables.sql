@@ -1,4 +1,8 @@
-/****** Object:  Table [dbo].[Alert]    Script Date: 22.09.2017 15:43:36 ******/
+/*
+	OneConnexx Datenbank Tabellen
+	Stand Mai 2019, OneConnexx Version 1.4.4
+*/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,9 +22,7 @@ CREATE TABLE [dbo].[Alert](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[Instance]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -37,9 +39,22 @@ CREATE TABLE [dbo].[Instance](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[Interface]    Script Date: 22.09.2017 15:43:36 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[InstanceActivity](
+	[InstanceActivityId] [bigint] IDENTITY(1,1) NOT NULL,
+	[InstanceId] [uniqueidentifier] NOT NULL,
+	[ActivityStart] [datetime] NOT NULL,
+	[ActivityEnd] [datetime] NOT NULL,
+ CONSTRAINT [PK__Instance] PRIMARY KEY CLUSTERED 
+(
+	[InstanceActivityId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -52,16 +67,14 @@ CREATE TABLE [dbo].[Interface](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[MailHistory]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[MailHistory](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[Timestamp] [datetime] NOT NULL CONSTRAINT [DF_MailHistory_Timestamp]  DEFAULT (getdate()),
+	[Timestamp] [datetime] NOT NULL,
 	[Recipient] [nvarchar](511) NOT NULL,
 	[Subject] [nvarchar](255) NOT NULL,
  CONSTRAINT [PK_MailHistory] PRIMARY KEY CLUSTERED 
@@ -69,9 +82,7 @@ CREATE TABLE [dbo].[MailHistory](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[MailQueue]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -87,9 +98,7 @@ CREATE TABLE [dbo].[MailQueue](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[Rule]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -113,9 +122,7 @@ CREATE TABLE [dbo].[Rule](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[Statistic]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -128,18 +135,16 @@ CREATE TABLE [dbo].[Statistic](
 	[Sql] [nvarchar](max) NOT NULL,
 	[Height] [int] NOT NULL,
 	[Width] [int] NOT NULL,
-	[DataJson] [nvarchar](max) NOT NULL DEFAULT (''),
+	[DataJson] [nvarchar](max) NOT NULL,
 	[LegendLabels] [nvarchar](255) NULL,
-	[StatisticAreaId] [int] NOT NULL,
+	[StatisticAreaId] [int] NULL,
 	[SortOrder] [int] NULL,
  CONSTRAINT [PK_Statistic] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[StatisticArea]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -153,16 +158,14 @@ CREATE TABLE [dbo].[StatisticArea](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[Transaction]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Transaction](
 	[Id] [bigint] IDENTITY(1,1) NOT NULL,
-	[Timestamp] [datetime] NOT NULL CONSTRAINT [DF_Transaction_Timestamp]  DEFAULT (getdate()),
+	[Timestamp] [datetime] NOT NULL,
 	[InterfaceId] [int] NOT NULL,
 	[Endpoint] [nvarchar](255) NULL,
 	[Success] [bit] NOT NULL,
@@ -173,9 +176,7 @@ CREATE TABLE [dbo].[Transaction](
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
-/****** Object:  Table [dbo].[TransactionCache]    Script Date: 22.09.2017 15:43:36 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -192,12 +193,9 @@ CREATE TABLE [dbo].[TransactionCache](
 	[Endpoint] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
-
 GO
 SET ANSI_PADDING ON
-
 GO
-/****** Object:  Index [IX_Enabled_InterfaceId_Endpoint]    Script Date: 22.09.2017 15:43:36 ******/
 CREATE NONCLUSTERED INDEX [IX_Enabled_InterfaceId_Endpoint] ON [dbo].[Alert]
 (
 	[Enabled] ASC,
@@ -205,16 +203,18 @@ CREATE NONCLUSTERED INDEX [IX_Enabled_InterfaceId_Endpoint] ON [dbo].[Alert]
 	[Endpoint] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_InstallationId]    Script Date: 22.09.2017 15:43:36 ******/
 CREATE NONCLUSTERED INDEX [IX_InstallationId] ON [dbo].[Instance]
 (
 	[InstallationId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
-SET ANSI_PADDING ON
-
+CREATE NONCLUSTERED INDEX [IDX_InstanceId] ON [dbo].[InstanceActivity]
+(
+	[InstanceId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Interface_Endpoint_Timestamp]    Script Date: 22.09.2017 15:43:36 ******/
+SET ANSI_PADDING ON
+GO
 CREATE NONCLUSTERED INDEX [IX_Interface_Endpoint_Timestamp] ON [dbo].[Transaction]
 (
 	[InterfaceId] ASC,
@@ -223,9 +223,7 @@ CREATE NONCLUSTERED INDEX [IX_Interface_Endpoint_Timestamp] ON [dbo].[Transactio
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 SET ANSI_PADDING ON
-
 GO
-/****** Object:  Index [IX_Success_Interface_Endpoint_Timestamp]    Script Date: 22.09.2017 15:43:36 ******/
 CREATE NONCLUSTERED INDEX [IX_Success_Interface_Endpoint_Timestamp] ON [dbo].[Transaction]
 (
 	[Success] ASC,
@@ -234,7 +232,18 @@ CREATE NONCLUSTERED INDEX [IX_Success_Interface_Endpoint_Timestamp] ON [dbo].[Tr
 	[Timestamp] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
+CREATE NONCLUSTERED INDEX [IX_Timestamp] ON [dbo].[Transaction]
+(
+	[Timestamp] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
 ALTER TABLE [dbo].[Alert] ADD  CONSTRAINT [DF__Alert__OnlyAtRul__2DB1C7EE]  DEFAULT ((0)) FOR [OnlyAtRuleViolation]
+GO
+ALTER TABLE [dbo].[MailHistory] ADD  CONSTRAINT [DF_MailHistory_Timestamp]  DEFAULT (getdate()) FOR [Timestamp]
+GO
+ALTER TABLE [dbo].[Statistic] ADD  CONSTRAINT [DF__Statistic__DataJ__7BE56230]  DEFAULT ('') FOR [DataJson]
+GO
+ALTER TABLE [dbo].[Transaction] ADD  CONSTRAINT [DF_Transaction_Timestamp]  DEFAULT (getdate()) FOR [Timestamp]
 GO
 ALTER TABLE [dbo].[Alert]  WITH CHECK ADD  CONSTRAINT [FK_Alert_Interface] FOREIGN KEY([InterfaceId])
 REFERENCES [dbo].[Interface] ([Id])
@@ -245,6 +254,11 @@ ALTER TABLE [dbo].[Instance]  WITH CHECK ADD  CONSTRAINT [FK_Instance_Interface]
 REFERENCES [dbo].[Interface] ([Id])
 GO
 ALTER TABLE [dbo].[Instance] CHECK CONSTRAINT [FK_Instance_Interface]
+GO
+ALTER TABLE [dbo].[InstanceActivity]  WITH CHECK ADD  CONSTRAINT [FK_AddinActivity_Instance] FOREIGN KEY([InstanceId])
+REFERENCES [dbo].[Instance] ([Id])
+GO
+ALTER TABLE [dbo].[InstanceActivity] CHECK CONSTRAINT [FK_AddinActivity_Instance]
 GO
 ALTER TABLE [dbo].[Rule]  WITH CHECK ADD  CONSTRAINT [FK_Rule_Interface] FOREIGN KEY([InterfaceId])
 REFERENCES [dbo].[Interface] ([Id])

@@ -4,9 +4,14 @@ title: Datenbank
 permalink: "setup/de/db/"
 ---
 
+#### Voraussetzungen
+
+Eine Datenbank ist grundsätzlich optional, bestimmte Funktionen von OneConnexx wie "Überwachung", "Alarmierung" und "Statistik" können jedoch nur zusammen mit einer Datenbank verwendet werden.
+Es werden alle Versionen von *Microsoft SQL Server ab Version 2008* unterstützt, einschliesslich der kostenlosen Express Edition.
+
 #### Datenbank erstellen
 
-Folgende Skripts können verwendet werden um das Datenbankschema zu erstellen:
+Erstellen sie eine neue Datenbank (z.B. mit Namen "OneConnexx") auf ihrem Microsoft SQL-Server. Die folgende beiden Skripte müssen dann auf dieser Datenbank ausgeführt werden um das Datenbankschema zu erstellen:
 
 * [Tabellen]({{ site.baseurl }}/assets/content-files/create_tables.sql)
 * [Gespeicherte Prozeduren]({{ site.baseurl }}/assets/content-files/create_stored_procedures.sql)
