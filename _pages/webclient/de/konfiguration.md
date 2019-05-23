@@ -8,25 +8,20 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
 
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/addInOverview.png "Add-In Overview")
 
-#### 1. OneConnexx Verwalten
+#### 1. OneConnexx Verwaltung
   * **Einstellungen neu laden:** Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
   * **Im Service speichern:** Die getätigten Änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
   * **Cache löschen:** Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (ungespeicherte Einstellungen und Konfigurationen) gelöscht.
   * **Instanz hinzufügen:** Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. _Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist_. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog:
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br/>
-
   Per Mausklick oder mit Shift und Enter kann der gewünschte Add-In Typ ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
-
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")<br/>
-
   Standardmässig enthält der Name der Instanz das Präfix __Instanztyp_.__ Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der Add-In Typ direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
   Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
   
   * **Neue Guppe erstellen:** Über diese Schaltfläche kann eine neue Gruppe erstellt werden. _Wenn keine Gruppe vorhanden ist, kann auch keine Instanz konfiguriert werden_. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
   * **Berechtigungen:** Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren, sowie alle Konfigurationsparameter einsehen und verändern. Achtung: Werden keine Benutzer oder Gruppen angegeben, gilt die Rolle *Konfigurator* für **alle** Benutzer.
-  
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")<br/>
-
 #### 2. Instanz Details
   Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Add-Ins ausgewählt wurde. Bei einem Logik Add-In würde diese folgendermassen Aussehen:
   
@@ -43,7 +38,6 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   * Schaltfläche **Logik starten/Event auslösen:** Löst den Event aus, bzw. startet die Logik.
   * Schaltlfäche **Logik starten mit Parametern:** Ist nur bei Logik Add-Ins vorhanden. Mit dieser Schaltfläche kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von dieser auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
 	![X]({{site.baseurl}}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
-	
 #### 3. Instanzen Übersicht.
   Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
   
@@ -53,7 +47,6 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
   Sind die Instanzen nicht nach Gruppen geordnet, so kann auch keine neue Gruppe erstellt werden, die Schaltfläche dafür ist in dieser Ansicht ausgeblendet.
   * Ordnung nach Add-In Typ  
   ![X]({{site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gruppieren nach Add-In Type")
-  
 #### 4. Instanzparameter
   Bei den Instanzparametern gibt es zwei verschieden: die optionalen und die zwingenden.
   Im obigen Beispiel ist z.B. der Parameter "interval" zwingend. Zu erkennen ist dies an der roten Umrandung. Ohne diese Parameter kann die Instanz nicht ausgeführt werden.
