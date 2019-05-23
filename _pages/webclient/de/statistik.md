@@ -40,26 +40,11 @@ Durch Klicken auf das Bearbeiten-Icon wird der Dialog mit den Eigenschaften der 
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticInputDial.PNG "Statistik erstellen/editieren Dialog")
 
-
-* Name:
-
-	Der Statistik kann ein Name gegeben werden um dem Betrachter informationen über den Inhalt zu geben.
-	
-* Diagramm Typ:
-
-	Die Art des Diagramms kann hier ausgewählt werden.
-	
-* Höche/Breite:
-
-	Um das Diagramm besser lesbar zu gestalten, kann man selber definieren wie gross/klein es dargestellt werden soll.
-	
-* Legende:
-
-	Hier können per Komma getrennt die Legenden eingegeben werden.
-
-* Sql:
-
-	Die Abfrage der Datenbank, welche dazu benötigt wird, die anzuzeigenden Daten zu liefern. Das Ergebnis muss im Format: Label, String \| FirstValue, int \| SecondValue, int zurückgegeben werden. Wobei das Feld SecondValue optional ist.
+* **Name:**	Der Statistik kann ein Name gegeben werden um dem Betrachter informationen über den Inhalt zu geben.
+* **Diagramm Typ:**	Die Art des Diagramms kann hier ausgewählt werden.
+* **Höche/Breite:**	Um das Diagramm besser lesbar zu gestalten, kann man selber definieren wie gross/klein es dargestellt werden soll.
+* **Legende:** Hier können per Komma getrennt die Legenden eingegeben werden.
+* **Sql:* Die Abfrage der Datenbank, welche dazu benötigt wird, die anzuzeigenden Daten zu liefern. Das Ergebnis muss im Format: Label, String \| FirstValue, int \| SecondValue, int zurückgegeben werden. Wobei das Feld SecondValue optional ist.
 	
 
 ### Statistikbereich bearbeiten
@@ -68,6 +53,4 @@ Klickt man auf das Bearbeiten-Icon eines Statistikbereichs oder auf das Icon zum
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addStatisticArea.PNG "Statistikbereich erstellen/editieren Dialog")
 
-* Name:
-
-	Dem StatistikBereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
+* **Name:**	Dem StatistikBereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
