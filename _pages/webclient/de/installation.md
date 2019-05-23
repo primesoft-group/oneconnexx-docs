@@ -4,9 +4,9 @@ title: Installation
 permalink: "webclient/de/installation/"
 ---
 
-### Übersicht über die Installationen
+### Übersicht über OneConnexx Instanzen
 
-Auf dieser Seite werden alle OneConnexx Installationen auf dem lokalen System angezeigt, sobald diese einmal gestartet wurden.
+Auf dieser Seite werden alle OneConnexx Instanzen auf dem lokalen System angezeigt, sobald diese einmal gestartet wurden.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/installationsOverview.png "Übersicht Installtionen")  
 
