@@ -1,3 +1,5 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+/.vs/oneconnexx-docs/config/applicationhost.config
+/.vs/oneconnexx-docs/v16/.suo
