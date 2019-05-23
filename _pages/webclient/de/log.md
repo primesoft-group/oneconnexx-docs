@@ -7,11 +7,11 @@ permalink: "webclient/de/log/"
 
 Die Ansicht «Echtzeitlog» bietet eine Übersicht über die Logeinträge welche Aktuell geschrieben werden. Der Aktualisierungszyklus liegt bei einer Sekunde. Neue Einträge werden unten an der Liste angefügt und der Bildlauf automatisch aktualisiert, d.h. das Fenster scrollt automatisch nach unten um die aktuellsten Logeinträge anzuzeigen
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realtimelog.png "Realtime Log")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realTimeLog.png "Realtime Log")
 
 #### Aufbau eines Logeintrags
 
- ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logentry.png "Aufbau Logeintrag")
+ ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logEntry.png "Aufbau Logeintrag")
 
 ### 1. Textfilter
 
@@ -34,7 +34,7 @@ Das Löschen wirkt sich nicht auf die Einträge in der Logdatei aus.
 
 In der Ansicht «Auswertung» können die gesamten im Logverzeichnis liegenden Logeinträge gefiltert werden. Im Unterschied zum Echtzeitlog werden die neu geschriebenen Logs nicht automatisch geladen. Die Schaltfläche «Log Aktualisieren» erlaubt aber jederzeit eine Aktualisierung der Liste. Der Filtervorgang wird automatisch ausgeführt, sobald sich ein Wert in den Filterboxen ändert. (Verzögerung ca. 1.5 Sekunden)
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterlog.png "Log Auswertung")
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterLogs.png "Log Auswertung")
 
 ### 1. Datumsfilter
 
@@ -52,17 +52,31 @@ Durch das Aktivieren der erweiterten Suche können Reguläre Ausdrücke verwende
 
 Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschränkt.  
 
-### 4. Addin/Instanz
+### 4. Add-In/Instanz
 
-Mit dem Filter AddIn wird die Liste auf ein oder mehrere spezifische AddIns eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
+Mit dem Filter Add-In wird die Liste auf ein oder mehrere spezifische Add-Ins eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
 
 ### 5. Steuerschaltflächen  
-  * Filter Ausblenden  
-    Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden
+  * Filter Ausblenden <br />
+    Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden.
 	
-  * Log Aktualisieren  
-    Lädt die neuesten Logeinträge aus den Logfiles
+  * Log Aktualisieren <br />
+    Lädt die neuesten Logeinträge aus den Logfiles.
 	
-  * Filter zurücksetzen  
-    Setzt alle Filterkriterien auf ihren Standardwert zurück
+  * Filter zurücksetzen <br />
+    Setzt alle Filterkriterien auf ihren Standardwert zurück.
+    
+  * Älteste zuoberst <br />
+    Ordnet die Logeinträge nach Zeit, so dass der älteste Eintrag zuoberst ist.
   
+  * Neuste zuoberst <br />
+    Ordnet die Logeinträge nach Zeit, so dass der neuste Eintrag zuoberst ist.
+
+### 6. Kontextmenu / Filtern nach einer Instanz
+
+Klickt man mit der rechten Maustaste auf einen Logeintrag, wird ein Kontextmenu angezeigt:
+
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/contextmenu.png "Kontextmenu")
+
+Mit dem Befehl "Nach Instanz filtern" wird der Filter automatisch so angepasst, dass nur noch Logeinträge der ausgewählten Instanz in einem Bereich von +/- 1 Minute zum ausgewählten Logeintrag angezeigt werden.
+

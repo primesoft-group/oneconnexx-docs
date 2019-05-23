@@ -13,7 +13,7 @@ Der OneConnexx unterstützt Sie zudem mit diversen prozessunterstützenden Funkt
 
 ## Konnektoren
 
-Im Gegensatz zu anderen ESBs, bei denen die Umsysteme angepasst werden müssen, damit diese mit dem ESB kommunizieren können, stellt der OneConnexx Konnektoren zur Verfügung. Im obigen Diagramm sind die Konnektoren durch die grünen Pfeile dargestellt. Konnektoren sind in OneConnexx durch AddIns realisiert.
+Im Gegensatz zu anderen ESBs, bei denen die Umsysteme angepasst werden müssen, damit diese mit dem ESB kommunizieren können, stellt der OneConnexx Konnektoren zur Verfügung. Im obigen Diagramm sind die Konnektoren durch die grünen Pfeile dargestellt. Konnektoren sind in OneConnexx durch Add-Ins realisiert.
 Für die gebräuchlichsten Kommunikationsprotokolle und einige Fremdsysteme sind in OneConnexx bereits Konnektoren enthalten (Liste nicht abschliessend):
 
 * Datenbank (MS SQL Server)
@@ -29,7 +29,7 @@ Für die gebräuchlichsten Kommunikationsprotokolle und einige Fremdsysteme sind
 ## Prozessunterstützende Funktionen
 
 Bei der Datenverarbeitung und Prozessabwicklung werden oft auch prozessunterstützende Funktionen benötigt. Dazu gehört z.B. das Starten eines Prozesses zu vordefinierten Zeitpunkten oder sobald eine Datei in einem überwachten Verzeichnis abgelegt wird. Aber auch Datentransformationen oder das Versenden von E-Mails gehören in diese Kategorie von Funktionen. 
-OneConnexx bietet bereits viele prozessunterstützende Funktionen als AddIns an (Liste nicht abschliessend):
+OneConnexx bietet bereits viele prozessunterstützende Funktionen als Add-Ins an (Liste nicht abschliessend):
 
 * Timer (Interval, täglich, wöchentlich, monatlich, jährlich)
 * Verzeichnisse überwachen
@@ -39,18 +39,18 @@ OneConnexx bietet bereits viele prozessunterstützende Funktionen als AddIns an 
 * Löschen von alten Dateien
 * Überwachen der Servererreichbarkeit (Ping)
 
-## Kundenspezifische AddIns
+## Kundenspezifische Add-Ins
 
-Gründe für kundenspezifische Entwicklungen sind vielseitig. Kundenspezifische AddIns enthalten oftmals kundenspezifische Geschäftslogik wie Validierung von Daten oder spezielle Transformationen. Solche sind mit Standard AddIns und dynamischer Konfiguration kaum oder nur mit erheblichem Aufwand zu bewerkstelligen. Auch die Anbindung an spezielle Umsysteme kann eine kundenspezifische Entwicklung erfordern.
-Nebst den bereits vorhandenen Konnektoren und prozessunterstützenden Funktionen können wir ohne grossen Aufwand neue AddIns implementieren. Der Entwicklungsaufwand ist gering, da bei der Implementation auf eine Vielzahl von Basisfunktionen zurückgegriffen werden kann.
-Durch unser Framework profitieren neu entwickelte AddIns automatisch von folgenden Basisfunktionen:
+Gründe für kundenspezifische Entwicklungen sind vielseitig. Kundenspezifische Add-Ins enthalten oftmals kundenspezifische Geschäftslogik wie Validierung von Daten oder spezielle Transformationen. Solche sind mit Standard Add-Ins und dynamischer Konfiguration kaum oder nur mit erheblichem Aufwand zu bewerkstelligen. Auch die Anbindung an spezielle Umsysteme kann eine kundenspezifische Entwicklung erfordern.
+Nebst den bereits vorhandenen Konnektoren und prozessunterstützenden Funktionen können wir ohne grossen Aufwand neue Add-Ins implementieren. Der Entwicklungsaufwand ist gering, da bei der Implementation auf eine Vielzahl von Basisfunktionen zurückgegriffen werden kann.
+Durch unser Framework profitieren neu entwickelte Add-Ins automatisch von folgenden Basisfunktionen:
 
 * Logging
 * Überwachung der Ausführung
-* Verknüpfen von AddIns über Ereignisse
-* Konfiguration der AddIns über eine Webseite
+* Verknüpfen von Add-Ins über Ereignisse
+* Konfiguration der Add-Ins über eine Webseite
  
-## Abbilden von Prozessen durch Verknüpfen von AddIns 
+## Abbilden von Prozessen durch Verknüpfen von Add-Ins 
 
 Durch Verknüpfen von Konnektoren und prozessunterstützenden Funktionen können komplexe Prozesse abgebildet werden. Ein möglicher Prozess wäre beispielsweise:
 
@@ -62,9 +62,9 @@ Timer (z.B. am 1. jedes Monats) -> Exportieren von Benutzern aus dem Active Dire
 
 Die Administration und Konfiguration des OneConnexx erfolgt über eine moderne Web-Applikation die mit jedem modernen Browser bedient werden kann. Die OneConnexx Web-Administration unterstützt sowohl bei der Konfiguration als auch im Betrieb bei der Auswertung der Log- und der Monitoringdaten.
 
-#### AddIns konfigurieren
+#### Add-Ins konfigurieren
 
-AddIns werden in der OneConnexx Web-Administration hinzugefügt, konfiguriert oder gelöscht. AddIns können ausserdem miteinander verknüpft werden. Die Web-Administration unterstützt den Benutzer dabei mit einer kurzen Beschreibung der AddIn Parameter und sorgt für eine fehlerfreie Konfiguration.
+Add-Ins werden in der OneConnexx Web-Administration hinzugefügt, konfiguriert oder gelöscht. Add-Ins können ausserdem miteinander verknüpft werden. Die Web-Administration unterstützt den Benutzer dabei mit einer kurzen Beschreibung der Add-In Parameter und sorgt für eine fehlerfreie Konfiguration.
 
 #### Log
 

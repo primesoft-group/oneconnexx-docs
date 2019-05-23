@@ -13,7 +13,7 @@ kramdown:
   
 include: ['_pages']
 
-baseurl: http://docs.oneconnexx.com
+baseurl: https://docs.oneconnexx.com
 github_repo_url: https://github.com/Sevitec/oneconnexx-docs/
 
 gems:

@@ -35,4 +35,4 @@ Weitere Informationen zur Installation finden Sie unter __[Client Installation](
 {% include alert.html type="info" text="Um mehr über die Bedienung von OneOffixx zu erfahren, nutzen Sie die <b><a href='http://help.oneoffixx.com/suite/de/'>Online Hilfe</a></b>." %}
 
 Der Client ruft die Daten über den __API Service__ vom OneOffixx Service ab und speichert diese __lokal in einem Cache__.
-Wenn die Office Addins installiert sind, __verbinden diese sich mit dem installierten Client__.
+Wenn die Office Add-Ins installiert sind, __verbinden diese sich mit dem installierten Client__.

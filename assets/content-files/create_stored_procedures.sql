@@ -1,4 +1,4 @@
-/****** Object:  StoredProcedure [dbo].[AlertDelete]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[AlertDelete]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -19,7 +19,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[AlertGetAll]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[AlertGetAll]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -33,7 +33,7 @@ BEGIN
 	SET NOCOUNT ON;
 
 	SELECT
-		[Alert].[Id], [InterfaceId], [Interface].[Name] As [InterfaceName], [Endpoint], [Recipient], [Subject], [Body], [IsHtml], [Enabled]
+		[Alert].[Id], [InterfaceId], [Interface].[Name] As [InterfaceName], [Endpoint], [Recipient], [Subject], [Body], [IsHtml], [Enabled], [OnlyAtRuleViolation]
 	FROM
 		[Alert]
 	LEFT JOIN
@@ -43,7 +43,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[AlertGetById]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[AlertGetById]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -58,7 +58,7 @@ BEGIN
 	SET NOCOUNT ON;
 
 	SELECT
-		Id, InterfaceId, [Endpoint], Recipient, [Subject], Body, IsHtml, [Enabled]
+		Id, InterfaceId, [Endpoint], Recipient, [Subject], Body, IsHtml, [Enabled], OnlyAtRuleViolation
 	FROM
 		Alert
 	WHERE
@@ -66,7 +66,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[AlertInsert]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[AlertInsert]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -77,25 +77,26 @@ GO
 CREATE PROCEDURE [dbo].[AlertInsert]
 	@InterfaceId INT,
 	@Endpoint NVARCHAR(255),
-	@Recipient NVARCHAR(255),
+	@Recipient NVARCHAR(511),
 	@Subject NVARCHAR(255),
 	@Body NVARCHAR(MAX),
 	@IsHtml BIT,
-	@Enabled BIT
+	@Enabled BIT,
+	@OnlyAtRuleViolation BIT
 AS
 BEGIN
 	SET NOCOUNT ON;
 
 	INSERT INTO Alert
-		(InterfaceId, [Endpoint], Recipient, [Subject], Body, IsHtml, [Enabled])
+		(InterfaceId, [Endpoint], Recipient, [Subject], Body, IsHtml, [Enabled], OnlyAtRuleViolation)
 	VALUES
-		(@InterfaceId, @Endpoint, @Recipient, @Subject, @Body, @IsHtml, @Enabled)
+		(@InterfaceId, @Endpoint, @Recipient, @Subject, @Body, @IsHtml, @Enabled, @OnlyAtRuleViolation)
 
 	SELECT CAST(SCOPE_IDENTITY() AS INT)
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[AlertUpdate]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[AlertUpdate]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -107,11 +108,12 @@ CREATE PROCEDURE [dbo].[AlertUpdate]
 	@AlertId INT,
 	@InterfaceId INT,
 	@Endpoint NVARCHAR(255),
-	@Recipient NVARCHAR(255),
+	@Recipient NVARCHAR(511),
 	@Subject NVARCHAR(255),
 	@Body NVARCHAR(MAX),
 	@IsHtml BIT,
-	@Enabled BIT
+	@Enabled BIT,
+	@OnlyAtRuleViolation BIT
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -120,14 +122,14 @@ BEGIN
 		Alert
 	SET
 		InterfaceId = @InterfaceId, [Endpoint] = @Endpoint,
-		Recipient = @Recipient, [Subject] = @Subject,
-		Body = @Body, IsHtml = @IsHtml, [Enabled] = @Enabled
+		Recipient = @Recipient, [Subject] = @Subject, Body = @Body, 
+		IsHtml = @IsHtml, [Enabled] = @Enabled, OnlyAtRuleViolation = @OnlyAtRuleViolation
 	WHERE
 		Id = @AlertId
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InstanceDelete]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InstanceDelete]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -145,7 +147,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InstanceGet]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InstanceGet]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -174,7 +176,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InstanceUpdateOrInsert]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InstanceUpdateOrInsert]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -217,7 +219,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InterfaceDelete]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InterfaceDelete]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -242,7 +244,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InterfaceGetAll]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InterfaceGetAll]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -263,7 +265,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InterfaceGetById]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InterfaceGetById]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -287,7 +289,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InterfaceGetWithInstances]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InterfaceGetWithInstances]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -315,7 +317,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InterfaceInsert]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InterfaceInsert]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -338,7 +340,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[InterfaceUpdate]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[InterfaceUpdate]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -362,7 +364,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[MailQueueCheckIfInsert]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[MailQueueCheckIfInsert]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -374,7 +376,8 @@ GO
 CREATE PROCEDURE [dbo].[MailQueueCheckIfInsert]
 	@InterfaceId INT,
 	@Endpoint NVARCHAR(255),
-	@Message NVARCHAR(255)
+	@Message NVARCHAR(1023),
+	@IsRuleViolation BIT
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -385,7 +388,7 @@ BEGIN
 	INSERT INTO MailQueue (Recipient, [Subject], Body, IsHtml)
 	SELECT
 		Recipient,
-		REPLACE(REPLACE(REPLACE([Subject], '{message}', @Message), '{interface}', @InterfaceName), '{endpoint}', ISNULL(@Endpoint, '')),
+		SUBSTRING(REPLACE(REPLACE(REPLACE([Subject], '{message}', @Message), '{interface}', @InterfaceName), '{endpoint}', ISNULL(@Endpoint, '')), 0, 255),
 		REPLACE(REPLACE(REPLACE(Body, '{message}', @Message), '{interface}', @InterfaceName), '{endpoint}', ISNULL(@Endpoint, '')),
 		IsHtml
 	FROM
@@ -405,6 +408,7 @@ BEGIN
 			Alert
 		WHERE
 			([Enabled] = 1) AND
+			(OnlyAtRuleViolation = 0 OR @IsRuleViolation = 1) AND
 			(InterfaceId IS NULL OR InterfaceId = @InterfaceId) AND
 			([Endpoint] = '*' OR ISNULL([Endpoint], '') =  @Endpoint)
 	) X
@@ -413,7 +417,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[MailQueueDelete]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[MailQueueDelete]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -427,14 +431,25 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 
+	-- copy mail to history
+	INSERT INTO MailHistory
+		(Recipient, [Subject])
+	SELECT
+		Recipient, [Subject]
+	FROM
+		MailQueue
+	WHERE
+		Id = @MailQueueId
+
+	-- delete from queue
 	DELETE FROM
 		MailQueue
 	WHERE
 		Id = @MailQueueId
 END
-
+select * from Alert
 GO
-/****** Object:  StoredProcedure [dbo].[MailQueueGetAll]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[MailQueueGetAll]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -454,7 +469,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleCheck]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleCheck]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -510,22 +525,24 @@ BEGIN
 			)
 		)
 
+	-- return name of violated rule as first resultset
+	SELECT @RuleName AS RuleName
+
 	IF ((@RuleName IS NOT NULL) AND
 		(@lastAlert IS NULL OR DATEDIFF(hh, @lastAlert, @Now) >= @repeatAfter))
 	BEGIN
 		-- rule is violated, add transaction
-		EXEC TransactionInsert NULL, @InterfaceId, @Endpoint, 0, @RuleName
+		-- (this selects the id of the inserted transaction as second result set!)
+		EXEC TransactionInsert NULL, @InterfaceId, @Endpoint, 0, @RuleName, @Now
 
 		--update rule with the current time as the LastAlert-time
 		UPDATE [Rule] SET LastAlert = @Now WHERE Id = @RuleId
 	END
-
-	SELECT @RuleName AS RuleName
 END
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleDelete]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleDelete]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -546,7 +563,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleGetAll]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleGetAll]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -561,7 +578,8 @@ BEGIN
 	SET NOCOUNT ON;
 
 	SELECT
-		R.Id, R.Name, InterfaceId, I.Name AS InterfaceName, [Endpoint], [Timeout], LastAlert, RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount
+		R.Id, R.Name, InterfaceId, I.Name AS InterfaceName, [Endpoint], [Timeout], LastAlert, RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount, 
+		DaysOfWeek, DaysOfMonth
 	FROM
 		[Rule] R
 	INNER JOIN
@@ -571,7 +589,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleGetById]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleGetById]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -586,7 +604,7 @@ BEGIN
 	SET NOCOUNT ON;
 
 	SELECT
-		Id, Name, InterfaceId, [Endpoint], [Timeout], LastAlert, RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount
+		Id, Name, InterfaceId, [Endpoint], [Timeout], LastAlert, RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount, DaysOfWeek, DaysOfMonth
 	FROM
 		[Rule]
 	WHERE
@@ -594,7 +612,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleGetDue]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleGetDue]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -610,9 +628,12 @@ BEGIN
 	SET NOCOUNT ON;
 
 	DECLARE @LastQueryTime TIME = CONVERT(TIME, @LastQuery)
+	DECLARE @DayOfMonth NVARCHAR(4) = ',' + CAST(DATEPART(DAY, GETDATE()) AS NVARCHAR) + ','
+	DECLARE @Weekday INT = DATEPART(WEEKDAY, GETDATE())
 
 	SELECT
-		R.Id, R.Name, InterfaceId, I.Name AS InterfaceName, [Endpoint], [Timeout], LastAlert, RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount
+		R.Id, R.Name, InterfaceId, I.Name AS InterfaceName, [Endpoint], [Timeout], LastAlert, RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount,
+		DaysOfWeek, DaysOfMonth
 	FROM
 		[Rule] R
 	INNER JOIN
@@ -620,11 +641,25 @@ BEGIN
 	WHERE
 		([Enabled] = 1) AND
 		(ExecutionTime > @LastQueryTime) AND 
-		(ExecutionTime < CONVERT(TIME, @Now))
+		(ExecutionTime < CONVERT(TIME, @Now)) AND
+
+		-- note: in default SQL server the week starts with Sunday = 1
+		(((DaysOfWeek & 1 > 0) AND (@Weekday = 2)) OR 
+		 ((DaysOfWeek & 2 > 0) AND (@Weekday = 3)) OR
+		 ((DaysOfWeek & 4 > 0) AND (@Weekday = 4)) OR
+		 ((DaysOfWeek & 8 > 0) AND (@Weekday = 5)) OR
+		 ((DaysOfWeek & 16 > 0) AND (@Weekday = 6)) OR
+		 ((DaysOfWeek & 32 > 0) AND (@Weekday = 7)) OR
+		 ((DaysOfWeek & 64 > 0) AND (@Weekday = 1)) OR
+		 ((DaysOfWeek IS NULL) OR (DaysOfWeek = 0))) AND 
+
+		((CHARINDEX(@DayOfMonth, DaysOfMonth) > 0) OR 
+		 (DaysOfMonth IS NULL) OR
+		 (DaysOfMonth = ''))
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleInsert]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleInsert]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -641,21 +676,23 @@ CREATE PROCEDURE [dbo].[RuleInsert]
 	@Enabled BIT,
 	@ExecutionTime TIME(7),
 	@LimitMode INT,
-	@TransactionCount INT
+	@TransactionCount INT,
+	@DaysOfWeek INT,
+	@DaysOfMonth NVARCHAR(100)
 AS
 BEGIN
 	SET NOCOUNT ON;
 
 	INSERT INTO [Rule]
-		(Name, InterfaceId, [Endpoint], [Timeout], RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount)
+		(Name, InterfaceId, [Endpoint], [Timeout], RepeatAfter, [Enabled], ExecutionTime, LimitMode, TransactionCount, DaysOfWeek, DaysOfMonth)
 	VALUES
-		(@Name, @InterfaceId, @Endpoint, @Timeout, @RepeatAfter, @Enabled, @ExecutionTime, @LimitMode, @TransactionCount)
+		(@Name, @InterfaceId, @Endpoint, @Timeout, @RepeatAfter, @Enabled, @ExecutionTime, @LimitMode, @TransactionCount, @DaysOfWeek, @DaysOfMonth)
 
 	SELECT CAST(SCOPE_IDENTITY() AS INT)
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[RuleUpdate]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[RuleUpdate]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -673,7 +710,9 @@ CREATE PROCEDURE [dbo].[RuleUpdate]
 	@Enabled BIT,
 	@ExecutionTime TIME(7),
 	@LimitMode INT,
-	@TransactionCount INT
+	@TransactionCount INT,
+	@DaysOfWeek INT,
+	@DaysOfMonth NVARCHAR(100)
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -683,13 +722,380 @@ BEGIN
 	SET
 		Name = @Name, InterfaceId = @InterfaceId, [Endpoint] = @Endpoint,
 		[Timeout] = @Timeout, RepeatAfter = @RepeatAfter, [Enabled] = @Enabled,
-		ExecutionTime = @ExecutionTime, LimitMode = @LimitMode, TransactionCount = @TransactionCount
+		ExecutionTime = @ExecutionTime, LimitMode = @LimitMode, TransactionCount = @TransactionCount,
+		DaysOfWeek = @DaysOfWeek, DaysOfMonth = @DaysOfMonth
 	WHERE
 		Id = @RuleId
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[TransactionDelete]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[StatisticAreaDeleteEntry]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Delete the statisticArea with the given id.
+-- =============================================
+CREATE PROCEDURE [dbo].[StatisticAreaDeleteEntry]
+	@Id INT
+AS
+BEGIN	
+	DELETE FROM	Statistic WHERE [StatisticAreaId] = @Id
+	DELETE FROM StatisticArea WHERE [Id] = @Id
+END
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticAreaInsertOrUpdate]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================================================
+-- Creates a new statisticArea if @Id is 0 or update an existing statisticArea.
+-- =============================================================================
+CREATE PROCEDURE [dbo].[StatisticAreaInsertOrUpdate]
+	@Id INT,
+	@InstallationId UNIQUEIDENTIFIER,
+	@StatisticAreaName NVARCHAR(255),
+	@NewId INT OUTPUT
+AS
+BEGIN	
+	IF (@Id = 0)
+	BEGIN
+		INSERT INTO StatisticArea
+			([InstallationId], [StatisticAreaName]) 
+		VALUES
+			(@InstallationId, @StatisticAreaName)
+		
+		SET @NewId = SCOPE_IDENTITY()
+	END
+	ELSE
+	BEGIN
+		UPDATE
+			StatisticArea
+		SET
+			[InstallationId] = @InstallationId,
+			[StatisticAreaName] = @StatisticAreaName
+		WHERE
+			[Id] = @Id
+		
+		SET @NewId = @Id
+	END
+END
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticAreasGetAll]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- ========================================================
+-- Returns all statistic areas for the given installation.
+-- ========================================================
+CREATE PROCEDURE [dbo].[StatisticAreasGetAll]
+	@InstallationId UNIQUEIDENTIFIER
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	SELECT
+		[Id], [StatisticAreaName]
+	FROM
+		StatisticArea
+	WHERE
+		[InstallationId] = @InstallationId
+END
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticDeleteEntry]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Delete the statistic with the given id.
+-- =============================================
+CREATE PROCEDURE [dbo].[StatisticDeleteEntry]
+	@Id INT
+AS
+BEGIN	
+	DELETE FROM Statistic WHERE [Id] = @Id
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticGetById]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Returns the statistic with the given id.
+-- =============================================
+CREATE PROCEDURE [dbo].[StatisticGetById]
+	@Id INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	SELECT
+		[Id], [Name], [DiagramType], [Height], [Width], [Sql], [DataJson], [LegendLabels], [StatisticAreaId]
+	FROM
+		Statistic
+	WHERE
+		[Id] = @Id
+END
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticInsertOrUpdate]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- ========================================================================
+-- Creates a new statistic if @Id is 0 or update an existing statistic.
+-- ========================================================================
+CREATE PROCEDURE [dbo].[StatisticInsertOrUpdate]
+	@Id INT,
+	@InstallationId UNIQUEIDENTIFIER,
+	@StatisticName NVARCHAR(255),
+	@DiagramType INT,
+	@Height INT, 
+	@Width INT,
+	@SqlScript NVARCHAR(MAX),
+	@DataJson NVARCHAR(MAX),
+	@LegendLabels NVARCHAR(255),
+	@StatisticAreaId INT,
+	@NewId INT OUTPUT
+AS
+BEGIN
+	DECLARE @OldSqlScript NVARCHAR(MAX);
+	DECLARE @OldDataJson NVARCHAR(MAX);
+	DECLARE @TempTable Table (Label NVARCHAR(100) NOT NULL, FirstValue NVARCHAR(50) NOT NULL, SecondValue NVARCHAR(50) NOT NULL DEFAULT '');
+
+
+	SET @OldDataJson = @DataJson;
+
+	IF (@Id = 0)
+	BEGIN		
+		IF (@SqlScript like '%SecondValue%')
+		BEGIN			
+			INSERT INTO @TempTable (Label, FirstValue, SecondValue) EXEC sp_executesql @SqlScript;
+			
+			SET @DataJson = (SELECT '[' +  STUFF((SELECT ',{"Label":"' + CAST(Label AS VARCHAR(50)) +
+				'","FirstValue":"' + CAST(FirstValue AS VARCHAR(50)) +
+				'","SecondValue":"' + CAST(SecondValue AS VARCHAR(50)) + '"}'
+			FROM @TempTable
+			FOR XML PATH(''),TYPE).value('.','NVARCHAR(MAX)'),1,1,'') + ']');
+		END
+		ELSE
+		BEGIN
+			INSERT INTO @TempTable (Label, FirstValue) EXEC sp_executesql @SqlScript;
+
+			SET @DataJson = (SELECT '[' +  STUFF((SELECT ',{"Label":"' + CAST(Label AS VARCHAR(50)) +
+				'","FirstValue":"' + CAST(FirstValue AS VARCHAR(50)) + '"}'
+			FROM @TempTable
+			FOR XML PATH(''),TYPE).value('.','NVARCHAR(MAX)'),1,1,'') + ']');
+		END
+
+		DECLARE @SortOrder INT
+		SELECT
+			@SortOrder = ISNULL(MAX(SortOrder), 0) + 1
+		FROM
+			Statistic
+		WHERE
+			StatisticAreaId = @StatisticAreaId
+
+		INSERT INTO Statistic
+			([InstallationId], [Name], [DiagramType], [Height], [Width], [Sql], [DataJson], [LegendLabels], [StatisticAreaId],[SortOrder] )
+		VALUES
+			(@InstallationId, @StatisticName, @DiagramType, @Height, @Width, @SqlScript, @DataJson, @LegendLabels, @StatisticAreaId, @SortOrder)
+		
+		SET @NewId = SCOPE_IDENTITY()
+	END
+	ELSE
+	BEGIN		
+		SET @OldSqlScript = (SELECT [Sql] FROM [Statistic] WHERE [Id] = @Id);
+
+		IF(@OldSqlScript != @SqlScript)
+		BEGIN
+			IF (@SqlScript like '%SecondValue%')
+			BEGIN			
+				INSERT INTO @TempTable (Label, FirstValue, SecondValue) EXEC sp_executesql @SqlScript;
+			
+				SET @DataJson = (SELECT '[' +  STUFF((SELECT ',{"Label":"' + CAST(Label AS VARCHAR(50)) +
+					'","FirstValue":"' + CAST(FirstValue AS VARCHAR(50)) +
+					'","SecondValue":"' + CAST(SecondValue AS VARCHAR(50)) + '"}'
+				FROM @TempTable
+				FOR XML PATH(''),TYPE).value('.','NVARCHAR(MAX)'),1,1,'') + ']');
+			END
+			ELSE
+			BEGIN
+				INSERT INTO @TempTable (Label, FirstValue) EXEC sp_executesql @SqlScript;
+
+				SET @DataJson = (SELECT '[' +  STUFF((SELECT ',{"Label":"' + CAST(Label AS VARCHAR(50)) +
+					'","FirstValue":"' + CAST(FirstValue AS VARCHAR(50)) + '"}'
+				FROM @TempTable
+				FOR XML PATH(''),TYPE).value('.','NVARCHAR(MAX)'),1,1,'') + ']');
+			END
+		END
+
+		UPDATE
+			Statistic
+		SET
+			[InstallationId] = @InstallationId,
+			[Name] = @StatisticName,
+			[DiagramType] = @DiagramType,
+			[Height] = @Height,
+			[Width] = @Width,
+			[Sql] = @SqlScript,
+			[DataJson] = @DataJson,
+			[LegendLabels] = @LegendLabels,
+			[StatisticAreaId] = @StatisticAreaId
+		WHERE
+			[Id] = @Id
+		
+		SET @NewId = @Id
+	END
+END
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticsGetAll]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- ===================================================
+-- Returns all statistics for the given installation.
+-- ===================================================
+CREATE PROCEDURE [dbo].[StatisticsGetAll]
+	@InstallationId UNIQUEIDENTIFIER
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	SELECT
+		[Id], [Name], [DiagramType], [Height], [Width], [DataJson], [LegendLabels], [StatisticAreaId]
+	FROM
+		Statistic
+	WHERE
+		[InstallationId] = @InstallationId
+	ORDER BY [SortOrder];
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticUpdateAllDataJson]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- ============================================================
+-- Refresh all cached statistic queries.
+-- ============================================================
+CREATE PROCEDURE [dbo].[StatisticUpdateAllDataJson]
+AS
+BEGIN
+
+	DECLARE @statisticId INT;
+	DECLARE @dataJson NVARCHAR(MAX);
+	DECLARE @sqlQuery NVARCHAR(MAX);
+	DECLARE @tempTable Table (Label NVARCHAR(100) NOT NULL, FirstValue INT NOT NULL, SecondValue INT NOT NULL DEFAULT '');
+	
+	DECLARE statisticCursor CURSOR FOR SELECT Id, [Sql] FROM Statistic;
+
+	OPEN statisticCursor
+	FETCH NEXT FROM statisticCursor INTO @statisticId, @sqlQuery
+
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		DELETE FROM @tempTable
+
+		IF (@sqlQuery like '%SecondValue%')
+		BEGIN
+			INSERT INTO @tempTable (Label, FirstValue, SecondValue) EXEC sp_executesql @sqlQuery;
+			
+			SET @dataJson = (SELECT '[' +  STUFF((SELECT ',{"Label":"' + CAST(Label AS VARCHAR(50)) +
+				'","FirstValue":"' + CAST(FirstValue AS VARCHAR(50)) +
+				'","SecondValue":"' + CAST(SecondValue AS VARCHAR(50)) + '"}'
+			FROM @TempTable
+			FOR XML PATH(''),TYPE).value('.','NVARCHAR(MAX)'),1,1,'') + ']');
+		END
+		ELSE
+		BEGIN
+			INSERT INTO @tempTable (Label, FirstValue) EXEC sp_executesql @sqlQuery;
+
+			SET @dataJson = (SELECT '[' +  STUFF((SELECT ',{"Label":"' + CAST(Label AS VARCHAR(50)) +
+				'","FirstValue":"' + CAST(FirstValue AS VARCHAR(50)) + '"}'
+			FROM @TempTable
+			FOR XML PATH(''),TYPE).value('.','NVARCHAR(MAX)'),1,1,'') + ']');
+		END
+
+		UPDATE
+			Statistic
+		SET
+			DataJson = @dataJson
+		WHERE
+			Id = @statisticId
+
+		FETCH NEXT FROM statisticCursor INTO @statisticId, @sqlQuery
+	END   
+
+	CLOSE statisticCursor   
+	DEALLOCATE statisticCursor
+END
+GO
+/****** Object:  StoredProcedure [dbo].[StatisticUpdateSortOrder]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- ===========================================================================
+-- Change sort order
+-- ===========================================================================
+CREATE PROCEDURE [dbo].[StatisticUpdateSortOrder] 
+	@Id INT,
+	@SortOrder INT
+
+AS
+BEGIN
+	SET NOCOUNT ON;
+	UPDATE Statistic
+	SET SortOrder = @SortOrder
+	WHERE Id = @Id
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[test_InsertTestData]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[test_InsertTestData]
+AS
+BEGIN
+
+	DECLARE @i INT = 0
+	DECLARE @InsterfaceId INT
+	DECLARE @EndPoint NVARCHAR(255)
+	DECLARE @Success BIT
+
+	WHILE (@i < 10000)
+	BEGIN
+		SET @InsterfaceId = ROUND(((102 - 80 -1) * RAND() + 80), 0)
+		SET @EndPoint = 'Endpoint_' + CONVERT(NVARCHAR, ROUND(((20 - 1 -1) * RAND() + 1), 0))
+		SET @Success = CASE WHEN RAND() > 0.9 THEN 0 ELSE 1 END
+
+		INSERT INTO [Transaction]
+			([Timestamp], InterfaceId, [Endpoint], Success, [Message], InstanceName)
+		VALUES
+			(GETDATE(), @InsterfaceId, @EndPoint, @Success, 'Message', 'Instanz')
+
+		SET @i = @i + 1
+	END
+
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[TransactionDelete]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -707,31 +1113,55 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[TransactionGetHistoryFromInterfaceEndpoint]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[TransactionDeleteAll]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
--- =============================================
--- Returns the 20 last Transactions From a Interface/Endpoint combination
--- =============================================
+-- ===========================================================================
+-- Delete all Transactions
+-- ===========================================================================
+CREATE PROCEDURE [dbo].[TransactionDeleteAll]
+	@InterfaceId INT,
+	@Endpoint NVARCHAR(255)
+AS
+BEGIN
+	SET NOCOUNT ON;
+	DELETE FROM [Transaction] WHERE (InterfaceId = @InterfaceId) AND ([Endpoint] = @Endpoint)
+	DELETE FROM TransactionCache WHERE (InterfaceId = @InterfaceId) AND ([Endpoint] = @Endpoint)
+END
+GO
+/****** Object:  StoredProcedure [dbo].[TransactionGetHistoryFromInterfaceEndpoint]    Script Date: 22.09.2017 15:45:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =========================================================================
+-- Returns the 20 last transactions from an interface/endpoint combination
+-- that occured before a given timestamp.
+-- =========================================================================
 CREATE PROCEDURE [dbo].[TransactionGetHistoryFromInterfaceEndpoint]
 	@InterfaceId int,
 	@Endpoint varchar(255),
 	@TimeStamp DateTime
 AS
-BEGIN	
+BEGIN
 	SET NOCOUNT ON;
-	SELECT TOP(20) [Timestamp], InterfaceId, [Endpoint], Success, [Message] FROM [Transaction]
-	WHERE InterfaceId = @InterfaceId
-	AND Endpoint =  @Endpoint
-	AND Timestamp <  @TimeStamp
-	ORDER BY Timestamp DESC
-	
+
+	SELECT TOP(20)
+		[Timestamp], InterfaceId, [Endpoint], Success, [Message]
+	FROM
+		[Transaction]
+	WHERE
+		(InterfaceId = @InterfaceId) AND
+		([Endpoint] =  @Endpoint) AND
+		([Timestamp] <  @TimeStamp)
+	ORDER BY
+		[Timestamp] DESC, Id DESC
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[TransactionGetOverview]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[TransactionGetOverview]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -756,7 +1186,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[TransactionInsert]    Script Date: 08.02.2017 08:37:55 ******/
+/****** Object:  StoredProcedure [dbo].[TransactionInsert]    Script Date: 22.09.2017 15:45:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -770,7 +1200,7 @@ CREATE PROCEDURE [dbo].[TransactionInsert]
 	@InterfaceId INT,				-- ...or @InterfaceId must be specified!
 	@Endpoint NVARCHAR(255),
 	@Success BIT,
-	@Message NVARCHAR(255),
+	@Message NVARCHAR(1023),
 	@Now DATETIME
 AS
 BEGIN
@@ -781,6 +1211,9 @@ BEGIN
 	BEGIN
 		SELECT @InterfaceId = InterfaceId, @InstanceName = Name FROM Instance WHERE Id = @InstanceId
 	END
+
+	-- if there is no instance, the transaction is created for a violated rule
+	DECLARE @RuleViolation BIT = CASE WHEN @InstanceId IS NULL THEN 1 ELSE 0 END	
 
 	IF (@InterfaceId IS NOT NULL)
 	BEGIN
@@ -802,7 +1235,7 @@ BEGIN
 		-- check whether an alert is configured and an entry in MailQueue should be made
 		IF (@Success = 0)
 		BEGIN
-			EXEC MailQueueCheckIfInsert @InterfaceId, @Endpoint, @Message
+			EXEC MailQueueCheckIfInsert @InterfaceId, @Endpoint, @Message, @RuleViolation
 		END
 
 		-- insert transaction history in table Transaction

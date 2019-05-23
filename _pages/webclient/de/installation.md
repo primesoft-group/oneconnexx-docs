@@ -6,49 +6,29 @@ permalink: "webclient/de/installation/"
 
 ### Übersicht über die Installationen
 
-In der Übersicht über die Installationen werden alle Installationen angezeigt. Eine Installation besteht aus folgenden Komponenten:
+Auf dieser Seite werden alle OneConnexx Installationen auf dem lokalen System angezeigt, sobald diese einmal gestartet wurden.
 
-![X]({{ site.baseUrl }}/assets/content-images/webclient/de/installation.png "Übersicht Installtionen")  
+![X]({{ site.baseUrl }}/assets/content-images/webclient/de/installationsOverview.png "Übersicht Installtionen")  
 
 
-* Name:  
-Der Name der Installtion, kann nach belieben gewählt werden  
-	
-* Server:  
-Der Name des IIS Webservers auf welchem der Service installiert ist.  
-	
-* Port:  
-Der Port über welchen der Service Ansprechbar ist.  
-	
-* Status:  
-Zeigt an ob die gelistete Installation momentan aktiv und verbunden ist.  
-	
-* SQL-Datenbank:  
-Zeigt an, ob die hinterlegte Datenbank erreichbar ist.  
-	
-* Windows Service:  
-Zeigt an, ob der Service bereits gestartet ist.
-	
-Ein klick auf Name, Server oder Port lädt die Installation	
-	
- Steuerschaltlächen
+* __Name:__ Der Name der Installation kann nach belieben gewählt werden.
+* __Port:__ Der Port über welchen der Service ansprechbar ist, dieser wird automatisch ermittelt und kann nur in der OneConnexx Konfigurationsdatei der entsprechenden Installation geändert werden.
+* __Status:__ Zeigt an, ob die Installation momentan gestartet und verbunden ist.
+* __SQL-Datenbank:__ Zeigt an, ob eine Datenbank konfiguriert wurde und ob diese erreichbar ist.
+* __Windows Service:__ Zeigt an, ob der Windows-Service gestartet ist, und ermöglicht es den Service manuell zu starten oder zu stoppen.
 
-#### 1. Installation Hinzufügen  
+Ein Klick auf Name oder Port lädt die Installation.
+	
 
-Ein Klick auf das Plus öffenet den folgenden Dialog:
+#### 1. Installation bearbeiten
 
- ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion hinzufügen") 
+Mit einem Klick auf das "Bearbeiten" Symbol öffnet sich folgender Dialog:
+
+ ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
  
- Beim Hinzufügen einer Insatallation müssen nebst Namen, Server und Port auch noch zwei weitere Parameter angegeben werden:
+Es können nur die Parameter __Name__ und __Verbindungszeichenfolge__ angepasst werden.
+Mit der Schaltfläche "Verbindung prüfen" kann die Verbindung zur SQL-Datenbank direkt getestet werden.
  
- * Service  
- der Name des Service über welchen er in den Diensten gefunden werden kann.
+#### 2. Installation löschen
  
- * Verbindungszeichenfolge  
- Die Verbindungszeichenfolge (Connectionstring) für die SQL-Datenbank (falls vorhanden). Mit dem Button unter dem Eingabefeld kann die Verbindung direkt getestet werden.
-
-#### 2. Installation Bearbeiten/Löschen    
-
- Mit diesen beiden Schaltflächen kann eine Installtion bearbeitet/gelöscht werden.
- 
-
+Mit einem Klick auf das "Löschen" Symbol kann eine Installation aus der Liste entfernt werden. Das Entfernen einer Installation ist nur möglich, wenn der entsprechende OneConnexx nicht gestartet ist.
