@@ -44,13 +44,13 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
 
   Neu hinzugekommen ist der Button "Logik starten mit Parametern".
   
-  ##### Name
+  :arrow_forward: Name  
   Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
   
-  ##### Add-In
+  :arrow_forward: **Add-In**  
   Der Typ des Add-Ins.
   
-  * Dateipfad  
+  **Dateipfad**  
   Der Pfad, in welchem Verzeichnis des Hosts die Add-In Daten liegen.
   
   * Aktiv  
