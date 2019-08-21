@@ -52,6 +52,8 @@ sc config OneConnexx.Alerting obj= "<Benutzername>" password= "<Passwort>"
 * \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzername* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzername*
 * Wichtig ist der Abstand nach <code>obj=</code> bzw. <code>password=</code>
 
+Der Domänenbenutzer muss Modify- und Write-Rechte auf das logs Unterverzeichnis haben.
+
 ### Konfiguration
 
 ##### OneConnexx.AlertingService.exe.config
