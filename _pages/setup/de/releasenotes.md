@@ -4,6 +4,11 @@ title: Versionshinweise
 permalink: "setup/de/releasenotes/"
 ---
 
+#### vNext
+
+* __Neu__ FileCopy Add-In: Parameter sourceTimeFilter auch für FILE und SFTP Protokoll.
+
+
 #### 1.4.5
 
 * __Neu__ Neues Add-In List2Csv um SharePoint Online Listen in CSV Dateien zu exportieren.
