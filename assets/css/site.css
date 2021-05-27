@@ -53,3 +53,8 @@ body {
 .subelement{
 	padding-left: 25px !important;
 }
+
+a.lang {
+	padding-left: 5px;
+	padding-right: 5px;
+}
