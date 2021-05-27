@@ -5,6 +5,17 @@ title: OneConnexx Docs
 language: de
 ---
 
+<script>
+    var url_de = "{{ site.baseurl }}/overview/de/overview/";
+    var url_en = "{{ site.baseurl }}/overview/en/overview/";
+    var lang = navigator.language ? navigator.language : navigator.userLanguage;
+    if (lang && lang.substr(0, 2) === "en") {
+        location.href = "{{ site.baseurl }}/en";
+    } else {
+        location.href = "{{ site.baseurl }}/de";
+    }
+</script>
+
 <div class="jumbotron theme-light">
     <div class="container">
         <div class="row">
@@ -22,11 +33,3 @@ language: de
         </div>
     </div>
 </div>
-
-<script>
-    var url_de = "{{ site.baseurl }}/overview/de/overview/";
-    var url_en = "{{ site.baseurl }}/overview/en/overview/";
-    var lang = navigator.language ? navigator.language : navigator.userLanguage;
-    console.log(lang);
-
-</script>
