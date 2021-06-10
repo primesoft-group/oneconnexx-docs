@@ -2,6 +2,7 @@
 layout: page
 title: Standard Add-Ins
 permalink: "addins/de/standardaddins/"
+language: de
 ---
   
 Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten. Sowohl die Liste wie auch der Funktionsumfang der einzelnen Add-Ins werden ständig erweitert.<br /><br />

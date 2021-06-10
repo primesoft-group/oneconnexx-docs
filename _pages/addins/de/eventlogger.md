@@ -2,6 +2,7 @@
 layout: page
 title: EventLogger
 permalink: "addins/de/eventlogger/"
+language: de
 ---
 
 Das EventLogger Add-In schreibt alle mit dem Ereignis übergebenen Parameter ins Logfile.<br /><br />

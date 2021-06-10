@@ -2,6 +2,7 @@
 layout: page
 title: ListToCSV
 permalink: "addins/de/list2csv/"
+language: de
 ---
 
 Mit dem ListToCSV Add-In können Sharepoint-Online Listen oder Views in eine CSV-Datei exportiert werden. 

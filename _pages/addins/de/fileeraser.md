@@ -2,6 +2,7 @@
 layout: page
 title: FileEraser
 permalink: "addins/de/fileeraser/"
+language: de
 ---
 
 Das FileErase Add-In löscht oder verschiebt Dateien in einem bestimmten Verzeichnis.<br /><br />

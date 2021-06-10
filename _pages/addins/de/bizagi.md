@@ -2,6 +2,7 @@
 layout: page
 title: Bizagi
 permalink: "addins/de/bizagi/"
+language: de
 ---
 
 Das Bizagi Add-In dient zur Anbindung des Bizagi BPMN an den OneConnexx.<br />Das Bizagi Add-In tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.<br /><br />

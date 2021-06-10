@@ -2,6 +2,7 @@
 layout: page
 title: Installation
 permalink: "webclient/de/installation/"
+language: de
 ---
 
 ### Übersicht über OneConnexx Instanzen

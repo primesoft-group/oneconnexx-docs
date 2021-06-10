@@ -2,6 +2,7 @@
 layout: page
 title: FileReconstructor
 permalink: "addins/de/filereconstructor/"
+language: de
 ---
 
 Das FileReconstructor Add-In liest eine existierende Datei ein, formt zeilenweise den Inhalt anhand konfigurierten Regeln um und schreibt die rekonstruierten Zeilen in eine neue Datei.<br /><br />

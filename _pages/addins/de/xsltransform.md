@@ -2,6 +2,7 @@
 layout: page
 title: XSLTransform
 permalink: "addins/de/xsltransform/"
+language: de
 ---
 
 Das XMLTransform Add-In transformiert XML Dateien<br /><br />

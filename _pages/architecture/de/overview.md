@@ -2,6 +2,7 @@
 layout: page
 title: Architektur
 permalink: "architecture/de/overview/"
+language: de
 ---
 
 ## Übersicht
@@ -90,7 +91,7 @@ hat eine eigene Queue für Ereignisse. Eine parallele Verarbeitung gibt es nur z
 
 ![x]({{ site.baseurl }}/assets/content-images/architecture/de/webapplication.png "Web-Applikation")
 
-Der Administration und Konfiguration des OneConnexx-Services erfolgt über eine .NET MVC Web-Applikation.
+Die Administration und Konfiguration des OneConnexx-Services erfolgt über eine .NET MVC Web-Applikation.
 Die Web-Applikation wird in Microsoft IIS gehostet und verwendet «Windows Authentication» für die Berechtigungsprüfung.
 Mehreren Instanzen des OneConnexx-Services können durch eine Instanz der Web-Applikation administriert werden.
 Die Kommunikation mit den Service-Instanzen erfolgt dabei über .NET Remoting.

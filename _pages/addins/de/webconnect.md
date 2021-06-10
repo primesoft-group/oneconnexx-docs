@@ -2,6 +2,7 @@
 layout: page
 title: WebConnect
 permalink: "addins/de/webconnect/"
+language: de
 ---
  
 Das WebConnect Add-In funktioniert als WebAPI-Server, welcher von externen Applikation aufgerufen werden kann um Aktionen in OneConnexx zu starten. Das WebConnect Add-In löst einen Event aus mit dem Instanznamen und dem Event-Namen aus der URL. Als Parameter kann eine OneMessage an andere Add-Ins mitgegeben werden.<br /><br />

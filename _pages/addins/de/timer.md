@@ -2,6 +2,7 @@
 layout: page
 title: Timer
 permalink: "addins/de/timer/"
+language: de
 ---
 
 Das Timer Add-In ist das meistverwendete Add-In. Das Timer Add-In löst Ereignisse zu vordefinierten Zeitpunkten aus.<br /><br />

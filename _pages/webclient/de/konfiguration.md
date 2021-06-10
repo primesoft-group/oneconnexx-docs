@@ -2,6 +2,7 @@
 layout: page
 title: Konfiguration
 permalink: "webclient/de/konfiguration/"
+language: de
 ---
 
 Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In Instanzen und deren Details 

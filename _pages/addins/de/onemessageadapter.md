@@ -2,6 +2,7 @@
 layout: page
 title: OneMessageAdapter
 permalink: "addins/de/onemessageadapter/"
+language: de
 ---
 
 Das Add-In OneMessageAdapter erstellt aus einem Ereignis eine OneMessage, die dann z.B. an das _OneOffixxDocumentCreator_ oder _Bizagi_ Add-In weitergeleitet werden kann.

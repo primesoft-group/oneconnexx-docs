@@ -7,70 +7,73 @@ language: en
 
 ## OneConnexx - Enterprise Service Bus (ESB)
 
-ENGLISCH!!! Der OneConnexx verbindet die unterschiedlichsten Applikationen und System sowohl innerhalb Ihrer IT Infrastruktur als auch mit den Systemen Ihrer Kunden bzw. Partner.
-Der OneConnexx unterstützt Sie zudem mit diversen prozessunterstützenden Funktionen bei der Abwicklung Ihrer Geschäftsprozesse.
+OneConnexx connects a wide variety of applications and systems both within your IT infrastructure and with the systems of your customers or partners.
+OneConnexx also supports you with various process-supporting functions in handling your business processes.
 
 ![x]({{ site.baseurl }}/assets/content-images/overview/de/overview.png "Übersicht")
 
-## Konnektoren
+## Connectors
 
-Im Gegensatz zu anderen ESBs, bei denen die Umsysteme angepasst werden müssen, damit diese mit dem ESB kommunizieren können, stellt der OneConnexx Konnektoren zur Verfügung. Im obigen Diagramm sind die Konnektoren durch die grünen Pfeile dargestellt. Konnektoren sind in OneConnexx durch Add-Ins realisiert.
-Für die gebräuchlichsten Kommunikationsprotokolle und einige Fremdsysteme sind in OneConnexx bereits Konnektoren enthalten (Liste nicht abschliessend):
+In contrast to other ESBs, where the peripheral systems have to be adapted so that they can communicate with the ESB, OneConnexx provides connectors. 
+In the diagram above, the connectors are represented by the green arrows. Connectors are implemented in OneConnexx using add-ins. OneConnexx already contains connectors for the most common communication protocols and some third-party systems (list is not exhaustive):
 
-* Datenbank (MS SQL Server)
-* Dateisystem
+* Database (MS SQL Server)
+* File system
 * FTP, SFTP, FTPS, WebDAV, Amazon S3
 * SOAP Web-Services
-* E-Mail (SMTP)
+* Email (SMTP)
 * LDAP / Active Directory
 * Microsoft SharePoint
 * Bizagi
 * OneOffixx
 
-## Prozessunterstützende Funktionen
+## Process-supporting functions
 
-Bei der Datenverarbeitung und Prozessabwicklung werden oft auch prozessunterstützende Funktionen benötigt. Dazu gehört z.B. das Starten eines Prozesses zu vordefinierten Zeitpunkten oder sobald eine Datei in einem überwachten Verzeichnis abgelegt wird. Aber auch Datentransformationen oder das Versenden von E-Mails gehören in diese Kategorie von Funktionen. 
-OneConnexx bietet bereits viele prozessunterstützende Funktionen als Add-Ins an (Liste nicht abschliessend):
+Process-supporting functions are often required in data processing and process management. This includes, for example, starting a process at predefined times or as soon as a file is stored in a monitored directory.
+But data transformations or the sending of e-mails also belong to this category of functions. OneConnexx already offers many process-supporting functions as add-ins (list is not exhaustive):
 
-* Timer (Interval, täglich, wöchentlich, monatlich, jährlich)
-* Verzeichnisse überwachen
-* E-Mails versenden
-* Dateien komprimieren / dekomprimieren
-* XSL Transformationen
-* Löschen von alten Dateien
-* Überwachen der Servererreichbarkeit (Ping)
+* Timer (interval, daily, weekly, monthly, yearly)
+* Monitor directories
+* Send emails
+* Compress / decompress files
+* XSL transformations
+* Delete old files
+* Monitoring server availability (ping)
 
-## Kundenspezifische Add-Ins
+## Custom add-ins
 
-Gründe für kundenspezifische Entwicklungen sind vielseitig. Kundenspezifische Add-Ins enthalten oftmals kundenspezifische Geschäftslogik wie Validierung von Daten oder spezielle Transformationen. Solche sind mit Standard Add-Ins und dynamischer Konfiguration kaum oder nur mit erheblichem Aufwand zu bewerkstelligen. Auch die Anbindung an spezielle Umsysteme kann eine kundenspezifische Entwicklung erfordern.
-Nebst den bereits vorhandenen Konnektoren und prozessunterstützenden Funktionen können wir ohne grossen Aufwand neue Add-Ins implementieren. Der Entwicklungsaufwand ist gering, da bei der Implementation auf eine Vielzahl von Basisfunktionen zurückgegriffen werden kann.
-Durch unser Framework profitieren neu entwickelte Add-Ins automatisch von folgenden Basisfunktionen:
+There are many reasons for customer-specific developments. Customer-specific add-ins often contain customer-specific business logic such as validation of data or special transformations.
+These can hardly be achieved with standard add-ins and dynamic configuration, or only with considerable effort. The connection to special peripheral systems can also require customer-specific development.
+In addition to the existing connectors and process-supporting functions, we can implement new add-ins with little effort. The development effort is low, since a large number of basic functions can be used during implementation.
+Thanks to our framework, newly developed add-ins automatically benefit from the following basic functions:
 
 * Logging
-* Überwachung der Ausführung
-* Verknüpfen von Add-Ins über Ereignisse
-* Konfiguration der Add-Ins über eine Webseite
+* Monitoring of executio
+* Linking add-ins with events
+* Configuration of add-ins using the administration web
  
-## Abbilden von Prozessen durch Verknüpfen von Add-Ins 
+## Mapping of processes by linking add-ins
 
-Durch Verknüpfen von Konnektoren und prozessunterstützenden Funktionen können komplexe Prozesse abgebildet werden. Ein möglicher Prozess wäre beispielsweise:
+By linking connectors and process-supporting functions, complex processes can be mapped. A possible process would be, for example:
 
 ![x]({{ site.baseurl }}/assets/content-images/overview/de/process.png "Prozess")
 
-Timer (z.B. am 1. jedes Monats) -> Exportieren von Benutzern aus dem Active Directory in eine CSV Datei -> Kopieren dieser CSV Datei auf einen FTP Server -> Informieren einer Person via E-Mail
+Timer (e.g. on the 1st of every month) -> Exporting users from the Active Directory to a CSV file -> Copying this CSV file to an FTP server -> Informing a person via email
 
-## Administration und Management
+## Administration and Management
 
-Die Administration und Konfiguration des OneConnexx erfolgt über eine moderne Web-Applikation die mit jedem modernen Browser bedient werden kann. Die OneConnexx Web-Administration unterstützt sowohl bei der Konfiguration als auch im Betrieb bei der Auswertung der Log- und der Monitoringdaten.
+Administration and configuration of OneConnexx takes place via a modern web application that can be operated with any modern browser. OneConnexx web administration supports you during configuration and operation with 
+evaluation of log and monitoring data.
 
-#### Add-Ins konfigurieren
+#### Configure add-ins
 
-Add-Ins werden in der OneConnexx Web-Administration hinzugefügt, konfiguriert oder gelöscht. Add-Ins können ausserdem miteinander verknüpft werden. Die Web-Administration unterstützt den Benutzer dabei mit einer kurzen Beschreibung der Add-In Parameter und sorgt für eine fehlerfreie Konfiguration.
+Add-ins are added, configured or deleted in the OneConnexx web administration. Add-ins can also be linked to one another. The web administration supports the user with a short description of the add-in parameters 
+and ensures error-free configuration.
 
 #### Log
 
-Bei der Analyse von Problemen oder beim Umsetzen neuer Prozesse sind umfangreiche Protokolldateien unverzichtbar. Die Web-Administration bietet einerseits eine Echtzeitansicht und andererseits eine Auswertung der Vergangenheit mit detaillierten Filtermöglichkeiten.
+When analyzing problems or implementing new processes, extensive log files are essential. The web administration offers, on one hand, a real-time view and, on the other hand, an view in the past with detailed filter options.
 
-#### Überwachung und Alarmierung
+#### Monitoring and alerting
 
-Die fehlerfreie Ausführung der konfigurierten Prozesse kann durch vielfältige Regeln überwacht werden. Es können E-Mails definiert werden, die bei Verletzung einer Regel an vordefinierte Empfänger versendet werden.
+The error-free execution of the configured processes can be monitored by a variety of rules. E-mails can be defined that are sent to predefined recipients if a rule is violated.

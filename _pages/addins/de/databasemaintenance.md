@@ -2,6 +2,7 @@
 layout: page
 title: DatabaseMaintenance
 permalink: "addins/de/databasemaintenance/"
+language: de
 ---
 
 Das DatabaseMaintenance Add-In erneuert die Inidizes einer Datenbank, um so die Performance zu verbessern. Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keinen SQL Server Agent beinhaltet.<br /><br />

@@ -2,6 +2,7 @@
 layout: page
 title: OneOffixxDocumentCreator
 permalink: "addins/de/oneoffixxdocumentcreator/"
+language: de
 ---
 
 Das Add-In OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "OneOffixxDocumentCreationServer" (OODCS) Dokumente im CI/CD des Kunden.<br /><br />

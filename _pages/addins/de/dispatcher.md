@@ -2,6 +2,7 @@
 layout: page
 title: Dispatcher
 permalink: "addins/de/dispatcher/"
+language: de
 ---
 
 Das Dispatcher Add-In löst aufgrund einer SQL Abfrage Ereignisse aus. Pro Datensatz im Ergebnis der SQL Abfrage wird ein Ereignis mit den zurückgegebenen Spalten als Parameter ausgelöst.<br /><br />

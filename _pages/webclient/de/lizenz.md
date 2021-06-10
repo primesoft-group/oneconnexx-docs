@@ -2,6 +2,7 @@
 layout: page
 title: Lizenz
 permalink: "webclient/de/lizenz/"
+language: de
 ---
 
 ## ToDo

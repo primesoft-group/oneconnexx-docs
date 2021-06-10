@@ -2,6 +2,7 @@
 layout: page
 title: Log
 permalink: "webclient/de/log/"
+language: de
 ---
 ## Echtzeit
 

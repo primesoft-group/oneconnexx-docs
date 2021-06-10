@@ -2,6 +2,7 @@
 layout: page
 title: TextReplace
 permalink: "addins/de/textreplace/"
+language: de
 ---
 
 Das TextReplace Add-In kann verwendet werden um in einer Textdatei bestimmte Zeichenfolgen zu ersetzen. Dabei wird die Datei zeilenweise eingelesen und die zu ersetzenden Zeichenfolgen können über Reguläre Ausdrücke definiert werden. Ausserdem kann der Zeichensatz einer Textdatei konvertiert werden.<br /><br />

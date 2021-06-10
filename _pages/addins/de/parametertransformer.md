@@ -2,6 +2,7 @@
 layout: page
 title: ParameterTransformer
 permalink: "addins/de/parametertransformer/"
+language: de
 ---
 
 Das ParameterTransformer Add-In transformiert Parameter zwischen zwei Add-In Instanzen.<br /><br />

@@ -2,6 +2,7 @@
 layout: page
 title: Alarmierung
 permalink: "webclient/de/alarmierung/"
+language: de
 ---
 ## Einleitung
 Die Alarmierung hängt eng mit den Regeln aus dem Bereich "Überwachung" zusammen.

@@ -2,6 +2,7 @@
 layout: page
 title: FileSystemWatcher
 permalink: "addins/de/filesystemwatcher/"
+language: de
 ---
 
 Das FileSystemWatcher Add-In dient zur Überwachung von Verzeichnissen und Dateien. Die Überwachung kann mit Hilfe eines Suchmusters auf bestimmte Dateien beschränkt werden. Überwacht werden kann das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien.<br /><br />

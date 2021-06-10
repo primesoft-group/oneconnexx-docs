@@ -2,6 +2,7 @@
 layout: page
 title: Anwendungsbeispiele
 permalink: "usecases/de/documentcreation/"
+language: de
 ---
 
 ## Dokumentendienst 

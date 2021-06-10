@@ -2,6 +2,7 @@
 layout: page
 title: MailSender
 permalink: "addins/de/mailsender/"
+language: de
 ---
 
 Das MailSender Add-In versendet E-Mails. Der Inhalt und Betreff der E-Mail werden als Parameter im Ereignis an das MailSender Add-In übermittelt. Das MailSender Add-In unterstützt Authentifizierung mittels Benutzername und Passwort über SSL/TLS.<br /><br />

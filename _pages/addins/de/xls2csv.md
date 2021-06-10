@@ -2,6 +2,7 @@
 layout: page
 title: Xls2Csv
 permalink: "addins/de/xls2csv/"
+language: de
 ---
 
 Das Xls2Csv Add-In konvertiert eine Excel-Datei (.xls oder .xlsx) in eine CSV Datei.

@@ -2,6 +2,7 @@
 layout: page
 title: FileCompressor
 permalink: "addins/de/filecompressor/"
+language: de
 ---
 
 Das FileCompressor Add-In komprimiert bestimmte Dateien aus einem bestimmten Verzeichnis und speichert diese dann in einem Archiv ab<br /><br />

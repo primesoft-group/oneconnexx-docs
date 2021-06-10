@@ -2,6 +2,7 @@
 layout: page
 title: MemoryConsumer
 permalink: "addins/de/memoryconsumer/"
+language: de
 ---
 
 Das MemoryConsumer Add-In dient einzig zum System- und Stresstest.<br /><br />

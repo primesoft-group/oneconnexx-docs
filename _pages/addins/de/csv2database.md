@@ -2,6 +2,7 @@
 layout: page
 title: Csv2Database
 permalink: "addins/de/csv2database/"
+language: de
 ---
 
 Das Csv2Database Add-In lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle.

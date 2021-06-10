@@ -2,6 +2,7 @@
 layout: page
 title: DatabaseToCSV
 permalink: "addins/de/databasetocsv/"
+language: de
 ---
 
 Das DatabaseToCSV Add-In erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.<br /><br />

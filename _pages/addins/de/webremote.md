@@ -2,6 +2,7 @@
 layout: page
 title: WebRemote
 permalink: "addins/de/webremote/"
+language: de
 ---
 
 Das WebRemote Add-In sendet eine Nachricht mit Namen des Events und den dazugehörigen Inhalt an einen bestimmten WebService.<br /><br />

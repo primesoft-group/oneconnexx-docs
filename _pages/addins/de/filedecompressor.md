@@ -2,6 +2,7 @@
 layout: page
 title: FileDecompressor
 permalink: "addins/de/filedecompressor/"
+language: de
 ---
 
 Das FileDecompressor Add-In entpackt Zip-, GZip-, oder Tar-Dateien<br /><br />

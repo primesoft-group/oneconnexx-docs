@@ -2,6 +2,7 @@
 layout: page
 title: FileCopy
 permalink: "addins/de/filecopy/"
+language: de
 ---
 
 Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein anderes System zu kopieren. Es werden die unterschiedlichsten Übertragungsprotokolle unterstützt.<br /><br />

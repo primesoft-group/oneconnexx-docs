@@ -2,6 +2,7 @@
 layout: page
 title: ServerCheck
 permalink: "addins/de/servercheck/"
+language: de
 ---
 
 Das ServerCheck Add-In überprüft die Erreichbarkeit von Servern. Es pingt alle konfigurierten Server an und versendet das Ergebnis in einem E-Mail.<br /><br />

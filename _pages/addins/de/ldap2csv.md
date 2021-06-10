@@ -2,6 +2,7 @@
 layout: page
 title: Ldap2CSV
 permalink: "addins/de/ldap2csv/"
+language: de
 ---
 
 Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und speichert diese in einer CSV-Datei.<br /><br />

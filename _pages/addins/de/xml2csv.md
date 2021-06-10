@@ -2,6 +2,7 @@
 layout: page
 title: Xml2Csv
 permalink: "addins/de/xml2csv/"
+language: de
 ---
 
 Das Xml2Csv Add-In schreibt bestimmte XML Nodes in eine CSV-Datei. Über die Parameter wird konfiguriert, welche Nodes übernommen werden und wohin die neue Datei gespeichert wird.<br /><br />
