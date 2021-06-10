@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Anwendungsbeispiele
+title: Use cases
 permalink: "usecases/en/documentcreation/"
 language: en
 ---
 
-## Document service 
+## Document creation service 
 
 In the document creation service area, OneConnexx offers some interesting functions.
 

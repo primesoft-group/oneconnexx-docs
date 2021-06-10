@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Architektur
+title: Architecture
 permalink: "architecture/en/overview/"
 language: en
 ---
