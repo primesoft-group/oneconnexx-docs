@@ -5,67 +5,63 @@ permalink: "webclient/en/konfiguration/"
 language: en
 ---
 
-Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In Instanzen und deren Details 
+The configuration page provides an overview of all configured add-in instances and their details
 
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/addInOverview.png "Add-In Overview")
 
-#### 1. OneConnexx Verwaltung
-  * **Einstellungen neu laden:** Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
-  * **Im Service speichern:** Die getätigten Änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
-  * **Cache löschen:** Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (ungespeicherte Einstellungen und Konfigurationen) gelöscht.
-  * **Instanz hinzufügen:** Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. _Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist_. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog:
+#### 1. OneConnexx administration
+  * **Reload settings:** If this button is selected, all settings are reloaded from the service or the database
+  * **Save in service:** The changes made are automatically added to the queue. In order to save this change you have to select this button. If a database is stored, the settings are synchronized with the database. 
+  * **delete cache:** If this button is selected, all data stored in the cache (unsaved settings and configurations) will be deleted.
+  * **Add instance:** A new instance can be configured using this button. It must be noted that no instance can be created if no group is configured . Before an instance can be created, the type must be selected. The dialog below opens for this purpose:
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br/>
-  Per Mausklick oder mit Shift und Enter kann der gewünschte Add-In Typ ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
+  The desired add-in type can be selected by clicking the mouse or using Shift and Enter. Only when this is done can the name be set.
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")<br/>
-  Standardmässig enthält der Name der Instanz das Präfix __Instanztyp_.__ Dieses Präfix muss nicht zwingend im Namen gelassen werden, es ist jedoch empfehlenswert da sich so der Add-In Typ direkt aus dem Namen der Instanz ablesen lässt. Mit einem Klick auf "Erstellen" wird die Instanz erstellt und das Konfigurationsfenster befüllt sich mit den Instanzdetails, den Parametern und den
-  Abonnenten/Abonnierten Ereignissen (2, 4 und 5). Ein Instanzname muss __eindeutig__ sein.
-  
-  * **Neue Guppe erstellen:** Über diese Schaltfläche kann eine neue Gruppe erstellt werden. _Wenn keine Gruppe vorhanden ist, kann auch keine Instanz konfiguriert werden_. Die Gruppe dient nur als Optische/Logische Gruppierung und hat keinen Einfluss auf die Logik der Software.
-  * **Berechtigungen:** Dieser Menupunkt ist nur für Benutzer der Rolle *Administrator* sichtbar. Es kann eine kommaseparierte Liste von Benutzern oder Gruppen angegeben werden, welche zur Rolle *Konfigurator* gehören. Diese Benutzer können Add-Ins erstellen, löschen und konfigurieren, sowie alle Konfigurationsparameter einsehen und verändern. Achtung: Werden keine Benutzer oder Gruppen angegeben, gilt die Rolle *Konfigurator* für **alle** Benutzer.
+  By default, the name of the instance contains the prefix instance __type_.__ This prefix does not have to be left in the name, but it is recommended because the add-in type can be read directly from the name of the instance. With a click on “Create” the instance is created and the configuration window is filled with the instance details, the parameters and the subscribers / subscribed events (2, 4 and 5). An instance name must be __unique__ .
+  * **Create new group:** This button can be used to create a new group. If there is no group, no instance can be configured . The group only serves as an optical / logical grouping and has no influence on the logic of the software.
+  * **Authorizations:**  This menu item is only visible for users with the role of administrator . A comma-separated list of users or groups can be specified which belong to the role configurator . These users can create, delete and configure add-ins, as well as view and change all configuration parameters. Caution: If no users or groups are specified, the configurator role applies
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/permission.png "Berechtigung zum Bearbeiten")<br/>
-#### 2. Instanz Details
-  Die Detailansicht der verschiedenen Instanzen unterscheidet sich leicht. Die obige Ansicht erscheint wenn eine Instanz eines Event Add-Ins ausgewählt wurde. Bei einem Logik Add-In würde diese folgendermassen Aussehen:
+#### 2. instance details
+  The detailed view of the various instances differs slightly. The above view appears when an instance of an event add-in has been selected. With a logic add-in it would look like this:
   
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/detailviewlogicaddin.png "Instanz Detail Logik Add-In")
 
-  Neu hinzugekommen ist die Schaltfläche "Logik starten mit Parametern", und anstatt "Ereignis auslösen" heisst es "Logik starten".
+  The button “Start logic with parameters” has been added, and instead of “Trigger event” it says “Start logic”.
   
-  * **Name:** Über dieses Eingabefeld kann der Name ganz einfach bearbeitet werden.
-  * **Add-In:** Der Typ des Add-Ins.
-  * **Dateipfad:** Der Pfad, in welchem Verzeichnis des Hosts die Add-In Daten liegen.
-  * **Aktiv:** Checkbox ob die Instanz aktiv sein soll oder nicht. Ist sie nicht aktiv wird bei einem Aufruf des Add-Ins nichts gemacht. Nur wenn es manuell ausgeführt wird, wird das Add-In auch ausgeführt wenn es nicht aktiv ist.
-  * Schaltfläche **Instanz kopieren:** Kopiert die aktuelle ausgewählte Instanz.
-  * Schaltfläche **Instanz löschen:** Löscht die aktuell ausgewählte Instanz. _Logeinträge und Transaktionen werden nicht gelöscht._
-  * Schaltfläche **Logik starten/Event auslösen:** Löst den Event aus, bzw. startet die Logik.
-  * Schaltlfäche **Logik starten mit Parametern:** Ist nur bei Logik Add-Ins vorhanden. Mit dieser Schaltfläche kann eine Logik (welche z.B. von einer anderen Instanz ausgelöst werden soll und von dieser auch Parameter übergeben bekommt) mit Parametern gestartet werden. Die Eingabe erfolgt dabei über zwei Eingabefelder pro Parameter; Name und Wert.
+  * **Name:** The name can be easily edited using this input field.
+  * **Add-In:** The type of add-in.
+  * **File path:** The path in which the host's directory contains the add-in data.
+  * **Active:** Checkbox whether the instance should be active or not. If it is not active, nothing is done when the add-in is called. Only if it is run manually will the add-in also run when it is not active.
+  * button **Copy Instance:** Copies the currently selected instance.
+  * button **Delete instance:** Deletes the currently selected instance. Log entries and transactions are not deleted.
+  * button **Start logic / trigger event:** Triggers the event or starts the logic.
+  * button **Start logic with parameters:** Only available for logic add-ins. This button can be used to start a logic (which, for example, is to be triggered by another instance and also receives parameters from it) with parameters. The input is made via two input fields per parameter; Name and value.
 	![X]({{site.baseurl}}/assets/content-images/webclient/de/startlogicwithparams.png "Logik Starten mit Parametern")
-#### 3. Instanzen Übersicht.
-  Bei der Instanzansicht können zwei Ansichten ausgewählt werden;
+#### 3. Instances overview.
+  Two views can be selected for the instance view;
   
-  * Ordnung nach Gruppe  
+  * Order according to group
   ![X]({{site.baseurl}}/assets/content-images/webclient/de/instancegroupbygroup.png "Gruppieren nach Gruppen")
   <br /><br />
-  Sind die Instanzen nicht nach Gruppen geordnet, so kann auch keine neue Gruppe erstellt werden, die Schaltfläche dafür ist in dieser Ansicht ausgeblendet.
-  * Ordnung nach Add-In Typ  
+  If the instances are not arranged according to groups, no new group can be created; the button for this is hidden in this view.
+  * Order by add-in type 
   ![X]({{site.baseurl}}/assets/content-images/webclient/de/groupbyaddintype.png "Gruppieren nach Add-In Type")
-#### 4. Instanzparameter
-  Bei den Instanzparametern gibt es zwei verschieden: die optionalen und die zwingenden.
-  Im obigen Beispiel ist z.B. der Parameter "interval" zwingend. Zu erkennen ist dies an der roten Umrandung. Ohne diese Parameter kann die Instanz nicht ausgeführt werden.
-  Die Optionalen sind nicht zwingend für das Ausführen der Instanz.
-  
-  Die Parameter unterscheiden sich von Add-In zu Add-In
+#### 4. Instance parameters
+  There are two different types of instance parameters: the optional and the mandatory. In the example above, for example, the “interval” parameter is mandatory. 
+  This can be recognized by the red border. Without these parameters, the instance cannot run. The options are not mandatory for running the instance.
+  The parameters differ from add-in to add-in
 
-#### 5. Add-Ins miteinander verbinden
+#### 5. Link add-ins to one another
   
-  Add-Ins können miteinander verbunden werden. Dazu gibt es folgende Grundsätze:
+Add-ins can be linked together. There are the following principles for this:
   
-  * Ein Logik Add-In kann mit einem oder mehreren anderen Logik Add-In verbunden werden
-  * Ein Logik Add-In kann mit einem oder mehreren Event Add-In verbunden werden 
-  * Ein Event Add-In kann __nicht__ mit einem anderen Event Add-In verbunden werden
+  * A logic add-in can be linked to one or more other logic add-ins
+  * A logic add-in can be linked to one or more event add-ins
+  * An event add-in can __not be__ linked to another event add-in
   
-  Die Ansicht "Abonnierte Ereignisse" erscheint aufgrund des dritten Grundsatzes nur bei Logik Add-Ins.
+  Due to the third principle, the “Subscribed Events” view only appears for logic add-ins.
 
   ![X]({{site.baseurl}}/assets/content-images/webclient/de/abonnieren.png "Ereignisse Abonnieren")
   
-  Mit einem Klick auf das schwarze Plus kann ein neues abonniertes Ereignis hinzugefügt werden. 
-  Abonniert eine Instanz eine andere Instanz/Ereignis, dann wird sobald das abonnierte Ereignis ausgelöst wurde, die abonnierende Instanz ausgelöst. Im Feld "Typ" kann der entsprechende Name des zu abonnierenden Ereignisses spezifiziert werden. Viele Add-Ins haben eigene Ereignistypen welche im bereich Standard Add-Ins beschrieben sind. Das häufigste Ereigniss ist das __.Done__ Ereigniss, welches bei erfolgreichem Abschluss einer Logik ausgelöst wird.
+A new subscribed event can be added by clicking on the black plus. If an instance subscribes to another instance / event, the subscribing instance is triggered as soon as the subscribed event has been triggered. 
+The corresponding name of the event to be subscribed to can be specified in the “Type” field. Many add-ins have their own event types which are described in the Standard Add-Ins section. The most common event is the __.Done__ event, which is triggered when a logic is successfully completed.

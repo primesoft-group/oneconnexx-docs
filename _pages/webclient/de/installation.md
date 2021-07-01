@@ -5,31 +5,31 @@ permalink: "webclient/de/installation/"
 language: de
 ---
 
-### Overview of OneConnexx instances
+### Übersicht über OneConnexx Instanzen
 
-All OneConnexx instances on the local system are displayed on this page as soon as they have been started.
+Auf dieser Seite werden alle OneConnexx Instanzen auf dem lokalen System angezeigt, sobald diese einmal gestartet wurden.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/installationsOverview.png "Übersicht Installtionen")  
 
 
 * __Name:__ Der Name der Installation kann nach belieben gewählt werden.
-* __Port:__ The port via which the service can be addressed, this is determined automatically and can only be changed in the OneConnexx configuration file of the corresponding installation.
-* __Status:__ Indicates whether the installation is currently started and connected.
-* __SQL-databse:__ Indicates whether a database has been configured and whether it can be reached.
-* __Windows Service:__ Indicates whether the Windows service is started and enables the service to be started or stopped manually.
+* __Port:__ Der Port über welchen der Service ansprechbar ist, dieser wird automatisch ermittelt und kann nur in der OneConnexx Konfigurationsdatei der entsprechenden Installation geändert werden.
+* __Status:__ Zeigt an, ob die Installation momentan gestartet und verbunden ist.
+* __SQL-Datenbank:__ Zeigt an, ob eine Datenbank konfiguriert wurde und ob diese erreichbar ist.
+* __Windows Service:__ Zeigt an, ob der Windows-Service gestartet ist, und ermöglicht es den Service manuell zu starten oder zu stoppen.
 
-A click on name or port loads the installation.
+Ein Klick auf Name oder Port lädt die Installation.
 	
 
-#### 1. Edit installation
+#### 1. Installation bearbeiten
 
-With a click on the “Edit” symbol the following dialog opens:
+Mit einem Klick auf das "Bearbeiten" Symbol öffnet sich folgender Dialog:
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
  
-Only the name and connection string parameters can be adjusted. 
-The connection to the SQL database can be tested directly with the “Check connection” button.
+Es können nur die Parameter __Name__ und __Verbindungszeichenfolge__ angepasst werden.
+Mit der Schaltfläche "Verbindung prüfen" kann die Verbindung zur SQL-Datenbank direkt getestet werden.
  
-#### 2. Delete installation
+#### 2. Installation löschen
  
-An installation can be removed from the list by clicking on the “Delete” symbol. An installation can only be removed if the corresponding OneConnexx has not started.
+Mit einem Klick auf das "Löschen" Symbol kann eine Installation aus der Liste entfernt werden. Das Entfernen einer Installation ist nur möglich, wenn der entsprechende OneConnexx nicht gestartet ist.
