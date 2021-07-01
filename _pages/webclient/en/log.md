@@ -4,71 +4,69 @@ title: Log
 permalink: "webclient/en/log/"
 language: en
 ---
-## Echtzeit
+## Real time
 
-Die Ansicht «Echtzeitlog» bietet eine Übersicht über die Logeinträge welche Aktuell geschrieben werden. Der Aktualisierungszyklus liegt bei einer Sekunde. Neue Einträge werden unten an der Liste angefügt und der Bildlauf automatisch aktualisiert, d.h. das Fenster scrollt automatisch nach unten um die aktuellsten Logeinträge anzuzeigen
+The «Real-time log» view provides an overview of the log entries that are currently being written. The update cycle is one second. New entries are added to the bottom of the list and the scrolling is automatically updated, ie the window automatically scrolls down to display the most recent log entries
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realTimeLog.png "Realtime Log")
 
-Aufbau eines Logeintrags:
+Structure of a log entry:
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/logEntry.png "Aufbau Logeintrag")
 
-#### 1. Textfilter
+#### 1. Text filter
 
-Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten. Das kann ein normales Wort sein oder ein sogenannter Regulärer Ausdruck.
-Folgende Links enthalten weiterführende Informationen diesbezüglich:  
+The text search restricts the list to entries that contain a certain expression. This can be a normal word or a so-called regular expression. The following links contain further information on this:
 
 * <https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck>  
 * <http://regexr.com/>  
 
-#### 2. Automatischer Bildlauf
+#### 2. Automatic scrolling
 
-Durch deaktivieren dieser Option wird der automatische Bildlauf gestoppt. Die Logeinträge werden weiterhin automatisch der Liste hinzugefügt, jedoch nicht mehr Automatisch die aktuellsten Logeinträge angezeigt.
+Deactivating this option will stop the automatic scrolling. The log entries are still automatically added to the list, but the latest log entries are no longer automatically displayed.
 
-#### 3. Anzeige Löschen
+#### 3. Delete display
 
-Diese Aktion löscht die gesamte Anzeige der Logs. Wenn die Anzeige gelöscht wird, sind die Logeinträge im Echtzeitlog nicht mehr ersichtlich und müssen über die Ansicht «Auswertung» eingesehen werden.
-Das Löschen wirkt sich nicht auf die Einträge in der Logdatei aus.
+This action clears the entire display of the logs. If the display is deleted, the log entries are no longer visible in the real-time log and must be viewed in the "Evaluation" view. The deletion does not affect the entries in the log file.
 
-## Auswertung
+## evaluation
 
-In der Ansicht «Auswertung» können die gesamten im Logverzeichnis liegenden Logeinträge gefiltert werden. Im Unterschied zum Echtzeitlog werden die neu geschriebenen Logs nicht automatisch geladen. Die Schaltfläche «Log Aktualisieren» erlaubt aber jederzeit eine Aktualisierung der Liste. Der Filtervorgang wird automatisch ausgeführt, sobald sich ein Wert in den Filterboxen ändert. (Verzögerung ca. 1.5 Sekunden)
+All the log entries in the log directory can be filtered in the «Evaluation» view. In contrast to the real-time log, the newly written logs are not loaded automatically. The «Update Log» button allows the list to be updated at any time. The filter process is carried out automatically as soon as a value in the filter boxes changes. (Delay approx. 1.5 seconds)
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterLogs.png "Log Auswertung")
 
-#### 1. Datumsfilter
+#### 1. Date filter
 
-  Mit dem Datumsfilter wird die Zeitspanne der Logeinträge eingeschränkt. 
+  The time period for the log entries is restricted with the date filter.
   
-#### 2. Textfilter
+#### 2. Text filter
 
-Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten. 
-Durch das Aktivieren der erweiterten Suche können Reguläre Ausdrücke verwendet werden. Folgende Links enthalten weiterführende Informationen diesbezüglich:  
+The text search restricts the list to entries that contain a certain expression. By activating the advanced search, regular expressions can be used. 
+The following links contain further information on this:
 
 * <https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck>  
 * <http://regexr.com/>  
 
-#### 3. Logstufe
+#### 3. log level
 
-Mit dem Filter Logstufe wird die Liste auf ein oder mehrere Loglevel eingeschränkt.  
+With the filter log level, the list is restricted to one or more log levels. 
 
-#### 4. Add-In/Instanz
+#### 4. Add-in / instance
 
-Mit dem Filter Add-In wird die Liste auf ein oder mehrere spezifische Add-Ins eingeschränkt. Mit dem Pfeil oben rechts können alle Instanzen aus/eingeklappt werden. Gleich wie auf der Konfigurationsseite kann hier die Sortierung zwischen Gruppe (Ordnersymbol) und Typ (Puzzleteil) gewechselt werden.
+With the Add-In filter, the list is restricted to one or more specific add-ins. All instances can be expanded / collapsed with the arrow at the top right. As on the configuration page, the sorting between group (folder symbol) and type (puzzle piece) can be changed here.
 
-#### 5. Steuerschaltflächen  
-  * **Filter Ausblenden:** Blendet die obigen Filterboxen aus, sodass nur die Logeinträge angezeigt werden.
-  * **Log Aktualisieren:** Lädt die neuesten Logeinträge aus den Logfiles.
-  * **Filter zurücksetzen:** Setzt alle Filterkriterien auf ihren Standardwert zurück.
-  * **Älteste zuoberst:** Ordnet die Logeinträge nach Zeit, so dass der älteste Eintrag zuoberst ist.
-  * **Neuste zuoberst:** Ordnet die Logeinträge nach Zeit, so dass der neuste Eintrag zuoberst ist.
+#### 5. Control buttons
+  * **Hide filter:** Hides the above filter boxes so that only the log entries are displayed.
+  * **Update log:** Loads the latest log entries from the log files.
+  * **Reset filter:** Resets all filter criteria to their default values.
+  * **Oldest on top:** Sorts the log entries by time so that the oldest entry is on top.
+  * **Latest on top:** Sorts the log entries according to time so that the newest entry is on top.
 
-#### 6. Kontextmenu / Filtern nach einer Instanz
+#### 6. Context menu / filter for an instance
 
-Klickt man mit der rechten Maustaste auf einen Logeintrag, wird ein Kontextmenu angezeigt:
+If you click with the right mouse button on a log entry, a context menu is displayed:
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/contextmenu.png "Kontextmenu")
 
-Mit dem Befehl "Nach Instanz filtern" wird der Filter automatisch so angepasst, dass nur noch Logeinträge der ausgewählten Instanz in einem Bereich von +/- 1 Minute zum ausgewählten Logeintrag angezeigt werden.
+With the “Filter by instance” command, the filter is automatically adjusted so that only log entries from the selected instance are displayed in a range of +/- 1 minute from the selected log entry.
 
