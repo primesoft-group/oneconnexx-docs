@@ -1,57 +1,52 @@
 ---
 layout: page
-title: Alarmierung
+title: Alerting
 permalink: "webclient/en/alarmierung/"
 language: en
 ---
-## Einleitung
-Die Alarmierung hängt eng mit den Regeln aus dem Bereich "Überwachung" zusammen.
-Die Hauptaufgabe der Alarmierung ist es, eine angegebene Kombination aus Schnittstelle/Endpunkt zu überwachen und sobald eine fehlerhafte Transaktion geschrieben wird dementsprechend eine Informations Mail zu senden.
-Die Alarmierung wird im Normalfall so gesetzt, dass von der Regelüberwachung geschrieben Regelverletzungen (in Form einer Transaktion) direkt die Alarmierungsmail auslösen. 
+## introduction
+The alert is closely related to the rules from the area of ​​“surveillance”. 
+The main task of the alerting is to monitor a specified combination of interface / endpoint and to send an information mail as soon as an incorrect transaction is written. 
+The alerting is normally set in such a way that rule violations (in the form of a transaction) written by rule monitoring trigger the alerting mail directly.
 
-__Beispiel__ 
+__example__ 
 
-Ausgangslage:
+Starting position:
 
-Endpunkt a der Schnitstelle x soll innerhalb von 24 Stunden maximal drei erfolgreiche Transaktionen schreiben (Regel).
-Wenn Endpunkt a der Schnittstelle x eine fehlerhafte Transaktion schreibt, soll eine Hinweismail gesendet werden (Alarmierung).
+End point a of interface x should write a maximum of three successful transactions within 24 hours (rule). If end point a of interface x writes an incorrect transaction, a notification e-mail should be sent (alerting).
 
-Annahme:
+Adoption:
 
-Für den Endpunkt a der Schnittstelle x werden vier erfolgreiche Transaktionen innerhalb von 24 Stunden geschrieben
+Four successful transactions are written within 24 hours for the endpoint a of the interface x
 
-Resultat:
+Result:
 
-Die Regelüberwachung schreibt eine Regelverletzungstransaktion (= eine fehlerhafte Transaktion).
-Die Alarmierung registriert die fehlerhaft Transaktion und löst dementsprechend die infomail aus.
+The rule monitoring writes a rule violation transaction (= an incorrect transaction). The alert registers the incorrect transaction and triggers the infomail accordingly.
 
-Die Infomail wird aber auch ausgelöst wenn Endpunkt a der Schnittstelle x ohne Regelverletzung eine fehlerhafte Transaktion schreibt (z.B. Filecopy schlägt fehl)
+The infomail is also triggered if end point a of interface x writes an incorrect transaction without a rule violation (e.g. filecopy fails)
 
-## Übersicht
+## Overview
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/alertingsOverview.png "Übersicht Regeln")  
 
-#### 1. Textsuche  
-Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
-Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
+#### 1. Text search
+The text search restricts the list to entries that contain a certain expression. In contrast to many text search fields in the OneConnexx, there is no possibility to use regular expressions here
 
-#### 2. Filtern
-Hat die Checkbox Inaktiv kein Häkchen, werden nur die aktiven Alamierungen angezeigt. 
-Das Gegenteil passiert, wenn die Checkbox Aktiv kein Häkchen hat.
+#### 2. Filter
+If the Inactive checkbox is not checked, only the active alarms are displayed. The opposite happens if the Active checkbox does not have a tick.
 
-#### 3. Sortierung  
-Über diese Schaltfläche kann die Sortierung geändert werden. Entweder A-Z oder Z-A. Diese Schaltfläche ist bei jeder Spalte vorhanden. Aktiv ist immer die letztgesetze Sortierung.
+#### 3. Sorting  
+This button can be used to change the sorting. Either AZ or ZA. This button is available for every column. The last sorting set is always active.
 
 #### 4. Export
-Alle Alamierungen werden exportiert beim Klick auf diese Schaltfläche.
+All alarms are exported when you click this button.
 
-#### 5. Alarmierung hinzufügen  
-Beim Klick auf diese Schaltfläche öffnet sich folgender Dialog:  
+#### 5. Add alert
+When you click on this button, the following dialog opens:
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addAlerting.png "Neue Regel hinzufügen")  
 
-Für das Erstellen der Alarmierung kann aus der Liste der bestehenden Schnittstellen eine ausgewählt werden. Dazu kann auch noch ein spezifischer Endpunkt der Schnittstelle eingegeben (nicht ausgewählt) werden (* für alle Endpunkte der gewählten Schnittstelle). Es kann auch ausgewählt werden, ob die Alamierung nur bei einer Regelverletzung ausgeführt werden soll oder bei jeder fehlerhaften Transaktion. Die Schnittstelle und der Endpunkt werden dann Überwacht und sobald eine fehlerhafte Transaktion oder eine Regelverletzung geschrieben wird, wird eine Mail an den definierten Empfänger gesendet. Zudem kann im Text über die unter dem Eingabefeld für die Nachricht definierten Platzhalter auf den Namen der Schnittstelle und des Endpunktes, und die Nachricht der Transaktion zugegriffen werden. 
+To create the alarm, one can be selected from the list of existing interfaces. A specific end point of the interface can also be entered (not selected) (* for all end points of the selected interface). You can also choose whether the alarm should only be triggered if a rule is violated or if there is an error in the transaction. The interface and the end point are then monitored and as soon as an incorrect transaction or a rule violation is written, a mail is sent to the defined recipient. In addition, the name of the interface and the endpoint and the message of the transaction can be accessed in the text using the placeholders defined under the input field for the message.
 
-#### 6. Alarmierung löschen/bearbeiten  
-Mit einem Klick auf die linke Schaltfläche kann eine Alarmierung bearbeitet werden.
-Mit einem Klick auf die rechte Schaltfläche kann eine Alarmierung gelöscht werden.
+#### 6. Delete / edit alarms
+An alarm can be edited with a click on the left button. An alarm can be deleted with a click on the right button.

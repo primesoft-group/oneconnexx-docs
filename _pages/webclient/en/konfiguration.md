@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Konfiguration
+title: Configuration
 permalink: "webclient/en/konfiguration/"
 language: en
 ---

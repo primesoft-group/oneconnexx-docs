@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Log
+title: log
 permalink: "webclient/en/log/"
 language: en
 ---

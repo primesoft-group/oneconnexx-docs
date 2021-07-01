@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation
+title: Set up
 permalink: "webclient/en/installation/"
 language: en
 ---

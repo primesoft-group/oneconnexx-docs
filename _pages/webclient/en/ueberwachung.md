@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Überwachung
+title: Monitoring
 permalink: "webclient/en/ueberwachung/"
 language: en
 ---
