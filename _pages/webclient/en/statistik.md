@@ -1,57 +1,54 @@
 ---
 layout: page
-title: Statistik
+title: statistics
 permalink: "webclient/en/statistik/"
 language: en
 ---
 
-Auf der Statistikseite werden konfigurierte Statistiken aus der Datenbank angezeigt. Es gibt vier verschiedene Diagrammtypen: Kreis-, vertikale Balken-, horizontale Balken- und Liniendiagramm. 
+The statistics page shows configured statistics from the database. There are four different types of graphs: pie, vertical bar, horizontal bar, and line graph.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticsPage.PNG "Statistik Seite")
 
-### Statistik Übersicht
-Die Funktionen erstellen, editieren und löschen stehen nur für Nutzer mit Admin-/Konfiguratorrechten zur Verfügung.
-Links werden alle Statistikbereiche angezeigt und rechts die Statistiken des momentan aktiven Bereichs.
-Falls kein Bereich in der Datenbank vorhanden ist, wird der Bereich "Allgemeine Statistiken" erstellt.
-Ein Bereich kann nur gelöscht werden, wenn er keine Statistiken enthält.
+### Statistics overview
+The functions create, edit and delete are only available for users with admin / configurator rights. 
+All statistics areas are displayed on the left and the statistics of the currently active area on the right. If there is no area in the database, the General Statistics area is created. An area can only be deleted if it does not contain any statistics.
 
-#### 1. Statistikbereich
-Hier wird der Name des Bereichs angezeigt, man kann neue Statistiken erstellen und den Bereich bearbeiten.
-Wenn der Bereich Statistiken enthält, wird das Icon zum Löschen ausgegraut und erst wieder aktiviert, wenn alle Statistiken von diesem Bereich gelöscht wurden.
-Beim Erstellen wird der aktuelle Bereich schon selektiert.
+#### 1. Statistics area
+The name of the area is displayed here, new statistics can be created and the area can be edited. 
+If the area contains statistics, the icon for deletion will be grayed out and will not be activated again until all statistics have been deleted from this area. The current area is already selected when it is created.
 	
-#### 2. Statistik editieren und löschen
-Mit einem Klick auf das Icon mit dem Stift und dem Papier kann die Statistik bearbeitet werden. Mit dem Abfalleimer Icon erscheint ein Dialog mit einer Info, dass diese Aktion schlussendlich ausgeführt. Die Statistik wird aus der Datenbank gelöscht und auch gleich von der Seite entfernt.
+#### 2. Edit and delete statistics
+The statistics can be edited by clicking on the icon with the pen and the paper. With the trash can icon, a dialog appears with information that this action has finally been carried out. The statistics are deleted from the database and also removed from the page at the same time.
 
-Mittels drap-and-drop kann die Reihenfolge der Statistiken innerhalb eines Bereichs verschoben werden. Dadurch wird auch sofort die Reihenfolge der Diagramme angepasst.
+The order of the statistics within an area can be shifted by means of drap-and-drop. This also immediately adjusts the order of the diagrams.
 	
-#### 3. Statistikbereich hinzufügen
-Hier kann ein neuer Statistikbereich hinzugefügt werden.
+#### 3. Add statistics area
+A new statistics area can be added here.
 
-#### 4. Statistik Anzeige
-Die Diagramme des momentan aktiven Bereichs werden hier angezeigt. Fährt man mit der Maus über ein Diagramm, werden oben rechts 3 Icons eingeblendet um die Statistik zu **aktualisieren**, **editieren** oder zu **löschen**.
+#### 4. Edit statistics
+The diagrams of the currently active area are displayed here. If you move the mouse over a diagram, 3 icons are displayed at the top right to **aktualisieren**, **edit ** or **delete** the statistics.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticrefresh.png "Statistik aktualisieren/editieren/löschen")
 
-Mittels drap-and-drop kann die Reihenfolge der Diagramme geändert werden. Dadurch wird auch sofort die Reihenfolge der Statistiken im Statistikbereich geändert.
+The order of the diagrams can be changed using drap-and-drop. This also immediately changes the order of the statistics in the statistics area.
 
-### Statistik bearbeiten
+### Edit statistics
 
-Durch Klicken auf das Bearbeiten-Icon wird der Dialog mit den Eigenschaften der Statistik geöffnet:
+Clicking the edit icon opens the dialog with the properties of the statistics:
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticInputDial.PNG "Statistik erstellen/editieren Dialog")
 
-* **Name:**	Der Statistik kann ein Name gegeben werden um dem Betrachter informationen über den Inhalt zu geben.
-* **Diagramm Typ:**	Die Art des Diagramms kann hier ausgewählt werden.
-* **Höche/Breite:**	Um das Diagramm besser lesbar zu gestalten, kann man selber definieren wie gross/klein es dargestellt werden soll.
-* **Legende:** Hier können per Komma getrennt die Legenden eingegeben werden.
-* **Sql:** Die Abfrage der Datenbank, welche dazu benötigt wird, die anzuzeigenden Daten zu liefern. Das Ergebnis muss im Format: Label, String \| FirstValue, int \| SecondValue, int zurückgegeben werden. Wobei das Feld SecondValue optional ist.
+* **Name:**	The statistics can be given a name to give the viewer information about the content.
+* **Diagram type:**	The type of diagram can be selected here.
+* **Height / width:**	In order to make the diagram easier to read, you can define yourself how large / small it should be displayed.
+* **Legend:** The legends can be entered here, separated by commas.
+* **Sql:** The query of the database, which is required to deliver the data to be displayed. The result must be in the format: label, string | FirstValue, int | SecondValue, int are returned. The SecondValue field is optional.
 	
 
-### Statistikbereich bearbeiten
+### Edit statistics area
 
-Klickt man auf das Bearbeiten-Icon eines Statistikbereichs oder auf das Icon zum Erstellen eines neuen Bereichs, wird der Dialog mit den Eigenschaften des Statistikbereichs geöffnet:
+If you click on the edit icon of a statistics area or on the icon for creating a new area, the dialog with the properties of the statistics area opens:
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addStatisticArea.PNG "Statistikbereich erstellen/editieren Dialog")
 
-* **Name:**	Dem Statistikbereich kann ein Name gegeben werden um dem Betrachter Informationen über den Inhalt zu geben.
+* **Name:**	The statistics area can be given a name to give the viewer information about the content.
