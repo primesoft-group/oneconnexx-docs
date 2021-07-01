@@ -10,7 +10,7 @@ language: en
 OneConnexx connects a wide variety of applications and systems both within your IT infrastructure and with the systems of your customers or partners.
 OneConnexx also supports you with various process-supporting functions in handling your business processes.
 
-![x]({{ site.baseurl }}/assets/content-images/overview/de/overview.png "Übersicht")
+![x]({{ site.baseurl }}/assets/content-images/overviedw/de/overview.png "Übersicht")
 
 ## Connectors
 

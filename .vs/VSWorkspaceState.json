@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\_pages",
+    "\\_pages\\architecture",
+    "\\_pages\\architecture\\en"
   ],
+  "SelectedNode": "\\_pages\\architecture\\en\\overview.md",
   "PreviewInSolutionExplorer": false
 }
