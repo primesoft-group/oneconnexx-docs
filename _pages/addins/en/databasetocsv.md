@@ -5,45 +5,45 @@ permalink: "addins/en/databasetocsv/"
 language: en
 ---
 
-Das DatabaseToCSV Add-In erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dateien.<br /><br />
+The DatabaseToCSV Add-In generates one or more CSV files from an SQL query.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In: Datenbank<br /> Out: CSV-Datei|
-| Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />1x am Schluss: &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In: Datenbank<br /> Out: CSV-Datei|
+| Transactions | 1 pro erstellte Datei |
+| Events | Pro Per created file: &lt;Instanz&gt;.Output (Parameter = file) <br />1x at the end: &lt;Instanz&gt;.Done |
 | | |
-| __Parameter__ | |
-| connectionString | Verbindungszeichenfolge der Datenbank | 
-| delimiter | Trennzeichen in der CSV-Datei (Optional, Default = Semikolon) | 
-| encoding | Kodierung der CSV-Datei (Optional, Default = "UTF-8") | 
-| fileNamePattern | Dateiname der CSV-Datei<br/>Wird ignoriert wenn der Dateiname von der SQL Abfrage zurückgegeben wird. Der Platzhalter {0} wird durch einen aktuellen Zeitstempel ersetzt. Bsp.: File\_{0: yyyyMMdd_hhmmss}.csv = File\_20160523\_115620.csv<br/>Bestehende Dateien werden überschrieben. | 
-| fileSaveLocation | Zielverzeichnis der CSV-Datei | 
-| includeColumnName | true: Spaltenname werden in die 1. Zeile geschrieben (Optional, default = false) | 
-| query | Eine SQL Abfrage welche die zu exportierenden Daten zurückgibt<br />Nur SELECT oder EXEC sind erlaubt. Pro Resultatset wird eine CSV-Datei erstellt | 
-| timeOut | Timeout in Sekunden bis der SQL-Befehl abgebrochen wird. (Optional, default = 30) | 
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| connectionString | 	Database connection string | 
+| delimiter | 	Separator in the CSV file (optional, default = semicolon) | 
+| encoding | Coding of the CSV file (optional, default = "UTF-8") | 
+| fileNamePattern | File name of the CSV file<br/>is ignored if the file name is returned by the SQL query. The placeholder {0} is replaced by a current time stamp. Example: File_ {0: yyyyMMdd_hhmmss} .csv = File_20160523_115620.csv<br/>Existing files will be overwritten.
+| fileSaveLocation | Target directory of the CSV file | 
+| includeColumnName | true: column names are written in the 1st line (optional, default = false) | 
+| query | A SQL query that returns the data to be exported.<br />Only SELECT or EXEC are allowed. A CSV file is created for each result set | 
+| timeOut | Timeout in seconds until the SQL command is canceled. (Optional, default = 30) | 
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
  
  
-### Anwendungsbeispiele 
+### Application examples
 
-Oftmals erhält die IT den Auftrag periodisch Datensätze aus einer Datenbank zu exportieren, damit die Fachbereiche die Angaben überprüfen oder weiterverarbeiten können.
+IT often receives the order to periodically export data records from a database so that the departments can check or process the information.
 
-Dazu wird eine SQL-Abfrage definiert, welche die Daten zurückgibt. Ein Timer, welcher das Add-In DatabaseToCSV periodisch aufruft und ein MailSender, welcher den Fachbereich über die neu erstellten CSV-Dateien informiert, runden das Paket ab.
+For this purpose, an SQL query is defined which returns the data. A timer, which periodically calls the DatabaseToCSV add-in, and a mail sender, which informs the department about the newly created CSV files, complete the package.
 
-##### Dateiname in SQL Abfrage festlegen
+##### Define file name in SQL query
 
-Wird von der SQL Abfrage ein 2. Resultatset zurückgegeben, dann wird die 1. Spalte der 1. Zeile des 2. Resultatsets als Dateiname interpretiert. Der Parameter "fileNamePattern" wird in diesem Fall ignoriert. Beispiel einer SQL Abfrage:
+If a 2nd result set is returned by the SQL query, the 1st column of the 1st line of the 2nd result set is interpreted as the file name. The “fileNamePattern” parameter is ignored in this case. Example of an SQL query:
 ```
 SELECT * FROM DataTable;
 SELECT 'DataTable_export.csv'; 
 ```
 
-##### Erstellen mehrerer CSV-Dateien
+##### Create multiple CSV files
 
-Wenn die SQL Abfrage ein mehrfaches von 2 Resultatsets zurückgibt, werden mehrere CSV-Dateien erstellt. In diesem Fall kann der Dateinamen also nicht über den Parameter "fileNamePattern" festgelegt werden.  Beispiel einer SQL Abfrage die zwei CSV-Dateien erstellt:
+If the SQL query returns a multiple of 2 result sets, several CSV files are created. In this case, the file name cannot be specified using the “fileNamePattern” parameter. Example of an SQL query that creates two CSV files:
 ```
 SELECT * FROM DataTable;
 SELECT 'DataTable_export.csv'; 

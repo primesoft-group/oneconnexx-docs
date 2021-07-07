@@ -5,42 +5,41 @@ permalink: "addins/en/csv2database/"
 language: en
 ---
 
-Das Csv2Database Add-In lädt Daten aus einer CSV-Datei in eine SQL Datenbanktabelle.
-Alle Zeilen in der CSV-Datei werden entweder als neue Datensätze in die Datenbank eingefügt, oder wenn ein Primärschlüssel
-angegeben wurde aktualisiert.
-Die erste Zeile der CSV-Datei muss die Spaltennamen enthalten. Es werden nur diejenigen Spalten in die Datenbank eingefügt, deren Namen exakt mit den Spaltennamen der Datenbanktabelle übereinstimmen.<br /><br />
+The Csv2Database add-in loads data from a CSV file into an SQL database table. 
+All lines in the CSV file are either added to the database as new records or updated if a primary key has been specified. 
+The first line of the CSV file must contain the column names. Only those columns are inserted into the database whose names exactly match the column names in the database table.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-In Type | Logic |
-| Schnittstellen | In: CSV-Datei<br /> Out: Datenbank|
-| Transaktionen | 1 pro verarbeitete Datei |
-| Ereignisse | 1x am Schluss: &lt;Instanz&gt;.Done |
+| Interfaces | In: CSV-file<br /> Out: Database|
+| Transactions | 1 per processed file |
+| Events | 1x at the end: &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| connectionString | Verbindungszeichenfolge der Datenbank | 
-| tableName | Name der Datenbanktabelle in welche Daten eingefügt werden | 
-| sourceDirectory | Quellverzeichnis in dem CSV Dateien gesucht werden | 
-| sourceFilePattern | Muster für die Suche nach CSV-Dateien | 
-| csvDelimiter | Das genutzte Trennzeichen in der CSV-Datei |
-| archiveDirectory | Optional ein Verzeichnis in das die eingelesenen Dateien verschoben werden |
-| errorDirectory | Optional ein Verzeichnis in das Dateien verschoben werden wenn ein Fehler aufgetreten ist |
-| useDbTransaction | Wenn 'true' werden alle Datenbankoperationen innerhalb einer Transaktion ausgeführt. Wenn ein INSERT/UPDATE fehlschlägt wird die gesamte Transaktion rückgängig gemacht. |
-| preCommand | Optional ein SQL Befehl der vor dem Einlesen der CSV-Dateien ausgeführt wird |
-| postCommand | Optional ein SQL Befehl der nach dem Einlesen der CSV-Dateien ausgeführt wird |
-| primaryKey | Optional der Name des Primärschlüssels der Datenbanktabelle. Falls angegeben, wird zuerst nach einem Datensatz mit diesem Primärschlüssel gesucht und dieser aktualisiert. Wenn kein solcher Datensatz gefunden wurde wird ein neuer Datensatz eingefügt. |
-| fileNameColumn | Optional der Name der Spalte der Datenbanktabelle in die der Dateiname der CSV-Datei geschrieben wird  (Optional, Default = "") |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| connectionString | Database connection string | 
+| tableName | Name of the database table into which data is inserted | 
+| sourceDirectory | Source directory in which CSV files are searched for | 
+| sourceFilePattern | Pattern for searching for CSV files | 
+| csvDelimiter | The separator used in the CSV file |
+| archiveDirectory | Optionally a directory into which the imported files are moved |
+| errorDirectory | Optionally a directory in which files are moved if an error has occurred |
+| useDbTransaction | If 'true', all database operations are carried out within a transaction. If an INSERT / UPDATE fails, the entire transaction is rolled back. |
+| preCommand | Optionally an SQL command that is executed before reading the CSV files |
+| postCommand | Optionally an SQL command that is executed after reading the CSV files |
+| primaryKey | Optionally the name of the primary key of the database table. If specified, a record with this primary key is first searched for and this is updated. If no such data record is found, a new data record is inserted. |
+| fileNameColumn | Optionally the name of the column of the database table in which the file name of the CSV file is written (optional, default = “”) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
  
  
-### Anwendungsbeispiele 
+### Application examples
 
-##### Quelldatei über "file" Parameter
+##### Source file via “file” parameter
 
-Wird das Csv2Database Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als CSV-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
+If the Csv2Database add-in is activated via an event that contains a “file” parameter, the file in this parameter is interpreted as a CSV file and converted into a CSV file. In this case the configured parameters “sourceDirectory” and “sourceFilePattern” are ignored.
 
-Ereignisse mit "file" Parameter können von folgenden Add-Ins abonniert werden:
+Events with “file” parameters can be subscribed to by the following add-ins:
 * DatabaseToCSV
 * FileDecompressor
 * FileCompressor
