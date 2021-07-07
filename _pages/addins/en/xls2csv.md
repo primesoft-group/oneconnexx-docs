@@ -5,36 +5,35 @@ permalink: "addins/en/xls2csv/"
 language: en
 ---
 
-Das Xls2Csv Add-In konvertiert eine Excel-Datei (.xls oder .xlsx) in eine CSV Datei.
-Falls die Excel-Datei mehrere Arbeitsmappen enthält wird nur die erste konvertiert.
-Die erzeugte CSV-Datei hat denselben Namen wie die Excel-Datei, nur wird die Dateiendung auf CSV geändert.<br /><br />
+The Xls2Csv add-in converts an Excel file (.xls or .xlsx) into a CSV file. If the Excel file contains several workbooks, only the first is converted.
+The generated CSV file has the same name as the Excel file, only the file extension is changed to CSV.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In: Excel-Datei<br /> Out: CSV-Datei|
-| Transaktionen | 1 pro verarbeitete Datei |
-| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />1x am Schluss: &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In: Excel file<br /> Out: CSV file|
+| Transactions | 1 per processed file |
+| Events | Per created file: &lt;Instance&gt;.Output (parameter = file) <br />1x at the end: &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| sourceDirectory | Verzeichnis in dem nach Excel-Dateien gesucht wird | 
-| sourceFilePattern | Suchmuster mit dem nach Excel-Dateien gesucht wird (Default = *.xlsx) | 
-| delimiter | Trennzeichen in der CSV-Datei (Optional, Default = Semikolon) | 
-| dateTimePattern | Optionales Format mit dem Datum-/Zeitwerte in der CSV Datei formatiert werden (z.B. dd.MM.yyyy) | 
-| destinationDirectory | Zielverzeichnis in das CSV Dateien geschrieben werden. Wenn leer werden die Dateien im Quellverzeichnis erstellt. | 
-| overwrite | Gibt an, ob eine bestehende CSV Datei überschrieben werden soll. Wenn 'false', wird eine Zahl an den Dateinamen angehängt so dass dieser eindeutig wird. | 
-| deleteSourceFile | Gibt an, ob die Eingangsdatei nach erfolgreicher Konvertierung gelöscht werden soll | 
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| sourceDirectory | Directory in which Excel files are searched for | 
+| sourceFilePattern | Search pattern used to search for Excel files (default = * .xlsx) | 
+| delimiter | Separator in the CSV file (optional, default = semicolon) | 
+| dateTimePattern | Optional format with which the date / time values ​​are formatted in the CSV file (e.g. dd.MM.yyyy) | 
+| destinationDirectory | Target directory in which CSV files are written. If empty, the files will be created in the source directory. | 
+| overwrite | Specifies whether an existing CSV file should be overwritten. If 'false', a number is appended to the file name so that it is unique. | 
+| deleteSourceFile | 	Specifies whether the input file should be deleted after successful conversion | 
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
  
  
-### Anwendungsbeispiele 
+### Application examples 
 
-##### Quelldatei über "file" Parameter
+##### Source file via “file” parameter
 
-Wird das Xls2Csv Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als Excel-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
+If the Xls2Csv add-in is activated via an event that contains a “file” parameter, the file in this parameter is interpreted as an Excel file and converted into a CSV file. In this case the configured parameters “sourceDirectory” and “sourceFilePattern” are ignored.
 
-Ereignisse mit "file" Parameter können von folgenden Add-Ins abonniert werden:
+Events with “file” parameters can be subscribed to by the following add-ins:
 * FileDecompressor
 * FileCopy
 * FileSystemWatcher

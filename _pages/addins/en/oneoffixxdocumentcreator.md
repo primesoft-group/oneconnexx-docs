@@ -5,27 +5,27 @@ permalink: "addins/en/oneoffixxdocumentcreator/"
 language: en
 ---
 
-Das Add-In OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "OneOffixxDocumentCreationServer" (OODCS) Dokumente im CI/CD des Kunden.<br /><br />
+The add-in OneOffixxDocumentCreator creates documents in the customer's CI / CD via the OneOffixx interface “OneOffixxDocumentCreationServer” (OODCS).<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Konnektor / Logic |
-| Schnittstellen | In/Out: OneOffixx |
-| Transaktionen |  |
-| Ereignisse |  |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in Type | Connector  / Logic |
+| Interfaces | In/Out: OneOffixx |
+| Transactions |  |
+| Events |  |
 | | |
-| __Parameter__ | |
-| configFilename | Datei mit Mapping-Konfiguration (Bsp. $(config)\oodcs.xml) |
-| oodcsUrl | URL des OODCS WebServices |
-| oodcsUsername | Benutzername des OODCS WebServices |
-| oodcsPassword | Passwort des OODCS WebServices |
-| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
-| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
-| messageTransformFolder | Ordner, welche die MessageTransform Dateien (*.mt) beinhaltet |
-| retryCount | Falls eine Anfrage fehlschlägt, wird diese wiederholt. Der Parameter retryCount definiert, wie oft eine Anfrage wiederholt werden soll. (Optional, Default = 1) |
-| maxRequests | Anzahl paralleler Anfragen (Optional, Default = 8) |
+| __parameter__ | |
+| configFilename | 	File with mapping configuration (e.g. $ (config) \ oodcs.xml) |
+| oodcsUrl | 	URL of the OODCS web service |
+| oodcsUsername | 	Username of the OODCS WebService |
+| oodcsPassword | Password of the OODCS web service |
+| enableTrace | true = messages are saved in analysis files (optional, default = false) |
+| traceFolder | Directory of the analysis files (optional, default = “Trace”) |
+| messageTransformFolder | Folder containing the MessageTransform files (* .mt) |
+| retryCount | If a request fails, it will be repeated. The retryCount parameter defines how often a request should be repeated. (Optional, default = 1) |
+| maxRequests | Number of parallel requests (optional, default = 8) |
 
-### Anwendungsbeispiele
+### Application examples
 
-Beim [Anwendungesbeipiel "Dokumentendienst"]({{ site.baseurl }}/usecases/de/documentcreation/) werden die Dokumente über das OneOffixxDocumentCreator Add-In erstellt.
+In the case of the [Anwendungesbeipiel "Dokumentendienst"]example, the documents are created using the OneOffixxDocumentCreator Add-In.

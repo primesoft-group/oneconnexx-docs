@@ -5,23 +5,23 @@ permalink: "addins/en/bizagi/"
 language: en
 ---
 
-Das Bizagi Add-In dient zur Anbindung des Bizagi BPMN an den OneConnexx.<br />Das Bizagi Add-In tauscht Daten mit Bizagi aus, erzeugt neue Prozesse und löst Events in Bizagi aus.<br /><br />
+The Bizagi Add-In is used to connect the Bizagi BPMN to the OneConnexx.<br />The Bizagi Add-In exchanges data with Bizagi, creates new processes and triggers events in Bizagi.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Konnektor |
-| Schnittstellen | In/Out: Bizagi WebServices EntityManager und WorkflowEngine |
-| Transaktionen | |
-| Ereignisse |  |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Connector |
+| Interfaces | In / Out: Bizagi WebServices EntityManager and WorkflowEngine |
+| Transactions | |
+| Events |  |
 | | |
-| __Parameter__ | |
-| configFilename | Anwendungsspezifische Bizagi Konfigurationsdatei |
-| workflowUrl | URL des Bizagi WorkflowEngineSOA WebServices |
-| entityUrl | URL des Bizagi EntityManagerSOA WebServices |
-| enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
-| traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
-| msgt | Verzeichnis mit den MessageTransform Dateien (*.mt) (Optional, Default = "Config\\MessageTransform") |
+| __parameter__ | |
+| configFilename | Application-specific Bizagi configuration file |
+| workflowUrl | URL of the Bizagi WorkflowEngineSOA WebService |
+| entityUrl | 	URL of the Bizagi EntityManagerSOA WebService |
+| enableTrace | true = messages are saved in analysis files (optional, default = false) |
+| traceFolder | Directory of the analysis files (optional, default = “Trace”) |
+| msgt | Directory with the MessageTransform files (* .mt) (optional, default = “Config \\ MessageTransform”) |
 
 
 <!-- 

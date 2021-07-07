@@ -5,40 +5,40 @@ permalink: "addins/en/filesystemwatcher/"
 language: en
 ---
 
-Das FileSystemWatcher Add-In dient zur Überwachung von Verzeichnissen und Dateien. Die Überwachung kann mit Hilfe eines Suchmusters auf bestimmte Dateien beschränkt werden. Überwacht werden kann das Erstellen, Ändern, Umbenennen und/oder Löschen von Dateien.<br /><br />
+The FileSystemWatcher Add-In is used to monitor directories and files. The monitoring can be restricted to certain files with the help of a search pattern. The creation, modification, renaming and / or deletion of files can be monitored.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Event / Logic |
-| Schnittstellen | In: Dateiverzeichnis |
-| Transaktionen | 1 Transaktion pro Ereignis |
-| Ereignisse | Pro erkannte Änderung und Datei ein Event: &lt;Instanz&gt; (Parameter = file, eventType) |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Event / Logic |
+| Interfaces | In: file directory |
+| Transactions | 1 transaction per event |
+| Events | 	One event per recognized change and file: <Instance> (parameter = file, eventType) |
 | | |
-| __Parameter__ | |
-| directory | Zu überwachendes Verzeichnis als absoluter Pfad |
-| usePolling | Art der Überwachung<br />true = Ordner wird periodisch überprüft (siehe "pollingIntervall")<br />false = Ordner wird dauernd überwacht |
-| pollingInterval | falls "usePolling" auf "true" gesetzt wurde, kann hier das Interval in Sekunden angegeben werden |
-| initialPull | true = Erzeugt beim Start des OneConnexx pro im zu überwachenden Verzeichnis vorhandener Datei ein "create"-Ereignis |
-| includeSubdirectories | true = Unterverzeichnisse werden ebenfalls überwacht |
-| filter | Das Suchmuster zur Einschränkung der zu überwachenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. |
-| bufferSize | Interne Puffergrösse in Bytes (Default = 8192)<br/>Wenn eine sehr grosse Anzahl Dateien überwacht werden soll, kann es nötig sein, diesen Wert in Schritten von 4096 bis zum Maximalwert von 65536 zu erhöhen. |
-| ensureFileWrittenTimeOut | Zeit in Millisekunden die vor dem Auslösen des Ereignisses maximal gewartet wird, bis die Datei fertig geschrieben wurde. Ein Wert von 0 bedeutet, dass immer gewartet wird bis die Datei für Leseoperationen geöffnet werden kann. |
-| createEvent | true = Löst ein Ereignis aus beim Erstellen einer Datei |
-| changeEvent | true = Löst ein Ereignis aus beim Ändern einer vorhandenen Datei |
-| deleteEvent | true = Löst ein Ereignis aus beim Löschen einer Datei |
-| renameEvent | true = Löst ein Ereignis aus beim Umbenennen einer Datei |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| directory | Directory to be monitored as an absolute path |
+| usePolling | Type of monitoring<br />true = folder is checked periodically (see “pollingIntervall”)<br />false = folder is constantly monitored |
+| pollingInterval | if “usePolling” was set to “true”, the interval in seconds can be specified here |
+| initialPull | true = Generates a “create” event when the OneConnexx pro is started in the file to be monitored |
+| includeSubdirectories | true = subdirectories are also monitored |
+| filter | The search pattern for restricting the files to be monitored. <br />The placeholders * and? can be used as usual with Windows. |
+| bufferSize | Internal buffer size in bytes (default = 8192)<br/>WIf a very large number of files is to be monitored, it may be necessary to increase this value in steps of 4096 up to a maximum of 65536. |
+| ensureFileWrittenTimeOut | Maximum time in milliseconds that is waited before the event is triggered until the file has been written. A value of 0 means that there is always a wait until the file can be opened for read operations. |
+| createEvent | true = Triggers an event when creating a file |
+| changeEvent | true = Triggers an event when changing an existing file |
+| deleteEvent | true = Triggers an event when a file is deleted |
+| renameEvent | true = Triggers an event when renaming a file |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
-### Anwendungsbeispiele 
+### Application examples 
 
-In einem sogenannten "Dropfolder" werden Dateien von einem Fremdsystem abgelegt. Sobald eine neue Datei in dieses Verzeichnis kopiert wurde, soll es von OneConnexx in eine SharePoint Dokumentenbibliothek verschoben werden.
+Files from an external system are stored in a so-called “drop folder”. As soon as a new file has been copied into this directory, OneConnexx should move it to a SharePoint document library.
 
-Dazu wird eine Instanz des FileSystemWatcher Add-Ins erstellt, die den "Dropfolder" überwacht. Es wird nur das "created" Ereignis überwacht. Wird eine neue Datei erkannt, wird vom FileSystemWatcher Add-In ein Ereignis ausgelöst, und der Pfad und Dateiname der neuen Datei werden im Parameter "file" an nachfolgende Add-Ins mitgegeben.
+For this purpose, an instance of the FileSystemWatcher Add-In is created, which monitors the “Dropfolder”. Only the “created” event is monitored. If a new file is recognized, the FileSystemWatcher Add-In triggers an event and the path and file name of the new file are passed on to subsequent add-ins in the “file” parameter.
 
-Ein FileCopy Add-In abonniert das Ereignis des FileSystemWatcher Add-Ins. Da dieses Ereignis einen Parameter "file" enthält, wird dieser als Quelldatei interpretiert und die Datei wird auf das konfigurierte Zielsystem (in diesem Fall SharePoint) kopiert.
+A FileCopy Add-In subscribes to the FileSystemWatcher Add-In event. Since this event contains a parameter “file”, this is interpreted as the source file and the file is copied to the configured target system (in this case SharePoint).
 
-##### Wann "polling" gewählt werden sollte
+##### When to choose “polling”
 
-Wenn "usePolling" auf "false" steht, werden betriebssysteminterne Mechanismen zur Überwachung des Verzeichnisses verwendet. Es hat sich allerdings gezeigt, dass dies mit Netzlaufwerken nicht immer zuverlässig funktioniert wenn die Netzwerkverbindung instabil ist. Grundsätzlich wird empfohlen "usePolling" auf "false" zu belassen, und nur auf "true" umzustellen wenn Netzlaufwerke überwacht werden sollen und dies nicht stabil funktioniert.
+If “usePolling” is set to “false”, mechanisms internal to the operating system are used to monitor the directory. However, it has been shown that this does not always work reliably with network drives if the network connection is unstable. It is generally recommended to leave “usePolling” on “false” and only to switch to “true” if network drives are to be monitored and this does not work properly.
 

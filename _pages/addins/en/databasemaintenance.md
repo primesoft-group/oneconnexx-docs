@@ -4,31 +4,30 @@ title: DatabaseMaintenance
 permalink: "addins/en/databasemaintenance/"
 language: en
 ---
-
-Das DatabaseMaintenance Add-In erneuert die Inidizes einer Datenbank, um so die Performance zu verbessern. Dies ist besonders beim Einsatz von SQL Server Express wertvoll, da dieser keinen SQL Server Agent beinhaltet.<br /><br />
+The DatabaseMaintenance Add-In updates the indexes of a database in order to improve performance. This is particularly valuable when using SQL Server Express, as it does not contain a SQL Server Agent.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | Out: Datenbank |
-| Transaktionen | 1 wenn erfolgreich |
-| Ereignisse |  |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | Out: database |
+| Transactions | 1 if successful |
+| Events |  |
 | | |
-| __Parameter__ | |
-| connectionString | Verbindungszeichenfolge der Datenbank, deren Inidizes neu erstellt werden |
-| rebuildIndices | Wenn 'true', werden alle Indices der Datenbank neu erstellt |
-| sqlCommand | Optional ein SQL Befehl der ausgeführt wird |
-| commandTimeout | Timeout für SQL Befehl in Sekunden (0 = unbegrenzt) |
+| __parameter__ | |
+| connectionString | 	Connection string of the database whose indexes are being rebuilt |
+| rebuildIndices | 	If 'true', all indexes in the database are rebuilt |
+| sqlCommand | Optionally an SQL command to be executed |
+| commandTimeout | Timeout for SQL command in seconds (0 = unlimited) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-### Anwendungsbeispiele 
+### Application examples
 
-Das automatische Erneuern der Inidizes ist beim SQL Server Express nicht möglich. Zusammen mit einem Timer Add-In erstellt das DatabaseMaintenance Add-In die Inidizes eine SQL Server Express Datenbank automatisch täglich neu.
+The automatic renewal of the indexes is not possible with the SQL Server Express. Together with a timer add-in, the DatabaseMaintenance add-in automatically rebuilds the indexes of a SQL Server Express database on a daily basis.
 
-##### Verwendetes SQL
+##### Used SQL
 
-Intern wird folgendes SQL Skript ausgeführt:
+The following SQL script is executed internally:
 ```sql
 DECLARE @TableName VARCHAR(255)
 

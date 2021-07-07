@@ -5,26 +5,26 @@ permalink: "addins/en/fileeraser/"
 language: en
 ---
 
-Das FileErase Add-In löscht oder verschiebt Dateien in einem bestimmten Verzeichnis.<br /><br />
+The FileErase Add-In deletes or moves files in a specific directory.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In/Out: Dateiverzeichnis |
-| Transaktionen | 1 wenn mindestens 1 Datei erfolgreich gelöscht/verschoben |
-| Ereignisse | &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In/Out: file directory |
+| Transactions | 	1 if at least 1 file was successfully deleted / moved |
+| Events | &lt;instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| timeoutDays | Anzahl Tage nach denen Dateien gelöscht/verschoben werden |
-| directory | Das zu überwachende Verzeichnis |
-| pattern | Das Suchmuster für die zu löschenden/verschiebenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
-| useCreateInsteadModifyDate | true = Das Erstellungsdatum anstelle des Änderungsdatums wird geprüft (Optional, Default = false) |
-| destinationDirectory | Zielverzeichnis, in welches die Dateien verschoben werden, anstatt sie zu löschen (Optional) |
-| userName | Benutzer mit dem auf die Verzeichnisse "directory" und "destinationDirectory" zugegriffen wird (Optional) |
-| password | Zugehöriges Passwort (Optional) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| timeoutDays | Number of days after which files are deleted / moved |
+| directory | The directory to be monitored |
+| pattern | The search pattern for the files to be deleted / moved<br />The placeholders * and? can be used as usual with Windows. Several search patterns can be specified separated by semicolons. Example: "\*.txt;\*.xml" => all text and XML files. |
+| useCreateInsteadModifyDate | true = The creation date instead of the modification date is checked (optional, default = false) |
+| destinationDirectory | Target directory to which the files will be moved instead of being deleted (optional) |
+| userName | User with which the directories “directory” and “destinationDirectory” are accessed (optional) |
+| password | Associated password (optional) |
+| endpoint | 	Name of the end point that is used in the transaction (optional, default = “”) |
 
-### Anwendungsbeispiele 
+### Application examples
 
-Ein FileCopy Add-In kann alle kopierten Dateien zusätzlich in einem Verzeichnis archivieren. Um zu verhindern dass die Festplatte vollgeschrieben wird, können mit Hilfe eines FileEraser Add-Ins alle archivierten Dateien nach z.B. 30 Tagen automatisch gelöscht werden.
+A FileCopy Add-In can also archive all copied files in a directory. In order to prevent the hard disk from being filled up, all archived files can be automatically deleted after 30 days, for example, with the help of a FileEraser add-in.

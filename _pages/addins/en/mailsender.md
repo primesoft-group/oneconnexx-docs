@@ -5,29 +5,29 @@ permalink: "addins/en/mailsender/"
 language: en
 ---
 
-Das MailSender Add-In versendet E-Mails. Der Inhalt und Betreff der E-Mail werden als Parameter im Ereignis an das MailSender Add-In übermittelt. Das MailSender Add-In unterstützt Authentifizierung mittels Benutzername und Passwort über SSL/TLS.<br /><br />
-Verbindungen zu Mail-Servern die von Anfang an eine verschlüsselte SSL Verbindung (meist auf Port 465) erwarten, werden nicht unterstützt. Stattdessen wird zuerst eine unverschlüsselte Verbindung (meist auf Port 587) aufgebaut, und dann mittels dem STARTTLS Befehl die Verschlüsselung initiiert.
+The MailSender add-in sends emails. The content and subject of the e-mail are sent to the MailSender add-in as parameters in the event. The MailSender add-in supports authentication using a username and password over SSL / TLS.<br /><br />
+Connections to mail servers that expect an encrypted SSL connection (usually on port 465) from the start are not supported. Instead, an unencrypted connection is first established (usually on port 587) and then the encryption is initiated using the STARTTLS command.
 <br/><br/>
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In: Ereignis (Parameter "message", "subject", "isHtml", "attachments", "recipients")<br/> Out: E-Mail |
-| Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In: Event (parameters “message”, “subject”, “isHtml”, “attachments”, “recipients”)<br/> Out: E-Mail |
+| Transactions | 1 if successful |
+| Events | &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| mailServer | Hostname oder IP-Adresse des Mail-Servers |
-| port | Port des SMTP Servers (Optional, Standard = 25) |
-| useSsl | Gibt an, ob die Verbindung zum Mail-Server mittels TLS verschlüsselt werden soll |
-| useDefaultCredentials | Gibt an, ob der OneConnexx Service-User für die Authentifizierung gegenüber dem SMTP Server verwendet werden soll. Dazu muss der Mail-Server NTLM Authentifizierung unterstützen. |
-| userName | Benutzername für die Authentifizierung gegenüber dem SMTP Server (Optional) |
-| password | Passwort für die Authentifizierung gegenüber dem SMTP Server (Optional) |
-| recipients | Kommaseparierte Liste von Empfängeradressen, kann durch einen Parameter im auslösenden Ereignis überschrieben werden |
-| sender | E-Mail Adresse des Abenders |
-| subjectPrefix | Ein Präfix das der Betreffzeile jedes E-Mails vorangestellt wird (Bsp. "Test - " damit E-Mails des Testsystem sofort erkannt werden) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| mailServer | Host name or IP address of the mail server |
+| port | Port of the SMTP server (optional, standard = 25) |
+| useSsl | Specifies whether the connection to the mail server should be encrypted using TLS |
+| useDefaultCredentials | Specifies whether the OneConnexx service user should be used for authentication against the SMTP server. For this, the mail server must support NTLM authentication. |
+| userName | Username for authentication to the SMTP server (optional) |
+| password | Password for authentication to the SMTP server (optional) |
+| recipients | Comma-separated list of recipient addresses can be overwritten by a parameter in the triggering event |
+| sender | Email address of the evening |
+| subjectPrefix | A prefix that is placed in front of the subject line of every email (e.g. "Test -" so that emails from the test system are recognized immediately) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
 
 <!-- 

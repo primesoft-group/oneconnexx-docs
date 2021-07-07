@@ -5,38 +5,37 @@ permalink: "addins/en/dispatcher/"
 language: en
 ---
 
-Das Dispatcher Add-In löst aufgrund einer SQL Abfrage Ereignisse aus. Pro Datensatz im Ergebnis der SQL Abfrage wird ein Ereignis mit den zurückgegebenen Spalten als Parameter ausgelöst.<br /><br />
+The dispatcher add-in triggers events based on an SQL query. For each data record in the result of the SQL query, an event is triggered with the returned columns as parameters.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Event / Logic |
-| Schnittstellen |  |
-| Transaktionen | 1 wenn mindestens 1 Datensatz zurückgegeben wurde |
-| Ereignisse | Pro Datensatz: &lt;Instanz&gt; (Parameter = Alle Spalten des Resultats der SQL Abfrage)<br />1x am Schluss: &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Event / Logic |
+| Interfaces |  |
+| Transactions | 1 if at least 1 record was returned |
+| Events | Per data record: &lt;Instance&gt; (parameter = all columns of the result of the SQL query)<br />1x at the end: &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| connectionString | Verbindungszeichenfolge der Datenbank |
-| query | SQL Abfrage<br />Für jede zurückgegebene Zeile wird ein Ereignis ausgelöst. |
-| dueTimeColumn | Name der Spalte die eine Tageszeit enthält, zu der der Datensatz verarbeitet werden soll (Optional, Default = "") |
-| lastProcessedColumn | Name der Spalte die einen Zeitstempel enthält, wann der Datensatz zuletzt verarbeitet wurde (Optional, Default = "") |
-| updateQuery | SQL Befehl zum Aktualisieren des Zeitstempels (in 'lastProcessedColumn') nachdem ein Datensatz verarbeitet wurde (Optional, Default = "")<br />Platzhalter in geschweiften Klammern werden durch die entsprechenden Felder aus dem Resultat der SQL Abfrage "query" ersetzt. |
-| configUrl | Link zur erweiterten Konfiguration (Optional, Default = "")<br />Der Platzhalter @instance wird durch den Namen der Add-In Instanz ersetzt. |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| connectionString | 	Database connection string |
+| query | SQL query<br />An event is triggered for each row returned. |
+| dueTimeColumn | Name of the column that contains a time of day at which the data record is to be processed (optional, default = “”) |
+| lastProcessedColumn | Name of the column that contains a time stamp of when the data record was last processed (optional, default = “”) |
+| updateQuery | SQL command to update the time stamp (in 'lastProcessedColumn') after a data record has been processed (Optional, Default = “”)<br />Placeholders in curly brackets are replaced by the corresponding fields from the result of the SQL query “query”. |
+| configUrl | Link to the extended configuration (Optional, Default = “”)<br />The placeholder @instance is replaced by the name of the add-in instance. |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
 
-### Anwendungsbeispiele
+### Application examples
 
-Das Dispatcher Add-In wird von einem Timer Add-In stündlich aufgerufen. Es fragt den Inhalt einer bestimmten Tabelle mit einem bestimmten Status oder weiteren bestimmen Angaben ab. So werden neue Einträge erkannt und können weiterverarbeitet werden.
-In der Antwort erhält das Dispatcher Add-In weitere Angaben, welche zur Weiterverarbeitung benötigt werden.
-Pro Eintrag löst das Dispatcher Add-In ein Ereignis aus, welches von weiteren Add-Ins abonniert werden kann.
+The dispatcher add-in is called every hour by a timer add-in. It queries the content of a specific table with a specific status or other specific information. In this way, new entries are recognized and can be processed further. In the response, the dispatcher add-in receives further information that is required for further processing. 
+The dispatcher add-in triggers an event for each entry, which can be subscribed to by other add-ins.
 
-##### Ausführen zu bestimmten Tageszeiten
+##### Run at certain times of the day
 
-*Voraussetzung:* Eine Datenbank-Tabelle "Dispatcher" mit mindestens den Spalten "DispatcherId" vom Typ "int", "DueTime" vom Typ "nvarchar" und "LastProcessed" vom Typ "datetime".
+*Requirement:* A database table “Dispatcher” with at least the columns “DispatcherId” of type “int”, “DueTime” of type “nvarchar” and “LastProcessed” of type “datetime”.
 
 *Parameter:*
 * dueTimeColumn = "DueTime"
 * lastProcessedColumn = "LastProcessed"
 * updateQuery = "UPDATE Dispatcher SET LastProcessed = GETDATE() WHERE DispatcherId = {DispatcherId}"
 
-*Funktionsweise:* Für jede Zeile im Resultat der SQL Abfrage wird nur dann ein Ereignis ausgelöst, wenn die aktuelle Tageszeit grösser als die Uhrzeit in "DueTime" ist, und die letzte Ausführung (in "LastProcessed") nicht innerhalb des aktuellen Tages liegt. Wurde ein Ereignis ausgelöst, wird die aktuelle Uhrzeit in die Spalte "LastProcessed" geschrieben.
+*How it works:* For each line in the result of the SQL query, an event is only triggered if the current time of day is greater than the time in “DueTime” and the last execution (in “LastProcessed”) is not within the current day. If an event was triggered, the current time is written in the “LastProcessed” column.

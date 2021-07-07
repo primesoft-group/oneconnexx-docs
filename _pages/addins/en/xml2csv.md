@@ -5,33 +5,35 @@ permalink: "addins/en/xml2csv/"
 language: en
 ---
 
-Das Xml2Csv Add-In schreibt bestimmte XML Nodes in eine CSV-Datei. Über die Parameter wird konfiguriert, welche Nodes übernommen werden und wohin die neue Datei gespeichert wird.<br /><br />
+The Xml2Csv add-in writes certain XML nodes to a CSV file. The parameters are used to configure which nodes are adopted and where the new file is saved.
+<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | Dateiverzeichnis |
-| Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file)<br />1x am Schluss: &lt;Instanz&gt;.Done |
+| __
+features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | Dateiverzeichnis |
+| Transactions | 1 per created file |
+| Events | Per created file: &lt;Instance&gt;.Output (parameter = file)<br />1x at the end: &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| sourceDirectory | Das Verzeichnis der Quelldateien (XML-Dateien) |
-| sourceFilePattern | Das Suchmuster zur Einschränkung der Quelldateien (Optional, Default = \*.xml) |
-| rowXPath | XPath zur Auswahl der Zeilen in der CSV-Datei |
-| additionalColumnXPath | XPath um Spalten ausserhalb der mit rowXPath definierten Zeile miteinzubeziehen. Mehrere Spalten können durch Semikolon getrennt angegeben werden. (Optional) |
-| stripNamespace | true = Namespace Präfixe aus der XML-Datei werden in der erstellten CSV-Datei aus den Spaltennamen entfernt (Optional, Default = true) |
-| delimiter | Trennzeichen der Spalten in der CSV-Datei (Optional, Default = Semikolon) |
-| destinationDirectory | Verzeichnis in dem die CSV-Datei erstellt wird (Optional, Default = sourceDirectory) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| sourceDirectory | The directory of the source files (XML files) |
+| sourceFilePattern | The search pattern to restrict the source files (optional, default = \*.xml) |
+| rowXPath | 	XPath to select the lines in the CSV file |
+| additionalColumnXPath | XPath to include columns outside the row defined with rowXPath. Multiple columns can be specified separated by semicolons. (Optional) |
+| stripNamespace | 	true = namespace prefixes from the XML file are removed from the column names in the created CSV file (optional, default = true) |
+| delimiter | Separator of the columns in the CSV file (optional, default = semicolon) |
+| destinationDirectory | Directory in which the CSV file is created (optional, default = sourceDirectory) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
-### Anwendungsbeispiele 
+### Application examples 
 
-##### Quelldatei über "file" Parameter
+##### Source file via “file” parameter
 
-Wird das Xml2Csv Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, wird die Datei in diesem Parameter als XML-Datei interpretiert und in eine CSV-Datei umgewandelt. In diesem Fall werden die konfigurierten Parameter "sourceDirectory" und "sourceFilePattern" ignoriert.
+If the Xml2Csv add-in is activated via an event that contains a “file” parameter, the file in this parameter is interpreted as an XML file and converted into a CSV file. In this case the configured parameters “sourceDirectory” and “sourceFilePattern” are ignored.
 
-Ereignisse mit  "file" Parameter werden von folgenden Add-Ins ausgelöst:
+Events with “file” parameters are triggered by the following add-ins:
 * DatabaseToCSV
 * FileDecompressor
 * FileCompressor

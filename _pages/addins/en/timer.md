@@ -5,36 +5,36 @@ permalink: "addins/en/timer/"
 language: en
 ---
 
-Das Timer Add-In ist das meistverwendete Add-In. Das Timer Add-In löst Ereignisse zu vordefinierten Zeitpunkten aus.<br /><br />
+The timer add-in is the most widely used add-in. The timer add-in triggers events at predefined times.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Event |
-| Schnittstellen |  |
-| Transaktionen |  |
-| Ereignisse | &lt;Instanz&gt; |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Event |
+| Interfaces |  |
+| Transactions |  |
+| Events | &lt;instance&gt; |
 | | |
-| __Parameter__ | |
-| interval | Intervallzeit des Timers in Millisekunden<br />Werden keine weiteren Angaben gemacht, löst das Timer Add-In jeweils nach Ablauf des Intervalls ein Ereignis aus.<br />Werden jedoch weitere Angaben gemacht, wirken sich diese als zusätzliche Filter aus. Es sind auch Kombinationen möglich, wie z.B. «am 1. Tag jeden Monat um 06:00» oder «Sonntags um 20:00». |
-| timeOfDay | Filter für eine bestimmte Tageszeit<br />Angabe in Stunden und Minuten. Mehrere Tageszeiten werden mit Semikolon getrennt. Bsp.: «06:30;12:00» |
-| dateOfYear | Filter für ein bestimmtes Datum oder Tag des Monats<br />Mehrere Daten können durch Semikolon getrennt werden. Bsp.: «31.12.» (nur an diesem Tag) oder «1.;14.» (immer am 1. und 14. jedes Monats) |
-| dayOfWeek | Filter für bestimmte Wochentage (1=Montag, …, 7=Sonntag)<br />Bsp.: «1;2;3;4;5» (an allen Arbeitstagen) |
+| __parameter__ | |
+| interval | Interval time of the timer in milliseconds<br />If no further information is given, the timer add-in triggers an event after the interval has expired.<br />However, if further information is provided, it acts as an additional filter. Combinations are also possible, such as “on the 1st day of every month at 6:00 a.m.” or “Sundays at 8:00 p.m.”. |
+| timeOfDay | Filter for a specific time of day,<br />specified in hours and minutes. Several times of the day are separated by semicolons. Example: "06:30; 12:00" |
+| dateOfYear | Filters for a specific date or day of the month<br />Multiple dates can be separated by semicolons. Example: "31.12." (only on this day) or «1st; 14th» (always on the 1st and 14th of each month) |
+| dayOfWeek | Filter for certain days of the week (1 = Monday, ..., 7 = Sunday)<br />Example: "1; 2; 3; 4; 5" (on all working days) |
 
 
-### Anwendungsbeispiele
+### Application examples
 
-##### Jeden Morgen um 6:00
-- interval = 60000 (pro Minute einmal die weiteren Filter überprüfen)
-- timeOfDay = 06:00 (Morgens um 6:00)
+##### Every morning at 6:00
+- interval = 60000 (check the other filters once per minute)
+- timeOfDay = 06:00 (in the morning at 6:00)
 
-##### Jährlich am 1. Januar um 6:00 Uhr
+##### Annually on January 1st at 6:00 a.m.
 - interval = 60000 
 - timeOfDay = 06:00 
-- dateOfYear = 1.1. (am 1. Januar)
+- dateOfYear = 1.1. (on 1. Januar)
 
-##### Am ersten Montag eines Monats um 6:00 Uhr
+##### At 6:00 a.m. on the first Monday of each month
 - interval = 60000 
 - timeOfDay = 06:00 
 - dateOfYear = 1.;2.;3.;4.;5.;6.;7. (an einem der ersten 7 Tage jedes Monats)
-- dayOfWeek = 1 (Montag, in Kombination mit dateOfYear wird es der 1. Montag eines Monats sein).
+- dayOfWeek = 1 (Monday, in combination with dateOfYear it will be the 1st Monday of the month).
