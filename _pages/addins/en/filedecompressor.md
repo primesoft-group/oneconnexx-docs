@@ -5,24 +5,24 @@ permalink: "addins/en/filedecompressor/"
 language: en
 ---
 
-Das FileDecompressor Add-In entpackt Zip-, GZip-, oder Tar-Dateien<br /><br />
+The FileDecompressor Add-In unpacks Zip, GZip, or Tar files<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In/Out: Dateieverzeichnis |
-| Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file)<br /> &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In/Out: Dateieverzeichnis |
+| Transactions | 1 per created file |
+| Events | Per created file: &lt;Instanz&gt;.Output (parameter = file)<br /> &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| sourceDirectory | Quellverzeichnis mit den komprimierten Dateien |
-| sourceFilePattern | Das Dateipattern dient zur Einschränkung der komprimierten Dateien<br /> * = alles; Bsp. «*.zip» => alle ZIP-Dateien<br />? = unsicher wie die Datei heisst. Bsp. «1?.zip» => alle ZIP-Dateien welche mindestens eine 1 beinhalten. <br />Mehrere Pattern werden mit Semikolon getrennt. Bsp. «*.zip; *.tar» => alle ZIP- und TAR-Dateien |
-| destinationDirectory | Zielverzeichnis, wohin die Dateien entpackt werden |
-| archivePassword | Zum automatischen Entpacken von passwortgeschützten Archiven (Optional) |
-| deleteSourceAfterProcessing | true = Die komprimierte Datei wird nach dem Entpacken gelöscht (Default = false) | 
-| decompressToSubFolder | true = Die Dateien werden in ein Unterverzeichnis mit demselben Namen wie das Archiv entpackt <br /> false = Die Dateien werden direkt in das Zielverzeichnis entpackt (Default = false)|
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| sourceDirectory | Source directory with the compressed files |
+| sourceFilePattern | The file pattern is used to restrict the number of compressed files<br /> * = all; Bsp. «*.zip» => all ZIP files<br />? = unsure of the name of the file. E.g. «1?.zip» => all ZIP files which contain at least a 1. <br />Multiple patterns are separated with semicolons. Ex. « .Zip; * .tar »=> all ZIP and TAR files |
+| destinationDirectory | 	Target directory where the files will be extracted |
+| archivePassword | 	For automatic unpacking of password-protected archives (optional) |
+| deleteSourceAfterProcessing | true = The compressed file is deleted after unpacking (default = false) | 
+| decompressToSubFolder | true = The files are extracted to a subdirectory with the same name as the archive <br /> false = The files are extracted directly to the target directory (Default = false)|
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
 <!-- 
 ### Anwendungsbeispiele 

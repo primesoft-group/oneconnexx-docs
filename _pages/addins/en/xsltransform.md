@@ -5,23 +5,23 @@ permalink: "addins/en/xsltransform/"
 language: en
 ---
 
-Das XMLTransform Add-In transformiert XML Dateien<br /><br />
+The XMLTransform Add-In transforms XML files<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | Dateiverzeichnis |
-| Transaktionen |  |
-| Ereignisse |  |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type| Logic |
+| Interfaces | File directory |
+| Transactions |  |
+| Events |  |
 | | |
-| __Parameter__ | |
-| directory | Angabe des Verzeichnisses in welches die transformierte XML Datei gespeichert wird |
-| archive | Verzeichnis, in welchem die Originaldatei und die transformierte Datei archiviert werden sollen. (Optional, Default = "" = nichts archivieren) |
-| enableDocumentFunction | true = Aktiviert die Documentfunction für den Zugriff auf Nodes im XML Dokument (Optional, Default = false)<br />(Details unter <a href="https://msdn.microsoft.com/de-de/library/ms256465(v=vs.120).aspx" target="_blank">https://msdn.microsoft.com/de-de/library/ms256465(v=vs.120).aspx</a>) |
-| enableScript | true = Erlaubt das Verwenden von Scripts im XSL. (Optional, Default = true) |
-| xsltStylesheet | Verzeichnis der XSLT Datei |
-| outputExtension | Dateiendung der transformierten Datei (Optional, Default = ".xml") |
+| __parameter__ | |
+| directory | Specification of the directory in which the transformed XML file is saved |
+| archive | Directory in which the original file and the transformed file are to be archived. (Optional, default = “” = do not archive anything) |
+| enableDocumentFunction | true = activates the document function for access to nodes in the XML document (optional, default = false)<br />(details under <a href="https://msdn.microsoft.com/de-de/library/ms256465(v=vs.120).aspx" target="_blank">https://msdn.microsoft.com/de-de/library/ms256465(v=vs.120).aspx</a>) |
+| enableScript | true = Allows the use of scripts in the XSL. (Optional, default = true) |
+| xsltStylesheet | Directory of the XSLT file |
+| outputExtension | File extension of the transformed file (optional, default = “.xml”) |
 
 
 <!-- 

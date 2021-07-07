@@ -5,26 +5,26 @@ permalink: "addins/en/sharepointeraser/"
 language: en
 ---
 
-Das SharepointEraser Add-In löscht Items in einer Sharepoint Liste/Bibliothek die älter als xx Stunden sind.<br /><br />
+The SharepointEraser Add-In deletes items in a Sharepoint list / library that are older than xx hours.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | Sharepoint |
-| Transaktionen | 1 wenn mind. 1 Datei gelöscht |
-| Ereignisse | &lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | Sharepoint |
+| Transactions | 	1 if at least 1 file has been deleted |
+| Events | &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| userName | Benutzer mit den für den SharePoint-Server erforderlichen Berechtigungen (Optional) |
-| password | Zugehöriges Passwort (Optional) |
-| libraryUrl | URL der Sharepoint-Bibliothek inklusive deren Namen |
-| subFolder | (Optional) Server-relative URL zu einem Unterverzeichnis der Dokumentenbibliothek. |
-| recursive | Wenn 'true' werden auch Dateien in Unterverzeichnissen gelöscht ("subfolder" wird in diesem Fall ignoriert). |
-| deleteTimeout | Alter der Items in Stunden, ab wann sie gelöscht werden sollen. |
-| testRun | true = Testlauf um zu überprüfen ob alles reibungslos durchläuft.<br />Die Items werden dabei nicht gelöscht, Logeinträge werden aber geschrieben. (Optional, Default = false) |
-| requestTimeout | Automatische Verbindungstrennung, wenn der Request länger als die angegebene Zeit in Millisekunden dauert. (Optional, Default = 60000) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| userName | Users with the necessary permissions for the SharePoint server (Optional) |
+| password | Associated password (optional) |
+| libraryUrl | URL of the Sharepoint library including its name |
+| subFolder | (Optional) Server-relative URL to a subdirectory of the document library. |
+| recursive | If 'true' files in subdirectories are also deleted (“subfolder” is ignored in this case). |
+| deleteTimeout | Age of the items in hours, from when they should be deleted. |
+| testRun | true = test run to check whether everything runs smoothly.<br />The items are not deleted, but log entries are written. (Optional, default = false) |
+| requestTimeout | Automatic disconnection if the request takes longer than the specified time in milliseconds. (Optional, default = 60000) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
 <!-- 
 ### Anwendungsbeispiele 

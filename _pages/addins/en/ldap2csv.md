@@ -5,58 +5,58 @@ permalink: "addins/en/ldap2csv/"
 language: en
 ---
 
-Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und speichert diese in einer CSV-Datei.<br /><br />
+The Ldap2CSV add-in determines information from the AD (Active Directory) via LDAP and saves them in a CSV file.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In: LDAP<br />Out: File |
-| Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | &lt;Instanz&gt;.Done (Parameter = file)|
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In: LDAP<br />Out: File |
+| Transactions | 	1 if successful |
+| Events | &lt;Instance&gt;.Done (parameter  = file)|
 | | |
-| __Parameter__ | |
-| userName | Benutzer mit den für das LDAP erforderlichen Berechtigungen. Der Benutzer muss im LDAP Format angegeben werden, z.B. cn=read-only-admin,dc=example,dc=com. Falls kein Benutzer angegeben wird und authenticationType = Secure ist, wird die Identität des OneConnexx Services verwendet. |
-| password | Zugehöriges Passwort (Optional) |
-| domain | Name oder IP-Adresse des LDAP Servers<br/>Bsp.: corp.sevitec.ch |
-| root | Die BaseDN definiert, wo im Verzeichnisbaum abwärts die Suche nach bestimmten Objekten gestartet werden soll<br/>Bsp.: CN=Configuration,DC=corp,DC=sevitec,DC=ch |
-| authenticationType | Secure = Für die Anmeldung an den LDAP Server wird der im Paramter "userName" angegebene Benutzer verwendet, bzw. die Identität des OneConnexx Service wenn kein Benutzer angegeben wurde.<br/>Anonymous = Die Anmeldung am LDAP Server erfolgt anonym. |
-| sizeLimit | Anzahl Einträge, welche maximal exportiert werden (Optional, Default = 1000) |
-| filter | Zur Einschränkung auf bestimmte Objekte, z.B. "(objectClass=person)" (Optional)<br/>Der Platzhalter {lastrun} wird durch einen Zeitstempel der letzten erfolgreichen Ausführung ersetzt. |
-| properties | Die zu exportierende LDAP-Spalten durch Kommas getrennt.<br />Datentyp, Format und CSV-Spaltenname können durch # getrennt angefügt werden (Beispiel: "pwdLastSet#date#yyyy-MM-dd#Passwort gesetzt")<br/>Domänenattribute starten mit $ (Beispiel: "$maxPwdAge#ticks").<br/>Die Platzhalter {now} und {lastMonth} können für das aktuelle Datum bzw. den letzten Monat verwendet werden (Beispiel: "{now:yyyy-MM-dd}###todayDate").<br/>Datentyp: leer = Text, "date" = Datum, "ticks" = Ticks<br/>Format: Datumsformat als .NET String-Format Ausdruck, nur für Datentyp "date" (z.B. "dd.MM.yyyy" oder "yyyMMddHHmmss") |
-| fileNamePattern | Name der zu erstellenden Datei. Folgende Platzhalter stehen zur Verfügung: <br />{now}: Aktuelles Datum<br />{lastMonth}: Datum des letzten Monates |
-| fileSaveLocation | Verzeichnis in dem die Datei erstellt wird |
-| delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = Semikolon) |
-| includeHeaderRow | true = inklusive Spaltenüberschriften in der ersten Zeile<br/>false = ohne Spaltenüberschriften |
-| encoding | Kodierung der CSV-Datei (Optional, Default = "utf-8") |
-| additionalData | Kommaseparierte List von Schlüssel-Wert-Paaren welche die im Parameter "properties" angegebenen Spalten überschreiben. Der Schlüssel muss dabei dem Spaltenname entsprechen. (Optional)<br/>Beispiel: Spalte1=Wert1,Spalte2=Wert2  |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| userName | User with the necessary authorizations for the LDAP. The user must be specified in LDAP format, e.g. cn = read-only-admin, dc = example, dc = com. If no user is specified and authenticationType = Secure, the identity of the OneConnexx service is used. |
+| password | Associated password (optional) |
+| domain | Name or IP address of the LDAP server,<br/>e.g. corp.sevitec.ch |
+| root | The BaseDN defines where the search for certain objects should be started in the directory tree<br/>Bsp.: CN=Configuration,DC=corp,DC=sevitec,DC=ch |
+| authenticationType | Secure = The user specified in the “userName” parameter is used to log on to the LDAP server, or the identity of the OneConnexx service if no user has been specified.<br/>Anonymous = The login to the LDAP server is anonymous. |
+| sizeLimit | Maximum number of entries that can be exported (optional, default = 1000) |
+| filter | For the restriction to certain objects, eg “(objectClass = person)” (optional)<br/>The placeholder {lastrun} is replaced by a time stamp of the last successful execution. |
+| properties | The LDAP columns to be exported separated by commas.<br />Data type, format and CSV column name can be added separated by # (example: “pwdLastSet # date # yyyy-MM-dd # password set”)<br/>Domain attributes start with $ (example: “$ maxPwdAge # ticks”).<br/>The placeholders {now} and {lastMonth} can be used for the current date or the last month (example: “{now: yyyy-MM-dd} ### todayDate”).<br/>Data type: empty = text, “date” = date, “ticks” = ticks<br/>Format: Date format as .NET string format expression, only for data type “date” (eg “dd.MM.yyyy” or “yyyMMddHHmmss”) |
+| fileNamePattern | Name of the file to be created. The following placeholders are available: <br />{now}: Current date<br />{lastMonth}: Date of the last month |
+| fileSaveLocation | 	Directory in which the file is created |
+| delimiter | Separator of the columns in the CSV file (optional, default = semicolon) |
+| includeHeaderRow | true = including column headings in the first row<br/>false = without column headings |
+| encoding | Coding of the CSV file (optional, default = “utf-8”) |
+| additionalData | Comma-separated list of key-value pairs which overwrite the columns specified in the “properties” parameter. The key must correspond to the column name.<br/>Example: Column1 = Value1, Column2 = Value2  |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
-### Anwendungsbeispiele 
+### Application examples
 
-##### Datum formatieren
+##### Format the date
 
-Um zum Beispiel das Datum auszugeben, an dem ein Benutzer zuletzt sein Passwort geändert hat, kann folgender Ausdruck im Parameter "properties" verwendet werden:
+For example, to output the date on which a user last changed his password, the following expression can be used in the “properties” parameter:
 ```
 pwdLastSet#date#yyyy-MM-dd#Passwort gesetzt
 ```
 
-##### Ein Feld mit fixem Text einfügen
+##### Insert a field with fixed text
 
-Soll in der erstellten CSV Datei eine Spalte mit fixem Text eingefügt werden, kann der fixe Text im Parameter "additionalData" angegeben werden:
+If a column with fixed text is to be inserted in the created CSV file, the fixed text can be specified in the “additionalData” parameter:
 
 ```
 identifier_manager=keepmymanager
 ```
 
-Falls unter "properties" ein Attribut mit dem Namen "identifier_manager" existiert, wird dieses durch den fixen Text "keepmymanager" ersetzt.
+If there is an attribute with the name “identifier_manager” under “properties”, this will be replaced by the fixed text “keepmymanager”.
 
-##### Den Wert eines Bits aus einer Bitmaske anzeigen
+##### Display the value of a bit from a bit mask
 
-Mit dem Datentyp "bitmask" kann ein integer oder long Wert mit einer Bitmaske UND verknüpft werden. Die Bitmaske wird dabei dem Datentyp durch einen Unterstrich getrennt nachgestellt. Folgendes Beispiel prüft das 2. Bit des AD Attributs "userAccountControl":
+With the data type “bitmask”, an integer or long value can be ANDed with a bit mask. The bit mask is placed after the data type separated by an underscore. The following example checks the 2nd bit of the AD attribute “userAccountControl”:
 
 ```
 userAccountControl#bitmask_2#!bool#active
 ```
 
-Wird kein Format angegeben, wird direkt das Resultat der UND Verknüpfung angezeigt, in diesem Beispiel also 2. Das Format "bool" gibt 1 zurück, falls der Wert ungleich 0 ist, oder 0 wenn der Wert gleich 0 ist. Das Format "!bool" funktioniert genau gleich, invertiert aber das Ergebnis.
+If no format is specified, the result of the AND link is displayed directly, in this example 2. The format “bool” returns 1 if the value is not 0, or 0 if the value is 0. The “! Bool” format works in exactly the same way, but inverts the result.

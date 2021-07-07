@@ -5,33 +5,33 @@ permalink: "addins/en/filereconstructor/"
 language: en
 ---
 
-Das FileReconstructor Add-In liest eine existierende Datei ein, formt zeilenweise den Inhalt anhand konfigurierten Regeln um und schreibt die rekonstruierten Zeilen in eine neue Datei.<br /><br />
+The FileReconstructor Add-In reads an existing file, reforms the content line by line based on configured rules and writes the reconstructed lines to a new file.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In/Out: Dateieverzeichnis |
-| Transaktionen | 1 pro erstellte Datei |
-| Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />&lt;Instanz&gt;.Done |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In/Out: Dateieverzeichnis |
+| Transactions | 1 pro erstellte Datei |
+| Events | Per created file: &lt;Instance&gt;.Output (parameter = file) <br />&lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
-| inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
-| reconfiguration | Zeilenweise angewandte Konvertierungsregeln.<br />1. Verweis auf Ursprungszeile: Geschweifte Klammern im Format {Index Start-Zeichen, Index End-Zeichen, [Textlänge], [Auffüll-Zeichen], [Horizontale Ausrichtung]}<br />&nbsp;&nbsp;a. Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br />&nbsp;&nbsp;b. Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.<br />&nbsp;&nbsp;c. Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet.<br />&nbsp;&nbsp;d. Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Default = Leerzeichen).<br />&nbsp;&nbsp;e. Das Auffüllzeichen wird je nach Ausrichtung ('left'/'l' (Standard) oder 'right'/'r') rechts beziehungsweise links eingefügt.<br />2. Fix Text: Eingabe in Hochkommas (') oder Anführungszeichen (") |
-| outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei |
-| outputPath | Zielverzeichnis(Optional, Default = "") |
-| deleteInputFile | true = Quelldatei wird gelöscht (Optional, Default = false) |
-| userName | Benutzer mit den für die Zieldatei erforderlichen Berechtigungen (Optional) |
-| password | Zugehöriges Passwort (Optional) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| inputFile | Source file including directory. Multiple files possible (optional) |
+| reconfiguration | Conversion rules applied line by line.<br />1. Reference to the original line: curly brackets in the format {index start character, index end character, [text length], [padding character], [horizontal alignment]}<br />&nbsp;&nbsp; a. If the text length is not specified, it is calculated on the end and start index.<br />&nbsp;&nbsp;  b. If no end index is specified, this is calculated on the basis of the start index and the text length.<br />&nbsp;&nbsp;c. If the end index is outside the actual line length, the index of the last character in the line is used.<br />&nbsp;&nbsp;d. If the text length is greater than the difference between the end and start index, the padding character is used (default = space).<br />&nbsp;&nbsp;e. The padding character is inserted on the right or left depending on the alignment ('left' / 'l' (standard) or 'right' / 'r').<br />2. Fix Text: Enter in single quotation marks (') or quotation marks (“) |
+| outputFile | Target file. Placeholder: <br /> {now}: Current date<br />	{file}: Filename of the input file |
+| outputPath | Target directory (optional, default = “”) |
+| deleteInputFile | 	true = source file will be deleted (optional, default = false) |
+| userName | Users with the necessary permissions for the target file (Optional) |
+| password | Associated password (optional) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
 
-### Anwendungsbeispiele
+### Application examples
 
-#### Quelldatei mit fixer Spaltenbreite -> Zieldatei CSV:
-Die Eingabedatei enthält Spalten mit fixer Breite, Inhalt sieht folgendermassen aus:<br />
+#### Source file with fixed column width -> target file CSV:
+The input file contains columns with a fixed width, the content is as follows:<br />
 <span style="font-family:Courier;">EUR1000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHF1072<br />EUR400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USD430</span>
 
-Die Ausgabedatei soll aus 6 mit Semikolon getrennten Spalten bestehen; Leerzeichen bei EUR mit &lowast; auffüllen:<br />TO;CHF;&lowast;&lowast;1072;FROM;EUR;1000<br />TO;USD;&lowast;&lowast;&lowast;430;FROM;EUR;400<br />
+The output file should consist of 6 columns separated by semicolons; Fill spaces for EUR with ∗:<br />TO;CHF;&lowast;&lowast;1072;FROM;EUR;1000<br />TO;USD;&lowast;&lowast;&lowast;430;FROM;EUR;400<br />
 
-Eine mögliche Konfiguration sieht so aus: __'TO;'{12,,3}';'{15,21,,&lowast;,r}';FROM;'{0,3}';'{3,9}__<br /> - 'TO;' = fixer Text<br /> - {12,,3} = ab Position 12 werden 3 Zeichen kopiert (Bsp. CHF)<br /> - ';' = fixer Text (Semikolon)<br /> - {15,21,,*,r} = Position 15 bis 21 kopieren und auf linker Seite (weil Ausrichtung = rechts) mit &lowast; auffüllen (Bsp. &lowast;&lowast;1072)<br /> - ';FROM;' = fixer Text<br /> - {0,3} = ab Position 0 werden 3 Zeichen kopiert (Bsp. EUR)<br /> - ';' = fixer Text (Semikolon)<br /> - {3,9} = Position 3 bis 9 kopieren
+A possible configuration looks like this: __'TO;'{12,,3}';'{15,21,,&lowast;,r}';FROM;'{0,3}';'{3,9}__<br /> - 'TO;' = fixer Text<br /> - {12,,3} = 3 characters are copied from position 12 (e.g. CHF)<br /> - ';' = fixed text (semicolon)<br /> - {15,21,,*,r} = copy position 15 to 21 and fill it with ∗ on the left side (because alignment = right) (e.g. ∗∗ 1072)<br /> - ';FROM;' = fixed text<br /> - {0,3} = 3 characters are copied from position 0 (e.g. EUR)<br /> - ';' = fixed text (Semicolon)<br /> - {3,9} = copy positions 3 to 9

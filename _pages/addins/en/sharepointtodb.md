@@ -5,54 +5,54 @@ permalink: "addins/en/sharepointtodb/"
 language: en
 ---
 
-Das SharepointToDB Add-In exportiert Elemente einer Sharepoint Liste oder Dokumentenbibliothek in eine SQL Datenbank. Im Falle einer Dokumentenbibliothek kann das Dokument in ein binäres Datenbankfeld gespeichert werden.<br /><br />
+The SharepointToDB add-in exports elements of a Sharepoint list or document library into an SQL database. In the case of a document library, the document can be stored in a binary database field.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | Sharepoint |
-| Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | &lt;Instanz&gt;.Done |
+| features | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | Sharepoint |
+| Transactions | 1 if successful |
+| Events | &lt;Instance&gt;.Done |
 | | |
-| __Parameter__ | |
+| __parameter__ | |
 | spWebUrl | Sharepoint Web URL. |
-| spListName | Name der Sharepoint-Liste oder -Bibliothek. |
-| spViewName | (Optional) Name der Sharepoint-View welche die zu exportierenden Felder enthält. Wenn leer wird die Default-View verwendet. |
-| spUser | (Optional) Benutzername zur Authentifizierung auf Sharepoint. |
-| spPassword | (Optional) Passwort zur Authentifizierung auf Sharepoint. |
-| entriesToExport | Legt fest, ob alle oder nur die seit der letzten Ausführung geänderten Einträge exportiert werden. |
-| connectionString | Verbindungszeichenfolge zur Datenbank. |
-| useDbTransaction | Wenn aktiv, wird eine Datenbank-Transaktion verwendet und bei einem Fehler ein Rollback durchgeführt. |
-| preCommand | Optional ein SQL Befehl der vor dem Abgleich ausgeführt wird. |
-| postCommand | Optional ein SQL Befehl der nach dem Abgleich ausgeführt wird. |
-| tableName | Name der Datenbanktabelle. |
-| primaryKeyColumn | (Optional) Name der Primärschlüssel-Spalte. Existierende Zeilen mit passendem Primärschlüssel werden gelöscht und neu eingefügt. |
-| fileColumn | (Optional) Name der binären Datenbankspalte in welche die Datei geschrieben wird wenn es sich um eine Sharepoint Bibliothek handelt. |
-| columnMapping | (Optional) Zuordnung von Sharepoint Feldern zu Datanbank Spalten. Beispiel: spField1:dbColumn1,spField2:dbColumn2 |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| spListName | Name of the Sharepoint list or library. |
+| spViewName | (Optional) Name of the Sharepoint view which contains the fields to be exported. If empty, the default view is used. |
+| spUser | (Optional) Username for authentication on Sharepoint. |
+| spPassword | (Optional) Password for authentication on Sharepoint. |
+| entriesToExport | Specifies whether all entries or only those entries that have been changed since the last execution are exported. |
+| connectionString | Connection string to the database. |
+| useDbTransaction | If active, a database transaction is used and a rollback is carried out in the event of an error. |
+| preCommand | Optionally an SQL command that is executed before the comparison. |
+| postCommand | Optionally an SQL command that is executed after the synchronization. |
+| tableName | Name of the database table. |
+| primaryKeyColumn | (Optional) Name of the primary key column. Existing lines with a matching primary key are deleted and reinserted. |
+| fileColumn | (Optional) Name of the binary database column in which the file is written if it is a Sharepoint library. |
+| columnMapping | (Optional) Allocation of Sharepoint fields to database columns. Example: spField1: dbColumn1, spField2: dbColumn2 |
+| endpoint | 	Name of the end point that is used in the transaction (optional, default = “”) |
 
 
-### Mapping der SharePoint-Felder zu Datenbank-Spalten
+### Mapping of the SharePoint fields to database columns
 
-Standardmässig werden SharePoint-Felder in Datenbank-Spalten geschrieben die gleich heissen. Mittels des *columnMapping* Parameters kann dieses Verhalten beeinflusst werden. Folgendes Beispiel mappt ein SharePoint Feld "Account Type" auf die Datenbank-Spalte "AccountType":
+By default, SharePoint fields are written in database columns with the same names. This behavior can be influenced using the columnMapping parameter. The following example maps a SharePoint field “Account Type” to the database column “AccountType”:
 
 ```
 Account_x0020_Type:AccountType
 ```
 
-Möchte man verhindern dass ein SharePoint-Feld auf eine Datenbank-Spalte gemappt wird, z.B. beim Feld "ID" welches bei jedem SharePoint Element vorhanden ist, kann dieses auf eine "leere" DB Spalte gemappt werden:
+If you want to prevent a SharePoint field from being mapped to a database column, for example the “ID” field which is present in every SharePoint element, this can be mapped to an “empty” DB column:
 
 ```
 ID:
 ```
 
-Im *columnMapping* Parameter können mehrere Mappings durch Kommas getrennt angegeben werden.
+In column mapping parameters multiple mappings can be separated by commas.In column mapping parameters multiple mappings can be separated by commas.
 
-### Speichern von Dateien aus Dokumentenbibliotheken
+### Save files from document libraries
 
-Handelt es sich bei der im Parameter *spListName* angegebenen Liste um eine Dokumentenbibliothek, kann das Dokument des Elements in eine binäre Datenbank-Spalte geschrieben werden. Die Datenbank-Spalte muss dazu vom Typ *varbinary* oder *image* sein und ihr Name muss im Parameter *fileColumn* angegeben werden.
+If the list specified in the spListName parameter is a document library , the element's document can be written to a binary database column. The database column must be of the varbinary or image type and its name must be specified in the fileColumn parameter .
 
-### Inkrementelle Exports
+### Incremental exports
 
-Wird der Parameter *entriesToExport* auf *CHANGED* gesetzt, werden nur diejenigen Elemente synchronisiert, die seit der letzten Ausführung geändert haben. Dazu wird das *Last modified* Datum des SharePoint Elements mit dem Datum der letzten Ausführung der Add-In Instanz verglichen. Das Datum der letzten Ausführung wird als Instanz-Parameter im Verzeichnis *%programdata%\Sevitec\OneConnexx\AddInData* gespeichert.
+If the entriesToExport parameter is set to CHANGED , only those elements are synchronized that have changed since the last execution. For this purpose, the last modified date of the SharePoint element is compared with the date of the last execution of the add-in instance. The date of the last execution is saved as an instance parameter in the directory % programdata% \ Sevitec \ OneConnexx \ AddInData .

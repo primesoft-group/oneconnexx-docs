@@ -5,25 +5,25 @@ permalink: "addins/en/filecompressor/"
 language: en
 ---
 
-Das FileCompressor Add-In komprimiert bestimmte Dateien aus einem bestimmten Verzeichnis und speichert diese dann in einem Archiv ab<br /><br />
+The FileCompressor Add-In compresses certain files from a certain directory and then saves them in an archive.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In/Out: Dateieverzeichnis |
-| Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | &lt;Instanz&gt;.Done (Parameter = file) |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In/Out: file directory |
+| Transactions | 	1 if successful |
+| Events | &lt;Instance&gt;.Done (parameter = file) |
 | | |
-| __Parameter__ | |
-| sourceDirectory | Verzeichnis der Quelldatei(en) |
-| sourceFilePattern | Das Dateipattern dient zur Einschränkung der Quelldateien (* = alles; Bsp. «*.txt» => alle Dateien mit Endung .txt)<br />Mehrere Pattern werden mit Semikolon getrennt. Bsp. «*.txt; *.xml» => alle Text und XML Dateien. |
-| archiveName | Dateiname (inkl. Verzeichnis) des Archivs. Die Eingabe {0} wird als Platzhalter für das aktuelle Datum benutzt. Bsp. {0:yyyyMMdd}.zip => 20161128.zip. |
-| archiveType | Typ der Archivdatei: Zip, Tar oder GZip. (Default = "Zip") |
-| compressionType | Kompressionstyp in Abhängigkeit vom Typ des Archivs (Default = "LZMA"):<br />- Zip => BZip2, PPMd, Deflate, LZMA<br />- Tar => GZip, BZip2<br />- GZip => GZip. |
-| deleteSourceAfterProcessing | true = Die Quelldateien werden nach dem Komprimieren gelöscht. (Optional, Default = false) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| __parameter__ | |
+| sourceDirectory | Directory of the source file (s) |
+| sourceFilePattern | The file pattern is used to restrict the source files (* = everything; e.g. « .txt» => all files with the extension .txt)<br />Several patterns are separated by semicolons. Ex. « .Txt; * .xml »=> all text and XML files. |
+| archiveName | File name (including directory) of the archive. The input {0} is used as a placeholder for the current date. E.g. {0: yyyyMMdd} .zip => 20161128.zip. |
+| archiveType | 	Archive file type: Zip, Tar or GZip. (Default = "Zip") |
+| compressionType | Compression type depending on the type of archive (default = “LZMA”)::<br />- Zip => BZip2, PPMd, Deflate, LZMA<br />- Tar => GZip, BZip2<br />- GZip => GZip. |
+| deleteSourceAfterProcessing | true = The source files will be deleted after compression. (Optional, default = false) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
 
-### Anwendungsbeispiele
+### Application examples
 
-Platzsparendes Archvieren irgendwelcher Nutzerdaten
+Space-saving archiving of any user data

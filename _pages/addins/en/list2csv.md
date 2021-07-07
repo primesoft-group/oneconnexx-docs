@@ -5,24 +5,24 @@ permalink: "addins/en/list2csv/"
 language: en
 ---
 
-Mit dem ListToCSV Add-In können Sharepoint-Online Listen oder Views in eine CSV-Datei exportiert werden. 
+With the ListToCSV add-in, Sharepoint online lists or views can be exported to a CSV file.
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| Add-In Type | Logic |
-| Schnittstellen | In: Sharepoint-Liste <br /> Out: CSV-Datei |
-| Transaktionen | 1 wenn erfolgreich |
-| Ereignisse | &lt;Instanz&gt;.Done (Parameter = file) |
+| __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Add-in type | Logic |
+| Interfaces | In: Sharepoint list <br /> Out: CSV file |
+| Transactions |1 if successful |
+| Events | &lt;Instance&gt;.Done (parameter = file) |
 | | |
-| __Parameter__ | |
-| spSiteUrl | Die URL zur Sharepoint-Seite |
-| spListName | Der Name der Sharepoint-Liste auf der Sharepoint-Seite |
-| spViewName | (Optional) Der Name der Sharepoint-View für die oben angegeben Liste. Wird dieses Feld leer gelassen, so wird eine Standardview benutzt. |
-| spUser | Der Benutzername zur Authentisierung auf Sharepoint |
-| spPassword |  Das Passwort zur Authentisierung auf Sharepoint |
-| fileSaveLocation | Der komplette Speicherpfad der CSV-Datei. |
-| customHeader | (Optional) Header für die erste Zeile im CSV. Wenn leer werden die internen Sharepoint Spaltennamen verwendet. |
-| delimiter | Trennzeichen |
-| entriesToExport | Legt fest, ob alle Einträge oder nur solche, welche nach der letzten Ausführung geändert haben, exportiert werden. |
-| endpoint | Optionaler Name des Endpunktes der in der Transaktion verwendet wird. |
+| __parameter__ | |
+| spSiteUrl | The URL to the Sharepoint page |
+| spListName | 	The name of the Sharepoint list on the Sharepoint page |
+| spViewName | (Optional) The name of the Sharepoint view for the list given above. If this field is left empty, a standard view is used. |
+| spUser | 	The user name for authentication on Sharepoint |
+| spPassword |  The password for authentication on Sharepoint |
+| fileSaveLocation | 	The complete storage path of the CSV file. |
+| customHeader | (Optional) Header for the first line in the CSV. If empty, the internal SharePoint column names are used. |
+| delimiter | delimiter |
+| entriesToExport | Specifies whether all entries or only those that have changed since the last execution are exported. |
+| endpoint | Optional name of the endpoint used in the transaction. |
