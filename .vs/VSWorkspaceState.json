@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\_pages",
-    "\\_pages\\architecture",
-    "\\_pages\\architecture\\en"
+    "\\_pages\\addins",
+    "\\_pages\\addins\\en"
   ],
-  "SelectedNode": "\\_pages\\architecture\\en\\overview.md",
+  "SelectedNode": "\\_pages\\addins\\en\\xsltransform.md",
   "PreviewInSolutionExplorer": false
 }

@@ -2,6 +2,7 @@
 layout: page
 title: Alerting-Service
 permalink: "setup/de/alerting/"
+language: de
 ---
 
 ### Installationspakete
