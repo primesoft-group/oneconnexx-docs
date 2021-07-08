@@ -7,117 +7,117 @@ language: en
 
 #### vNext
 
-* __Neu__ FileCopy Add-In: Parameter sourceTimeFilter auch für FILE und SFTP Protokoll.
+* __New__ FileCopy Add-In: parameter sourceTimeFilter also for FILE and SFTP protocol.
 
 
 #### 1.4.5
 
-* __Neu__ Neues Add-In List2Csv um SharePoint Online Listen in CSV Dateien zu exportieren.
-* __Neu__ Neues Add-In SharepointToDB um Items aus SharePoint Online Dokumentbibliotheken oder Listen in eine Datenbank zu exportieren.
-* __Neu__ FileCopy Add-In: Dateien können aus SharePoint Online Dokumentenbibliotheken heruntergeladen werden.
-* __Neu__ SharepointEraser Add-In: Neue Parameters "subFolder" und "recursive".
-* __Neu__ Anzeige des Alarmverlaufs (Liste der zuletzt versendeten Alarmierungen).
-* __BREAKING CHANGE__ FileCopy Add-In: Bei "destinationProtocol" = SHAREPOINT muss die URL zur Dokumentenbibliothek neu im Parameter "destinationSystem" angegeben werden.
+* __New__ New Add-In List2Csv to export SharePoint Online lists to CSV files.
+* __New__ New add-in SharepointToDB to export items from SharePoint Online document libraries or lists to a database.
+* __New__ FileCopy Add-In: Files can be downloaded from SharePoint Online document libraries.
+* __New__ SharepointEraser Add-In: New parameters “subFolder” and “recursive”.
+* __New__ display of the alarm history (list of the most recently sent alarms).
+* __BREAKING CHANGE__ FileCopy FileCopy Add-In: If “destinationProtocol” = SHAREPOINT, the URL to the document library must be specified again in the “destinationSystem” parameter.
 
 
 #### 1.4.3
 
-* __Neu__ Ldap2CSV Add-In: Neuer Datentyp "bitmask"
-* __Neu__ Csv2Database Add-In: Neuer Parameter "fileNameColumn"
-* __Neu__ Anzeige der Auslastung
-* __Fehler__ Csv2Database Add-In: Überlange Texte werden auf die Länge des Datenbankfeldes gekürzt
-* __Fehler__ WebConnect: Formatierung JSON Rückgabewert korrigiert, Logging verbessert
-* __Fehler__ OneMessageAddIn: Fehler behoben wenn kein Trace verwendet wurde
+* __New__ Ldap2CSV Add-In: New data type “bitmask”
+* __New__ Csv2Database Add-In: New parameter “fileNameColumn”
+* __New__ display of utilization
+* __Error__ Csv2Database Add-In: Overly long texts are shortened to the length of the database field
+* __Error__ WebConnect: : JSON return value formatting corrected, logging improved
+* __Error__ OneMessageAddIn: OneMessageAddIn: Error corrected if no trace was used
 
 
 #### 1.4.1
 
-* __Fehler__ Instanzen von OneOffixxDocumentCreator nicht parallel ausführen
-* __Fehler__ Csv2Database Add-In: Unterstützung von Tabulator als Trennzeichen, Unterstützung von Spaltennamen mit Sonderzeichen
-* __Neu__ FileCopy Add-In: Neuer Parameter "skipExistingFiles"
+* __Error__ instances of OneOffixxDocumentCreator not running in parallel
+* __Error__ Csv2Database Add-In: Support of tabs as separators, support of column names with special characters
+* __New__ FileCopy Add-In: New parameter “skipExistingFiles”
 
 
 #### 1.4.0
 
-* __Neu__ FileCopy Add-In: Unterstützung für ein "Filter" Ereignis mit dem ein anderes Add-In die zu kopierende Datei manipulieren kann
-* __Neu__ TextReplace Add-In
-* __Neu__ MailSender Add-In: Unterstützung von TLS und Authentifizierung
-* __Neu__ Konfigurator-Rolle kann pro Instanz definiert werden
-* __Neu__ Anzeige der Versionsnummer und des Änderungsdatums eines Add-In
-* __Neu__ Verbesserte Anzeige der Alarmierungen bei vielen E-Mail Adressen
-* __Neu__ Verbesserte Anzeige der Regelausführungszeit in der Übersicht
-* __Neu__ Statistiken können manuell aktualisiert werden
-* __Neu__ Statistiken können auch als Tabellen angezeigt werden
-* __Neu__ Kontextmenu in Logauswertung zum Filtern von Logeinträgen nach einer Instanz
-* __Fehler__ Benutzer die nicht in der Konfigurator Rolle sind, können nicht mehr über das Kontextmenu Instanzen kopieren oder löschen
-* __Fehler__ Parameterwerte die XML Tags enthielten konnten nicht korrekt gespeichert werden
-* __Fehler__ Mehrzeilige Parameter wurden nicht korrekt behandelt (DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
-* __Fehler__ Kein Session-Timeout mehr in Web-Administration
+* __New__ FileCopy Add-In: Support for a “Filter” event with which another Add-In can manipulate the file to be copied
+* __New__ TextReplace add-in
+* __New__ MailSender Add-In: Support of TLS and authentication
+* __New__ configurator role can be defined for each instance
+* __New__ display of version number and modification date of an add-in
+* __New__ Improved display of alerts for many email addresses
+* __New__ Improved display of rule execution time in the overview
+* __New__ statistics can be updated manually
+* __New__ statistics can also be displayed as tables
+* __New__ context menu in log evaluation for filtering log entries for an instance
+* __Error__ Users who are not in the configurator role can no longer copy or delete instances via the context menu
+* __Error__ Parameter values ​​containing XML tags could not be saved correctly
+* __Error__ Multi-line parameters were not handled correctly (DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
+* __Error__ No more session timeout in web administration
 
 
 #### 1.3.0
 
-* __Neu__ DatabaseMaintenance Add-In: Möglichkeit einen beliebigen SQL Befehl auszuführen
-* __Neu__ Die Reihenfolge der Statistiken kann mittels Drag-and-Drop geändert werden
-* __Neu__ Neuer Parametertyp für mehrzeilige Texte (siehe DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
-* __Neu__ Anzeige der OneConnexx Version in der Web-Administration, Hinweis auf inkompatible Versionen
+* __New__ DatabaseMaintenance Add-In: Possibility to execute any SQL command
+* __New__ The order of the statistics can be changed using drag and drop
+* __New__ New parameter type for multi-line texts (see DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
+* __New__ display of the OneConnexx version in the web administration, reference to incompatible versions
 
 
 #### 1.2.1
 
-* __Neu__ Liste der Installationen ist alphabetisch nach Name sortiert
-* __Neu__ FileEraser Add-In unterstützt mehrere Suchmuster
-* __Neu__ Seite "Alarmierung" ist jetzt eine Unterseite von "Überwachung"
-* __Neu__ Neue Seite "Statistik"
-* __Neu__ Verbesserte Darstellung bei kleiner Bildschirmbreite (z.B. Mobilgeräte)
-* __Neu__ Möglichkeit Regeln nur an bestimmten Wochentagen oder Tagen im Monat zu prüfen
-* __Neu__ Für neue Alarmierungen können Standardtexte in Web.config definiert werden
-* __Neu__ Möglichkeit in Log Analyse die neusten Einträge zuoberst anzuzeigen
-* __Neu__ Regeln und Alarmierungen können als Excel Datei exportiert werden
-* __Neu__ Regeln und Alarmierungen können nach aktiv/inaktiv gefiltert werden
-* __Neu__ Möglichkeit Alarmierungen nur bei Regelverletzungen auszuführen und nicht bei jeder fehlerhaften Transaktion
-* __Neu__ FileCopy Add-In: Möglichkeit Dateien >2MB auf SharePoint Online hochzuladen
-* __Neu__ Xls2Csv Add-In
-* __Neu__ Csv2Database Add-In
-* __Fehler__ Wenn die Liste der Installationen alte Einträge mit derselben Port-Nummer enthielt, wurde unter Umständen der falsche Connection-String verwendet
-* __Fehler__ FileCopy Add-In: Löschen und Archivieren auf SFTP Server hatte nicht funktioniert
-* __Fehler__ FileCopy Add-In: Wenn Parameter vo einem Dispatcher Add-In gesetzt wurden und gleichzeitig die Konfiguration ändert, wurden die Parameter wieder zurückgesetzt
-* __Fehler__ FileCopy Add-In: Dateiname wird in Transaktion geschrieben
-* __Fehler__ FileCopy Add-In: Beim SFTP Protokoll funktionieren jetzt auch absolute Pfade
-* __Fehler__ FileCopy Add-In: FTPS unterstützt neuere Protokolle
-* __Fehler__ Ldap2CSV: Datumsformat funktioniert jetzt auch für Datumsfelder
-* __Fehler__ Direkt nach dem Umbenennen einer Instanz wurden Parameteränderungen nicht gespeichert
-* __Fehler__ Verhalten beim Verschieben von Instanzen zu Schnittstellen verbessert
-* __Fehler__ In der HTML Ansicht wurden Änderungen am E-Mail Text von Alarmierungen nicht gespeichert
-* __Fehler__ Encoding Fehler beim Nachladen von Transaktionen auf der Seite "Überwachung"
-* __Fehler__ Logauswertung hat nicht funktioniert wenn sich im "Logs" Verzeichnis noch andere Dateien befinden
-* __Fehler__ Echtzeit-Log wird bei jedem Neuladen der Seite zurückgesetzt, da sonst bei grossen Datenmengen der Browser einfriert
-* __Fehler__ Ldap2CSV, Xml2Csv: Anführungszeichen wenn nötig verdoppeln
+* __New__ list of installations is sorted alphabetically by name
+* __New__ FileEraser Add-In supports multiple search patterns
+* __New__ page “Alerting” is now a subpage of “Monitoring”
+* __New__ New page “Statistics”
+* __New__ Improved display for small screen widths (e.g. mobile devices)
+* __New__ possibility to check rules only on certain days of the week or days of the month
+* __New__ Standard texts can be defined in Web.config for new alarms
+* __New__ option in log analysis to display the latest entries at the top
+* __New__ rules and alarms can be exported as an Excel file
+* __New__ rules and alerts can be filtered according to active / inactive
+* __New__ option to issue alerts only in the event of rule violations and not for every faulty transaction
+* __New__ FileCopy Add-In: Possibility to upload files> 2MB to SharePoint Online
+* __New__ Xls2Csv add-in
+* __New__ Csv2Database add-in
+* __Error__ If the list of installations contained old entries with the same port number, the wrong connection string may have been used
+* __Error__ FileCopy Add-In: deleting and archiving on SFTP Server did not work
+* __Error__ FileCopy Add-In: If parameters were set by a Dispatcher Add-In and the configuration changed at the same time, the parameters were reset again
+* __Error__ FileCopy Add-In: file name is written to transaction
+* __Error__ FileCopy Add-In: Absolute paths now also work with the SFTP protocol
+* __Error__ FileCopy Add-In: FTPS supports newer protocols
+* __Error__ Ldap2CSV: Date format now also works for date fields
+* __Error__ Immediately after renaming an instance, parameter changes were not saved
+* __Error__ Improved bug behavior when moving instances to interfaces
+* __Error__ In the HTML view, changes to the email text of alerts were not saved
+* __Error__ Encoding Error loading transactions on the "monitoring"
+* __Error__ log evaluation did not work if there are other files in the “Logs” directory
+* __Error__ Real-time log is reset each time the page is reloaded, otherwise the browser freezes with large amounts of data
+* __Error__ Ldap2CSV, Xml2Csv: Ldap2CSV, Xml2Csv: double quotation marks if necessary
 
 
 #### 1.1.4
 
-* __Fehler__ Bizagi/OneMessage Transformation korrigiert
+* __Error__ corrected bizagi / OneMessage transformation
 
 
 #### 1.1.3
 
-* __Neu__ Zustand der Checkbox und Schnittstellen auf der Seite Überwachung/Übersicht wird in einem Cookie gespeichert
-* __Fehler__ Falsches Englisches Datumsformat auf der Seite Überwachung/Übersicht korrigiert
-* __Fehler__ Ein-/Ausklappen auf der Seite Überwachung/Übersicht korrigiert
+* __New__ status of the checkbox and interfaces on the Monitoring / Overview page is saved in a cookie
+* __Error__ corrected wrong English date format to the Monitoring page / Overview
+* __Error__ corrected wrong English date format to the Monitoring page / Overview
 
 
 #### 1.1.2
 
-* __Neu__ Standard Add-In "OneMessageAdapter"
-* __Neu__ Kontextmenu im Baum für Instanzen, Add-Ins und Gruppen
-* __Fehler__ Fehlermeldung in Web-Administration wenn 'Installations' Verzeichnis fehlt
-* __Fehler__ Gruppierung nach Add-In oder Gruppe wird dauerhaft gespeichert
-* __Fehler__ Reihenfolge der Instanzen innerhalb einer Gruppe wurde nicht immer korrekt gespeichert
-* __Fehler__ 'Letzte 5 min' Schaltfläche auf der Log-Analyse Seite hat Startzeit nicht aktuelisiert
-* __Fehler__ Logdateien werden neu standardmässing in UTF-8 geschrieben
+* __New__ tandard add-in “OneMessageAdapter”
+* __New__ context menu in the tree for instances, add-ins and groups
+* __Error__ error message in web administration if 'installation' directory is missing
+* __Error__ grouping by add-in or group is saved permanently
+* __Error__ order of the instances within a group was not always saved correctly
+* __Error__ 'Last 5 min' button on the log analysis page did not update the start time
+* __Error__ log files are now written in UTF-8 by default
 
 
 #### 1.1.0
 
-* __Neu__ OneConnexx Installationen werden unter %ProgramData%\Sevitec\OneConnexx\Installations gespeichert und können in der Web-Administration nicht mehr manuell hinzugefügt werden
+* __New__ OneConnexx installations are saved under% ProgramData% \ Sevitec \ OneConnexx \ Installations and can no longer be added manually in the web administration

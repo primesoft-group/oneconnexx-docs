@@ -1,25 +1,24 @@
 ---
 layout: page
-title: Installationsszenarien
+title: Installation scenarios
 permalink: "setup/en/scenarios/"
 language: en
 ---
 
-### Minimalinstallation ohne Datenbank
-Eine minimale Installation besteht aus dem OneConnexx Windows-Dienst und dem Internet Information Server mit der Web-Applikation für die Administration.
+### Minimal installation without database
+A minimal installation consists of the OneConnexx Windows service and the Internet Information Server with the web application for administration.
 
 ![x]({{ site.baseurl }}/assets/content-images/setup/de/scenario1.png "Szenario 1")
 
 
-### Standardinstallation mit vorhandenem Datenbankserver
-Die Standardinstallation ist eine Erweiterung der Minimalinstallation um eine Datenbank, welche auf einem bereits vorhandenen Datenbankserver installiert wird. 
-Die Standardinstallation mit der Verteilung auf zwei Server garantiert die beste Performance.
+### Standard installation with an existing database server
+The standard installation is an extension of the minimal installation by a database, which is installed on an existing database server. 
+The standard installation with the distribution on two servers guarantees the best performance.
 
 ![x]({{ site.baseurl }}/assets/content-images/setup/de/scenario2.png "Szenario 2")
 
-### Alles neu auf einem Server Installation
-Ist kein Datenbankserver verfügbar und Statistikdaten trotzdem erwünscht, kann auf dem OneConnexx Server zusätzlich eine
-Microsoft SQL Server Datenbank installiert werden. Diese Variante kann aber bei leistungsintensiven Transaktionen und
-komplexen Auswertungen zu Performanceeinbussen führen.
+### Everything new on a server installation
+If no database server is available and statistical data is still required, a Microsoft SQL Server database can also be installed on the OneConnexx server. 
+However, this variant can lead to a loss of performance in high-performance transactions and complex evaluations.
 
 ![x]({{ site.baseurl }}/assets/content-images/setup/de/scenario3.png "Szenario 3")

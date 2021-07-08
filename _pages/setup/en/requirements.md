@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Systemvoraussetzungen
+title: System requirements
 permalink: "setup/en/requirements/"
 language: en
 ---
 
-### Betriebssystem & Komponenten
+### Operating system & components
 
-OneConnexx kann auf folgenden Betriebssystemen installieren werden:
+OneConnexx can be installed on the following operating systems:
 
 * Windows Server 2019
 * Windows Server 2016
@@ -16,41 +16,39 @@ OneConnexx kann auf folgenden Betriebssystemen installieren werden:
 * Windows Server 2008 R2
 * Windows Server 2008
 
-Für den Betrieb der OneConnexx Anwendungen sind folgende Komponenten notwendig:
+The following components are required to operate the OneConnexx applications:
 
-* Internet Information Server ab Version 7
-* Microsoft .NET Framework 4.5.2 oder höher
-* Optional für Überwachung, Alarmierung, Statistik: Microsoft SQL Server ab Version 2008 (Express oder höher)
+* Internet Information Server from version 7
+* Microsoft .NET Framework 4.5.2 or higher
+* Optional for monitoring, alerting, statistics: Microsoft SQL Server from version 2008 (Express or higher)
 
-### Arbeitsspeicher & CPU Cores
+### RAM & CPU Cores
 
-OneConnexx wird als Dienst betrieben. Zur Administration wird zusätzlich ein Webseite innerhalb des Internet Information Servers
-betrieben. Wir empfehlen die Anforderungen von Microsoft zu berücksichtigen.
+OneConnexx operates as a service. A website is also operated within the Internet Information Server for administration. 
+We recommend that you take Microsoft's requirements into account.
 
-Empfehlenswert sind jedoch mindestens 4 GB Arbeitsspeicher und 2 Cores. Läuft auf dem Server noch weitere Software
-(z.B. der SQL Server) empfiehlt sich einen stärkeren CPU bzw. mehr Arbeitsspeicher zu benutzen.
+However, at least 4 GB of RAM and 2 cores are recommended. 
+If other software is running on the server (e.g. the SQL Server), it is advisable to use a more powerful CPU or more memory.
 
-### Festplattenspeicher
+### Hard disk space
 
-Die Software selbst benötigt nur wenige MB Festplattenspeicher. Das Logging erzeugt jedoch je nach Konfiguration und Last
-Logfiles, welche insgesamt mehrere GB Festplattenspeicher benötigen können.
+The software itself only requires a few MB of hard disk space. 
+However, depending on the configuration and load, logging generates log files, which can require several GB of hard disk space in total.
 
 ### Active Directory
 
-Der Server auf dem OneConnexx installiert wird, kann Mitglied des Active Directory sein. Die Berechtigung der
-Administration des OneConnexx erfolgt entweder über das Active Directory oder mit lokalen Benutzern.
+The server on which OneConnexx is installed can be a member of the Active Directory. 
+OneConnexx administration authorization is granted either via the Active Directory or with local users.
 
-### Einsatz von Virenscanners auf dem Windows Server
+### Use of virus scanners on the Windows server
 
-Falls auf dem System auf dem die OneConnexx Anwendungen ausgeführt werden ein Virenscanner im Einsatz ist, sollte
-dieser so konfiguriert werden, dass die Funktionalität von OneConnexx nicht eingeschränkt ist.
+If a virus scanner is in use on the system on which the OneConnexx applications are running, it should be configured in such a way that the functionality of OneConnexx is not restricted.
 
-Empfehlungen:
+Recommendations:
 
-* Der Virenscanner sollte das OneConnexx Installationsverzeichnis auf dem Server nicht analysieren. Da in der
-Standardeinstellung Logfiles generiert werden, wird in den Verzeichnissen häufig geschrieben.
-* Das Verzeichnis der IIS Logdateien sollte nicht analysiert werden.
-* Falls der Virenscanner HTTP/HTTPS Verbindungen analysiert, sollte die Adresse des OneConnexx Service als Ausnahme
-hinzugefügt werden.
+* The virus scanner should not analyze the OneConnexx installation directory on the server. 
+Since log files are generated in the standard setting, the directories are often written to.
+* The directory of the IIS log files should not be analyzed.
+* If the virus scanner analyzes HTTP / HTTPS connections, the address of the OneConnexx service should be added as an exception.
 
-{% include alert.html type="warning" text="Falls OneConnexx ohne diese Änderungen mit einem Virenscanner auf dem Server betrieben wird, kann es zu Performanceproblemen kommen." %}
+{% include alert.html type="warning" text="If OneConnexx is operated with a virus scanner on the server without these changes, this can lead to performance problems." %}

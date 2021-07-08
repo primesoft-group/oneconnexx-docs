@@ -2,6 +2,7 @@
 layout: page
 title: OneConnexx-Service
 permalink: "setup/de/oneconnexx/"
+language: de
 ---
 
 ### 32- oder 64-Bit?

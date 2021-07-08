@@ -5,28 +5,27 @@ permalink: "setup/en/oneconnexx/"
 language: en
 ---
 
-### 32- oder 64-Bit?
+### 32- or 64-bit?
 
-Den OneConnexx gibt es in einer 32-Bit und einer 64-Bit Version. Auf einem 64-Bit Betriebssystem wird empfohlen die 64-Bit 
-Version des OneConnexx zu verwenden, ausser ein Add-In erfordert zwingend den 32-Bit Modus. Die Add-Ins laufen automatisch als
-32-Bit oder 64-Bit Prozesse, je nach Version des OneConnexx.
+The OneConnexx is available in a 32-bit and a 64-bit version. It is recommended to use the 64-bit version of the OneConnexx on a 64-bit operating system, unless an add-in requires 32-bit mode. 
+The add-ins run automatically as 32-bit or 64-bit processes, depending on the version of the OneConnexx.
 
-### Installationspakete
+### Installation packages
 
-Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
+Installation packages are provided by Sevitec in the form of 7-zip archives. The following packages are required:
 
-* ocx-service.7z (Basis Service)
-* ocx-addins.7z (Standard Add-Ins)
-* Allfällige kundenspezifische Add-Ins in einem separaten Installationspacket.
+* ocx-service.7z (basic service)
+* ocx-addins.7z (standard add-ins)
+* Any customer-specific add-ins in a separate installation package.
 
-Alle benötigten Installationspakete auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Copy all required installation packages onto the server in the directory <Drive>: \ OneConnexx \ Install .
 
-Falls nur eine OneConnexx Instanz installiert wird, den Inhalt von *ocx-service.7z* nach *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService* entpacken, und den Inhalt von *ocx-addins.7z* in ein Unterverzeichnis *AddIns*.
+If only one OneConnexx instance is installed, extract the content of ocx-service.7z to <Drive>: \ OneConnexx \ OneConnexxService , and the content of ocx-addins.7z in a subdirectory AddIns .
 
-Wenn mehrere Instanze geplant sind (z.B. Test und Produktiv), dann wird empfohlen die Installationspakete in einen Unterordner
-*&lt;Laufwerk&gt;:\OneConnexx\<Instanzname>* zu entpacken.
+If several instances are planned (e.g. test and productive), it is recommended to unzip the installation packages in a subfolder
+*&lt;Drive&gt;:\OneConnexx\<Instance name>* zu entpacken.
 
-Danach sollte folgende Verzeichnisstruktur vorhanden sein:
+The following directory structure should then be available:
 
 ```
 \OneConnexx
@@ -40,73 +39,71 @@ Danach sollte folgende Verzeichnisstruktur vorhanden sein:
 <em>Config\oneconnexx.config.sevitec</em> in <em>Config\oneconnexx.config</em><br/>
 <em>Config\nlog.config.sevitec</em> in <em>Config\nlog.config</em>" %}
 
-### Service installieren
+### Install service
 
-Der OneConnexx Windows-Dienst wird pro Installation über die Eingabeaufforderung (Windows Konsole) installiert.
-Die Eingabeaufforderung muss als Administrator geöffnet werden. Der Name unter dem der Dienst installiert wird
-muss auf der Kommandozeile angegeben werden. Sollen verschiedene Instanzen (z.B. Test und Produktiv) auf demselben
-Server installiert werden, muss für jede Instanz ein eindeutiger Name verwendet werden.
+The OneConnexx Windows service is installed per installation via the command prompt (Windows console). The command prompt must be opened as an administrator.
+The name under which the service is installed must be given on the command line. 
+If different instances (e.g. test and productive) are to be installed on the same server, a unique name must be used for each instance.
 
-Ins Stammverzeichnis des OneConnexx wechseln und den Service installieren:
+Change to the root directory of the OneConnexx and install the service:
 
 ```
 cd \OneConnexx\OneConnexxService
 OneConnexx.exe –install –servicename=OneConnexx
 ```
 
-Zum Deinstallieren:
+To uninstall:
 
 ```
 OneConnexx.exe –uninstall –servicename=OneConnexx
 ```
 
-_-servicename=OneConnexx_ wird dabei durch den gewählten eindeutigen Namen der Instanz ersetzt.
+-servicename = OneConnexx is replaced by the selected unique name of the instance.
 
-In einem Unternehmensnetzwerk wird empfohlen, für den OneConnexx einen eigenen Benutzer anzulegen unter dem der
-Service installiert wird. Um den Service unter diesem Benutzer auszuführen muss folgendermassen vorgegangen werden:
+In a company network, it is recommended to create a separate user for the OneConnexx under which the service is installed. 
+To run the service under this user, proceed as follows:
 
 ```
 sc config OneConnexx obj= "<Benutzername>" password= "<Passwort>"
 ```
 
-* *OneConnexx* durch den Namen ersetzen unter dem der Service installiert wurde
-* \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzername* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzername*
-* Wichtig ist der Abstand nach <code>obj=</code> bzw. <code>password=</code>
+* Replace *OneConnexx* with the name under which the service was installed
+* \<Username \> must be written in the form *domain\Username * for a domain user and in the form*.\Username *
+* What is important is the distance to<code>obj=</code> or from <code>password=</code>
 
-#### Dateisystemberechtigungen
+#### File system permissions
 
-Falls der OneConnexx Service nicht unter dem lokalen Systemkonto (Lokales System/Local System) installiert wird, muss dem  &lt;OneConnexx-User&gt; für das Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx* und alle Unterordner volle Berechtigung erteilt werden. In diesem Beispiel wurde OneConnexx unter *C:\OneConnexx* installiert und läuft unter einem Benutzer mit Namen *ocxservice*:
+If the OneConnexx service is not installed under the local system account (Local System / Local System), the  &lt;OneConnexx-User&gt; must be granted full authorization for the directory *&lt;Drive&gt;:\OneConnexx* and all subfolders. In this example, OneConnexx was installed under *C:\OneConnexx* under a user named *ocxservice*:
 
 ```
 icacls C:\OneConnexx /grant ocxservice:(OI)(CI)RW
 ```
 
-Da verschiedene Dateien im Verzeichnis *%ProgramData%\Sevitec\OneConnexx* gespeichert werden, muss bei der ersten Installation sichergestellt werden, dass normale Benutzer Schreibzugriff auf dieses Verzeichnis haben. Die folgenden Befehle erstellen dieses Verzeichnis und erteilen die benötigte Berechtigung:
+Since various files are stored in the *%ProgramData%\Sevitec\OneConnexx* , it must be ensured during the first installation that normal users have write access to this directory. The following commands create this directory and grant the required permission:
 
 ```
 mkdir "%ProgramData%\Sevitec\OneConnexx"
 icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
 ```
-
+configuration
 ### Konfiguration
 
 ##### OneConnexx.exe.config
 
-In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\OneConnexx.exe.config* sind folgende Parameter zu konfigurieren:
+The following parameters must be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\OneConnexxService\OneConnexx.exe.config* :
 
-* connectionString: Die Verbindungszeichenfolge zur Datenbank. Wenn der OneConnexx Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn keine Datenbank verwendet werden soll darf kein Connection-String konfiguriert werden.
-* AdminTcpChannel: Standardmässig ist TCP Port 9501 konfiguriert. Sollen mehrere OneConnexx Instanzen auf einem Server installiert werden, muss für jede Instanz ein eindeutiger Port konfiguriert werden.
-* ConfigArchiveDirectory: Optional kann ein Verzeichnis (lokal oder als Netzwerkpfad) angegeben werden, in das bei jeder Konfigurationsänderung eine Sicherung der Konfigurationsdatei kopiert wird.
+* connectionString: The connection string to the database. If the OneConnexx Windows service is running under a domain user, "Integrated Security" should be selected. If no database is to be used, no connection string may be configured.
+* AdminTcpChannel: TCP port 9501 is configured by default. If several OneConnexx instances are to be installed on a server, a unique port must be configured for each instance.
+* ConfigArchiveDirectory: Optionally, a directory (local or as a network path) can be specified into which a backup of the configuration file is copied every time the configuration is changed.
 
-Alle anderen Konfigurationsparameter sollten nicht verändert werden!
+All other configuration parameters should not be changed!
 
 ##### nlog.config
 
-In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\OneConnexxService\Config\nlog.config* kann die Protokollierung des OneConnexx-Services
-und der Add-Ins konfiguriert werden. Normalerweise muss an der Protokollierung nichts geändert werden.
-Die Standardkonfiguration lautet:
+The logging of the OneConnexx service and the add-ins can be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\OneConnexxService\Config\nlog.config*.
+ . Normally nothing needs to be changed in the logging. The standard configuration is:
 
-* Logdateien werden im Unterverzeichnis «Logs» erstellt
-* Die aktuelle Logdatei heisst «oneconnexx.log»
-* Pro Tag wird eine neue Logdatei geschrieben, die Logdateien der letzten 7 Tage werden aufbewahrt
-* Es werden alle Logmeldungen protokolliert
+* Log files are created in the “Logs” subdirectory
+* The current log file is called «oneconnexx.log»
+* A new log file is written every day, the log files from the last 7 days are saved
+* All log messages are recorded

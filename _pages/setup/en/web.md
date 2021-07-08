@@ -5,135 +5,131 @@ permalink: "setup/en/web/"
 language: en
 ---
 
-### Server vorbereiten
+### Prepare the server
 
-Mithilfe des Powershell Skripts [IISOneConnexxScript.ps1]({{ site.baseurl }}/assets/content-files/IISOneConnexxScript.ps1) werden automatisch die erforderlichen Serverrollen und Features
-installiert.
+With the help of the Powershell script [IISOneConnexxScript.ps1]({{ site.baseurl }}/assets/content-files/IISOneConnexxScript.ps1)  , the required server roles and features are automatically installed.
 
-#### Manuelle Installation
+#### Manual installation
 
-Im Server Manager unter «Add roles and features» folgende Serverrollen hinzufügen:
+Add the following server roles in the Server Manager under "Add roles and features":
 
 * WebServer (IIS)
-  * Management Tools
+  * Management tools
     * IIS Management Console
   * Web Server
     * Security -> Windows Authentication
     * Application Development -> ASP.NET 4.5
 
-Und unter Features:
+And under features:
 
 * .NET Framework 4.5
 
-Unter Windows Server 2008:
+In Windows Server 2008:
 
-* Anwendungsfeature ASP.NET aktivieren
+* Activate the ASP.NET application feature
 * WebServer IIS -> Add Roles -> ASP.NET
 
-### Installationspakete
+### Installation packages
 
-Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
+Installation packages are provided by Sevitec in the form of 7-zip archives. The following packages are required:
 
 * ocx-web.7z
 
-Das benötigte Installationspaket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Copy the required installation package to the server in the directory *&lt;Drive&gt;:\OneConnexx\Install* kopieren.
 
-Den Inhalt des Installationspakets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpacken.
+Extract the contents of the installation package to *&lt;Drive&gt;:\OneConnexx\Web* entpacken.
 
-Die Datei *Web.config.sevitec* in *Web.config* umbenennen.
+Rename the *Web.config.sevitec* in *Web.config* .
 
-Auf dem «Web» Unterverzeichnis -> Properties -> Security -> Gruppe IIS_IUSRS hinzufügen mit Read & execute Rechten.
+On the «Web» Unterverzeichnis -> Properties -> Security -> Add IIS_IUSRS group with read & execute rights.
 
 ```
 icacls C:\OneConnexx\Web /grant IIS_IUSRS:(OI)(CI)RX
 ```
 
-{% include alert.html type="warning" text="Die Web-Administration muss nur in einer Instanz installiert werden. Sie kann mehrere OneConnexx Installationen administrieren." %}
+{% include alert.html type="warning" text="The web administration only needs to be installed in one instance. It can administer several OneConnexx installations." %}
 
-### IIS einrichten
+### Set up IIS
 
-Unter «Sites» -> Rechte Maustaste -> «Add Website…»
+Unter «Sites» -> right mouse button -> «Add Website…»
 
 * Name = OneConnexxAdministration
 * Physical Path = &lt;Laufwerk&gt;:\OneConnexx\Web
 * Binding, Port = 9500
 
-Neu erstellte Site anklicken -> Authentication -> Windows Authentication = Enabled
+Click on the newly created site -> Authentication -> Windows Authentication = Enabled
 
-Unter ApplicationPools sicherstellen dass der neu erstellte ApplicationPool «OneConnexxAdministration» als ".NET CLR Version" die Version "v4.0" ausgewählt hat.
+Under ApplicationPools make sure that the newly created ApplicationPool «OneConnexxAdministration» has selected the version “v4.0” as “.NET CLR Version”.
 
-#### IIS Berechtigung erteilen um Dienst zu Stoppen/Starten
+#### Grant IIS authorization to stop / start the service
 
-Damit der OneConnexx Windows-Dienst von der Web-Applikation gestoppt/gestartet werden kann, muss dem Benutzer unter dem der
-IIS läuft die entsprechende Berechtigung erteilt werden.
+So that the OneConnexx Windows service can be stopped / started by the web application, the user under which the IIS is running must be granted the appropriate authorization.
 
-1. subinacl herunterladen ([http://www.microsoft.com/en-us/download/details.aspx?id=23510](http://www.microsoft.com/en-us/download/details.aspx?id=23510))
-1. subinacl installieren
-1. Eingabeaufforderung als Administrator öffnen
-1. Ins Verzeichnis wechseln wo subinacl installiert wurde (z.B. C:\Program Files (x86)\Windows Resource Kits\Tools\)
+1. Download subinacl  ([http://www.microsoft.com/en-us/download/details.aspx?id=23510](http://www.microsoft.com/en-us/download/details.aspx?id=23510))
+1. Install subinacl
+1. Open command prompt as administrator
+1. Change to the directory where subinacl was installed (z.B. C:\Program Files (x86)\Windows Resource Kits\Tools\)
 1. ```subinacl /service OneConnexx /grant=IIS_IUSRS=F```
 
-{% include alert.html type="warning" text="Der letzte Befehl muss für jede installierte OneConnexx Instanz ausgeführt werden. «OneConnexx» ist der Name unter dem der Windows-Dienst installiert wurde. «IIS_IUSRS» ist eine Benutzergruppe die ab IIS 7.0 automatisch alle ApplicationPool-Identitäten enthält." %}
+{% include alert.html type="warning" text="The last command must be executed for each installed OneConnexx instance. «OneConnexx» is the name under which the Windows service was installed. «IIS_IUSRS» is a user group which from IIS 7.0 automatically contains all ApplicationPool identities." %}
 
-#### Dateisystemberechtigungen für IIS
+#### File system permissions for IIS
 
-Die Web-Administration benötigt Lesezugriff auf die Logdateien sowie auf die Add-Ins DLLs im Shadow Verzeichnis (zum Auslesen der Version).
+The web administration requires read access to the log files as well as to the add-ins DLLs in the shadow directory (to read the version).
 
-Dazu wird der IIS_IUSRS Benutzergruppe Lesezugriff auf das OneConnexx Installationsverzeichnis inklusive aller Unterverzeichnisse gewährt. Bei mehreren installierten OneConnexx Instanzen muss die Berechtigung für jedes Verzeichnis einzeln gesetzt werden. 
+For this purpose, the IIS_IUSRS user group is granted read access to the OneConnexx installation directory including all subdirectories. If several OneConnexx instances are installed, the authorization must be set individually for each directory. 
 
 ```
 icacls C:\OneConnexx\OneConnexxService /grant IIS_IUSRS:(OI)(CI)R
 ```
 
-Falls noch nicht bei der Installation des OneConnexx Service geschehen, müssen Schreibrechte für das Verzeichnis *%ProgramData%\Sevitec\OneConnexx* erteilt werden:
+If the name or the connection string of the database is configured for a OneConnexx instance, this information is saved in a file «connection.config» in the directory *%ProgramData%\Sevitec\OneConnexx* :
 
 ```
 mkdir "%ProgramData%\Sevitec\OneConnexx"
 icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
 ```
 
-### Logfiles und gespeicherte Verbindungen
+### Log files and saved connections
 
-Die Web-Administration schreibt Logfiles ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin*.
+The web administration writes log files to the *%ProgramData%\Sevitec\OneConnexx\WebAdmin*.
 
-Die Web-Administration liest eine Liste aller installierter OneConnexx-Instanzen aus dem Verzeichnis *%ProgramData%\Sevitec\OneConnexx\Installations*.
+The web administration reads a list of all installed OneConnexx instances from the directory *%ProgramData%\Sevitec\OneConnexx\Installations*.
 
-Wird für eine OneConnexx-Instanz der Name oder die Verbindungszeichenfolge der Datenbank konfiguriert, werden diese Informationen in einer Datei «connection.config» im Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
+If the name or the connection string of the database is configured for a OneConnexx instance, this information is saved in a file «connection.config» in the directory *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
 
-{% include alert.html type="warning" text="Das Verzeichnis %ProgramData% ist normalerweise ein unsichtbares Verzeichnis und befindet sich unter C:\ProgramData." %}
+{% include alert.html type="warning" text="The% ProgramData% directory is usually an invisible directory and is located under C: \ ProgramData." %}
 
-### Konfiguration in Web.config
+### Configuration in Web.config
 
-In der Datei Web.config (unter *&lt;Laufwerk&gt;:\OneConnex\Web*) können folgende Einstellungen vorgenommen werden.
+The following settings can be made in the Web.config file (under *&lt;Laufwerk&gt;:\OneConnex\Web*).
 
 __Logging__
 
-Standardmässig werden Logdateien ins Verzeichnis *%ProgramData%\Sevitec\OneConnexx\WebAdmin* geschrieben.
-Pro Tag wird eine neue Logdatei erstellt und die Dateien der letzten 7 Tage werden archiviert.
-Diese Einstellungen können im Abschnitt &lt;nlog&gt; geändert werden.
-Alle möglichen Einstellungen sind unter https://github.com/nlog/nlog/wiki beschrieben.
+By default, log files are written to the *%ProgramData%\Sevitec\OneConnexx\WebAdmin* directory.
+A new log file is created every day and the files from the last 7 days are archived. These settings can be changed in the &lt;nlog&gt; section. 
+All possible settings are described at https://github.com/nlog/nlog/wiki .
 
-__Anzeigesprache__
+__Display language__
 
-Die OneConnexx Web-Administration ist zweisprachig (Deutsch/Englisch) und verwendet standardmässig die Browsersprache,
-bzw. Englisch wenn die Browsersprache nicht Deutsch oder Englisch ist. Soll die Anzeigesprache unabhängig von der
-Browsersprache festgelegt werden, kann dies im Konfigurationselement &lt;globalization&gt; angegeben werden.
-Die Standardeinstellung lautet:
+The OneConnexx web administration is bilingual (German / English) and uses the browser language by default, or English if the browser language is not German or English. 
+If the display language is to be set independently of the browser language, this can be specified in the &lt;globalization&gt; onfiguration element.
+The default setting is:
 
 ```
 <globalization enableClientBasedCulture="true" uiCulture="auto" culture="auto" />
 ```
 
-Um die Anzeigesprache fest auf Englisch umzustellen:
+To permanently change the display language to English:
 
 ```
 <globalization enableClientBasedCulture="true" uiCulture="en-gb" culture="en-gb" />
 ```
 
-__Berechtigungen__
+__Permissions__
 
-Der Zugriff auf die Web-Administration wird über «Windows Authentication» gesteuert, d.h. aufgrund des angemeldeten Windows
-Benutzers. Wer grundsätzlich Zugriff auf die Web-Administration hat wird im Abschnitt &lt;authorization&gt; festgelegt:
+Access to the web administration is controlled via «Windows Authentication», ie based on the registered Windows user. 
+Who basically has access to the web administration is specified in the  &lt;authorization&gt; section:
 
 ```
 <authorization>
@@ -142,43 +138,43 @@ Benutzers. Wer grundsätzlich Zugriff auf die Web-Administration hat wird im Abs
 </authorization>
 ```
 
-Mit diesem Beispiel haben alle Mitglieder der Benutzergruppe "OcxUsers" in der Domäne "corp" Zugriff. Anstatt einer Benutzergruppe können auch einzelne Benutzer angegeben werden (Beispiel: &lt;allow users="corp\jones" /&gt;).
+With this example all members of the user group “OcxUsers” in the domain “corp” have access. Instead of a user group, individual users can also be specified (example: &lt;allow users="corp\jones" /&gt;).
 
-Weiterführende Berechtigungen werden über ein Rollenkonzept gesteuert. Es gibt folgende Rollen:
+Additional authorizations are controlled via a role concept. The roles are:
 
-* *Benutzer*: Kann sich mit allen konfigurierten OneConnexx Installationen verbinden. Hat nur Lesezugriff auf die Konfigurationseinstellungen. Sensitive Konfigurationsparameter wie Passwörter können nicht eingesehen werden.
-* *Konfigurator*: Kann zusätzlich Add-Ins erstellen, löschen und konfigurieren. Alle Konfigurationsparameter können eingesehen und verändert werden.
-* *Administrator*: Wie Konfigurator, kann aber zusätzlich OneConnexx Installationen erstellen, löschen und bearbeiten sowie die Windows-Dienste starten und stoppen.
+* *User *: Can connect to all configured OneConnexx installations. Has read-only access to configuration settings. Sensitive configuration parameters such as passwords cannot be viewed.
+* *Configurator *: Can also create, delete and configure add-ins. All configuration parameters can be viewed and changed.
+* *Administrator *: Like configurator, but can also create, delete and edit OneConnexx installations and start and stop Windows services.
 
-Die Rolle *Administrator* kann in der Datei *Web.config* einem einzelnen Windows Benutzer oder einer Windows Benutzergruppe zugeordnet werden. Mehrere Benutzer oder Benutzergruppen können durch Komma getrennt angegeben werden.
+The  *Administrator*  role can be assigned to an individual Windows user or to a Windows user group in the *Web.config* . Multiple users or user groups can be specified separated by commas.
 
 ```
 <add key="AdminRole" value="corp\OcxAdmins" />
 ```
 
-Achtung: Wird dieser Parameter nicht angegeben, oder auf eine leere Zeichenfolge gesetzt, gilt die Rolle *Administrator* für **alle** Benutzer.
+Warning: If this parameter is not specified or is set to an empty string, the administrator role applies to *administrator * role applies to **all** users.
 
-Die Mitglieder der Rolle *Konfigurator* können pro OneConnexx-Installation direkt auf der [Konfigurationsseite]({{site.baseurl }}/webclient/de/konfiguration/) bearbeitet werden.
+The members of the configurator role can be edited directly on the [Konfigurationsseite]({{site.baseurl }}/webclient/de/konfiguration/) page for each OneConnexx installation ..
 
-Benutzer die weder in der *Konfigurator* noch in der *Administrator* Rolle sind, aber grundsätzlich Zugriff auf die Web-Applikation haben, gehören in die Rolle *Benutzer*.
+Users who are neither in the *configurator * noch in der *administrator* role, but generally have access to the web application, belong in the *user* role.
 
-__Deaktivieren von Funktionen__
+__Deactivating functions__
 
-Durch folgenden Eintrag kann die Seite "Konfigurationsdateien" im Hauptmenu deaktiviert werden:
+The “Configuration files” page in the main menu can be deactivated with the following entry:
 
 ```
 <add key="Feature.ConfigFiles" value="false" />
 ```
 
-Durch folgenden Eintrag kann die Seite "Statistik" im Hauptmenu deaktiviert werden:
+The “Statistics” page in the main menu can be deactivated with the following entry:
 
 ```
 <add key="Feature.Statistic" value="false" />
 ```
 
-__Standardtexte für neue Alarmierungen__
+__Standard texts for new alarms__
 
-Der E-Mail Betreff und Text für neu erstellte Alarmierungen kann mit den folgenden Einträgen festgelegt werden:
+The e-mail subject and text for newly created alarms can be specified with the following entries:
 
 ```
 <add key="Alert.Subject.Default" value="Error on interface {interface} / {endpoint}" />

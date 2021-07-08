@@ -5,71 +5,70 @@ permalink: "setup/en/alerting/"
 language: en
 ---
 
-### Installationspakete
-Installationspakete werden von Sevitec in Form von 7-zip Archiven zur Verfügung gestellt. Folgende Pakete werden benötigt:
+### Installation packages
+Installation packages are provided by Sevitec in the form of 7-zip archives. The following packages are required:
 
 * ocx-alertingservice.7z
 
-Das benötigte Installationspaket auf den Server ins Verzeichnis *&lt;Laufwerk&gt;:\OneConnexx\Install* kopieren.
+Copy the required installation package to the server in the directory *&lt;Drive&gt;:\OneConnexx\Install* .
 
-Den Inhalt des Installationspakets nach *&lt;Laufwerk&gt;:\OneConnexx\AlertingService* entpacken.
+Extract the contents of the installation package to *&lt;Drive&gt;:\OneConnexx\AlertingService* .
 
-Bei der Erstinstallation die Datei *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* umbenennen.
+When you first install the file *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* rename.
 
-Dadurch wird folgende Verzeichnisstruktur erstellt:
+This creates the following directory structure:
 
 ```
 \OneConnexx
  |-AlertingService
 ```
 
-{% include alert.html type="warning" text="Der Alerting-Service muss nur in einer Instanz installiert werden. Er kann mehrere OneConnexx Installationen und Datenbanken überwachen." %}
+{% The alerting service only needs to be installed in one instance. It can monitor multiple OneConnexx installations and databases." %}
 
-### Service installieren
-Der Alerting Windows-Dienst wird über die Eingabeaufforderung (Windows Konsole) installiert. Die Eingabeaufforderung muss als
-Administrator geöffnet werden.
+### Install service
+The Alerting Windows service is installed via the command prompt (Windows console). The command prompt must be opened as an administrator.
 
-Ins «AlertingService» Unterverzeichnis wechseln und den Service installieren:
+Change to the «AlertingService» subdirectory and install the service:
 
 ```
 cd \OneConnexx\AlertingService
 OneConnexx.AlertingService.exe –install –servicename=OneConnexx.Alerting
 ```
 
-Zum Deinstallieren:
+To uninstall:
 
 ```
 OneConnexx.AlertingService.exe –uninstall –servicename=OneConnexx.Alerting
 ```
 
-In einem Unternehmensnetzwerk wird empfohlen, für den Alerting-Service einen eigenen Benutzer anzulegen unter dem der
-Service installiert wird. Um den Service unter diesem Benutzer auszuführen muss folgendermassen vorgegangen werden:
+In a company network, it is recommended to create a separate user for the alerting service under which the service is installed. 
+To run the service under this user, proceed as follows:
 
 ```
-sc config OneConnexx.Alerting obj= "<Benutzername>" password= "<Passwort>"
+sc config OneConnexx.Alerting obj= "<Username>" password= "<Passwort>"
 ```
 
-* *OneConnexx.Alerting* durch den Namen ersetzen unter dem der Service installiert wurde
-* \<Benutzername\> muss bei einem Domänenbenutzer in der Form *Domäne\Benutzername* geschrieben werden, bei einem lokalen Benutzer in der Form *.\Benutzername*
-* Wichtig ist der Abstand nach <code>obj=</code> bzw. <code>password=</code>
+* Replace *OneConnexx.Alerting* with the name under which the service was installed
+* \<Username\> must be written in the form *domain\Username* for a domain user and in the form *.\Username* for a local user
+* What is important is the distance to <code>obj=</code> or from <code>password=</code>
 
-Wichtig: Der Domänenbenutzer muss Modify- und Write-Rechte auf das *logs* Unterverzeichnis haben.
+Important: The domain user must have Modify and Write rights to the logs subdirectory.
 
-### Konfiguration
+### configuration
 
 ##### OneConnexx.AlertingService.exe.config
 
-In der Konfigurationsdatei *&lt;Laufwerk&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config* sind folgende Parameter zu konfigurieren:
+The following parameters must be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config* :
 
-* connectionStrings: Der Connection-String zur Datenbank. Wenn der AlertingService Windows-Dienst unter einem Domänenbenutzer läuft, sollte «Integrated Security» gewählt werden. Wenn der AlertingService mehrere Datenbanken überwachen soll, können mehrere Connection-Strings angegeben werden.
-* nlog: Konfiguration der Protokollierung des Alerting-Service. Standardmässig wird in eine Datei *oneconnexx.alerting.log* im Unterverzeichnis *logs* protokolliert.
-* MailSenderDefaultTimeout: Interval in Millisekunden in dem Mails versendet werden (Standard: 30000, alle 30 Sekunden).
-* RuleCheckerDefaultTimeout: Interval in Millisekunden in dem Regelverletzungen geprüft werden (Standard: 60000, jede Minute).
-* MailSenderDefaultFrom: Absenderadresse der versendeten E-Mails.
-* MailSenderClientServer: IP Adresse oder Hostname des Mailserver für ausgehende E-Mails.
-* MailSenderClientPort: Port des Mailservers (Standard: 25).
-* MailSenderClientTimeout: Timeout in Millisekunden für das Versenden von E-Mails.
-* MailSenderClientSsl: True = SSL verwenden, False = kein SSL (Standard: False).
-* MailSenderClientUserName: Optional der Benutzername für den Mailserver.
-* MailSenderClientUserPassword: Optional ein Passwort für den Mailserver.
+* connectionStrings: The connection string to the database. If the AlertingService Windows service runs under a domain user, «Integrated Security» should be selected. If the AlertingService is to monitor several databases, several connection strings can be specified.
+* nlog: Configuration of the logging of the alerting service. By default, the oneconnexx.alerting.log file is logged in the logs subdirectory .
+* MailSenderDefaultTimeout: Interval in milliseconds in which mails are sent (standard: 30000, every 30 seconds).
+* RuleCheckerDefaultTimeout: Interval in milliseconds in which rule violations are checked (standard: 60000, every minute).
+* MailSenderDefaultFrom: sender address of the sent emails.
+* MailSenderClientServer: IP address or host name of the mail server for outgoing e-mails.
+* MailSenderClientPort: Port of the mail server (default: 25).
+* MailSenderClientTimeout: Timeout in milliseconds for sending emails.
+* MailSenderClientSsl: True = use SSL, False = no SSL (default: False).
+* MailSenderClientUserName: Optionally the user name for the mail server.
+* MailSenderClientUserPassword: Optionally a password for the mail server.
 
