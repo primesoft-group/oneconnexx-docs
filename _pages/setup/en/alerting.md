@@ -23,7 +23,7 @@ This creates the following directory structure:
  |-AlertingService
 ```
 
-{% The alerting service only needs to be installed in one instance. It can monitor multiple OneConnexx installations and databases." %}
+{% include alert.html type="warning" text="The alerting service only needs to be installed in one instance. It can monitor multiple OneConnexx installations and databases." %}
 
 ### Install service
 The Alerting Windows service is installed via the command prompt (Windows console). The command prompt must be opened as an administrator.
