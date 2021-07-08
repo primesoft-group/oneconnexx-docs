@@ -2,6 +2,7 @@
 layout: page
 title: Systemvoraussetzungen
 permalink: "setup/de/requirements/"
+language: de
 ---
 
 ### Betriebssystem & Komponenten

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: OneConnexx-Service
-permalink: "setup/de/oneconnexx/"
+permalink: "setup/en/oneconnexx/"
+language: en
 ---
 
 ### 32- oder 64-Bit?

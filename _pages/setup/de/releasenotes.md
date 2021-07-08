@@ -2,6 +2,7 @@
 layout: page
 title: Versionshinweise
 permalink: "setup/de/releasenotes/"
+language: de
 ---
 
 #### vNext

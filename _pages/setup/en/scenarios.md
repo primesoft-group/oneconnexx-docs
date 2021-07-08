@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Installationsszenarien
-permalink: "setup/de/scenarios/"
+permalink: "setup/en/scenarios/"
+language: en
 ---
 
 ### Minimalinstallation ohne Datenbank

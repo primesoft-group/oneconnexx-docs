@@ -2,6 +2,7 @@
 layout: page
 title: Web-Administration
 permalink: "setup/de/web/"
+language: de
 ---
 
 ### Server vorbereiten

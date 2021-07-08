@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Versionshinweise
-permalink: "setup/de/releasenotes/"
+permalink: "setup/en/releasenotes/"
+language: en
 ---
 
 #### vNext

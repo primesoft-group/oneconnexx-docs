@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Datenbank
-permalink: "setup/de/db/"
+permalink: "setup/en/db/"
+language: en
 ---
 
 #### Voraussetzungen

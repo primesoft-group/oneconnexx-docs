@@ -2,6 +2,7 @@
 layout: page
 title: Datenbank
 permalink: "setup/de/db/"
+language: de
 ---
 
 #### Voraussetzungen

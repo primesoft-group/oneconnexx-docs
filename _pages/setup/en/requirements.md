@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Systemvoraussetzungen
-permalink: "setup/de/requirements/"
+permalink: "setup/en/requirements/"
+language: en
 ---
 
 ### Betriebssystem & Komponenten

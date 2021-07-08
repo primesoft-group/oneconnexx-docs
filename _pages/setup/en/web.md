@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Web-Administration
-permalink: "setup/de/web/"
+permalink: "setup/en/web/"
+language: en
 ---
 
 ### Server vorbereiten

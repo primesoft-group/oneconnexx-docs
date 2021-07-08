@@ -2,6 +2,7 @@
 layout: page
 title: Installationsszenarien
 permalink: "setup/de/scenarios/"
+language: de
 ---
 
 ### Minimalinstallation ohne Datenbank
