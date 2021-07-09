@@ -7,12 +7,12 @@ language: en
 
 #### requirements
 
-A database is basically optional, but certain OneConnexx functions such as “Monitoring”, “Alerting” and “Statistics” can only be used in conjunction with a database. 
+A database is basically optional, but certain OneConnexx functions such as "Monitoring", "Alerting" and "Statistics" can only be used in conjunction with a database. 
 All versions of Microsoft SQL Server from version 2008 are supported, including the free Express Edition.
 
 #### Create database
 
-Create a new database (eg with the name “OneConnexx”) on your Microsoft SQL server. The following two scripts must then be executed on this database in order to create the database schema:
+Create a new database (eg with the name "OneConnexx") on your Microsoft SQL server. The following two scripts must then be executed on this database in order to create the database schema:
 
 * [Tabellen]({{ site.baseurl }}/assets/content-files/create_tables.sql)
 * [Gespeicherte Prozeduren]({{ site.baseurl }}/assets/content-files/create_stored_procedures.sql)

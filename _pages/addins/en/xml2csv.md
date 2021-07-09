@@ -25,15 +25,15 @@ features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 | stripNamespace | 	true = namespace prefixes from the XML file are removed from the column names in the created CSV file (optional, default = true) |
 | delimiter | Separator of the columns in the CSV file (optional, default = semicolon) |
 | destinationDirectory | Directory in which the CSV file is created (optional, default = sourceDirectory) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
 
 ### Application examples 
 
-##### Source file via “file” parameter
+##### Source file via "file" parameter
 
-If the Xml2Csv add-in is activated via an event that contains a “file” parameter, the file in this parameter is interpreted as an XML file and converted into a CSV file. In this case the configured parameters “sourceDirectory” and “sourceFilePattern” are ignored.
+If the Xml2Csv add-in is activated via an event that contains a "file" parameter, the file in this parameter is interpreted as an XML file and converted into a CSV file. In this case the configured parameters "sourceDirectory" and "sourceFilePattern" are ignored.
 
-Events with “file” parameters are triggered by the following add-ins:
+Events with "file" parameters are triggered by the following add-ins:
 * DatabaseToCSV
 * FileDecompressor
 * FileCompressor

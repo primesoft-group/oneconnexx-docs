@@ -17,13 +17,13 @@ The FileReconstructor Add-In reads an existing file, reforms the content line by
 | | |
 | __parameter__ | |
 | inputFile | Source file including directory. Multiple files possible (optional) |
-| reconfiguration | Conversion rules applied line by line.<br />1. Reference to the original line: curly brackets in the format {index start character, index end character, [text length], [padding character], [horizontal alignment]}<br />&nbsp;&nbsp; a. If the text length is not specified, it is calculated on the end and start index.<br />&nbsp;&nbsp;  b. If no end index is specified, this is calculated on the basis of the start index and the text length.<br />&nbsp;&nbsp;c. If the end index is outside the actual line length, the index of the last character in the line is used.<br />&nbsp;&nbsp;d. If the text length is greater than the difference between the end and start index, the padding character is used (default = space).<br />&nbsp;&nbsp;e. The padding character is inserted on the right or left depending on the alignment ('left' / 'l' (standard) or 'right' / 'r').<br />2. Fix Text: Enter in single quotation marks (') or quotation marks (“) |
+| reconfiguration | Conversion rules applied line by line.<br />1. Reference to the original line: curly brackets in the format {index start character, index end character, [text length], [padding character], [horizontal alignment]}<br />&nbsp;&nbsp; a. If the text length is not specified, it is calculated on the end and start index.<br />&nbsp;&nbsp;  b. If no end index is specified, this is calculated on the basis of the start index and the text length.<br />&nbsp;&nbsp;c. If the end index is outside the actual line length, the index of the last character in the line is used.<br />&nbsp;&nbsp;d. If the text length is greater than the difference between the end and start index, the padding character is used (default = space).<br />&nbsp;&nbsp;e. The padding character is inserted on the right or left depending on the alignment ('left' / 'l' (standard) or 'right' / 'r').<br />2. Fix Text: Enter in single quotation marks (') or quotation marks (") |
 | outputFile | Target file. Placeholder: <br /> {now}: Current date<br />	{file}: Filename of the input file |
-| outputPath | Target directory (optional, default = “”) |
+| outputPath | Target directory (optional, default = "") |
 | deleteInputFile | 	true = source file will be deleted (optional, default = false) |
 | userName | Users with the necessary permissions for the target file (Optional) |
 | password | Associated password (optional) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
 
 
 ### Application examples

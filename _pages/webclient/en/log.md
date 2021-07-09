@@ -68,5 +68,5 @@ If you click with the right mouse button on a log entry, a context menu is displ
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/contextmenu.png "Kontextmenu")
 
-With the “Filter by instance” command, the filter is automatically adjusted so that only log entries from the selected instance are displayed in a range of +/- 1 minute from the selected log entry.
+With the "Filter by instance" command, the filter is automatically adjusted so that only log entries from the selected instance are displayed in a range of +/- 1 minute from the selected log entry.
 

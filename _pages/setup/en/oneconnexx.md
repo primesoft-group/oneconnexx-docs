@@ -103,7 +103,7 @@ All other configuration parameters should not be changed!
 The logging of the OneConnexx service and the add-ins can be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\OneConnexxService\Config\nlog.config*.
  . Normally nothing needs to be changed in the logging. The standard configuration is:
 
-* Log files are created in the “Logs” subdirectory
+* Log files are created in the "Logs" subdirectory
 * The current log file is called «oneconnexx.log»
 * A new log file is written every day, the log files from the last 7 days are saved
 * All log messages are recorded

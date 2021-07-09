@@ -5,7 +5,7 @@ permalink: "addins/en/oneoffixxdocumentcreator/"
 language: en
 ---
 
-The add-in OneOffixxDocumentCreator creates documents in the customer's CI / CD via the OneOffixx interface “OneOffixxDocumentCreationServer” (OODCS).<br /><br />
+The add-in OneOffixxDocumentCreator creates documents in the customer's CI / CD via the OneOffixx interface "OneOffixxDocumentCreationServer" (OODCS).<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
@@ -21,7 +21,7 @@ The add-in OneOffixxDocumentCreator creates documents in the customer's CI / CD 
 | oodcsUsername | 	Username of the OODCS WebService |
 | oodcsPassword | Password of the OODCS web service |
 | enableTrace | true = messages are saved in analysis files (optional, default = false) |
-| traceFolder | Directory of the analysis files (optional, default = “Trace”) |
+| traceFolder | Directory of the analysis files (optional, default = "Trace") |
 | messageTransformFolder | Folder containing the MessageTransform files (* .mt) |
 | retryCount | If a request fails, it will be repeated. The retryCount parameter defines how often a request should be repeated. (Optional, default = 1) |
 | maxRequests | Number of parallel requests (optional, default = 8) |

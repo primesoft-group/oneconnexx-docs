@@ -30,18 +30,18 @@ The SharepointToDB add-in exports elements of a Sharepoint list or document libr
 | primaryKeyColumn | (Optional) Name of the primary key column. Existing lines with a matching primary key are deleted and reinserted. |
 | fileColumn | (Optional) Name of the binary database column in which the file is written if it is a Sharepoint library. |
 | columnMapping | (Optional) Allocation of Sharepoint fields to database columns. Example: spField1: dbColumn1, spField2: dbColumn2 |
-| endpoint | 	Name of the end point that is used in the transaction (optional, default = “”) |
+| endpoint | 	Name of the end point that is used in the transaction (optional, default = "") |
 
 
 ### Mapping of the SharePoint fields to database columns
 
-By default, SharePoint fields are written in database columns with the same names. This behavior can be influenced using the columnMapping parameter. The following example maps a SharePoint field “Account Type” to the database column “AccountType”:
+By default, SharePoint fields are written in database columns with the same names. This behavior can be influenced using the columnMapping parameter. The following example maps a SharePoint field "Account Type" to the database column "AccountType":
 
 ```
 Account_x0020_Type:AccountType
 ```
 
-If you want to prevent a SharePoint field from being mapped to a database column, for example the “ID” field which is present in every SharePoint element, this can be mapped to an “empty” DB column:
+If you want to prevent a SharePoint field from being mapped to a database column, for example the "ID" field which is present in every SharePoint element, this can be mapped to an "empty" DB column:
 
 ```
 ID:

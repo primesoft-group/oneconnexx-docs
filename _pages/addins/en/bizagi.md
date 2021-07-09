@@ -20,8 +20,8 @@ The Bizagi Add-In is used to connect the Bizagi BPMN to the OneConnexx.<br />The
 | workflowUrl | URL of the Bizagi WorkflowEngineSOA WebService |
 | entityUrl | 	URL of the Bizagi EntityManagerSOA WebService |
 | enableTrace | true = messages are saved in analysis files (optional, default = false) |
-| traceFolder | Directory of the analysis files (optional, default = “Trace”) |
-| msgt | Directory with the MessageTransform files (* .mt) (optional, default = “Config \\ MessageTransform”) |
+| traceFolder | Directory of the analysis files (optional, default = "Trace") |
+| msgt | Directory with the MessageTransform files (* .mt) (optional, default = "Config \\ MessageTransform") |
 
 
 <!-- 

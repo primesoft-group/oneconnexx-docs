@@ -5,7 +5,7 @@ permalink: "webclient/en/alarmierung/"
 language: en
 ---
 ## introduction
-Alerting is closely related to the rules from the area of ​​“monitoring”. 
+Alerting is closely related to the rules from the area of ​​"monitoring". 
 The main task of the alerting is to monitor a specified combination of interface / endpoint and to send an information mail as soon as an incorrect transaction is written. 
 The alerting is normally set in such a way that rule violations (in the form of a transaction) written by rule monitoring trigger the alerting mail directly.
 

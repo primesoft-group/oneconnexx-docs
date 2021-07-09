@@ -20,7 +20,7 @@ Basic add-ins__ |
 | [MailSender]({{ site.baseurl }}/addins/en/mailsender/) | Sends an email |
 | [MemoryConsumer]({{ site.baseurl }}/addins/en/memoryconsumer/) | System test, stress test |
 | [OneMessageAdapter]({{ site.baseurl }}/addins/en/onemessageadapter/) | Creates a OneMessage from an event, which can then be forwarded to the OneOffixxDocumentCreator or Bizagi Add-In |
-| [OneOffixxDocumentCreator]({{ site.baseurl }}/addins/en/oneoffixxdocumentcreator/) | Creates documents in the customer's CI / CD via the OneOffixx interface “OneOffixxDocumentCreationServer” (OODCS) |
+| [OneOffixxDocumentCreator]({{ site.baseurl }}/addins/en/oneoffixxdocumentcreator/) | Creates documents in the customer's CI / CD via the OneOffixx interface "OneOffixxDocumentCreationServer" (OODCS) |
 | [Timer]({{ site.baseurl }}/addins/en/timer/) | 	Triggers events at configurable times |
 | [Xls2Csv]({{ site.baseurl }}/addins/en/xls2csv/) | Converts an Excel file to a CSV file|
 | [Xml2Csv]({{ site.baseurl }}/addins/en/xml2csv/) | Converts an XML file into a CSV file according to configured rules |
@@ -35,7 +35,7 @@ Basic add-ins__ |
 | [Ldap2CSV]({{ site.baseurl }}/addins/en/ldap2csv/) | 	Reads objects from an LDAP or ActiveDirectory server and writes them to a CSV file |
 | [List2CSV]({{ site.baseurl }}/addins/en/list2csv/) | Exports Sharepoint lists and views as a CSV file |
 | [ParameterTransformer]({{ site.baseurl }}/addins/en/parametertransformer/) | Transforms parameters between two add-in instances |
-| [ServerCheck]({{ site.baseurl }}/addins/en/servercheck/) | 	Checks the availability of servers using the “ping” command |
+| [ServerCheck]({{ site.baseurl }}/addins/en/servercheck/) | 	Checks the availability of servers using the "ping" command |
 | [SharepointEraser]({{ site.baseurl }}/addins/en/sharepointeraser/) | 	Deletes items in a SharePoint list / library that have reached a certain age |
 | [SharepointToDB]({{ site.baseurl }}/addins/en/sharepointtodb/) | Exports items from a SharePoint list / library to an SQL database |
 | [TextReplace]({{ site.baseurl }}/addins/en/textreplace/) | Replaces regular expressions in a text file and converts the character set |

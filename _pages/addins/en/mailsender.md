@@ -13,7 +13,7 @@ Connections to mail servers that expect an encrypted SSL connection (usually on 
 | --- | --- |
 | __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-in type | Logic |
-| Interfaces | In: Event (parameters “message”, “subject”, “isHtml”, “attachments”, “recipients”)<br/> Out: E-Mail |
+| Interfaces | In: Event (parameters "message", "subject", "isHtml", "attachments", "recipients")<br/> Out: E-Mail |
 | Transactions | 1 if successful |
 | Events | &lt;Instance&gt;.Done |
 | | |
@@ -27,7 +27,7 @@ Connections to mail servers that expect an encrypted SSL connection (usually on 
 | recipients | Comma-separated list of recipient addresses can be overwritten by a parameter in the triggering event |
 | sender | Email address of the evening |
 | subjectPrefix | A prefix that is placed in front of the subject line of every email (e.g. "Test -" so that emails from the test system are recognized immediately) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
 
 
 <!-- 

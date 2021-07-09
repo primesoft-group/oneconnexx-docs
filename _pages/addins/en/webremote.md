@@ -18,7 +18,7 @@ The WebRemote Add-In sends a message with the name of the event and the associat
 | __parameter__ | |
 | remoteUrl | URL of the recipient web service |
 | enableTrace | true = messages are saved in analysis files (optional, default = false) |
-| traceFolder | Directory of the analysis files (optional, default = “Trace”) |
+| traceFolder | Directory of the analysis files (optional, default = "Trace") |
 
 
 <!-- 

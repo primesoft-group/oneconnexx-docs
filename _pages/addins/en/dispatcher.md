@@ -18,10 +18,10 @@ The dispatcher add-in triggers events based on an SQL query. For each data recor
 | __parameter__ | |
 | connectionString | 	Database connection string |
 | query | SQL query<br />An event is triggered for each row returned. |
-| dueTimeColumn | Name of the column that contains a time of day at which the data record is to be processed (optional, default = “”) |
-| lastProcessedColumn | Name of the column that contains a time stamp of when the data record was last processed (optional, default = “”) |
-| updateQuery | SQL command to update the time stamp (in 'lastProcessedColumn') after a data record has been processed (Optional, Default = “”)<br />Placeholders in curly brackets are replaced by the corresponding fields from the result of the SQL query “query”. |
-| configUrl | Link to the extended configuration (Optional, Default = “”)<br />The placeholder @instance is replaced by the name of the add-in instance. |
+| dueTimeColumn | Name of the column that contains a time of day at which the data record is to be processed (optional, default = "") |
+| lastProcessedColumn | Name of the column that contains a time stamp of when the data record was last processed (optional, default = "") |
+| updateQuery | SQL command to update the time stamp (in 'lastProcessedColumn') after a data record has been processed (Optional, Default = "")<br />Placeholders in curly brackets are replaced by the corresponding fields from the result of the SQL query "query". |
+| configUrl | Link to the extended configuration (Optional, Default = "")<br />The placeholder @instance is replaced by the name of the add-in instance. |
 | endpoint | Name of the end point that is used in the transaction (optional, default = "") |
 
 ### Application examples
@@ -31,11 +31,11 @@ The dispatcher add-in triggers an event for each entry, which can be subscribed 
 
 ##### Run at certain times of the day
 
-*Requirement:* A database table “Dispatcher” with at least the columns “DispatcherId” of type “int”, “DueTime” of type “nvarchar” and “LastProcessed” of type “datetime”.
+*Requirement:* A database table "Dispatcher" with at least the columns "DispatcherId" of type "int", "DueTime" of type "nvarchar" and "LastProcessed" of type "datetime".
 
 *Parameter:*
 * dueTimeColumn = "DueTime"
 * lastProcessedColumn = "LastProcessed"
 * updateQuery = "UPDATE Dispatcher SET LastProcessed = GETDATE() WHERE DispatcherId = {DispatcherId}"
 
-*How it works:* For each line in the result of the SQL query, an event is only triggered if the current time of day is greater than the time in “DueTime” and the last execution (in “LastProcessed”) is not within the current day. If an event was triggered, the current time is written in the “LastProcessed” column.
+*How it works:* For each line in the result of the SQL query, an event is only triggered if the current time of day is greater than the time in "DueTime" and the last execution (in "LastProcessed") is not within the current day. If an event was triggered, the current time is written in the "LastProcessed" column.

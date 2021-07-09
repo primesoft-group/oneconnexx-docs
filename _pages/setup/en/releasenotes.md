@@ -15,15 +15,15 @@ language: en
 * __New__ New Add-In List2Csv to export SharePoint Online lists to CSV files.
 * __New__ New add-in SharepointToDB to export items from SharePoint Online document libraries or lists to a database.
 * __New__ FileCopy Add-In: Files can be downloaded from SharePoint Online document libraries.
-* __New__ SharepointEraser Add-In: New parameters “subFolder” and “recursive”.
+* __New__ SharepointEraser Add-In: New parameters "subFolder" and "recursive".
 * __New__ display of the alarm history (list of the most recently sent alarms).
-* __BREAKING CHANGE__ FileCopy FileCopy Add-In: If “destinationProtocol” = SHAREPOINT, the URL to the document library must be specified again in the “destinationSystem” parameter.
+* __BREAKING CHANGE__ FileCopy FileCopy Add-In: If "destinationProtocol" = SHAREPOINT, the URL to the document library must be specified again in the "destinationSystem" parameter.
 
 
 #### 1.4.3
 
-* __New__ Ldap2CSV Add-In: New data type “bitmask”
-* __New__ Csv2Database Add-In: New parameter “fileNameColumn”
+* __New__ Ldap2CSV Add-In: New data type "bitmask"
+* __New__ Csv2Database Add-In: New parameter "fileNameColumn"
 * __New__ display of utilization
 * __Error__ Csv2Database Add-In: Overly long texts are shortened to the length of the database field
 * __Error__ WebConnect: : JSON return value formatting corrected, logging improved
@@ -34,12 +34,12 @@ language: en
 
 * __Error__ instances of OneOffixxDocumentCreator not running in parallel
 * __Error__ Csv2Database Add-In: Support of tabs as separators, support of column names with special characters
-* __New__ FileCopy Add-In: New parameter “skipExistingFiles”
+* __New__ FileCopy Add-In: New parameter "skipExistingFiles"
 
 
 #### 1.4.0
 
-* __New__ FileCopy Add-In: Support for a “Filter” event with which another Add-In can manipulate the file to be copied
+* __New__ FileCopy Add-In: Support for a "Filter" event with which another Add-In can manipulate the file to be copied
 * __New__ TextReplace add-in
 * __New__ MailSender Add-In: Support of TLS and authentication
 * __New__ configurator role can be defined for each instance
@@ -67,8 +67,8 @@ language: en
 
 * __New__ list of installations is sorted alphabetically by name
 * __New__ FileEraser Add-In supports multiple search patterns
-* __New__ page “Alerting” is now a subpage of “Monitoring”
-* __New__ New page “Statistics”
+* __New__ page "Alerting" is now a subpage of "Monitoring"
+* __New__ New page "Statistics"
 * __New__ Improved display for small screen widths (e.g. mobile devices)
 * __New__ possibility to check rules only on certain days of the week or days of the month
 * __New__ Standard texts can be defined in Web.config for new alarms
@@ -90,7 +90,7 @@ language: en
 * __Error__ Improved bug behavior when moving instances to interfaces
 * __Error__ In the HTML view, changes to the email text of alerts were not saved
 * __Error__ Encoding Error loading transactions on the "monitoring"
-* __Error__ log evaluation did not work if there are other files in the “Logs” directory
+* __Error__ log evaluation did not work if there are other files in the "Logs" directory
 * __Error__ Real-time log is reset each time the page is reloaded, otherwise the browser freezes with large amounts of data
 * __Error__ Ldap2CSV, Xml2Csv: Ldap2CSV, Xml2Csv: double quotation marks if necessary
 
@@ -109,7 +109,7 @@ language: en
 
 #### 1.1.2
 
-* __New__ tandard add-in “OneMessageAdapter”
+* __New__ tandard add-in "OneMessageAdapter"
 * __New__ context menu in the tree for instances, add-ins and groups
 * __Error__ error message in web administration if 'installation' directory is missing
 * __Error__ grouping by add-in or group is saved permanently

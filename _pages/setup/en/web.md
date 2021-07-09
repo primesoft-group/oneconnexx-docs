@@ -59,7 +59,7 @@ Unter «Sites» -> right mouse button -> «Add Website…»
 
 Click on the newly created site -> Authentication -> Windows Authentication = Enabled
 
-Under ApplicationPools make sure that the newly created ApplicationPool «OneConnexxAdministration» has selected the version “v4.0” as “.NET CLR Version”.
+Under ApplicationPools make sure that the newly created ApplicationPool «OneConnexxAdministration» has selected the version "v4.0" as ".NET CLR Version".
 
 #### Grant IIS authorization to stop / start the service
 
@@ -138,7 +138,7 @@ Who basically has access to the web administration is specified in the  &lt;auth
 </authorization>
 ```
 
-With this example all members of the user group “OcxUsers” in the domain “corp” have access. Instead of a user group, individual users can also be specified (example: &lt;allow users="corp\jones" /&gt;).
+With this example all members of the user group "OcxUsers" in the domain "corp" have access. Instead of a user group, individual users can also be specified (example: &lt;allow users="corp\jones" /&gt;).
 
 Additional authorizations are controlled via a role concept. The roles are:
 
@@ -160,13 +160,13 @@ Users who are neither in the *configurator * noch in der *administrator* role, b
 
 __Deactivating functions__
 
-The “Configuration files” page in the main menu can be deactivated with the following entry:
+The "Configuration files" page in the main menu can be deactivated with the following entry:
 
 ```
 <add key="Feature.ConfigFiles" value="false" />
 ```
 
-The “Statistics” page in the main menu can be deactivated with the following entry:
+The "Statistics" page in the main menu can be deactivated with the following entry:
 
 ```
 <add key="Feature.Statistic" value="false" />

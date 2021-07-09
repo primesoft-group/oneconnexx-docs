@@ -22,7 +22,7 @@ The following WebAPI methods are available:<br />
 | __parameter__ | |
 | baseAddress | Base URL of the web service |
 | enableTrace | true = messages are saved in analysis files (optional, default = false) |
-| traceFolder | Directory of the analysis files (optional, default = “Trace”) |
+| traceFolder | Directory of the analysis files (optional, default = "Trace") |
 
 
 
@@ -30,27 +30,27 @@ The following WebAPI methods are available:<br />
 
 Example base URL: http://localhost/connect
 
-Triggering an event “eventname” with an empty OneMessage using a GET request:
+Triggering an event "eventname" with an empty OneMessage using a GET request:
 ```
 http://localhost/connect/api/services/eventname
 ```
 As a result, the number of triggered events is returned as JSON. Example: `{"oneconnexx": { "invoked": 1}}`
 
-Triggering an event “eventname” with JSON parameters using a POST request:
+Triggering an event "eventname" with JSON parameters using a POST request:
 ```
 http://localhost/connect/api/services/eventname
 ```
-The POST body must be transmitted with the content type “application / json” and contain a JSON object:
+The POST body must be transmitted with the content type "application / json" and contain a JSON object:
 ```
 {"oneconnexx": { "data": { }}}
 ```
-“Data” is in turn a JSON object that is converted into a OneMessage. As a result, the number of triggered events is returned as JSON. Example: `{"oneconnexx": { "invoked": 1}}`
+"Data" is in turn a JSON object that is converted into a OneMessage. As a result, the number of triggered events is returned as JSON. Example: `{"oneconnexx": { "invoked": 1}}`
 
-Triggering an event “eventname” with OneMessage parameters using a POST request:
+Triggering an event "eventname" with OneMessage parameters using a POST request:
 ```
 http://localhost/connect/api/connect/eventname
 ```
-The POST body must be transmitted with the content style “text / xml” and <oneconnexx><data>contain an XML document with at least the nodes . The content of the <data>node is converted into a OneMessage.
+The POST body must be transmitted with the content style "text / xml" and <oneconnexx><data>contain an XML document with at least the nodes . The content of the <data>node is converted into a OneMessage.
 ```
 <oneconnexx><data><add name="Key" value="Value" /></data></oneconnexx>
 ```

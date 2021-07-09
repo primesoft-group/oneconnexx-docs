@@ -23,13 +23,13 @@ A click on name or port loads the installation.
 
 #### 1. Edit installation
 
-With a click on the “Edit” symbol the following dialog opens:
+With a click on the "Edit" symbol the following dialog opens:
 
  ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/addInstallation.png "Installtion Bearbeiten") 
  
 Only the name and connection string parameters can be adjusted. 
-The connection to the SQL database can be tested directly with the “Check connection” button.
+The connection to the SQL database can be tested directly with the "Check connection" button.
  
 #### 2. Delete installation
  
-An installation can be removed from the list by clicking on the “Delete” symbol. An installation can only be removed if the corresponding OneConnexx-service has not been started.
+An installation can be removed from the list by clicking on the "Delete" symbol. An installation can only be removed if the corresponding OneConnexx-service has not been started.

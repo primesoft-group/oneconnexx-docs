@@ -66,8 +66,8 @@ This mechanism makes it possible to update individual add-ins during operation:
 #### Add-In communication
 
 Add-ins communicate with each other through events. Each add-in instance can trigger an event. An event is usually defined by the name of the initiating instance and optionally by an event type.
-For example, a “FileCopy” add-in triggers an “Output” event for each copied file, which contains the name of the copied file. 
-After all files have been copied, a “Done” event is also triggered. For example, if the instance is called “FileCopy_Demo”, then the triggered events are called as follows:
+For example, a "FileCopy" add-in triggers an "Output" event for each copied file, which contains the name of the copied file. 
+After all files have been copied, a "Done" event is also triggered. For example, if the instance is called "FileCopy_Demo", then the triggered events are called as follows:
 
 ```
 FileCopy_Demo.Output
@@ -114,7 +114,7 @@ Table **Rule**: Contains the rules configured in the web administration under "M
 
 Table **MailQueue**: If an alerting e-mail has to be sent, an entry is created in this table. As soon as the e-mail has been sent, the entry is deleted.
 
-Table **Interface**: Contains the interfaces configured in the web administration under “Monitoring/Interfaces”.
+Table **Interface**: Contains the interfaces configured in the web administration under "Monitoring/Interfaces".
 
 Table **Instance**: Contains an entry for each configured add-in instance.
 

@@ -24,7 +24,7 @@ The DatabaseToCSV Add-In generates one or more CSV files from an SQL query.<br /
 | includeColumnName | true: column names are written in the 1st line (optional, default = false) | 
 | query | A SQL query that returns the data to be exported.<br />Only SELECT or EXEC are allowed. A CSV file is created for each result set | 
 | timeOut | Timeout in seconds until the SQL command is canceled. (Optional, default = 30) | 
-| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
  
  
 ### Application examples
@@ -35,7 +35,7 @@ For this purpose, an SQL query is defined which returns the data. A timer, which
 
 ##### Define file name in SQL query
 
-If a 2nd result set is returned by the SQL query, the 1st column of the 1st line of the 2nd result set is interpreted as the file name. The “fileNamePattern” parameter is ignored in this case. Example of an SQL query:
+If a 2nd result set is returned by the SQL query, the 1st column of the 1st line of the 2nd result set is interpreted as the file name. The "fileNamePattern" parameter is ignored in this case. Example of an SQL query:
 ```
 SELECT * FROM DataTable;
 SELECT 'DataTable_export.csv'; 
@@ -43,7 +43,7 @@ SELECT 'DataTable_export.csv';
 
 ##### Create multiple CSV files
 
-If the SQL query returns a multiple of 2 result sets, several CSV files are created. In this case, the file name cannot be specified using the “fileNamePattern” parameter. Example of an SQL query that creates two CSV files:
+If the SQL query returns a multiple of 2 result sets, several CSV files are created. In this case, the file name cannot be specified using the "fileNamePattern" parameter. Example of an SQL query that creates two CSV files:
 ```
 SELECT * FROM DataTable;
 SELECT 'DataTable_export.csv'; 

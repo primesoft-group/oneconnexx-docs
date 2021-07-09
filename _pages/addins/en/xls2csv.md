@@ -24,16 +24,16 @@ The generated CSV file has the same name as the Excel file, only the file extens
 | destinationDirectory | Target directory in which CSV files are written. If empty, the files will be created in the source directory. | 
 | overwrite | Specifies whether an existing CSV file should be overwritten. If 'false', a number is appended to the file name so that it is unique. | 
 | deleteSourceFile | 	Specifies whether the input file should be deleted after successful conversion | 
-| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
  
  
 ### Application examples 
 
-##### Source file via “file” parameter
+##### Source file via "file" parameter
 
-If the Xls2Csv add-in is activated via an event that contains a “file” parameter, the file in this parameter is interpreted as an Excel file and converted into a CSV file. In this case the configured parameters “sourceDirectory” and “sourceFilePattern” are ignored.
+If the Xls2Csv add-in is activated via an event that contains a "file" parameter, the file in this parameter is interpreted as an Excel file and converted into a CSV file. In this case the configured parameters "sourceDirectory" and "sourceFilePattern" are ignored.
 
-Events with “file” parameters can be subscribed to by the following add-ins:
+Events with "file" parameters can be subscribed to by the following add-ins:
 * FileDecompressor
 * FileCopy
 * FileSystemWatcher

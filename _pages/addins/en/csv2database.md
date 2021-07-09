@@ -29,17 +29,17 @@ The first line of the CSV file must contain the column names. Only those columns
 | preCommand | Optionally an SQL command that is executed before reading the CSV files |
 | postCommand | Optionally an SQL command that is executed after reading the CSV files |
 | primaryKey | Optionally the name of the primary key of the database table. If specified, a record with this primary key is first searched for and this is updated. If no such data record is found, a new data record is inserted. |
-| fileNameColumn | Optionally the name of the column of the database table in which the file name of the CSV file is written (optional, default = “”) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = “”) |
+| fileNameColumn | Optionally the name of the column of the database table in which the file name of the CSV file is written (optional, default = "") |
+| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
  
  
 ### Application examples
 
-##### Source file via “file” parameter
+##### Source file via "file" parameter
 
-If the Csv2Database add-in is activated via an event that contains a “file” parameter, the file in this parameter is interpreted as a CSV file and converted into a CSV file. In this case the configured parameters “sourceDirectory” and “sourceFilePattern” are ignored.
+If the Csv2Database add-in is activated via an event that contains a "file" parameter, the file in this parameter is interpreted as a CSV file and converted into a CSV file. In this case the configured parameters "sourceDirectory" and "sourceFilePattern" are ignored.
 
-Events with “file” parameters can be subscribed to by the following add-ins:
+Events with "file" parameters can be subscribed to by the following add-ins:
 * DatabaseToCSV
 * FileDecompressor
 * FileCompressor
