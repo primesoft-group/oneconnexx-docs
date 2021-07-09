@@ -18,26 +18,25 @@ Installation packages are provided by Sevitec in the form of 7-zip archives. The
 * ocx-addins.7z (standard add-ins)
 * Any customer-specific add-ins in a separate installation package.
 
-Copy all required installation packages onto the server in the directory <Drive>: \ OneConnexx \ Install .
+Copy all required installation packages onto the server in the directory *&lt;drive&gt;:\OneConnexx\Install*.
 
-If only one OneConnexx instance is installed, extract the content of ocx-service.7z to <Drive>: \ OneConnexx \ OneConnexxService , and the content of ocx-addins.7z in a subdirectory AddIns .
+If only one OneConnexx instance is installed, extract the content of ocx-service.7z to *&lt;drive&gt:\OneConnexx\OneConnexxService*, and the content of *ocx-addins.7z* in a subdirectory *AddIns*.
 
-If several instances are planned (e.g. test and productive), it is recommended to unzip the installation packages in a subfolder
-*&lt;Drive&gt;:\OneConnexx\<Instance name>* zu entpacken.
+If several instances are planned (e.g. test and productive), it is recommended to unzip the installation packages in a subfolder *&lt;drive&gt;:\OneConnexx\&lt;InstanceName&gt;*.
 
 The following directory structure should then be available:
 
 ```
 \OneConnexx
- |-<Instanzname>
+ |-<InstanceName>
    |-AddIns 
    |-Config
    |-Pipeline
 ```
 
-{% include alert.html type="warning" text="Bei der Erstinstallation folgende Dateien umbenennen:<br/><br/> <em>OneConnexx.exe.config.sevitec</em> in <em>OneConnexx.exe.config</em><br/>
-<em>Config\oneconnexx.config.sevitec</em> in <em>Config\oneconnexx.config</em><br/>
-<em>Config\nlog.config.sevitec</em> in <em>Config\nlog.config</em>" %}
+{% include alert.html type="warning" text="In a first-time setup, the following files must be renamed:<br/><br/> <em>OneConnexx.exe.config.sevitec</em> to <em>OneConnexx.exe.config</em><br/>
+<em>Config\oneconnexx.config.sevitec</em> to <em>Config\oneconnexx.config</em><br/>
+<em>Config\nlog.config.sevitec</em> to <em>Config\nlog.config</em>" %}
 
 ### Install service
 
@@ -58,7 +57,7 @@ To uninstall:
 OneConnexx.exe –uninstall –servicename=OneConnexx
 ```
 
--servicename = OneConnexx is replaced by the selected unique name of the instance.
+_-servicename=OneConnexx_ is replaced by the selected unique name of the instance.
 
 In a company network, it is recommended to create a separate user for the OneConnexx under which the service is installed. 
 To run the service under this user, proceed as follows:
@@ -68,12 +67,12 @@ sc config OneConnexx obj= "<Benutzername>" password= "<Passwort>"
 ```
 
 * Replace *OneConnexx* with the name under which the service was installed
-* \<Username \> must be written in the form *domain\Username * for a domain user and in the form*.\Username *
-* What is important is the distance to<code>obj=</code> or from <code>password=</code>
+* \<Username\> must be written in the form *domain\Username* for a domain user and in the form *.\Username* for a local user
+* What is important is the space after <code>obj=</code> and <code>password=</code> resp.
 
 #### File system permissions
 
-If the OneConnexx service is not installed under the local system account (Local System / Local System), the  &lt;OneConnexx-User&gt; must be granted full authorization for the directory *&lt;Drive&gt;:\OneConnexx* and all subfolders. In this example, OneConnexx was installed under *C:\OneConnexx* under a user named *ocxservice*:
+If the OneConnexx service is not installed under the local system account (Local System), the  &lt;OneConnexx-User&gt; must be granted full authorization for the directory *&lt;Drive&gt;:\OneConnexx* and all subfolders. In this example, OneConnexx was installed under *C:\OneConnexx* under a user named *ocxservice*:
 
 ```
 icacls C:\OneConnexx /grant ocxservice:(OI)(CI)RW
@@ -90,7 +89,7 @@ configuration
 
 ##### OneConnexx.exe.config
 
-The following parameters must be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\OneConnexxService\OneConnexx.exe.config* :
+The following parameters must be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\OneConnexxService\OneConnexx.exe.config*:
 
 * connectionString: The connection string to the database. If the OneConnexx Windows service is running under a domain user, "Integrated Security" should be selected. If no database is to be used, no connection string may be configured.
 * AdminTcpChannel: TCP port 9501 is configured by default. If several OneConnexx instances are to be installed on a server, a unique port must be configured for each instance.
@@ -101,7 +100,7 @@ All other configuration parameters should not be changed!
 ##### nlog.config
 
 The logging of the OneConnexx service and the add-ins can be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\OneConnexxService\Config\nlog.config*.
- . Normally nothing needs to be changed in the logging. The standard configuration is:
+Normally nothing needs to be changed in the logging. The standard configuration is:
 
 * Log files are created in the "Logs" subdirectory
 * The current log file is called «oneconnexx.log»
