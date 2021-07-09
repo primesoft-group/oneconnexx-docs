@@ -120,4 +120,4 @@ language: en
 
 #### 1.1.0
 
-* __New__ OneConnexx installations are saved under% ProgramData% \ Sevitec \ OneConnexx \ Installations and can no longer be added manually in the web administration
+* __New__ OneConnexx installations are saved under %ProgramData%\Sevitec\OneConnexx\Installations and can no longer be added manually in the web administration

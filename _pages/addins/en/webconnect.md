@@ -40,7 +40,7 @@ Triggering an event "eventname" with JSON parameters using a POST request:
 ```
 http://localhost/connect/api/services/eventname
 ```
-The POST body must be transmitted with the content type "application / json" and contain a JSON object:
+The POST body must be transmitted with the content type "application/json" and contain a JSON object:
 ```
 {"oneconnexx": { "data": { }}}
 ```
@@ -50,7 +50,7 @@ Triggering an event "eventname" with OneMessage parameters using a POST request:
 ```
 http://localhost/connect/api/connect/eventname
 ```
-The POST body must be transmitted with the content style "text / xml" and <oneconnexx><data>contain an XML document with at least the nodes . The content of the <data>node is converted into a OneMessage.
+The POST body must be transmitted with the content style "text/xml" and contain an XML document with at least the node `<oneconnexx><data>`. The content of the `<data>` node is converted into a OneMessage.
 ```
 <oneconnexx><data><add name="Key" value="Value" /></data></oneconnexx>
 ```

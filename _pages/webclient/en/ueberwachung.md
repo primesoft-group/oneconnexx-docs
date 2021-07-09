@@ -84,7 +84,7 @@ The add-ins can easily be dragged from the right view to the left using drag and
 * Add-ins can only be subordinate to interfaces; an add-in as a sub-element of an add-in is not possible. 
 regulate
 ## Regeln
-In the "Rules" view, rules for the transactions of an interface can be configured. These rules are not used to monitor incorrect transactions, but to check whether an interface / endpoint combination writes a certain number of __successful transactions__  in a defined period of time. If this rule is not met, an incorrect transaction is written to the endpoint to which the rule is assigned. This transaction can either be left as it is, but is usually linked to the alarm. In the alerting, monitoring can be set on an interface / endpoint combination, which triggers a notification e-mail in the event of a faulty transaction. More about this under "Alerting"
+In the "Rules" view, rules for the transactions of an interface can be configured. These rules are not used to monitor incorrect transactions, but to check whether an interface / endpoint combination writes a certain number of __successful transactions__  in a defined period of time. If this rule is not met, an incorrect transaction is written to the endpoint to which the rule is assigned. This transaction can either be left as it is, but is usually linked to the alarm. In the alerting, monitoring can be set on an interface / endpoint combination, which triggers a notification e-mail in the event of a faulty transaction. More about this under "Alerting".
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/rulesOverview.png "Regeln")
 
