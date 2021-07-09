@@ -57,7 +57,7 @@ The POST body must be transmitted with the content style "text / xml" and <oneco
 As a result, the number of triggered events is returned as an XML OneMessage.
 
 
-### Permissions to eavesdrop on a port
+### Permissions to listen on a port
 
 If the WebAPI server is not authorized to listen to the specified URL / port, this authorization can be granted in the command prompt started as administrator:
 
@@ -65,5 +65,5 @@ If the WebAPI server is not authorized to listen to the specified URL / port, th
 netsh http add urlacl url=http://+:8355/webconnect/ user=domain\user
 ```
 
-This command grants the user domain \ user the authorization to listen to the URL / webconnect on port 8355. Important: The URL in the baseAddress parameter must exactly match the specified URL, including the + sign instead of the host name! 
+This command grants the user domain\user the authorization to listen to the URL /webconnect on port 8355. Important: The URL in the baseAddress parameter must exactly match the specified URL, including the + sign instead of the host name! 
 

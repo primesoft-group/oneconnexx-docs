@@ -21,7 +21,7 @@ Das FileSystemWatcher Add-In dient zur Überwachung von Verzeichnissen und Datei
 | pollingInterval | falls "usePolling" auf "true" gesetzt wurde, kann hier das Interval in Sekunden angegeben werden |
 | initialPull | true = Erzeugt beim Start des OneConnexx pro im zu überwachenden Verzeichnis vorhandener Datei ein "create"-Ereignis |
 | includeSubdirectories | true = Unterverzeichnisse werden ebenfalls überwacht |
-| filter | Das Suchmuster zur Einschränkung der zu überwachenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. |
+| filter | Das Suchmuster zur Einschränkung der zu überwachenden Dateien<br />Die Platzhalter \* und ? können wie von Windows gewohnt benutzt werden. |
 | bufferSize | Interne Puffergrösse in Bytes (Default = 8192)<br/>Wenn eine sehr grosse Anzahl Dateien überwacht werden soll, kann es nötig sein, diesen Wert in Schritten von 4096 bis zum Maximalwert von 65536 zu erhöhen. |
 | ensureFileWrittenTimeOut | Zeit in Millisekunden die vor dem Auslösen des Ereignisses maximal gewartet wird, bis die Datei fertig geschrieben wurde. Ein Wert von 0 bedeutet, dass immer gewartet wird bis die Datei für Leseoperationen geöffnet werden kann. |
 | createEvent | true = Löst ein Ereignis aus beim Erstellen einer Datei |

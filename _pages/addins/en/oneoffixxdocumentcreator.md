@@ -16,13 +16,13 @@ The add-in OneOffixxDocumentCreator creates documents in the customer's CI / CD 
 | Events |  |
 | | |
 | __parameter__ | |
-| configFilename | 	File with mapping configuration (e.g. $ (config) \ oodcs.xml) |
-| oodcsUrl | 	URL of the OODCS web service |
-| oodcsUsername | 	Username of the OODCS WebService |
+| configFilename | File with mapping configuration (e.g. $(config)\oodcs.xml) |
+| oodcsUrl | URL of the OODCS web service |
+| oodcsUsername | Username of the OODCS WebService |
 | oodcsPassword | Password of the OODCS web service |
 | enableTrace | true = messages are saved in analysis files (optional, default = false) |
 | traceFolder | Directory of the analysis files (optional, default = "Trace") |
-| messageTransformFolder | Folder containing the MessageTransform files (* .mt) |
+| messageTransformFolder | Folder containing the MessageTransform files (\*.mt) |
 | retryCount | If a request fails, it will be repeated. The retryCount parameter defines how often a request should be repeated. (Optional, default = 1) |
 | maxRequests | Number of parallel requests (optional, default = 8) |
 

@@ -21,7 +21,7 @@ The FileSystemWatcher Add-In is used to monitor directories and files. The monit
 | pollingInterval | if "usePolling" was set to "true", the interval in seconds can be specified here |
 | initialPull | true = Generates a "create" event when the OneConnexx pro is started in the file to be monitored |
 | includeSubdirectories | true = subdirectories are also monitored |
-| filter | The search pattern for restricting the files to be monitored. <br />The placeholders * and? can be used as usual with Windows. |
+| filter | The search pattern for restricting the files to be monitored. <br />The placeholders \* and ? can be used as usual in Windows. |
 | bufferSize | Internal buffer size in bytes (default = 8192)<br/>WIf a very large number of files is to be monitored, it may be necessary to increase this value in steps of 4096 up to a maximum of 65536. |
 | ensureFileWrittenTimeOut | Maximum time in milliseconds that is waited before the event is triggered until the file has been written. A value of 0 means that there is always a wait until the file can be opened for read operations. |
 | createEvent | true = Triggers an event when creating a file |

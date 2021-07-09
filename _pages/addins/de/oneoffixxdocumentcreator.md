@@ -22,7 +22,7 @@ Das Add-In OneOffixxDocumentCreator erstellt über die OneOffixx Schnittstelle "
 | oodcsPassword | Passwort des OODCS WebServices |
 | enableTrace | true = Nachrichten werden in Analyse-Dateien gespeichert (Optional, Default = false) |
 | traceFolder | Verzeichnis der Analyse-Dateien (Optional, Default = "Trace") |
-| messageTransformFolder | Ordner, welche die MessageTransform Dateien (*.mt) beinhaltet |
+| messageTransformFolder | Ordner, welche die MessageTransform Dateien (\*.mt) beinhaltet |
 | retryCount | Falls eine Anfrage fehlschlägt, wird diese wiederholt. Der Parameter retryCount definiert, wie oft eine Anfrage wiederholt werden soll. (Optional, Default = 1) |
 | maxRequests | Anzahl paralleler Anfragen (Optional, Default = 8) |
 

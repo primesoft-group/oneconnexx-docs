@@ -19,7 +19,7 @@ The Ldap2CSV add-in determines information from the AD (Active Directory) via LD
 | userName | User with the necessary authorizations for the LDAP. The user must be specified in LDAP format, e.g. cn = read-only-admin, dc = example, dc = com. If no user is specified and authenticationType = Secure, the identity of the OneConnexx service is used. |
 | password | Associated password (optional) |
 | domain | Name or IP address of the LDAP server,<br/>e.g. corp.sevitec.ch |
-| root | The BaseDN defines where the search for certain objects should be started in the directory tree<br/>Bsp.: CN=Configuration,DC=corp,DC=sevitec,DC=ch |
+| root | The BaseDN defines where the search for certain objects should be started in the directory tree<br/>Example: CN=Configuration,DC=corp,DC=sevitec,DC=ch |
 | authenticationType | Secure = The user specified in the "userName" parameter is used to log on to the LDAP server, or the identity of the OneConnexx service if no user has been specified.<br/>Anonymous = The login to the LDAP server is anonymous. |
 | sizeLimit | Maximum number of entries that can be exported (optional, default = 1000) |
 | filter | For the restriction to certain objects, eg "(objectClass = person)" (optional)<br/>The placeholder {lastrun} is replaced by a time stamp of the last successful execution. |
