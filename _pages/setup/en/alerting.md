@@ -10,11 +10,11 @@ Installation packages are provided by Sevitec in the form of 7-zip archives. The
 
 * ocx-alertingservice.7z
 
-Copy the required installation package to the server in the directory *&lt;Drive&gt;:\OneConnexx\Install* .
+Copy the required installation package to the server in the directory *&lt;Drive&gt;:\OneConnexx\Install*.
 
-Extract the contents of the installation package to *&lt;Drive&gt;:\OneConnexx\AlertingService* .
+Extract the contents of the installation package to *&lt;Drive&gt;:\OneConnexx\AlertingService*.
 
-When you first install the file *OneConnexx.AlertingService.exe.config.sevitec* in *OneConnexx.AlertingService.exe.config* rename.
+When you install the alerting service for the first time, rename the file *OneConnexx.AlertingService.exe.config.sevitec* to *OneConnexx.AlertingService.exe.config*.
 
 This creates the following directory structure:
 
@@ -50,15 +50,15 @@ sc config OneConnexx.Alerting obj= "<Username>" password= "<Passwort>"
 
 * Replace *OneConnexx.Alerting* with the name under which the service was installed
 * \<Username\> must be written in the form *domain\Username* for a domain user and in the form *.\Username* for a local user
-* What is important is the distance to <code>obj=</code> or from <code>password=</code>
+* What is important is the space after <code>obj=</code> and <code>password=</code> resp.
 
 Important: The domain user must have Modify and Write rights to the logs subdirectory.
 
-### configuration
+### Configuration
 
 ##### OneConnexx.AlertingService.exe.config
 
-The following parameters must be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config* :
+The following parameters must be configured in the configuration file *&lt;Drive&gt;:\OneConnexx\AlertingService\OneConnexx.AlertingService.exe.config*:
 
 * connectionStrings: The connection string to the database. If the AlertingService Windows service runs under a domain user, «Integrated Security» should be selected. If the AlertingService is to monitor several databases, several connection strings can be specified.
 * nlog: Configuration of the logging of the alerting service. By default, the oneconnexx.alerting.log file is logged in the logs subdirectory .

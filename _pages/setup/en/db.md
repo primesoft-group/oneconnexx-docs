@@ -5,23 +5,23 @@ permalink: "setup/en/db/"
 language: en
 ---
 
-#### requirements
+#### Requirements
 
 A database is basically optional, but certain OneConnexx functions such as "Monitoring", "Alerting" and "Statistics" can only be used in conjunction with a database. 
 All versions of Microsoft SQL Server from version 2008 are supported, including the free Express Edition.
 
 #### Create database
 
-Create a new database (eg with the name "OneConnexx") on your Microsoft SQL server. The following two scripts must then be executed on this database in order to create the database schema:
+Create a new database (e.g. with the name "OneConnexx") on your Microsoft SQL server. The following two scripts must then be executed on this database in order to create the database schema:
 
-* [Tabellen]({{ site.baseurl }}/assets/content-files/create_tables.sql)
-* [Gespeicherte Prozeduren]({{ site.baseurl }}/assets/content-files/create_stored_procedures.sql)
+* [Tables]({{ site.baseurl }}/assets/content-files/create_tables.sql)
+* [Stored Procedures]({{ site.baseurl }}/assets/content-files/create_stored_procedures.sql)
 
 #### Service User
 
 The OneConnexx service, alerting service and web administration should use a DB user who is allowed to read, write and execute stored procedures. However, changes to the DB schema should not be allowed.
 
-It is possible to use a *Windows user* or a * SQL Server user* zu verwenden. The  *SQL Server user* has the disadvantage that the associated password must be specified in clear text in the connection string. A *Windows user* can only be used if the OneConnexx service has also been installed under a separate Windows user.
+It is possible to use a *Windows user* or a *SQL Server user*. The  *SQL Server user* has the disadvantage that the associated password must be specified in clear text in the connection string. A *Windows user* can only be used if the OneConnexx service has also been installed under a separate Windows user.
 
 ##### SQL Server user
 
@@ -32,7 +32,7 @@ CREATE LOGIN ocxservice WITH PASSWORD = '...'
 GO
 ```
 
-Run on the *OneConnexx* database:
+Execute on the *OneConnexx* database:
 
 ```
 CREATE USER ocxservice FROM LOGIN ocxservice
@@ -41,23 +41,23 @@ GO
 
 ##### Windows users
 
-Run on the *OneConnexx* database and specify the Windows user under which the OneConnexx service was installed:
+Execute on the *OneConnexx* database and specify the Windows user under which the OneConnexx service was installed:
 
 ```
-CREATE USER ocxservice FROM LOGIN "domäne\benutzername"
+CREATE USER ocxservice FROM LOGIN "domäne\username"
 GO
 ```
 
 If the database and web administration were installed on different servers, the web administration computer account must be granted access to the database. The computer account consists of the computer name followed by a dollar sign ($).
 
-Run on the *master* database and specify the domain and computer name of the web server on which the web administration was installed:
+Execute on the *master* database and specify the domain and computer name of the web server on which the web administration was installed:
 
 ```
 CREATE LOGIN "domäne\computer$" FROM WINDOWS
 GO
 ```
 
-Run on the *OneConnexx* database:
+Execute on the *OneConnexx* database:
 
 ```
 CREATE USER "domäne\computer$" FROM LOGIN "domäne\computer$"
@@ -66,8 +66,8 @@ GO
 
 #### Database roles
 
-Create a new role *OneConnexx* on the OneConnexx database . Add the OneConnexx service user to the roles*db_executor*, *db_datareader*, *db_datawriter* and
-*db_executor*. 
+Create a new role *OneConnexx* on the OneConnexx database. Add the OneConnexx service user to the roles *db_executor*, *db_datareader*, *db_datawriter* and
+*db_executor*:
 
 ```
 CREATE ROLE [db_executor] AUTHORIZATION [dbo]

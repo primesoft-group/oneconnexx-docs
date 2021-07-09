@@ -39,9 +39,9 @@ Copy the required installation package to the server in the directory *&lt;Drive
 
 Extract the contents of the installation package to *&lt;Drive&gt;:\OneConnexx\Web* entpacken.
 
-Rename the *Web.config.sevitec* in *Web.config* .
+Rename the file *Web.config.sevitec* to *Web.config*.
 
-On the «Web» Unterverzeichnis -> Properties -> Security -> Add IIS_IUSRS group with read & execute rights.
+Right-click on the «Web» directory and choose Properties -> Security, Add IIS_IUSRS group with read & execute rights.
 
 ```
 icacls C:\OneConnexx\Web /grant IIS_IUSRS:(OI)(CI)RX
@@ -83,7 +83,7 @@ For this purpose, the IIS_IUSRS user group is granted read access to the OneConn
 icacls C:\OneConnexx\OneConnexxService /grant IIS_IUSRS:(OI)(CI)R
 ```
 
-If the name or the connection string of the database is configured for a OneConnexx instance, this information is saved in a file «connection.config» in the directory *%ProgramData%\Sevitec\OneConnexx* :
+If the name or the connection string of the database is configured for a OneConnexx instance, this information is saved in a file «connection.config» in the directory *%ProgramData%\Sevitec\OneConnexx*:
 
 ```
 mkdir "%ProgramData%\Sevitec\OneConnexx"
@@ -96,9 +96,9 @@ The web administration writes log files to the *%ProgramData%\Sevitec\OneConnexx
 
 The web administration reads a list of all installed OneConnexx instances from the directory *%ProgramData%\Sevitec\OneConnexx\Installations*.
 
-If the name or the connection string of the database is configured for a OneConnexx instance, this information is saved in a file «connection.config» in the directory *%ProgramData%\Sevitec\OneConnexx\WebAdmin* gespeichert.
+If the name or the connection string of the database is configured for a OneConnexx instance, this information is saved in a file «connection.config» in the directory *%ProgramData%\Sevitec\OneConnexx\WebAdmin*.
 
-{% include alert.html type="warning" text="The% ProgramData% directory is usually an invisible directory and is located under C: \ ProgramData." %}
+{% include alert.html type="warning" text="The %ProgramData% directory is usually an invisible directory and is located under C:\ProgramData." %}
 
 ### Configuration in Web.config
 
@@ -112,7 +112,7 @@ All possible settings are described at https://github.com/nlog/nlog/wiki .
 
 __Display language__
 
-The OneConnexx web administration is bilingual (German / English) and uses the browser language by default, or English if the browser language is not German or English. 
+The OneConnexx web administration is bilingual (German/English) and uses the browser language by default, or English if the browser language is not German or English. 
 If the display language is to be set independently of the browser language, this can be specified in the &lt;globalization&gt; onfiguration element.
 The default setting is:
 
@@ -142,9 +142,9 @@ With this example all members of the user group "OcxUsers" in the domain "corp" 
 
 Additional authorizations are controlled via a role concept. The roles are:
 
-* *User *: Can connect to all configured OneConnexx installations. Has read-only access to configuration settings. Sensitive configuration parameters such as passwords cannot be viewed.
-* *Configurator *: Can also create, delete and configure add-ins. All configuration parameters can be viewed and changed.
-* *Administrator *: Like configurator, but can also create, delete and edit OneConnexx installations and start and stop Windows services.
+* *User*: Can connect to all configured OneConnexx installations. Has read-only access to configuration settings. Sensitive configuration parameters such as passwords cannot be viewed.
+* *Configurator*: Can also create, delete and configure add-ins. All configuration parameters can be viewed and changed.
+* *Administrator*: Like configurator, but can also create, delete and edit OneConnexx installations and start and stop Windows services.
 
 The  *Administrator*  role can be assigned to an individual Windows user or to a Windows user group in the *Web.config* . Multiple users or user groups can be specified separated by commas.
 
@@ -152,11 +152,11 @@ The  *Administrator*  role can be assigned to an individual Windows user or to a
 <add key="AdminRole" value="corp\OcxAdmins" />
 ```
 
-Warning: If this parameter is not specified or is set to an empty string, the administrator role applies to *administrator * role applies to **all** users.
+Warning: If this parameter is not specified or is set to an empty string, the administrator role applies to **all** users.
 
-The members of the configurator role can be edited directly on the [Konfigurationsseite]({{site.baseurl }}/webclient/de/konfiguration/) page for each OneConnexx installation ..
+The members of the configurator role can be edited directly on the [Configuration]({{site.baseurl }}/webclient/en/konfiguration/) page for each OneConnexx installation.
 
-Users who are neither in the *configurator * noch in der *administrator* role, but generally have access to the web application, belong in the *user* role.
+Users who are neither in the *configurator* nor in the *administrator* role, but generally have access to the web application, belong in the *user* role.
 
 __Deactivating functions__
 

@@ -20,7 +20,7 @@ Installation packages are provided by Sevitec in the form of 7-zip archives. The
 
 Copy all required installation packages onto the server in the directory *&lt;drive&gt;:\OneConnexx\Install*.
 
-If only one OneConnexx instance is installed, extract the content of ocx-service.7z to *&lt;drive&gt:\OneConnexx\OneConnexxService*, and the content of *ocx-addins.7z* in a subdirectory *AddIns*.
+If only one OneConnexx instance is installed, extract the content of *ocx-service.7z* to *&lt;drive&gt;:\OneConnexx\OneConnexxService*, and the content of *ocx-addins.7z* in a subdirectory *AddIns*.
 
 If several instances are planned (e.g. test and productive), it is recommended to unzip the installation packages in a subfolder *&lt;drive&gt;:\OneConnexx\&lt;InstanceName&gt;*.
 

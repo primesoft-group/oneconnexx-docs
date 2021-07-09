@@ -42,7 +42,7 @@ Den Inhalt des Installationspakets nach *&lt;Laufwerk&gt;:\OneConnexx\Web* entpa
 
 Die Datei *Web.config.sevitec* in *Web.config* umbenennen.
 
-Auf dem «Web» Unterverzeichnis -> Properties -> Security -> Gruppe IIS_IUSRS hinzufügen mit Read & execute Rechten.
+Rechsklick auf dem «Web» Unterverzeichnis, Properties -> Security, Gruppe IIS_IUSRS hinzufügen mit Read & execute Rechten.
 
 ```
 icacls C:\OneConnexx\Web /grant IIS_IUSRS:(OI)(CI)RX
