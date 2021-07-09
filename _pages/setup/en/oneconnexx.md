@@ -84,8 +84,8 @@ Since various files are stored in the *%ProgramData%\Sevitec\OneConnexx* , it mu
 mkdir "%ProgramData%\Sevitec\OneConnexx"
 icacls %ProgramData%\Sevitec\OneConnexx /grant Users:(OI)(CI)RW
 ```
-configuration
-### Konfiguration
+
+### Configuration
 
 ##### OneConnexx.exe.config
 

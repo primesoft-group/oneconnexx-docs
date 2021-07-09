@@ -54,7 +54,7 @@ icacls C:\OneConnexx\Web /grant IIS_IUSRS:(OI)(CI)RX
 Unter «Sites» -> right mouse button -> «Add Website…»
 
 * Name = OneConnexxAdministration
-* Physical Path = &lt;Laufwerk&gt;:\OneConnexx\Web
+* Physical Path = &lt;drive&gt;:\OneConnexx\Web
 * Binding, Port = 9500
 
 Click on the newly created site -> Authentication -> Windows Authentication = Enabled
@@ -102,7 +102,7 @@ If the name or the connection string of the database is configured for a OneConn
 
 ### Configuration in Web.config
 
-The following settings can be made in the Web.config file (under *&lt;Laufwerk&gt;:\OneConnex\Web*).
+The following settings can be made in the Web.config file (under *&lt;drive&gt;:\OneConnex\Web*).
 
 __Logging__
 
