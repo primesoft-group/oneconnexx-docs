@@ -30,7 +30,7 @@ The parameters "expression" and "replacement" can contain multiline text. A regu
 {:.table .table-striped}
 | expression | replacement ||
 | encoding="ISO-8859-1" | encoding="UTF-8" | Replaces the expression __encoding="ISO-8859-1"__ with __encoding="UTF-8"__. |
-| ([^=])(") | $1&amp;quot; | Replacing all occurrences of " (group 2) are not for a = stand (group 1) through enters & quot; __&amp;quot;__ |
+| ([^=])(") | $1&amp;quot; | Replacing all occurrences of " (group 2), that are not immediately following a = (group 1), with __&amp;quot;__ |
 
 The TextReplace Add-In receives the name of the file to be edited in the subscribed event in the "file" parameter. This parameter is provided by the following add-ins:
 

@@ -16,7 +16,7 @@ Das FileReconstructor Add-In liest eine existierende Datei ein, formt zeilenweis
 | Ereignisse | Pro erstellte Datei: &lt;Instanz&gt;.Output (Parameter = file) <br />&lt;Instanz&gt;.Done |
 | | |
 | __Parameter__ | |
-| inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional) |
+| inputFile | Quelldatei inkl. Verzeichnis. Mehrere Dateien möglich (Optional). |
 | reconfiguration | Zeilenweise angewandte Konvertierungsregeln.<br />1. Verweis auf Ursprungszeile: Geschweifte Klammern im Format {Index Start-Zeichen, Index End-Zeichen, [Textlänge], [Auffüll-Zeichen], [Horizontale Ausrichtung]}<br />&nbsp;&nbsp;a. Sofern die Textlänge nicht angegeben ist, wird diese auf dem End- und Start-Index berechnet.<br />&nbsp;&nbsp;b. Falls kein End-Index angegeben ist, wird dieser auf dem Start-Index und der Textlänge berechnet.<br />&nbsp;&nbsp;c. Liegt der End-Index ausserhalb der eigentlichen Zeilenlänge, wird der Index des letzten Zeichens der Zeile verwendet.<br />&nbsp;&nbsp;d. Ist die Textlänge grösser der Differenz des End- und Start-Index wird das Auffüllzeichen verwendet (Default = Leerzeichen).<br />&nbsp;&nbsp;e. Das Auffüllzeichen wird je nach Ausrichtung ('left'/'l' (Standard) oder 'right'/'r') rechts beziehungsweise links eingefügt.<br />2. Fix Text: Eingabe in Hochkommas (') oder Anführungszeichen (") |
 | outputFile | Zieldatei. Platzhalter : <br /> {now}: Aktuelles Datum<br />	{file}: Filename der Inputdatei |
 | outputPath | Zielverzeichnis(Optional, Default = "") |

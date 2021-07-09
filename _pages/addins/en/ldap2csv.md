@@ -23,7 +23,7 @@ The Ldap2CSV add-in determines information from the AD (Active Directory) via LD
 | authenticationType | Secure = The user specified in the "userName" parameter is used to log on to the LDAP server, or the identity of the OneConnexx service if no user has been specified.<br/>Anonymous = The login to the LDAP server is anonymous. |
 | sizeLimit | Maximum number of entries that can be exported (optional, default = 1000) |
 | filter | For the restriction to certain objects, eg "(objectClass = person)" (optional)<br/>The placeholder {lastrun} is replaced by a time stamp of the last successful execution. |
-| properties | The LDAP columns to be exported separated by commas.<br />Data type, format and CSV column name can be added separated by # (example: "pwdLastSet # date # yyyy-MM-dd # password set")<br/>Domain attributes start with $ (example: "$ maxPwdAge # ticks").<br/>The placeholders {now} and {lastMonth} can be used for the current date or the last month (example: "{now: yyyy-MM-dd} ### todayDate").<br/>Data type: empty = text, "date" = date, "ticks" = ticks<br/>Format: Date format as .NET string format expression, only for data type "date" (eg "dd.MM.yyyy" or "yyyMMddHHmmss") |
+| properties | The LDAP columns to be exported separated by commas.<br />Data type, format and CSV column name can be added separated by # (example: "pwdLastSet#date#yyyy-MM-dd#password set")<br/>Domain attributes start with $ (example: "$maxPwdAge#ticks").<br/>The placeholders {now} and {lastMonth} can be used for the current date or the last month (example: "{now: yyyy-MM-dd} ### todayDate").<br/>Data type: empty = text, "date" = date, "ticks" = ticks<br/>Format: Date format as .NET string format expression, only for data type "date" (eg "dd.MM.yyyy" or "yyyMMddHHmmss") |
 | fileNamePattern | Name of the file to be created. The following placeholders are available: <br />{now}: Current date<br />{lastMonth}: Date of the last month |
 | fileSaveLocation | 	Directory in which the file is created |
 | delimiter | Separator of the columns in the CSV file (optional, default = semicolon) |
@@ -59,4 +59,4 @@ With the data type "bitmask", an integer or long value can be ANDed with a bit m
 userAccountControl#bitmask_2#!bool#active
 ```
 
-If no format is specified, the result of the AND link is displayed directly, in this example 2. The format "bool" returns 1 if the value is not 0, or 0 if the value is 0. The "! Bool" format works in exactly the same way, but inverts the result.
+If no format is specified, the result of the AND link is displayed directly, in this example 2. The format "bool" returns 1 if the value is not 0, or 0 if the value is 0. The "!bool" format works in exactly the same way, but inverts the result.

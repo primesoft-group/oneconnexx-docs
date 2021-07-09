@@ -47,12 +47,12 @@ If you want to prevent a SharePoint field from being mapped to a database column
 ID:
 ```
 
-In column mapping parameters multiple mappings can be separated by commas.In column mapping parameters multiple mappings can be separated by commas.
+In the *columnMapping* parameter multiple mappings can be separated by commas.
 
 ### Save files from document libraries
 
-If the list specified in the spListName parameter is a document library , the element's document can be written to a binary database column. The database column must be of the varbinary or image type and its name must be specified in the fileColumn parameter .
+If the list specified in the spListName parameter is a document library , the element's document can be written to a binary database column. The database column must be of the *varbinary* or *image* type and its name must be specified in the *fileColumn* parameter .
 
 ### Incremental exports
 
-If the entriesToExport parameter is set to CHANGED , only those elements are synchronized that have changed since the last execution. For this purpose, the last modified date of the SharePoint element is compared with the date of the last execution of the add-in instance. The date of the last execution is saved as an instance parameter in the directory % programdata% \ Sevitec \ OneConnexx \ AddInData .
+If the *entriesToExport* parameter is set to *CHANGED*, only those elements are synchronized that have changed since the last execution. For this purpose, the *last modified* date of the SharePoint element is compared with the date of the last execution of the add-in instance. The date of the last execution is saved as an instance parameter in the directory *%programdata%\Sevitec\OneConnexx\AddInData*.
