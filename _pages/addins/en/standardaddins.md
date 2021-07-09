@@ -9,8 +9,7 @@ The following standard add-ins are currently included in the scope of delivery o
 
 {:.table .table-striped}
 | --- | --- |
-| __
-Basic add-ins__ |
+| __Basic add-ins__ |
 | [Csv2Database]({{ site.baseurl }}/addins/en/csv2database/) | Loads data from a CSV file into an SQL database table |
 | [DatabaseToCSV]({{ site.baseurl }}/addins/en/databasetocsv/) | Generates one or more CSV files from an SQL query |
 | [EventLogger]({{ site.baseurl }}/addins/en/eventlogger/) | Writes all parameters transferred with the event to the log file |
