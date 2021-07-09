@@ -22,7 +22,7 @@ The dispatcher add-in triggers events based on an SQL query. For each data recor
 | lastProcessedColumn | Name of the column that contains a time stamp of when the data record was last processed (optional, default = "") |
 | updateQuery | SQL command to update the time stamp (in 'lastProcessedColumn') after a data record has been processed (Optional, Default = "")<br />Placeholders in curly brackets are replaced by the corresponding fields from the result of the SQL query "query". |
 | configUrl | Link to the extended configuration (Optional, Default = "")<br />The placeholder @instance is replaced by the name of the add-in instance. |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 ### Application examples
 

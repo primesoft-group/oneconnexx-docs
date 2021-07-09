@@ -23,7 +23,7 @@ The FileReconstructor Add-In reads an existing file, reforms the content line by
 | deleteInputFile | 	true = source file will be deleted (optional, default = false) |
 | userName | Users with the necessary permissions for the target file (Optional) |
 | password | Associated password (optional) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 
 ### Application examples

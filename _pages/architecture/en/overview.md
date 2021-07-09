@@ -92,7 +92,7 @@ This sends all changes to the OneConnexx service, which saves them to the config
 
 Configuration of monitoring and alerting rules are stored in the database. The web application accesses the database directly.
 
-For the real-time view and evaluation of the log files, the web application accesses the log files of the corresponding OneConnexx instance directly.
+For the real-time view and analysis of the log files, the web application accesses the log files of the corresponding OneConnexx instance directly.
 This only works if the web application is installed on the same server as the OneConnexx service.
 
 ## Database

@@ -30,7 +30,7 @@ The first line of the CSV file must contain the column names. Only those columns
 | postCommand | Optionally an SQL command that is executed after reading the CSV files |
 | primaryKey | Optionally the name of the primary key of the database table. If specified, a record with this primary key is first searched for and this is updated. If no such data record is found, a new data record is inserted. |
 | fileNameColumn | Optionally the name of the column of the database table in which the file name of the CSV file is written (optional, default = "") |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
  
  
 ### Application examples

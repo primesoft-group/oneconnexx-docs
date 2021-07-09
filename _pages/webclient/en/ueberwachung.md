@@ -21,15 +21,15 @@ In the case of transactions that are incorrect, the status and the message text 
 A maximum of the latest 20 transactions are displayed per interface. 
 Interfaces that contain incorrect transactions are initially expanded.
 
-### Building a transaction
+### Structure of a transaction
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/transaction.png "Aufbau Transaktion")  
 
 #### 1. Interface  
   The interface represents the higher-level logical grouping. The number of incorrect transactions is displayed on the same level
 
-#### 2. end point
-  The end point is an optional parameter which can be defined in the add-in configuration. It is also used for the logical structuring of the add-ins / transactions and has no influence on functionalities in the software.
+#### 2. Endpoint
+  The endpoint is an optional parameter which can be defined in the add-in configuration. It is also used for the logical structuring of the add-ins / transactions and has no influence on functionalities in the software.
   
 #### 3. Timestamp
   The time stamp indicates the time at which the transaction was written.
@@ -108,7 +108,7 @@ When you click on this button, the following dialog opens:
 ### Structure of the rule:
 A rule is composed as follows:
 
-__1:__ A rule has a name, an interface and an end point for which the rule is used.
+__1:__ A rule has a name, an interface and an endpoint for which the rule is used.
 
 __2:__ It contains a limit mode (maximum or minimum upper limit).
 

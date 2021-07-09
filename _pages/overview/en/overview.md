@@ -63,7 +63,7 @@ Timer (e.g. on the 1st of every month) -> Exporting users from the Active Direct
 ## Administration and Management
 
 Administration and configuration of OneConnexx takes place via a modern web application that can be operated with any modern browser. OneConnexx web administration supports you during configuration and operation with 
-evaluation of log and monitoring data.
+analysis of log and monitoring data.
 
 #### Configure add-ins
 

@@ -19,6 +19,6 @@ The standard installation with the distribution on two servers guarantees the be
 
 ### Everything new on a server installation
 If no database server is available and statistical data is still required, a Microsoft SQL Server database can also be installed on the OneConnexx server. 
-However, this variant can lead to a loss of performance in high-performance transactions and complex evaluations.
+However, this scenario can lead to a loss of performance in high-performance transactions and complex evaluations.
 
 ![x]({{ site.baseurl }}/assets/content-images/setup/de/scenario3.png "Szenario 3")

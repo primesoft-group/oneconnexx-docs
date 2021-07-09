@@ -28,7 +28,7 @@ The FileSystemWatcher Add-In is used to monitor directories and files. The monit
 | changeEvent | true = Triggers an event when changing an existing file |
 | deleteEvent | true = Triggers an event when a file is deleted |
 | renameEvent | true = Triggers an event when renaming a file |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 ### Application examples 
 

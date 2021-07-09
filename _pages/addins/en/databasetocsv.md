@@ -24,7 +24,7 @@ The DatabaseToCSV Add-In generates one or more CSV files from an SQL query.<br /
 | includeColumnName | true: column names are written in the 1st line (optional, default = false) | 
 | query | A SQL query that returns the data to be exported.<br />Only SELECT or EXEC are allowed. A CSV file is created for each result set | 
 | timeOut | Timeout in seconds until the SQL command is canceled. (Optional, default = 30) | 
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
  
  
 ### Application examples

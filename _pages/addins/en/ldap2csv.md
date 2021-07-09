@@ -30,7 +30,7 @@ The Ldap2CSV add-in determines information from the AD (Active Directory) via LD
 | includeHeaderRow | true = including column headings in the first row<br/>false = without column headings |
 | encoding | Coding of the CSV file (optional, default = "utf-8") |
 | additionalData | Comma-separated list of key-value pairs which overwrite the columns specified in the "properties" parameter. The key must correspond to the column name.<br/>Example: Column1 = Value1, Column2 = Value2  |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 ### Application examples
 

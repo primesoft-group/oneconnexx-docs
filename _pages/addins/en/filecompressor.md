@@ -22,7 +22,7 @@ The FileCompressor Add-In compresses certain files from a certain directory and 
 | archiveType | 	Archive file type: Zip, Tar or GZip. (Default = "Zip") |
 | compressionType | Compression type depending on the type of archive (default = "LZMA")::<br />- Zip => BZip2, PPMd, Deflate, LZMA<br />- Tar => GZip, BZip2<br />- GZip => GZip. |
 | deleteSourceAfterProcessing | true = The source files will be deleted after compression. (Optional, default = false) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 ### Application examples
 

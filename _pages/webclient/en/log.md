@@ -27,11 +27,11 @@ Deactivating this option will stop the automatic scrolling. The log entries are 
 
 #### 3. Delete display
 
-This action clears the entire display of the logs. If the display is deleted, the log entries are no longer visible in the real-time log and must be viewed in the "Evaluation" view. The deletion does not affect the entries in the log file.
+This action clears the entire display of the logs. If the display is deleted, the log entries are no longer visible in the real-time log and must be viewed in the "Analysis" view. The deletion does not affect the entries in the log file.
 
-## Evaluation
+## Analysis
 
-All the log entries in the log directory can be filtered in the «Evaluation» view. In contrast to the real-time log, the newly written logs are not loaded automatically. The «Update Log» button allows the list to be updated at any time. The filter process is carried out automatically as soon as a value in the filter boxes changes. (Delay approx. 1.5 seconds)
+All the log entries in the log directory can be filtered in the «Analysis» view. In contrast to the real-time log, the newly written logs are not loaded automatically. The «Update Log» button allows the list to be updated at any time. The filter process is carried out automatically as soon as a value in the filter boxes changes. (Delay approx. 1.5 seconds)
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/filterLogs.png "Log Auswertung")
 

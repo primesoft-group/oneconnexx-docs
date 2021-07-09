@@ -23,7 +23,7 @@ The FileErase Add-In deletes or moves files in a specific directory.<br /><br />
 | destinationDirectory | Target directory to which the files will be moved instead of being deleted (optional) |
 | userName | User with which the directories "directory" and "destinationDirectory" are accessed (optional) |
 | password | Associated password (optional) |
-| endpoint | 	Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | 	Name of the endpoint that is used in the transaction (optional, default = "") |
 
 ### Application examples
 

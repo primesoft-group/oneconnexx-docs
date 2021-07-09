@@ -27,7 +27,7 @@ Connections to mail servers that expect an encrypted SSL connection (usually on 
 | recipients | Comma-separated list of recipient addresses can be overwritten by a parameter in the triggering event |
 | sender | Email address of the evening |
 | subjectPrefix | A prefix that is placed in front of the subject line of every email (e.g. "Test -" so that emails from the test system are recognized immediately) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 
 <!-- 

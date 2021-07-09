@@ -24,7 +24,7 @@ The generated CSV file has the same name as the Excel file, only the file extens
 | destinationDirectory | Target directory in which CSV files are written. If empty, the files will be created in the source directory. | 
 | overwrite | Specifies whether an existing CSV file should be overwritten. If 'false', a number is appended to the file name so that it is unique. | 
 | deleteSourceFile | 	Specifies whether the input file should be deleted after successful conversion | 
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
  
  
 ### Application examples 

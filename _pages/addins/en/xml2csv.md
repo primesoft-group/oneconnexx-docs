@@ -25,7 +25,7 @@ features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 | stripNamespace | 	true = namespace prefixes from the XML file are removed from the column names in the created CSV file (optional, default = true) |
 | delimiter | Separator of the columns in the CSV file (optional, default = semicolon) |
 | destinationDirectory | Directory in which the CSV file is created (optional, default = sourceDirectory) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 ### Application examples 
 

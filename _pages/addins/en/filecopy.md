@@ -33,7 +33,7 @@ The FileCopy Add-In is used to copy files from one system to another. A wide var
 | destUserName | User for access to the target system (optional) |
 | destPassword | Associated password (optional) |
 | tempDirectory | Files are stored locally in this directory during a copy process. (Optional, default = system temp directory) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 
 ### Application examples

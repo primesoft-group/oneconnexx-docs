@@ -30,7 +30,7 @@ The SharepointToDB add-in exports elements of a Sharepoint list or document libr
 | primaryKeyColumn | (Optional) Name of the primary key column. Existing lines with a matching primary key are deleted and reinserted. |
 | fileColumn | (Optional) Name of the binary database column in which the file is written if it is a Sharepoint library. |
 | columnMapping | (Optional) Allocation of Sharepoint fields to database columns. Example: spField1: dbColumn1, spField2: dbColumn2 |
-| endpoint | 	Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | 	Name of the endpoint that is used in the transaction (optional, default = "") |
 
 
 ### Mapping of the SharePoint fields to database columns

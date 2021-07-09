@@ -22,7 +22,7 @@ The FileDecompressor Add-In unpacks Zip, GZip, or Tar files<br /><br />
 | archivePassword | 	For automatic unpacking of password-protected archives (optional) |
 | deleteSourceAfterProcessing | true = The compressed file is deleted after unpacking (default = false) | 
 | decompressToSubFolder | true = The files are extracted to a subdirectory with the same name as the archive <br /> false = The files are extracted directly to the target directory (Default = false)|
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 <!-- 
 ### Anwendungsbeispiele 

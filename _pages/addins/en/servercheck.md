@@ -18,7 +18,7 @@ The ServerCheck Add-In checks the availability of servers. It pings all configur
 | __parameter__ | |
 | servers | Comma-separated list of the servers to be monitored. Server names or IPs of the servers are accepted |
 | subject | Subject of the e-mail that will be sent after the verification. (Note: Recipients are defined in the mail add-in) |
-| endpoint | Name of the end point that is used in the transaction (optional, default = "") |
+| endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 
 ### Application examples

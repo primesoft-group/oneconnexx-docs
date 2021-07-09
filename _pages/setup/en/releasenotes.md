@@ -48,7 +48,7 @@ language: en
 * __New__ Improved display of rule execution time in the overview
 * __New__ statistics can be updated manually
 * __New__ statistics can also be displayed as tables
-* __New__ context menu in log evaluation for filtering log entries for an instance
+* __New__ context menu in log analysis for filtering log entries for an instance
 * __Error__ Users who are not in the configurator role can no longer copy or delete instances via the context menu
 * __Error__ Parameter values ​​containing XML tags could not be saved correctly
 * __Error__ Multi-line parameters were not handled correctly (DatabaseToCsv, DatabaseMaintenance, Dispatcher, Csv2Database)
@@ -90,7 +90,7 @@ language: en
 * __Error__ Improved bug behavior when moving instances to interfaces
 * __Error__ In the HTML view, changes to the email text of alerts were not saved
 * __Error__ Encoding Error loading transactions on the "monitoring"
-* __Error__ log evaluation did not work if there are other files in the "Logs" directory
+* __Error__ log analysis did not work if there are other files in the "Logs" directory
 * __Error__ Real-time log is reset each time the page is reloaded, otherwise the browser freezes with large amounts of data
 * __Error__ Ldap2CSV, Xml2Csv: Ldap2CSV, Xml2Csv: double quotation marks if necessary
 
