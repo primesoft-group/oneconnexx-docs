@@ -15,7 +15,7 @@ Connections to mail servers that expect an encrypted SSL connection (usually on 
 | Add-in type | Logic |
 | Interfaces | In: Event (parameters "message", "subject", "isHtml", "attachments", "recipients")<br/> Out: E-Mail |
 | Transactions | 1 if successful |
-| Events | &lt;Instance&gt;.Done |
+| Events | &lt;instance&gt;.Done |
 | | |
 | __parameter__ | |
 | mailServer | Host name or IP address of the mail server |

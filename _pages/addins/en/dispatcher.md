@@ -13,7 +13,7 @@ The dispatcher add-in triggers events based on an SQL query. For each data recor
 | Add-in type | Event / Logic |
 | Interfaces |  |
 | Transactions | 1 if at least 1 record was returned |
-| Events | Per data record: &lt;Instance&gt; (parameter = all columns of the result of the SQL query)<br />1x at the end: &lt;Instance&gt;.Done |
+| Events | Per data record: &lt;instance&gt; (parameter = all columns of the result of the SQL query)<br />1x at the end: &lt;instance&gt;.Done |
 | | |
 | __parameter__ | |
 | connectionString | 	Database connection string |

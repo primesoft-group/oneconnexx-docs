@@ -11,13 +11,13 @@ The FileDecompressor Add-In unpacks Zip, GZip, or Tar files<br /><br />
 | --- | --- |
 | __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-in type | Logic |
-| Interfaces | In/Out: Dateieverzeichnis |
+| Interfaces | In/Out: file directory |
 | Transactions | 1 per created file |
-| Events | Per created file: &lt;Instanz&gt;.Output (parameter = file)<br /> &lt;Instance&gt;.Done |
+| Events | Per created file: &lt;instanz&gt;.Output (parameter = file)<br /> &lt;instance&gt;.Done |
 | | |
 | __parameter__ | |
 | sourceDirectory | Source directory with the compressed files |
-| sourceFilePattern | The file pattern is used to restrict the number of compressed files<br /> * = all; Bsp. «*.zip» => all ZIP files<br />? = unsure of the name of the file. E.g. «1?.zip» => all ZIP files which contain at least a 1. <br />Multiple patterns are separated with semicolons. Ex. « .Zip; * .tar »=> all ZIP and TAR files |
+| sourceFilePattern | The file pattern is used to restrict the number of compressed files<br /> \* = all; «\*.zip» => all ZIP files<br />? = unsure of the name of the file. E.g. «1?.zip» => all ZIP files which contain at least a 1. <br />Multiple patterns are separated with semicolons. Ex. «\*.Zip; \*.tar» => all ZIP and TAR files |
 | destinationDirectory | 	Target directory where the files will be extracted |
 | archivePassword | 	For automatic unpacking of password-protected archives (optional) |
 | deleteSourceAfterProcessing | true = The compressed file is deleted after unpacking (default = false) | 

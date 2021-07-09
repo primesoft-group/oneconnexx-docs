@@ -14,7 +14,7 @@ The generated CSV file has the same name as the Excel file, only the file extens
 | Add-in type | Logic |
 | Interfaces | In: Excel file<br /> Out: CSV file|
 | Transactions | 1 per processed file |
-| Events | Per created file: &lt;Instance&gt;.Output (parameter = file) <br />1x at the end: &lt;Instance&gt;.Done |
+| Events | Per created file: &lt;instance&gt;.Output (parameter = file) <br />1x at the end: &lt;instance&gt;.Done |
 | | |
 | __parameter__ | |
 | sourceDirectory | Directory in which Excel files are searched for | 
