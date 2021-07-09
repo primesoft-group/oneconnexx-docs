@@ -13,7 +13,7 @@ Die Konfigurationsseite bietet ein Übersicht über alle konfigurierten Add-In I
 * **Einstellungen neu laden:** Wird diese Schaltfläche angewählt, dann werden alle Einstellungen neu aus dem Service oder der Datenbank geladen
 * **Im Service speichern:** Die getätigten Änderungen werden automatisch der Warteschlange hinzugefügt. Um diese Änderung dann zu speichern muss man diese Schaltfläche anwählen. Wenn eine Datenbank hinterlegt ist, werden die Einstellungen mit der Datenbank Synchronisiert. 
 * **Cache löschen:** Wird diese Schaltfläche angewählt, werden alle im Cache gespeicherten Daten (ungespeicherte Einstellungen und Konfigurationen) gelöscht.
-* **Instanz hinzufügen:** Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. _Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist_. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog:
+* **Instanz hinzufügen:** Über diese Schaltfläche kann eine neue Instanz konfiguriert werden. _Dabei muss beachtet werden, dass keine Instanz erstellt werden kann, wenn keine Gruppe konfiguriert ist_. Befor eine Instanz erstellt werden kann, muss der Typ ausgewählt werden. Dazu öffnet sich der untenstehende Dialog:<br/>
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/addnewinstance.png "Add new Instance")<br/>
 Per Mausklick oder mit Shift und Enter kann der gewünschte Add-In Typ ausgewählt werden. Erst wenn dies getan ist, kann der Name gesetzt werden.
 ![X]({{site.baseurl}}/assets/content-images/webclient/de/nameinstance.png "Name new Instance")<br/>
