@@ -7,7 +7,7 @@ language: en
 ## Overview
 
 The monitoring category consists of the three views «Overview», «Interfaces» and «Rules». The main task of monitoring is to manage the add-ins, sort them logically and clearly display the transactions written by the add-ins. Rules for the transactions can also be defined. The transactions written by the add-ins are clearly displayed in the overview. 
-They are grouped by interface and sorted alphabetically and alphabetically sorted by end point within the group. Transactions are written when:
+They are grouped by interface and sorted alphabetically and then by endpoint within the group. Transactions are written when:
 
   * An add-in successfully completed a called operation.
   * An add-in could not successfully complete a called operation.
@@ -15,11 +15,11 @@ They are grouped by interface and sorted alphabetically and alphabetically sorte
 Transactions are similar to log entries, but differ in the following ways: 
 
   * A transaction is only written when the main function of an add-in is performed, and only the final result of the call is written.
-A transaction thus only contains the final result of a call, while log entries record the process of the call
+A transaction thus only contains the final result of a call, while log entries record the process of the call.
 
 In the case of transactions that are incorrect, the status and the message text are displayed in red.
 A maximum of the latest 20 transactions are displayed per interface. 
-Interfaces that contain incorrect transactions are expanded from the start
+Interfaces that contain incorrect transactions are initially expanded.
 
 ### Building a transaction
 

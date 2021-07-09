@@ -1,12 +1,12 @@
 ---
 layout: page
-title: log
+title: Log
 permalink: "webclient/en/log/"
 language: en
 ---
 ## Real time
 
-The «Real-time log» view provides an overview of the log entries that are currently being written. The update cycle is one second. New entries are added to the bottom of the list and the scrolling is automatically updated, ie the window automatically scrolls down to display the most recent log entries
+The «Real-time log» view provides an overview of the log entries that are currently being written. The update cycle is one second. New entries are added to the bottom of the list and the scrolling is automatically updated, i.e. the window automatically scrolls down to display the most recent log entries.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/realTimeLog.png "Realtime Log")
 
@@ -29,7 +29,7 @@ Deactivating this option will stop the automatic scrolling. The log entries are 
 
 This action clears the entire display of the logs. If the display is deleted, the log entries are no longer visible in the real-time log and must be viewed in the "Evaluation" view. The deletion does not affect the entries in the log file.
 
-## evaluation
+## Evaluation
 
 All the log entries in the log directory can be filtered in the «Evaluation» view. In contrast to the real-time log, the newly written logs are not loaded automatically. The «Update Log» button allows the list to be updated at any time. The filter process is carried out automatically as soon as a value in the filter boxes changes. (Delay approx. 1.5 seconds)
 
@@ -47,7 +47,7 @@ The following links contain further information on this:
 * <https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck>  
 * <http://regexr.com/>  
 
-#### 3. log level
+#### 3. Log level
 
 With the filter log level, the list is restricted to one or more log levels. 
 

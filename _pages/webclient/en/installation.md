@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Set up
+title: Setup
 permalink: "webclient/en/installation/"
 language: en
 ---
@@ -13,7 +13,7 @@ All OneConnexx instances on the local system are displayed on this page as soon 
 
 
 * __Name:__ The name of the installation can be chosen as you like.
-* __Port:__ The port via which the service can be addressed, this is determined automatically and can only be changed in the OneConnexx configuration file of the corresponding installation.
+* __Port:__ The port by which the service can be addressed, this is determined automatically and can only be changed in the OneConnexx configuration file of the corresponding installation.
 * __Status:__ Indicates whether the installation is currently started and connected.
 * __SQL-databse:__ Indicates whether a database has been configured and whether it can be reached.
 * __Windows Service:__ Indicates whether the Windows service is started and enables the service to be started or stopped manually.
@@ -32,4 +32,4 @@ The connection to the SQL database can be tested directly with the “Check conn
  
 #### 2. Delete installation
  
-An installation can be removed from the list by clicking on the “Delete” symbol. An installation can only be removed if the corresponding OneConnexx has not started.
+An installation can be removed from the list by clicking on the “Delete” symbol. An installation can only be removed if the corresponding OneConnexx-service has not been started.

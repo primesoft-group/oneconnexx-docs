@@ -1,6 +1,6 @@
 ---
 layout: page
-title: statistics
+title: Statistics
 permalink: "webclient/en/statistik/"
 language: en
 ---
@@ -11,7 +11,7 @@ The statistics page shows configured statistics from the database. There are fou
 
 ### Statistics overview
 The functions create, edit and delete are only available for users with admin / configurator rights. 
-All statistics areas are displayed on the left and the statistics of the currently active area on the right. If there is no area in the database, the General Statistics area is created. An area can only be deleted if it does not contain any statistics.
+All statistics areas are displayed on the left and the statistics of the currently active area on the right. If there is no area in the database, the "General Statistics" area is created. An area can only be deleted if it does not contain any statistics.
 
 #### 1. Statistics area
 The name of the area is displayed here, new statistics can be created and the area can be edited. 
@@ -26,7 +26,7 @@ The order of the statistics within an area can be shifted by means of drap-and-d
 A new statistics area can be added here.
 
 #### 4. Edit statistics
-The diagrams of the currently active area are displayed here. If you move the mouse over a diagram, 3 icons are displayed at the top right to **aktualisieren**, **edit ** or **delete** the statistics.
+The diagrams of the currently active area are displayed here. If you move the mouse over a diagram, 3 icons are displayed at the top right to **update**, **edit ** or **delete** the statistics.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticrefresh.png "Statistik aktualisieren/editieren/löschen")
 
@@ -40,9 +40,9 @@ Clicking the edit icon opens the dialog with the properties of the statistics:
 
 * **Name:**	The statistics can be given a name to give the viewer information about the content.
 * **Diagram type:**	The type of diagram can be selected here.
-* **Height / width:**	In order to make the diagram easier to read, you can define yourself how large / small it should be displayed.
+* **Height / width:** In order to make the diagram easier to read, you can define yourself how large / small it should be displayed.
 * **Legend:** The legends can be entered here, separated by commas.
-* **Sql:** The query of the database, which is required to deliver the data to be displayed. The result must be in the format: label, string | FirstValue, int | SecondValue, int are returned. The SecondValue field is optional.
+* **Sql:** The query of the database, which is required to deliver the data to be displayed. The result must be returned in the format: label, string \| FirstValue, int \| SecondValue, int . The SecondValue field is optional.
 	
 
 ### Edit statistics area

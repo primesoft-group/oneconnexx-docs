@@ -33,7 +33,7 @@ Die Infomail wird aber auch ausgelöst wenn Endpunkt a der Schnittstelle x ohne 
 
 #### 1. Textsuche  
 Die Textsuche schränkt die Liste auf Einträge ein, welche einen bestimmten Ausdruck enthalten.
-Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden 
+Im Unterschied zu vielen Textsuchfeldern im OneConnexx besteht hier keine Möglichkeit Regulären Ausdrücke zu verwenden.
 
 #### 2. Filtern
 Hat die Checkbox Inaktiv kein Häkchen, werden nur die aktiven Alamierungen angezeigt. 

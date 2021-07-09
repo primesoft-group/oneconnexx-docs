@@ -16,11 +16,11 @@ Transaktionen werden geschrieben, wenn:
 Transaktionen ähneln den Logeinträgen, unterscheiden sich aber folgendermassen:  
 
   * Eine Transaktion wird nur dann Geschrieben, wenn die Hauptfunktion eines Add-In ausgeführt wird, und es wird nur das Endergebnis des Aufrufes geschrieben.  
-Eine Transaktion beinhaltet somit nur das Endergebnis eines Aufrufes, während Logeinträge den Ablauf des Aufrufes Festhalten
+Eine Transaktion beinhaltet somit nur das Endergebnis eines Aufrufes, während Logeinträge den Ablauf des Aufrufes Festhalten.
 
 Bei Transaktionen welche fehlerhaft sind, wird der Status und der Nachrichtentext in roter Farbe Dargestellt.
 Pro Schnittstelle werden maximal die Aktuellsten 20 Transaktionen angezeigt.
-Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an Aufgeklappt
+Schnittstellen welche Fehlerhafte Transaktionen enthalten werden von Anfang an aufgeklappt
 
 ### Aufbau einer Transaktion
 
