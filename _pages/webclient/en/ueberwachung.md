@@ -40,7 +40,7 @@ Interfaces that contain incorrect transactions are initially expanded.
 #### 5. Message
   The message gives further details about the Written transaction. If the execution was successful, what was executed; if the execution was unsuccessful, what failed.
   
-### Steuerschaltflächen
+### Controls
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/monitoringOverview.PNG "Überwachung Übersicht")
 

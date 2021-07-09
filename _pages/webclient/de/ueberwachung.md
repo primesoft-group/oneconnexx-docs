@@ -135,4 +135,4 @@ Zum Beispiel: Die Regel wird am ersten, dritten und fünften bis zehnten Tag des
 
 #### 6. Regel löschen/bearbeiten  
 Mit einem Klick auf die linke Schaltfläche kann eine Regel bearbeitet werden.
-Mit einem Klick auf die rechte Schaltfläche kann eine Regel gelöscht werden
+Mit einem Klick auf die rechte Schaltfläche kann eine Regel gelöscht werden.

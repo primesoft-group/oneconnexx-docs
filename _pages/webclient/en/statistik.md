@@ -25,8 +25,8 @@ The order of the statistics within an area can be shifted by means of drap-and-d
 #### 3. Add statistics area
 A new statistics area can be added here.
 
-#### 4. Edit statistics
-The diagrams of the currently active area are displayed here. If you move the mouse over a diagram, 3 icons are displayed at the top right to **update**, **edit ** or **delete** the statistics.
+#### 4. Statistics display
+The diagrams of the currently active area are displayed here. If you move the mouse over a diagram, 3 icons are displayed at the top right to **refresh**, **edit** or **delete** the statistics.
 
 ![X]({{ site.baseUrl }}/assets/content-images/webclient/de/statisticrefresh.png "Statistik aktualisieren/editieren/löschen")
 
