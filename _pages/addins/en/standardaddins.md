@@ -5,7 +5,7 @@ permalink: "addins/en/standardaddins/"
 language: en
 ---
   
-The following standard add-ins are currently included in the scope of delivery of the OneConnexx. Both the list and the range of functions of the individual add-ins are constantly being expanded.
+The following standard add-ins are currently included in the scope of delivery of the OneConnexx. Both the list and the range of functions of the individual add-ins are constantly being expanded.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |

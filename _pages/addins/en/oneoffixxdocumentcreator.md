@@ -28,4 +28,4 @@ The add-in OneOffixxDocumentCreator creates documents in the customer's CI / CD 
 
 ### Application examples
 
-In the case of the [Anwendungesbeipiel "Dokumentendienst"]example, the documents are created using the OneOffixxDocumentCreator Add-In.
+In the case of the [use case "Document creation"]({{ site.baseurl }}/usecases/en/documentcreation/), the documents are created using the OneOffixxDocumentCreator Add-In.
