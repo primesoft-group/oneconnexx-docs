@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Versionshinweise
+title: Version history
 permalink: "setup/en/releasenotes/"
 language: en
 ---
