@@ -21,7 +21,7 @@ The TextReplace Add-In can be used to replace certain strings in a text file. Th
 | inputEncoding |Character encoding of the input file (e.g. 'UTF-8', 'ISO-8859-1') (optional, default = "UTF-8") |
 | outputEncoding | 	Character coding of the output file (e.g. 'UTF-8', 'ISO-8859-1') (optional, default = "UTF-8") |
 | writeBom | Indicates whether a 'byte order mark' (BOM) is written if 'outputEncoding' is set to 'UTF-8' (optional, default = true) |
-| endpoint | 	Name of the endpoint that is used in the transaction (optional, default = "") |
+| endpoint | 	Name of the endpoint that is used in the transaction (optional, default = ""). If "endpoint" starts with *** the value from the calling instance is used. |
 
 ### Application examples 
 
