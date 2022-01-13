@@ -21,7 +21,7 @@ Das TextReplace Add-In kann verwendet werden um in einer Textdatei bestimmte Zei
 | inputEncoding | Zeichencodierung der Eingabedatei (z.B. 'UTF-8', 'ISO-8859-1') (Optional, Default = "UTF-8") |
 | outputEncoding | Zeichencodierung der Ausgabedatei (z.B. 'UTF-8', 'ISO-8859-1') (Optional, Default = "UTF-8") |
 | writeBom | Gibt an ob eine 'byte order mark' (BOM) geschrieben wird wenn 'outputEncoding' auf 'UTF-8' gesetzt ist (Optional, Default = true) |
-| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
+| endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = ""). Wenn "endpoint" mit *** beginnt wird der Wert der aufrufenden Instanz verwendet. |
 
 ### Anwendungsbeispiele 
 
