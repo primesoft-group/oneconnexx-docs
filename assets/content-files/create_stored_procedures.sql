@@ -1,6 +1,6 @@
 /*
 	OneConnexx Datenbank Stored Procedures
-	Stand Mai 2019, OneConnexx Version 1.4.4
+	Stand April 2022, OneConnexx Version 1.5.1
 */
 
 CREATE TYPE [dbo].[integer_list_tbltype] AS TABLE(
@@ -528,9 +528,10 @@ GO
 -- ===========================================================================
 -- Checks the rule and insert a failed transaction if a timeout is detected.
 -- ===========================================================================
-CREATE PROCEDURE [dbo].[RuleCheck]
+ALTER PROCEDURE [dbo].[RuleCheck]
 	@RuleId INT,
-	@Now DATETIME
+	@Now DATETIME,
+	@EndpointOverride NVARCHAR(255)
 AS
 BEGIN
 	DECLARE @RuleName VARCHAR(255)
@@ -540,12 +541,25 @@ BEGIN
 	DECLARE @RepeatAfter INT
 
 	SET NOCOUNT ON;
-	
+
+	IF (@EndpointOverride IS NULL OR @EndpointOverride = '')
+	BEGIN
+		-- use endpoint from rule
+		SELECT
+			@Endpoint = ISNULL(R.[Endpoint], '')
+		FROM
+			[Rule] R
+		WHERE
+			(R.Id = @RuleId)
+	END ELSE BEGIN
+		-- use endpoint override parameter
+		SET @Endpoint = @EndpointOverride
+	END
+
 	-- get rule if it is violated
 	SELECT
-		@RuleName =  R.Name,
+		@RuleName =  R.[Name],
 		@InterfaceId = R.InterfaceId,
-		@Endpoint = ISNULL(R.[Endpoint], ''),
 		@LastAlert = R.LastAlert,
 		@RepeatAfter = R.RepeatAfter
 	FROM
@@ -561,16 +575,16 @@ BEGIN
 				(R.TransactionCount >
 					(SELECT COUNT(*) FROM [Transaction] T WHERE
 						(T.Success = 1) AND
-						(R.InterfaceId = T.InterfaceId) AND
-						(ISNULL(R.[Endpoint], '') = T.[Endpoint]) AND
+						(T.InterfaceId = R.InterfaceId) AND
+						(T.[Endpoint] = @Endpoint) AND
 						(T.[TimeStamp] >= DATEADD(hh, -R.[Timeout], @Now))))
 			) OR (
 				(R.LimitMode = 1 /* Max. */) AND
 				(R.TransactionCount <
 					(SELECT COUNT(*) FROM [Transaction] T WHERE
 					(T.Success = 1) AND
-					(R.InterfaceId = T.InterfaceId) AND
-					(ISNULL(R.[Endpoint], '') = T.[Endpoint]) AND
+					(T.InterfaceId = R.InterfaceId) AND
+					(T.[Endpoint] = @Endpoint) AND
 					(T.[TimeStamp] >= DATEADD(hh, -R.[Timeout], @Now))))
 			)
 		)
