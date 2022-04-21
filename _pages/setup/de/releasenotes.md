@@ -5,8 +5,10 @@ permalink: "setup/de/releasenotes/"
 language: de
 ---
 
-#### vNext
+#### 1.5.1
 
+* __Neu__ Regeln können für mehrere Endpunkte gelten indem eine DB Tabelle einer Dispatcher Instanz referenziert wird.
+* __Neu__ .NET Framework 4.8
 * __Neu__ FileCopy Add-In: Parameter sourceTimeFilter auch für FILE und SFTP Protokoll.
 
 
