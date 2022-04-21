@@ -7,8 +7,8 @@ language: en
 
 #### 1.5.1
 
-* __Neu__ Rules can be defined for multiple endpoints by referring to a DB table of a dispatcher instance.
-* __Neu__ .NET Framework 4.8
+* __New__ Rules can be defined for multiple endpoints by referring to a DB table of a dispatcher instance.
+* __New__ .NET Framework 4.8
 * __New__ FileCopy Add-In: parameter sourceTimeFilter also for FILE and SFTP protocol.
 
 
