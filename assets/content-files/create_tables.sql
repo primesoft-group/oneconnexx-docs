@@ -1,6 +1,6 @@
 /*
 	OneConnexx Datenbank Tabellen
-	Stand Mai 2019, OneConnexx Version 1.4.4
+	Stand April 2022, OneConnexx Version 1.5.1
 */
 
 SET ANSI_NULLS ON
