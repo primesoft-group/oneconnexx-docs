@@ -8,6 +8,7 @@ language: de
 #### 1.5.2
 
 * __Fehler__ Eine Regel mit mehreren Endpunkten hatte auch inaktive Endpunkte geprüft.
+* __Fehler__ Wenn ein aktualisiertes Add-In neue Parameter hat, wurden diese nicht korrekt erkannt.
 
 
 #### 1.5.1
