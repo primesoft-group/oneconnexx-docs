@@ -5,6 +5,11 @@ permalink: "setup/de/releasenotes/"
 language: de
 ---
 
+#### 1.5.2
+
+* __Fehler__ Eine Regel mit mehreren Endpunkten hatte auch inaktive Endpunkte geprüft.
+
+
 #### 1.5.1
 
 * __Neu__ Regeln können für mehrere Endpunkte gelten indem eine DB Tabelle einer Dispatcher Instanz referenziert wird.
