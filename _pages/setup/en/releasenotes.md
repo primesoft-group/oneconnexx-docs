@@ -5,6 +5,12 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.2
+
+* __Error__ A rule with multiple endpoints did also check disabled endpoints.
+* __Error__ If an updated Add-In had new parameters, they were not recognized.
+
+
 #### 1.5.1
 
 * __New__ Rules can be defined for multiple endpoints by referring to a DB table of a dispatcher instance.
