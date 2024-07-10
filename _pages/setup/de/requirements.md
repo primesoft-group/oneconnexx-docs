@@ -9,18 +9,15 @@ language: de
 
 OneConnexx kann auf folgenden Betriebssystemen installieren werden:
 
+* Windows Server 2022
 * Windows Server 2019
 * Windows Server 2016
-* Windows Server 2012 R2
-* Windows Server 2012
-* Windows Server 2008 R2
-* Windows Server 2008
 
 Für den Betrieb der OneConnexx Anwendungen sind folgende Komponenten notwendig:
 
 * Internet Information Server ab Version 7
-* Microsoft .NET Framework 4.5.2 oder höher
-* Optional für Überwachung, Alarmierung, Statistik: Microsoft SQL Server ab Version 2008 (Express oder höher)
+* Microsoft .NET Framework 4.8
+* Optional für Überwachung, Alarmierung, Statistik: Microsoft SQL Server ab Version 2012 (Express oder höher)
 
 ### Arbeitsspeicher & CPU Cores
 
