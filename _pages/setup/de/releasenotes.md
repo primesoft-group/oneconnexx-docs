@@ -9,8 +9,8 @@ language: de
 
 * __Fehler__ CommandTimeout in Regelprüfung erhöht und Logging verbessert.
 * __Fehler__ Amazon S3 Support in FileCopy Add-In.
-* __Newr__ Neues Add-In SharepointListSync.
-* __Newr__ Neues Add-In ScriptRunner.
+* __Neu__ Neues Add-In SharepointListSync.
+* __Neu__ Neues Add-In ScriptRunner.
 
 
 #### 1.5.2
