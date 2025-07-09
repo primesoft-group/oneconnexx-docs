@@ -5,6 +5,14 @@ permalink: "setup/de/releasenotes/"
 language: de
 ---
 
+#### 1.5.3
+
+* __Fehler__ CommandTimeout in Regelprüfung erhöht und Logging verbessert.
+* __Fehler__ Amazon S3 Support in FileCopy Add-In.
+* __Newr__ Neues Add-In SharepointListSync.
+* __Newr__ Neues Add-In ScriptRunner.
+
+
 #### 1.5.2
 
 * __Fehler__ Eine Regel mit mehreren Endpunkten hatte auch inaktive Endpunkte geprüft.
