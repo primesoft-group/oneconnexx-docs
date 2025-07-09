@@ -5,6 +5,14 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.3
+
+* __Error__ CommandTimeout in rule check increased and logging improved.
+* __Error__ Amazon S3 Support in FileCopy Add-In.
+* __New__ New Add-In SharepointListSync.
+* __New__ New Add-In ScriptRunner.
+
+
 #### 1.5.2
 
 * __Error__ A rule with multiple endpoints did also check disabled endpoints.
@@ -21,7 +29,7 @@ language: en
 #### 1.4.5
 
 * __New__ New Add-In List2Csv to export SharePoint Online lists to CSV files.
-* __New__ New add-in SharepointToDB to export items from SharePoint Online document libraries or lists to a database.
+* __New__ New Add-in SharepointToDB to export items from SharePoint Online document libraries or lists to a database.
 * __New__ FileCopy Add-In: Files can be downloaded from SharePoint Online document libraries.
 * __New__ SharepointEraser Add-In: New parameters "subFolder" and "recursive".
 * __New__ display of the alarm history (list of the most recently sent alarms).
