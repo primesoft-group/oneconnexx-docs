@@ -41,4 +41,6 @@ Folgende Standard Add-Ins sind aktuell im Lieferumfang des OneConnexx enthalten.
 | [WebConnect]({{ site.baseurl }}/addins/de/webconnect/) | Ein WebService, welcher von externen Applikationen aufgerufen werden kann und ein Ereignis auslöst |
 | [WebRemote]({{ site.baseurl }}/addins/de/webremote/) | Sendet eine Nachricht mit Namen des Ereignisses und den dazugehörigen Parametern an einen WebService |
 | [XSLTransform]({{ site.baseurl }}/addins/de/xsltransform/) | Transformiert XML Dateien |
+| [ScriptRunner]({{ site.baseurl }}/addins/de/scriptrunner/) | Führt ein beliebiges Programm oder Skript aus |
+
 
