@@ -11,9 +11,9 @@ The ScriptRunner Add-In runs any program or script.
 | --- | --- |
 | __features__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-In Type | Logic |
-| Schnittstellen | In: Event ("file" Parameter)<br /> Out: started process |
-| Transaktionen | 1 per execution |
-| Ereignisse | &lt;Instanz&gt;.Done |
+| Interfaces | In: Event ("file" Parameter)<br /> Out: started process |
+| Transactions | 1 per execution |
+| Events | &lt;Instanz&gt;.Done |
 | | |
 | __parameter__ | |
 | command | Program that is started. | 
@@ -25,23 +25,24 @@ The ScriptRunner Add-In runs any program or script.
 | endpoint | Optional name of endpoint used in transaction. (Optional, Default = "") |
  
  
-### Anwendungsbeispiele
+### Example
 
-##### Ausführen eines Powershell Skripts
+##### Execution of a Powershell script
 
-Powershell-Skripte (.ps1 Dateien) können nicht direkt ausgeführt werden. Stattdessen wird Powershell.exe aufgerufen und das auszuführende Skript als Parameter übergeben.
+Powershell scripts (.ps1 files) cannot be run directly. Instead Powershell.exe is started and the script to execute is passed as an argument.
 
 command: powershell\
-arguments: -File mein_skript.ps1
+arguments: -File my_script.ps1
 
-##### Datei über "file" Parameter mit Powershell weiterverarbeiten
+##### Pass a file via "file" pParameter mit Powershell weiterverarbeiten
 
-Wird das ScriptRunner Add-In über ein Ereignis aktiviert das einen Parameter "file" enthält, kann dieser Parameter als Platzhalter in den Programmargumenten verwendet werden.
+If the ScriptRunner add-in is activated via an event that contains a "file" parameter, this parameter can be used as a placeholder in the program arguments.
 
 command: powershell\
 arguments: -File mein_skript.ps1 -InputFile {file}
 
-Ereignisse mit "file" Parameter können von folgenden Add-Ins abonniert werden:
+Events with a "file" parameter can be subscribed from the following add-ins:
+* DatabaseToCsv
 * FileDecompressor
 * FileCopy
 * FileSystemWatcher
