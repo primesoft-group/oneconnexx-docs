@@ -34,12 +34,12 @@ Powershell scripts (.ps1 files) cannot be run directly. Instead Powershell.exe i
 command: powershell\
 arguments: -File my_script.ps1
 
-##### Pass a file via "file" pParameter mit Powershell weiterverarbeiten
+##### Pass a file via "file" parameter to a Powershell script
 
 If the ScriptRunner add-in is activated via an event that contains a "file" parameter, this parameter can be used as a placeholder in the program arguments.
 
 command: powershell\
-arguments: -File mein_skript.ps1 -InputFile {file}
+arguments: -File my_script.ps1 -InputFile {file}
 
 Events with a "file" parameter can be subscribed from the following add-ins:
 * DatabaseToCsv
