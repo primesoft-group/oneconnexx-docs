@@ -41,4 +41,4 @@ The following standard add-ins are currently included in the scope of delivery o
 | [WebConnect]({{ site.baseurl }}/addins/en/webconnect/) | 	A web service which can be called by external applications and which triggers an event |
 | [WebRemote]({{ site.baseurl }}/addins/en/webremote/) | Sends a message with the name of the event and the associated parameters to a web service |
 | [XSLTransform]({{ site.baseurl }}/addins/en/xsltransform/) | 	Transforms XML files |
-
+| [ScriptRunner]({{ site.baseurl }}/addins/en/scriptrunner/) | Runs any program or script |
