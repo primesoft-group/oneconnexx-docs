@@ -29,7 +29,7 @@ Das ScriptRunner Add-In führt ein beliebiges Program oder Skript aus.
 
 ##### Ausführen eines Powershell Skripts
 
-Powershell-Skripte (.ps1 Dateien) können nicht direkt ausgeführt werden. Stattdessen wir Powershell.exe aufgerufen und das auszuführende Skript als Parameter übergeben.
+Powershell-Skripte (.ps1 Dateien) können nicht direkt ausgeführt werden. Stattdessen wird Powershell.exe aufgerufen und das auszuführende Skript als Parameter übergeben.
 
 command: powershell\
 arguments: -File mein_skript.ps1
