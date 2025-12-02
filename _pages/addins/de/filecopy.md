@@ -23,7 +23,7 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | sourceTimeFilter | FILE, SFTP, SHAREPOINT, GRAPHAPI: Zeitfilter, um nur Dateien, welche älter als die gesetzte Zeit (in Minuten) sind, zu verarbeiten |
 | destinationFileName | Name der kopierten Dateien auf dem Zielsystem, falls diese anders heissen sollen als die Originaldateien. Mögliche Platzhalter: <br /> {0}: Name der Ursprungsdatei ohne Endung <br /> {1}: Endung der Ursprungsdatei <br /> {2}: Aktuelle Zeit. Default Format = yyyyMMddHHmmss |
 | destinationProtocol | Das zu verwendende Protokoll zum Schreiben der Zieldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV, SHAREPOINT und GRAPHAPI |
-| destinationSystem | Abhängig von "destinationProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Zielsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* <br /> SHAREPOINT: URL zur Ziel-Dokumentenbibliothek auf Sharepoint (ohne allfällige Unterordner). Der Teil nach dem letzten '/' der URL muss dem Namen der Dokumentenbibliothek entsprechen (ggf. mit Sonderzeichen). GRAPHAPI: &lt;SharePoint Domain&gt;:&lt;relative Site URL&gt;, Beispiel: primesoftgroup.sharepoint.com:/sites/OneConnexx |
+| destinationSystem | Abhängig von "destinationProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Zielsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* <br /> SHAREPOINT: URL zur Ziel-Dokumentenbibliothek auf Sharepoint (ohne allfällige Unterordner). Der Teil nach dem letzten '/' der URL muss dem Namen der Dokumentenbibliothek entsprechen (ggf. mit Sonderzeichen). <br /> GRAPHAPI: &lt;SharePoint Domain&gt;:&lt;relative Site URL&gt;, Beispiel: primesoftgroup.sharepoint.com:/sites/OneConnexx |
 | destinationPath | Abhängig von "destinationProtocol"<br />FILE: UNC Pfad des Zielverzeichnis<br/>S3: Bucketname<br /> SHAREPOINT: Optional der relative Pfad der Ziel-Dokumentenbibliothek inklusive Unterverzeichnis. Bei Sharepoint Online ist das z.B. "/sites/Sitename/Freigegebene Dokumente/Unterordner". <br /> GRAPHAPI: &lt;Name der Dokumentenbibliothek&gt;/&lt;optionaler relativer Pfad&gt;, Beispiel: General/Subfolder1 |
 | filePattern | Suchmuster der zu kopierenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
 | moveFiles | true = Dateien werden verschoben, also auf dem Quellsystem gelöscht<br />false = Dateien werden kopiert und verbleiben auf dem Quellsystem |
@@ -72,6 +72,7 @@ Das "Filter" Ereignis wird ausgelöst, nach dem die FileCopy Instanz eine Datei 
 ##### Verwenden des "skipExistingFiles" Parameters
 
 Der Parameter 'skipExistingFiles' kann auf 'true' gesetzt werden, wenn Dateien auf dem Quellsystem nicht gelöscht oder verschoben werden können, aber trotzdem nur neu hinzugekommene Dateien kopiert werden sollen. Dabei werden Dateien nach dem Kopieren nicht aus dem lokalen temporären Verzeichnis gelöscht, und Dateien die bereits im lokalen temporären Verzeichnis existieren werden übersprungen. Wird diese Option verwendet, sollte 'tempDirectory' auf ein Verzeichnis gesetzt werden das ausschliesslich diesem Zweck dient.
+
 
 
 
