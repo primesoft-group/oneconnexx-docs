@@ -5,6 +5,11 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.4
+
+* __New__ FileCopy Add-In: Upload and download from SharePoint via Graph-API.
+
+
 #### 1.5.3
 
 * __Error__ CommandTimeout in rule check increased and logging improved.
