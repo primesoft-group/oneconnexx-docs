@@ -17,7 +17,7 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | | |
 | __Parameter__ | |
 | sourceProtocol | Das zu verwendende Protokoll zum Lesen der Quelldateien. Zur Auswahl stehen: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV, SHAREPOINT und GRAPHAPI |
-| sourceSystem | Abhängig von "sourceProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* <br /> SHAREPOINT: URL zur Ziel-Dokumentenbibliothek auf Sharepoint (ohne allfällige Unterordner). Der Teil nach dem letzten '/' der URL muss dem Namen der Dokumentenbibliothek entsprechen (ggf. mit Sonderzeichen). <br /> GRAPHAPI: &lt;SharePoint Domain&gt;:&lt;&gt;relative Site URL&gt;, Beispiel: primesoftgroup.sharepoint.com:/sites/OneConnexx |
+| sourceSystem | Abhängig von "sourceProtocol"<br />FILE: leer lassen<br/>FTP, FTPS, SFTP und WebDAV: IP oder Hostname des Quellsystems <br />S3: RegionEndPoint wenn nicht *EUWest1* <br /> SHAREPOINT: URL zur Ziel-Dokumentenbibliothek auf Sharepoint (ohne allfällige Unterordner). Der Teil nach dem letzten '/' der URL muss dem Namen der Dokumentenbibliothek entsprechen (ggf. mit Sonderzeichen). <br /> GRAPHAPI: &lt;SharePoint Domain&gt;:&lt;relative Site URL&gt;, Beispiel: primesoftgroup.sharepoint.com:/sites/OneConnexx |
 | sourcePath | Abhängig von "sourceProtocol"<br />FILE: UNC Pfad zu den Quelldateien<br />WebDAV: URL der Quelldateien<br />FTP, FTPS, SFTP: Relativer Pfad<br /> S3: Bucketname <br /> SHAREPOINT: Optional der relative Pfad der Quell-Dokumentenbibliothek inklusive Unterverzeichnis. Bei Sharepoint Online ist das z.B. "/sites/Sitename/Freigegebene Dokumente/Unterordner". <br /> GRAPHAPI: &lt;Name der Dokumentenbibliothek&gt;/&lt;optionaler relativer Pfad<&gt;, Beispiel: General/Subfolder1  |
 | sourceArchivePath | Verzeichnis (Format siehe "sourcePath"), wohin erfolgreich kopierte Dateien zusätzlich verschoben werden (Optional) |
 | sourceTimeFilter | FILE, SFTP, SHAREPOINT: Zeitfilter, um nur Dateien, welche älter als die gesetzte Zeit (in Minuten) sind, zu verarbeiten |
@@ -72,6 +72,7 @@ Das "Filter" Ereignis wird ausgelöst, nach dem die FileCopy Instanz eine Datei 
 ##### Verwenden des "skipExistingFiles" Parameters
 
 Der Parameter 'skipExistingFiles' kann auf 'true' gesetzt werden, wenn Dateien auf dem Quellsystem nicht gelöscht oder verschoben werden können, aber trotzdem nur neu hinzugekommene Dateien kopiert werden sollen. Dabei werden Dateien nach dem Kopieren nicht aus dem lokalen temporären Verzeichnis gelöscht, und Dateien die bereits im lokalen temporären Verzeichnis existieren werden übersprungen. Wird diese Option verwendet, sollte 'tempDirectory' auf ein Verzeichnis gesetzt werden das ausschliesslich diesem Zweck dient.
+
 
 
 
