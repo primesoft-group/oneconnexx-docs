@@ -28,10 +28,10 @@ The FileCopy Add-In is used to copy files from one system to another. A wide var
 | filePattern | Search pattern of the files to be copied<br />The placeholders * and? can be used as usual with Windows. Several search patterns can be specified separated by semicolons. Example: "\*.txt; \*.xml" => all text and XML files. |
 | moveFiles | 	true = files are moved, i.e. deleted on the source system.<br />false = files are copied and remain on the source system. |
 | skipExistingFiles | If 'true', copied files are not deleted from the temp directory and files that already exist in the temp directory are skipped. |
-| sourceUserName | User for access to the source system (optional)<br /> GRAPHAPI: <Tenant-Id>;<Client-Id> |
-| sourcePassword | Associated password (optional)<br /> GRAPHAPI: <Client-Secret> |
-| destUserName | User for access to the target system (optional)<br /> GRAPHAPI: <Tenant-Id>;<Client-Id> |
-| destPassword | Associated password (optional)<br /> GRAPHAPI: <Client-Secret> |
+| sourceUserName | User for access to the source system (optional)<br /> GRAPHAPI: &lt;Tenant-Id&gt;;<Client-Id&gt; |
+| sourcePassword | Associated password (optional)<br /> GRAPHAPI: &lt;Client-Secret&gt; |
+| destUserName | User for access to the target system (optional)<br /> GRAPHAPI: &lt;Tenant-Id&gt;;<Client-Id&gt; |
+| destPassword | Associated password (optional)<br /> GRAPHAPI: &lt;Client-Secret&gt; |
 | tempDirectory | Files are stored locally in this directory during a copy process. (Optional, default = system temp directory) |
 | endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
