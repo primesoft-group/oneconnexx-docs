@@ -28,10 +28,10 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | filePattern | Suchmuster der zu kopierenden Dateien<br />Die Platzhalter * und ? können wie von Windows gewohnt benutzt werden. Mehrere Suchmuster können durch Semikolon getrennt angegeben werden. Bsp.: "\*.txt;\*.xml" => alle Text und XML Dateien. |
 | moveFiles | true = Dateien werden verschoben, also auf dem Quellsystem gelöscht<br />false = Dateien werden kopiert und verbleiben auf dem Quellsystem |
 | skipExistingFiles | Wenn 'true' werden kopierte Dateien nicht aus dem temp Verzeichnis gelöscht und Dateien die im temp Verzeichnis bereits existieren werden übersprungen. |
-| sourceUserName | Benutzer für den Zugriff auf das Quellsystem (Optional) |
-| sourcePassword | Zugehöriges Passwort (Optional) |
-| destUserName | Benutzer für den Zugriff auf das Zielsystem (Optional) |
-| destPassword | Zugehöriges Passwort (Optional) |
+| sourceUserName | Benutzer für den Zugriff auf das Quellsystem (Optional)<br /> GRAPHAPI: <Tenant-Id>;<Client-Id> |
+| sourcePassword | Zugehöriges Passwort (Optional<br /> GRAPHAPI: <Client-Secret>) |
+| destUserName | Benutzer für den Zugriff auf das Zielsystem (Optional)<br /> GRAPHAPI: <Tenant-Id>;<Client-Id> |
+| destPassword | Zugehöriges Passwort (Optional)<br /> GRAPHAPI: <Client-Secret> |
 | tempDirectory | Während eines Kopiervorganges werden Dateien lokal in diesem Verzeichnis abgelegt. (Optional, Default = Temp-Verzeichnis des Systems) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
@@ -72,6 +72,7 @@ Das "Filter" Ereignis wird ausgelöst, nach dem die FileCopy Instanz eine Datei 
 ##### Verwenden des "skipExistingFiles" Parameters
 
 Der Parameter 'skipExistingFiles' kann auf 'true' gesetzt werden, wenn Dateien auf dem Quellsystem nicht gelöscht oder verschoben werden können, aber trotzdem nur neu hinzugekommene Dateien kopiert werden sollen. Dabei werden Dateien nach dem Kopieren nicht aus dem lokalen temporären Verzeichnis gelöscht, und Dateien die bereits im lokalen temporären Verzeichnis existieren werden übersprungen. Wird diese Option verwendet, sollte 'tempDirectory' auf ein Verzeichnis gesetzt werden das ausschliesslich diesem Zweck dient.
+
 
 
 
