@@ -25,7 +25,7 @@ The FileCopy Add-In is used to copy files from one system to another. A wide var
 | destinationProtocol | The protocol to use to write the target files. The choices are: NULL, FILE, FTP, FTPS, SFTP, S3, WebDAV, SHAREPOINT and GRAPHAPI |
 | destinationSystem | Abhängig von "destinationProtocol"<br />FILE: leave blank<br/>FTP, FTPS, SFTP and WebDAV: IP or host name of the target system <br />S3: RegionEndPoint if not *EUWest1* <br /> SHAREPOINT: URL to the target document library on Sharepoint (without any sub-folders). The part after the last '/' of the URL must correspond to the name of the document library (with special characters if necessary). <br /> GRAPHAPI: &lt;SharePoint domain&gt;:&lt;relative site URL&gt;, Example: primesoftgroup.sharepoint.com:/sites/OneConnexx |
 | destinationPath | Depending on "destinationProtocol"<br />FILE: UNC path of the destination directory<br/>S3: Bucketname<br /> SHAREPOINT: Optionally the relative path of the destination document library including subdirectory. With Sharepoint Online this is, for example, "/sites/sitename/shared documents/subfolder". <br /> GRAPHAPI: &lt;name of document library&gt;/&lt;optional relative path&gt;, Example: General/Subfolder1 |
-| filePattern | Search pattern of the files to be copied<br />The placeholders * and? can be used as usual with Windows. Several search patterns can be specified separated by semicolons. Example: "\*.txt; \*.xml" => all text and XML files. |
+| filePattern | Search pattern of the files to be copied<br />The placeholders * and ? can be used as usual with Windows. Several search patterns can be specified separated by semicolons. Example: "\*.txt; \*.xml" => all text and XML files. |
 | moveFiles | 	true = files are moved, i.e. deleted on the source system.<br />false = files are copied and remain on the source system. |
 | skipExistingFiles | If 'true', copied files are not deleted from the temp directory and files that already exist in the temp directory are skipped. |
 | sourceUserName | User for access to the source system (optional)<br /> GRAPHAPI: &lt;Tenant-Id&gt;;<Client-Id&gt; |
@@ -38,7 +38,7 @@ The FileCopy Add-In is used to copy files from one system to another. A wide var
 
 ### Graph API
 
-The use of the GRAPHAPI protocol requires the creation of an app registration ind Entra ID:
+The use of the GRAPHAPI protocol requires the creation of an app registration in Entra ID:
 
 - App Registrations => New registration
 - Enter a meaningful name (e.g. OneConnexx), no redirect URL
