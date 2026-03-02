@@ -42,17 +42,17 @@ The use of the GRAPHAPI protocol requires the creation of an app registration in
 
 - App Registrations => New registration
 - Enter a meaningful name (e.g. OneConnexx), no redirect URL
-- Im Menu "Certificates & secrets" auswählen
-- "New client secret" klicken
-- Name und Ablaufdatum angeben
-- "Value" des Secret kopieren (wird später in der OneConnexx-Konfiguration benötigt)
-- Im Menu "API permissions" auswählen
-- "Add a permission" klicken
-- "Microsoft Graph" auswählen
-- "Application permission" auswählen
-- "Files.ReadWrite.All" suchen und Checkbox auswählen
-- "Add permission" klicken
-- "Grant admin conset" klicken
+- Select menu "Certificates & secrets"
+- Click "New client secret"
+- Enter a name and expiry date
+- Copy "Value" of the secret (needed later in OneConnexx configuration)
+- Select menu "API permissions"
+- Click "Add a permission"
+- Select "Microsoft Graph"
+- Select "Application permission"
+- Search for "Files.ReadWrite.All" and check the checkbox
+- Click "Add permission"
+- Click "Grant admin conset"
 
 ### Application examples
 
