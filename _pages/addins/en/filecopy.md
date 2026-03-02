@@ -36,6 +36,24 @@ The FileCopy Add-In is used to copy files from one system to another. A wide var
 | endpoint | Name of the endpoint that is used in the transaction (optional, default = "") |
 
 
+### Graph API
+
+The use of the GRAPHAPI protocol requires the creation of an app registration ind Entra ID:
+
+- App Registrations => New registration
+- Enter a meaningful name (e.g. OneConnexx), no redirect URL
+- Im Menu "Certificates & secrets" auswählen
+- "New client secret" klicken
+- Name und Ablaufdatum angeben
+- "Value" des Secret kopieren (wird später in der OneConnexx-Konfiguration benötigt)
+- Im Menu "API permissions" auswählen
+- "Add a permission" klicken
+- "Microsoft Graph" auswählen
+- "Application permission" auswählen
+- "Files.ReadWrite.All" suchen und Checkbox auswählen
+- "Add permission" klicken
+- "Grant admin conset" klicken
+
 ### Application examples
 
 The FileCopy Add-In is used for automatic exchange with FTP servers but also for automatic synchronization within the company network. 
