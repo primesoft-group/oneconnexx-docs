@@ -36,6 +36,24 @@ Das FileCopy Add-In wird dazu verwendet um Dateien von einem Systems auf ein and
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
 
+### Graph API
+
+Die Verwendung des Protokolls GRAPHAPI erfordert die Erstellung einer App Registration in Entra ID:
+
+- App Registrations => New registration
+- Sinnvoller Name vergeben (z.B. OneConnexx), keine Redirect URL
+- Im Menu "Certificates & secrets" auswählen
+- "New client secret" klicken
+- Name und Ablaufdatum angeben
+- "Value" des Secret kopieren (wird später in der OneConnexx-Konfiguration benötigt)
+- Im Menu "API permissions" auswählen
+- "Add a permission" klicken
+- "Microsoft Graph" auswählen
+- "Application permission" auswählen
+- "Files.ReadWrite.All" suchen und Checkbox auswählen
+- "Add permission" klicken
+- "Grant admin conset" klicken
+
 ### Anwendungsbeispiele
 
 Das FileCopy Add-In wird beim automatischen Austauchs mit FTP-Servern aber auch bei automatischen Abgleichen innerhalb des Firmenetzes eingesetzt.
@@ -72,6 +90,7 @@ Das "Filter" Ereignis wird ausgelöst, nach dem die FileCopy Instanz eine Datei 
 ##### Verwenden des "skipExistingFiles" Parameters
 
 Der Parameter 'skipExistingFiles' kann auf 'true' gesetzt werden, wenn Dateien auf dem Quellsystem nicht gelöscht oder verschoben werden können, aber trotzdem nur neu hinzugekommene Dateien kopiert werden sollen. Dabei werden Dateien nach dem Kopieren nicht aus dem lokalen temporären Verzeichnis gelöscht, und Dateien die bereits im lokalen temporären Verzeichnis existieren werden übersprungen. Wird diese Option verwendet, sollte 'tempDirectory' auf ein Verzeichnis gesetzt werden das ausschliesslich diesem Zweck dient.
+
 
 
 
