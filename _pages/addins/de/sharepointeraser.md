@@ -28,6 +28,6 @@ Das SharepointEraser Add-In löscht Items in einer Sharepoint Liste/Bibliothek d
 
 ### Voraussetzungen 
 
-Das Sharepointeraser Add-In benötigt eine App-registrierung in Entra ID und folgende Berechtigungen (Application Permissions):
+Das SharepointEraser Add-In benötigt eine App-Registrierung in Entra ID und folgende Berechtigungen (Application Permissions):
 - Files.ReadWrite.All (Zugriff auf alle Dokumentbibliotheken in allen Sites)
 - Sites.Selected (Zugriff auf alle Dokumentbibliotheken in ausgewählten Sites)
