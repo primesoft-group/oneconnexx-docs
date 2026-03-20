@@ -5,6 +5,11 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.5
+
+* __New__ SharepointListSync and SharepointEraser add-ins migrated from CSOM to Graph-API.
+
+
 #### 1.5.4
 
 * __New__ FileCopy Add-In: Upload and download from SharePoint via Graph-API.
