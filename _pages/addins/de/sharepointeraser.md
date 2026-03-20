@@ -16,19 +16,18 @@ Das SharepointEraser Add-In löscht Items in einer Sharepoint Liste/Bibliothek d
 | Ereignisse | &lt;Instanz&gt;.Done |
 | | |
 | __Parameter__ | |
-| userName | Benutzer mit den für den SharePoint-Server erforderlichen Berechtigungen (Optional) |
-| password | Zugehöriges Passwort (Optional) |
-| libraryUrl | URL der Sharepoint-Bibliothek inklusive deren Namen |
-| subFolder | (Optional) Server-relative URL zu einem Unterverzeichnis der Dokumentenbibliothek. |
-| recursive | Wenn 'true' werden auch Dateien in Unterverzeichnissen gelöscht ("subfolder" wird in diesem Fall ignoriert). |
+| tenantId | Tenant-Id |
+| clientId | Client-Id der App Registrierung. |
+| clientSecret | Client-Secret der App Registrierung. |
+| siteUrl | URL der Sharepoint-Site, z.B. https://contoso.sharepoint.com/sites/mysite |
+| subFolder | (Optional) Name eines Unterverzeichnisses der Dokumentenbibliothek. |
+| recursive | Wenn 'true' werden auch Dateien in Unterverzeichnissen gelöscht. |
 | deleteTimeout | Alter der Items in Stunden, ab wann sie gelöscht werden sollen. |
 | testRun | true = Testlauf um zu überprüfen ob alles reibungslos durchläuft.<br />Die Items werden dabei nicht gelöscht, Logeinträge werden aber geschrieben. (Optional, Default = false) |
-| requestTimeout | Automatische Verbindungstrennung, wenn der Request länger als die angegebene Zeit in Millisekunden dauert. (Optional, Default = 60000) |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-<!-- 
-### Anwendungsbeispiele 
+### Voraussetzungen 
 
-ToDo
--->
-
+Das Sharepointeraser Add-In benötigt eine App-registrierung in Entra ID und folgende Berechtigungen (Application Permissions):
+- Files.ReadWrite.All (Zugriff auf alle Dokumentbibliotheken in allen Sites)
+- Sites.Selected (Zugriff auf alle Dokumentbibliotheken in ausgewählten Sites)
