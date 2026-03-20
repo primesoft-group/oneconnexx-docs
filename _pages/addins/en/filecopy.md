@@ -50,7 +50,7 @@ The use of the GRAPHAPI protocol requires the creation of an app registration in
 - Click "Add a permission"
 - Select "Microsoft Graph"
 - Select "Application permission"
-- Search for "Files.ReadWrite.All" and check the checkbox
+- Search for "Files.ReadWrite.All" (grant access to all document libraries in all sites) or "Sites.Selected" (grant access to all documtn libraries in selected sites) and check the checkbox
 - Click "Add permission"
 - Click "Grant admin conset"
 
