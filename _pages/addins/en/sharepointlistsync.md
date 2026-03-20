@@ -5,32 +5,31 @@ permalink: "addins/en/sharepointlistsync/"
 language: en
 ---
 
-Das SharepointListSync Add-In fügt Elemente aus einer CSV-Datei in eine SharePoint-Liste ein oder aktualisiert diese.<br /><br />
+The SharepointListSync add‑in inserts items from a CSV file into a SharePoint list or updates existing ones.<br /><br />
 
 {:.table .table-striped}
 | --- | --- |
-| __Merkmale__ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| __Merkmale__ |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | Add-In Type | Logic |
-| Schnittstellen | In: CSV file<br/>Out: Sharepoint |
-| Transaktionen | 1 wenn mind. 1 Element eingefügt oder aktualisiert wurde |
-| Ereignisse | - |
+| Interfaces | In: CSV-Datei<br/>Out: Sharepoint |
+| TRansactions | 1 wenn mind. 1 Element eingefügt oder aktualisiert wurde |
+| Events | - |
 | | |
 | __Parameter__ | |
-| mapping | Zuordnung von Spalten aus der CSV-Datei zu Spalten der SharePoint-Liste. Beispiel: CsvCol1:SpCol1,CsvCol2:SpCol2 |
-| ignoreMissingColumns | Wenn 'True' werden Spalten die im Parameter 'mapping' definiert sind, aber in der CSV-Datei fehlen ignoriert. Wenn 'False' wird die Verarbeitung in diesem Fall abgebrochen. |
-| csvFile | Kompletter Pfad einer CSV-Datei. Wird durch einen 'file' Parameter übersteuert der von einem verknüpften Add-In übergeben wird. |
-| archiveDirectory | (Optional) Ein Verzeichnis in das die CSV-Datei verschoben wird nachdem sie verarbeitet wurde |
-| delimiter | Trennzeichen der CSV-Datei |
-| tenantId | Tenant-Id |
-| clientId | Client-Id der App Registrierung. |
-| clientSecret | Client-Secret der App Registrierung. |
-
-| spKeyColumn | (Optional) Name einer Spalte der SharePoint-Liste die als eindeutiger Schlüssel dient. Diese Spalte muss in SharePoint als 'eindeutig' gekennzeichnet sein. Falls angegeben, wird ein bestehendes Item mit passendem Wert aktualisiert. Wenn leer werden alle Zeilen der CSV-Datei als neue Items in die Liste eingetragen. |
-| spSiteUrl | URL der Sharepoint-Site, z.B. https://contoso.sharepoint.com/sites/mysite |
-| spListName | Name der SharePoint-Liste. |
+| mapping | Mapping of columns in the CSV file to columns in the SharePoint list. Example: CsvCol1:SpCol1,CsvCol2:SpCol2 |
+| ignoreMissingColumns | If 'True', columns defined in the 'mapping' parameter but missing in the CSV file are ignored. If 'False', processing will be aborted in this case. |
+| csvFile | Full path to a CSV file. Can be overwritten by a 'file' parameter that is passed from a connected add-in. |
+| archiveDirectory | (Optional) A directory into which the CSV file is moved after it has been processed. |
+| delimiter | Delimiter used in the CSV file. |
+| tenantId | Tenant id |
+| clientId | Client id of the app registration- |
+| clientSecret | Client secret of the app registration. |
+| spKeyColumn | (Optional) Name of a column in the SharePoint list that acts as unique key. This column must be defined as 'unique' in SharePoint. If a column is specified, an existing item with the matching value will be updated. If empty, all rows in the CSV file are inserted as new items into the list. |
+| spSiteUrl | URL of the Sharepoint site, e.g. https://contoso.sharepoint.com/sites/mysite |
+| spListName | Name of the SharePoint list. |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
-### Voraussetzungen 
+### Voraussetzungen
 
 Das SharepointListSync Add-In benötigt eine App-Registrierung in Entra ID und folgende Berechtigungen (Application Permissions):
 - Sites.ReadWrite.All (Zugriff auf alle Listen in allen Sites)
