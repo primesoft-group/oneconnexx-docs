@@ -30,5 +30,5 @@ The SharepointEraser Add-In deletes items in a Sharepoint list / library that ar
 
 The SharepointEraser add-in requires an app-registration in Entra ID and the following permissions (application permissions):
 
-    Files.ReadWrite.All (access to all document libraries in all sites)
-    Sites.Selected (access to all document libraries in selected sites)
+- Files.ReadWrite.All (access to all document libraries in all sites)
+- Sites.Selected (access to all document libraries in selected sites)
