@@ -50,7 +50,7 @@ Die Verwendung des Protokolls GRAPHAPI erfordert die Erstellung einer App Regist
 - "Add a permission" klicken
 - "Microsoft Graph" auswählen
 - "Application permission" auswählen
-- "Files.ReadWrite.All" suchen und Checkbox auswählen
+- "Files.ReadWrite.All"  (gewährt Zugriff auf alle Dokumentbibliotheken in allen Sites) oder "Sites.Selected" (gewährt nur Zugriff auf Dokumentbibliotheken in ausgewählten Sites) suchen und Checkbox auswählen
 - "Add permission" klicken
 - "Grant admin conset" klicken
 
