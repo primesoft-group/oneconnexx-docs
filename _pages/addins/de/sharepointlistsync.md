@@ -20,7 +20,7 @@ Das SharepointListSync Add-In fügt Elemente aus einer CSV-Datei in eine SharePo
 | ignoreMissingColumns | Wenn 'True' werden Spalten die im Parameter 'mapping' definiert sind, aber in der CSV-Datei fehlen ignoriert. Wenn 'False' wird die Verarbeitung in diesem Fall abgebrochen. |
 | csvFile | Kompletter Pfad einer CSV-Datei. Wird durch einen 'file' Parameter übersteuert der von einem verknüpften Add-In übergeben wird. |
 | archiveDirectory | (Optional) Ein Verzeichnis in das die CSV-Datei verschoben wird nachdem sie verarbeitet wurde. |
-| delimiter | Trennzeichen der CSV-Datei |
+| delimiter | Trennzeichen der CSV-Datei. |
 | tenantId | Tenant-Id |
 | clientId | Client-Id der App Registrierung. |
 | clientSecret | Client-Secret der App Registrierung. |
