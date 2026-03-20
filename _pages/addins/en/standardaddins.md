@@ -36,6 +36,7 @@ The following standard add-ins are currently included in the scope of delivery o
 | [ParameterTransformer]({{ site.baseurl }}/addins/en/parametertransformer/) | Transforms parameters between two add-in instances |
 | [ServerCheck]({{ site.baseurl }}/addins/en/servercheck/) | 	Checks the availability of servers using the "ping" command |
 | [SharepointEraser]({{ site.baseurl }}/addins/en/sharepointeraser/) | 	Deletes items in a SharePoint list / library that have reached a certain age |
+| [SharepointListSync]({{ site.baseurl }}/addins/en/sharepointlistsync/) | Inserts elements from a CSV file into a Sharepoint list |
 | [SharepointToDB]({{ site.baseurl }}/addins/en/sharepointtodb/) | Exports items from a SharePoint list / library to an SQL database |
 | [TextReplace]({{ site.baseurl }}/addins/en/textreplace/) | Replaces regular expressions in a text file and converts the character set |
 | [WebConnect]({{ site.baseurl }}/addins/en/webconnect/) | 	A web service which can be called by external applications and which triggers an event |
