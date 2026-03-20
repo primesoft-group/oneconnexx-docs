@@ -24,7 +24,6 @@ Das SharepointListSync Add-In fügt Elemente aus einer CSV-Datei in eine SharePo
 | tenantId | Tenant-Id |
 | clientId | Client-Id der App Registrierung. |
 | clientSecret | Client-Secret der App Registrierung. |
-
 | spKeyColumn | (Optional) Name einer Spalte der SharePoint-Liste die als eindeutiger Schlüssel dient. Diese Spalte muss in SharePoint als 'eindeutig' gekennzeichnet sein. Falls angegeben, wird ein bestehendes Item mit passendem Wert aktualisiert. Wenn leer werden alle Zeilen der CSV-Datei als neue Items in die Liste eingetragen. |
 | spSiteUrl | URL der Sharepoint-Site, z.B. https://contoso.sharepoint.com/sites/mysite |
 | spListName | Name der SharePoint-Liste. |
