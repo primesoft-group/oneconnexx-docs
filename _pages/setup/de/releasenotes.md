@@ -5,6 +5,12 @@ permalink: "setup/de/releasenotes/"
 language: de
 ---
 
+#### 1.5.6
+
+* __Fehler__ FileCopy Add-In: Support für mehr als 200 Dateien in Sharepoint.
+* __Fehler__ SharepointEraser Add-In: Support für mehr als 200 Dateien in Sharepoint.
+
+
 #### 1.5.5
 
 * __Neu__ SharepointListSync und SharepointEraser Add-Ins von CSOM nach Graph-API migriert.
