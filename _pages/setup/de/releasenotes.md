@@ -5,6 +5,11 @@ permalink: "setup/de/releasenotes/"
 language: de
 ---
 
+#### 1.5.7
+
+* __Neu__ Xls2Csv Add-In: Neuer Parameter "Encoding".
+
+
 #### 1.5.6
 
 * __Fehler__ FileCopy Add-In: Support für mehr als 200 Dateien in Sharepoint.
