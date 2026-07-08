@@ -5,6 +5,11 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.8
+
+* __New__ FileCopy Add-In: If destinationProtocol is NULL, no files will be downloaded.
+
+
 #### 1.5.7
 
 * __New__ Xls2Csv Add-In: New parameter "Encoding".
