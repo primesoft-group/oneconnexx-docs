@@ -20,6 +20,7 @@ The generated CSV file has the same name as the Excel file, only the file extens
 | sourceDirectory | Directory in which Excel files are searched for | 
 | sourceFilePattern | Search pattern used to search for Excel files (default = * .xlsx) | 
 | delimiter | Separator in the CSV file (optional, default = semicolon) | 
+| encoding | Encoding of the CSV file (optional, default = "utf-8")<br /><small>UTF-8 is written with a BOM by default. To write a file without BOM, use utf-8-nobom.</small> |
 | dateTimePattern | Optional format with which the date / time values ​​are formatted in the CSV file (e.g. dd.MM.yyyy) | 
 | destinationDirectory | Target directory in which CSV files are written. If empty, the files will be created in the source directory. | 
 | overwrite | Specifies whether an existing CSV file should be overwritten. If 'false', a number is appended to the file name so that it is unique. | 
