@@ -18,7 +18,7 @@ Das DatabaseToCSV Add-In erzeugt aus einer SQL Abfrage eine oder mehrere CSV-Dat
 | __Parameter__ | |
 | connectionString | Verbindungszeichenfolge der Datenbank | 
 | delimiter | Trennzeichen in der CSV-Datei (Optional, Default = Semikolon) | 
-| encoding | Kodierung der CSV-Datei (Optional, Default = "UTF-8") | 
+| encoding | Kodierung der CSV-Datei (Optional, Default = "UTF-8")<br />UTF-8 wird standardmässig mit BOM geschrieben, um eine Datei ohne BOM zu erzeugen, muss UTF-8-NOBOM angegeben werden.| 
 | fileNamePattern | Dateiname der CSV-Datei<br/>Wird ignoriert wenn der Dateiname von der SQL Abfrage zurückgegeben wird. Der Platzhalter {0} wird durch einen aktuellen Zeitstempel ersetzt. Bsp.: File\_{0: yyyyMMdd_hhmmss}.csv = File\_20160523\_115620.csv<br/>Bestehende Dateien werden überschrieben. | 
 | fileSaveLocation | Zielverzeichnis der CSV-Datei | 
 | includeColumnName | true: Spaltenname werden in die 1. Zeile geschrieben (Optional, default = false) | 
