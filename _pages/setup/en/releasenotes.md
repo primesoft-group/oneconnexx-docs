@@ -5,6 +5,11 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.9
+
+* __New__ Xls2Csv, Ldap2CSV, DatabaseToCSV: Parameter "encoding" supports the new value "utf-8-nobom".
+
+
 #### 1.5.8
 
 * __New__ FileCopy Add-In: If destinationProtocol is NULL, no files will be downloaded.
