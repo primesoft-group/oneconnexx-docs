@@ -21,6 +21,7 @@ Die erzeugte CSV-Datei hat denselben Namen wie die Excel-Datei, nur wird die Dat
 | sourceDirectory | Verzeichnis in dem nach Excel-Dateien gesucht wird | 
 | sourceFilePattern | Suchmuster mit dem nach Excel-Dateien gesucht wird (Default = *.xlsx) | 
 | delimiter | Trennzeichen in der CSV-Datei (Optional, Default = Semikolon) | 
+| encoding | Kodierung der CSV-Datei (Optional, Default = "utf-8")<br /><small>UTF-8 wird standardmässig mit BOM geschrieben, um eine Datei ohne BOM zu erzeugen, muss UTF-8-NOBOM angegeben werden.</small> |
 | dateTimePattern | Optionales Format mit dem Datum-/Zeitwerte in der CSV Datei formatiert werden (z.B. dd.MM.yyyy) | 
 | destinationDirectory | Zielverzeichnis in das CSV Dateien geschrieben werden. Wenn leer werden die Dateien im Quellverzeichnis erstellt. | 
 | overwrite | Gibt an, ob eine bestehende CSV Datei überschrieben werden soll. Wenn 'false', wird eine Zahl an den Dateinamen angehängt so dass dieser eindeutig wird. | 
