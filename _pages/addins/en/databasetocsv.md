@@ -18,7 +18,7 @@ The DatabaseToCSV Add-In generates one or more CSV files from an SQL query.<br /
 | __parameter__ | |
 | connectionString | 	Database connection string | 
 | delimiter | 	Separator in the CSV file (optional, default = semicolon) | 
-| encoding | Coding of the CSV file (optional, default = "UTF-8") | 
+| encoding | Coding of the CSV file (optional, default = "UTF-8")<br />UTF-8 is written with a BOM by default. To write a file without BOM, use UTF-8-NOBOM. | 
 | fileNamePattern | File name of the CSV file<br/>is ignored if the file name is returned by the SQL query. The placeholder {0} is replaced by a current time stamp. Example: File_{0: yyyyMMdd_hhmmss}.csv = File_20160523_115620.csv<br/>Existing files will be overwritten.
 | fileSaveLocation | Target directory of the CSV file | 
 | includeColumnName | true: column names are written in the 1st line (optional, default = false) | 
