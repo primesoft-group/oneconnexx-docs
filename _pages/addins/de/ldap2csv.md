@@ -28,7 +28,7 @@ Das Ldap2CSV Add-In ermittelt via LDAP Angaben aus dem AD (Active Directory) und
 | fileSaveLocation | Verzeichnis in dem die Datei erstellt wird |
 | delimiter | Trennzeichen der Spalten in der CSV Datei (Optional, Default = Semikolon) |
 | includeHeaderRow | true = inklusive Spaltenüberschriften in der ersten Zeile<br/>false = ohne Spaltenüberschriften |
-| encoding | Kodierung der CSV-Datei (Optional, Default = "utf-8") |
+| encoding | Kodierung der CSV-Datei (Optional, Default = "utf-8")<br /><small>UTF-8 wird standardmässig mit BOM geschrieben, um eine Datei ohne BOM zu erzeugen, muss UTF-8-NOBOM angegeben werden.</small> |
 | additionalData | Kommaseparierte List von Schlüssel-Wert-Paaren welche die im Parameter "properties" angegebenen Spalten überschreiben. Der Schlüssel muss dabei dem Spaltenname entsprechen. (Optional)<br/>Beispiel: Spalte1=Wert1,Spalte2=Wert2  |
 | endpoint | Name des Endpunktes der in der Transaktion verwendet wird (Optional, Default = "") |
 
