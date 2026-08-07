@@ -5,6 +5,11 @@ permalink: "setup/en/releasenotes/"
 language: en
 ---
 
+#### 1.5.10
+
+* __New__ FileCopy: Support for uploading large files (>240 MB) via Graph API to SharePoint.
+
+
 #### 1.5.9
 
 * __New__ Xls2Csv, Ldap2CSV, DatabaseToCSV: Parameter "encoding" supports the new value "utf-8-nobom".
