@@ -7,7 +7,7 @@ language: en
 
 #### 1.5.10
 
-* __New__ FileCopy: Support for uploading large files (>240 MB) via Graph API to SharePoint.
+* __New__ FileCopy Add-In: Support for uploading large files (>240 MB) via Graph API to SharePoint.
 
 
 #### 1.5.9
