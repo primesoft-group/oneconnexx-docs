@@ -5,6 +5,11 @@ permalink: "setup/de/releasenotes/"
 language: de
 ---
 
+#### 1.6.0
+
+* __Neu__ Logging über OpenTelemetry.
+
+
 #### 1.5.10
 
 * __Neu__ FileCopy Add-In: Unterstützung für den Upload grosser Dateien (>240 MB) via Graph API auf SharePoint.
